@@ -2,7 +2,8 @@
 
 set -euo pipefail
 IFS=$'\n\t'
-[[ "$USER" == 'root' ]] && echo 'do not run as root' && exit 1
+err() { echo "error: $1" && exit 1 }
+[[ "$USER" == 'root' ]] && err 'do not run as root'
 
 remote='https://github.com/azdavis/config.git'
 name='.config'
@@ -11,7 +12,7 @@ tmp=".tmp $$ $RANDOM $(date)"
 cd "$HOME"
 
 if [[ -d "$name" ]]; then
-  [[ -d "$name/.git" ]] && echo 'already installed' && exit 1
+  [[ -d "$name/.git" ]] && err 'already installed'
   zip -r "backup$name.zip" "$name"
 else
   mkdir -p "$name"

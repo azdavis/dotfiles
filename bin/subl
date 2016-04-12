@@ -1,8 +1,6 @@
 #!/usr/bin/env zsh
 
-set -euo pipefail
-IFS=$'\n\t'
-[[ "$USER" == 'root' ]] && echo 'do not run as root' && exit 1
+source "$HOME/.config/lib/base"
 
 rm_irf() {
   [[ -e "$1" || -h "$1" ]] || return 0
@@ -13,7 +11,7 @@ rm_irf() {
 }
 
 if pgrep -f 'Sublime Text' > /dev/null; then
-  echo 'sublime text must not be running' && exit 1
+  err 'sublime text must not be running'
 fi
 
 support="$HOME/Library/Application Support/Sublime Text 3"

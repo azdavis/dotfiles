@@ -1,8 +1,6 @@
 #!/usr/bin/env zsh
 
-set -euo pipefail
-IFS=$'\n\t'
-[[ "$USER" == 'root' ]] && echo 'do not run as root' && exit 1
+source "$HOME/.config/lib/base"
 
 rm_irf() {
   [[ -e "$1" || -h "$1" ]] || return 0
