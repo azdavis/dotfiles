@@ -10,6 +10,8 @@ elif [[ -n "$(git status --porcelain)" ]]; then
   err 'there are uncommitted changes'
 elif [[ -n "$(git log origin/master..master)" ]]; then
   err 'there are unpushed changes'
+elif ! ping -c 1 -t 3 github.com &> /dev/null; then
+  err 'could not connect to github.com'
 elif [[ "$(
   curl -fsSL -m 3 -w %{http_code} \
   -H Accept:\ application/vnd.github.chitauri-preview+sha \
