@@ -1,0 +1,21 @@
+#!/usr/bin/env zsh
+
+set -euo pipefail
+IFS=$'\n\t'
+[[ "$USER" == 'root' ]] && echo 'do not run as root' && exit 1
+
+cd "$HOME/.config"
+
+interval='604800'
+log='misc/auto_update.log'
+[[ -f "$log" ]] || echo 0 > "$log"
+
+current="$(date +%s)"
+last="$(cat "$log")"
+difference="$(expr "$current" - "$last")"
+
+if [[ "$difference" -ge "$interval" ]]; then
+  echo 'updating ~/.config...'
+  util/update
+  echo "$current" > "$log"
+fi

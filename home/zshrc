@@ -115,3 +115,7 @@ fuck() {
 
 f="$HOME/.config/z/zshrc"
 if [[ -f "$f" ]]; then source "$f"; fi
+
+# auto-update
+
+"$HOME/.config/util/auto_update"
