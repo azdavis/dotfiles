@@ -31,7 +31,7 @@
         <key>name</key>
         <string>WHITE</string>
         <key>scope</key>
-        <string>variable, string.quoted source, punctuation.definition.tag</string>
+        <string>punctuation.definition.tag, string.quoted source, variable</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -75,7 +75,7 @@
         <key>name</key>
         <string>ORANGE</string>
         <key>scope</key>
-        <string>meta.tag, entity.name.tag, meta.selector, markup.heading.markdown</string>
+        <string>entity.name.tag, markup.heading.markdown, meta.selector, meta.tag</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -97,7 +97,7 @@
         <key>name</key>
         <string>GREEN</string>
         <key>scope</key>
-        <string>storage, markup.inserted</string>
+        <string>markup.inserted, storage</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -108,7 +108,7 @@
         <key>name</key>
         <string>CYAN</string>
         <key>scope</key>
-        <string>meta.diff, markup.underline.link.markdown, constant.other.reference.link.markdown</string>
+        <string>constant.other.reference.link.markdown, markup.underline.link.markdown, meta.diff</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
