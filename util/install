@@ -1,0 +1,22 @@
+#!/usr/bin/env zsh
+
+set -euo pipefail
+IFS=$'\n\t'
+[[ "$USER" == 'root' ]] && echo 'do not run as root' && exit 1
+
+remote='https://github.com/azdavis/config.git'
+name='.config'
+tmp=".tmp $$ $RANDOM $(date)"
+
+cd "$HOME"
+
+if [[ -d "$name" ]]; then
+  [[ -d "$name/.git" ]] && echo 'already installed' && exit 1
+  zip -r "backup$name" "$name"
+else
+  mkdir -p "$name"
+fi
+
+git clone --branch master --single-branch "$remote" "$tmp"
+mv "$tmp"/.* "$tmp"/* "$name"
+rmdir "$tmp"

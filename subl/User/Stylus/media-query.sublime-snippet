@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+@media only screen and (max-width 600px)
+  ${1://}
+]]></content>
+  <tabTrigger>mq</tabTrigger>
+  <scope>source.stylus</scope>
+  <description>styl</description>
+</snippet>

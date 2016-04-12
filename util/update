@@ -1,0 +1,26 @@
+#!/usr/bin/env zsh
+
+set -euo pipefail
+IFS=$'\n\t'
+[[ "$USER" == 'root' ]] && echo 'do not run as root' && exit 1
+
+cd "$HOME/.config"
+
+if pgrep -f 'Sublime Text' > /dev/null; then
+  echo 'sublime text must not be running' && exit 1
+elif [[ -n "$(git status --porcelain)" ]]; then
+  echo 'there are uncommitted changes' && exit 1
+elif [[ -n "$(git log origin/master..master)" ]]; then
+  echo 'there are unpushed changes' && exit 1
+elif [[ "$(
+  curl -fsSL -m 3 -w %{http_code} \
+  -H Accept:\ application/vnd.github.chitauri-preview+sha \
+  -H If-None-Match:\ \"$(git rev-parse HEAD)\" \
+  https://api.github.com/repos/azdavis/config/commits/master
+)" == '304' ]]; then
+  echo 'already up-to-date' && exit
+fi
+
+git checkout --quiet master
+git fetch --quiet origin master
+git merge --ff-only origin/master master

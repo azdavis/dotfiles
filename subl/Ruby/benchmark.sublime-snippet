@@ -1,0 +1,24 @@
+<snippet>
+  <content><![CDATA[
+require 'benchmark'
+
+TIMES = 1_000_000
+
+Benchmark.bmbm do |b|
+  b.report 'one' do
+    TIMES.times do
+      one
+    end
+  end
+  b.report 'two' do
+    TIMES.times do
+      two
+    end
+  end
+end
+
+]]></content>
+  <tabTrigger>bm</tabTrigger>
+  <scope>source.ruby</scope>
+  <description>rb</description>
+</snippet>

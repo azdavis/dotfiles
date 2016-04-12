@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+for (unsigned i = 0, len = $1; i < len; i++) {
+  ${2://}
+}
+]]></content>
+  <tabTrigger>for</tabTrigger>
+  <scope>source.c</scope>
+  <description>c</description>
+</snippet>

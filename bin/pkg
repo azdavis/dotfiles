@@ -1,0 +1,27 @@
+#!/usr/bin/env zsh
+
+set -euo pipefail
+IFS=$'\n\t'
+[[ "$USER" == 'root' ]] && echo 'do not run as root' && exit 1
+
+cd "$HOME/.config/pkg"
+
+brew update
+brew upgrade
+brew bundle --verbose
+brew bundle cleanup --force
+brew cask cleanup --force
+brew cleanup --force
+brew prune
+brew doctor || true
+brew cask doctor || true
+
+gem install bundle
+bundle install
+bundle update
+
+npm install -g $(cat Npmfile)
+
+tlmgr update --self
+tlmgr update --all
+tlmgr install $(cat Tlmgrfile)

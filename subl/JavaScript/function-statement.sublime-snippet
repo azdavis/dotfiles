@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+function $1() {
+  ${2://}
+}
+]]></content>
+  <tabTrigger>fns</tabTrigger>
+  <scope>source.js</scope>
+  <description>js</description>
+</snippet>

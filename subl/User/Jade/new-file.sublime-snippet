@@ -1,0 +1,17 @@
+<snippet>
+  <content><![CDATA[
+doctype html
+html(lang='en-US')
+  head
+    include /base/html/_head.jade
+    title ${1:hello, world}
+    //- style: include css/style.css
+    //- script(defer src='js/script.min.js')
+  body
+    h1 ${1:hello, world}
+
+]]></content>
+  <tabTrigger>nf</tabTrigger>
+  <scope>text.jade</scope>
+  <description>jade</description>
+</snippet>

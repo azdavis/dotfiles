@@ -1,0 +1,13 @@
+#!/usr/bin/env zsh
+
+set -euo pipefail
+IFS=$'\n\t'
+[[ "$USER" == 'root' ]] && echo 'do not run as root' && exit 1
+
+cd "$HOME/.config/bin"
+
+for f in *; do
+  [[ "$f" == 'all' ]] && continue
+  echo "executing '$f'"
+  "./$f"
+done

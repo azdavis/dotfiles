@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+set -euo pipefail
+IFS=$'\n\t'
+[[ "$USER" == 'root' ]] && echo 'do not run as root' && exit 1
+
+echo -n 'hostname: '; read host_name
+
+sudo -v
+sudo scutil --set ComputerName "$host_name"
+sudo scutil --set HostName "$host_name"
+sudo scutil --set LocalHostName "$host_name"
+sudo defaults write \
+  '/Library/Preferences/safe_systemConfiguration/com.apple.smb.server' \
+  NetBIOSName -string "$host_name"
+sudo dscacheutil -flushcache

@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+print "$1\n";
+]]></content>
+  <tabTrigger>log</tabTrigger>
+  <scope>source.perl</scope>
+  <description>pl</description>
+</snippet>

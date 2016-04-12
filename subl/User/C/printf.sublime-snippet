@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+printf("$1\n");
+]]></content>
+  <tabTrigger>log</tabTrigger>
+  <scope>source.c</scope>
+  <description>c</description>
+</snippet>

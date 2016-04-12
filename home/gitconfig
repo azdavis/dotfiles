@@ -1,0 +1,19 @@
+[core]
+	attributesfile = ~/.config/misc/gitattributes
+	editor = edit -w
+	pager =  less -FRSX
+	untrackedCache = true
+[credential]
+	helper = osxkeychain
+[diff]
+	algorithm = patience
+[hub]
+	protocol = https
+[push]
+	default = simple
+[url "https://"]
+	insteadOf = git://
+[user]
+	name = azdavis
+	email = ariel.z.davis@icloud.com
+	signingKey = 0xB37B4FB7092D14CE

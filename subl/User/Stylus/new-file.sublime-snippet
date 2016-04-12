@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+@import '../../base/css/style'
+
+${1://}
+]]></content>
+  <tabTrigger>nf</tabTrigger>
+  <scope>source.stylus</scope>
+  <description>styl</description>
+</snippet>
