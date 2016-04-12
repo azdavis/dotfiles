@@ -1,9 +1,6 @@
 .DS_Store
-
-/z
-
-/subl/User/Package\ Control*
-/subl/C Improved/
-/subl/bz2/
-
 /hub
+/subl/bz2/
+/subl/C Improved/
+/subl/User/Package\ Control*
+/z
