@@ -20,3 +20,4 @@ fi
 git clone --branch master --single-branch "$remote" "$tmp"
 mv "$tmp"/.* "$tmp"/* "$name"
 rmdir "$tmp"
+echo 'install complete'
