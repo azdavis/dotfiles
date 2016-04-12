@@ -11,3 +11,12 @@
 
 [1]: https://curlpipesh.tumblr.com
 [2]: https://git.io/vVFE5
+
+### update
+
+    ~/.config/bin/update
+
+- this will check for updates in `~/.config`.
+- if updates exist, they will be applied with a git fast-forward merge
+- to avoid having to check for updates manually, auto_update can be configured.
+  peruse `home/zshrc` and `util/auto_update` for more information.
