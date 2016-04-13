@@ -18,6 +18,8 @@ else
   mkdir -p "$name"
 fi
 
+which git > /dev/null || xcode-select --install
+
 git clone --branch master --single-branch "$remote" "$tmp"
 mv "$tmp"/.* "$tmp"/* "$name"
 rmdir "$tmp"
