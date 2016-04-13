@@ -12,4 +12,6 @@ difference="$(expr "$current" - "$last")"
 if [[ "$difference" -ge "$interval" ]]; then
   echo 'updating ~/.config...'
   util/update
+else
+  exit 1
 fi
