@@ -9,7 +9,7 @@ remote='https://github.com/azdavis/config.git'
 name='.config'
 tmp=".tmp $$ $RANDOM $(date)"
 
-cd "$HOME"
+cd
 
 if [[ -d "$name" ]]; then
   [[ -d "$name/.git" ]] && err 'already installed'
