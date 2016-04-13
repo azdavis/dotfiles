@@ -118,4 +118,5 @@ if [[ -f "$f" ]]; then source "$f"; fi
 
 # auto-update
 
-"$HOME/.config/util/auto_update" && source "$HOME/.config/home/zshrc"
+u="$HOME/.config/util/auto_update"
+if "$u"; then source "$HOME/.config/home/zshrc"; fi
