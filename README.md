@@ -2,7 +2,7 @@
 
 ### install
 
-    curl -fsSL https://git.io/vVFE5 | zsh
+    curl -fsSL 'https://git.io/vVFE5' | zsh
 
 - this will install everything to `~/.config`.
 - if `~/.config` already exists, a backup will be made.
