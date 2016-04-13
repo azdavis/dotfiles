@@ -6,6 +6,7 @@
 	"installed_packages":
 	[
 		"Jade",
+		"Package Control",
 		"Stylus"
 	]
 }
