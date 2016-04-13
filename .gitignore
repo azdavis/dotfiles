@@ -1,7 +1,19 @@
+/*
 .DS_Store
-/hub
+
+!/.gitignore
+!/LICENSE.md
+!/README.md
+
+!/bin
+!/home
+!/misc
+!/mpv
+!/pkg
+!/subl
+!/util
+
 /misc/update.log
-/subl/bz2/
-/subl/C Improved/
-/subl/User/Package\ Control*
-/z
+/subl/bz2
+/subl/User/Package Control*
+!/subl/User/Package Control.sublime-settings
