@@ -9,7 +9,7 @@ setopt extendedglob
 unsetopt nomatch
 setopt menu_complete
 
-# autocompletion
+# auto-completion
 
 if [[ "$USER" != 'root' ]]; then
   autoload -U compinit
