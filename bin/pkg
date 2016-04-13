@@ -4,7 +4,7 @@ source "$HOME/.config/misc/base.sh" || exit 1
 
 cd "$HOME/.config/pkg"
 
-which brew || curl -fsSL 'https://git.io/pVOl' | ruby
+which brew > /dev/null || curl -fsSL 'https://git.io/pVOl' | ruby
 
 brew update
 brew upgrade
