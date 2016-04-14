@@ -29,7 +29,7 @@ brew 'homebrew/dupes/make', :args => ['with-default-names']
 brew 'hub'
 brew 'node', :args => ['with-openssl']
 brew 'rlwrap'
-brew 'ruby', :args => ['with-gdbm']
+brew 'ruby', :args => ['with-doc', 'with-gdbm']
 brew 'socat'
 brew 'tree'
 brew 'valgrind'
