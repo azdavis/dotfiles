@@ -4,7 +4,7 @@ source "$HOME/.config/misc/base.sh" || exit 1
 
 new_shell="$(brew --prefix)/bin/zsh"
 
-[[ "$new_shell" == "$SHELL" ]] && exit
+[[ "$new_shell" == "$SHELL" ]] && exit 0
 
 sudo -s "echo $new_shell >> /etc/shells"
 chsh -s "$new_shell"
