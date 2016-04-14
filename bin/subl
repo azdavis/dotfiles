@@ -4,10 +4,8 @@ source "$HOME/.config/misc/base.sh" || exit 1
 
 rm_irf() {
   [[ -e "$1" || -h "$1" ]] || return 0
-  echo -n "destroy $1 [yn]? "
-  read x
-  [[ "$x" == 'y' ]] || exit 1
-  rm -rf "$1"
+  echo -n "destroy $1 [yn]? " && read x
+  [[ "$x" == 'y' ]] && rm -rf "$1"
 }
 
 if pgrep -f 'Sublime Text' > /dev/null; then
@@ -31,7 +29,5 @@ done
 rm_irf '/usr/local/bin/edit'
 ln -s "$app/SharedSupport/bin/subl" '/usr/local/bin/edit'
 
-echo -n 'install package control [yn]? '
-read x
-[[ "$x" == 'y' ]] || exit 1
-open 'https://packagecontrol.io/installation'
+echo -n 'install package control [yn]? ' && read x
+[[ "$x" == 'y' ]] && open 'https://packagecontrol.io/installation'
