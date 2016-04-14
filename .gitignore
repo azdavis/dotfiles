@@ -7,13 +7,14 @@
 
 !/bin
 !/home
-!/misc
 !/mpv
 !/pkg
-!/subl
 !/util
 
+!/misc
 /misc/update.log
+
+!/subl
 /subl/bz2
 /subl/User/Package Control*
 !/subl/User/Package Control.sublime-settings
