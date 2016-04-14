@@ -18,10 +18,14 @@ brew 'openssl'
 brew 'pcre'
 brew 'readline'
 
+# optional dependencies
+
+brew 'gmp'
+
 # packages
 
 brew 'aria2'
-brew 'coreutils'
+brew 'coreutils', :args => ['with-gmp']
 brew 'findutils'
 brew 'git', :args => ['with-blk-sha1', 'with-brewed-openssl', 'with-pcre']
 brew 'gnupg'
@@ -29,7 +33,7 @@ brew 'homebrew/dupes/make', :args => ['with-default-names']
 brew 'hub'
 brew 'node', :args => ['with-openssl']
 brew 'rlwrap'
-brew 'ruby', :args => ['with-doc', 'with-gdbm']
+brew 'ruby', :args => ['with-doc', 'with-gdbm', 'with-gmp']
 brew 'socat'
 brew 'tree'
 brew 'valgrind'
