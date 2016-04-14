@@ -15,7 +15,5 @@
 /misc/update.log
 
 !/subl
-/subl/bz2
-/subl/C Improved
 /subl/User/Package Control*
 !/subl/User/Package Control.sublime-settings

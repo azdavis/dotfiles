@@ -17,9 +17,16 @@ fi
 support="$HOME/Library/Application Support/Sublime Text 3"
 app='/Applications/Sublime Text.app/Contents'
 
-rm_irf "$support"
-mkdir -p "$support"
-ln -s "$HOME/.config/subl" "$support/Packages"
+mkdir -p "$support/Packages"
+rm_irf "$support/Cache"
+rm_irf "$support/Local/Session.sublime_session"
+rm_irf "$support/Local/Auto Save Session.sublime_session"
+
+cd "$HOME/.config/subl"
+for f in *; do
+  rm_irf "$support/Packages/$f"
+  ln -s "$HOME/.config/subl/$f" "$support/Packages"
+done
 
 rm_irf '/usr/local/bin/edit'
 ln -s "$app/SharedSupport/bin/subl" '/usr/local/bin/edit'
