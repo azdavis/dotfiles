@@ -6,7 +6,7 @@ set -uo pipefail
 
 setopt autocd
 setopt extendedglob
-unsetopt nomatch
+setopt nullglob
 setopt menu_complete
 
 # auto-completion
