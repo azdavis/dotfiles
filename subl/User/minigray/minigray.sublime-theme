@@ -1,7 +1,4 @@
 [
-// TABS (REGULAR)
-
-	// Tab set
 	{
 		"class": "tabset_control",
 		"layer0.texture": "",
@@ -20,7 +17,6 @@
 		"settings": ["mouse_wheel_switches_tabs"],
 		"mouse_wheel_switch": true
 	},
-	// Tab element
 	{
 		"class": "tab_control",
 		"content_margin": [8, 0],
@@ -31,35 +27,27 @@
 		"layer0.inner_margin": [5, 5],
 		"layer0.opacity": 1
 	},
-	// Tab close state
 	{
 		"class": "tab_control",
 		"settings": ["show_tab_close_buttons"],
 		"content_margin": [8, 0]
 	},
-	// Tab hover state
 	{
 		"class": "tab_control",
 		"attributes": ["hover"]
 	},
-	// Tab active state
 	{
 		"class": "tab_control",
 		"attributes": ["selected"],
 		"layer0.texture": "",
 		"layer0.tint": [50, 50, 50]
 	},
-	// Tab dirty state (close button hidden)
 	{
 		"class": "tab_control",
 		"settings": ["!show_tab_close_buttons"],
 		"attributes": ["dirty"],
 		"content_margin": [12, 3, 7, 3]
 	},
-
-// TAB BUTTONS
-
-	// Tab close button
 	{
 		"class": "tab_close_button",
 		"layer0.texture": "User/minigray/assets/close@2x.png",
@@ -89,7 +77,6 @@
 		"parents": [{"class": "tab_control", "attributes": ["selected"]}],
 		"layer0.opacity": 1
 	},
-	// Tab dirty button
 	{
 		"class": "tab_close_button",
 		"parents": [{"class": "tab_control", "attributes": ["dirty"]}],
@@ -116,7 +103,6 @@
 		"class": "tab_close_button",
 		"parents": [{"class": "tab_control", "attributes": ["dirty", "selected"]}]
 	},
-	// Tab highlight button
 	{
 		"class": "tab_close_button",
 		"settings": ["highlight_modified_tabs"],
@@ -127,22 +113,17 @@
 		"settings": ["highlight_modified_tabs"],
 		"parents": [{"class": "tab_control", "attributes": ["dirty", "selected"]}]
 	},
-	// Tab close button hover
 	{
 		"class": "tab_close_button",
 		"settings": ["show_tab_close_buttons"],
 		"attributes": ["hover"]
 	},
-	// Tab close button pressed
 	{
 		"class": "tab_close_button",
 		"settings": ["show_tab_close_buttons"],
 		"attributes": ["pressed"],
 		"layer0.opacity": 0.5
 	},
-
-// TAB LABELS
-
 	{
 		"class": "tab_label",
 		"fade": true,
@@ -163,8 +144,6 @@
 		"attributes": ["transient"],
 		"font.italic": true
 	},
-
-	// Tab Labels font size
 	{
 		"class": "tab_label",
 		"settings": ["spacegray_tabs_font_small"],
@@ -185,9 +164,6 @@
 		"settings": ["spacegray_tabs_font_xlarge"],
 		"font.size": 14.0
 	},
-
-// FOLD BUTTONS
-
 	{
 		"class": "fold_button_control",
 		"layer0.texture": "User/minigray/assets/folder-closed@2x.png",
@@ -210,10 +186,6 @@
 		"class": "fold_button_control",
 		"attributes": ["expanded", "hover"]
 	},
-
-// STANDARD SCROLLBARS
-
-	// Standard vertical scroll bar
 	{
 		"class": "scroll_bar_control",
 		"layer0.texture": "",
@@ -222,7 +194,6 @@
 		"layer0.inner_margin": [0, 0],
 		"blur": true
 	},
-	// Standard horizontal scroll bar
 	{
 		"class": "scroll_bar_control",
 		"attributes": ["horizontal"],
@@ -231,7 +202,6 @@
 		"layer0.inner_margin": [0, 0],
 		"blur": true
 	},
-	// Standard scroll bar corner
 	{
 		"class": "scroll_corner_control",
 		"layer0.texture": "",
@@ -239,7 +209,6 @@
 		"layer0.inner_margin": [0, 0],
 		"layer0.opacity": 1
 	},
-	// Standard vertical scroll puck
 	{
 		"class": "puck_control",
 		"layer0.texture": "",
@@ -249,7 +218,6 @@
 		"content_margin": [6, 0],
 		"blur": false
 	},
-	// Standard horizontal scroll puck
 	{
 		"class": "puck_control",
 		"attributes": ["horizontal"],
@@ -258,10 +226,6 @@
 		"content_margin": [12, 6],
 		"blur": false
 	},
-
-// OVERLAY SCROLLBARS
-
-	// Overlay toggle scroll bar
 	{
 		"class": "scroll_area_control",
 		"settings": ["overlay_scroll_bars"],
@@ -272,7 +236,6 @@
 		"settings": ["!overlay_scroll_bars"],
 		"overlay": false
 	},
-	// Overlay vertical scroll bar
 	{
 		"class": "scroll_bar_control",
 		"settings": ["overlay_scroll_bars"],
@@ -281,7 +244,6 @@
 		"layer0.opacity": 0,
 		"blur": false
 	},
-	// Overlay horizontal scroll bar
 	{
 		"class": "scroll_bar_control",
 		"settings": ["overlay_scroll_bars"],
@@ -290,7 +252,6 @@
 		"layer0.opacity": 0,
 		"blur": true
 	},
-	// Overlay vertical puck
 	{
 		"class": "puck_control",
 		"settings": ["overlay_scroll_bars"],
@@ -299,7 +260,6 @@
 		"content_margin": [2, 32],
 		"blur": true
 	},
-	// Overlay horizontal puck
 	{
 		"class": "puck_control",
 		"settings": ["overlay_scroll_bars"],
@@ -309,70 +269,46 @@
 		"content_margin": [16, 2],
 		"blur": true
 	},
-	// Overlay light puck (for dark content)
 	{
 		"class": "puck_control",
 		"settings": ["overlay_scroll_bars"],
 		"attributes": ["dark"],
 		"layer0.tint": [100, 100, 100]
-
 	},
-	// Overlay light horizontal puck (for dark content)
 	{
 		"class": "puck_control",
 		"settings": ["overlay_scroll_bars"],
 		"attributes": ["horizontal", "dark"],
 		"layer0.tint": [100, 100, 100]
 	},
-
-// EMPTY WINDOW BACKGROUND
-
 	{
 		"class": "sheet_container_control",
 		"layer0.tint": [40, 40, 40],
 		"layer0.opacity": 1
 	},
-
-// GRID LAYOUT
-
 	{
 		"class": "grid_layout_control",
 		"border_size": 1,
 		"border_color": [30, 30, 30]
 	},
-
-// MINI MAP
-
 	{
 		"class": "minimap_control",
 		"viewport_color": [255, 255, 255, 20]
 	},
-
-// LABELS
-
-	// General labels
 	{
 		"class": "label_control",
 		"color": [130, 130, 130]
 	},
-	// Text field labels
 	{
 		"class": "label_control",
 		"parents": [{"class": "panel_control"}]
 	},
-	// Button labels
 	{
 		"class": "label_control",
 		"parents": [{"class": "button_control"}],
 		"font.bold": true,
 		"color": [180, 180, 180]
 	},
-
-//
-// TOOLTIP
-//
-
-	// Tooltip container
 	{
 		"class": "tool_tip_control",
 		"layer0.tint": [100, 100, 100],
@@ -380,17 +316,10 @@
 		"layer0.opacity": 1,
 		"content_margin": [4, 4]
 	},
-	// Tooltip content
 	{
 		"class": "tool_tip_label_control",
 		"color": [230, 230, 230]
 	},
-
-//
-// STATUS BAR
-//
-
-	// Status bar container
 	{
 		"class": "status_bar",
 		"layer0.texture": "",
@@ -398,23 +327,15 @@
 		"layer0.opacity": 1,
 		"content_margin": 4
 	},
-	// Status bar button
 	{
 		"class": "status_button",
 		"min_size": [92, 0]
 	},
-	// Status bar label
 	{
 		"class": "label_control",
 		"parents": [{"class": "status_bar"}],
 		"color": [100, 100, 100]
 	},
-
-//
-// SIDEBAR
-//
-
-	// Sidebar container
 	{
 		"class": "sidebar_container",
 		"layer0.opacity": 1,
@@ -422,7 +343,6 @@
 		"layer0.inner_margin": [1, 5, 2, 1],
 		"content_margin": [0, 4, 0, 0]
 	},
-	// Sidebar tree
 	{
 		"class": "sidebar_tree",
 		"row_padding": [8, 4],
@@ -431,20 +351,17 @@
 		"indent_top_level": false,
 		"dark_content": true
 	},
-	// Sidebar rows
 	{
 		"class": "tree_row",
 		"layer0.tint": [50, 50, 50],
 		"layer0.opacity": 0,
 		"layer0.inner_margin": [1, 1]
 	},
-	// Sidebar row selected
 	{
 		"class": "tree_row",
 		"attributes": ["selected"],
 		"layer0.opacity": 1
 	},
-	// Sidebar heading
 	{
 		"class": "sidebar_heading",
 		"color": [100, 100, 100],
@@ -475,13 +392,11 @@
 		"settings": ["spacegray_sidebar_tree_xlarge"],
 		"row_padding": [8, 8]
 	},
-	// Sidebar heading selected
 	{
 		"class": "sidebar_heading",
 		"parents": [{"class": "tree_row", "attributes": ["selected"]}],
 		"shadow_offset": [0, 0]
 	},
-	// Sidebar entry
 	{
 		"class": "sidebar_label",
 		"color": [130, 130, 130]
@@ -506,7 +421,6 @@
 		"settings": ["spacegray_sidebar_font_xlarge"],
 		"font.size": 14.0
 	},
-	// Sidebar folder entry
 	{
 		"class": "sidebar_label",
 		"parents": [{"class": "tree_row", "attributes": ["expandable"]}],
@@ -523,18 +437,11 @@
 		"settings": ["bold_folder_labels"],
 		"font.bold": true
 	},
-	// Sidebar entry selected
 	{
 		"class": "sidebar_label",
 		"parents": [{"class": "tree_row", "attributes": ["selected"]}],
 		"color": [230, 230, 230]
 	},
-
-//
-// SIDEBAR - OPEN FILE ICONS
-//
-
-	// Sidebar file close
 	{
 		"class": "close_button",
 		"layer0.texture": "User/minigray/assets/close@2x.png",
@@ -553,7 +460,6 @@
 		"parents": [{"class": "tree_row", "attributes": ["hover"]}],
 		"layer0.opacity": 1
 	},
-	// Sidebar file dirty
 	{
 		"class": "close_button",
 		"attributes": ["dirty"],
@@ -567,7 +473,6 @@
 		"parents": [{"class": "tree_row", "attributes": ["selected"]}],
 		"layer0.texture": "User/minigray/assets/circle@2x.png"
 	},
-	// Sidebar file close hover
 	{
 		"class": "close_button",
 		"attributes": ["hover"],
@@ -580,10 +485,6 @@
 		"layer0.texture": "User/minigray/assets/close@2x.png",
 		"layer0.tint": [100, 100, 100]
 	},
-
-// SIDEBAR - GENERAL FILE ICONS
-
-	// Sidebar group closed
 	{
 		"class": "disclosure_button_control",
 		"content_margin": [8, 8],
@@ -601,7 +502,6 @@
 		"class": "disclosure_button_control",
 		"parents": [{"class": "tree_row", "attributes": ["selected"]}]
 	},
-	// Sidebar group open
 	{
 		"class": "disclosure_button_control",
 		"attributes": ["expanded"],
@@ -618,10 +518,6 @@
 		"parents": [{"class": "tree_row", "attributes": ["selected"]}],
 		"layer0.texture": "User/minigray/assets/folder-open@2x.png"
 	},
-
-// STANDARD TEXT BUTTONS
-
-	// Default button state
 	{
 		"class": "button_control",
 		"content_margin": [4, 8, 4, 8],
@@ -630,32 +526,22 @@
 		"layer0.tint": [30, 30, 30],
 		"layer0.inner_margin": [8, 8]
 	},
-	// Hover button state
 	{
 		"class": "button_control",
 		"attributes": ["hover"],
 		"layer0.tint": [40, 40, 40]
 	},
-	// Pressed button state
 	{
 		"class": "button_control",
 		"attributes": ["pressed"],
 		"layer0.tint": [30, 30, 30]
 	},
-
-// TEXT INPUT FIELD
-
-	// Text input field item
 	{
 		"class": "text_line_control",
 		"layer0.tint": [30, 30, 30],
 		"layer0.opacity": 1,
 		"content_margin": 7
 	},
-
-// PANEL BACKGROUNDS
-
-	// Bottom panel background
 	{
 		"class": "panel_control",
 		"layer0.inner_margin": [0, 0],
@@ -663,7 +549,6 @@
 		"layer0.tint": [30, 30, 30],
 		"content_margin": 0
 	},
-	// Quick panel background
 	{
 		"class": "overlay_control",
 		"layer0.opacity": 1,
@@ -672,9 +557,6 @@
 		"layer1.opacity": 1,
 		"content_margin": 0
 	},
-
-// QUICK PANEL
-
 	{
 		"class": "quick_panel",
 		"row_padding": 8,
@@ -712,9 +594,6 @@
 		"fg": [130, 130, 130, 255],
 		"selected_fg": [130, 130, 130, 255]
 	},
-
-// MINI QUICK PANEL
-
 	{
 		"class": "mini_quick_panel_row",
 		"layer0.tint": [40, 40, 40],
@@ -725,9 +604,6 @@
 		"attributes": ["selected"],
 		"layer0.tint": [50, 50, 50]
 	},
-
-// CODE COMPLETION DROPDOWN
-
 	{
 		"class": "popup_control",
 		"content_margin": [0, 0],
@@ -756,10 +632,6 @@
 		"attributes": ["selected"],
 		"layer0.opacity": 1
 	},
-
-// BOTTOM PANEL BUTTONS
-
-	// Button group middle
 	{
 		"class": "icon_button_control",
 		"layer1.opacity": 0,
@@ -770,12 +642,10 @@
 		"attributes": ["selected"],
 		"layer0.opacity": 0
 	},
-	// Button group left
 	{
 		"class": "icon_button_control",
 		"attributes": ["left"]
 	},
-	// Button group left
 	{
 		"class": "icon_button_control",
 		"attributes": ["left"]
@@ -784,7 +654,6 @@
 		"class": "icon_button_control",
 		"attributes": ["left", "selected"]
 	},
-	// Button group right
 	{
 		"class": "icon_button_control",
 		"attributes": ["right"]
@@ -793,7 +662,6 @@
 		"class": "icon_button_control",
 		"attributes": ["right", "selected"]
 	},
-	// Button single
 	{
 		"class": "icon_button_control",
 		"attributes": ["left", "right"]
@@ -802,24 +670,18 @@
 		"class": "icon_button_control",
 		"attributes": ["left", "right", "selected"]
 	},
-
-// BOTTOM PANEL ICONS - GROUP 1
-
-	// Regex search button
 	{
 		"class": "icon_regex",
 		"layer0.texture": "User/minigray/assets/regex@2x.png",
 		"layer0.tint": [100, 100, 100],
 		"layer0.opacity": 1,
 		"content_margin": 8
-
 	},
 	{
 		"class": "icon_regex",
 		"parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
 		"layer0.tint": [230, 230, 230]
 	},
-	// Case sensitive search button
 	{
 		"class": "icon_case",
 		"layer0.texture": "User/minigray/assets/casesens@2x.png",
@@ -832,7 +694,6 @@
 		"parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
 		"layer0.tint": [230, 230, 230]
 	},
-	// Match whole word search button
 	{
 		"class": "icon_whole_word",
 		"layer0.texture": "User/minigray/assets/wholeword@2x.png",
@@ -845,10 +706,6 @@
 		"parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
 		"layer0.tint": [230, 230, 230]
 	},
-
-// BOTTOM PANEL ICONS - GROUP 1 (EXTENDED: FIND IN FILES)
-
-	// Show search context button
 	{
 		"class": "icon_context",
 		"layer0.texture": "User/minigray/assets/context@2x.png",
@@ -861,7 +718,6 @@
 		"parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
 		"layer0.tint": [230, 230, 230]
 	},
-	// Use search buffer
 	{
 		"class": "icon_use_buffer",
 		"layer0.texture": "User/minigray/assets/buffer@2x.png",
@@ -874,10 +730,6 @@
 		"parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
 		"layer0.tint": [230, 230, 230]
 	},
-
-// BOTTOM PANEL ICONS - GROUP 2
-
-	// Reverse search direction button (ST2 only)
 	{
 		"class": "icon_reverse",
 		"layer0.texture": "User/minigray/assets/reverse@2x.png",
@@ -890,7 +742,6 @@
 		"parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
 		"layer0.tint": [230, 230, 230]
 	},
-	// Search wrap button
 	{
 		"class": "icon_wrap",
 		"layer0.texture": "User/minigray/assets/wrap@2x.png",
@@ -903,7 +754,6 @@
 		"parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
 		"layer0.tint": [230, 230, 230]
 	},
-	// Search in selection button
 	{
 		"class": "icon_in_selection",
 		"layer0.texture": "User/minigray/assets/selection@2x.png",
@@ -916,10 +766,6 @@
 		"parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
 		"layer0.tint": [230, 230, 230]
 	},
-
-// BOTTOM PANEL ICONS - GROUP 3
-
-	// Preserve case button
 	{
 		"class": "icon_preserve_case",
 		"layer0.texture": "User/minigray/assets/lock@2x.png",
@@ -932,10 +778,6 @@
 		"parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
 		"layer0.tint": [230, 230, 230]
 	},
-
-// BOTTOM PANEL ICONS - GROUP 4
-
-	// Highlight results button
 	{
 		"class": "icon_highlight",
 		"layer0.texture": "User/minigray/assets/highlight@2x.png",
@@ -948,18 +790,12 @@
 		"parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
 		"layer0.tint": [230, 230, 230]
 	},
-
-// SIDEBAR FOLDER COLORING
 	{
 		"class": "disclosure_button_control",
 		"settings": ["spacegray_color_expanded_folder"],
 		"attributes": ["expanded"],
 		"layer0.tint": [230, 230, 230]
 	},
-
-// TABS SIZING
-
-	// Tab set
 	{
 		"class": "tabset_control",
 		"settings": ["spacegray_tabs_auto_width"],
@@ -985,9 +821,6 @@
 		"settings": ["spacegray_tabs_xlarge"],
 		"tab_height": 40
 	},
-
-// FIX ICON BUG BY REMOVING THEM
-
 	{
 		"class": "icon_file_type",
 		"content_margin": [0, 0],
