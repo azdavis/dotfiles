@@ -2,10 +2,15 @@
 
 source "$HOME/.config/misc/base.sh" || exit 1
 
-rm_irf() {
-  [[ -e "$1" || -h "$1" ]] || return 0
-  echo -n "destroy $1 [yn]? " && read x
+rm_rf() {
+  [[ ! -e "$1" || -h "$1" ]] && return 0
+  echo -n "rm $1 [yn]? " && read x
   [[ "$x" == 'y' ]] && rm -rf "$1"
+}
+
+ln_s() {
+  rm_rf "$2"
+  ln -is "$1" "$2"
 }
 
 wd="$HOME/.config/home"
@@ -16,8 +21,7 @@ for f in $(find *); do
   if [[ -d "$f" ]]; then
     mkdir -p "$HOME/.$f"
   else
-    rm_irf "$HOME/.$f"
-    ln -s "$wd/$f" "$HOME/.$f"
+    ln_s "$wd/$f" "$HOME/.$f"
   fi
 done
 

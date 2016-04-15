@@ -15,5 +15,5 @@
 /misc/update.log
 
 !/subl
-/subl/User/Package Control*
-!/subl/User/Package Control.sublime-settings
+/subl/Package Control*
+!/subl/Package Control.sublime-settings
