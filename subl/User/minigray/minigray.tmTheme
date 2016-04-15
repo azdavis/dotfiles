@@ -64,22 +64,11 @@
         <key>name</key>
         <string>RED</string>
         <key>scope</key>
-        <string>keyword, markup.deleted</string>
+        <string>entity.name.tag, keyword, markup.heading.markdown, markup.deleted, meta.selector, meta.tag, storage</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
           <string>#d88</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>ORANGE</string>
-        <key>scope</key>
-        <string>entity.name.tag, markup.heading.markdown, meta.selector, meta.tag</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#ea5</string>
         </dict>
       </dict>
       <dict>
@@ -97,7 +86,7 @@
         <key>name</key>
         <string>GREEN</string>
         <key>scope</key>
-        <string>markup.inserted, storage</string>
+        <string>entity.name, markup.inserted, support.class</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -108,7 +97,7 @@
         <key>name</key>
         <string>CYAN</string>
         <key>scope</key>
-        <string>constant.other.reference.link.markdown, markup.underline.link.markdown, meta.diff</string>
+        <string>markup.underline.link.markdown, meta.diff</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
