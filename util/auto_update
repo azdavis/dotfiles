@@ -12,3 +12,5 @@ difference="$(expr "$current" - "$last")"
 [[ "$difference" -lt "$interval" ]] && exit 1
 echo 'updating ~/.config...'
 util/update
+
+true

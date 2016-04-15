@@ -9,3 +9,5 @@ for f in *; do
   echo "executing '$f'"
   "./$f"
 done
+
+true

@@ -19,3 +19,5 @@ dw com.apple.print.PrintingPrefs 'Quit When Finished' -bool true
 dw com.apple.screencapture disable-shadow -bool true
 dw com.apple.dock workspaces-edge-delay -float 2.0
 dw com.apple.ImageCapture disableHotPlug -bool true
+
+true

@@ -20,3 +20,5 @@ for f in $(find *); do
     ln -s "$wd/$f" "$HOME/.$f"
   fi
 done
+
+true

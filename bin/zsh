@@ -8,3 +8,5 @@ new_shell="$(brew --prefix)/bin/zsh"
 
 sudo -s "echo $new_shell >> /etc/shells"
 chsh -s "$new_shell"
+
+true

@@ -25,3 +25,5 @@ npm install -g $(cat Npmfile)
 tlmgr update --self
 tlmgr update --all
 tlmgr install $(cat Tlmgrfile)
+
+true

@@ -26,3 +26,5 @@ github.com:
   oauth_token: $token
   protocol: https
 EOS
+
+true

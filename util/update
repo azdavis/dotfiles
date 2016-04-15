@@ -26,3 +26,5 @@ else
 fi
 
 date +%s > 'misc/update.log'
+
+true

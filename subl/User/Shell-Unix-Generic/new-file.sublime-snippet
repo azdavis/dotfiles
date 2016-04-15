@@ -7,6 +7,8 @@ IFS=\$'\n\t'
 
 ${1:#}
 
+true
+
 ]]></content>
   <tabTrigger>nf</tabTrigger>
   <scope>source.shell</scope>
