@@ -26,6 +26,6 @@ else
   echo 'restart your terminal to complete this update'
 fi
 
-date +%s > 'misc/update.log'
+date +%s > 'misc/update.last-run'
 
 true
