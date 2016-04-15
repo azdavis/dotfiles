@@ -35,6 +35,7 @@
 	"close_windows_when_empty": false,
 	"color_scheme": "Packages/User/minigray/minigray.tmTheme",
 	"copy_with_empty_selection": false,
+	"detect_indentation": false,
 	"drag_text": false,
 	"enable_tab_scrolling": false,
 	"ensure_newline_at_eof_on_save": true,
