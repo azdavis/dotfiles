@@ -2,14 +2,14 @@
 
 source "$HOME/.config/misc/base.sh" || exit 1
 
-rm_rf() {
+rm_file() {
   [[ ! -e "$1" || -h "$1" ]] && return 0
   echo -n "rm $1 [yn]? " && read x
   [[ "$x" == 'y' ]] && rm -rf "$1"
 }
 
-ln_s() {
-  rm_rf "$2"
+sym() {
+  rm_file "$2"
   ln -ins "$1" "$2"
 }
 
@@ -21,7 +21,7 @@ for f in $(find *); do
   if [[ -d "$f" ]]; then
     mkdir -p "$HOME/.$f"
   else
-    ln_s "$wd/$f" "$HOME/.$f"
+    sym "$wd/$f" "$HOME/.$f"
   fi
 done
 
