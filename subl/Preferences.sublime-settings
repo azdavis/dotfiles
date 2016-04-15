@@ -119,7 +119,7 @@
 	"show_full_path": false,
 	"spacegray_tabs_auto_width": false,
 	"spell_check": true,
-	"spelling_selector": "-(markup.raw, markup.underline, meta.preamble, meta.tag, source, support.function, text.find-in-files)",
+	"spelling_selector": "comment, -(markup.raw, markup.underline, meta.preamble, meta.tag, source, support.function, text.find-in-files)",
 	"tab_size": 2,
 	"theme": "minigray.sublime-theme",
 	"translate_tabs_to_spaces": true,
