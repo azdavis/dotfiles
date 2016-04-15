@@ -4,20 +4,24 @@ source "$HOME/.config/misc/base.sh" || exit 1
 
 alias dw='defaults write'
 
+dw -currentHost com.apple.ImageCapture disableHotPlug -bool true
+dw -g ApplePressAndHoldEnabled -bool false
+dw -g AppleShowAllExtensions -bool true
+dw -g com.apple.springing.delay -float 0.5
+dw -g com.apple.springing.enabled -bool true
+dw -g NSAutomaticSpellingCorrectionEnabled -bool false
+dw -g NSAutomaticWindowAnimationsEnabled -bool false
 dw -g NSDisableAutomaticTermination -bool true
 dw -g NSNavPanelExpandedStateForSaveMode -bool true
 dw -g NSNavPanelExpandedStateForSaveMode2 -bool true
-dw -g NSAutomaticSpellingCorrectionEnabled -bool false
-dw -g ApplePressAndHoldEnabled -bool false
-dw -g NSUseAnimatedFocusRing -bool false
-dw -g com.apple.springing.enabled -bool true
-dw -g com.apple.springing.delay -float 0.5
-dw -g NSAutomaticWindowAnimationsEnabled -bool false
-dw -g NSWindowResizeTime -float 0.1
 dw -g NSQuitAlwaysKeepsWindows -bool false
+dw -g NSUseAnimatedFocusRing -bool false
+dw -g NSWindowResizeTime -float 0.1
+dw com.apple.dock workspaces-edge-delay -float 2.0
+dw com.apple.finder DisableAllAnimations -bool true
 dw com.apple.print.PrintingPrefs 'Quit When Finished' -bool true
 dw com.apple.screencapture disable-shadow -bool true
-dw com.apple.dock workspaces-edge-delay -float 2.0
-dw com.apple.ImageCapture disableHotPlug -bool true
+dw com.apple.universalaccess reduceTransparency -bool true
+sudo nvram SystemAudioVolume=' '
 
 true
