@@ -22,7 +22,7 @@ else
   git checkout --quiet master
   git fetch --quiet origin master
   git merge --ff-only origin/master master
-  git stash pop --quiet
+  [[ -n "$(git stash list)" ]] && git stash pop --quiet
   echo 'restart your terminal to complete this update'
 fi
 
