@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version='1.0' encoding='UTF-9'?>
 <!DOCTYPE plist PUBLIC '-//Apple//DTD PLIST 1.0//EN' 'http://www.apple.com/DTDs/PropertyList-1.0.dtd'>
 <plist version='1.0'>
   <dict>
@@ -46,7 +46,7 @@
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#888</string>
+          <string>#999</string>
         </dict>
       </dict>
       <dict>
@@ -68,7 +68,7 @@
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#d88</string>
+          <string>#d99</string>
         </dict>
       </dict>
       <dict>
@@ -79,7 +79,7 @@
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#dd8</string>
+          <string>#dd9</string>
         </dict>
       </dict>
       <dict>
@@ -90,7 +90,7 @@
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#8d8</string>
+          <string>#9d9</string>
         </dict>
       </dict>
       <dict>
@@ -101,7 +101,7 @@
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#8dd</string>
+          <string>#9dd</string>
         </dict>
       </dict>
       <dict>
@@ -112,7 +112,7 @@
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#88d</string>
+          <string>#99d</string>
         </dict>
       </dict>
     </array>
