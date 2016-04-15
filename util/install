@@ -10,7 +10,6 @@ name='.config'
 tmp=".tmp$(date +%s)"
 
 cd
-
 if [[ -d "$name" ]]; then
   [[ -d "$name/.git" ]] && err 'already installed'
   zip -r "backup$name.zip" "$name"
@@ -24,5 +23,8 @@ git clone --branch master --single-branch "$remote" "$tmp"
 mv "$tmp"/.* "$tmp"/* "$name"
 rmdir "$tmp"
 echo 'install complete'
+
+echo "execute $name/bin/all [yn]? " && read x
+[[ "$x" == 'y' ]] && "$name/bin/all"
 
 true
