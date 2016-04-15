@@ -4,7 +4,6 @@ source "$HOME/.config/misc/base.sh" || exit 1
 
 alias dw='defaults write'
 
-dw -currentHost com.apple.ImageCapture disableHotPlug -bool true
 dw -g ApplePressAndHoldEnabled -bool false
 dw -g AppleShowAllExtensions -bool true
 dw -g com.apple.springing.delay -float 0.5
