@@ -1,19 +1,17 @@
 /*
 .DS_Store
 
+!/bin
+!/home
+!/misc
+!/mpv
+!/pkg
+!/subl
+!/util
 !/.gitignore
 !/LICENSE.md
 !/README.md
 
-!/bin
-!/home
-!/mpv
-!/pkg
-!/util
-
-!/misc
-/misc/update.log
-
-!/subl
-/subl/Package Control*
-!/subl/Package Control.sublime-settings
+*.cache
+*.last-run
+*-ca-bundle
