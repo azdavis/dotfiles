@@ -117,6 +117,6 @@ if [[ -f "$f" ]]; then source "$f"; fi
 
 # auto-update
 
-"$HOME/.config/util/auto_update" && source "$HOME/.config/home/zshrc"
+"$HOME/.config/util/auto_update"
 
-true
+# intentional lack of ending 'true'

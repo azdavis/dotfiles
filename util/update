@@ -23,6 +23,7 @@ else
   git fetch --quiet origin master
   git merge --ff-only origin/master master
   git stash pop --quiet
+  echo 'restart your terminal to complete this update'
 fi
 
 date +%s > 'misc/update.log'
