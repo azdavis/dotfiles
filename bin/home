@@ -10,7 +10,7 @@ rm_rf() {
 
 ln_s() {
   rm_rf "$2"
-  ln -is "$1" "$2"
+  ln -ins "$1" "$2"
 }
 
 wd="$HOME/.config/home"

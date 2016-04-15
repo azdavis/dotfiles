@@ -10,7 +10,7 @@ rm_rf() {
 
 ln_s() {
   rm_rf "$2"
-  ln -is "$1" "$2"
+  ln -ins "$1" "$2"
 }
 
 if pgrep -f 'Sublime Text' > /dev/null; then
@@ -22,7 +22,7 @@ mkdir -p "$support/Packages"
 rm_rf "$support/Cache"
 rm_rf "$support/Local/Session.sublime_session"
 rm_rf "$support/Local/Auto Save Session.sublime_session"
-ln_s "$HOME/.config/subl/$f" "$support/Packages/User"
+ln_s "$HOME/.config/subl" "$support/Packages/User"
 
 ln_s \
   '/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' \
