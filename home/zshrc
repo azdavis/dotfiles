@@ -113,7 +113,7 @@ fuck() {
 # z
 
 f="$HOME/.config/z/zshrc"
-if [[ -f "$f" ]]; then source "$f"; fi
+[[ -f "$f" ]] && source "$f"
 
 # auto-update
 
