@@ -86,7 +86,7 @@
         <key>name</key>
         <string>GREEN</string>
         <key>scope</key>
-        <string>entity.name, markup.inserted, support.class</string>
+        <string>markup.inserted, support.class, variable.other.constant, variable.language</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -97,7 +97,7 @@
         <key>name</key>
         <string>CYAN</string>
         <key>scope</key>
-        <string>markup.underline.link.markdown, meta.diff</string>
+        <string>entity.name, markup.underline.link.markdown, meta.diff</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
