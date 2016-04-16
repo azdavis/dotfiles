@@ -3,5 +3,5 @@ IRB.conf[:PROMPT][:DEFAULT] = {
   :PROMPT_I => '>>> ',
   :PROMPT_S => nil,
   :PROMPT_C => nil,
-  :RETURN => "=> %s\n"
+  :RETURN => "%s\n"
 }
