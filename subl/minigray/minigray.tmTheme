@@ -32,7 +32,7 @@
         <key>name</key>
         <string>WHITE</string>
         <key>scope</key>
-        <string>punctuation.definition.tag, string.quoted source, variable</string>
+        <string>punctuation.definition.tag, string.interpolated source, string.quoted source, variable</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -65,7 +65,7 @@
         <key>name</key>
         <string>RED</string>
         <key>scope</key>
-        <string>entity.name.tag, keyword, markup.deleted, meta.selector, meta.tag, storage</string>
+        <string>entity.name.tag, entity.name.section, keyword, markup.deleted, meta.selector, meta.tag, storage</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -87,7 +87,7 @@
         <key>name</key>
         <string>GREEN</string>
         <key>scope</key>
-        <string>markup.inserted, support.class, variable.other.constant, variable.language</string>
+        <string>markup.inserted, meta.class, meta.constant, support.class, variable.other.constant, variable.language</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -98,7 +98,7 @@
         <key>name</key>
         <string>CYAN</string>
         <key>scope</key>
-        <string>entity.name, markup.underline.link.markdown, meta.diff</string>
+        <string>entity.name.function, markup.underline.link.markdown, meta.diff</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
