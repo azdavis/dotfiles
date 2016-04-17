@@ -6,24 +6,36 @@ cd "$HOME/.config/pkg"
 
 which brew > /dev/null || curl -fsSL 'https://git.io/pVOl' | ruby
 
-brew update
-brew upgrade
-brew bundle --verbose
-brew bundle cleanup --force
-brew cask cleanup --force
-brew cleanup --force
-brew prune
-brew doctor || true
-brew cask doctor || true
+echo -n 'brew [yn]? ' && read x
+if [[ "$x" == 'y' ]]; then
+  brew update
+  brew upgrade
+  brew bundle --verbose
+  brew bundle cleanup --force
+  brew cask cleanup --force
+  brew cleanup --force
+  brew prune
+  brew doctor || true
+  brew cask doctor || true
+fi
 
-gem install bundle
-bundle install
-bundle update
+echo -n 'gem [yn]? ' && read x
+if [[ "$x" == 'y' ]]; then
+  gem install bundle
+  bundle install
+  bundle update
+fi
 
-npm install -g $(cat Npmfile)
+echo -n 'npm [yn]? ' && read x
+if [[ "$x" == 'y' ]]; then
+  npm install -g $(cat Npmfile)
+fi
 
-tlmgr update --self
-tlmgr update --all
-tlmgr install $(cat Tlmgrfile)
+echo -n 'tlmgr [yn]? ' && read x
+if [[ "$x" == 'y' ]]; then
+  tlmgr update --self
+  tlmgr update --all
+  tlmgr install $(cat Tlmgrfile)
+fi
 
 true
