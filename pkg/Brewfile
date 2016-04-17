@@ -31,13 +31,6 @@ brew 'git', :args => ['with-blk-sha1', 'with-brewed-openssl', 'with-pcre']
 brew 'gnupg'
 brew 'homebrew/dupes/make', :args => ['with-default-names']
 brew 'hub'
-brew 'mpv', :args => [
-  'with-bundle',
-  'without-jpeg',
-  'without-little-cms2',
-  'without-lua',
-  'without-youtube-dl'
-]
 brew 'node', :args => ['with-openssl']
 brew 'rlwrap'
 brew 'ruby', :args => ['with-doc', 'with-gdbm', 'with-gmp']
