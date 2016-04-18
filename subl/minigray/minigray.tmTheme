@@ -76,7 +76,7 @@
         <key>name</key>
         <string>YELLOW</string>
         <key>scope</key>
-        <string>string</string>
+        <string>string, keyword.operator.heredoc, keyword.control.heredoc-token</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
