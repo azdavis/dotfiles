@@ -18,6 +18,7 @@ elif [[ "$(
 )" == '304' ]]; then
   echo 'already up-to-date'
 else
+  echo 'updating ~/.config...'
   git stash save --quiet
   git checkout --quiet master
   git fetch --quiet origin master
