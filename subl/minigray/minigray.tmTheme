@@ -87,7 +87,7 @@
         <key>name</key>
         <string>GREEN</string>
         <key>scope</key>
-        <string>markup.inserted, meta.class, meta.constant, support.class, variable.other.constant, variable.language</string>
+        <string>entity.name.type.class, markup.inserted, meta.constant, support.class, variable.other.constant, variable.language</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>

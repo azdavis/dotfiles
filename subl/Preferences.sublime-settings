@@ -33,7 +33,7 @@
 	"caret_extra_top": 1,
 	"caret_style": "solid",
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/User/minigray/assets/dark.tmTheme",
+	"color_scheme": "Packages/User/minigray/minigray.tmTheme",
 	"copy_with_empty_selection": false,
 	"detect_indentation": false,
 	"drag_text": false,
