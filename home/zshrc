@@ -118,6 +118,6 @@ f="$HOME/.config/z/zshrc"
 
 # auto-update
 
-[[ "$USER" != 'root' ]] && "$HOME/.config/util/auto-update"
+[[ "$USER" == 'root' ]] || "$HOME/.config/util/auto-update"
 
 # intentional lack of ending 'true'
