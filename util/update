@@ -3,6 +3,7 @@
 source "$HOME/.config/misc/base.sh" || exit 1
 
 cd "$HOME/.config"
+echo 'updating ~/.config...'
 
 if pgrep -f 'Sublime Text' > /dev/null; then
   err 'sublime text must not be running'
@@ -18,7 +19,6 @@ elif [[ "$(
 )" == '304' ]]; then
   echo 'already up-to-date'
 else
-  echo 'updating ~/.config...'
   git stash save --quiet
   git checkout --quiet master
   git fetch --quiet origin master
