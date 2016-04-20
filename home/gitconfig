@@ -1,7 +1,9 @@
+[branch]
+	autosetuprebase = remote
 [core]
 	attributesfile = ~/.config/misc/gitattributes
 	editor = edit -w
-	pager =  less -FRSX
+	pager = less -FRSX
 	untrackedCache = true
 [credential]
 	helper = osxkeychain
