@@ -1,5 +1,3 @@
-[branch]
-	autosetuprebase = remote
 [core]
 	attributesfile = ~/.config/misc/gitattributes
 	editor = edit -w
