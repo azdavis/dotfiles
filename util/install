@@ -1,9 +1,13 @@
 #!/usr/bin/env zsh
 
+wrapper() {
+
+err() { echo "\e[31merror:\e[0m $1" && exit 1 }
+[[ -z "$ZSH_VERSION" ]] && err 'only run with zsh'
+[[ "$USER" == 'root' ]] && err 'do not run as root'
+
 set -euo pipefail
 IFS=$'\n\t'
-err() { echo "\e[31merror:\e[0m $1" && exit 1 }
-[[ "$USER" == 'root' ]] && err 'do not run as root'
 
 remote='https://github.com/azdavis/config.git'
 name='.config'
@@ -28,3 +32,7 @@ echo "execute $name/bin/all [yn]? " && read x
 [[ "$x" == 'y' ]] && "$name/bin/all"
 
 true
+
+}
+
+wrapper
