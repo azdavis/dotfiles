@@ -513,12 +513,16 @@
 			<real>0.0</real>
 			<key>Cursor Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.73333334922790527</real>
+				<real>0.83513772487640381</real>
+				<key>Color Space</key>
+				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.73333334922790527</real>
+				<real>0.83512353897094727</real>
 				<key>Red Component</key>
-				<real>0.73333334922790527</real>
+				<real>0.83514857292175293</real>
 			</dict>
 			<key>Cursor Guide Color</key>
 			<dict>
@@ -535,12 +539,16 @@
 			</dict>
 			<key>Cursor Text Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>1</real>
+				<real>0.83513772487640381</real>
+				<key>Color Space</key>
+				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>1</real>
+				<real>0.83512353897094727</real>
 				<key>Red Component</key>
-				<real>1</real>
+				<real>0.83514857292175293</real>
 			</dict>
 			<key>Cursor Type</key>
 			<integer>2</integer>
@@ -947,7 +955,7 @@
 			<key>Silence Bell</key>
 			<false/>
 			<key>Smart Cursor Color</key>
-			<true/>
+			<false/>
 			<key>Smart Selection Rules</key>
 			<array>
 				<dict>
@@ -1132,7 +1140,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-04-15T05:41:35Z</date>
+	<date>2016-04-20T20:35:30Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
