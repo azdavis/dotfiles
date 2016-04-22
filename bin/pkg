@@ -29,6 +29,7 @@ fi
 echo -n 'npm [yn]? ' && read x
 if [[ "$x" == 'y' ]]; then
   npm install -g $(cat Npmfile)
+  npm cache clean
 fi
 
 echo -n 'tlmgr [yn]? ' && read x
