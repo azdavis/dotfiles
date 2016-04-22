@@ -3,12 +3,12 @@
 doctype html
 html(lang='en-US')
   head
-    include /base/html/_head.jade
-    title ${1:hello, world}
+    include /_/html/head.jade
+    title $1
     style: include css/style.css
     //- script(defer src='js/script.min.js')
   body
-    h1 ${1:hello, world}
+    h1 $1
 
 ]]></content>
   <tabTrigger>nf</tabTrigger>
