@@ -4,10 +4,13 @@ source "$HOME/.config/misc/base.sh" || exit 1
 
 cd "$HOME/.config/pkg"
 
-which brew > /dev/null || curl -fsSL 'https://git.io/pVOl' | ruby
+echo -n 'brew [yn]? ' && read brew
+echo -n 'gem [yn]? ' && read gem
+echo -n 'npm [yn]? ' && read npm
+echo -n 'tlmgr [yn]? ' && read tlmgr
 
-echo -n 'brew [yn]? ' && read x
-if [[ "$x" == 'y' ]]; then
+if [[ "$brew" == 'y' ]]; then
+  which brew > /dev/null || curl -fsSL 'https://git.io/pVOl' | ruby
   brew update
   brew upgrade
   brew bundle --verbose
@@ -18,22 +21,16 @@ if [[ "$x" == 'y' ]]; then
   brew doctor || true
   brew cask doctor || true
 fi
-
-echo -n 'gem [yn]? ' && read x
-if [[ "$x" == 'y' ]]; then
+if [[ "$gem" == 'y' ]]; then
   gem install bundle
   bundle install
   bundle update
 fi
-
-echo -n 'npm [yn]? ' && read x
-if [[ "$x" == 'y' ]]; then
+if [[ "$npm" == 'y' ]]; then
   npm install -g $(cat Npmfile)
   npm cache clean
 fi
-
-echo -n 'tlmgr [yn]? ' && read x
-if [[ "$x" == 'y' ]]; then
+if [[ "$tlmgr" == 'y' ]]; then
   tlmgr update --self
   tlmgr update --all
   tlmgr install $(cat Tlmgrfile)
