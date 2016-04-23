@@ -1,45 +1,30 @@
-# taps
-
 tap 'caskroom/cask'
 tap 'homebrew/bundle'
 tap 'homebrew/core'
 tap 'homebrew/dupes'
 
-# build dependencies
-
-brew 'pkg-config'
-brew 'xz'
-
-# required dependencies
-
-brew 'gdbm'
-brew 'libyaml'
-brew 'openssl'
-brew 'pcre'
-brew 'readline'
-
-# optional dependencies
-
-brew 'gmp'
-
-# packages
-
 brew 'aria2'
 brew 'coreutils', :args => ['with-gmp']
 brew 'findutils'
+brew 'gdbm'
 brew 'git', :args => ['with-blk-sha1', 'with-brewed-openssl', 'with-pcre']
+brew 'gmp'
 brew 'gnupg'
 brew 'homebrew/dupes/make', :args => ['with-default-names']
 brew 'hub'
+brew 'libyaml'
 brew 'node', :args => ['with-openssl']
+brew 'openssl'
+brew 'pcre'
+brew 'pkg-config'
+brew 'readline'
 brew 'rlwrap'
 brew 'ruby', :args => ['with-doc', 'with-gdbm', 'with-gmp']
 brew 'socat'
 brew 'tree'
 brew 'valgrind'
+brew 'xz'
 brew 'zsh'
-
-# casks
 
 cask '1password'
 cask 'alfred'
