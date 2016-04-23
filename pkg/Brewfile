@@ -10,6 +10,7 @@ brew 'gdbm'
 brew 'git', :args => ['with-blk-sha1', 'with-brewed-openssl', 'with-pcre']
 brew 'gmp'
 brew 'gnupg'
+brew 'go', :args => ['without-cgo']
 brew 'homebrew/dupes/make', :args => ['with-default-names']
 brew 'hub'
 brew 'libyaml'
