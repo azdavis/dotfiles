@@ -10,7 +10,7 @@ rm_file() {
 
 sym() {
   rm_file "$2"
-  ln -ins "$1" "$2"
+  ln -fsn "$1" "$2"
 }
 
 if pgrep -f 'Sublime Text' > /dev/null; then
