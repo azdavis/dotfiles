@@ -25,6 +25,7 @@ if [[ "$gem" == 'y' ]]; then
   gem install bundle
   bundle install
   bundle update
+  rm -f 'Gemfile.lock'
 fi
 if [[ "$npm" == 'y' ]]; then
   npm install -g $(cat Npmfile)
