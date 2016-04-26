@@ -11,7 +11,7 @@ IFS=$'\n\t'
 
 remote='https://github.com/azdavis/config.git'
 name='.config'
-tmp=".tmp$(date +%s)"
+tmp=".tmp-$$-$RANDOM-$(date +%s)"
 
 cd
 if [[ -d "$name" ]]; then
