@@ -19,7 +19,6 @@ if [[ "$brew" == 'y' ]]; then
   brew cleanup --force
   brew prune
   brew doctor || true
-  brew cask doctor || true
 fi
 if [[ "$gem" == 'y' ]]; then
   gem install bundle
