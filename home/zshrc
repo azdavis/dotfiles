@@ -19,26 +19,22 @@ if [[ "$USER" != 'root' ]]; then
   zstyle ':completion:*' menu select
 fi
 
-# path
+# environment variables
 
 MANPATH=
 PATH=
 eval "$(/usr/libexec/path_helper)"
-MANPATH="/usr/local/opt/coreutils/libexec/gnuman:/usr/local/opt/findutils/libexec/gnuman:$MANPATH"
-PATH="/usr/local/opt/coreutils/libexec/gnubin:/usr/local/opt/findutils/libexec/gnubin:$PATH"
-export MANPATH PATH
-
-# environment variables
-
-EDITOR='edit -w'
-LESS='--tabs=2'
-LESSHISTFILE='/dev/null'
-LS_COLORS='di=34:ln=35:so=32:pi=33:ex=31:bd=30;46:cd=30;43:su=30;41:sg=30;46:tw=30;42:ow=30;43:st=30;44:'
-MORE="$LESS"
+export \
+  EDITOR='edit -w' \
+  HOMEBREW_NO_ANALYTICS='1' \
+  LESS='--tabs=2' \
+  LESSHISTFILE='/dev/null' \
+  LS_COLORS='di=34:ln=35:so=32:pi=33:ex=31:bd=30;46:cd=30;43:su=30;41:sg=30;46:tw=30;42:ow=30;43:st=30;44:' \
+  MANPATH="/usr/local/opt/coreutils/libexec/gnuman:/usr/local/opt/findutils/libexec/gnuman:$MANPATH" \
+  MORE='--tabs=2' \
+  PATH="/usr/local/opt/coreutils/libexec/gnubin:/usr/local/opt/findutils/libexec/gnubin:$PATH" \
+  RLWRAP_HOME='/dev/null'
 PS1=$'%{\e[37m%}%2~%{\e[0m%} %{\e[%(?.32.31)m%}%(!.#.$)%{\e[0m%} '
-RLWRAP_HOME='/dev/null'
-
-export EDITOR LESS LESSHISTFILE LS_COLORS MORE RLWRAP_HOME
 
 # global aliases
 
