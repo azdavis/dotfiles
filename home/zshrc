@@ -49,6 +49,7 @@ alias -g \
 
 alias \
   c='clear' \
+  scheme='rlwrap scheme' \
   vg='valgrind' \
   w='w | less'
 
