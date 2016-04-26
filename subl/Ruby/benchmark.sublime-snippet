@@ -4,13 +4,13 @@ require 'benchmark'
 
 TIMES = 1_000_000
 
-Benchmark.bmbm do |b|
-  b.report 'one' do
+Benchmark.bmbm do |bm|
+  bm.report 'one' do
     TIMES.times do
       one
     end
   end
-  b.report 'two' do
+  bm.report 'two' do
     TIMES.times do
       two
     end
