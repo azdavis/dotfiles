@@ -52,11 +52,13 @@
       </dict>
       <dict>
         <key>name</key>
-        <string>RED BACKGROUND</string>
+        <string>BLACK AND RED</string>
         <key>scope</key>
         <string>invalid</string>
         <key>settings</key>
         <dict>
+          <key>foreground</key>
+          <string>#000</string>
           <key>background</key>
           <string>#d99</string>
         </dict>
