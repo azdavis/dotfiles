@@ -76,6 +76,17 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>MAGENTA</string>
+        <key>scope</key>
+        <string>variable.language</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#d9d</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>YELLOW</string>
         <key>scope</key>
         <string>string, keyword.operator.heredoc, keyword.control.heredoc-token</string>
@@ -89,7 +100,7 @@
         <key>name</key>
         <string>GREEN</string>
         <key>scope</key>
-        <string>entity.name.type.class, markup.inserted, meta.constant, support.class, variable.other.constant, variable.language</string>
+        <string>entity.name.type.class, markup.inserted, meta.constant, support.class, variable.other.constant</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
