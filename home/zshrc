@@ -102,10 +102,10 @@ fuck() {
     return 1
   fi
   if $recurse; then
-    find $@ -type f -execdir shred $force $verbose -zfun 9 {} \;
+    find $@ -type f -execdir shred $force $verbose -zfun 8 {} \;
     rm $verbose -rf $@
   else
-    shred $force $verbose -zfun 9 $@
+    shred $force $verbose -zfun 8 $@
   fi
 }
 
