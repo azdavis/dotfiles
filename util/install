@@ -16,7 +16,7 @@ tmp=".tmp-$$-$RANDOM-$(date +%s)"
 cd
 if [[ -d "$name" ]]; then
   [[ -d "$name/.git" ]] && err 'already installed'
-  zip -r "backup$name.zip" "$name"
+  zip -r "backup-$name.zip" "$name"
 else
   mkdir -p "$name"
 fi
