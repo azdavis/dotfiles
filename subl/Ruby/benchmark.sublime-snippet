@@ -2,20 +2,25 @@
   <content><![CDATA[
 require 'benchmark'
 
-TIMES = 1_000_000
+TIMES = 100_000
+
+a = nil
+b = nil
 
 Benchmark.bmbm do |bm|
-  bm.report 'one' do
+  bm.report 'a' do
     TIMES.times do
-      one
+      a = 'a'
     end
   end
-  bm.report 'two' do
+  bm.report 'b' do
     TIMES.times do
-      two
+      b = 'b'
     end
   end
 end
+
+puts a == b
 
 ]]></content>
   <tabTrigger>bm</tabTrigger>
