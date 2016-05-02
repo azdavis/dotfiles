@@ -28,9 +28,6 @@ mv "$tmp"/.* "$tmp"/* "$name"
 rmdir "$tmp"
 echo 'install complete'
 
-echo "execute $name/bin/all [yn]? " && read x
-[[ "$x" == 'y' ]] && "$name/bin/all"
-
 true
 
 }
