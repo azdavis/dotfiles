@@ -4,23 +4,21 @@ tap 'homebrew/core'
 tap 'homebrew/dupes'
 
 brew 'aria2'
-brew 'coreutils', :args => ['with-gmp']
+brew 'coreutils', args: ['with-gmp']
 brew 'findutils'
 brew 'gdbm'
-brew 'git', :args => ['with-blk-sha1', 'with-brewed-openssl', 'with-pcre']
+brew 'git', args: ['with-blk-sha1', 'with-brewed-openssl', 'with-pcre']
 brew 'gmp'
 brew 'gnupg'
 brew 'go'
-brew 'homebrew/dupes/make', :args => ['with-default-names']
 brew 'hub'
 brew 'libyaml'
-brew 'node', :args => ['with-openssl']
 brew 'openssl'
 brew 'pcre'
 brew 'pkg-config'
 brew 'readline'
 brew 'rlwrap'
-brew 'ruby', :args => ['with-doc', 'with-gdbm', 'with-gmp']
+brew 'ruby', args: ['with-doc', 'with-gdbm', 'with-gmp']
 brew 'socat'
 brew 'tree'
 brew 'valgrind'

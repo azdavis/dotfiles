@@ -6,7 +6,6 @@ cd "$HOME/.config/pkg"
 
 echo -n 'brew [yn]? ' && read brew
 echo -n 'gem [yn]? ' && read gem
-echo -n 'npm [yn]? ' && read npm
 echo -n 'tlmgr [yn]? ' && read tlmgr
 
 if [[ "$brew" == 'y' ]]; then
@@ -25,10 +24,6 @@ if [[ "$gem" == 'y' ]]; then
   bundle install
   bundle update
   rm -f 'Gemfile.lock'
-fi
-if [[ "$npm" == 'y' ]]; then
-  npm install -g $(cat Npmfile)
-  npm cache clean
 fi
 if [[ "$tlmgr" == 'y' ]]; then
   tlmgr update --self
