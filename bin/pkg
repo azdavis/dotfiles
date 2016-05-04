@@ -23,7 +23,7 @@ if [[ "$gem" == 'y' ]]; then
   gem install bundle
   bundle install
   bundle update
-  rm -f 'Gemfile.lock'
+  rm -rf '.bundle' 'Gemfile.lock'
 fi
 if [[ "$tlmgr" == 'y' ]]; then
   tlmgr update --self
