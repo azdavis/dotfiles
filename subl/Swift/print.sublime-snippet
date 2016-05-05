@@ -1,8 +1,0 @@
-<snippet>
-  <content><![CDATA[
-print(${1:true})
-]]></content>
-  <tabTrigger>log</tabTrigger>
-  <scope>source.swift</scope>
-  <description>swift</description>
-</snippet>

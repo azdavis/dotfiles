@@ -5,10 +5,6 @@
 	],
 	"installed_packages":
 	[
-		"C Improved",
-		"Jade",
-		"Package Control",
-		"Stylus",
-		"Swift"
+		"Package Control"
 	]
 }
