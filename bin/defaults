@@ -21,6 +21,5 @@ dw com.apple.finder DisableAllAnimations -bool true
 dw com.apple.print.PrintingPrefs 'Quit When Finished' -bool true
 dw com.apple.screencapture disable-shadow -bool true
 dw com.apple.universalaccess reduceTransparency -bool true
-sudo nvram SystemAudioVolume=' '
 
 true
