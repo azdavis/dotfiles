@@ -16,6 +16,7 @@ dw -g NSNavPanelExpandedStateForSaveMode2 -bool true
 dw -g NSQuitAlwaysKeepsWindows -bool false
 dw -g NSUseAnimatedFocusRing -bool false
 dw -g NSWindowResizeTime -float 0.1
+dw com.apple.dock autohide-delay -int 9999
 dw com.apple.dock workspaces-edge-delay -float 2.0
 dw com.apple.finder DisableAllAnimations -bool true
 dw com.apple.print.PrintingPrefs 'Quit When Finished' -bool true
