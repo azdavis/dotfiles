@@ -22,4 +22,6 @@ dw com.apple.print.PrintingPrefs 'Quit When Finished' -bool true
 dw com.apple.screencapture disable-shadow -bool true
 dw com.apple.universalaccess reduceTransparency -bool true
 
+killall Dock Finder
+
 true
