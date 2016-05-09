@@ -4,7 +4,7 @@
 
     curl -fsSL 'https://git.io/vVFE5' | zsh
 
-- this will install everything to `~/.config`.
+- this will clone the repository to `~/.config`.
 - if `~/.config` already exists, a backup will be made.
 - to avoid the [security risk][1] of [executing code over the network][2],
   download and run the [install script][3] in two separate steps.
