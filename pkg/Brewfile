@@ -4,7 +4,6 @@ tap 'homebrew/core'
 
 brew 'aria2'
 brew 'coreutils', args: ['with-gmp']
-brew 'findutils'
 brew 'gdbm'
 brew 'git', args: ['with-blk-sha1', 'with-brewed-openssl', 'with-pcre']
 brew 'gmp'
