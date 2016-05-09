@@ -31,9 +31,7 @@ export \
   LESS='--tabs=2' \
   LESSHISTFILE='/dev/null' \
   LS_COLORS='di=34:ln=35:so=32:pi=33:ex=31:bd=30;46:cd=30;43:su=30;41:sg=30;46:tw=30;42:ow=30;43:st=30;44:' \
-  MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH" \
   MORE='--tabs=2' \
-  PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH" \
   RLWRAP_HOME='/dev/null'
 PS1=$'%{\e[37m%}%2~%{\e[0m%} %{\e[%(?.32.31)m%}%(!.#.$)%{\e[0m%} '
 
@@ -59,8 +57,7 @@ alias \
   fgrep='fgrep --color=auto' \
   grep='grep --color=auto' \
   ls='ls -bh --color=auto --group-directories-first' \
-  say='rlwrap say -v Samantha' \
-  top='top -o cpu -s 2 -i 2'
+  say='rlwrap say -v Samantha'
 
 # alias for git shortcuts
 
