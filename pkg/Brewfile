@@ -3,7 +3,7 @@ tap 'homebrew/bundle'
 tap 'homebrew/core'
 
 brew 'aria2'
-brew 'coreutils', args: ['with-gmp']
+# brew 'coreutils', args: ['with-gmp']
 brew 'gdbm'
 brew 'git', args: ['with-blk-sha1', 'with-brewed-openssl', 'with-pcre']
 brew 'gmp'
