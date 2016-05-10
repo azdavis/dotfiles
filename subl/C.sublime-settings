@@ -1,9 +1,10 @@
 {
 	"extensions":
 	[
-		"cpp",
-		"hpp",
-		"ino"
+		"c",
+		"h",
+		"c0",
+		"c1"
 	],
 	"tab_size": 4
 }
