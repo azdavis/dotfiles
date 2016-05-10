@@ -2,7 +2,7 @@ tap 'caskroom/cask'
 tap 'homebrew/bundle'
 tap 'homebrew/core'
 
-brew 'coreutils', args: ['with-gmp']
+brew 'coreutils'
 brew 'gdbm'
 brew 'git', args: ['with-blk-sha1', 'with-brewed-openssl', 'with-pcre']
 brew 'gmp'
