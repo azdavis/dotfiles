@@ -2,13 +2,11 @@ tap 'caskroom/cask'
 tap 'homebrew/bundle'
 tap 'homebrew/core'
 
-brew 'aria2'
 brew 'coreutils', args: ['with-gmp']
 brew 'gdbm'
 brew 'git', args: ['with-blk-sha1', 'with-brewed-openssl', 'with-pcre']
 brew 'gmp'
 brew 'gnupg'
-brew 'go'
 brew 'hub'
 brew 'libyaml'
 brew 'openssl'
@@ -18,7 +16,6 @@ brew 'readline'
 brew 'rlwrap'
 brew 'ruby', args: ['with-doc', 'with-gdbm', 'with-gmp']
 brew 'socat'
-brew 'tree'
 brew 'valgrind'
 brew 'xz'
 brew 'zsh'
