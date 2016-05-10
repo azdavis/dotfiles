@@ -5,6 +5,7 @@
 	],
 	"installed_packages":
 	[
+		"Elm Language Support",
 		"Package Control"
 	]
 }
