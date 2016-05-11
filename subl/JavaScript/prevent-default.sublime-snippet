@@ -1,8 +1,0 @@
-<snippet>
-  <content><![CDATA[
-e.preventDefault()
-]]></content>
-  <tabTrigger>pdf</tabTrigger>
-  <scope>source.js</scope>
-  <description>js</description>
-</snippet>

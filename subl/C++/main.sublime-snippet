@@ -1,8 +1,8 @@
 <snippet>
   <content><![CDATA[
 int main(int argc, char const *argv[]) {
-	puts("${1:hello, world}");
-	return 0;
+  puts("${1:hello, world}");
+  return 0;
 }
 ]]></content>
   <tabTrigger>main</tabTrigger>
