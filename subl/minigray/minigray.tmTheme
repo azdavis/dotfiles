@@ -109,7 +109,7 @@
         <key>name</key>
         <string>CYAN</string>
         <key>scope</key>
-        <string>entity.name.function, markup.underline.link.markdown, meta.diff</string>
+        <string>entity.name.function, markup.underline.link, meta.diff</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
