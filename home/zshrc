@@ -95,7 +95,7 @@ fuck() {
   fi
   if $recurse; then
     find $@ -type f -execdir shred $force $verbose -zfun 8 {} \;
-    rm $verbose -rf $@
+    rm $force $verbose -r $@
   else
     shred $force $verbose -zfun 8 $@
   fi
