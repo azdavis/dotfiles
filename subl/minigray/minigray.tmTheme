@@ -65,7 +65,7 @@
         <key>name</key>
         <string>RED</string>
         <key>scope</key>
-        <string>entity.name.tag, entity.name.section, keyword, markup.deleted, meta.selector, meta.tag, storage</string>
+        <string>entity.name.tag, entity.name.section, keyword, markup.deleted, meta.selector, meta.tag, storage, support.function.be.latex, support.function.general.tex</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
