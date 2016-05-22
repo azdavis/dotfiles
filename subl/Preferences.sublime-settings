@@ -23,11 +23,7 @@
 		"*.pdf",
 		"*.tgz",
 		"*.otf",
-		"*.ttf",
-		"*.html",
-		"*.css",
-		"*.min.js",
-		"*.b"
+		"*.ttf"
 	],
 	"caret_style": "solid",
 	"close_windows_when_empty": false,
@@ -98,6 +94,7 @@
 		"plugin",
 		"png",
 		"programmatically",
+		"python3",
 		"sublicense",
 		"sudo",
 		"usr",
