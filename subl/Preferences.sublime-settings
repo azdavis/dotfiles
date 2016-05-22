@@ -29,8 +29,6 @@
 		"*.min.js",
 		"*.b"
 	],
-	"caret_extra_bottom": 1,
-	"caret_extra_top": 1,
 	"caret_style": "solid",
 	"close_windows_when_empty": false,
 	"color_scheme": "Packages/User/minigray/minigray.tmTheme",
@@ -72,7 +70,7 @@
 		"node_modules",
 		"*.app"
 	],
-	"font_face": "Input",
+	"font_face": "menlo",
 	"font_options":
 	[
 		"no_bold",
@@ -108,8 +106,8 @@
 	"indent_guide_options":
 	[
 	],
-	"line_padding_bottom": 2,
-	"line_padding_top": 2,
+	"line_padding_bottom": 1,
+	"line_padding_top": 1,
 	"move_to_limit_on_up_down": false,
 	"open_files_in_new_window": false,
 	"remember_full_screen": true,
