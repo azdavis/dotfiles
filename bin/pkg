@@ -11,40 +11,40 @@ echo -n 'tlmgr [yn]? ' && read do_tlmgr
 
 
 if [[ "$do_brew" == 'y' ]]; then
-  which brew > /dev/null || curl -fsSL 'https://git.io/pVOl' | ruby
-  brew update
-  brew upgrade
-  formula="$(brew --prefix)/Library/Formula"
-  cd "$formula"
-  git apply "$HOME/.config/misc/coreutils-remove-g-prefix.patch"
-  cd "$HOME/.config/pkg"
-  brew bundle --verbose
-  cd "$formula"
-  git checkout 'coreutils.rb'
-  cd "$HOME/.config/pkg"
-  brew bundle cleanup --force
-  brew cask cleanup --force
-  brew cleanup --force
-  brew prune
-  brew doctor || true
+    which brew > /dev/null || curl -fsSL 'https://git.io/pVOl' | ruby
+    brew update
+    brew upgrade
+    formula="$(brew --prefix)/Library/Formula"
+    cd "$formula"
+    git apply "$HOME/.config/misc/coreutils-remove-g-prefix.patch"
+    cd "$HOME/.config/pkg"
+    brew bundle --verbose
+    cd "$formula"
+    git checkout 'coreutils.rb'
+    cd "$HOME/.config/pkg"
+    brew bundle cleanup --force
+    brew cask cleanup --force
+    brew cleanup --force
+    brew prune
+    brew doctor || true
 fi
 
 if [[ "$do_gem" == 'y' ]]; then
-  gem install bundle
-  bundle install
-  bundle update
-  rm -rf "$HOME/.gem" "$HOME/.bundle" '.bundle' 'Gemfile.lock'
+    gem install bundle
+    bundle install
+    bundle update
+    rm -rf "$HOME/.gem" "$HOME/.bundle" '.bundle' 'Gemfile.lock'
 fi
 
 if [[ "$do_npm" == 'y' ]]; then
-  npm install -g $(cat Npmfile)
-  npm cache clean
+    npm install -g $(cat Npmfile)
+    npm cache clean
 fi
 
 if [[ "$do_tlmgr" == 'y' ]]; then
-  tlmgr update --self
-  tlmgr update --all
-  tlmgr install $(cat Tlmgrfile)
+    tlmgr update --self
+    tlmgr update --all
+    tlmgr install $(cat Tlmgrfile)
 fi
 
 true

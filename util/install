@@ -15,10 +15,10 @@ tmp=".tmp-$$-$RANDOM-$(date +%s)"
 
 cd
 if [[ -d "$name" ]]; then
-  [[ -d "$name/.git" ]] && err 'already installed'
-  zip -r "backup-$name.zip" "$name"
+    [[ -d "$name/.git" ]] && err 'already installed'
+    zip -r "backup-$name.zip" "$name"
 else
-  mkdir -p "$name"
+    mkdir -p "$name"
 fi
 
 which git > /dev/null || xcode-select --install

@@ -3,14 +3,14 @@
 source "$HOME/.config/misc/base.sh" || exit 1
 
 rm_file() {
-  [[ ! -e "$1" || -h "$1" ]] && return 0
-  echo -n "rm $1 [yn]? " && read x
-  [[ "$x" == 'y' ]] && rm -rf "$1"
+    [[ ! -e "$1" || -h "$1" ]] && return 0
+    echo -n "rm $1 [yn]? " && read x
+    [[ "$x" == 'y' ]] && rm -rf "$1"
 }
 
 sym() {
-  rm_file "$2"
-  ln -fsn "$1" "$2"
+    rm_file "$2"
+    ln -fsn "$1" "$2"
 }
 
 wd="$HOME/.config/home"
@@ -18,11 +18,11 @@ cd "$wd"
 
 touch "$HOME/.hushlogin"
 for f in $(find *); do
-  if [[ -d "$f" ]]; then
-    mkdir -p "$HOME/.$f"
-  else
-    sym "$wd/$f" "$HOME/.$f"
-  fi
+    if [[ -d "$f" ]]; then
+        mkdir -p "$HOME/.$f"
+    else
+        sym "$wd/$f" "$HOME/.$f"
+    fi
 done
 
 true

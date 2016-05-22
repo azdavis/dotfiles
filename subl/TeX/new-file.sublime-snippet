@@ -1,5 +1,5 @@
 <snippet>
-  <content><![CDATA[
+	<content><![CDATA[
 \documentclass[12pt,fleqn]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
@@ -21,7 +21,7 @@ Content
 \end{document}
 
 ]]></content>
-  <tabTrigger>nf</tabTrigger>
-  <scope>text.tex</scope>
-  <description>tex</description>
+	<tabTrigger>nf</tabTrigger>
+	<scope>text.tex</scope>
+	<description>tex</description>
 </snippet>

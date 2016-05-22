@@ -1,5 +1,5 @@
 <snippet>
-  <content><![CDATA[
+	<content><![CDATA[
 #!/usr/bin/env zsh
 
 set -euo pipefail
@@ -10,7 +10,7 @@ ${1:#}
 true
 
 ]]></content>
-  <tabTrigger>nf</tabTrigger>
-  <scope>source.shell</scope>
-  <description>shell</description>
+	<tabTrigger>nf</tabTrigger>
+	<scope>source.shell</scope>
+	<description>shell</description>
 </snippet>

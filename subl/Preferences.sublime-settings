@@ -121,7 +121,7 @@
 	"spacegray_tabs_auto_width": false,
 	"spell_check": true,
 	"spelling_selector": "comment, -(markup.raw, markup.underline, meta.preamble, meta.tag, source, support.function, text.find-in-files)",
-	"tab_size": 2,
+	"tab_size": 4,
 	"theme": "minigray.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_automatic_white_space": false,

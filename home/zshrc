@@ -12,11 +12,11 @@ setopt menu_complete
 # auto-completion
 
 if [[ "$USER" != 'root' ]]; then
-  autoload -U compinit
-  compinit
-  zstyle ':completion:*' insert-tab pending
-  zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
-  zstyle ':completion:*' menu select
+    autoload -U compinit
+    compinit
+    zstyle ':completion:*' insert-tab pending
+    zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+    zstyle ':completion:*' menu select
 fi
 
 # environment variables
@@ -25,50 +25,50 @@ MANPATH=
 PATH=
 eval "$(/usr/libexec/path_helper)"
 export \
-  EDITOR='edit -w' \
-  HOMEBREW_CASK_OPTS='--appdir=/Applications' \
-  HOMEBREW_NO_ANALYTICS='1' \
-  LESS='--tabs=2' \
-  LESSHISTFILE='/dev/null' \
-  LS_COLORS='di=34:ln=35:so=32:pi=33:ex=31:bd=30;46:cd=30;43:su=30;41:sg=30;46:tw=30;42:ow=30;43:st=30;44:' \
-  MORE='--tabs=2' \
-  RLWRAP_HOME='/dev/null'
+    EDITOR='edit -w' \
+    HOMEBREW_CASK_OPTS='--appdir=/Applications' \
+    HOMEBREW_NO_ANALYTICS='1' \
+    LESS='--tabs=2' \
+    LESSHISTFILE='/dev/null' \
+    LS_COLORS='di=34:ln=35:so=32:pi=33:ex=31:bd=30;46:cd=30;43:su=30;41:sg=30;46:tw=30;42:ow=30;43:st=30;44:' \
+    MORE='--tabs=2' \
+    RLWRAP_HOME='/dev/null'
 PS1=$'%{\e[37m%}%2~%{\e[0m%} %{\e[%(?.32.31)m%}%(!.#.$)%{\e[0m%} '
 
 # global aliases
 
 alias -g \
-  qq='&> /dev/null &'
+    qq='&> /dev/null &'
 
 # alias
 
 alias \
-  c='clear' \
-  df='df -h' \
-  du='du -sh' \
-  egrep='egrep --color=auto' \
-  fgrep='fgrep --color=auto' \
-  grep='grep --color=auto' \
-  ls='ls -bh --color=auto --group-directories-first' \
-  say='rlwrap say -v Samantha' \
-  vg='valgrind' \
-  w='w | less'
+    c='clear' \
+    df='df -h' \
+    du='du -sh' \
+    egrep='egrep --color=auto' \
+    fgrep='fgrep --color=auto' \
+    grep='grep --color=auto' \
+    ls='ls -bh --color=auto --group-directories-first' \
+    say='rlwrap say -v Samantha' \
+    vg='valgrind' \
+    w='w | less'
 
 # alias for git shortcuts
 
 alias \
-  git='hub' \
-  ga='hub add' \
-  gb='hub branch' \
-  gc='hub commit -v' \
-  gd='hub diff' \
-  gi='hub init' \
-  gk='hub checkout' \
-  gl='hub log --decorate --oneline' \
-  gm='hub merge' \
-  gp='hub push' \
-  gr='hub reset' \
-  gs='hub status -sb'
+    git='hub' \
+    ga='hub add' \
+    gb='hub branch' \
+    gc='hub commit -v' \
+    gd='hub diff' \
+    gi='hub init' \
+    gk='hub checkout' \
+    gl='hub log --decorate --oneline' \
+    gm='hub merge' \
+    gp='hub push' \
+    gr='hub reset' \
+    gs='hub status -sb'
 
 # 'user@host' window title
 
@@ -77,28 +77,28 @@ precmd() { print -Pn "\e]2;%n@%M\a" }
 # destroy some files
 
 fuck() {
-  force=
-  recurse=false
-  verbose=
-  while getopts frv opt; do
-    case "$opt" in
-    (f) force='-f' ;;
-    (r) recurse=true ;;
-    (v) verbose='-v' ;;
-    (*) return 1 ;;
-    esac
-  done
-  shift $((OPTIND-1))
-  if [[ ${#@} == 0 ]]; then
-    echo "$0: missing operand"
-    return 1
-  fi
-  if $recurse; then
-    find $@ -type f -execdir shred $force $verbose -zfun 8 {} \;
-    rm $force $verbose -r $@
-  else
-    shred $force $verbose -zfun 8 $@
-  fi
+    force=
+    recurse=false
+    verbose=
+    while getopts frv opt; do
+        case "$opt" in
+        (f) force='-f' ;;
+        (r) recurse=true ;;
+        (v) verbose='-v' ;;
+        (*) return 1 ;;
+        esac
+    done
+    shift $((OPTIND-1))
+    if [[ ${#@} == 0 ]]; then
+        echo "$0: missing operand"
+        return 1
+    fi
+    if $recurse; then
+        find $@ -type f -execdir shred $force $verbose -zfun 8 {} \;
+        rm $force $verbose -r $@
+    else
+        shred $force $verbose -zfun 8 $@
+    fi
 }
 
 # z

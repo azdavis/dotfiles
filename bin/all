@@ -5,9 +5,9 @@ source "$HOME/.config/misc/base.sh" || exit 1
 cd "$HOME/.config/bin"
 
 for f in *; do
-  [[ "$f" == 'all' ]] && continue
-  echo "executing '$f'"
-  "./$f"
+    [[ "$f" == 'all' ]] && continue
+    echo "executing '$f'"
+    "./$f"
 done
 
 true

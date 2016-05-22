@@ -1,8 +1,0 @@
-<snippet>
-  <content><![CDATA[
-puts ${1:true}
-]]></content>
-  <tabTrigger>log</tabTrigger>
-  <scope>source.ruby</scope>
-  <description>rb</description>
-</snippet>

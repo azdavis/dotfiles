@@ -1,7 +1,0 @@
-IRB.conf[:PROMPT][:DEFAULT] = {
-  :AUTO_INDENT => true,
-  :PROMPT_I => '> ',
-  :PROMPT_S => nil,
-  :PROMPT_C => nil,
-  :RETURN => "\e[33m%s\e[0m\n"
-}

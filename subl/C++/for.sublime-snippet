@@ -1,10 +1,10 @@
 <snippet>
-  <content><![CDATA[
+	<content><![CDATA[
 for (size_t i = 0; i < $1; i++) {
-  ${2://}
+    ${2://}
 }
 ]]></content>
-  <tabTrigger>for</tabTrigger>
-  <scope>source.c</scope>
-  <description>c</description>
+	<tabTrigger>for</tabTrigger>
+	<scope>source.c</scope>
+	<description>c</description>
 </snippet>

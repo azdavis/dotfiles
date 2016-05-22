@@ -23,8 +23,8 @@ EOS
 cat <<-EOS > "$HOME/.config/hub"
 github.com:
 - user: $user_name
-  oauth_token: $token
-  protocol: https
+    oauth_token: $token
+    protocol: https
 EOS
 
 true
