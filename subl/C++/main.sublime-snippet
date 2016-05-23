@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-int main(int argc, char *argv[]) {
+int main(int argc, char **argv) {
     puts("${1:hello, world}");
     return 0;
 }
