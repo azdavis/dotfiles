@@ -8,18 +8,20 @@ b = nil
 
 Benchmark.bmbm do |bm|
   bm.report 'a' do
+    a = nil
     TIMES.times do
       a = nil
     end
   end
   bm.report 'b' do
+    b = nil
     TIMES.times do
       b = nil
     end
   end
 end
 
-raise 'no' unless a == b
+puts a == b
 
 ]]></content>
 	<tabTrigger>bmbm</tabTrigger>
