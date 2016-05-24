@@ -1,4 +1,7 @@
 autoprefixer-stylus
+npm
 pug-cli
 stylus
 surge
+typescript
+uglifyjs
