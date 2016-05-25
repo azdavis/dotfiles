@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+() => {
+	${1://}
+}
+]]></content>
+	<tabTrigger>fne</tabTrigger>
+	<scope>source.ts</scope>
+	<description>ts</description>
+</snippet>
