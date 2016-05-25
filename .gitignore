@@ -15,3 +15,5 @@
 *.cache
 *.last-run
 *-ca-bundle
+
+TypeScript.tmLanguage
