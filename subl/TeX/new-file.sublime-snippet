@@ -15,7 +15,7 @@
 {\today}
 {Title}
 
-Content
+${1:Content}
 
 \end{mla}
 \end{document}
