@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-\documentclass[12pt,fleqn]{article}
+\documentclass[12pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 \usepackage{mla}
