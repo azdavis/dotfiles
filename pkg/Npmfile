@@ -5,3 +5,4 @@ stylus
 surge
 typescript
 uglifyjs
+tslint
