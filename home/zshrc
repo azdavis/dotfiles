@@ -43,7 +43,7 @@ alias \
     grep='grep --color=auto' \
     ls='ls -bh --color=auto --group-directories-first'
 
-# alias for git shortcuts
+# git
 
 alias \
     git='hub' \
