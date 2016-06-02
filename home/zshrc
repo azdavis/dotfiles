@@ -59,14 +59,10 @@ alias \
 alias \
     git='hub' \
     ga='hub add' \
-    gb='hub branch' \
     gc='hub commit -v' \
     gd='hub diff' \
-    gi='hub init' \
     gk='hub checkout' \
     gl='hub log --decorate --oneline' \
-    gm='hub merge' \
-    gp='hub push' \
     gr='hub reset' \
     gs='hub status -sb'
 
