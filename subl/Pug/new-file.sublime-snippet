@@ -9,7 +9,7 @@ html(lang='en')
         //- style: include index.css
         //- script: include index.js
     body
-        ${2:p content}
+        ${2:div content}
 
 ]]></content>
 	<tabTrigger>nf</tabTrigger>
