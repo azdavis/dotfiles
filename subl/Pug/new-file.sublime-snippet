@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(name='viewport'
+            content='width=device-width,initial-scale=1,user-scalable=no')
+        title ${1:title}
+        //- style: include index.css
+        //- script: include index.js
+    body
+        ${2:p content}
+
+]]></content>
+	<tabTrigger>nf</tabTrigger>
+	<scope>text.pug</scope>
+	<description>pug</description>
+</snippet>
