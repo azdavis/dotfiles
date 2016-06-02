@@ -6,8 +6,8 @@ html(lang='en')
         meta(name='viewport'
             content='width=device-width,initial-scale=1,user-scalable=no')
         title ${1:title}
-        //- style: include index.css
-        //- script: include index.js
+        style: include index.css
+        script: include index.js
     body
         ${2:div content}
 
