@@ -21,9 +21,6 @@ fi
 
 # environment variables
 
-MANPATH=
-PATH=
-eval "$(/usr/libexec/path_helper)"
 export \
     EDITOR='edit -w' \
     HOMEBREW_CASK_OPTS='--appdir=/Applications' \
