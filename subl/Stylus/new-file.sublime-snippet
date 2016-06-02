@@ -10,6 +10,7 @@ html
 
 body
     margin 0
+    padding 10px
 
 ]]></content>
 	<tabTrigger>nf</tabTrigger>
