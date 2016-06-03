@@ -1,8 +1,8 @@
 <snippet>
-	<content><![CDATA[
+    <content><![CDATA[
 puts ${1:true}
 ]]></content>
-	<tabTrigger>log</tabTrigger>
-	<scope>source.ruby</scope>
-	<description>rb</description>
+    <tabTrigger>log</tabTrigger>
+    <scope>source.ruby</scope>
+    <description>rb</description>
 </snippet>

@@ -1,8 +1,8 @@
 <snippet>
-	<content><![CDATA[
+    <content><![CDATA[
 print(${1:True})
 ]]></content>
-	<tabTrigger>log</tabTrigger>
-	<scope>source.python</scope>
-	<description>py</description>
+    <tabTrigger>log</tabTrigger>
+    <scope>source.python</scope>
+    <description>py</description>
 </snippet>

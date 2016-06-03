@@ -1,8 +1,8 @@
 <snippet>
-	<content><![CDATA[
+    <content><![CDATA[
 puts("$1");
 ]]></content>
-	<tabTrigger>logs</tabTrigger>
-	<scope>source.c</scope>
-	<description>c</description>
+    <tabTrigger>logs</tabTrigger>
+    <scope>source.c</scope>
+    <description>c</description>
 </snippet>

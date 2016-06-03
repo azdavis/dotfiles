@@ -1,5 +1,5 @@
 <snippet>
-	<content><![CDATA[
+    <content><![CDATA[
 #include <stdio.h>
 
 int main() {
@@ -8,7 +8,7 @@ int main() {
 }
 
 ]]></content>
-	<tabTrigger>nf</tabTrigger>
-	<scope>source.c</scope>
-	<description>c</description>
+    <tabTrigger>nf</tabTrigger>
+    <scope>source.c</scope>
+    <description>c</description>
 </snippet>

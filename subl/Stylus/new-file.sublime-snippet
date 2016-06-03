@@ -1,5 +1,5 @@
 <snippet>
-	<content><![CDATA[
+    <content><![CDATA[
 *
     box-sizing border-box
 
@@ -15,7 +15,7 @@ body
     padding 10px
 
 ]]></content>
-	<tabTrigger>nf</tabTrigger>
-	<scope>source.stylus</scope>
-	<description>stylus</description>
+    <tabTrigger>nf</tabTrigger>
+    <scope>source.stylus</scope>
+    <description>stylus</description>
 </snippet>

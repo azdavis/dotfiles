@@ -1,10 +1,10 @@
 <snippet>
-	<content><![CDATA[
+    <content><![CDATA[
 function $1() {
-	${2://}
+    ${2://}
 }
 ]]></content>
-	<tabTrigger>fns</tabTrigger>
-	<scope>source.ts</scope>
-	<description>ts</description>
+    <tabTrigger>fns</tabTrigger>
+    <scope>source.ts</scope>
+    <description>ts</description>
 </snippet>

@@ -1,5 +1,5 @@
 <snippet>
-	<content><![CDATA[
+    <content><![CDATA[
 #!/usr/bin/env ruby
 
 # frozen_string_literal: true
@@ -7,7 +7,7 @@
 puts ${1:'hello, world'}
 
 ]]></content>
-	<tabTrigger>nf</tabTrigger>
-	<scope>source.ruby</scope>
-	<description>rb</description>
+    <tabTrigger>nf</tabTrigger>
+    <scope>source.ruby</scope>
+    <description>rb</description>
 </snippet>

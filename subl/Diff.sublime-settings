@@ -1,11 +1,11 @@
 {
-	"extensions":
-	[
-		"COMMIT_EDITMSG"
-	],
-	"rulers":
-	[
-		50,
-		72
-	]
+    "extensions":
+    [
+        "COMMIT_EDITMSG"
+    ],
+    "rulers":
+    [
+        50,
+        72
+    ]
 }

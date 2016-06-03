@@ -1,12 +1,12 @@
 <snippet>
-	<content><![CDATA[
+    <content><![CDATA[
 public class $1 {
     public $1 {
     }
 }
 
 ]]></content>
-	<tabTrigger>nf</tabTrigger>
-	<scope>source.java</scope>
-	<description>java</description>
+    <tabTrigger>nf</tabTrigger>
+    <scope>source.java</scope>
+    <description>java</description>
 </snippet>

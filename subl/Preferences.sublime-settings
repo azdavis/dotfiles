@@ -1,130 +1,130 @@
 {
-	"always_show_minimap_viewport": true,
-	"animation_enabled": false,
-	"auto_complete_commit_on_tab": true,
-	"auto_complete_with_fields": true,
-	"binary_file_patterns":
-	[
-		"*.jpg",
-		"*.jpeg",
-		"*.png",
-		"*.gif",
-		"*.ttf",
-		"*.tga",
-		"*.dds",
-		"*.ico",
-		"*.eot",
-		"*.pdf",
-		"*.swf",
-		"*.jar",
-		"*.zip",
-		"*.mp3",
-		"*.mp4",
-		"*.pdf",
-		"*.tgz",
-		"*.otf",
-		"*.ttf"
-	],
-	"caret_style": "solid",
-	"close_windows_when_empty": false,
-	"color_scheme": "Packages/User/minigray/minigray.tmTheme",
-	"copy_with_empty_selection": false,
-	"detect_indentation": false,
-	"drag_text": false,
-	"enable_tab_scrolling": false,
-	"ensure_newline_at_eof_on_save": true,
-	"file_exclude_patterns":
-	[
-		"*.pyc",
-		"*.pyo",
-		"*.exe",
-		"*.dll",
-		"*.obj",
-		"*.o",
-		"*.a",
-		"*.lib",
-		"*.so",
-		"*.dylib",
-		"*.ncb",
-		"*.sdf",
-		"*.suo",
-		"*.pdb",
-		"*.idb",
-		".DS_Store",
-		"*.class",
-		"*.psd",
-		"*.db",
-		"*.sublime-workspace"
-	],
-	"find_selected_text": true,
-	"fold_buttons": false,
-	"folder_exclude_patterns":
-	[
-		".git",
-		".hg",
-		".svn",
-		"node_modules",
-		"*.app"
-	],
-	"font_face": "input",
-	"font_options":
-	[
-		"no_bold",
-		"no_italic",
-		"gray_antialias"
-	],
-	"font_size": 16,
-	"hot_exit": false,
-	"ignored_packages":
-	[
-		"Vintage"
-	],
-	"ignored_words":
-	[
-		"app",
-		"ariel",
-		"azdavis",
-		"config",
-		"css",
-		"dev",
-		"env",
-		"github",
-		"html",
-		"icloud",
-		"noop",
-		"plugin",
-		"png",
-		"programmatically",
-		"python3",
-		"rlwrap",
-		"sublicense",
-		"sudo",
-		"usr",
-		"xyz",
-		"zsh"
-	],
-	"indent_guide_options":
-	[
-	],
-	"move_to_limit_on_up_down": false,
-	"open_files_in_new_window": false,
-	"remember_full_screen": true,
-	"rulers":
-	[
-		79
-	],
-	"scroll_past_end": false,
-	"show_encoding": true,
-	"show_full_path": false,
-	"spacegray_tabs_auto_width": false,
-	"spell_check": true,
-	"spelling_selector": "comment, -(markup.raw, markup.underline, meta.preamble, meta.tag, source, support.function, text.find-in-files)",
-	"tab_size": 4,
-	"theme": "minigray.sublime-theme",
-	"translate_tabs_to_spaces": true,
-	"trim_automatic_white_space": false,
-	"trim_trailing_white_space_on_save": true,
-	"use_simple_full_screen": true,
-	"word_wrap": true,
-	"wrap_width": 0
+    "always_show_minimap_viewport": true,
+    "animation_enabled": false,
+    "auto_complete_commit_on_tab": true,
+    "auto_complete_with_fields": true,
+    "binary_file_patterns":
+    [
+        "*.jpg",
+        "*.jpeg",
+        "*.png",
+        "*.gif",
+        "*.ttf",
+        "*.tga",
+        "*.dds",
+        "*.ico",
+        "*.eot",
+        "*.pdf",
+        "*.swf",
+        "*.jar",
+        "*.zip",
+        "*.mp3",
+        "*.mp4",
+        "*.pdf",
+        "*.tgz",
+        "*.otf",
+        "*.ttf"
+    ],
+    "caret_style": "solid",
+    "close_windows_when_empty": false,
+    "color_scheme": "Packages/User/minigray/minigray.tmTheme",
+    "copy_with_empty_selection": false,
+    "detect_indentation": false,
+    "drag_text": false,
+    "enable_tab_scrolling": false,
+    "ensure_newline_at_eof_on_save": true,
+    "file_exclude_patterns":
+    [
+        "*.pyc",
+        "*.pyo",
+        "*.exe",
+        "*.dll",
+        "*.obj",
+        "*.o",
+        "*.a",
+        "*.lib",
+        "*.so",
+        "*.dylib",
+        "*.ncb",
+        "*.sdf",
+        "*.suo",
+        "*.pdb",
+        "*.idb",
+        ".DS_Store",
+        "*.class",
+        "*.psd",
+        "*.db",
+        "*.sublime-workspace"
+    ],
+    "find_selected_text": true,
+    "fold_buttons": false,
+    "folder_exclude_patterns":
+    [
+        ".git",
+        ".hg",
+        ".svn",
+        "node_modules",
+        "*.app"
+    ],
+    "font_face": "input",
+    "font_options":
+    [
+        "no_bold",
+        "no_italic",
+        "gray_antialias"
+    ],
+    "font_size": 16,
+    "hot_exit": false,
+    "ignored_packages":
+    [
+        "Vintage"
+    ],
+    "ignored_words":
+    [
+        "app",
+        "ariel",
+        "azdavis",
+        "config",
+        "css",
+        "dev",
+        "env",
+        "github",
+        "html",
+        "icloud",
+        "noop",
+        "plugin",
+        "png",
+        "programmatically",
+        "python3",
+        "rlwrap",
+        "sublicense",
+        "sudo",
+        "usr",
+        "xyz",
+        "zsh"
+    ],
+    "indent_guide_options":
+    [
+    ],
+    "move_to_limit_on_up_down": false,
+    "open_files_in_new_window": false,
+    "remember_full_screen": true,
+    "rulers":
+    [
+        79
+    ],
+    "scroll_past_end": false,
+    "show_encoding": true,
+    "show_full_path": false,
+    "spacegray_tabs_auto_width": false,
+    "spell_check": true,
+    "spelling_selector": "comment, -(markup.raw, markup.underline, meta.preamble, meta.tag, source, support.function, text.find-in-files)",
+    "tab_size": 4,
+    "theme": "minigray.sublime-theme",
+    "translate_tabs_to_spaces": true,
+    "trim_automatic_white_space": false,
+    "trim_trailing_white_space_on_save": true,
+    "use_simple_full_screen": true,
+    "word_wrap": true,
+    "wrap_width": 0
 }

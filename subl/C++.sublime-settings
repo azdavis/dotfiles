@@ -1,8 +1,8 @@
 {
-	"extensions":
-	[
-		"cpp",
-		"hpp",
-		"ino"
-	]
+    "extensions":
+    [
+        "cpp",
+        "hpp",
+        "ino"
+    ]
 }

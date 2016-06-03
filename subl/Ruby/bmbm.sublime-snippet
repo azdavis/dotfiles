@@ -1,5 +1,5 @@
 <snippet>
-	<content><![CDATA[
+    <content><![CDATA[
 require 'benchmark'
 
 TIMES = 10_000
@@ -24,7 +24,7 @@ end
 puts a == b
 
 ]]></content>
-	<tabTrigger>bmbm</tabTrigger>
-	<scope>source.ruby</scope>
-	<description>rb</description>
+    <tabTrigger>bmbm</tabTrigger>
+    <scope>source.ruby</scope>
+    <description>rb</description>
 </snippet>
