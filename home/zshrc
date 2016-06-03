@@ -79,10 +79,10 @@ fuck() {
         return 1
     fi
     if $r; then
-        find $@ -type f -execdir shred -zun $f $v 8 {} \;
-        rm -r $f $v $@
+        find $@ -type f -execdir shred $f $v -zun 8 {} \;
+        rm $f $v -r $@
     else
-        shred -zun $f $v 8 $@
+        shred $f $v -zun 8 $@
     fi
 }
 
