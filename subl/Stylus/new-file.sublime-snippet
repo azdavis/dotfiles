@@ -4,6 +4,8 @@
     box-sizing border-box
 
 html
+    background #ddd
+    color #222
     font-family sans-serif
     -ms-text-size-adjust 100%
     -webkit-text-size-adjust 100%
