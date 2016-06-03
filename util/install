@@ -2,9 +2,9 @@
 
 _() {
 
-err() { echo "\e[31merror:\e[0m $1" && exit 1 }
-[[ "$ZSH_VERSION" ]] || err 'only run with zsh'
-[[ "$USER" == 'root' ]] && err 'do not run as root'
+abort() { echo "\e[31merror:\e[0m $1" && exit 1 }
+[[ "$ZSH_VERSION" ]] || abort 'only run with zsh'
+[[ "$USER" == 'root' ]] && abort 'do not run as root'
 
 set -euo pipefail
 IFS=$'\n\t'
@@ -15,7 +15,7 @@ tmp=".tmp-$$-$RANDOM-$(date +%s)"
 
 cd
 if [[ -d "$name" ]]; then
-    [[ -d "$name/.git" ]] && err 'already installed'
+    [[ -d "$name/.git" ]] && abort 'already installed'
     zip -r "backup-$name.zip" "$name"
 else
     mkdir -p "$name"

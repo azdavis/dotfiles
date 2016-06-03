@@ -6,11 +6,11 @@ cd "$HOME/.config"
 echo 'updating ~/.config...'
 
 if pgrep -f 'Sublime Text' > /dev/null; then
-    err 'sublime text must not be running'
+    abort 'sublime text must not be running'
 elif [[ "$(git log origin/master..master)" ]]; then
-    err 'there are unpushed changes'
+    abort 'there are unpushed changes'
 elif ! ping -c 1 -t 3 github.com &> /dev/null; then
-    err 'could not connect to github.com'
+    abort 'could not connect to github.com'
 elif [[ "$(
     curl -fsSL -m 3 -w %{http_code} \
     -H Accept:\ application/vnd.github.chitauri-preview+sha \

@@ -14,7 +14,7 @@ sym() {
 }
 
 if pgrep -f 'Sublime Text' > /dev/null; then
-    err 'sublime text must not be running'
+    abort 'sublime text must not be running'
 fi
 
 support="$HOME/Library/Application Support/Sublime Text 3"
