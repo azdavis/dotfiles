@@ -63,8 +63,7 @@
         ".git",
         ".hg",
         ".svn",
-        "node_modules",
-        "*.app"
+        "node_modules"
     ],
     "font_face": "input",
     "font_options":
