@@ -19,11 +19,11 @@ elif [[ "$(
 )" == '304' ]]; then
     echo 'already up-to-date'
 else
-    git stash save --quiet
-    git checkout --quiet master
-    git fetch --quiet origin master
+    git stash save -q
+    git checkout -q master
+    git fetch -q origin master
     git merge --ff-only origin/master master
-    [[ -n "$(git stash list)" ]] && git stash pop --quiet
+    [[ -n "$(git stash list)" ]] && git stash pop -q
     echo 'iTerm may need to be restarted to finish applying this update'
 fi
 
