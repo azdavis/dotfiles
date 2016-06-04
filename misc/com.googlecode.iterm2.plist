@@ -224,11 +224,11 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>640 37 640 495 0 0 1280 800 </string>
+	<string>640 37 640 361 0 0 1280 800 </string>
 	<key>NSWindow Frame Preferences</key>
 	<string>269 342 606 456 0 0 1280 800 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 156 1010 627 0 0 1280 800 </string>
+	<string>85 88 1110 627 0 0 1280 800 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 130 1010 657 0 0 1280 800 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -510,7 +510,7 @@
 			<key>Close Sessions On End</key>
 			<true/>
 			<key>Columns</key>
-			<integer>100</integer>
+			<integer>110</integer>
 			<key>Command</key>
 			<string></string>
 			<key>Cursor Boost</key>
@@ -1146,7 +1146,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-06-02T04:10:24Z</date>
+	<date>2016-06-04T14:44:55Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>

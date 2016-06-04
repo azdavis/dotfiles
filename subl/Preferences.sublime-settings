@@ -107,7 +107,6 @@
     ],
     "move_to_limit_on_up_down": false,
     "open_files_in_new_window": false,
-    "remember_full_screen": true,
     "rulers":
     [
         79
@@ -123,7 +122,6 @@
     "translate_tabs_to_spaces": true,
     "trim_automatic_white_space": false,
     "trim_trailing_white_space_on_save": true,
-    "use_simple_full_screen": true,
     "word_wrap": true,
     "wrap_width": 0
 }
