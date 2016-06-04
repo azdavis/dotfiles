@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-source "$HOME/.config/misc/base.sh" || exit 1
+source "$HOME/.config/etc/base.sh" || exit 1
 
 cd "$HOME/.config"
 echo 'updating ~/.config...'
@@ -27,6 +27,6 @@ else
     echo 'iTerm may need to be restarted to finish applying this update'
 fi
 
-date +%s > 'misc/update.last-run'
+date +%s > 'etc/update.last-run'
 
 true

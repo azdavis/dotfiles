@@ -1,5 +1,5 @@
 [core]
-	attributesfile = ~/.config/misc/gitattributes
+	attributesfile = ~/.config/etc/gitattributes
 	editor = edit -w
 	pager = less -FRSX
 	untrackedCache = true

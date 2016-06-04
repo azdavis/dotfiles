@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-source "$HOME/.config/misc/base.sh" || exit 1
+source "$HOME/.config/etc/base.sh" || exit 1
 
 cd "$HOME/.config/pkg"
 
@@ -16,7 +16,7 @@ if [[ "$do_brew" == 'y' ]]; then
     brew upgrade
     formula="$(brew --prefix)/Library/Formula"
     cd "$formula"
-    git apply "$HOME/.config/misc/coreutils-remove-g-prefix.patch"
+    git apply "$HOME/.config/etc/coreutils-remove-g-prefix.patch"
     cd "$HOME/.config/pkg"
     brew bundle --verbose
     cd "$formula"

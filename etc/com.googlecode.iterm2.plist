@@ -1126,7 +1126,7 @@
 	<key>PointerActions</key>
 	<dict/>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/azdavis/.config/misc/</string>
+	<string>/Users/azdavis/.config/etc/</string>
 	<key>Print In Black And White</key>
 	<true/>
 	<key>PromptOnQuit</key>
