@@ -1,6 +1,7 @@
 <snippet>
     <content><![CDATA[
-for (size_t i = 0; i < $1; i++) {
+size_t i;
+for (i = 0; i < $1; i++) {
     ${2://}
 }
 ]]></content>
