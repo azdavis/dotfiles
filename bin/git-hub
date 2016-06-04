@@ -9,18 +9,17 @@ echo -n 'token: ' && read token
 git config --global user.name "$username"
 git config --global user.email "$email"
 
-git credential-osxkeychain erase <<-EOS
+git credential-osxkeychain erase <<EOS
 host=github.com
 protocol=https
 EOS
-git credential-osxkeychain store <<-EOS
+git credential-osxkeychain store <<EOS
 host=github.com
 protocol=https
 password=$token
 username=$username
 EOS
-
-cat <<-EOS > "$HOME/.config/hub"
+cat <<EOS > "$HOME/.config/hub"
 github.com:
 - user: $username
   oauth_token: $token
