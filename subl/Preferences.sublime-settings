@@ -89,6 +89,7 @@
         "env",
         "github",
         "html",
+        "http",
         "icloud",
         "noop",
         "plugin",
