@@ -8,6 +8,7 @@
 !/pkg
 !/subl
 !/util
+!/.gitattributes
 !/.gitignore
 !/LICENSE.md
 !/README.md
