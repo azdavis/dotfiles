@@ -1,22 +1,22 @@
 <plist>
 <dict>
-	<key>settings</key>
-	<array>
-		<dict>
-			<key>settings</key>
-			<dict>
-				<key>background</key>
-				<string>#1e1e1e</string>
-				<key>caret</key>
-				<string>#c8c8c8</string>
-				<key>foreground</key>
-				<string>#c8c8c8</string>
-				<key>invisibles</key>
-				<string>#828282</string>
-				<key>selection</key>
-				<string>#646464</string>
-			</dict>
-		</dict>
-	</array>
+    <key>settings</key>
+    <array>
+        <dict>
+            <key>settings</key>
+            <dict>
+                <key>background</key>
+                <string>#1e1e1e</string>
+                <key>caret</key>
+                <string>#c8c8c8</string>
+                <key>foreground</key>
+                <string>#c8c8c8</string>
+                <key>invisibles</key>
+                <string>#828282</string>
+                <key>selection</key>
+                <string>#646464</string>
+            </dict>
+        </dict>
+    </array>
 </dict>
 </plist>
