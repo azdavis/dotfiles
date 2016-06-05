@@ -6,9 +6,9 @@ set -uo pipefail
 
 setopt autocd
 setopt extendedglob
-setopt menu_complete
+setopt menucomplete
 setopt nullglob
-setopt rm_star_silent
+setopt rmstarsilent
 
 # auto-completion
 
