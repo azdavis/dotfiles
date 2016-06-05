@@ -1,7 +1,7 @@
-From 42f9040301745e692e457580616cdcef5a0f8f81 Mon Sep 17 00:00:00 2001
+From 04a962d25b278d83ca590ac99153915f041a30f9 Mon Sep 17 00:00:00 2001
 From: azdavis <ariel.z.davis@icloud.com>
-Date: Sat, 4 Jun 2016 23:55:09 -0400
-Subject: [PATCH] coreutils-remove-g-prefix
+Date: Mon, 9 May 2016 17:01:07 -0400
+Subject: [PATCH] coreutils: remove 'g' prefix
 
 ---
  Formula/coreutils.rb | 14 --------------
@@ -11,9 +11,15 @@ diff --git a/Formula/coreutils.rb b/Formula/coreutils.rb
 index e2af40d..e9e539b 100644
 --- a/Formula/coreutils.rb
 +++ b/Formula/coreutils.rb
-@@ -46 +45,0 @@ class Coreutils < Formula
+@@ -43,24 +43,10 @@ class Coreutils < Formula
+     system "./bootstrap" if build.head?
+     args = %W[
+       --prefix=#{prefix}
 -      --program-prefix=g
-@@ -51,13 +49,0 @@ class Coreutils < Formula
+     ]
+     args << "--without-gmp" if build.without? "gmp"
+     system "./configure", *args
+     system "make", "install"
 -
 -    # Symlink all commands into libexec/gnubin without the 'g' prefix
 -    coreutils_filenames(bin).each do |cmd|
@@ -27,6 +33,9 @@ index e2af40d..e9e539b 100644
 -    # Symlink non-conflicting binaries
 -    bin.install_symlink "grealpath" => "realpath"
 -    man1.install_symlink "grealpath.1" => "realpath.1"
+   end
+ 
+   def caveats; <<-EOS.undent
 -- 
-2.8.3
+2.8.2
 
