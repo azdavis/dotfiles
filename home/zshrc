@@ -2,12 +2,13 @@
 
 set -uo pipefail
 
-# set opts
+# set opts (warning: dangerous)
 
 setopt autocd
 setopt extendedglob
-setopt nullglob
 setopt menu_complete
+setopt nullglob
+setopt rm_star_silent
 
 # auto-completion
 
