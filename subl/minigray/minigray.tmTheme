@@ -73,7 +73,7 @@
                 <key>name</key>
                 <string>MAGENTA</string>
                 <key>scope</key>
-                <string>variable.language.this, constant.language.this</string>
+                <string>variable.language, constant.language.this</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
