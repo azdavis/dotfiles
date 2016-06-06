@@ -186,6 +186,10 @@
     <integer>1</integer>
     <key>ShouldRestoreContent</key>
     <false/>
+    <key>ShowActiveProcessArgumentsInTabTitle</key>
+    <false/>
+    <key>ShowActiveProcessArgumentsInTitle</key>
+    <false/>
     <key>ShowDimensionsInTitle</key>
     <false/>
     <key>TextBoldColor</key>
