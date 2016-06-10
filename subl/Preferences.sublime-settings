@@ -57,6 +57,7 @@
         "*.so",
         "*.sublime-workspace",
         "*.suo",
+        "*.tmp",
         ".DS_Store"
     ],
     "find_selected_text": true,
