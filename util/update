@@ -24,7 +24,7 @@ else
     git fetch -q origin master
     git merge --ff-only origin/master master
     [[ -n "$(git stash list)" ]] && git stash pop -q
-    echo 'iTerm may need to be restarted to finish applying this update'
+    echo 'your terminal may need to be restarted to finish this update'
 fi
 
 date +%s > 'etc/update.last-run'
