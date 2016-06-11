@@ -1,6 +1,8 @@
 # config
 
-### install
+a potpourri of os x config files
+
+## install
 
     curl -fsSL 'https://git.io/vVFE5' | zsh
 
