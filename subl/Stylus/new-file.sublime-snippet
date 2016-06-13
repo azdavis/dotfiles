@@ -1,12 +1,12 @@
 <snippet>
     <content><![CDATA[
-*
-    box-sizing border-box
+light = #ddd
+dark = #222
 
 html
-    background #ddd
-    color #222
-    font-family sans-serif
+    background light
+    color dark
+    font-family Input, Menlo, Consolas, "Liberation Mono", monospace
     -ms-text-size-adjust 100%
     -webkit-text-size-adjust 100%
 
