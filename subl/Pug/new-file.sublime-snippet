@@ -2,7 +2,7 @@
     <content><![CDATA[
 html(lang='en')
     head
-        include /base/head.pug
+        include /include/head.pug
         title ${1:title}
         style: include index.css
     body
