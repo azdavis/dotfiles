@@ -49,7 +49,7 @@ alias \
 alias \
     git='hub' \
     ga='hub add' \
-    gc='hub commit -v' \
+    gc='hub commit' \
     gd='hub diff' \
     gk='hub checkout' \
     gl='hub log --decorate --oneline' \
