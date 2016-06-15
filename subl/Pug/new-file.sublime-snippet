@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-html(lang='en')
+html(lang="en")
   head
     include /include/head.pug
     title ${1:title}

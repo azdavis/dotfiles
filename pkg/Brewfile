@@ -1,34 +1,34 @@
-tap 'caskroom/cask'
-tap 'homebrew/bundle'
-tap 'homebrew/core'
+tap "caskroom/cask"
+tap "homebrew/bundle"
+tap "homebrew/core"
 
-brew 'coreutils', args: ['with-gmp']
-brew 'gdbm'
-brew 'ghc'
-brew 'git', args: ['with-blk-sha1', 'with-brewed-openssl', 'with-pcre']
-brew 'gmp'
-brew 'gnupg'
-brew 'hub'
-brew 'libyaml'
-brew 'node'
-brew 'openssl'
-brew 'pcre'
-brew 'pkg-config'
-brew 'readline'
-brew 'rlwrap'
-brew 'ruby', args: ['with-doc', 'with-gdbm', 'with-gmp']
-brew 'socat'
-brew 'valgrind'
-brew 'xz'
-brew 'zsh'
+brew "coreutils", args: ["with-gmp"]
+brew "gdbm"
+brew "ghc"
+brew "git", args: ["with-blk-sha1", "with-brewed-openssl", "with-pcre"]
+brew "gmp"
+brew "gnupg"
+brew "hub"
+brew "libyaml"
+brew "node"
+brew "openssl"
+brew "pcre"
+brew "pkg-config"
+brew "readline"
+brew "rlwrap"
+brew "ruby", args: ["with-doc", "with-gdbm", "with-gmp"]
+brew "socat"
+brew "valgrind"
+brew "xz"
+brew "zsh"
 
-cask '1password'
-cask 'alfred'
-cask 'appcleaner'
-cask 'basictex'
-cask 'discord'
-cask 'dropbox'
-cask 'flux'
-cask 'google-chrome'
-cask 'java'
-cask 'minecraft'
+cask "1password"
+cask "alfred"
+cask "appcleaner"
+cask "basictex"
+cask "discord"
+cask "dropbox"
+cask "flux"
+cask "google-chrome"
+cask "java"
+cask "minecraft"

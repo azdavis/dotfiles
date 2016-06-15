@@ -1,19 +1,19 @@
 <snippet>
     <content><![CDATA[
-require 'benchmark'
+require "benchmark"
 
 TIMES = 10_000
 a = nil
 b = nil
 
 Benchmark.bmbm do |bm|
-  bm.report 'a' do
+  bm.report "a" do
     a = nil
     TIMES.times do
       a = nil
     end
   end
-  bm.report 'b' do
+  bm.report "b" do
     b = nil
     TIMES.times do
       b = nil

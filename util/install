@@ -3,18 +3,18 @@
 _() {
 
 abort() { echo "\e[31merror:\e[0m $1" && exit 1 }
-[[ "$USER" == 'root' ]] && abort 'do not run as root'
+[[ "$USER" == "root" ]] && abort "do not run as root"
 
 set -euo pipefail
-IFS=$'\n\t'
+IFS=$"\n\t"
 
-remote='https://github.com/azdavis/config.git'
-name='.config'
+remote="https://github.com/azdavis/config.git"
+name=".config"
 tmp=".tmp-$$-$RANDOM-$(date +%s)"
 
 cd
 if [[ -d "$name" ]]; then
-    [[ -d "$name/.git" ]] && abort 'already installed'
+    [[ -d "$name/.git" ]] && abort "already installed"
     zip -r "backup-$name.zip" "$name"
 else
     mkdir -p "$name"
@@ -25,7 +25,7 @@ which git > /dev/null || xcode-select --install
 git clone --branch master --single-branch "$remote" "$tmp"
 mv "$tmp"/.* "$tmp"/* "$name"
 rmdir "$tmp"
-echo 'install complete'
+echo "install complete"
 
 true
 

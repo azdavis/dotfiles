@@ -4,9 +4,9 @@ source "$HOME/.config/etc/base.sh" || exit 1
 
 cd "$HOME/.config"
 
-interval='86400'
+interval="86400"
 current="$(date +%s)"
-last="$(cat 'etc/update.last-run' 2> /dev/null || echo 0)"
+last="$(cat "etc/update.last-run" 2> /dev/null || echo 0)"
 difference="$(expr "$current" - "$last")"
 
 [[ "$difference" -lt "$interval" ]] && exit 0

@@ -3,30 +3,30 @@
 source "$HOME/.config/etc/base.sh" || exit 1
 
 cd "$HOME/.config"
-echo 'updating ~/.config...'
+echo "updating ~/.config..."
 
-if pgrep -f 'Sublime Text' > /dev/null; then
-    abort 'sublime text must not be running'
+if pgrep -f "Sublime Text" > /dev/null; then
+    abort "sublime text must not be running"
 elif [[ "$(git log origin/master..master)" ]]; then
-    abort 'there are unpushed changes'
+    abort "there are unpushed changes"
 elif ! ping -c 1 -t 3 github.com &> /dev/null; then
-    abort 'could not connect to github.com'
+    abort "could not connect to github.com"
 elif [[ "$(
     curl -fsSL -m 3 -w %{http_code} \
     -H Accept:\ application/vnd.github.chitauri-preview+sha \
     -H If-None-Match:\ \"$(git rev-parse HEAD)\" \
     https://api.github.com/repos/azdavis/config/commits/master
-)" == '304' ]]; then
-    echo 'already up-to-date'
+)" == "304" ]]; then
+    echo "already up-to-date"
 else
     git stash save -q
     git checkout -q master
     git fetch -q origin master
     git merge --ff-only origin/master master
     [[ -n "$(git stash list)" ]] && git stash pop -q
-    echo 'your terminal may need to be restarted to finish this update'
+    echo "your terminal may need to be restarted to finish this update"
 fi
 
-date +%s > 'etc/update.last-run'
+date +%s > "etc/update.last-run"
 
 true

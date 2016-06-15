@@ -12,51 +12,51 @@ setopt rmstarsilent
 
 # auto-completion
 
-if [[ "$USER" != 'root' ]]; then
+if [[ "$USER" != "root" ]]; then
     autoload -U compinit
     compinit
-    zstyle ':completion:*' insert-tab pending
-    zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
-    zstyle ':completion:*' menu select
+    zstyle ":completion:*" insert-tab pending
+    zstyle ":completion:*" matcher-list "m:{a-zA-Z}={A-Za-z}"
+    zstyle ":completion:*" menu select
 fi
 
 # environment variables
 
 export \
-    EDITOR='edit -w' \
-    HOMEBREW_CASK_OPTS='--appdir=/Applications' \
-    HOMEBREW_NO_ANALYTICS='1' \
-    LESS='--tabs=4' \
-    LESSHISTFILE='/dev/null' \
-    LS_COLORS='di=34:ln=35:so=32:pi=33:ex=31:bd=30;46:cd=30;43:su=30;41:sg=30;46:tw=30;42:ow=30;43:st=30;44:' \
-    MORE='--tabs=4' \
-    RLWRAP_HOME='/dev/null'
-PS1=$'%{\e[37m%}%2~%{\e[0m%} %{\e[%(?.32.31)m%}%(!.#.$)%{\e[0m%} '
+    EDITOR="edit -w" \
+    HOMEBREW_CASK_OPTS="--appdir=/Applications" \
+    HOMEBREW_NO_ANALYTICS="1" \
+    LESS="--tabs=4" \
+    LESSHISTFILE="/dev/null" \
+    LS_COLORS="di=34:ln=35:so=32:pi=33:ex=31:bd=30;46:cd=30;43:su=30;41:sg=30;46:tw=30;42:ow=30;43:st=30;44:" \
+    MORE="--tabs=4" \
+    RLWRAP_HOME="/dev/null"
+PS1=$"%{\e[37m%}%2~%{\e[0m%} %{\e[%(?.32.31)m%}%(!.#.$)%{\e[0m%} "
 
 # alias
 
 alias \
-    c='clear' \
-    df='df -h' \
-    du='du -sh' \
-    egrep='egrep --color=auto' \
-    fgrep='fgrep --color=auto' \
-    grep='grep --color=auto' \
-    ls='ls -bh --color=auto --group-directories-first'
+    c="clear" \
+    df="df -h" \
+    du="du -sh" \
+    egrep="egrep --color=auto" \
+    fgrep="fgrep --color=auto" \
+    grep="grep --color=auto" \
+    ls="ls -bh --color=auto --group-directories-first"
 
 # git
 
 alias \
-    git='hub' \
-    ga='hub add' \
-    gc='hub commit' \
-    gd='hub diff' \
-    gk='hub checkout' \
-    gl='hub log --decorate --oneline' \
-    gr='hub reset' \
-    gs='hub status -sb'
+    git="hub" \
+    ga="hub add" \
+    gc="hub commit" \
+    gd="hub diff" \
+    gk="hub checkout" \
+    gl="hub log --decorate --oneline" \
+    gr="hub reset" \
+    gs="hub status -sb"
 
-# 'user@host' window title
+# "user@host" window title
 
 precmd() { print -Pn "\e]2;%n@%M\a" }
 
@@ -68,9 +68,9 @@ fuck() {
     v=
     while getopts frv opt; do
         case "$opt" in
-        (f) f='-f' ;;
+        (f) f="-f" ;;
         (r) r=true ;;
-        (v) v='-v' ;;
+        (v) v="-v" ;;
         (*) return 1 ;;
         esac
     done
@@ -94,6 +94,6 @@ f="$HOME/.config/z/zshrc"
 
 # auto-update
 
-[[ "$USER" == 'root' ]] || "$HOME/.config/util/auto-update"
+[[ "$USER" == "root" ]] || "$HOME/.config/util/auto-update"
 
-# intentional lack of ending 'true'
+# intentional lack of ending "true"

@@ -5,7 +5,7 @@ source "$HOME/.config/etc/base.sh" || exit 1
 rm_file() {
     [[ ! -e "$1" || -h "$1" ]] && return 0
     echo -n "rm $1 [yn]? " && read x
-    [[ "$x" == 'y' ]] && rm -rf "$1"
+    [[ "$x" == "y" ]] && rm -rf "$1"
 }
 
 sym() {
@@ -13,8 +13,8 @@ sym() {
     ln -fsn "$1" "$2"
 }
 
-if pgrep -f 'Sublime Text' > /dev/null; then
-    abort 'sublime text must not be running'
+if pgrep -f "Sublime Text" > /dev/null; then
+    abort "sublime text must not be running"
 fi
 
 support="$HOME/Library/Application Support/Sublime Text 3"
@@ -30,12 +30,12 @@ rm_file "$support/Local/Auto Save Session.sublime_session"
 sym "$HOME/.config/subl" "$support/Packages/User"
 
 sym \
-    '/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' \
-    '/usr/local/bin/edit'
+    "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" \
+    "/usr/local/bin/edit"
 
 if ! $pkg_ctrl_exist; then
-    echo -n 'install package control [yn]? ' && read x
-    [[ "$x" == 'y' ]] && open 'https://packagecontrol.io/installation'
+    echo -n "install package control [yn]? " && read x
+    [[ "$x" == "y" ]] && open "https://packagecontrol.io/installation"
 fi
 
 true

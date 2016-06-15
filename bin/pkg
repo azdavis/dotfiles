@@ -4,14 +4,14 @@ source "$HOME/.config/etc/base.sh" || exit 1
 
 cd "$HOME/.config/pkg"
 
-echo -n 'brew [yn]? ' && read do_brew
-echo -n 'gem [yn]? ' && read do_gem
-echo -n 'npm [yn]? ' && read do_npm
-echo -n 'tlmgr [yn]? ' && read do_tlmgr
+echo -n "brew [yn]? " && read do_brew
+echo -n "gem [yn]? " && read do_gem
+echo -n "npm [yn]? " && read do_npm
+echo -n "tlmgr [yn]? " && read do_tlmgr
 
 
-if [[ "$do_brew" == 'y' ]]; then
-    which brew > /dev/null || curl -fsSL 'https://git.io/pVOl' | ruby
+if [[ "$do_brew" == "y" ]]; then
+    which brew > /dev/null || curl -fsSL "https://git.io/pVOl" | ruby
     brew update
     brew upgrade
     formula="$(brew --prefix)/Library/Formula"
@@ -20,7 +20,7 @@ if [[ "$do_brew" == 'y' ]]; then
     cd "$HOME/.config/pkg"
     brew bundle --verbose
     cd "$formula"
-    git checkout 'coreutils.rb'
+    git checkout "coreutils.rb"
     cd "$HOME/.config/pkg"
     brew bundle cleanup --force
     brew cask cleanup --force
@@ -29,19 +29,19 @@ if [[ "$do_brew" == 'y' ]]; then
     brew doctor || true
 fi
 
-if [[ "$do_gem" == 'y' ]]; then
+if [[ "$do_gem" == "y" ]]; then
     gem install bundle
     bundle install
     bundle update
-    rm -rf "$HOME/.gem" "$HOME/.bundle" '.bundle' 'Gemfile.lock'
+    rm -rf "$HOME/.gem" "$HOME/.bundle" ".bundle" "Gemfile.lock"
 fi
 
-if [[ "$do_npm" == 'y' ]]; then
+if [[ "$do_npm" == "y" ]]; then
     npm install -g $(cat Npmfile)
     npm cache clean
 fi
 
-if [[ "$do_tlmgr" == 'y' ]]; then
+if [[ "$do_tlmgr" == "y" ]]; then
     tlmgr update --self
     tlmgr update --all
     tlmgr install $(cat Tlmgrfile)

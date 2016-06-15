@@ -6,7 +6,7 @@ cd "$HOME/.config/bin"
 
 for f in *; do
     [[ "./$f" == "$0" ]] && continue
-    echo "executing '$f'"
+    echo "executing $f"
     "./$f"
 done
 
