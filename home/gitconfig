@@ -9,6 +9,7 @@
 	helper = osxkeychain
 [diff]
 	algorithm = patience
+	compactionHeuristic = true
 [hub]
 	protocol = https
 [push]
