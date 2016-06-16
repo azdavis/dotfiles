@@ -94,7 +94,7 @@ f="$HOME/.config/z/zshrc"
 
 # auto-update
 
-date --iso-8601=ns
+date --iso=s
 [[ "$USER" == "root" ]] || "$HOME/.config/libexec/auto-update"
 
 # intentional lack of ending "true"
