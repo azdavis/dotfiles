@@ -8,7 +8,7 @@
 [credential]
 	helper = osxkeychain
 [diff]
-	algorithm = patience
+	algorithm = histogram
 	compactionHeuristic = true
 [hub]
 	protocol = https
