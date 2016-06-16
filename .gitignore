@@ -7,7 +7,7 @@
 !/mpv
 !/pkg
 !/subl
-!/util
+!/libexec
 !/.gitattributes
 !/.gitignore
 !/LICENSE.md
