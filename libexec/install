@@ -10,7 +10,7 @@ IFS=$'\n\t'
 
 remote="https://github.com/azdavis/config.git"
 name=".config"
-tmp=".tmp-$$-$RANDOM-$(date +%s)"
+tmp="$(mktemp -d ./XXXXXXXX.tempdir)"
 
 cd
 if [[ -d "$name" ]]; then
