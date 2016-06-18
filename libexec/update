@@ -12,7 +12,7 @@ elif [[ "$(git log origin/master..master)" ]]; then
 elif ! ping -c 1 -t 3 github.com &> /dev/null; then
     abort "could not connect to github.com"
 elif [[ "$(
-    curl -fsSL -m 3 -w %{http_code} -o /dev/null \
+    curl -fsL -m 3 -w %{http_code} -o /dev/null \
     -H Accept:\ application/vnd.github.chitauri-preview+sha \
     -H If-None-Match:\ \"$(git rev-parse HEAD)\" \
     https://api.github.com/repos/azdavis/config/commits/master
