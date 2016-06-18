@@ -87,6 +87,16 @@ fuck() {
     fi
 }
 
+# trash some files
+
+trash() {
+    if [[ ${#@} == 0 ]]; then
+        echo "$0: missing operand"
+        return 1
+    fi
+    mv $@ "$HOME/.Trash"
+}
+
 # z
 
 f="$HOME/.config/z/zshrc"
