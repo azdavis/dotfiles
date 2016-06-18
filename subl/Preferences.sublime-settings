@@ -127,7 +127,7 @@
     "show_full_path": false,
     "spacegray_tabs_auto_width": false,
     "spell_check": true,
-    "spelling_selector": "comment, text.html -meta, text.tex -meta, text.pug -meta",
+    "spelling_selector": "comment, text.html -meta, text.tex -meta, text.pug -meta -source",
     "tab_size": 4,
     "theme": "minigray.sublime-theme",
     "translate_tabs_to_spaces": true,
