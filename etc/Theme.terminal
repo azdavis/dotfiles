@@ -194,6 +194,12 @@
     <false/>
     <key>ShowDimensionsInTitle</key>
     <false/>
+    <key>ShowRepresentedURLInTabTitle</key>
+    <false/>
+    <key>ShowRepresentedURLInTitle</key>
+    <false/>
+    <key>ShowRepresentedURLPathInTabTitle</key>
+    <false/>
     <key>TextBoldColor</key>
     <data>
     YnBsaXN0MDDUAQIDBAUGFRZYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
