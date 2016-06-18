@@ -18,12 +18,9 @@ if pgrep -f "Sublime Text" > /dev/null; then
 fi
 
 support="$HOME/Library/Application Support/Sublime Text 3"
-pkg_ctrl_file="$HOME/.config/subl/Package Control"
-pkg_ctrl_exist=false
-[[ -e "$pkg_ctrl_file.sublime-settings" ]] && pkg_ctrl_exist=true
 mkdir -p "$support/Packages"
 
-rm_file "$pkg_ctrl_file.cache"
+rm_file "$HOME/.config/subl/Package Control.cache"
 rm_file "$support/Cache"
 rm_file "$support/Local/Session.sublime_session"
 rm_file "$support/Local/Auto Save Session.sublime_session"
@@ -33,9 +30,7 @@ sym \
     "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" \
     "/usr/local/bin/edit"
 
-if ! $pkg_ctrl_exist; then
-    echo -n "install package control [yn]? " && read x
-    [[ "$x" == "y" ]] && open "https://packagecontrol.io/installation"
-fi
+echo -n "install package control [yn]? " && read x
+[[ "$x" == "y" ]] && open "https://packagecontrol.io/installation"
 
 true
