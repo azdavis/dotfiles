@@ -6,7 +6,6 @@ cd "$HOME/.config/pkg"
 
 echo -n "brew [yn]? " && read do_brew
 echo -n "gem [yn]? " && read do_gem
-echo -n "npm [yn]? " && read do_npm
 echo -n "tlmgr [yn]? " && read do_tlmgr
 
 
@@ -34,11 +33,6 @@ if [[ "$do_gem" == "y" ]]; then
     bundle install
     bundle update
     rm -rf "$HOME/.gem" "$HOME/.bundle" ".bundle" "Gemfile.lock"
-fi
-
-if [[ "$do_npm" == "y" ]]; then
-    npm install -g $(cat Npmfile)
-    npm cache clean
 fi
 
 if [[ "$do_tlmgr" == "y" ]]; then
