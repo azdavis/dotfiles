@@ -3,6 +3,7 @@ tap "homebrew/bundle"
 tap "homebrew/core"
 
 brew "coreutils", args: ["with-gmp"]
+brew "entr"
 brew "gdbm"
 brew "ghc"
 brew "git", args: ["with-blk-sha1", "with-brewed-openssl", "with-pcre"]
