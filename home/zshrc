@@ -25,6 +25,7 @@ export \
     EDITOR="edit" \
     HOMEBREW_CASK_OPTS="--appdir=/Applications" \
     HOMEBREW_NO_ANALYTICS="1" \
+    HOMEBREW_NO_EMOJI="1" \
     LESS="--tabs=4" \
     LESSHISTFILE="/dev/null" \
     LS_COLORS="di=34:ln=35:so=32:pi=33:ex=31:bd=30;46:cd=30;43:su=30;41:sg=30;46:tw=30;42:ow=30;43:st=30;44:" \
