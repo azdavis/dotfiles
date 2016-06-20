@@ -22,7 +22,7 @@ fi
 # environment variables
 
 export \
-    EDITOR="edit -w" \
+    EDITOR="edit" \
     HOMEBREW_CASK_OPTS="--appdir=/Applications" \
     HOMEBREW_NO_ANALYTICS="1" \
     LESS="--tabs=4" \
