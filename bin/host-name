@@ -4,7 +4,6 @@ source "$HOME/.config/etc/base.sh" || exit 1
 
 echo -n "hostname: " && read host_name
 
-sudo -v
 sudo scutil --set ComputerName "$host_name"
 sudo scutil --set HostName "$host_name"
 sudo scutil --set LocalHostName "$host_name"
