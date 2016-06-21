@@ -49,6 +49,7 @@ alias \
 alias \
     git="hub" \
     ga="hub add" \
+    gb="hub branch" \
     gc="hub commit" \
     gd="hub diff" \
     gk="hub checkout" \
