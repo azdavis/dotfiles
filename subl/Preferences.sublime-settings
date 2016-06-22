@@ -123,6 +123,7 @@
         79
     ],
     "scroll_past_end": false,
+    "show_definitions": false,
     "show_encoding": true,
     "show_full_path": false,
     "spacegray_tabs_auto_width": false,
