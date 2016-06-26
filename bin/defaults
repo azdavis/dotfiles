@@ -18,6 +18,7 @@ dw -g NSUseAnimatedFocusRing -bool false
 dw -g NSWindowResizeTime -float 0.1
 dw com.apple.dock autohide-delay -int 9999
 dw com.apple.finder DisableAllAnimations -bool true
+dw com.apple.mail DisableInlineAttachmentViewing -bool true
 dw com.apple.print.PrintingPrefs "Quit When Finished" -bool true
 dw com.apple.screencapture disable-shadow -bool true
 dw com.apple.universalaccess reduceTransparency -bool true
