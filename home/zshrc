@@ -5,6 +5,9 @@ if [[ "$USER" != "root" ]]; then
     zstyle ":completion:*" matcher-list "m:{a-zA-Z}={A-Za-z}"
     zstyle ":completion:*" menu select
     "$HOME/.config/libexec/auto-update"
+    f="$HOME/.config/z/zshrc"
+    [[ -f "$f" ]] && source "$f"
+    date --iso=s
 fi
 
 setopt \
@@ -96,8 +99,3 @@ trash() {
     fi
     mv $i $f $v $@ "$HOME/.Trash"
 }
-
-f="$HOME/.config/z/zshrc"
-[[ -f "$f" ]] && source "$f"
-
-date --iso=s
