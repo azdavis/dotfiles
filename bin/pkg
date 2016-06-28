@@ -38,7 +38,7 @@ fi
 if [[ "$do_tlmgr" == "y" ]]; then
     tlmgr update --self
     tlmgr update --all
-    tlmgr install $(cat Tlmgrfile)
+    tlmgr install $(cat tlmgrfile)
 fi
 
 true
