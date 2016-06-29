@@ -10,8 +10,8 @@
 !/libexec
 !/.gitattributes
 !/.gitignore
-!/LICENSE.md
-!/README.md
+!/license.md
+!/readme.md
 
 *.cache
 *.last-run
