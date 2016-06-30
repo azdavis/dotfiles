@@ -2,17 +2,6 @@
 
 source "$HOME/.config/etc/base.sh" || exit 1
 
-rm_file() {
-    [[ ! -e "$1" || -h "$1" ]] && return 0
-    echo -n "rm $1 [yn]? " && read x
-    [[ "$x" == "y" ]] && rm -rf "$1"
-}
-
-sym() {
-    rm_file "$2"
-    ln -fsn "$1" "$2"
-}
-
 if pgrep -f "Sublime Text" > /dev/null; then
     abort "sublime text must not be running"
 fi
@@ -20,11 +9,11 @@ fi
 support="$HOME/Library/Application Support/Sublime Text 3"
 mkdir -p "$support/Packages"
 
+sym "$HOME/.config/subl" "$support/Packages/User"
 rm_file "$HOME/.config/subl/Package Control.cache"
 rm_file "$support/Cache"
 rm_file "$support/Local/Session.sublime_session"
 rm_file "$support/Local/Auto Save Session.sublime_session"
-sym "$HOME/.config/subl" "$support/Packages/User"
 
 sym \
     "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" \

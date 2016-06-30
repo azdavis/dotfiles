@@ -8,7 +8,6 @@ echo -n "brew [yn]? " && read do_brew
 echo -n "gem [yn]? " && read do_gem
 echo -n "tlmgr [yn]? " && read do_tlmgr
 
-
 if [[ "$do_brew" == "y" ]]; then
     which brew > /dev/null || curl -fsSL "https://git.io/pVOl" | ruby
     brew update
