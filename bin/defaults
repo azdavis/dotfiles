@@ -19,6 +19,7 @@ dw -g NSWindowResizeTime -float 0.1
 dw com.apple.desktopservices DSDontWriteNetworkStores -bool true
 dw com.apple.dock autohide-delay -int 9999
 dw com.apple.finder DisableAllAnimations -bool true
+dw com.apple.finder FXEnableExtensionChangeWarning -bool false
 dw com.apple.mail DisableInlineAttachmentViewing -bool true
 dw com.apple.print.printingprefs "Quit When Finished" -bool true
 dw com.apple.screencapture disable-shadow -bool true
