@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+for (let i = 0; i < $1; i++) {
+    ${2://}
+}
+]]></content>
+    <tabTrigger>for</tabTrigger>
+    <scope>source.ts</scope>
+    <description>ts</description>
+</snippet>
