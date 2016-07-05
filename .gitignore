@@ -5,6 +5,7 @@
 !/home
 !/etc
 !/mpv
+/mpv/watch_later/*
 !/pkg
 !/subl
 !/libexec
