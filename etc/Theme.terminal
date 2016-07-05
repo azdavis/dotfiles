@@ -1,4 +1,6 @@
-<plist>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
 <dict>
     <key>ANSIBlueColor</key>
     <data>
@@ -224,10 +226,14 @@
     <false/>
     <key>columnCount</key>
     <integer>110</integer>
+    <key>deleteSendsBackspace</key>
+    <false/>
     <key>name</key>
     <string>Theme</string>
     <key>rowCount</key>
     <integer>30</integer>
+    <key>shellExitAction</key>
+    <integer>2</integer>
     <key>type</key>
     <string>Window Settings</string>
     <key>useOptionAsMetaKey</key>
