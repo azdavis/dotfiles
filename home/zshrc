@@ -32,7 +32,6 @@ export \
 PS1=$'%{\e[37m%}%2~%{\e[0m%} %{\e[%(?.32.31)m%}%(!.#.$)%{\e[0m%} '
 
 alias \
-    c="clear" \
     df="df -h" \
     du="du -sh" \
     egrep="egrep --color=auto" \
