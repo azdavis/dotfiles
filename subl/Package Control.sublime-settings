@@ -8,6 +8,7 @@
         "EditorConfig",
         "Package Control",
         "Pug",
-        "Stylus"
+        "Stylus",
+        "Swift"
     ]
 }
