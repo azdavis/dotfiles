@@ -107,6 +107,7 @@
         "python3",
         "rlwrap",
         "screenshot",
+        "stylint",
         "sublicense",
         "sudo",
         "tslint",
