@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-echo "${1:ok}"
+echo "$1"
 ]]></content>
     <tabTrigger>log</tabTrigger>
     <scope>source.shell</scope>

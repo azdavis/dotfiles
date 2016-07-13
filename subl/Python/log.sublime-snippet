@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-print("${1:ok}")
+print("$1")
 ]]></content>
     <tabTrigger>log</tabTrigger>
     <scope>source.python</scope>

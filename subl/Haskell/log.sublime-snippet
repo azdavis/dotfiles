@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-putStrLn "${1:ok}"
+putStrLn "$1"
 ]]></content>
     <tabTrigger>log</tabTrigger>
     <scope>source.haskell</scope>
