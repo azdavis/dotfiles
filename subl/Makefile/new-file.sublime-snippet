@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[
+THINGC ?= thingc
+THINGFLAGS ?=
+Q ?= &> /dev/null
+
+%: %.thing
+	\$(THINGC) \$(THINGFLAGS) -o \$@ \$<
+
+clean:
+	for f in *; do file -b "\$\$f" | grep -q exec && rm "\$\$f"; done; true
+
+]]></content>
+    <tabTrigger>nf</tabTrigger>
+    <scope>source.makefile</scope>
+    <description>makefile</description>
+</snippet>
