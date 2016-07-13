@@ -4,5 +4,5 @@ echo ${1:true}
 ]]></content>
     <tabTrigger>log</tabTrigger>
     <scope>source.shell</scope>
-    <description>shell</description>
+    <description>sh</description>
 </snippet>
