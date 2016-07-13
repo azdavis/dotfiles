@@ -1,8 +1,8 @@
 <snippet>
     <content><![CDATA[
-print("${1:ok}")
+putStrLn "${1:ok}"
 ]]></content>
     <tabTrigger>log</tabTrigger>
-    <scope>source.python</scope>
-    <description>py</description>
+    <scope>source.haskell</scope>
+    <description>hs</description>
 </snippet>
