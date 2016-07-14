@@ -132,7 +132,7 @@
     "show_full_path": false,
     "spacegray_tabs_auto_width": false,
     "spell_check": true,
-    "spelling_selector": "comment, text -constant -markup -meta -source -string.unquoted -support -text.find-in-files",
+    "spelling_selector": "comment, text -constant -markup -meta -source -string -storage -support -text.find-in-files -variable",
     "theme": "minigray.sublime-theme",
     "translate_tabs_to_spaces": true,
     "trim_automatic_white_space": false,
