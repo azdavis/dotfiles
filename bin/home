@@ -10,7 +10,7 @@ for f in $(find *); do
     if [[ -d "$f" ]]; then
         mkdir -p "$HOME/.$f"
     else
-        sym "$wd/$f" "$HOME/.$f"
+        symlink "$wd/$f" "$HOME/.$f"
     fi
 done
 

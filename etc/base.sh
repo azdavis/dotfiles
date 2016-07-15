@@ -7,7 +7,7 @@ abort() {
 
 [[ "$USER" == "root" ]] && abort "do not run as root"
 
-rm_file() {
+remove() {
     if [[ ! -e "$1" ]]; then
         [[ -h "$1" ]] && rm "$1"
         return 0
@@ -16,8 +16,8 @@ rm_file() {
     [[ "$x" == "y" ]] && rm -rf "$1"
 }
 
-sym() {
-    rm_file "$2"
+symlink() {
+    remove "$2"
     ln -sn "$1" "$2"
 }
 
