@@ -8,14 +8,17 @@ abort() {
 [[ "$USER" == "root" ]] && abort "do not run as root"
 
 rm_file() {
-    [[ ! -e "$1" || -h "$1" ]] && return 0
+    if [[ ! -e "$1" ]]; then
+        [[ -h "$1" ]] && rm "$1"
+        return 0
+    fi
     echo -n "rm $1 [yn]? " && read x
     [[ "$x" == "y" ]] && rm -rf "$1"
 }
 
 sym() {
     rm_file "$2"
-    ln -fsn "$1" "$2"
+    ln -sn "$1" "$2"
 }
 
 true
