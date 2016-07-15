@@ -18,6 +18,6 @@
 *.last-run
 *-ca-bundle
 
-TypeScript.tmLanguage
+subl/TypeScript/TypeScript.tmLanguage
 subl/Haskell/Comments.tmPreferences
 subl/Haskell/Haskell.sublime-syntax
