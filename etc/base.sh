@@ -17,8 +17,8 @@ remove() {
 }
 
 symlink() {
-    remove "$2"
     echo "symlink $1 -> $2"
+    remove "$2"
     ln -sn "$1" "$2"
 }
 
