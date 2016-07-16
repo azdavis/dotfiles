@@ -12,7 +12,7 @@ remove() {
         [[ -h "$1" ]] && rm "$1"
         return 0
     fi
-    echo -n "rm $1 [yn]? " && read x
+    echo -n "remove $1 [yn]? " && read x
     [[ "$x" == "y" ]] && rm -rf "$1"
 }
 
