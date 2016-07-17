@@ -1,5 +1,3 @@
-[branch]
-	autoSetupRebase = always
 [core]
 	attributesfile = ~/.config/etc/gitattributes
 	editor = edit -w
@@ -14,6 +12,8 @@
 	compactionHeuristic = true
 [hub]
 	protocol = https
+[pull]
+	rebase = preserve
 [push]
 	default = simple
 [url "https://"]
