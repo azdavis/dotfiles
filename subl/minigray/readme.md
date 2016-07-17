@@ -2,6 +2,6 @@
 
 minigray = minimalist + gray
 
-based off of [spacegray][1], copyright © 2013 Gadzhi Kharkharov
+based off of [spacegray][0], copyright © 2013 Gadzhi Kharkharov
 
-[1]: https://github.com/kkga/spacegray
+[0]: https://github.com/kkga/spacegray
