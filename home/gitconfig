@@ -1,3 +1,5 @@
+[branch]
+	autoSetupRebase = always
 [core]
 	attributesfile = ~/.config/etc/gitattributes
 	editor = edit -w
