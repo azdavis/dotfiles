@@ -13,7 +13,7 @@
 [hub]
 	protocol = https
 [pull]
-	rebase = preserve
+	rebase = true
 [push]
 	default = simple
 [url "https://"]
