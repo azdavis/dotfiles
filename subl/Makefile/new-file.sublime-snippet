@@ -8,6 +8,7 @@ Q ?= &> /dev/null
 	\$(THINGC) \$(THINGFLAGS) -o \$@ \$<
 
 clean:
+    rm -f *.thing
 	for f in *; do file -b "\$\$f" | grep -q exec && rm "\$\$f"; done; true
 
 ]]></content>
