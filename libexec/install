@@ -11,13 +11,14 @@ abort() {
 
 [[ "$USER" == "root" ]] && abort "do not run as root"
 
-remote="https://github.com/azdavis/config.git"
+repo="azdavis/config"
+remote="https://github.com/$repo.git"
 name=".config"
 tmp="$(mktemp -d ./clone-$name-XXXXXXXX)"
 
 cd
 if [[ -d "$name" ]]; then
-    [[ -d "$name/.git" ]] && abort "already installed"
+    [[ -d "$name/.git" ]] && abort "$repo already installed"
     backup="$(mktemp -d ./backup-$name-XXXXXXXX)"
     mv "$name"/.* "$name"/* "$backup"
 else
@@ -29,7 +30,7 @@ which git > /dev/null || xcode-select --install
 git clone -qb master --single-branch "$remote" "$tmp"
 mv "$tmp"/.* "$tmp"/* "$name"
 rmdir "$tmp"
-echo "install complete"
+echo "$repo install complete"
 
 true
 
