@@ -19,7 +19,7 @@ tmp="$(mktemp -d ./clone-$name-XXXXXXXX)"
 rmtmp() {
     rmdir "$tmp"
 }
-trap rmtmp END
+trap rmtmp EXIT
 
 cd "$HOME"
 
