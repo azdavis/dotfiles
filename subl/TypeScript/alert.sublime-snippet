@@ -1,8 +1,0 @@
-<snippet>
-    <content><![CDATA[
-alert($1)
-]]></content>
-    <tabTrigger>alt</tabTrigger>
-    <scope>source.ts</scope>
-    <description>ts</description>
-</snippet>
