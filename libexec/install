@@ -16,7 +16,7 @@ cd "$HOME"
 repo="azdavis/config"
 remote="https://github.com/$repo.git"
 name=".config"
-tmp="$(mktemp -d ./clone-$name-XXXXXXXX)"
+tmp="$(mktemp -d ./gitclone-$name-XXXXXXXX)"
 trap "rm -rf \"$tmp\"" EXIT
 
 if [[ -d "$name" ]]; then
