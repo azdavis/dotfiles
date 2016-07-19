@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-_() {
+wrapper() {
 
 set -euo pipefail
 IFS=$'\n\t'
@@ -38,4 +38,4 @@ true
 
 }
 
-_
+wrapper
