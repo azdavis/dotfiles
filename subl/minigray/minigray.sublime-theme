@@ -311,7 +311,11 @@
     },
     {
         "class": "tool_tip_control",
-        "layer0.opacity": 0,
+        "layer0.opacity": 0
+    },
+    {
+        "class": "tool_tip_label_control",
+        "color": [0, 0, 0, 0]
     },
     {
         "class": "status_bar",
