@@ -241,6 +241,11 @@
         "color": [180, 180, 180]
     },
     {
+        "class": "label_control",
+        "parents": [{"class": "button_control", "attributes": ["hover"]}],
+        "color": [200, 200, 200]
+    },
+    {
         "class": "tool_tip_control",
         "layer0.opacity": 0
     },
@@ -345,11 +350,6 @@
         "layer0.opacity": 1,
         "layer0.tint": [30, 30, 30],
         "layer0.inner_margin": 8
-    },
-    {
-        "class": "button_control",
-        "attributes": ["hover"],
-        "layer0.tint": [40, 40, 40]
     },
     {
         "class": "button_control",
