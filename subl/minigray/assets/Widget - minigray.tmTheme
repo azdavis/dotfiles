@@ -8,15 +8,15 @@
             <key>settings</key>
             <dict>
                 <key>background</key>
-                <string>#1e1e1e</string>
+                <string>#141414</string>
                 <key>caret</key>
-                <string>#c8c8c8</string>
+                <string>#ddd</string>
                 <key>foreground</key>
-                <string>#c8c8c8</string>
+                <string>#ddd</string>
                 <key>invisibles</key>
-                <string>#828282</string>
+                <string>#0f0</string>
                 <key>selection</key>
-                <string>#646464</string>
+                <string>#333</string>
             </dict>
         </dict>
     </array>
