@@ -8,9 +8,9 @@ a potpourri of os x config files
 
 - this will clone the repository to `~/.config`
 - if `~/.config` already exists, a backup will be made
-- to avoid the [security risk][0] of [executing code over the network][1],
-  download and run the [install script][2] in two separate steps
+- to avoid the [security risk][sec] of [executing code over the network][exc],
+  download and run the [install script][ins] in two separate steps
 
-[0]: https://www.idontplaydarts.com/2016/04/detecting-curl-pipe-bash-server-side/
-[1]: https://curlpipesh.tumblr.com
-[2]: https://git.io/vVFE5
+[sec]: https://www.idontplaydarts.com/2016/04/detecting-curl-pipe-bash-server-side
+[exc]: https://curlpipesh.tumblr.com
+[ins]: https://git.io/vVFE5
