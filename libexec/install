@@ -34,8 +34,7 @@ git clone -qb master --single-branch "$remote" "$tmp"
 mv "$tmp"/.* "$tmp"/* "$name"
 echo "$repo install complete"
 
-true
-
 }
 
 wrapper
+true
