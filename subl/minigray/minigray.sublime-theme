@@ -13,11 +13,6 @@
         "mouse_wheel_switch": false
     },
     {
-        "class": "tabset_control",
-        "settings": ["mouse_wheel_switches_tabs"],
-        "mouse_wheel_switch": true
-    },
-    {
         "class": "tab_control",
         "content_margin": [8, 0],
         "max_margin_trim": 0,
@@ -41,12 +36,6 @@
         "attributes": ["selected"],
         "layer0.texture": "",
         "layer0.tint": [50, 50, 50]
-    },
-    {
-        "class": "tab_control",
-        "settings": ["!show_tab_close_buttons"],
-        "attributes": ["dirty"],
-        "content_margin": [12, 3, 7, 3]
     },
     {
         "class": "tab_close_button",
@@ -86,13 +75,6 @@
     },
     {
         "class": "tab_close_button",
-        "settings": ["!show_tab_close_buttons"],
-        "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
-        "content_margin": 8,
-        "layer0.opacity": 1
-    },
-    {
-        "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["dirty", "hover"]}],
         "layer0.texture": "User/minigray/assets/close@2x.png",
         "attributes": ["hover"],
@@ -101,16 +83,6 @@
     },
     {
         "class": "tab_close_button",
-        "parents": [{"class": "tab_control", "attributes": ["dirty", "selected"]}]
-    },
-    {
-        "class": "tab_close_button",
-        "settings": ["highlight_modified_tabs"],
-        "parents": [{"class": "tab_control", "attributes": ["dirty"]}]
-    },
-    {
-        "class": "tab_close_button",
-        "settings": ["highlight_modified_tabs"],
         "parents": [{"class": "tab_control", "attributes": ["dirty", "selected"]}]
     },
     {
@@ -143,26 +115,6 @@
         "class": "tab_label",
         "attributes": ["transient"],
         "font.italic": true
-    },
-    {
-        "class": "tab_label",
-        "settings": ["spacegray_tabs_font_small"],
-        "font.size": 10
-    },
-    {
-        "class": "tab_label",
-        "settings": ["spacegray_tabs_font_normal"],
-        "font.size": 11
-    },
-    {
-        "class": "tab_label",
-        "settings": ["spacegray_tabs_font_large"],
-        "font.size": 12
-    },
-    {
-        "class": "tab_label",
-        "settings": ["spacegray_tabs_font_xlarge"],
-        "font.size": 14
     },
     {
         "class": "fold_button_control",
@@ -363,31 +315,6 @@
         "class": "sidebar_heading",
         "color": [100, 100, 100],
         "font.bold": true
-    },
-    {
-        "class": "sidebar_tree",
-        "settings": ["spacegray_sidebar_tree_xsmall"],
-        "row_padding": [8, 0]
-    },
-    {
-        "class": "sidebar_tree",
-        "settings": ["spacegray_sidebar_tree_small"],
-        "row_padding": [8, 2]
-    },
-    {
-        "class": "sidebar_tree",
-        "settings": ["spacegray_sidebar_tree_normal"],
-        "row_padding": [8, 4]
-    },
-    {
-        "class": "sidebar_tree",
-        "settings": ["spacegray_sidebar_tree_large"],
-        "row_padding": [8, 6]
-    },
-    {
-        "class": "sidebar_tree",
-        "settings": ["spacegray_sidebar_tree_xlarge"],
-        "row_padding": 8
     },
     {
         "class": "sidebar_heading",
@@ -805,37 +732,6 @@
         "class": "icon_highlight",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
         "layer0.tint": [230, 230, 230]
-    },
-    {
-        "class": "disclosure_button_control",
-        "settings": ["spacegray_color_expanded_folder"],
-        "attributes": ["expanded"],
-        "layer0.tint": [230, 230, 230]
-    },
-    {
-        "class": "tabset_control",
-        "settings": ["spacegray_tabs_auto_width"],
-        "tab_width": 0
-    },
-    {
-        "class": "tabset_control",
-        "settings": ["spacegray_tabs_small"],
-        "tab_height": 22
-    },
-    {
-        "class": "tabset_control",
-        "settings": ["spacegray_tabs_normal"],
-        "tab_height": 28
-    },
-    {
-        "class": "tabset_control",
-        "settings": ["spacegray_tabs_large"],
-        "tab_height": 34
-    },
-    {
-        "class": "tabset_control",
-        "settings": ["spacegray_tabs_xlarge"],
-        "tab_height": 40
     },
     {
         "class": "icon_file_type",

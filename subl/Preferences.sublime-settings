@@ -135,7 +135,6 @@
     "show_definitions": false,
     "show_encoding": true,
     "show_full_path": false,
-    "spacegray_tabs_auto_width": false,
     "spell_check": false,
     "spelling_selector": "comment, text -text.plain -entity.name.tag -source -entity.other -variable -storage -constant -meta.link -markup.raw -string -support -keyword",
     "theme": "minigray.sublime-theme",
