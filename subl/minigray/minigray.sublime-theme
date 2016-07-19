@@ -325,7 +325,7 @@
     {
         "class": "disclosure_button_control",
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "layer0.tint":[180, 180, 180]
+        "layer0.tint": [180, 180, 180]
     },
     {
         "class": "disclosure_button_control",
