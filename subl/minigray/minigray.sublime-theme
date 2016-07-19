@@ -147,22 +147,22 @@
     {
         "class": "tab_label",
         "settings": ["spacegray_tabs_font_small"],
-        "font.size": 10.0
+        "font.size": 10
     },
     {
         "class": "tab_label",
         "settings": ["spacegray_tabs_font_normal"],
-        "font.size": 11.0
+        "font.size": 11
     },
     {
         "class": "tab_label",
         "settings": ["spacegray_tabs_font_large"],
-        "font.size": 12.0
+        "font.size": 12
     },
     {
         "class": "tab_label",
         "settings": ["spacegray_tabs_font_xlarge"],
-        "font.size": 14.0
+        "font.size": 14
     },
     {
         "class": "fold_button_control",
@@ -397,22 +397,22 @@
     {
         "class": "sidebar_label",
         "settings": ["spacegray_sidebar_font_small"],
-        "font.size": 10.0
+        "font.size": 10
     },
     {
         "class": "sidebar_label",
         "settings": ["spacegray_sidebar_font_normal"],
-        "font.size": 11.0
+        "font.size": 11
     },
     {
         "class": "sidebar_label",
         "settings": ["spacegray_sidebar_font_large"],
-        "font.size": 12.0
+        "font.size": 12
     },
     {
         "class": "sidebar_label",
         "settings": ["spacegray_sidebar_font_xlarge"],
-        "font.size": 14.0
+        "font.size": 14
     },
     {
         "class": "sidebar_label",
@@ -867,17 +867,17 @@
     {
         "class": "icon_file_type",
         "content_margin": [0, 0],
-        "layer0.opacity": 0.0
+        "layer0.opacity": 0
     },
     {
         "class": "icon_folder",
         "layer0.texture": "",
-        "layer0.opacity": 0.0,
+        "layer0.opacity": 0,
         "content_margin": [0, 0]
     },
     {
         "class": "icon_folder_loading",
         "content_margin": [0, 0],
-        "layer0.opacity": 0.0
+        "layer0.opacity": 0
     }
 ]
