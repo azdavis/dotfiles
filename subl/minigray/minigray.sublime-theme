@@ -336,49 +336,6 @@
         "color": [230, 230, 230]
     },
     {
-        "class": "close_button",
-        "layer0.texture": "User/minigray/assets/close@2x.png",
-        "layer0.opacity": 0,
-        "layer0.inner_margin": 0,
-        "layer0.tint": [130, 130, 130],
-        "content_margin": 8
-    },
-    {
-        "class": "close_button",
-        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "layer0.opacity": 1
-    },
-    {
-        "class": "close_button",
-        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "layer0.opacity": 1
-    },
-    {
-        "class": "close_button",
-        "attributes": ["dirty"],
-        "layer0.texture": "User/minigray/assets/circle@2x.png",
-        "layer0.opacity": 1,
-        "layer0.tint": [180, 180, 180]
-    },
-    {
-        "class": "close_button",
-        "attributes": ["dirty"],
-        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "layer0.texture": "User/minigray/assets/circle@2x.png"
-    },
-    {
-        "class": "close_button",
-        "attributes": ["hover"],
-        "layer0.tint": [100, 100, 100]
-    },
-    {
-        "class": "close_button",
-        "attributes": ["dirty", "hover"],
-        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "layer0.texture": "User/minigray/assets/close@2x.png",
-        "layer0.tint": [100, 100, 100]
-    },
-    {
         "class": "disclosure_button_control",
         "content_margin": 8,
         "layer0.texture": "User/minigray/assets/folder-closed@2x.png",
