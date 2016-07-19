@@ -8,7 +8,7 @@
             <key>settings</key>
             <dict>
                 <key>background</key>
-                <string>#141414</string>
+                <string>#111</string>
                 <key>caret</key>
                 <string>#ddd</string>
                 <key>foreground</key>
