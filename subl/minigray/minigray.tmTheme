@@ -16,13 +16,13 @@
                     <key>foreground</key>
                     <string>#ddd</string>
                     <key>lineHighlight</key>
-                    <string>#222</string>
+                    <string>#232323</string>
                     <key>selection</key>
-                    <string>#333</string>
+                    <string>#323232</string>
                     <key>gutterForeground</key>
-                    <string>#555</string>
+                    <string>#646464</string>
                     <key>guide</key>
-                    <string>#555</string>
+                    <string>#646464</string>
                 </dict>
             </dict>
             <dict>
