@@ -679,6 +679,11 @@
     },
     {
         "class": "icon_regex",
+        "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
+        "layer0.tint": [200, 200, 200]
+    },
+    {
+        "class": "icon_regex",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
         "layer0.tint": [230, 230, 230]
     },
@@ -688,6 +693,11 @@
         "layer0.tint": [100, 100, 100],
         "layer0.opacity": 1,
         "content_margin": 8
+    },
+    {
+        "class": "icon_case",
+        "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
+        "layer0.tint": [200, 200, 200]
     },
     {
         "class": "icon_case",
@@ -703,6 +713,11 @@
     },
     {
         "class": "icon_whole_word",
+        "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
+        "layer0.tint": [200, 200, 200]
+    },
+    {
+        "class": "icon_whole_word",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
         "layer0.tint": [230, 230, 230]
     },
@@ -712,6 +727,11 @@
         "layer0.tint": [100, 100, 100],
         "layer0.opacity": 1,
         "content_margin": 8
+    },
+    {
+        "class": "icon_context",
+        "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
+        "layer0.tint": [200, 200, 200]
     },
     {
         "class": "icon_context",
@@ -727,6 +747,11 @@
     },
     {
         "class": "icon_use_buffer",
+        "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
+        "layer0.tint": [200, 200, 200]
+    },
+    {
+        "class": "icon_use_buffer",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
         "layer0.tint": [230, 230, 230]
     },
@@ -736,6 +761,11 @@
         "layer0.tint": [100, 100, 100],
         "layer0.opacity": 1,
         "content_margin": 8
+    },
+    {
+        "class": "icon_reverse",
+        "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
+        "layer0.tint": [200, 200, 200]
     },
     {
         "class": "icon_reverse",
@@ -751,6 +781,11 @@
     },
     {
         "class": "icon_wrap",
+        "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
+        "layer0.tint": [200, 200, 200]
+    },
+    {
+        "class": "icon_wrap",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
         "layer0.tint": [230, 230, 230]
     },
@@ -760,6 +795,11 @@
         "layer0.tint": [100, 100, 100],
         "layer0.opacity": 1,
         "content_margin": 8
+    },
+    {
+        "class": "icon_in_selection",
+        "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
+        "layer0.tint": [200, 200, 200]
     },
     {
         "class": "icon_in_selection",
@@ -775,6 +815,11 @@
     },
     {
         "class": "icon_preserve_case",
+        "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
+        "layer0.tint": [200, 200, 200]
+    },
+    {
+        "class": "icon_preserve_case",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
         "layer0.tint": [230, 230, 230]
     },
@@ -784,6 +829,11 @@
         "layer0.tint": [100, 100, 100],
         "layer0.opacity": 1,
         "content_margin": 8
+    },
+    {
+        "class": "icon_highlight",
+        "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
+        "layer0.tint": [200, 200, 200]
     },
     {
         "class": "icon_highlight",
