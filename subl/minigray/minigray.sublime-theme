@@ -318,14 +318,14 @@
         "class": "disclosure_button_control",
         "content_margin": 8,
         "layer0.texture": "User/minigray/assets/folder-closed@2x.png",
-        "layer0.tint": [100, 100, 100],
+        "layer0.tint": [130, 130, 130],
         "layer0.opacity": 1,
         "layer0.inner_margin": 0
     },
     {
         "class": "disclosure_button_control",
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "layer0.tint": [180, 180, 180]
+        "layer0.tint": [200, 200, 200]
     },
     {
         "class": "disclosure_button_control",
