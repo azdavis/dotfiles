@@ -13,4 +13,4 @@ a potpourri of os x config files
 
 [sec]: https://www.idontplaydarts.com/2016/04/detecting-curl-pipe-bash-server-side
 [exc]: https://curlpipesh.tumblr.com
-[ins]: https://git.io/vVFE5
+[ins]: libexec/install
