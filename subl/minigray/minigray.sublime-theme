@@ -59,7 +59,7 @@
         "parents": [{"class": "tab_control"}],
         "attributes": ["hover"],
         "layer0.opacity": 1,
-        "layer0.tint": [100, 100, 100]
+        "layer0.tint": [200, 200, 200]
     },
     {
         "class": "tab_close_button",
@@ -79,7 +79,7 @@
         "layer0.texture": "User/minigray/assets/close@2x.png",
         "attributes": ["hover"],
         "layer0.opacity": 1,
-        "layer0.tint": [100, 100, 100]
+        "layer0.tint": [200, 200, 200]
     },
     {
         "class": "tab_close_button",
