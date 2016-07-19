@@ -574,22 +574,22 @@
     },
     {
         "class": "quick_panel_label",
-        "fg": [180, 180, 180, 255],
-        "match_fg": [200, 200, 200, 255],
-        "selected_fg": [200, 200, 200, 255],
-        "selected_match_fg": [230, 230, 230, 255]
+        "fg": [180, 180, 180],
+        "match_fg": [200, 200, 200],
+        "selected_fg": [200, 200, 200],
+        "selected_match_fg": [230, 230, 230]
     },
     {
         "class": "quick_panel_path_label",
-        "fg": [130, 130, 130, 255],
-        "match_fg": [180, 180, 180, 255],
-        "selected_fg": [130, 130, 130, 255],
-        "selected_match_fg": [180, 180, 180, 255]
+        "fg": [130, 130, 130],
+        "match_fg": [180, 180, 180],
+        "selected_fg": [130, 130, 130],
+        "selected_match_fg": [180, 180, 180]
     },
     {
         "class": "quick_panel_score_label",
-        "fg": [130, 130, 130, 255],
-        "selected_fg": [130, 130, 130, 255]
+        "fg": [130, 130, 130],
+        "selected_fg": [130, 130, 130]
     },
     {
         "class": "mini_quick_panel_row",
@@ -613,10 +613,10 @@
     },
     {
         "class": "auto_complete_label",
-        "fg": [130, 130, 130, 255],
-        "match_fg": [200, 200, 200, 255],
-        "selected_fg": [180, 180, 180, 255],
-        "selected_match_fg": [200, 200, 200, 255]
+        "fg": [130, 130, 130],
+        "match_fg": [200, 200, 200],
+        "selected_fg": [180, 180, 180],
+        "selected_match_fg": [200, 200, 200]
     },
     {
         "class": "table_row",
