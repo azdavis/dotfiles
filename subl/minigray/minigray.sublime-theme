@@ -29,10 +29,6 @@
     },
     {
         "class": "tab_control",
-        "attributes": ["hover"]
-    },
-    {
-        "class": "tab_control",
         "attributes": ["selected"],
         "layer0.texture": "",
         "layer0.tint": [50, 50, 50]
@@ -83,15 +79,6 @@
     },
     {
         "class": "tab_close_button",
-        "parents": [{"class": "tab_control", "attributes": ["dirty", "selected"]}]
-    },
-    {
-        "class": "tab_close_button",
-        "settings": ["show_tab_close_buttons"],
-        "attributes": ["hover"]
-    },
-    {
-        "class": "tab_close_button",
         "settings": ["show_tab_close_buttons"],
         "attributes": ["pressed"],
         "layer0.opacity": 0.5
@@ -133,10 +120,6 @@
         "class": "fold_button_control",
         "attributes": ["expanded"],
         "layer0.texture": "User/minigray/assets/folder-open@2x.png"
-    },
-    {
-        "class": "fold_button_control",
-        "attributes": ["expanded", "hover"]
     },
     {
         "class": "scroll_bar_control",
@@ -253,10 +236,6 @@
     },
     {
         "class": "label_control",
-        "parents": [{"class": "panel_control"}]
-    },
-    {
-        "class": "label_control",
         "parents": [{"class": "button_control"}],
         "font.bold": true,
         "color": [180, 180, 180]
@@ -350,17 +329,8 @@
     },
     {
         "class": "disclosure_button_control",
-        "parents": [{"class": "tree_row", "attributes": ["selected"]}]
-    },
-    {
-        "class": "disclosure_button_control",
         "attributes": ["expanded"],
         "layer0.texture": "User/minigray/assets/folder-open@2x.png"
-    },
-    {
-        "class": "disclosure_button_control",
-        "attributes": ["expanded"],
-        "parents": [{"class": "tree_row", "attributes": ["hover"]}]
     },
     {
         "class": "disclosure_button_control",
@@ -491,34 +461,6 @@
         "class": "icon_button_control",
         "attributes": ["selected"],
         "layer0.opacity": 0
-    },
-    {
-        "class": "icon_button_control",
-        "attributes": ["left"]
-    },
-    {
-        "class": "icon_button_control",
-        "attributes": ["left"]
-    },
-    {
-        "class": "icon_button_control",
-        "attributes": ["left", "selected"]
-    },
-    {
-        "class": "icon_button_control",
-        "attributes": ["right"]
-    },
-    {
-        "class": "icon_button_control",
-        "attributes": ["right", "selected"]
-    },
-    {
-        "class": "icon_button_control",
-        "attributes": ["left", "right"]
-    },
-    {
-        "class": "icon_button_control",
-        "attributes": ["left", "right", "selected"]
     },
     {
         "class": "icon_regex",
