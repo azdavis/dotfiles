@@ -18,7 +18,7 @@ name=".config"
 cd "$HOME"
 
 tmp="$(mktemp -d ./clone-$name-XXXXXXXX)"
-trap "rmdir \"$tmp\"" EXIT
+trap "rm -rf \"$tmp\"" EXIT
 
 if [[ -d "$name" ]]; then
     [[ -d "$name/.git" ]] && abort "$repo already installed"
