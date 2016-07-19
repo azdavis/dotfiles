@@ -400,39 +400,8 @@
     },
     {
         "class": "sidebar_label",
-        "settings": ["spacegray_sidebar_font_small"],
-        "font.size": 10
-    },
-    {
-        "class": "sidebar_label",
-        "settings": ["spacegray_sidebar_font_normal"],
-        "font.size": 11
-    },
-    {
-        "class": "sidebar_label",
-        "settings": ["spacegray_sidebar_font_large"],
-        "font.size": 12
-    },
-    {
-        "class": "sidebar_label",
-        "settings": ["spacegray_sidebar_font_xlarge"],
-        "font.size": 14
-    },
-    {
-        "class": "sidebar_label",
-        "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
-        "color": [130, 130, 130]
-    },
-    {
-        "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
         "color": [200, 200, 200]
-    },
-    {
-        "class": "sidebar_label",
-        "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
-        "settings": ["bold_folder_labels"],
-        "font.bold": true
     },
     {
         "class": "sidebar_label",
