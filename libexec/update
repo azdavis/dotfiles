@@ -14,7 +14,7 @@ elif ! ping -c 1 -t 3 github.com &> /dev/null; then
 elif [[ "$(
     curl -fsL -m 3 -w %{http_code} -o /dev/null \
     -H Accept:\ application/vnd.github.chitauri-preview+sha \
-    -H If-None-Match:\ \"$(git rev-parse HEAD)\" \
+    -H If-None-Match:\ \"$(git rev-parse @)\" \
     https://api.github.com/repos/azdavis/config/commits/master
 )" == "304" ]]; then
     echo "already up-to-date"
