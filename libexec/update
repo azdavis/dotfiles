@@ -16,7 +16,7 @@ elif [[ "$(
     -H Accept:\ application/vnd.github.chitauri-preview+sha \
     -H If-None-Match:\ \"$(git rev-parse @)\" \
     https://api.github.com/repos/azdavis/config/commits/master
-)" == "304" ]]; then
+)" == 304 ]]; then
     echo "already up-to-date"
 else
     git stash save -q
