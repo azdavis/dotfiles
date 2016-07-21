@@ -224,7 +224,7 @@
     {
         "class": "grid_layout_control",
         "border_size": 1,
-        "border_color": [17, 17, 17]
+        "border_color": [34, 34, 34]
     },
     {
         "class": "minimap_control",
@@ -353,11 +353,6 @@
         "layer0.opacity": 1,
         "layer0.tint": [17, 17, 17],
         "layer0.inner_margin": 8
-    },
-    {
-        "class": "button_control",
-        "attributes": ["pressed"],
-        "layer0.tint": [17, 17, 17]
     },
     {
         "class": "text_line_control",
