@@ -1,6 +1,6 @@
-    <snippet>
+<snippet>
     <content><![CDATA[
-System.out.println("$1");
+System.out.printf("$1\n");
 ]]></content>
     <tabTrigger>log</tabTrigger>
     <scope>source.java</scope>
