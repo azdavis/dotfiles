@@ -17,6 +17,15 @@
                 <string>#333</string>
             </dict>
         </dict>
+        <dict>
+            <key>scope</key>
+            <string>constant.character.escape</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#99d</string>
+            </dict>
+        </dict>
     </array>
 </dict>
 </plist>
