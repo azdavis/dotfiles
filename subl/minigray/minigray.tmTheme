@@ -1,121 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-    <dict>
-        <key>settings</key>
-        <array>
-            <!-- settings -->
+<dict>
+    <key>settings</key>
+    <array>
+        <!-- settings -->
+        <dict>
+            <key>settings</key>
             <dict>
-                <key>settings</key>
-                <dict>
-                    <key>background</key>
-                    <string>#000</string>
-                    <key>caret</key>
-                    <string>#ddd</string>
-                    <key>foreground</key>
-                    <string>#ddd</string>
-                    <key>selection</key>
-                    <string>#333</string>
-                    <key>lineHighlight</key>
-                    <string>#222</string>
-                    <key>gutterForeground</key>
-                    <string>#555</string>
-                    <key>guide</key>
-                    <string>#555</string>
-                </dict>
+                <key>background</key>
+                <string>#000</string>
+                <key>caret</key>
+                <string>#ddd</string>
+                <key>foreground</key>
+                <string>#ddd</string>
+                <key>selection</key>
+                <string>#333</string>
+                <key>lineHighlight</key>
+                <string>#222</string>
+                <key>gutterForeground</key>
+                <string>#555</string>
+                <key>guide</key>
+                <string>#555</string>
             </dict>
-            <!-- white -->
+        </dict>
+        <!-- white -->
+        <dict>
+            <key>scope</key>
+            <string>punctuation.definition.tag, string.interpolated source, string.quoted source, variable</string>
+            <key>settings</key>
             <dict>
-                <key>scope</key>
-                <string>punctuation.definition.tag, string.interpolated source, string.quoted source, variable</string>
-                <key>settings</key>
-                <dict>
-                    <key>foreground</key>
-                    <string>#ddd</string>
-                </dict>
+                <key>foreground</key>
+                <string>#ddd</string>
             </dict>
-            <!-- gray -->
+        </dict>
+        <!-- gray -->
+        <dict>
+            <key>scope</key>
+            <string>comment</string>
+            <key>settings</key>
             <dict>
-                <key>scope</key>
-                <string>comment</string>
-                <key>settings</key>
-                <dict>
-                    <key>foreground</key>
-                    <string>#999</string>
-                </dict>
+                <key>foreground</key>
+                <string>#999</string>
             </dict>
-            <!-- black and red -->
+        </dict>
+        <!-- black and red -->
+        <dict>
+            <key>scope</key>
+            <string>invalid</string>
+            <key>settings</key>
             <dict>
-                <key>scope</key>
-                <string>invalid</string>
-                <key>settings</key>
-                <dict>
-                    <key>foreground</key>
-                    <string>#000</string>
-                    <key>background</key>
-                    <string>#f00</string>
-                </dict>
+                <key>foreground</key>
+                <string>#000</string>
+                <key>background</key>
+                <string>#f00</string>
             </dict>
-            <!-- red -->
+        </dict>
+        <!-- red -->
+        <dict>
+            <key>scope</key>
+            <string>entity.name.tag, keyword, markup.deleted, markup.heading punctuation, meta.selector, meta.tag, storage, support.function</string>
+            <key>settings</key>
             <dict>
-                <key>scope</key>
-                <string>entity.name.tag, keyword, markup.deleted, markup.heading punctuation, meta.selector, meta.tag, storage, support.function</string>
-                <key>settings</key>
-                <dict>
-                    <key>foreground</key>
-                    <string>#d99</string>
-                </dict>
+                <key>foreground</key>
+                <string>#d99</string>
             </dict>
-            <!-- magenta -->
+        </dict>
+        <!-- magenta -->
+        <dict>
+            <key>scope</key>
+            <string>variable.language, constant.language.this</string>
+            <key>settings</key>
             <dict>
-                <key>scope</key>
-                <string>variable.language, constant.language.this</string>
-                <key>settings</key>
-                <dict>
-                    <key>foreground</key>
-                    <string>#d9d</string>
-                </dict>
+                <key>foreground</key>
+                <string>#d9d</string>
             </dict>
-            <!-- yellow -->
+        </dict>
+        <!-- yellow -->
+        <dict>
+            <key>scope</key>
+            <string>string, keyword.operator.heredoc, keyword.control.heredoc-token</string>
+            <key>settings</key>
             <dict>
-                <key>scope</key>
-                <string>string, keyword.operator.heredoc, keyword.control.heredoc-token</string>
-                <key>settings</key>
-                <dict>
-                    <key>foreground</key>
-                    <string>#dd9</string>
-                </dict>
+                <key>foreground</key>
+                <string>#dd9</string>
             </dict>
-            <!-- green -->
+        </dict>
+        <!-- green -->
+        <dict>
+            <key>scope</key>
+            <string>entity.name.type.class, entity.name.type.module, markup.inserted, meta.constant, support.class, variable.other.constant</string>
+            <key>settings</key>
             <dict>
-                <key>scope</key>
-                <string>entity.name.type.class, entity.name.type.module, markup.inserted, meta.constant, support.class, variable.other.constant</string>
-                <key>settings</key>
-                <dict>
-                    <key>foreground</key>
-                    <string>#9d9</string>
-                </dict>
+                <key>foreground</key>
+                <string>#9d9</string>
             </dict>
-            <!-- cyan -->
+        </dict>
+        <!-- cyan -->
+        <dict>
+            <key>scope</key>
+            <string>entity.name.function, markup.underline.link, meta.diff</string>
+            <key>settings</key>
             <dict>
-                <key>scope</key>
-                <string>entity.name.function, markup.underline.link, meta.diff</string>
-                <key>settings</key>
-                <dict>
-                    <key>foreground</key>
-                    <string>#9dd</string>
-                </dict>
+                <key>foreground</key>
+                <string>#9dd</string>
             </dict>
-            <!-- blue -->
+        </dict>
+        <!-- blue -->
+        <dict>
+            <key>scope</key>
+            <string>constant, string.regexp, text.html.markdown markup.raw</string>
+            <key>settings</key>
             <dict>
-                <key>scope</key>
-                <string>constant, string.regexp, text.html.markdown markup.raw</string>
-                <key>settings</key>
-                <dict>
-                    <key>foreground</key>
-                    <string>#99d</string>
-                </dict>
+                <key>foreground</key>
+                <string>#99d</string>
             </dict>
-        </array>
-    </dict>
+        </dict>
+    </array>
+</dict>
 </plist>
