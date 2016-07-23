@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+module Main (main) where
+
+main :: IO ()
+main = print 0
+]]></content>
+    <tabTrigger>nf</tabTrigger>
+    <scope>source.haskell</scope>
+    <description>hs</description>
+</snippet>
