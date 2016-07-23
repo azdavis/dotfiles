@@ -2,10 +2,9 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
     <dict>
-        <key>name</key>
-        <string>minigray</string>
         <key>settings</key>
         <array>
+            <!-- settings -->
             <dict>
                 <key>settings</key>
                 <dict>
@@ -25,8 +24,8 @@
                     <string>#555</string>
                 </dict>
             </dict>
+            <!-- white -->
             <dict>
-                <!-- white -->
                 <key>scope</key>
                 <string>punctuation.definition.tag, string.interpolated source, string.quoted source, variable</string>
                 <key>settings</key>
@@ -35,8 +34,8 @@
                     <string>#ddd</string>
                 </dict>
             </dict>
+            <!-- gray -->
             <dict>
-                <!-- gray -->
                 <key>scope</key>
                 <string>comment</string>
                 <key>settings</key>
@@ -45,8 +44,8 @@
                     <string>#999</string>
                 </dict>
             </dict>
+            <!-- black and red -->
             <dict>
-                <!-- black and red -->
                 <key>scope</key>
                 <string>invalid</string>
                 <key>settings</key>
@@ -57,8 +56,8 @@
                     <string>#f00</string>
                 </dict>
             </dict>
+            <!-- red -->
             <dict>
-                <!-- red -->
                 <key>scope</key>
                 <string>entity.name.tag, keyword, markup.deleted, markup.heading punctuation, meta.selector, meta.tag, storage, support.function</string>
                 <key>settings</key>
@@ -67,8 +66,8 @@
                     <string>#d99</string>
                 </dict>
             </dict>
+            <!-- magenta -->
             <dict>
-                <!-- magenta -->
                 <key>scope</key>
                 <string>variable.language, constant.language.this</string>
                 <key>settings</key>
@@ -77,8 +76,8 @@
                     <string>#d9d</string>
                 </dict>
             </dict>
+            <!-- yellow -->
             <dict>
-                <!-- yellow -->
                 <key>scope</key>
                 <string>string, keyword.operator.heredoc, keyword.control.heredoc-token</string>
                 <key>settings</key>
@@ -87,8 +86,8 @@
                     <string>#dd9</string>
                 </dict>
             </dict>
+            <!-- green -->
             <dict>
-                <!-- green -->
                 <key>scope</key>
                 <string>entity.name.type.class, entity.name.type.module, markup.inserted, meta.constant, support.class, variable.other.constant</string>
                 <key>settings</key>
@@ -97,8 +96,8 @@
                     <string>#9d9</string>
                 </dict>
             </dict>
+            <!-- cyan -->
             <dict>
-                <!-- cyan -->
                 <key>scope</key>
                 <string>entity.name.function, markup.underline.link, meta.diff</string>
                 <key>settings</key>
@@ -107,8 +106,8 @@
                     <string>#9dd</string>
                 </dict>
             </dict>
+            <!-- blue -->
             <dict>
-                <!-- blue -->
                 <key>scope</key>
                 <string>constant, string.regexp, text.html.markdown markup.raw</string>
                 <key>settings</key>
