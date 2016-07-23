@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+puts "$1"
+]]></content>
+    <tabTrigger>puts</tabTrigger>
+    <scope>source.ruby</scope>
+    <description>rb</description>
+</snippet>

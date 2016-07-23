@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+System.out.println("$1");
+]]></content>
+    <tabTrigger>puts</tabTrigger>
+    <scope>source.java</scope>
+    <description>java</description>
+</snippet>

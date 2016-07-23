@@ -1,8 +1,8 @@
 <snippet>
     <content><![CDATA[
-printf("$1\n");
+puts("$1");
 ]]></content>
-    <tabTrigger>logf</tabTrigger>
+    <tabTrigger>puts</tabTrigger>
     <scope>source.c</scope>
     <description>c</description>
 </snippet>
