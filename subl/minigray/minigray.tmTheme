@@ -26,8 +26,7 @@
                 </dict>
             </dict>
             <dict>
-                <key>name</key>
-                <string>WHITE</string>
+                <!-- white -->
                 <key>scope</key>
                 <string>punctuation.definition.tag, string.interpolated source, string.quoted source, variable</string>
                 <key>settings</key>
@@ -37,8 +36,7 @@
                 </dict>
             </dict>
             <dict>
-                <key>name</key>
-                <string>GRAY</string>
+                <!-- gray -->
                 <key>scope</key>
                 <string>comment</string>
                 <key>settings</key>
@@ -48,8 +46,7 @@
                 </dict>
             </dict>
             <dict>
-                <key>name</key>
-                <string>BLACK AND RED</string>
+                <!-- black and red -->
                 <key>scope</key>
                 <string>invalid</string>
                 <key>settings</key>
@@ -61,8 +58,7 @@
                 </dict>
             </dict>
             <dict>
-                <key>name</key>
-                <string>RED</string>
+                <!-- red -->
                 <key>scope</key>
                 <string>entity.name.tag, keyword, markup.deleted, markup.heading punctuation, meta.selector, meta.tag, storage, support.function</string>
                 <key>settings</key>
@@ -72,8 +68,7 @@
                 </dict>
             </dict>
             <dict>
-                <key>name</key>
-                <string>MAGENTA</string>
+                <!-- magenta -->
                 <key>scope</key>
                 <string>variable.language, constant.language.this</string>
                 <key>settings</key>
@@ -83,8 +78,7 @@
                 </dict>
             </dict>
             <dict>
-                <key>name</key>
-                <string>YELLOW</string>
+                <!-- yellow -->
                 <key>scope</key>
                 <string>string, keyword.operator.heredoc, keyword.control.heredoc-token</string>
                 <key>settings</key>
@@ -94,8 +88,7 @@
                 </dict>
             </dict>
             <dict>
-                <key>name</key>
-                <string>GREEN</string>
+                <!-- green -->
                 <key>scope</key>
                 <string>entity.name.type.class, entity.name.type.module, markup.inserted, meta.constant, support.class, variable.other.constant</string>
                 <key>settings</key>
@@ -105,8 +98,7 @@
                 </dict>
             </dict>
             <dict>
-                <key>name</key>
-                <string>CYAN</string>
+                <!-- cyan -->
                 <key>scope</key>
                 <string>entity.name.function, markup.underline.link, meta.diff</string>
                 <key>settings</key>
@@ -116,8 +108,7 @@
                 </dict>
             </dict>
             <dict>
-                <key>name</key>
-                <string>BLUE</string>
+                <!-- blue -->
                 <key>scope</key>
                 <string>constant, string.regexp, text.html.markdown markup.raw</string>
                 <key>settings</key>
