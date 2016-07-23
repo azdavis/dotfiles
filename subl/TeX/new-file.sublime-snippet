@@ -10,7 +10,7 @@
 \begin{document}
 
 \maketitle
-${1:content}
+${1:hello, world}
 
 \end{document}
 

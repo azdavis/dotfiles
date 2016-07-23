@@ -3,7 +3,8 @@
 module Main (main) where
 
 main :: IO ()
-main = print 0
+main = putStrLn "${1:hello, world}"
+
 ]]></content>
     <tabTrigger>nf</tabTrigger>
     <scope>source.haskell</scope>

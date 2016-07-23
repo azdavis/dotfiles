@@ -5,7 +5,7 @@
 set -euo pipefail
 IFS=\$'\n\t'
 
-${1:#}
+echo "${1:hello, world}"
 
 true
 
