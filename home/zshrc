@@ -37,7 +37,8 @@ alias \
     egrep="egrep --color=auto" \
     fgrep="fgrep --color=auto" \
     grep="grep --color=auto" \
-    ls="ls -bh --color=auto --group-directories-first"
+    ls="ls -bh --color=auto --group-directories-first" \
+    tree="tree --dirsfirst"
 
 alias \
     git="hub" \
