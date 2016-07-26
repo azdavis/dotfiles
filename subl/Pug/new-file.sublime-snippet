@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+html(lang="en")
+    head
+        include /src/base/head.pug
+        title foo
+        style: include index.css
+    body
+        script: include index.js
+
+]]></content>
+    <tabTrigger>nf</tabTrigger>
+    <scope>text.pug</scope>
+    <description>pug</description>
+</snippet>
