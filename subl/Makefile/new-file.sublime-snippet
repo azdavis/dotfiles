@@ -1,8 +1,10 @@
 <snippet>
 	<content><![CDATA[
+MAKEFLAGS += -rR
+SHELL := sh -euo pipefail
+Q ?= &> /dev/null
 THINGC ?=
 THINGFLAGS ?=
-Q ?= &> /dev/null
 
 .PHONY: clean
 
