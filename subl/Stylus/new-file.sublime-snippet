@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+@import "/src/base/const"
+
+]]></content>
+    <tabTrigger>nf</tabTrigger>
+    <scope>source.stylus</scope>
+    <description>styl</description>
+</snippet>
