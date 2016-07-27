@@ -24,4 +24,9 @@ symlink() {
     ln -sn "$1" "$2"
 }
 
+get() {
+    echo -n "$1: "
+    read "$1"
+}
+
 true

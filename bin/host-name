@@ -2,7 +2,7 @@
 
 source "$HOME/.config/etc/base.sh" || exit 1
 
-echo -n "hostname: " && read host_name
+get "hostname"
 
 sudo scutil --set ComputerName "$host_name"
 sudo scutil --set HostName "$host_name"

@@ -2,9 +2,9 @@
 
 source "$HOME/.config/etc/base.sh" || exit 1
 
-echo -n "username: " && read username
-echo -n "email: " && read email
-echo -n "token: " && read token
+get "username"
+get "email"
+get "token"
 
 git config --global user.name "$username"
 git config --global user.email "$email"
