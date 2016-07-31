@@ -27,6 +27,7 @@
         "*.ttf",
         "*.ttf",
         "*.woff",
+        "*.woff2",
         "*.zip"
     ],
     "caret_style": "solid",
