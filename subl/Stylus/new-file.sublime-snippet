@@ -2,6 +2,15 @@
     <content><![CDATA[
 @import "/src/base/const"
 
+html
+    background \$light
+    color \$dark
+    font \$fz/\$lh \$sans
+
+body
+    margin 0
+    padding 0.5em
+
 ]]></content>
     <tabTrigger>nf</tabTrigger>
     <scope>source.stylus</scope>
