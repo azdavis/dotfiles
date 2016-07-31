@@ -12,6 +12,9 @@
         "*.jar",
         "*.jpeg",
         "*.jpg",
+        "*.m4a",
+        "*.m4v",
+        "*.mkv",
         "*.mp3",
         "*.mp4",
         "*.otf",
@@ -23,6 +26,7 @@
         "*.tgz",
         "*.ttf",
         "*.ttf",
+        "*.woff",
         "*.zip"
     ],
     "caret_style": "solid",
@@ -43,6 +47,7 @@
         "*.dll",
         "*.dylib",
         "*.exe",
+        "*.hi",
         "*.html",
         "*.idb",
         "*.js",
@@ -58,7 +63,6 @@
         "*.so",
         "*.sublime-workspace",
         "*.suo",
-        "*.tmp",
         ".DS_Store"
     ],
     "find_selected_text": true,
@@ -68,6 +72,7 @@
         ".git",
         ".hg",
         ".svn",
+        "CVS",
         "node_modules"
     ],
     "font_face": "input",
