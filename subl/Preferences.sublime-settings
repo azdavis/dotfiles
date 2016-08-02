@@ -145,7 +145,6 @@
     "spelling_selector": "comment",
     "theme": "minigray.sublime-theme",
     "translate_tabs_to_spaces": true,
-    "trim_automatic_white_space": false,
     "trim_trailing_white_space_on_save": true,
     "word_wrap": true,
     "wrap_width": 0
