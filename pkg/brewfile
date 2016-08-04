@@ -10,6 +10,7 @@ brew "git", args: ["with-blk-sha1", "with-brewed-openssl", "with-pcre"]
 brew "gmp"
 brew "gnupg"
 brew "hub"
+brew "keybase"
 brew "node"
 brew "openssl"
 brew "pcre"
