@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-#!/usr/bin/env zsh
+#!/usr/bin/env sh
 
 set -euo pipefail
 IFS=\$'\n\t'
