@@ -30,15 +30,14 @@ alias \
     tree="tree --dirsfirst"
 
 alias \
-    git="hub" \
-    ga="hub add" \
-    gb="hub branch" \
-    gc="hub commit" \
-    gd="hub diff" \
-    gk="hub checkout" \
-    gl="hub log --decorate --oneline" \
-    gr="hub reset" \
-    gs="hub status -sb"
+    ga="git add" \
+    gb="git branch" \
+    gc="git commit" \
+    gd="git diff" \
+    gk="git checkout" \
+    gl="git log --decorate --oneline" \
+    gr="git reset" \
+    gs="git status -sb"
 
 precmd() {
     print -Pn "\e]2;%n@%M\a"
