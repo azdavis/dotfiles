@@ -7,8 +7,6 @@ IFS=\$'\n\t'
 
 echo "${1:hello, world}"
 
-true
-
 ]]></content>
     <tabTrigger>nf</tabTrigger>
     <scope>source.shell</scope>
