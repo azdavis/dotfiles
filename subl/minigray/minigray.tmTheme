@@ -11,9 +11,9 @@
                 <key>background</key>
                 <string>#000</string>
                 <key>caret</key>
-                <string>#ddd</string>
+                <string>#DDD</string>
                 <key>foreground</key>
-                <string>#ddd</string>
+                <string>#DDD</string>
                 <key>selection</key>
                 <string>#333</string>
                 <key>lineHighlight</key>
@@ -31,7 +31,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#ddd</string>
+                <string>#DDD</string>
             </dict>
         </dict>
         <!-- gray -->
@@ -53,7 +53,7 @@
                 <key>foreground</key>
                 <string>#000</string>
                 <key>background</key>
-                <string>#f00</string>
+                <string>#F00</string>
             </dict>
         </dict>
         <!-- red -->
@@ -63,7 +63,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#d99</string>
+                <string>#D99</string>
             </dict>
         </dict>
         <!-- magenta -->
@@ -73,7 +73,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#d9d</string>
+                <string>#D9D</string>
             </dict>
         </dict>
         <!-- yellow -->
@@ -83,7 +83,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#dd9</string>
+                <string>#DD9</string>
             </dict>
         </dict>
         <!-- green -->
@@ -93,7 +93,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#9d9</string>
+                <string>#9D9</string>
             </dict>
         </dict>
         <!-- cyan -->
@@ -103,7 +103,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#9dd</string>
+                <string>#9DD</string>
             </dict>
         </dict>
         <!-- blue -->
@@ -113,7 +113,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#99d</string>
+                <string>#99D</string>
             </dict>
         </dict>
     </array>
