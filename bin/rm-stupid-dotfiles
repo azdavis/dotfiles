@@ -1,7 +1,6 @@
 #!/usr/bin/env sh
 
-cd "$(cd "$(dirname "$0")" && pwd -P)"
-source "../etc/base.sh"
+source "$HOME/.config/etc/base.sh"
 
 ./rm-ds-store "$HOME"
 

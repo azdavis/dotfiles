@@ -1,7 +1,6 @@
 #!/usr/bin/env sh
 
-cd "$(cd "$(dirname "$0")" && pwd -P)"
-source "../etc/base.sh"
+source "$HOME/.config/etc/base.sh"
 
 # http://sam.nipl.net/b/git-gc-all-ferocious
 # http://stackoverflow.com/a/14728706
