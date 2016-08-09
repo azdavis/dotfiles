@@ -1,10 +1,10 @@
+[commit]
+	verbose = 1
 [core]
 	attributesfile = ~/.config/etc/gitattributes
 	editor = edit -w
 	pager = less -FRSX
 	untrackedCache = true
-[commit]
-	verbose = 1
 [credential]
 	helper = osxkeychain
 [diff]
