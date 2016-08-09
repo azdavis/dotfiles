@@ -100,5 +100,4 @@ if [[ "$USER" != "root" ]]; then
     f="$HOME/.config/z/zshrc"
     [[ -f "$f" ]] && source "$f"
     date
-    cd Documents
 fi
