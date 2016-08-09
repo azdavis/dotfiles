@@ -1,6 +1,7 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env sh
 
-source "$HOME/.config/etc/base.sh" || exit 1
+cd "$(cd "$(dirname "$0")" && pwd -P)"
+source "../etc/base.sh"
 
 wd="$HOME/.config/home"
 cd "$wd"
@@ -14,5 +15,3 @@ for f in $(find *); do
         symlink "$wd/$f" "$dst"
     fi
 done
-
-true

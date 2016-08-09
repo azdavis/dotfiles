@@ -1,15 +1,14 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env sh
 
-source "$HOME/.config/etc/base.sh" || exit 1
+cd "$(cd "$(dirname "$0")" && pwd -P)"
+source "../etc/base.sh"
 
 get "hostname"
 
-sudo scutil --set ComputerName "$host_name"
-sudo scutil --set HostName "$host_name"
-sudo scutil --set LocalHostName "$host_name"
+sudo scutil --set ComputerName "$hostname"
+sudo scutil --set HostName "$hostname"
+sudo scutil --set LocalHostName "$hostname"
 sudo defaults write \
     "/Library/Preferences/safe_systemConfiguration/com.apple.smb.server" \
-    NetBIOSName -string "$host_name"
+    NetBIOSName -string "$hostname"
 sudo dscacheutil -flushcache
-
-true

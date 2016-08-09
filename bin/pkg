@@ -1,6 +1,7 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env sh
 
-source "$HOME/.config/etc/base.sh" || exit 1
+cd "$(cd "$(dirname "$0")" && pwd -P)"
+source "../etc/base.sh"
 
 cd "$HOME/.config/pkg"
 
@@ -39,5 +40,3 @@ if [[ "$do_tlmgr" == "y" ]]; then
     tlmgr update --all
     tlmgr install $(cat tlmgrfile)
 fi
-
-true

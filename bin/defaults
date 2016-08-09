@@ -1,6 +1,7 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env sh
 
-source "$HOME/.config/etc/base.sh" || exit 1
+cd "$(cd "$(dirname "$0")" && pwd -P)"
+source "../etc/base.sh"
 
 alias dw="defaults write"
 
@@ -26,5 +27,3 @@ dw com.apple.screencapture disable-shadow -bool true
 dw com.apple.universalaccess reduceTransparency -bool true
 
 killall Dock Finder
-
-true

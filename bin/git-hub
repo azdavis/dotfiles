@@ -1,6 +1,7 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env sh
 
-source "$HOME/.config/etc/base.sh" || exit 1
+cd "$(cd "$(dirname "$0")" && pwd -P)"
+source "../etc/base.sh"
 
 get "username"
 get "email"
@@ -25,5 +26,3 @@ github.com:
   oauth_token: $token
   protocol: https
 EOS
-
-true

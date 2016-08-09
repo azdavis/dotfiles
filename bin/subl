@@ -1,6 +1,7 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env sh
 
-source "$HOME/.config/etc/base.sh" || exit 1
+cd "$(cd "$(dirname "$0")" && pwd -P)"
+source "../etc/base.sh"
 
 if pgrep -f "Sublime Text" > /dev/null; then
     abort "sublime text must not be running"
@@ -21,6 +22,4 @@ symlink \
 
 echo -n "install package control [yn]? "
 read x
-[[ "$x" == "y" ]] && open "https://packagecontrol.io/installation"
-
-true
+[[ "$x" == "y" ]] && open "https://packagecontrol.io/installation"; true

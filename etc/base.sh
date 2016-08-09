@@ -2,7 +2,7 @@ set -euo pipefail
 IFS=$'\n\t'
 
 abort() {
-    echo "\e[31merror:\e[0m $1"
+    echo 1>&2 "\e[31merror:\e[0m $1"
     exit 1
 }
 
@@ -28,5 +28,3 @@ get() {
     echo -n "$1: "
     read "$1"
 }
-
-true
