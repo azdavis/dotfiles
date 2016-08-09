@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+
+cd "$(cd "$(dirname "$0")" && pwd -P)"
+source "../etc/base.sh"
+
+# http://superuser.com/a/827710
+
+launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist

@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+
+cd "$(cd "$(dirname "$0")" && pwd -P)"
+source "../etc/base.sh"
+
+if [[ $# -ge 1 ]]; then
+    wd="$1"
+else
+    wd="/"
+fi
+
+find "$wd" -name .DS_Store -exec echo {} \; -delete 2> /dev/null

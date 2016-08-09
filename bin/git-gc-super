@@ -1,0 +1,18 @@
+#!/usr/bin/env sh
+
+cd "$(cd "$(dirname "$0")" && pwd -P)"
+source "../etc/base.sh"
+
+# http://sam.nipl.net/b/git-gc-all-ferocious
+# http://stackoverflow.com/a/14728706
+# https://metalinguist.wordpress.com/2007/12/06/the-woes-of-git-gc-aggressive-and-how-git-deltas-work/
+
+git \
+    -c gc.reflogExpire=0 \
+    -c gc.reflogExpireUnreachable=0 \
+    -c gc.rerereresolved=0 \
+    -c gc.rerereunresolved=0 \
+    -c gc.pruneExpire=now \
+    gc $@
+git repack -adf --depth=250 --window=250
+git fsck --strict --unreachable

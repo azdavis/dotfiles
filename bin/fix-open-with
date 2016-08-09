@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+
+cd "$(cd "$(dirname "$0")" && pwd -P)"
+source "../etc/base.sh"
+
+# http://osxdaily.com/2013/01/22/fix-open-with-menu-mac-os-x/
+
+/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister \
+  -kill -r -domain local -domain system -domain user
+
+killall Finder

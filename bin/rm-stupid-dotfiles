@@ -1,0 +1,15 @@
+#!/usr/bin/env sh
+
+cd "$(cd "$(dirname "$0")" && pwd -P)"
+source "../etc/base.sh"
+
+./rm-ds-store "$HOME"
+
+cd
+rm -rf \
+    .ghc \
+    .lldb \
+    .npm \
+    .oracle_jre_usage \
+    .node_repl_history \
+    .sh_history
