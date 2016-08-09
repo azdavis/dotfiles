@@ -13,7 +13,7 @@ remove() {
         [[ -h "$1" ]] && rm "$1"
         return 0
     fi
-    echo -n "remove $1 [yn]? "
+    printf "remove $1 [yn]? "
     read x
     [[ "$x" == "y" ]] && rm -rf "$1"
 }
@@ -25,6 +25,6 @@ symlink() {
 }
 
 get() {
-    echo -n "$1: "
+    printf "$1: "
     read "$1"
 }

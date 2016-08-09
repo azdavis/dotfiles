@@ -20,6 +20,6 @@ symlink \
     "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" \
     "/usr/local/bin/edit"
 
-echo -n "install package control [yn]? "
+printf "install package control [yn]? "
 read x
 [[ "$x" == "y" ]] && open "https://packagecontrol.io/installation"; true
