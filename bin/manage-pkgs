@@ -4,11 +4,11 @@ source "$HOME/.config/etc/base.sh"
 
 cd "$HOME/.config/pkg"
 
-get "do_brew"
-get "do_gem"
-get "do_tlmgr"
+get "brew"
+get "gem"
+get "tlmgr"
 
-if [[ "$do_brew" == "y" ]]; then
+if [[ "$brew" == "y" ]]; then
     which brew > /dev/null || curl -fsSL "https://git.io/pVOl" | ruby
     brew update
     brew upgrade
@@ -27,14 +27,14 @@ if [[ "$do_brew" == "y" ]]; then
     brew doctor || true
 fi
 
-if [[ "$do_gem" == "y" ]]; then
+if [[ "$gem" == "y" ]]; then
     gem install bundle
     bundle install
     bundle update
     rm -rf "$HOME/.gem" "$HOME/.bundle" ".bundle" "Gemfile.lock"
 fi
 
-if [[ "$do_tlmgr" == "y" ]]; then
+if [[ "$tlmgr" == "y" ]]; then
     tlmgr update --self
     tlmgr update --all
     tlmgr install $(cat tlmgrfile)
