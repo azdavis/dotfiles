@@ -1,10 +1,11 @@
 <snippet>
     <content><![CDATA[
 #include <stdio.h>
+#include <stdlib.h>
 
-int main(int argc, char **argv) {
+int main() {
     puts("${1:hello, world}");
-    return 0;
+    return EXIT_SUCCESS;
 }
 
 ]]></content>
