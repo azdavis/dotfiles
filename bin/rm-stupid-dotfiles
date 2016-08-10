@@ -6,9 +6,12 @@ source "$HOME/.config/etc/base.sh"
 
 cd
 rm -rf \
+    .bash_history \
+    .bundle \
+    .gem \
     .ghc \
     .lldb \
+    .node_repl_history \
     .npm \
     .oracle_jre_usage \
-    .node_repl_history \
     .sh_history
