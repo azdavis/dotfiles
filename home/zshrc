@@ -35,6 +35,7 @@ alias \
     gb="git branch" \
     gc="git commit" \
     gd="git diff" \
+    gi="git init" \
     gk="git checkout" \
     gl="git log --decorate --oneline" \
     gr="git reset" \
