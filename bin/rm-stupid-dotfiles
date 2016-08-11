@@ -2,7 +2,7 @@
 
 source "$HOME/.config/etc/base.sh"
 
-./rm-ds-store "$HOME"
+"$HOME/.config/bin/rm-ds-store" "$HOME"
 
 cd
 rm -rf \
