@@ -4,7 +4,7 @@ a potpourri of os x config files
 
 ## install
 
-    curl -fsSL "https://git.io/voEgC" | zsh
+    curl -fsSL "https://git.io/voEgC" | sh
 
 - this will clone the repository to `~/.config`
 - if `~/.config` already exists, a backup will be made
