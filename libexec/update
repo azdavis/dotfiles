@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env sh
 
 source "$HOME/.config/etc/base.sh" || exit 1
 
