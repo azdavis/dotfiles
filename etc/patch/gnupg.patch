@@ -1,0 +1,30 @@
+ Formula/gnupg.rb | 7 -------
+ 1 file changed, 7 deletions(-)
+
+diff --git a/Formula/gnupg.rb b/Formula/gnupg.rb
+index 94674fe..35f7391 100644
+--- a/Formula/gnupg.rb
++++ b/Formula/gnupg.rb
+@@ -21,7 +21,6 @@ class Gnupg < Formula
+       --disable-silent-rules
+       --prefix=#{prefix}
+       --disable-asm
+-      --program-suffix=1
+     ]
+     args << "--with-libusb=no" if build.without? "libusb-compat"
+
+@@ -33,12 +32,6 @@ class Gnupg < Formula
+     # dependency order wrong
+     [bin, libexec/"gnupg"].each(&:mkpath)
+     system "make", "install"
+-
+-    # Although gpg2 support should be pretty universal these days
+-    # keep vanilla `gpg` executables available, at least for now.
+-    %w[gpg-zip1 gpg1 gpgsplit1 gpgv1].each do |cmd|
+-      (libexec/"gpgbin").install_symlink bin/cmd => cmd.to_s.sub(/1/, "")
+-    end
+   end
+
+   def caveats; <<-EOS.undent
+--
+2.9.3

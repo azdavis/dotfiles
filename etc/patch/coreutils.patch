@@ -1,9 +1,3 @@
-From 04a962d25b278d83ca590ac99153915f041a30f9 Mon Sep 17 00:00:00 2001
-From: azdavis <ariel.z.davis@icloud.com>
-Date: Mon, 9 May 2016 17:01:07 -0400
-Subject: [PATCH] coreutils: remove 'g' prefix
-
----
  Formula/coreutils.rb | 14 --------------
  1 file changed, 14 deletions(-)
 
@@ -34,8 +28,7 @@ index e2af40d..e9e539b 100644
 -    bin.install_symlink "grealpath" => "realpath"
 -    man1.install_symlink "grealpath.1" => "realpath.1"
    end
- 
-   def caveats; <<-EOS.undent
--- 
-2.8.2
 
+   def caveats; <<-EOS.undent
+--
+2.8.2

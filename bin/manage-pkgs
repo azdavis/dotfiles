@@ -14,11 +14,11 @@ if [[ "$brew" == "y" ]]; then
     brew upgrade
     formula="$(brew --prefix)/Library/Formula"
     cd "$formula"
-    git apply "$HOME/.config/etc/coreutils-remove-g-prefix.patch"
+    git apply ~/.config/etc/patch/*
     cd "$HOME/.config/pkg"
     brew bundle --verbose
     cd "$formula"
-    git checkout "coreutils.rb"
+    git checkout .
     cd "$HOME/.config/pkg"
     brew bundle cleanup --force
     brew cask cleanup --force
