@@ -1,6 +1,3 @@
- Formula/coreutils.rb | 14 --------------
- 1 file changed, 14 deletions(-)
-
 diff --git a/Formula/coreutils.rb b/Formula/coreutils.rb
 index e2af40d..e9e539b 100644
 --- a/Formula/coreutils.rb
