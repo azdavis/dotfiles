@@ -3,13 +3,12 @@
 @import "/src/base/const"
 
 html
-    background \$light
     color \$dark
     font \$fz/\$lh \$sans
 
 body
     margin 0
-    padding 0.5em
+    padding 10px
 
 ]]></content>
     <tabTrigger>nf</tabTrigger>
