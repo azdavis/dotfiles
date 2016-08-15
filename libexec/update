@@ -23,7 +23,7 @@ else
     git checkout -q master
     git fetch -q origin master
     git merge --ff-only origin/master master
-    [[ -n "$(git stash list)" ]] && git stash pop -q
+    [[ "$(git stash list)" ]] && git stash pop -q
     echo "your terminal may need to be restarted to finish this update"
 fi
 
