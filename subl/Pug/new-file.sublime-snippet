@@ -4,11 +4,11 @@ html(lang="en")
     head
         include /src/base/head.pug
         title.
-            ${1:hello, world}
+            ${1:hello world}
         style: include index.css
     body
         div.
-            ${1:hello, world}
+            ${1:hello world}
         script: include index.js
 
 ]]></content>

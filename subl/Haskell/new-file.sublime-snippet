@@ -3,7 +3,7 @@
 module Main (main) where
 
 main :: IO ()
-main = putStrLn "${1:hello, world}"
+main = putStrLn "${1:hello world}"
 
 ]]></content>
     <tabTrigger>nf</tabTrigger>

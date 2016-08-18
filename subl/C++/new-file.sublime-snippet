@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 int main() {
-    puts("${1:hello, world}");
+    puts("${1:hello world}");
     return EXIT_SUCCESS;
 }
 

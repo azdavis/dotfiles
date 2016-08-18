@@ -5,7 +5,7 @@
 set -euo pipefail
 IFS=\$'\n\t'
 
-echo "${1:hello, world}"
+echo "${1:hello world}"
 
 ]]></content>
     <tabTrigger>nf</tabTrigger>

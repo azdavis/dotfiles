@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-console.log("hello, world")
+console.log("hello world")
 
 ]]></content>
     <tabTrigger>nf</tabTrigger>
