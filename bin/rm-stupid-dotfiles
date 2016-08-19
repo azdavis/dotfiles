@@ -5,7 +5,7 @@ source "$HOME/.config/etc/base.sh"
 "$HOME/.config/bin/rm-ds-store" "$HOME"
 
 cd
-rm -rf \
+rm -rfv \
     .bash_history \
     .bundle \
     .gem \
