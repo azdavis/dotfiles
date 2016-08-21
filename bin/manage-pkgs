@@ -4,38 +4,28 @@ source "$HOME/.config/etc/base.sh"
 
 cd "$HOME/.config/pkg"
 
-get "brew"
-get "gem"
-get "tlmgr"
+which brew > /dev/null || curl -fsSL "https://git.io/pVOl" | ruby
+brew update
+brew upgrade
+formula="$(brew --prefix)/Library/Taps/homebrew/homebrew-core/Formula"
+cd "$formula"
+git apply ~/.config/etc/patch/*
+cd "$HOME/.config/pkg"
+brew bundle --verbose
+cd "$formula"
+git checkout .
+cd "$HOME/.config/pkg"
+brew bundle cleanup --force
+brew cask cleanup --force
+brew cleanup --force
+brew prune
+brew doctor || true
 
-if [[ "$brew" == "y" ]]; then
-    which brew > /dev/null || curl -fsSL "https://git.io/pVOl" | ruby
-    brew update
-    brew upgrade
-    formula="$(brew --prefix)/Library/Taps/homebrew/homebrew-core/Formula"
-    cd "$formula"
-    git apply ~/.config/etc/patch/*
-    cd "$HOME/.config/pkg"
-    brew bundle --verbose
-    cd "$formula"
-    git checkout .
-    cd "$HOME/.config/pkg"
-    brew bundle cleanup --force
-    brew cask cleanup --force
-    brew cleanup --force
-    brew prune
-    brew doctor || true
-fi
+gem install bundle
+bundle install
+bundle update
+rm -rf "$HOME/.gem" "$HOME/.bundle" ".bundle" "Gemfile.lock"
 
-if [[ "$gem" == "y" ]]; then
-    gem install bundle
-    bundle install
-    bundle update
-    rm -rf "$HOME/.gem" "$HOME/.bundle" ".bundle" "Gemfile.lock"
-fi
-
-if [[ "$tlmgr" == "y" ]]; then
-    tlmgr update --self
-    tlmgr update --all
-    tlmgr install $(cat tlmgrfile)
-fi
+tlmgr update --self
+tlmgr update --all
+tlmgr install $(cat tlmgrfile)
