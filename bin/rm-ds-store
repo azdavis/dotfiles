@@ -8,4 +8,4 @@ else
     wd="/"
 fi
 
-find "$wd" -name .DS_Store -exec echo {} \; -delete 2> /dev/null
+find "$wd" -name .DS_Store -exec rm -v {} \; 2> /dev/null
