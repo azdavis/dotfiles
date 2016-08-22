@@ -21,11 +21,6 @@ brew cleanup --force
 brew prune
 brew doctor || true
 
-gem install bundle
-bundle install
-bundle update
-rm -rf "$HOME/.gem" "$HOME/.bundle" ".bundle" "Gemfile.lock"
-
 tlmgr update --self
 tlmgr update --all
 tlmgr install $(cat tlmgrfile)
