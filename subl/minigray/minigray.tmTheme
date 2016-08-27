@@ -109,7 +109,7 @@
         <!-- blue -->
         <dict>
             <key>scope</key>
-            <string>constant, string.regexp, markup.raw.inline</string>
+            <string>constant, string.regexp, text.html.markdown markup.raw</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>

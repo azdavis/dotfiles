@@ -87,7 +87,6 @@
     "hot_exit": false,
     "ignored_packages":
     [
-        "Markdown",
         "Vintage"
     ],
     "ignored_words":
