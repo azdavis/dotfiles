@@ -146,7 +146,7 @@
     "show_encoding": true,
     "show_full_path": false,
     "spell_check": true,
-    "spelling_selector": "comment",
+    "spelling_selector": "comment, text -text.plain -constant -variable -entity -string -markup -source",
     "theme": "minigray.sublime-theme",
     "translate_tabs_to_spaces": true,
     "trim_trailing_white_space_on_save": true,
