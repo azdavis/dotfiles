@@ -6,6 +6,7 @@
     "installed_packages":
     [
         "EditorConfig",
+        "Markdown Extended",
         "Package Control",
         "Pug",
         "Stylus"
