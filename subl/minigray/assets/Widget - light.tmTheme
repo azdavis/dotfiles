@@ -15,7 +15,7 @@
                 <key>foreground</key>
                 <string>#222</string>
                 <key>selection</key>
-                <string>#ccc</string>
+                <string>#d5d5d5</string>
             </dict>
         </dict>
         <!-- black and red -->
