@@ -10,10 +10,13 @@ index 94674fe..35f7391 100644
      ]
      args << "--with-libusb=no" if build.without? "libusb-compat"
 
-@@ -33,12 +32,6 @@ class Gnupg < Formula
+@@ -33,15 +32,6 @@ class Gnupg < Formula
      # dependency order wrong
      [bin, libexec/"gnupg"].each(&:mkpath)
      system "make", "install"
+-
+-    # https://lists.gnupg.org/pipermail/gnupg-devel/2016-August/031533.html
+-    inreplace bin/"gpg-zip1", "GPG=gpg", "GPG=gpg1"
 -
 -    # Although gpg2 support should be pretty universal these days
 -    # keep vanilla `gpg` executables available, at least for now.
