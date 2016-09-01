@@ -1,19 +1,13 @@
 <snippet>
 	<content><![CDATA[
-MAKEFLAGS += -rR
+MAKEFLAGS += -rRs
 SHELL := sh -euo pipefail
 Q ?= &> /dev/null
-THINGC ?=
-THINGFLAGS ?=
 
 .PHONY: clean
 
-%: %.th
-	\$(THINGC) \$(THINGFLAGS) -o \$@ \$<
-
 clean:
 	rm -f *.o
-	for f in *; do file -b "\$\$f" | grep -q exec && rm "\$\$f"; done; true
 
 ]]></content>
 	<tabTrigger>nf</tabTrigger>
