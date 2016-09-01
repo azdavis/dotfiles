@@ -149,7 +149,7 @@
     "show_encoding": true,
     "show_full_path": false,
     "spell_check": true,
-    "spelling_selector": "comment, text -text.plain -text.find-in-files -constant -variable -entity -string -markup -source -support -keyword",
+    "spelling_selector": "comment, text -text.plain -text.find-in-files -constant -variable -entity -string -markup -source -support -keyword -storage",
     "theme": "dark.sublime-theme",
     "translate_tabs_to_spaces": true,
     "trim_trailing_white_space_on_save": true,
