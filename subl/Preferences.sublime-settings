@@ -42,6 +42,8 @@
     "file_exclude_patterns":
     [
         "*.a",
+        "*.aux",
+        "*.bbl",
         "*.class",
         "*.css",
         "*.db",
@@ -52,6 +54,7 @@
         "*.html",
         "*.idb",
         "*.js",
+        "*.log",
         "*.lib",
         "*.ncb",
         "*.o",
@@ -94,6 +97,7 @@
         "app",
         "ariel",
         "azdavis",
+        "bool",
         "config",
         "css",
         "davis",
