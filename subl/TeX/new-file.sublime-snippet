@@ -1,15 +1,31 @@
 <snippet>
     <content><![CDATA[
 \documentclass[12pt]{article}
+
+\author{Ariel Davis}
+\date{\today}
+\title{title}
+
 \usepackage[english]{babel}
 
-\title{title}
-\date{\today}
-\author{Ariel Davis}
+\usepackage{geometry}
+\geometry{
+    % showframe,
+    letterpaper,
+    margin=1in,
+}
+\setlength\parindent{0in}
+
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\theoremstyle{definition}
+\newtheorem*{theorem}{Theorem}
 
 \begin{document}
-
 \maketitle
+
 ${1:hello world}
 
 \end{document}
