@@ -4,7 +4,7 @@ MAKEFLAGS += -rRs
 SHELL := sh -euo pipefail
 Q ?= &> /dev/null
 
-.PHONY: clean
+.PHONY: all clean
 
 clean:
 	rm -f *.o
