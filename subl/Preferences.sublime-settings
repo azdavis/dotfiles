@@ -94,10 +94,12 @@
     ],
     "ignored_words":
     [
+        "andrew",
         "app",
         "ariel",
         "azdavis",
         "bool",
+        "cmu",
         "config",
         "css",
         "davis",
@@ -106,6 +108,7 @@
         "dir",
         "dx",
         "dy",
+        "edu",
         "env",
         "github",
         "html",
@@ -113,6 +116,7 @@
         "icloud",
         "javascript",
         "js",
+        "md",
         "noop",
         "ok",
         "os",
