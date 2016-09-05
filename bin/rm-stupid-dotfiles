@@ -14,4 +14,5 @@ rm -rfv \
     .node_repl_history \
     .npm \
     .oracle_jre_usage \
+    .python_history \
     .sh_history
