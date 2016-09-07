@@ -106,10 +106,10 @@ trash() {
 if [[ "$USER" != "root" ]]; then
     autoload -U compinit
     compinit
-    zstyle ":completion:*" insert-tab "pending"
+    zstyle ":completion:*" insert-tab pending
     zstyle ":completion:*" matcher-list "m:{a-zA-Z}={A-Za-z}"
-    zstyle ":completion:*" menu "select"
-    zstyle ":completion:*" verbose "false"
+    zstyle ":completion:*" menu select
+    zstyle ":completion:*" verbose false
     f="$HOME/.config/z/zshrc"
     [[ -f "$f" ]] && source "$f"
     date
