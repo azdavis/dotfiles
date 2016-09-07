@@ -8,7 +8,7 @@ cd "$wd"
 touch "$HOME/.hushlogin"
 for f in $(find *); do
     dst="$HOME/.$f"
-    if [[ -d "$f" ]]; then
+    if [ -d "$f" ]; then
         mkdir -p "$dst"
     else
         symlink "$wd/$f" "$dst"

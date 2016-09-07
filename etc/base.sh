@@ -6,11 +6,11 @@ abort() {
     exit 1
 }
 
-[[ "$USER" == "root" ]] && abort "do not run as root"
+[ "$USER" = "root" ] && abort "do not run as root"
 
 remove() {
-    if [[ ! -e "$1" ]]; then
-        [[ -h "$1" ]] && rm "$1"
+    if [ ! -e "$1" ]; then
+        [ -h "$1" ] && rm "$1"
         return 0
     fi
     echo "remove '$1'"

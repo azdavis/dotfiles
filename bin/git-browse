@@ -4,13 +4,13 @@ source "$HOME/.config/etc/base.sh"
 
 git status > /dev/null || exit 1
 
-if [[ $# -ge 1 ]]; then
+if [ $# -ge 1 ]; then
     remote="$1"
 else
     remote="origin"
 fi
 
 url="$(git config "remote.$remote.url")"
-[[ "$url" ]] || abort "cannot browse '$remote': no such remote"
+[ "$url" ] || abort "cannot browse '$remote': no such remote"
 
 open "$url"

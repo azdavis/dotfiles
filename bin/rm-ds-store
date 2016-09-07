@@ -2,7 +2,7 @@
 
 source "$HOME/.config/etc/base.sh"
 
-if [[ $# -ge 1 ]]; then
+if [ $# -ge 1 ]; then
     wd="$1"
 else
     wd="/"
