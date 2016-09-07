@@ -71,7 +71,7 @@ fuck() {
         esac
     done
     shift $((OPTIND-1))
-    if [[ ${#@} == 0 ]]; then
+    if [[ $# -eq 0 ]]; then
         echo "$0: missing operand"
         return 1
     fi
@@ -96,7 +96,7 @@ trash() {
         esac
     done
     shift $((OPTIND-1))
-    if [[ ${#@} == 0 ]]; then
+    if [[ $# -eq 0 ]]; then
         echo "$0: missing operand"
         return 1
     fi
