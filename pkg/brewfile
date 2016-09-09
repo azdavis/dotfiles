@@ -5,7 +5,7 @@ tap "homebrew/core"
 brew "coreutils", args: ["build-from-source"]
 brew "entr"
 brew "ghc"
-brew "git", args: ["with-blk-sha1", "with-brewed-openssl", "with-pcre"]
+brew "git", args: ["with-blk-sha1", "with-brewed-openssl"]
 brew "gnupg", args: ["build-from-source"]
 brew "keybase"
 brew "node"
