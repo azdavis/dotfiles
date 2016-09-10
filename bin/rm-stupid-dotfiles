@@ -15,4 +15,5 @@ rm -rfv \
     .npm \
     .oracle_jre_usage \
     .python_history \
-    .sh_history
+    .sh_history \
+    .viminfo
