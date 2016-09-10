@@ -9,10 +9,6 @@ abort() {
 [ "$USER" = "root" ] && abort "do not run as root"
 
 remove() {
-    if [ ! -e "$1" ]; then
-        [ -h "$1" ] && rm "$1"
-        return 0
-    fi
     rm -rf "$1"
 }
 
