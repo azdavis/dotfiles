@@ -6,4 +6,6 @@ abort() {
     exit 1
 }
 
-[ "$USER" = "root" ] && abort "do not run as root"
+if [ "$USER" = "root" ]; then
+    abort "do not run as root"
+fi
