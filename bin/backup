@@ -11,16 +11,16 @@ now="$(date +%s)"
 
 log "name: $bk_name"
 log "ping: $(
-    ping -c1 -t5 8.8.8.8
-    > /dev/null 2>&1
-    && echo y
+    ping -c1 -t5 8.8.8.8 \
+    > /dev/null 2>&1 \
+    && echo y \
     || echo n
 )"
-cd "$(dirname "$BACKUP")"
+cd "$(dirname "$bk_loc")"
 log "done: $(
-    tarsnap -cf "$bk_name" "$(basename "$BACKUP")"
-    > /dev/null 2>&1
-    && echo y
+    tarsnap --dry-run -cf "$bk_name" "$(basename "$bk_loc")" \
+    > /dev/null 2>&1 \
+    && echo y \
     || echo n
 )"
 log "time: $(expr "$(date +%s)" - "$now")s"
