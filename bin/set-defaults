@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-source "$HOME/.config/etc/base.sh"
+. "$HOME/.config/etc/base.sh"
 
 alias dw="defaults write"
 
