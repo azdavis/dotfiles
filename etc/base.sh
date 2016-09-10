@@ -13,12 +13,10 @@ remove() {
         [ -h "$1" ] && rm "$1"
         return 0
     fi
-    echo "remove '$1'"
     rm -rf "$1"
 }
 
 symlink() {
-    echo "symlink from '$1' to '$2'"
     remove "$2"
     ln -sn "$1" "$2"
 }
