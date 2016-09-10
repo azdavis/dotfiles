@@ -2,7 +2,7 @@ set -euo pipefail
 IFS=$'\n\t'
 
 abort() {
-    echo 1>&2 $'\e[31merror:\e[0m' "$1"
+    echo $'\e[31merror:\e[0m' "$1" 1>&2
     exit 1
 }
 
