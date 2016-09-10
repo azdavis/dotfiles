@@ -10,8 +10,18 @@ bk_name="$(uname -n)@$(date +%Y-%m-%dT%H:%M:%S)"
 now="$(date +%s)"
 
 log "name: $bk_name"
-log "ping: $(ping -c1 -t5 8.8.8.8 > /dev/null 2>&1 && echo y || echo n)"
-cd "$HOME/Documents"
-log "done: $(tarsnap -cf "$bk_name" z > /dev/null 2>&1 && echo y || echo n)"
+log "ping: $(
+    ping -c1 -t5 8.8.8.8
+    > /dev/null 2>&1
+    && echo y
+    || echo n
+)"
+cd "$(dirname "$BACKUP")"
+log "done: $(
+    tarsnap -cf "$bk_name" "$(basename "$BACKUP")"
+    > /dev/null 2>&1
+    && echo y
+    || echo n
+)"
 log "time: $(expr "$(date +%s)" - "$now")s"
 log "----------"
