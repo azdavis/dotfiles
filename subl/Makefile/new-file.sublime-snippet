@@ -1,10 +1,11 @@
 <snippet>
 	<content><![CDATA[
 MAKEFLAGS += -rRs
-SHELL := sh -euo pipefail
 Q ?= &> /dev/null
 
 .PHONY: all clean
+
+all: all.o
 
 clean:
 	rm -f *.o
