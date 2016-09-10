@@ -9,11 +9,11 @@ fi
 support="$HOME/Library/Application Support/Sublime Text 3"
 mkdir -p "$support/Packages"
 
-symlink "$HOME/.config/subl" "$support/Packages/User"
-remove "$HOME/.config/subl/Package Control.cache"
-remove "$support/Cache"
-remove "$support/Local/Session.sublime_session"
-remove "$support/Local/Auto Save Session.sublime_session"
+ln -sfn "$HOME/.config/subl" "$support/Packages/User"
+rm -rf "$HOME/.config/subl/Package Control.cache"
+rm -rf "$support/Cache"
+rm -f "$support/Local/Session.sublime_session"
+rm -f "$support/Local/Auto Save Session.sublime_session"
 
 printf "install package control [yn]? "
 read x

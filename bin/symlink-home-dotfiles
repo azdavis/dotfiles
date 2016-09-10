@@ -11,6 +11,6 @@ for f in $(find *); do
     if [ -d "$f" ]; then
         mkdir -p "$dst"
     else
-        symlink "$wd/$f" "$dst"
+        ln -sfn "$wd/$f" "$dst"
     fi
 done
