@@ -1,0 +1,18 @@
+#!/usr/bin/env sh
+
+log() {
+    echo "$1" >> "$HOME/Library/Logs/backup.log"
+}
+
+bk_name="$(uname -n)@$(date +%Y-%m-%dT%H:%M:%S)"
+now="$(date +%s)"
+
+log "name: $bk_name"
+log "ping: $(ping -c1 -t5 8.8.8.8 > /dev/null 2>&1 && echo y || echo n)"
+
+cd "$HOME/Documents"
+tarsnap -cf "$bk_name" z > /dev/null 2>&1
+
+log "exit: $?"
+log "time: $(expr "$(date +%s)" - "$now")s"
+log "----------"
