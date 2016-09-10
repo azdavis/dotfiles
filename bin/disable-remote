@@ -2,6 +2,4 @@
 
 source "$HOME/.config/etc/base.sh"
 
-# http://superuser.com/a/827710
-
 launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist
