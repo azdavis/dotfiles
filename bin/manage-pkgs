@@ -4,7 +4,6 @@ source "$HOME/.config/etc/base.sh"
 
 cd "$HOME/.config/pkg"
 
-which brew > /dev/null || curl -fsSL "https://git.io/pVOl" | ruby
 brew update
 brew upgrade
 formula="$(brew --prefix)/Library/Taps/homebrew/homebrew-core/Formula"
