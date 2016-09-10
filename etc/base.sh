@@ -7,8 +7,3 @@ abort() {
 }
 
 [ "$USER" = "root" ] && abort "do not run as root"
-
-get() {
-    printf "$1: "
-    read "$1"
-}

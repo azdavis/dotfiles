@@ -17,4 +17,6 @@ rm -f "$support/Local/Auto Save Session.sublime_session"
 
 printf "install package control [yn]? "
 read x
-[ "$x" = y ] && open "https://packagecontrol.io/installation"; true
+if [ "$x" = y ]; then
+    open "https://packagecontrol.io/installation"
+fi

@@ -2,12 +2,13 @@
 
 source "$HOME/.config/etc/base.sh"
 
-get "hostname"
+printf "hostname: "
+read host_name
 
-sudo scutil --set ComputerName "$hostname"
-sudo scutil --set HostName "$hostname"
-sudo scutil --set LocalHostName "$hostname"
+sudo scutil --set ComputerName "$host_name"
+sudo scutil --set HostName "$host_name"
+sudo scutil --set LocalHostName "$host_name"
 sudo defaults write \
     "/Library/Preferences/safe_systemConfiguration/com.apple.smb.server" \
-    NetBIOSName -string "$hostname"
+    NetBIOSName -string "$host_name"
 sudo dscacheutil -flushcache

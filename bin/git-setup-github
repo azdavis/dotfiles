@@ -2,12 +2,11 @@
 
 source "$HOME/.config/etc/base.sh"
 
-get "username"
-get "email"
-get "token"
+printf "token: "
+read token
 
-git config --global user.name "$username"
-git config --global user.email "$email"
+username="$(git config --global user.name)"
+email="$(git config --global user.email)"
 
 git credential-osxkeychain erase <<EOS
 host=github.com
@@ -18,10 +17,4 @@ host=github.com
 protocol=https
 password=$token
 username=$username
-EOS
-cat <<EOS > "$HOME/.config/hub"
-github.com:
-- user: $username
-  oauth_token: $token
-  protocol: https
 EOS
