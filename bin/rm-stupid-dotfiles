@@ -2,9 +2,9 @@
 
 source "$HOME/.config/etc/base.sh"
 
-"$HOME/.config/bin/rm-ds-store" "$HOME"
-
 cd
+
+"$HOME/.config/bin/rm-ds-store" .
 rm -rfv \
     .bash_history \
     .bundle \
