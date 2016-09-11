@@ -5,10 +5,10 @@
 printf "hostname: "
 read host_name
 
-sudo scutil --set ComputerName "$host_name"
-sudo scutil --set HostName "$host_name"
-sudo scutil --set LocalHostName "$host_name"
-sudo defaults write \
+scutil --set ComputerName "$host_name"
+scutil --set HostName "$host_name"
+scutil --set LocalHostName "$host_name"
+defaults write \
     "/Library/Preferences/safe_systemConfiguration/com.apple.smb.server" \
     NetBIOSName -string "$host_name"
-sudo dscacheutil -flushcache
+dscacheutil -flushcache
