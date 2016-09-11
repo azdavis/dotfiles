@@ -148,7 +148,7 @@
     [
         79
     ],
-    "scroll_past_end": false,
+    "scroll_past_end": true,
     "show_definitions": false,
     "show_encoding": true,
     "show_full_path": false,
