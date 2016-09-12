@@ -18,7 +18,7 @@ log "ping: $(
 )"
 cd "$(dirname "$bk_loc")"
 log "done: $(
-    tarsnap --dry-run -cf "$bk_name" "$(basename "$bk_loc")" \
+    tarsnap -cf "$bk_name" "$(basename "$bk_loc")" \
     > /dev/null 2>&1 \
     && echo y \
     || echo n
