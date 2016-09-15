@@ -5,7 +5,8 @@
 wd="$HOME/.config/home"
 cd "$wd"
 
-touch "$HOME/.hushlogin"
+touch "$HOME/.hushlogin" "$HOME/.netrc"
+chmod 600 "$HOME/.hushlogin" "$HOME/.netrc"
 for f in $(find *); do
     dst="$HOME/.$f"
     if [ -d "$f" ]; then
