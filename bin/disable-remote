@@ -1,5 +1,0 @@
-#!/usr/bin/env sh
-
-. "$HOME/.config/etc/base.sh"
-
-launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist
