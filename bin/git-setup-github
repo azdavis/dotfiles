@@ -2,19 +2,39 @@
 
 . "$HOME/.config/etc/base.sh"
 
-printf "token: "
-read token
-
 username="$(git config --global user.name)"
-email="$(git config --global user.email)"
+[ "$username" ] || abort "no git user.name found"
+
+printf "github token: "
+read github
 
 git credential-osxkeychain erase <<EOS
 host=github.com
 protocol=https
 EOS
+
 git credential-osxkeychain store <<EOS
 host=github.com
 protocol=https
-password=$token
+password=$github
 username=$username
 EOS
+
+echo "OK, stored github credential-osxkeychain"
+
+printf "gitlab password: "
+read gitlab
+
+git credential-osxkeychain erase <<EOS
+host=gitlab.com
+protocol=https
+EOS
+
+git credential-osxkeychain store <<EOS
+host=gitlab.com
+protocol=https
+password=$gitlab
+username=$username
+EOS
+
+echo "OK, stored gitlab credential-osxkeychain"
