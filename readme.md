@@ -6,6 +6,5 @@ a potpourri of os x config files
 
     $ cd
     $ rm -ri .config
-    $ git clone https://github.com/azdavis/config
+    $ git clone https://github.com/azdavis/config .config
     $ chmod 700 config
-    $ mv config .config
