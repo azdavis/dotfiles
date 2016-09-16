@@ -12,5 +12,4 @@
     { "keys": ["super+["], "command": "next_view_in_stack" },
     { "keys": ["super+]"], "command": "prev_view_in_stack" },
     { "keys": ["super+\\"], "command": "toggle_side_bar" },
-    { "keys": ["alt+super+w"], "command": "insert_snippet", "args": { "name": "Packages/XML/long-tag.sublime-snippet" } },
 ]
