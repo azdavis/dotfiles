@@ -5,6 +5,11 @@
 cd
 
 "$HOME/.config/bin/rm-ds-store" .
+
+[ -e Applications ] \
+    && [ "$(find Applications | wc -l)" -eq 2 ] \
+    && rm -rv Applications
+
 rm -rfv \
     .bash_history \
     .bundle \
