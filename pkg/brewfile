@@ -21,7 +21,6 @@ brew "xz"
 
 cask "alfred"
 cask "basictex"
-cask "discord"
 cask "flux"
 cask "google-chrome"
 cask "hermes"
