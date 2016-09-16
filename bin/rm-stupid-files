@@ -7,6 +7,7 @@ cd
 "$HOME/.config/bin/rm-ds-store" .
 
 [ -e Applications ] \
+    && [ -e Applications/.localized ] \
     && [ "$(find Applications | wc -l)" -eq 2 ] \
     && rm -rv Applications
 
