@@ -14,7 +14,7 @@ brew "pkg-config"
 brew "readline"
 brew "rlwrap"
 brew "smlnj"
-brew "tarsnap"
+brew "tarsnap", args: ["with-xz"]
 brew "tree"
 brew "valgrind"
 brew "xz"
