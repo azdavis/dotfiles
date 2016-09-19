@@ -6,7 +6,7 @@ cd "$HOME/.config/pkg"
 
 brew update
 brew upgrade
-formula="$(brew --prefix)/Library/Taps/homebrew/homebrew-core/Formula"
+formula="$(brew --repo)/Library/Taps/homebrew/homebrew-core/Formula"
 cd "$formula"
 git apply ~/.config/etc/patch/*
 cd "$HOME/.config/pkg"
