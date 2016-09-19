@@ -1,4 +1,4 @@
-*-ca-bundle
+*-ca-bundle*
 *.cache
 *.last-run
 .DS_Store
