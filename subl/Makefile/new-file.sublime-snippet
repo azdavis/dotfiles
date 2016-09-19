@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
 MAKEFLAGS += -rRs
-Q ?= &> /dev/null
+Q = &> /dev/null
 
 .PHONY: all clean
 
