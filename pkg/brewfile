@@ -7,10 +7,8 @@ brew "entr"
 brew "ghc"
 brew "git", args: ["with-blk-sha1", "with-brewed-openssl"]
 brew "gnupg", args: ["build-from-source"]
-brew "keybase"
 brew "node"
 brew "openssl"
-brew "pkg-config"
 brew "readline"
 brew "rlwrap"
 brew "smlnj"
