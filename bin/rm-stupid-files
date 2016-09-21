@@ -8,7 +8,7 @@ cd
 
 [ -e Applications ] \
     && [ -e Applications/.localized ] \
-    && [ "$(find Applications | wc -l)" -eq 2 ] \
+    && [ "$(find Applications | wc -l)" -le 2 ] \
     && rm -rv Applications
 
 rm -rfv \
