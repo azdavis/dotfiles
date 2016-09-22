@@ -17,6 +17,9 @@ export \
     PATH="$HOME/.config/bin:$PATH" \
     RLWRAP_HOME="/dev/null"
 
+PS1=$'%{\e[37m%}%2~%{\e[0m%} %{\e[%(?.32.31)m%}%(!.#.$)%{\e[0m%} '
+ZLE_REMOVE_SUFFIX_CHARS=$' \t\n;)'
+
 setopt \
     autocd \
     interactivecomments \
@@ -24,9 +27,6 @@ setopt \
     nounset \
     pipefail \
     rmstarsilent
-
-PS1=$'%{\e[37m%}%2~%{\e[0m%} %{\e[%(?.32.31)m%}%(!.#.$)%{\e[0m%} '
-ZLE_REMOVE_SUFFIX_CHARS=$' \t\n;)'
 
 alias \
     df="df -h" \
