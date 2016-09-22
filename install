@@ -2,6 +2,12 @@
 
 _() {
 
+set -o errexit
+set -o nounset
+set -o pipefail
+set -o posix
+IFS=$'\n\t'
+
 confirm() {
     local x
     printf "\e[33mconfirm:\e[0m $1? " 1>&2
