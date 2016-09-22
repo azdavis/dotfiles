@@ -14,8 +14,3 @@ rm -rf "$HOME/.config/subl/Package Control.cache"
 rm -rf "$support/Cache"
 rm -f "$support/Local/Session.sublime_session"
 rm -f "$support/Local/Auto Save Session.sublime_session"
-
-pkctrl="$support/Installed Packages/0_package_control_loader.sublime-package"
-if [ ! -e "$pkctrl" ]; then
-    open "https://packagecontrol.io/installation"
-fi
