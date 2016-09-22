@@ -1,8 +1,10 @@
-*-ca-bundle*
-*.cache
-*.last-run
 .DS_Store
+home/gnupg/*.gpg
+home/gnupg/random_seed
+home/ssh/known_hosts
+subl/*-ca-bundle*
+subl/*.cache
+subl/*.last-run
 subl/Haskell/Haskell.sublime-syntax
 subl/TypeScript/Comments.tmPreferences
 subl/TypeScript/TypeScript.tmLanguage
-z
