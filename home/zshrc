@@ -77,26 +77,6 @@ fuck() {
     fi
 }
 
-trash() {
-    i=
-    f=
-    v=
-    while getopts ifv opt; do
-        case "$opt" in
-        (i) i="-i" ;;
-        (f) f="-f" ;;
-        (v) v="-v" ;;
-        (*) return 1 ;;
-        esac
-    done
-    shift $((OPTIND-1))
-    if [ $# -eq 0 ]; then
-        echo "$0: missing operand"
-        return 1
-    fi
-    mv $i $f $v $@ "$HOME/.Trash"
-}
-
 if [ "$USER" != "root" ]; then
     autoload -U compinit
     compinit
