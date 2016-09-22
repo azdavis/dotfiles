@@ -5,7 +5,7 @@ confirm() {
     read x < /dev/tty
 }
 
-wrapper() {
+main() {
     cd
     if [ -e .config ]; then
         confirm "remove existing .config"
@@ -23,4 +23,4 @@ wrapper() {
     fi
 }
 
-wrapper
+main
