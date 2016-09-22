@@ -3,7 +3,7 @@
 wrapper() {
     cd
     if [ -e .config ]; then
-        printf "remove '$HOME/.config'? "
+        printf "remove existing .config? "
         read x
         if [ "$x" = y ]; then
             rm -rf .config
