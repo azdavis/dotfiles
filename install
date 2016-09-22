@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+_() {
+
 confirm() {
     local x
     printf "\e[33mconfirm:\e[0m $1? " 1>&2
@@ -7,18 +9,16 @@ confirm() {
     return $([ "$x" = y ])
 }
 
-main() {
-    cd
-    if [ -e .config ]; then
-        if confirm "remove $HOME/.config"; then
-            rm -rf .config
-        else
-            exit 0
-        fi
+cd
+if [ -e .config ]; then
+    if confirm "remove $HOME/.config"; then
+        rm -rf .config
+    else
+        exit 0
     fi
-    git clone -q https://github.com/azdavis/config .config
-    chmod 700 .config
-    .config/bin/do-dotfiles
-}
+fi
+git clone -q https://github.com/azdavis/config .config
+chmod 700 .config
+.config/bin/do-dotfiles
 
-main
+}; _
