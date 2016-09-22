@@ -1,15 +1,16 @@
 #!/usr/bin/env sh
 
 confirm() {
+    local x
     printf "\e[33mconfirm:\e[0m $1? "
     read x < /dev/tty
+    return $([ "$x" = y ])
 }
 
 main() {
     cd
     if [ -e .config ]; then
-        confirm "remove existing .config"
-        if [ "$x" = y ]; then
+        if confirm "remove $HOME/.config"; then
             rm -rf .config
         else
             exit 0
@@ -17,10 +18,7 @@ main() {
     fi
     git clone -q https://github.com/azdavis/config .config
     chmod 700 .config
-    confirm "remove existing dotfiles"
-    if [ "$x" = y ]; then
-        .config/bin/do-dotfiles
-    fi
+    .config/bin/do-dotfiles
 }
 
 main
