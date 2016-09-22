@@ -1,5 +1,3 @@
-#!/usr/bin/env sh
-
 main() {
 
 set -o errexit
