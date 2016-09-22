@@ -19,7 +19,7 @@ for x in *; do
     dst="$HOME/.$x"
     if [ -e "$dst" ]; then
         if [ -L "$dst" ] || confirm "remove $dst"; then
-            rm -r "$dst"
+            rm -rf "$dst"
         else
             continue
         fi
