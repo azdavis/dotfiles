@@ -7,11 +7,22 @@ cd "$HOME/$wd"
 
 touch "$HOME/.hushlogin" "$HOME/.netrc"
 chmod 600 "$HOME/.hushlogin" "$HOME/.netrc"
-for f in $(find *); do
-    dst="$HOME/.$f"
-    if [ -d "$f" ]; then
-        mkdir -p "$dst"
-    else
-        ln -sfn "$wd/$f" "$dst"
+
+confirm() {
+    local x
+    printf "\e[33mconfirm:\e[0m $1? "
+    read x < /dev/tty
+    return $([ "$x" = y ])
+}
+
+for x in *; do
+    dst="$HOME/.$x"
+    if [ -e "$dst" ]; then
+        if [ -L "$dst" ] || confirm "remove $dst"; then
+            rm -r "$dst"
+        else
+            continue
+        fi
     fi
+    ln -s "$wd/$x" "$dst"
 done
