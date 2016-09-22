@@ -7,8 +7,8 @@ if pgrep -f "Sublime Text" > /dev/null; then
 fi
 
 support="$HOME/Library/Application Support/Sublime Text 3"
-mkdir -p "$support/Packages"
 
+mkdir -p "$support/Packages"
 ln -sfn "$HOME/.config/subl" "$support/Packages/User"
 rm -rf "$HOME/.config/subl/Package Control.cache"
 rm -rf "$support/Cache"
