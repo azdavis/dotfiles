@@ -10,7 +10,7 @@ else
     remote="origin"
 fi
 
-url="$(git config "remote.$remote.url")"
+url="$(git config "remote.$remote.url" || true)"
 [ "$url" ] || abort "cannot browse '$remote': no such remote"
 
 open "$url"
