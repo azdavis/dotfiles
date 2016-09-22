@@ -9,8 +9,9 @@ fi
 support="$HOME/Library/Application Support/Sublime Text 3"
 
 mkdir -p "$support/Packages"
-ln -sfn "$HOME/.config/subl" "$support/Packages/User"
 rm -rf "$HOME/.config/subl/Package Control.cache"
 rm -rf "$support/Cache"
 rm -f "$support/Local/Session.sublime_session"
 rm -f "$support/Local/Auto Save Session.sublime_session"
+rm -rf "$support/Packages/User"
+ln -s "$HOME/.config/subl" "$support/Packages/User"
