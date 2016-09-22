@@ -2,8 +2,8 @@
 
 . "$HOME/.config/etc/base.sh"
 
-wd="$HOME/.config/home"
-cd "$wd"
+wd=".config/home"
+cd "$HOME/$wd"
 
 touch "$HOME/.hushlogin" "$HOME/.netrc"
 chmod 600 "$HOME/.hushlogin" "$HOME/.netrc"
