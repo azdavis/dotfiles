@@ -2,7 +2,7 @@
 
 confirm() {
     local x
-    printf "\e[33mconfirm:\e[0m $1? "
+    printf "\e[33mconfirm:\e[0m $1? " 1>&2
     read x < /dev/tty
     return $([ "$x" = y ])
 }
