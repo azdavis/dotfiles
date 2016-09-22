@@ -6,4 +6,4 @@ a potpourri of os x config files
 
     curl -fsSL https://git.io/vi7V9 | sh
 
-or, download and run [the install script](install).
+or, download and run the [install script](install).
