@@ -1,3 +1,5 @@
+#!/usr/bin/env sh
+
 wrapper() {
     cd
     if [ -e .config ]; then
