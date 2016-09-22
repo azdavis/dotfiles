@@ -4,7 +4,7 @@ wrapper() {
     cd
     if [ -e .config ]; then
         printf "remove existing .config? "
-        read x
+        read x < /dev/tty
         if [ "$x" = y ]; then
             rm -rf .config
         else
@@ -14,7 +14,7 @@ wrapper() {
     git clone -q https://github.com/azdavis/config .config
     chmod 700 .config
     printf "remove existing dotfiles? "
-    read x
+    read x < /dev/tty
     if [ "$x" = y ]; then
         .config/bin/do-dotfiles
     fi
