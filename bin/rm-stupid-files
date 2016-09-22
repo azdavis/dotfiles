@@ -12,6 +12,7 @@ cd
 
 rm -rfv \
     .bash_history \
+    .bash_sessions \
     .bundle \
     .gem \
     .ghc \
