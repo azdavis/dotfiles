@@ -1,0 +1,17 @@
+wrapper() {
+    cd
+    if [ -e .config ]; then
+        printf "remove '$HOME/.config'? "
+        read x
+        if [ "$x" = y ]; then
+            rm -rf .config
+        else
+            exit 0
+        fi
+    fi
+    git clone -q https://github.com/azdavis/config .config
+    chmod 700 .config
+    .config/bin/do-dotfiles
+}
+
+wrapper
