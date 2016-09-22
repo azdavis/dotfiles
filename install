@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-_() {
+main() {
 
 set -o errexit
 set -o nounset
@@ -27,4 +27,4 @@ git clone -q https://github.com/azdavis/config .config
 chmod 700 .config
 .config/bin/do-dotfiles
 
-}; _
+}; main
