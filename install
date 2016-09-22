@@ -13,7 +13,11 @@ wrapper() {
     fi
     git clone -q https://github.com/azdavis/config .config
     chmod 700 .config
-    .config/bin/do-dotfiles
+    printf "remove existing dotfiles? "
+    read x
+    if [ "$x" = y ]; then
+        .config/bin/do-dotfiles
+    fi
 }
 
 wrapper
