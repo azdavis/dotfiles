@@ -6,8 +6,8 @@ set -o pipefail
 set -o posix
 IFS=$'\n\t'
 
-ok() {
-    printf "\e[32mok:\e[0m $1\n" 1>&2
+note() {
+    printf "\e[32mnote:\e[0m $1\n" 1>&2
 }
 
 confirm() {
@@ -20,7 +20,7 @@ confirm() {
 dst="$HOME/.config"
 repo="azdavis/config"
 
-ok "installing $repo to $dst..."
+note "installing $repo to $dst..."
 if [ -e "$dst" ]; then
     if ! confirm "remove $dst"; then
         exit 0
@@ -30,6 +30,6 @@ fi
 git clone -q "https://github.com/$repo" "$dst"
 chmod 700 "$dst"
 "$dst/bin/do-dotfiles"
-ok "install complete"
+note "install complete"
 
 }; main
