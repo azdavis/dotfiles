@@ -6,6 +6,10 @@ set -o pipefail
 set -o posix
 IFS=$'\n\t'
 
+ok() {
+    printf "\e[31mok:\e[0m $1\n" 1>&2
+}
+
 confirm() {
     local x
     printf "\e[33mconfirm:\e[0m $1? " 1>&2
@@ -13,16 +17,20 @@ confirm() {
     return $([ "$x" = y ])
 }
 
-cd
-if [ -e .config ]; then
-    if confirm "remove $HOME/.config"; then
-        rm -rf .config
+dst="$HOME/.config"
+repo="azdavis/config"
+
+ok "installing $repo to $dst..."
+if [ -e "$dst" ]; then
+    if confirm "remove $dst"; then
+        rm -rf "$dst"
     else
         exit 0
     fi
 fi
-git clone -q https://github.com/azdavis/config .config
-chmod 700 .config
-.config/bin/do-dotfiles
+git clone -q "https://github.com/$repo" "$dst"
+chmod 700 "$dst"
+"$dst/bin/do-dotfiles"
+ok "install complete"
 
 }; main
