@@ -22,15 +22,15 @@ repo="azdavis/config"
 
 ok "installing $repo to $dst..."
 if [ -e "$dst" ]; then
-    if confirm "remove $dst"; then
-        rm -rf "$dst"
-    else
+    if ! confirm "remove $dst"; then
         exit 0
     fi
+    rm -rf "$dst"
 fi
 git clone -q "https://github.com/$repo" "$dst"
 chmod 700 "$dst"
 "$dst/bin/do-dotfiles"
 ok "install complete"
+
 
 }; main
