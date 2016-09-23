@@ -32,5 +32,4 @@ chmod 700 "$dst"
 "$dst/bin/do-dotfiles"
 ok "install complete"
 
-
 }; main
