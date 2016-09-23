@@ -1,0 +1,28 @@
+#!/usr/bin/env sh
+
+. "$HOME/.config/etc/base.sh"
+
+f=""
+r=false
+v=""
+
+while getopts frv opt; do
+    case "$opt" in
+    (f) f="-f" ;;
+    (r) r=true ;;
+    (v) v="-v" ;;
+    (*) return 1 ;;
+    esac
+done
+shift $((OPTIND-1))
+
+if [ $# -eq 0 ]; then
+    abort "missing operand"
+fi
+
+if $r; then
+    find $@ -type f -exec shred $f $v -zun 8 {} \;
+    rm $f $v -r $@
+else
+    shred $f $v -zun 8 $@
+fi
