@@ -7,7 +7,7 @@ set -o posix
 IFS=$'\n\t'
 
 ok() {
-    printf "\e[31mok:\e[0m $1\n" 1>&2
+    printf "\e[32mok:\e[0m $1\n" 1>&2
 }
 
 confirm() {
