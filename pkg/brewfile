@@ -18,7 +18,6 @@ brew "valgrind"
 brew "xz"
 
 cask "alfred"
-cask "battle-net"
 cask "basictex"
 cask "flux"
 cask "google-chrome"
