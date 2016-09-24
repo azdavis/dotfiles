@@ -1,6 +1,6 @@
 # config
 
-a potpourri of os x config files
+a potpourri of macOS config files
 
 ## setup
 
