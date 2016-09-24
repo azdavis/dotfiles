@@ -15,10 +15,10 @@ echo "installing '$repo' to '$dst'"
 [ -e "$dst" ] && exit 0
 git clone -q "https://github.com/$repo" "$dst"
 chmod 700 "$dst"
-echo "install complete"
 
 echo "doing dotfile actions"
 "$dst/bin/do-dotfiles"
-echo "dotfiles complete"
+
+echo "all done"
 
 }; main
