@@ -17,8 +17,8 @@ git clone -q "https://github.com/$repo" "$dst"
 chmod 700 "$dst"
 echo "install complete"
 
-echo "symlinking dotfiles..."
+echo "doing dotfile actions..."
 "$dst/bin/do-dotfiles"
-echo "symlinking complete"
+echo "dotfiles complete"
 
 }; main
