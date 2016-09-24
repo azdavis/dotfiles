@@ -19,6 +19,9 @@ chmod 700 "$dst"
 echo "doing dotfile actions"
 "$dst/bin/do-dotfiles"
 
+echo "changing shell to /bin/zsh"
+chsh -s /bin/zsh < /dev/tty
+
 echo "all done"
 
 }; main
