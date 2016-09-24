@@ -17,7 +17,7 @@ git clone -q "https://github.com/$repo" "$dst"
 chmod 700 "$dst"
 
 echo "doing dotfile actions"
-"$dst/bin/do-dotfiles"
+"$dst/bin/do-dotfiles" < /dev/tty
 
 echo "changing shell to /bin/zsh"
 chsh -s /bin/zsh < /dev/tty
