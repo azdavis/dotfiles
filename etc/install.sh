@@ -9,7 +9,7 @@ IFS=$'\n\t'
 dst="$HOME/.config"
 repo="azdavis/config"
 
-echo "installing $repo to $dst..."
+echo "installing '$repo' to '$dst'..."
 [ -L "$dst" ] && rm "$dst"
 [ -e "$dst" ] && rm -ri "$dst" < /dev/tty
 [ -e "$dst" ] && exit 0
