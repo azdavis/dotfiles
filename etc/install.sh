@@ -9,7 +9,7 @@ IFS=$'\n\t'
 dst="$HOME/.config"
 repo="azdavis/config"
 
-echo "installing '$repo' to '$dst'..."
+echo "installing '$repo' to '$dst'"
 [ -L "$dst" ] && rm "$dst"
 [ -e "$dst" ] && rm -ri "$dst" < /dev/tty
 [ -e "$dst" ] && exit 0
@@ -17,7 +17,7 @@ git clone -q "https://github.com/$repo" "$dst"
 chmod 700 "$dst"
 echo "install complete"
 
-echo "doing dotfile actions..."
+echo "doing dotfile actions"
 "$dst/bin/do-dotfiles"
 echo "dotfiles complete"
 
