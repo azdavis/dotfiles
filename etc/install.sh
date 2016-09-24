@@ -11,7 +11,7 @@ repo="azdavis/config"
 
 echo "installing $repo to $dst..."
 [ -L "$dst" ] && rm "$dst"
-[ -e "$dst" ] && rm -ri "$dst"
+[ -e "$dst" ] && rm -ri "$dst" < /dev/tty
 [ -e "$dst" ] && exit 0
 git clone -q "https://github.com/$repo" "$dst"
 chmod 700 "$dst"
