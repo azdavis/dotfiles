@@ -11,7 +11,7 @@ while getopts frv opt; do
     (f) f="-f" ;;
     (r) r=true ;;
     (v) v="-v" ;;
-    (*) return 1 ;;
+    (*) exit 1 ;;
     esac
 done
 shift $((OPTIND-1))
