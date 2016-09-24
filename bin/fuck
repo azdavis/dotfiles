@@ -22,7 +22,7 @@ fi
 
 if $r; then
     find $@ -type f -exec shred $f $v -zun 8 {} \;
-    rm $f $v -r $@
+    rm -rf $v $@
 else
     shred $f $v -zun 8 $@
 fi
