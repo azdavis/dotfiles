@@ -15,7 +15,10 @@ echo "installing $repo to $dst..."
 [ -e "$dst" ] && exit 0
 git clone -q "https://github.com/$repo" "$dst"
 chmod 700 "$dst"
-"$dst/bin/do-dotfiles"
 echo "install complete"
+
+echo "symlinking dotfiles..."
+"$dst/bin/do-dotfiles"
+echo "symlinking complete"
 
 }; main
