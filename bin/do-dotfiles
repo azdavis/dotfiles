@@ -10,9 +10,8 @@ chmod 600 "$HOME/.hushlogin" "$HOME/.netrc"
 
 for x in *; do
     dst="$HOME/.$x"
-    if [ -e "$dst" ] && ! [ -L "$dst" ] && ! confirm "remove $dst"; then
-        continue
-    fi
-    rm -rf "$dst"
+    [ -L "$dst" ] && rm "$dst"
+    [ -e "$dst" ] && rm -ri "$dst"
+    [ -e "$dst" ] && continue
     ln -s "$wd/$x" "$dst"
 done
