@@ -2,9 +2,8 @@
 
 . "$HOME/.config/etc/base.sh"
 
-if pgrep -f "Sublime Text" > /dev/null; then
-    abort "sublime text must not be running"
-fi
+pgrep -f "Sublime Text" > /dev/null \
+    && abort "sublime text must not be running"
 
 support="$HOME/Library/Application Support/Sublime Text 3"
 

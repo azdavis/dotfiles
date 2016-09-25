@@ -2,10 +2,5 @@
 
 . "$HOME/.config/etc/base.sh"
 
-if [ $# -ge 1 ]; then
-    wd="$1"
-else
-    wd="/"
-fi
-
+wd="$([ $# -ge 1 ] && echo $1 || echo /)"
 find "$wd" -name .DS_Store -exec rm -v {} \; 2> /dev/null

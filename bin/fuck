@@ -16,9 +16,7 @@ while getopts frv opt; do
 done
 shift $((OPTIND-1))
 
-if [ $# -eq 0 ]; then
-    abort "missing operand"
-fi
+[ $# -eq 0 ] && abort "missing operand"
 
 if $r; then
     find $@ -type f -exec shred $f $v -zun 8 {} \;
