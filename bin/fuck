@@ -18,8 +18,8 @@ shift $((OPTIND-1))
 [ $# -eq 0 ] && abort "missing operand"
 
 if $r; then
-    find $@ -type f -exec shred $f $v -zun 8 {} \;
-    rm -rf $v $@
+    find $@ -type f -exec shred $f $v -zn 8 {} \;
+    rm -r $f $v $@
 else
     shred $f $v -zun 8 $@
 fi
