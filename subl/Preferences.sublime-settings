@@ -73,6 +73,7 @@
     "fold_buttons": false,
     "folder_exclude_patterns":
     [
+        "*.cache",
         ".git",
         ".hg",
         ".svn",
