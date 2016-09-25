@@ -1,7 +1,4 @@
 .DS_Store
-home/gnupg/*.gpg
-home/gnupg/random_seed
-home/ssh/known_hosts
 subl/*-ca-bundle*
 subl/*.cache
 subl/*.last-run

@@ -1,5 +1,0 @@
-Host andrew
-Hostname unix.andrew.cmu.edu
-User azdavis
-GSSAPIAuthentication yes
-GSSAPIDelegateCredentials yes
