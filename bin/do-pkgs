@@ -18,7 +18,7 @@ brew bundle cleanup --force
 brew cask cleanup --force
 brew cleanup --force
 brew prune
-brew doctor || true
+brew doctor
 
 tlmgr update --self
 tlmgr update --all
