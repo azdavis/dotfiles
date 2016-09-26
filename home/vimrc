@@ -1,12 +1,12 @@
-set tabstop=4
-set shiftwidth=4
-set expandtab
-set smartindent
+set nocompatible
 
-set ruler
+set autoindent
+set expandtab
+set hlsearch
 set number
+set shiftwidth=4
+set tabstop=4
+set viminfo="NONE"
 
 syntax on
-filetype on
-filetype indent on
-filetype plugin on
+filetype plugin indent on
