@@ -1,9 +1,0 @@
-<snippet>
-    <content><![CDATA[
-console.log("hello world")
-
-]]></content>
-    <tabTrigger>nf</tabTrigger>
-    <scope>source.ts</scope>
-    <description>ts</description>
-</snippet>

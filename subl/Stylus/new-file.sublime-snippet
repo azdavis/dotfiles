@@ -1,9 +1,0 @@
-<snippet>
-    <content><![CDATA[
-@import "/src/base/var"
-
-]]></content>
-    <tabTrigger>nf</tabTrigger>
-    <scope>source.stylus</scope>
-    <description>styl</description>
-</snippet>
