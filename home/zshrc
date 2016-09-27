@@ -39,10 +39,6 @@ alias \
     gr="git reset" \
     gs="git status -sb"
 
-precmd() {
-    print -Pn "\e]2;%n@%M\a"
-}
-
 man() {
     env \
         LESS_TERMCAP_mb=$'\e[1;31m' \
