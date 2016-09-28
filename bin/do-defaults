@@ -17,6 +17,7 @@ dw -g NSUseAnimatedFocusRing -bool false
 dw -g NSWindowResizeTime -float 0.1
 dw com.apple.desktopservices DSDontWriteNetworkStores -bool true
 dw com.apple.dock autohide-delay -int 9999
+dw com.apple.finder _FXSortFoldersFirst -bool true
 dw com.apple.finder DisableAllAnimations -bool true
 dw com.apple.finder FXEnableExtensionChangeWarning -bool false
 dw com.apple.mail DisableInlineAttachmentViewing -bool true
