@@ -5,6 +5,6 @@ set -o posix
 IFS=$'\n\t'
 
 abort() {
-    printf "\e[31merror:\e[0m $1\n" 1>&2
+    echo "error: $1" 1>&2
     exit 1
 }
