@@ -22,3 +22,5 @@ brew doctor
 tlmgr update --self
 tlmgr update --all
 tlmgr install $(cat tlmgrfile)
+
+npm update -g
