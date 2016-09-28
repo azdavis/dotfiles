@@ -15,7 +15,10 @@ while getopts frv opt; do
 done
 shift $((OPTIND-1))
 
-[ $# -eq 0 ] && abort "missing operand"
+if [ $# -eq 0 ]; then
+    echo "usage: $(basename "$0") [-frv] <file>..." 1>&2
+    exit 1
+fi
 
 if $r; then
     find $@ -type f -exec shred $f $v -zn 8 {} \;
