@@ -15,7 +15,7 @@
                 <key>foreground</key>
                 <string>#222</string>
                 <key>selection</key>
-                <string>#d5d5d5</string>
+                <string>#ccc</string>
                 <key>lineHighlight</key>
                 <string>#ddd</string>
                 <key>gutterForeground</key>
@@ -63,7 +63,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#955</string>
+                <string>#933</string>
             </dict>
         </dict>
         <!-- magenta -->
@@ -73,7 +73,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#959</string>
+                <string>#939</string>
             </dict>
         </dict>
         <!-- yellow -->
@@ -83,7 +83,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#995</string>
+                <string>#993</string>
             </dict>
         </dict>
         <!-- green -->
@@ -93,7 +93,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#595</string>
+                <string>#393</string>
             </dict>
         </dict>
         <!-- cyan -->
@@ -103,7 +103,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#599</string>
+                <string>#399</string>
             </dict>
         </dict>
         <!-- blue -->
@@ -113,7 +113,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#559</string>
+                <string>#339</string>
             </dict>
         </dict>
     </array>
