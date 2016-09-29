@@ -225,7 +225,7 @@
         <key>name</key>
         <string>light</string>
         <key>rowCount</key>
-        <integer>32</integer>
+        <integer>26</integer>
         <key>shellExitAction</key>
         <integer>2</integer>
         <key>type</key>
