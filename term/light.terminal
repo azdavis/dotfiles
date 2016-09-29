@@ -163,7 +163,7 @@
         <key>FontAntialias</key>
         <true/>
         <key>FontHeightSpacing</key>
-        <real>0.83299999999999996</real>
+        <real>1.2</real>
         <key>FontWidthSpacing</key>
         <integer>1</integer>
         <key>ProfileCurrentVersion</key>
