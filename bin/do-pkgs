@@ -8,7 +8,7 @@ formula="$(brew --repo)/Library/Taps/homebrew/homebrew-core/Formula"
 brew update
 
 cd "$formula"
-git apply ~/.config/patch/*
+git apply "$HOME/.config/patch"/*
 cd "$wd"
 
 brew bundle
