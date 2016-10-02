@@ -2,4 +2,3 @@
 --memcheck:leak-check=full
 --quiet
 --show-reachable=yes
---suppressions=/Users/azdavis/.config/etc/valgrind.supp

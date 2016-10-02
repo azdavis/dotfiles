@@ -27,7 +27,8 @@ alias \
     grep="grep --color=auto" \
     ls="ls -bh --color=auto --group-directories-first" \
     sml="rlwrap sml" \
-    tree="tree --dirsfirst"
+    tree="tree --dirsfirst" \
+    valgrind="valgrind --suppressions=$HOME/.config/etc/valgrind.supp"
 
 alias \
     ga="git add" \
