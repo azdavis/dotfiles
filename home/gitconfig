@@ -2,7 +2,7 @@
 	verbose = 1
 [core]
 	attributesfile = ~/.config/etc/gitattributes
-	editor = edit -w
+	editor = subl -w
 	pager = less -FRSX
 	untrackedCache = true
 [credential]
