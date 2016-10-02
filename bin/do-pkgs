@@ -8,14 +8,14 @@ formula="$(brew --repo)/Library/Taps/homebrew/homebrew-core/Formula"
 brew update
 
 cd "$formula"
-git apply "$HOME/.config/patch"/*
+git apply "$wd/patch"/*
 cd "$wd"
 
 brew bundle
 
 cd "$formula"
 git checkout .
-cd "$HOME/.config/pkg"
+cd "$wd"
 
 brew bundle cleanup --force
 brew cask cleanup --force
