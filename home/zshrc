@@ -17,6 +17,7 @@ setopt \
     autocd \
     interactivecomments \
     menucomplete \
+    nobeep \
     nounset \
     pipefail \
     rmstarsilent
