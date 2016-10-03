@@ -30,15 +30,13 @@
         "*.woff2",
         "*.zip"
     ],
+    "caret_extra_bottom": 3,
+    "caret_extra_top": 3,
     "caret_style": "solid",
     "close_windows_when_empty": false,
     "color_scheme": "Packages/User/minigray/dark.tmTheme",
     "copy_with_empty_selection": false,
     "default_line_ending": "unix",
-    "line_padding_top": 3,
-    "line_padding_bottom": 3,
-    "caret_extra_top": 3,
-    "caret_extra_bottom": 3,
     "detect_indentation": false,
     "drag_text": false,
     "enable_tab_scrolling": false,
@@ -147,6 +145,8 @@
     [
         "draw_normal"
     ],
+    "line_padding_bottom": 3,
+    "line_padding_top": 3,
     "move_to_limit_on_up_down": false,
     "open_files_in_new_window": false,
     "remember_full_screen": true,
