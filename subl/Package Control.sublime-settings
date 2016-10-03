@@ -5,7 +5,6 @@
     ],
     "installed_packages":
     [
-        "EditorConfig",
         "Package Control",
         "Pug",
         "SML (Standard ML)",
