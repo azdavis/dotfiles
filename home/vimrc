@@ -16,3 +16,6 @@ set wildmenu
 
 syntax enable
 filetype plugin indent on
+
+highlight ExtraWhitespace ctermbg=red
+match ExtraWhitespace /\s\+$/
