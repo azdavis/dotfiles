@@ -1,8 +1,0 @@
-<snippet>
-    <content><![CDATA[
-putStrLn "$1"
-]]></content>
-    <tabTrigger>puts</tabTrigger>
-    <scope>source.haskell</scope>
-    <description>hs</description>
-</snippet>

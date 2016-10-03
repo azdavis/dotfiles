@@ -1,8 +1,0 @@
-<snippet>
-    <content><![CDATA[
-echo "$1"
-]]></content>
-    <tabTrigger>puts</tabTrigger>
-    <scope>source.shell</scope>
-    <description>sh</description>
-</snippet>

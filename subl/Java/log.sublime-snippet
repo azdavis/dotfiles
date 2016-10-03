@@ -1,8 +1,0 @@
-<snippet>
-    <content><![CDATA[
-System.out.printf("$1\n");
-]]></content>
-    <tabTrigger>log</tabTrigger>
-    <scope>source.java</scope>
-    <description>java</description>
-</snippet>
