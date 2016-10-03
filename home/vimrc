@@ -1,11 +1,17 @@
 set nocompatible
 
 set autoindent
+set autoread
+set backspace=indent,eol,start
 set expandtab
+set incsearch
 set number
 set shiftwidth=4
 set tabstop=4
+set ttimeout
+set ttimeoutlen=100
 set viminfo="NONE"
+set wildmenu
 
-syntax on
+syntax enable
 filetype plugin indent on
