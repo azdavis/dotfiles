@@ -15,7 +15,7 @@
                 <key>foreground</key>
                 <string>#222</string>
                 <key>selection</key>
-                <string>#ccc</string>
+                <string>#ddd</string>
                 <key>lineHighlight</key>
                 <string>#ddd</string>
                 <key>gutterForeground</key>
