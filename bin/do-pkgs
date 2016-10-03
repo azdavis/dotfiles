@@ -11,7 +11,7 @@ cd "$formula"
 git apply "$wd/patch"/*
 cd "$wd"
 
-brew bundle
+brew bundle --verbose
 
 cd "$formula"
 git checkout .
