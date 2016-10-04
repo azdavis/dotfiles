@@ -1,7 +1,8 @@
 [
     { "keys": ["alt+super+d"], "command": "duplicate_line" },
     { "keys": ["alt+super+down"], "command": "swap_line_down" },
-    { "keys": ["alt+super+k"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+    { "keys": ["alt+super+k"], "command": "run_macro_file", "args": {
+        "file": "res://Packages/Default/Delete Line.sublime-macro"} },
     { "keys": ["alt+super+left"], "command": "unindent" },
     { "keys": ["alt+super+right"], "command": "indent" },
     { "keys": ["alt+super+up"], "command": "swap_line_up" },
