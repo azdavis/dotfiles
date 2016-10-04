@@ -2,12 +2,11 @@
 
 . "$HOME/.config/etc/base.sh"
 
-wd=".config/home"
-cd "$HOME/$wd"
-
 touch "$HOME/.hushlogin" "$HOME/.netrc"
 chmod 600 "$HOME/.hushlogin" "$HOME/.netrc"
 
+wd=".config/home"
+cd "$HOME/$wd"
 for x in *; do
     dst="$HOME/.$x"
     [ -L "$dst" ] && rm "$dst"
