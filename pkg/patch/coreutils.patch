@@ -26,5 +26,3 @@ diff --git a/Formula/coreutils.rb b/Formula/coreutils.rb
    end
 
    def caveats; <<-EOS.undent
---
-2.8.2

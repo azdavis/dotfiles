@@ -25,5 +25,3 @@ diff --git a/Formula/gnupg.rb b/Formula/gnupg.rb
    end
 
    def caveats; <<-EOS.undent
---
-2.9.3
