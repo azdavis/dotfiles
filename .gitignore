@@ -2,6 +2,3 @@
 subl/*-ca-bundle*
 subl/*.cache
 subl/*.last-run
-subl/Haskell/Haskell.sublime-syntax
-subl/TypeScript/Comments.tmPreferences
-subl/TypeScript/TypeScript.tmLanguage
