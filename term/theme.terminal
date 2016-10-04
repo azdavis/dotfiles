@@ -233,7 +233,7 @@
         <key>deleteSendsBackspace</key>
         <false/>
         <key>name</key>
-        <string>dark</string>
+        <string>theme</string>
         <key>rowCount</key>
         <integer>26</integer>
         <key>shellExitAction</key>
