@@ -5,6 +5,6 @@ set -o posix
 IFS=$'\n\t'
 
 abort() {
-    echo "error: $1" 1>&2
+    echo "error: $1"
     exit 1
 }

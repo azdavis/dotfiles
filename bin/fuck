@@ -16,7 +16,7 @@ done
 shift $((OPTIND-1))
 
 if [ $# -eq 0 ]; then
-    echo "usage: $(basename "$0") [-frv] <file>..." 1>&2
+    echo "usage: $(basename "$0") [-frv] <file>..."
     exit 1
 fi
 
