@@ -1,0 +1,511 @@
+From 47dda8ed34fb009c411732a08b8a6909dd31305d Mon Sep 17 00:00:00 2001
+From: azdavis <ariel.z.davis@icloud.com>
+Date: Mon, 3 Oct 2016 20:37:53 -0400
+Subject: [PATCH] light theme
+
+---
+ subl/minigray/assets/Widget - minigray.tmTheme | 16 +++---
+ subl/minigray/minigray.sublime-theme           | 78 +++++++++++++-------------
+ subl/minigray/minigray.tmTheme                 | 34 +++++------
+ 3 files changed, 64 insertions(+), 64 deletions(-)
+
+diff --git a/subl/minigray/assets/Widget - minigray.tmTheme b/subl/minigray/assets/Widget - minigray.tmTheme
+index 99d5c82..0bc4e44 100644
+--- a/subl/minigray/assets/Widget - minigray.tmTheme	
++++ b/subl/minigray/assets/Widget - minigray.tmTheme	
+@@ -9,13 +9,13 @@
+             <key>settings</key>
+             <dict>
+                 <key>background</key>
+-                <string>#111</string>
++                <string>#eee</string>
+                 <key>caret</key>
+-                <string>#ddd</string>
++                <string>#222</string>
+                 <key>foreground</key>
+-                <string>#ddd</string>
++                <string>#222</string>
+                 <key>selection</key>
+-                <string>#333</string>
++                <string>#d5d5d5</string>
+             </dict>
+         </dict>
+         <!-- black and red -->
+@@ -37,7 +37,7 @@
+             <key>settings</key>
+             <dict>
+                 <key>foreground</key>
+-                <string>#d99</string>
++                <string>#900</string>
+             </dict>
+         </dict>
+         <!-- green -->
+@@ -47,7 +47,7 @@
+             <key>settings</key>
+             <dict>
+                 <key>foreground</key>
+-                <string>#9d9</string>
++                <string>#090</string>
+             </dict>
+         </dict>
+         <!-- cyan -->
+@@ -57,7 +57,7 @@
+             <key>settings</key>
+             <dict>
+                 <key>foreground</key>
+-                <string>#9dd</string>
++                <string>#099</string>
+             </dict>
+         </dict>
+         <!-- blue -->
+@@ -67,7 +67,7 @@
+             <key>settings</key>
+             <dict>
+                 <key>foreground</key>
+-                <string>#99d</string>
++                <string>#009</string>
+             </dict>
+         </dict>
+     </array>
+diff --git a/subl/minigray/minigray.sublime-theme b/subl/minigray/minigray.sublime-theme
+index 8166f5d..5ba0676 100644
+--- a/subl/minigray/minigray.sublime-theme
++++ b/subl/minigray/minigray.sublime-theme
+@@ -2,7 +2,7 @@
+     {
+         "class": "tabset_control",
+         "layer0.texture": "",
+-        "layer0.tint": [34, 34, 34],
++        "layer0.tint": [221, 221, 221],
+         "layer0.inner_margin": 0,
+         "layer0.opacity": 1,
+         "content_margin": 0,
+@@ -18,7 +18,7 @@
+         "max_margin_trim": 0,
+         "hit_test_level": 0,
+         "layer0.texture": "",
+-        "layer0.tint": [34, 34, 34],
++        "layer0.tint": [221, 221, 221],
+         "layer0.inner_margin": 5,
+         "layer0.opacity": 1
+     },
+@@ -31,7 +31,7 @@
+         "class": "tab_control",
+         "attributes": ["selected"],
+         "layer0.texture": "",
+-        "layer0.tint": [51, 51, 51]
++        "layer0.tint": [213, 213, 213]
+     },
+     {
+         "class": "tab_close_button",
+@@ -96,7 +96,7 @@
+     {
+         "class": "tab_label",
+         "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+-        "fg": [221, 221, 221]
++        "fg": [34, 34, 34]
+     },
+     {
+         "class": "tab_label",
+@@ -124,7 +124,7 @@
+     {
+         "class": "scroll_bar_control",
+         "layer0.texture": "",
+-        "layer0.tint": [34, 34, 34],
++        "layer0.tint": [221, 221, 221],
+         "layer0.opacity": 1,
+         "layer0.inner_margin": 0,
+         "blur": true
+@@ -133,21 +133,21 @@
+         "class": "scroll_bar_control",
+         "attributes": ["horizontal"],
+         "layer0.texture": "",
+-        "layer0.tint": [34, 34, 34],
++        "layer0.tint": [221, 221, 221],
+         "layer0.inner_margin": 0,
+         "blur": true
+     },
+     {
+         "class": "scroll_corner_control",
+         "layer0.texture": "",
+-        "layer0.tint": [34, 34, 34],
++        "layer0.tint": [221, 221, 221],
+         "layer0.inner_margin": 0,
+         "layer0.opacity": 1
+     },
+     {
+         "class": "puck_control",
+         "layer0.texture": "",
+-        "layer0.tint": [51, 51, 51],
++        "layer0.tint": [213, 213, 213],
+         "layer0.opacity": 1,
+         "layer0.inner_margin": 0,
+         "content_margin": [6, 0],
+@@ -156,7 +156,7 @@
+     {
+         "class": "puck_control",
+         "attributes": ["horizontal"],
+-        "layer0.tint": [51, 51, 51],
++        "layer0.tint": [213, 213, 213],
+         "layer0.inner_margin": 0,
+         "content_margin": [12, 6],
+         "blur": false
+@@ -174,7 +174,7 @@
+     {
+         "class": "scroll_bar_control",
+         "settings": ["overlay_scroll_bars"],
+-        "layer0.tint": [34, 34, 34],
++        "layer0.tint": [221, 221, 221],
+         "layer0.inner_margin": [0, 5],
+         "layer0.opacity": 0,
+         "blur": false
+@@ -218,13 +218,13 @@
+     },
+     {
+         "class": "sheet_container_control",
+-        "layer0.tint": [34, 34, 34],
++        "layer0.tint": [221, 221, 221],
+         "layer0.opacity": 1
+     },
+     {
+         "class": "grid_layout_control",
+         "border_size": 1,
+-        "border_color": [34, 34, 34]
++        "border_color": [221, 221, 221]
+     },
+     {
+         "class": "minimap_control",
+@@ -254,12 +254,12 @@
+     },
+     {
+         "class": "tool_tip_label_control",
+-        "color": [221, 221, 221]
++        "color": [34, 34, 34]
+     },
+     {
+         "class": "status_bar",
+         "layer0.texture": "",
+-        "layer0.tint": [17, 17, 17],
++        "layer0.tint": [238, 238, 238],
+         "layer0.opacity": 1,
+         "content_margin": 4
+     },
+@@ -275,7 +275,7 @@
+     {
+         "class": "sidebar_container",
+         "layer0.opacity": 1,
+-        "layer0.tint": [34, 34, 34],
++        "layer0.tint": [221, 221, 221],
+         "layer0.inner_margin": [1, 5, 2, 1],
+         "content_margin": [0, 4, 0, 0]
+     },
+@@ -289,7 +289,7 @@
+     },
+     {
+         "class": "tree_row",
+-        "layer0.tint": [51, 51, 51],
++        "layer0.tint": [213, 213, 213],
+         "layer0.opacity": 0,
+         "layer0.inner_margin": 1
+     },
+@@ -320,7 +320,7 @@
+     {
+         "class": "sidebar_label",
+         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+-        "color": [221, 221, 221]
++        "color": [34, 34, 34]
+     },
+     {
+         "class": "disclosure_button_control",
+@@ -351,12 +351,12 @@
+         "content_margin": [4, 10, 4, 10],
+         "min_size": [64, 0],
+         "layer0.opacity": 1,
+-        "layer0.tint": [17, 17, 17],
++        "layer0.tint": [238, 238, 238],
+         "layer0.inner_margin": 8
+     },
+     {
+         "class": "text_line_control",
+-        "layer0.tint": [17, 17, 17],
++        "layer0.tint": [238, 238, 238],
+         "layer0.opacity": 1,
+         "content_margin": 7
+     },
+@@ -364,13 +364,13 @@
+         "class": "panel_control",
+         "layer0.inner_margin": 0,
+         "layer0.opacity": 1,
+-        "layer0.tint": [17, 17, 17],
++        "layer0.tint": [238, 238, 238],
+         "content_margin": 0
+     },
+     {
+         "class": "overlay_control",
+         "layer0.opacity": 1,
+-        "layer1.tint": [34, 34, 34],
++        "layer1.tint": [221, 221, 221],
+         "layer1.inner_margin": 0,
+         "layer1.opacity": 1,
+         "content_margin": 0
+@@ -378,27 +378,27 @@
+     {
+         "class": "quick_panel",
+         "row_padding": 8,
+-        "layer0.tint": [34, 34, 34],
++        "layer0.tint": [221, 221, 221],
+         "layer0.opacity": 1,
+         "dark_content": true
+     },
+     {
+         "class": "quick_panel_row",
+-        "layer0.tint": [34, 34, 34],
++        "layer0.tint": [221, 221, 221],
+         "layer0.inner_margin": 8,
+         "layer0.opacity": 1
+     },
+     {
+         "class": "quick_panel_row",
+         "attributes": ["selected"],
+-        "layer0.tint": [51, 51, 51]
++        "layer0.tint": [213, 213, 213]
+     },
+     {
+         "class": "quick_panel_label",
+         "fg": [153, 153, 153],
+         "match_fg": [170, 170, 170],
+         "selected_fg": [170, 170, 170],
+-        "selected_match_fg": [221, 221, 221]
++        "selected_match_fg": [34, 34, 34]
+     },
+     {
+         "class": "quick_panel_path_label",
+@@ -414,18 +414,18 @@
+     },
+     {
+         "class": "mini_quick_panel_row",
+-        "layer0.tint": [34, 34, 34],
++        "layer0.tint": [221, 221, 221],
+         "layer0.opacity": 1
+     },
+     {
+         "class": "mini_quick_panel_row",
+         "attributes": ["selected"],
+-        "layer0.tint": [51, 51, 51]
++        "layer0.tint": [213, 213, 213]
+     },
+     {
+         "class": "popup_control",
+         "content_margin": 0,
+-        "layer0.tint": [34, 34, 34],
++        "layer0.tint": [221, 221, 221],
+         "layer0.opacity": 1
+     },
+     {
+@@ -441,7 +441,7 @@
+     },
+     {
+         "class": "table_row",
+-        "layer0.tint": [51, 51, 51],
++        "layer0.tint": [213, 213, 213],
+         "layer0.opacity": 0,
+         "layer0.inner_margin": [3, 1]
+     },
+@@ -475,7 +475,7 @@
+     {
+         "class": "icon_regex",
+         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+-        "layer0.tint": [221, 221, 221]
++        "layer0.tint": [34, 34, 34]
+     },
+     {
+         "class": "icon_case",
+@@ -492,7 +492,7 @@
+     {
+         "class": "icon_case",
+         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+-        "layer0.tint": [221, 221, 221]
++        "layer0.tint": [34, 34, 34]
+     },
+     {
+         "class": "icon_whole_word",
+@@ -509,7 +509,7 @@
+     {
+         "class": "icon_whole_word",
+         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+-        "layer0.tint": [221, 221, 221]
++        "layer0.tint": [34, 34, 34]
+     },
+     {
+         "class": "icon_context",
+@@ -526,7 +526,7 @@
+     {
+         "class": "icon_context",
+         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+-        "layer0.tint": [221, 221, 221]
++        "layer0.tint": [34, 34, 34]
+     },
+     {
+         "class": "icon_use_buffer",
+@@ -543,7 +543,7 @@
+     {
+         "class": "icon_use_buffer",
+         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+-        "layer0.tint": [221, 221, 221]
++        "layer0.tint": [34, 34, 34]
+     },
+     {
+         "class": "icon_reverse",
+@@ -560,7 +560,7 @@
+     {
+         "class": "icon_reverse",
+         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+-        "layer0.tint": [221, 221, 221]
++        "layer0.tint": [34, 34, 34]
+     },
+     {
+         "class": "icon_wrap",
+@@ -577,7 +577,7 @@
+     {
+         "class": "icon_wrap",
+         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+-        "layer0.tint": [221, 221, 221]
++        "layer0.tint": [34, 34, 34]
+     },
+     {
+         "class": "icon_in_selection",
+@@ -594,7 +594,7 @@
+     {
+         "class": "icon_in_selection",
+         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+-        "layer0.tint": [221, 221, 221]
++        "layer0.tint": [34, 34, 34]
+     },
+     {
+         "class": "icon_preserve_case",
+@@ -611,7 +611,7 @@
+     {
+         "class": "icon_preserve_case",
+         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+-        "layer0.tint": [221, 221, 221]
++        "layer0.tint": [34, 34, 34]
+     },
+     {
+         "class": "icon_highlight",
+@@ -628,7 +628,7 @@
+     {
+         "class": "icon_highlight",
+         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+-        "layer0.tint": [221, 221, 221]
++        "layer0.tint": [34, 34, 34]
+     },
+     {
+         "class": "icon_file_type",
+diff --git a/subl/minigray/minigray.tmTheme b/subl/minigray/minigray.tmTheme
+index f4124eb..2b59ca5 100644
+--- a/subl/minigray/minigray.tmTheme
++++ b/subl/minigray/minigray.tmTheme
+@@ -9,19 +9,19 @@
+             <key>settings</key>
+             <dict>
+                 <key>background</key>
+-                <string>#000</string>
++                <string>#eee</string>
+                 <key>caret</key>
+-                <string>#ddd</string>
+-                <key>foreground</key>
+-                <string>#ddd</string>
+-                <key>selection</key>
+-                <string>#333</string>
+-                <key>lineHighlight</key>
+                 <string>#222</string>
++                <key>foreground</key>
++                <string>#222</string>
++                <key>selection</key>
++                <string>#ddd</string>
++                <key>lineHighlight</key>
++                <string>#ddd</string>
+                 <key>gutterForeground</key>
+-                <string>#555</string>
++                <string>#aaa</string>
+                 <key>guide</key>
+-                <string>#555</string>
++                <string>#aaa</string>
+             </dict>
+         </dict>
+         <!-- white -->
+@@ -31,7 +31,7 @@
+             <key>settings</key>
+             <dict>
+                 <key>foreground</key>
+-                <string>#ddd</string>
++                <string>#222</string>
+             </dict>
+         </dict>
+         <!-- gray -->
+@@ -41,7 +41,7 @@
+             <key>settings</key>
+             <dict>
+                 <key>foreground</key>
+-                <string>#999</string>
++                <string>#555</string>
+             </dict>
+         </dict>
+         <!-- black and red -->
+@@ -63,7 +63,7 @@
+             <key>settings</key>
+             <dict>
+                 <key>foreground</key>
+-                <string>#d99</string>
++                <string>#933</string>
+             </dict>
+         </dict>
+         <!-- magenta -->
+@@ -73,7 +73,7 @@
+             <key>settings</key>
+             <dict>
+                 <key>foreground</key>
+-                <string>#d9d</string>
++                <string>#939</string>
+             </dict>
+         </dict>
+         <!-- yellow -->
+@@ -83,7 +83,7 @@
+             <key>settings</key>
+             <dict>
+                 <key>foreground</key>
+-                <string>#dd9</string>
++                <string>#993</string>
+             </dict>
+         </dict>
+         <!-- green -->
+@@ -93,7 +93,7 @@
+             <key>settings</key>
+             <dict>
+                 <key>foreground</key>
+-                <string>#9d9</string>
++                <string>#393</string>
+             </dict>
+         </dict>
+         <!-- cyan -->
+@@ -103,7 +103,7 @@
+             <key>settings</key>
+             <dict>
+                 <key>foreground</key>
+-                <string>#9dd</string>
++                <string>#399</string>
+             </dict>
+         </dict>
+         <!-- blue -->
+@@ -113,7 +113,7 @@
+             <key>settings</key>
+             <dict>
+                 <key>foreground</key>
+-                <string>#99d</string>
++                <string>#339</string>
+             </dict>
+         </dict>
+     </array>
+-- 
+2.10.0
+
