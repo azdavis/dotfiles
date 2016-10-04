@@ -1,3 +1,3 @@
-based off of [spacegray][0], copyright © 2013 Gadzhi Kharkharov
+based off of [spacegray][], copyright © 2013 Gadzhi Kharkharov
 
-[0]: https://github.com/kkga/spacegray
+[spacegray]: https://github.com/kkga/spacegray
