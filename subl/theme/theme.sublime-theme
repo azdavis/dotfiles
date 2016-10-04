@@ -35,7 +35,7 @@
     },
     {
         "class": "tab_close_button",
-        "layer0.texture": "User/minigray/assets/close@2x.png",
+        "layer0.texture": "User/theme/assets/close@2x.png",
         "layer0.opacity": 0,
         "layer0.tint": [119, 119, 119]
     },
@@ -47,7 +47,7 @@
     {
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["hover"]}],
-        "layer0.texture": "User/minigray/assets/close@2x.png",
+        "layer0.texture": "User/theme/assets/close@2x.png",
         "layer0.opacity": 1
     },
     {
@@ -65,14 +65,14 @@
     {
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
-        "layer0.texture": "User/minigray/assets/circle@2x.png",
+        "layer0.texture": "User/theme/assets/circle@2x.png",
         "layer0.tint": [170, 170, 102],
         "layer0.opacity": 1
     },
     {
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["dirty", "hover"]}],
-        "layer0.texture": "User/minigray/assets/close@2x.png",
+        "layer0.texture": "User/theme/assets/close@2x.png",
         "attributes": ["hover"],
         "layer0.opacity": 1,
         "layer0.tint": [170, 170, 170]
@@ -105,7 +105,7 @@
     },
     {
         "class": "fold_button_control",
-        "layer0.texture": "User/minigray/assets/folder-closed@2x.png",
+        "layer0.texture": "User/theme/assets/folder-closed@2x.png",
         "layer0.tint": [153, 153, 153],
         "layer0.opacity": 0.5,
         "layer0.inner_margin": 0,
@@ -119,7 +119,7 @@
     {
         "class": "fold_button_control",
         "attributes": ["expanded"],
-        "layer0.texture": "User/minigray/assets/folder-open@2x.png"
+        "layer0.texture": "User/theme/assets/folder-open@2x.png"
     },
     {
         "class": "scroll_bar_control",
@@ -325,7 +325,7 @@
     {
         "class": "disclosure_button_control",
         "content_margin": 8,
-        "layer0.texture": "User/minigray/assets/folder-closed@2x.png",
+        "layer0.texture": "User/theme/assets/folder-closed@2x.png",
         "layer0.tint": [119, 119, 119],
         "layer0.opacity": 1,
         "layer0.inner_margin": 0
@@ -338,13 +338,13 @@
     {
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
-        "layer0.texture": "User/minigray/assets/folder-open@2x.png"
+        "layer0.texture": "User/theme/assets/folder-open@2x.png"
     },
     {
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "layer0.texture": "User/minigray/assets/folder-open@2x.png"
+        "layer0.texture": "User/theme/assets/folder-open@2x.png"
     },
     {
         "class": "button_control",
@@ -462,7 +462,7 @@
     },
     {
         "class": "icon_regex",
-        "layer0.texture": "User/minigray/assets/regex@2x.png",
+        "layer0.texture": "User/theme/assets/regex@2x.png",
         "layer0.tint": [102, 102, 102],
         "layer0.opacity": 1,
         "content_margin": 8
@@ -479,7 +479,7 @@
     },
     {
         "class": "icon_case",
-        "layer0.texture": "User/minigray/assets/casesens@2x.png",
+        "layer0.texture": "User/theme/assets/casesens@2x.png",
         "layer0.tint": [102, 102, 102],
         "layer0.opacity": 1,
         "content_margin": 8
@@ -496,7 +496,7 @@
     },
     {
         "class": "icon_whole_word",
-        "layer0.texture": "User/minigray/assets/wholeword@2x.png",
+        "layer0.texture": "User/theme/assets/wholeword@2x.png",
         "layer0.tint": [102, 102, 102],
         "layer0.opacity": 1,
         "content_margin": 8
@@ -513,7 +513,7 @@
     },
     {
         "class": "icon_context",
-        "layer0.texture": "User/minigray/assets/context@2x.png",
+        "layer0.texture": "User/theme/assets/context@2x.png",
         "layer0.tint": [102, 102, 102],
         "layer0.opacity": 1,
         "content_margin": 8
@@ -530,7 +530,7 @@
     },
     {
         "class": "icon_use_buffer",
-        "layer0.texture": "User/minigray/assets/buffer@2x.png",
+        "layer0.texture": "User/theme/assets/buffer@2x.png",
         "layer0.tint": [102, 102, 102],
         "layer0.opacity": 1,
         "content_margin": 8
@@ -547,7 +547,7 @@
     },
     {
         "class": "icon_reverse",
-        "layer0.texture": "User/minigray/assets/reverse@2x.png",
+        "layer0.texture": "User/theme/assets/reverse@2x.png",
         "layer0.tint": [102, 102, 102],
         "layer0.opacity": 1,
         "content_margin": 8
@@ -564,7 +564,7 @@
     },
     {
         "class": "icon_wrap",
-        "layer0.texture": "User/minigray/assets/wrap@2x.png",
+        "layer0.texture": "User/theme/assets/wrap@2x.png",
         "layer0.tint": [102, 102, 102],
         "layer0.opacity": 1,
         "content_margin": 8
@@ -581,7 +581,7 @@
     },
     {
         "class": "icon_in_selection",
-        "layer0.texture": "User/minigray/assets/selection@2x.png",
+        "layer0.texture": "User/theme/assets/selection@2x.png",
         "layer0.tint": [102, 102, 102],
         "layer0.opacity": 1,
         "content_margin": 8
@@ -598,7 +598,7 @@
     },
     {
         "class": "icon_preserve_case",
-        "layer0.texture": "User/minigray/assets/lock@2x.png",
+        "layer0.texture": "User/theme/assets/lock@2x.png",
         "layer0.tint": [102, 102, 102],
         "layer0.opacity": 1,
         "content_margin": 8
@@ -615,7 +615,7 @@
     },
     {
         "class": "icon_highlight",
-        "layer0.texture": "User/minigray/assets/highlight@2x.png",
+        "layer0.texture": "User/theme/assets/highlight@2x.png",
         "layer0.tint": [102, 102, 102],
         "layer0.opacity": 1,
         "content_margin": 8

@@ -1,7 +1,7 @@
-diff --git a/subl/minigray/assets/Widget - minigray.tmTheme b/subl/minigray/assets/Widget - minigray.tmTheme
+diff --git a/subl/theme/assets/Widget - theme.tmTheme b/subl/theme/assets/Widget - theme.tmTheme
 index 99d5c82..0bc4e44 100644
---- a/subl/minigray/assets/Widget - minigray.tmTheme
-+++ b/subl/minigray/assets/Widget - minigray.tmTheme
+--- a/subl/theme/assets/Widget - theme.tmTheme
++++ b/subl/theme/assets/Widget - theme.tmTheme
 @@ -9,13 +9,13 @@
              <key>settings</key>
              <dict>
@@ -56,10 +56,10 @@ index 99d5c82..0bc4e44 100644
              </dict>
          </dict>
      </array>
-diff --git a/subl/minigray/minigray.sublime-theme b/subl/minigray/minigray.sublime-theme
+diff --git a/subl/theme/theme.sublime-theme b/subl/theme/theme.sublime-theme
 index 8166f5d..5ba0676 100644
---- a/subl/minigray/minigray.sublime-theme
-+++ b/subl/minigray/minigray.sublime-theme
+--- a/subl/theme/theme.sublime-theme
++++ b/subl/theme/theme.sublime-theme
 @@ -2,7 +2,7 @@
      {
          "class": "tabset_control",
@@ -390,10 +390,10 @@ index 8166f5d..5ba0676 100644
      },
      {
          "class": "icon_file_type",
-diff --git a/subl/minigray/minigray.tmTheme b/subl/minigray/minigray.tmTheme
+diff --git a/subl/theme/theme.tmTheme b/subl/theme/theme.tmTheme
 index f4124eb..2b59ca5 100644
---- a/subl/minigray/minigray.tmTheme
-+++ b/subl/minigray/minigray.tmTheme
+--- a/subl/theme/theme.tmTheme
++++ b/subl/theme/theme.tmTheme
 @@ -9,19 +9,19 @@
              <key>settings</key>
              <dict>
