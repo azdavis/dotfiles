@@ -1,18 +1,21 @@
 set nocompatible
 
-set autoindent
+syntax enable
+filetype plugin indent on
+
 set autoread
-set backspace=indent,eol,start
-set expandtab
 set incsearch
 set number
-set shiftwidth=4
-set smarttab
-set tabstop=4
-set ttimeout
-set ttimeoutlen=100
 set viminfo="NONE"
 set wildmenu
 
-syntax enable
-filetype plugin indent on
+set autoindent
+set backspace=indent,eol,start
+set expandtab
+set smarttab
+
+set ttimeout
+set ttimeoutlen=100
+
+set colorcolumn=79
+highlight ColorColumn ctermbg=7
