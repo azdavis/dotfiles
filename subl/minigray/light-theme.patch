@@ -1,18 +1,7 @@
-From 47dda8ed34fb009c411732a08b8a6909dd31305d Mon Sep 17 00:00:00 2001
-From: azdavis <ariel.z.davis@icloud.com>
-Date: Mon, 3 Oct 2016 20:37:53 -0400
-Subject: [PATCH] light theme
-
----
- subl/minigray/assets/Widget - minigray.tmTheme | 16 +++---
- subl/minigray/minigray.sublime-theme           | 78 +++++++++++++-------------
- subl/minigray/minigray.tmTheme                 | 34 +++++------
- 3 files changed, 64 insertions(+), 64 deletions(-)
-
 diff --git a/subl/minigray/assets/Widget - minigray.tmTheme b/subl/minigray/assets/Widget - minigray.tmTheme
 index 99d5c82..0bc4e44 100644
---- a/subl/minigray/assets/Widget - minigray.tmTheme	
-+++ b/subl/minigray/assets/Widget - minigray.tmTheme	
+--- a/subl/minigray/assets/Widget - minigray.tmTheme
++++ b/subl/minigray/assets/Widget - minigray.tmTheme
 @@ -9,13 +9,13 @@
              <key>settings</key>
              <dict>
@@ -506,6 +495,5 @@ index f4124eb..2b59ca5 100644
              </dict>
          </dict>
      </array>
--- 
+--
 2.10.0
-
