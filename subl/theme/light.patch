@@ -1,5 +1,4 @@
 diff --git a/subl/theme/assets/Widget - theme.tmTheme b/subl/theme/assets/Widget - theme.tmTheme
-index 99d5c82..0bc4e44 100644
 --- a/subl/theme/assets/Widget - theme.tmTheme
 +++ b/subl/theme/assets/Widget - theme.tmTheme
 @@ -9,13 +9,13 @@
@@ -57,7 +56,6 @@ index 99d5c82..0bc4e44 100644
          </dict>
      </array>
 diff --git a/subl/theme/theme.sublime-theme b/subl/theme/theme.sublime-theme
-index 8166f5d..5ba0676 100644
 --- a/subl/theme/theme.sublime-theme
 +++ b/subl/theme/theme.sublime-theme
 @@ -2,7 +2,7 @@
@@ -391,7 +389,6 @@ index 8166f5d..5ba0676 100644
      {
          "class": "icon_file_type",
 diff --git a/subl/theme/theme.tmTheme b/subl/theme/theme.tmTheme
-index f4124eb..2b59ca5 100644
 --- a/subl/theme/theme.tmTheme
 +++ b/subl/theme/theme.tmTheme
 @@ -9,19 +9,19 @@

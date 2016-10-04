@@ -1,5 +1,4 @@
 diff --git a/Formula/gnupg.rb b/Formula/gnupg.rb
-index 94674fe..35f7391 100644
 --- a/Formula/gnupg.rb
 +++ b/Formula/gnupg.rb
 @@ -21,7 +21,6 @@ class Gnupg < Formula

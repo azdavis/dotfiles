@@ -1,5 +1,4 @@
 diff --git a/Formula/coreutils.rb b/Formula/coreutils.rb
-index e2af40d..e9e539b 100644
 --- a/Formula/coreutils.rb
 +++ b/Formula/coreutils.rb
 @@ -43,24 +43,10 @@ class Coreutils < Formula
