@@ -1,3 +1,14 @@
+diff --git a/subl/Preferences.sublime-settings b/subl/Preferences.sublime-settings
+--- a/subl/Preferences.sublime-settings
++++ b/subl/Preferences.sublime-settings
+@@ -85,7 +85,6 @@
+     "font_face": "input",
+     "font_options":
+     [
+-        "gray_antialias",
+         "no_bold",
+         "no_italic"
+     ],
 diff --git a/subl/theme/assets/Widget - theme.tmTheme b/subl/theme/assets/Widget - theme.tmTheme
 --- a/subl/theme/assets/Widget - theme.tmTheme
 +++ b/subl/theme/assets/Widget - theme.tmTheme
