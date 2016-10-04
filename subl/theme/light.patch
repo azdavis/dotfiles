@@ -9,9 +9,9 @@ diff --git a/subl/Preferences.sublime-settings b/subl/Preferences.sublime-settin
          "no_bold",
          "no_italic"
      ],
-diff --git a/subl/theme/assets/Widget - theme.tmTheme b/subl/theme/assets/Widget - theme.tmTheme
---- a/subl/theme/assets/Widget - theme.tmTheme
-+++ b/subl/theme/assets/Widget - theme.tmTheme
+diff --git a/subl/theme/Widget - theme.tmTheme b/subl/theme/Widget - theme.tmTheme
+--- a/subl/theme/Widget - theme.tmTheme
++++ b/subl/theme/Widget - theme.tmTheme
 @@ -9,13 +9,13 @@
              <key>settings</key>
              <dict>
