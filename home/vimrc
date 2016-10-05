@@ -1,21 +1,21 @@
-set nocompatible
+se nocompatible
 
-set autoindent
-set autoread
-set backspace=indent,eol,start
-set colorcolumn=79
-set expandtab
-set ignorecase
-set incsearch
-set listchars=space:·,eol:¬,tab:>-
-set number
-set shiftwidth=4
-set smarttab
-set tabstop=4
-set ttimeout
-set ttimeoutlen=100
-set viminfo="none"
-set wildmenu
+se autoindent
+se autoread
+se backspace=indent,eol,start
+se colorcolumn=79
+se expandtab
+se ignorecase
+se incsearch
+se listchars=space:·,eol:¬,tab:>-
+se number
+se shiftwidth=4
+se smarttab
+se tabstop=4
+se ttimeout
+se ttimeoutlen=100
+se viminfo="none"
+se wildmenu
 
 hi colorcolumn ctermbg=grey
 hi comment ctermfg=grey
