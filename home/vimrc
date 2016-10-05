@@ -8,6 +8,7 @@ se expandtab
 se ignorecase
 se incsearch
 se listchars=space:·,eol:¬,tab:>-
+se noshowmatch
 se number
 se shiftwidth=4
 se smarttab
@@ -35,3 +36,5 @@ hi diffsubname ctermfg=black
 
 syn enable
 filet plugin indent on
+
+let loaded_matchparen=1
