@@ -16,7 +16,7 @@ hi string ctermfg=yellow
 hi type ctermfg=red
 
 syn enable
-filetype plugin indent on
+filet plugin indent on
 
 set autoindent
 set autoread
