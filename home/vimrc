@@ -1,21 +1,28 @@
 set nocompatible
 
+hi colorcolumn ctermbg=grey
+hi comment ctermfg=grey
+hi constant ctermfg=blue
+hi identifier ctermfg=red
+hi linenr ctermfg=grey
+hi special ctermfg=cyan
+hi statement ctermfg=red
+hi string ctermfg=yellow
+hi type ctermfg=red
 syntax enable
 filetype plugin indent on
 
+set autoindent
 set autoread
+set backspace=indent,eol,start
+set colorcolumn=79
+set expandtab
 set incsearch
 set number
-set viminfo="NONE"
-set wildmenu
-
-set autoindent
-set backspace=indent,eol,start
-set expandtab
+set shiftwidth=4
 set smarttab
-
+set tabstop=4
 set ttimeout
 set ttimeoutlen=100
-
-set colorcolumn=79
-highlight ColorColumn ctermbg=7
+set viminfo="none"
+set wildmenu
