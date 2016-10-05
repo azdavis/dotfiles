@@ -3,6 +3,11 @@ set nocompatible
 hi colorcolumn ctermbg=grey
 hi comment ctermfg=grey
 hi constant ctermfg=blue
+hi diffadded ctermfg=green
+hi difffile ctermfg=cyan
+hi diffline ctermfg=cyan
+hi diffremoved ctermfg=red
+hi diffsubname ctermfg=black
 hi identifier ctermfg=red
 hi linenr ctermfg=grey
 hi special ctermfg=cyan
