@@ -1,7 +1,8 @@
 diff --git a/Formula/coreutils.rb b/Formula/coreutils.rb
+index d01bd5c..8b085da 100644
 --- a/Formula/coreutils.rb
 +++ b/Formula/coreutils.rb
-@@ -43,24 +43,10 @@ class Coreutils < Formula
+@@ -44,24 +44,10 @@ class Coreutils < Formula
      system "./bootstrap" if build.head?
      args = %W[
        --prefix=#{prefix}

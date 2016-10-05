@@ -1,4 +1,5 @@
 diff --git a/subl/Preferences.sublime-settings b/subl/Preferences.sublime-settings
+index 1df179e..0b9df93 100644
 --- a/subl/Preferences.sublime-settings
 +++ b/subl/Preferences.sublime-settings
 @@ -85,7 +85,6 @@
@@ -10,6 +11,7 @@ diff --git a/subl/Preferences.sublime-settings b/subl/Preferences.sublime-settin
          "no_italic"
      ],
 diff --git a/subl/theme/Widget - theme.tmTheme b/subl/theme/Widget - theme.tmTheme
+index 99d5c82..22c1bc8 100644
 --- a/subl/theme/Widget - theme.tmTheme
 +++ b/subl/theme/Widget - theme.tmTheme
 @@ -9,13 +9,13 @@
@@ -67,6 +69,7 @@ diff --git a/subl/theme/Widget - theme.tmTheme b/subl/theme/Widget - theme.tmThe
          </dict>
      </array>
 diff --git a/subl/theme/theme.sublime-theme b/subl/theme/theme.sublime-theme
+index 3094837..09c8dcc 100644
 --- a/subl/theme/theme.sublime-theme
 +++ b/subl/theme/theme.sublime-theme
 @@ -2,7 +2,7 @@
@@ -400,6 +403,7 @@ diff --git a/subl/theme/theme.sublime-theme b/subl/theme/theme.sublime-theme
      {
          "class": "icon_file_type",
 diff --git a/subl/theme/theme.tmTheme b/subl/theme/theme.tmTheme
+index f4124eb..6d7587b 100644
 --- a/subl/theme/theme.tmTheme
 +++ b/subl/theme/theme.tmTheme
 @@ -9,19 +9,19 @@
