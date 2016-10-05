@@ -1,5 +1,5 @@
 diff --git a/term/theme.terminal b/term/theme.terminal
-index 5df1457..2ab586a 100644
+index 71c5a60..17b2336 100644
 --- a/term/theme.terminal
 +++ b/term/theme.terminal
 @@ -5,64 +5,59 @@
@@ -197,8 +197,8 @@ index 5df1457..2ab586a 100644
          <data>
              YnBsaXN0MDDUAQIDBAUGFRZYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
              AAGGoKMHCA9VJG51bGzTCQoLDA0OVU5TUkdCXE5TQ29sb3JTcGFjZVYkY2xhc3NPECcw
--            Ljg2NjY2NjY2NjcgMC44NjY2NjY2NjY3IDAuODY2NjY2NjY2NwAQAYAC0hAREhNaJGNs
-+            LjEzMzMzMzMzMzMgMC4xMzMzMzMzMzMzIDAuMTMzMzMzMzMzMwAQAYAC0hAREhNaJGNs
+-            LjMzMzMzMzMzMzMgMC4zMzMzMzMzMzMzIDAuMzMzMzMzMzMzMwAQAYAC0hAREhNaJGNs
++            LjY2NjY2NjY2NjcgMC42NjY2NjY2NjY3IDAuNjY2NjY2NjY2NwAQAYAC0hAREhNaJGNs
              YXNzbmFtZVgkY2xhc3Nlc1dOU0NvbG9yohIUWE5TT2JqZWN0XxAPTlNLZXllZEFyY2hp
              dmVy0RcYVHJvb3SAAQgRGiMtMjc7QUhOW2KMjpCVoKmxtL3P0tcAAAAAAAABAQAAAAAA
              AAAZAAAAAAAAAAAAAAAAAAAA2Q==
