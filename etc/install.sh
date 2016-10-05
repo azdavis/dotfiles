@@ -6,7 +6,7 @@ set -o pipefail
 set -o posix
 IFS=$'\n\t'
 
-repo="azdavis/config"
+repo="azdavis/dotfiles"
 dst="$HOME/.config"
 zsh="$(which zsh)"
 

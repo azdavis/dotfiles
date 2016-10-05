@@ -1,6 +1,6 @@
-# config
+# dotfiles
 
-a potpourri of macOS config files
+a potpourri of macOS dotfiles
 
 ## setup
 
