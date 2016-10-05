@@ -1,5 +1,22 @@
 set nocompatible
 
+set autoindent
+set autoread
+set backspace=indent,eol,start
+set colorcolumn=79
+set expandtab
+set ignorecase
+set incsearch
+set listchars=space:·,eol:¬,tab:>-
+set number
+set shiftwidth=4
+set smarttab
+set tabstop=4
+set ttimeout
+set ttimeoutlen=100
+set viminfo="none"
+set wildmenu
+
 hi colorcolumn ctermbg=grey
 hi comment ctermfg=grey
 hi constant ctermfg=blue
@@ -17,20 +34,3 @@ hi type ctermfg=red
 
 syn enable
 filet plugin indent on
-
-set autoindent
-set autoread
-set backspace=indent,eol,start
-set colorcolumn=79
-set expandtab
-set ignorecase
-set incsearch
-set listchars=space:·,eol:¬,tab:>-
-set number
-set shiftwidth=4
-set smarttab
-set tabstop=4
-set ttimeout
-set ttimeoutlen=100
-set viminfo="none"
-set wildmenu
