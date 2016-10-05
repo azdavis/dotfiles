@@ -25,6 +25,7 @@ set colorcolumn=79
 set expandtab
 set ignorecase
 set incsearch
+set listchars=space:·,eol:¬,tab:>-
 set number
 set shiftwidth=4
 set smarttab
