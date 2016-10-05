@@ -23,6 +23,7 @@ set autoread
 set backspace=indent,eol,start
 set colorcolumn=79
 set expandtab
+set ignorecase
 set incsearch
 set number
 set shiftwidth=4
