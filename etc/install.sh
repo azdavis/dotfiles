@@ -22,8 +22,10 @@ echo "doing dotfile actions"
 echo "doing sublime text actions"
 "$dst/bin/do-subl" < /dev/tty
 
-echo "changing shell to $zsh"
-chsh -s "$zsh" < /dev/tty
+if [ "$SHELL" != "$zsh" ]; then
+    echo "changing shell to $zsh"
+    chsh -s "$zsh" < /dev/tty
+fi
 
 echo "all done"
 
