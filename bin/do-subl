@@ -7,7 +7,6 @@ pgrep -f "Sublime Text" > /dev/null \
 
 support="$HOME/Library/Application Support/Sublime Text 3"
 
-mkdir -p "$support/Packages"
 rm -f "$support/Local/Auto Save Session.sublime_session"
 rm -f "$support/Local/Session.sublime_session"
 rm -rf "$HOME/.config/subl/Package Control.cache"
@@ -18,4 +17,5 @@ dst="$support/Packages/User"
 [ -L "$dst" ] && rm "$dst"
 [ -e "$dst" ] && rm -ri "$dst"
 [ -e "$dst" ] && exit 0
+mkdir -p "$(dirname "$dst")"
 ln -s "$HOME/.config/subl" "$dst"
