@@ -11,6 +11,6 @@ else
 fi
 
 url="$(git config "remote.$remote.url" || true)"
-[ "$url" ] || abort "cannot browse '$remote': no such remote"
+[ -z "$url" ] && abort "cannot browse '$remote': no such remote"
 
 open "$url"
