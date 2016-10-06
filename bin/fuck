@@ -19,8 +19,8 @@ shift $((OPTIND-1))
     && abort "usage: $(basename "$0") [-frv] <file>..."
 
 if $r; then
-    find $@ -type f -exec shred $f $v -zn 8 {} \;
-    rm -r $f $v $@
+    find "$@" -type f -exec shred $f $v -zn 8 {} \;
+    rm -r $f $v "$@"
 else
-    shred $f $v -zun 8 $@
+    shred $f $v -zun 8 "$@"
 fi
