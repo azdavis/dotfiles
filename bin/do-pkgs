@@ -2,8 +2,8 @@
 
 . "$HOME/.config/etc/base.sh"
 
-wd="$HOME/.config/pkg"
 formula="$(brew --repo)/Library/Taps/homebrew/homebrew-core/Formula"
+wd="$HOME/.config/pkg"
 
 brew update
 
