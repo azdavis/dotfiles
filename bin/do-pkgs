@@ -18,8 +18,8 @@ git checkout .
 cd "$wd"
 
 brew bundle cleanup --force
-brew cask cleanup --force
-brew cleanup --force
+brew cask cleanup
+brew cleanup
 brew prune
 
 brew doctor
