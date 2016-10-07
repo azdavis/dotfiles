@@ -2,3 +2,5 @@
 subl/*-ca-bundle*
 subl/*.cache
 subl/*.last-run
+subl/Haskell
+subl/TypeScript
