@@ -1,8 +1,8 @@
 diff --git a/subl/Preferences.sublime-settings b/subl/Preferences.sublime-settings
-index 1df179e..0b9df93 100644
+index eb85b83..ffc581d 100644
 --- a/subl/Preferences.sublime-settings
 +++ b/subl/Preferences.sublime-settings
-@@ -85,7 +85,6 @@
+@@ -19,7 +19,6 @@
      "font_face": "input",
      "font_options":
      [
