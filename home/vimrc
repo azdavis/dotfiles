@@ -1,24 +1,5 @@
 se nocompatible
 
-hi colorcolumn ctermbg=grey
-hi comment ctermfg=grey
-hi constant ctermfg=blue
-hi identifier ctermfg=red
-hi linenr ctermfg=grey
-hi special ctermfg=cyan
-hi statement ctermfg=red
-hi string ctermfg=yellow
-hi type ctermfg=red
-
-hi diffadded ctermfg=green
-hi difffile ctermfg=cyan
-hi diffline ctermfg=cyan
-hi diffremoved ctermfg=red
-hi diffsubname ctermfg=black
-
-syn enable
-filet plugin indent on
-
 se autoindent
 se autoread
 se backspace=indent,eol,start
@@ -39,7 +20,18 @@ se viminfo="none"
 se wildmenu
 
 inoremap jk <esc>
-
-autocmd BufWritePre * :%s/\s\+$//e
-
+au BufWritePre * :%s/\s\+$//e
 let loaded_matchparen=1
+
+hi colorcolumn ctermbg=grey
+hi comment ctermfg=grey
+hi constant ctermfg=blue
+hi identifier ctermfg=red
+hi linenr ctermfg=grey
+hi special ctermfg=cyan
+hi statement ctermfg=red
+hi string ctermfg=yellow
+hi type ctermfg=red
+
+syn enable
+filet plugin indent on
