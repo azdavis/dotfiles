@@ -11,11 +11,4 @@ rm -f "$support/Local/Auto Save Session.sublime_session"
 rm -f "$support/Local/Session.sublime_session"
 rm -rf "$HOME/.config/subl/Package Control.cache"
 rm -rf "$support/Cache"
-
-dst="$support/Packages/User"
-
-[ -L "$dst" ] && rm "$dst"
-[ -e "$dst" ] && rm -ri "$dst"
-[ -e "$dst" ] && exit 0
-mkdir -p "$(dirname "$dst")"
-ln -s "$HOME/.config/subl" "$dst"
+symlink "$HOME/.config/subl" "$support/Packages/User"

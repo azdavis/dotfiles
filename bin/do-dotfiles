@@ -8,9 +8,5 @@ chmod 600 "$HOME/.hushlogin" "$HOME/.netrc"
 wd=".config/home"
 cd "$HOME/$wd"
 for x in *; do
-    dst="$HOME/.$x"
-    [ -L "$dst" ] && rm "$dst"
-    [ -e "$dst" ] && rm -ri "$dst"
-    [ -e "$dst" ] && continue
-    ln -s "$wd/$x" "$dst"
+    symlink "$wd/$x" "$HOME/.$x"
 done
