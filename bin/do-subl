@@ -9,8 +9,14 @@ pgrep -f "Sublime Text" > /dev/null \
 
 support="$HOME/Library/Application Support/Sublime Text 3"
 
-rm -f "$support/Local/Auto Save Session.sublime_session"
-rm -f "$support/Local/Session.sublime_session"
-rm -rf "$HOME/.config/subl/Package Control.cache"
 rm -rf "$support/Cache"
+rm -rf "$support/Local/Auto Save Session.sublime_session"
+rm -rf "$support/Local/Session.sublime_session"
+
+rm -rf "$HOME/.config/subl/oscrypto-ca-bundle.crt"
+rm -rf "$HOME/.config/subl/Package Control.cache"
+rm -rf "$HOME/.config/subl/Package Control.last-run"
+rm -rf "$HOME/.config/subl/Package Control.merged-ca-bundle"
+rm -rf "$HOME/.config/subl/Package Control.user-ca-bundle"
+
 symlink "$HOME/.config/subl" "$support/Packages/User"
