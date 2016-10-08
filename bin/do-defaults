@@ -33,5 +33,4 @@ dw com.apple.print.printingprefs "Quit When Finished" -bool true
 dw com.apple.screencapture disable-shadow -bool true
 dw com.apple.universalaccess reduceTransparency -bool true
 
-echo "defaults set"
 echo "relog for all changes to take effect"
