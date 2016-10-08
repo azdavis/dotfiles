@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-. "$HOME/.config/etc/base.sh"
+. "$HOME/.config/lib/base.sh"
 
 formula="$(brew --repo)/Library/Taps/homebrew/homebrew-core/Formula"
 wd="$HOME/.config/pkg"

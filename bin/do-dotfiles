@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 
-. "$HOME/.config/etc/base.sh"
+. "$HOME/.config/lib/base.sh"
+. "$HOME/.config/lib/symlink.sh"
 
 touch "$HOME/.hushlogin" "$HOME/.netrc"
 chmod 600 "$HOME/.hushlogin" "$HOME/.netrc"
