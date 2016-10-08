@@ -4,7 +4,6 @@
 <dict>
     <key>settings</key>
     <array>
-        <!-- settings -->
         <dict>
             <key>settings</key>
             <dict>
@@ -18,7 +17,6 @@
                 <string>#333</string>
             </dict>
         </dict>
-        <!-- black and red -->
         <dict>
             <key>scope</key>
             <string>invalid</string>
@@ -30,7 +28,6 @@
                 <string>#f00</string>
             </dict>
         </dict>
-        <!-- red -->
         <dict>
             <key>scope</key>
             <string>keyword.operator</string>
@@ -40,7 +37,6 @@
                 <string>#d99</string>
             </dict>
         </dict>
-        <!-- green -->
         <dict>
             <key>scope</key>
             <string>keyword.control</string>
@@ -50,7 +46,6 @@
                 <string>#9d9</string>
             </dict>
         </dict>
-        <!-- cyan -->
         <dict>
             <key>scope</key>
             <string>keyword.control.group, keyword.other.backref-and-recursion</string>
@@ -60,7 +55,6 @@
                 <string>#9dd</string>
             </dict>
         </dict>
-        <!-- blue -->
         <dict>
             <key>scope</key>
             <string>constant.character</string>

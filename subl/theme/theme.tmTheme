@@ -4,7 +4,6 @@
 <dict>
     <key>settings</key>
     <array>
-        <!-- settings -->
         <dict>
             <key>settings</key>
             <dict>
@@ -24,7 +23,6 @@
                 <string>#555</string>
             </dict>
         </dict>
-        <!-- white -->
         <dict>
             <key>scope</key>
             <string>punctuation.definition.tag, string.interpolated source, string.quoted source, variable</string>
@@ -34,7 +32,6 @@
                 <string>#ddd</string>
             </dict>
         </dict>
-        <!-- gray -->
         <dict>
             <key>scope</key>
             <string>comment</string>
@@ -44,7 +41,6 @@
                 <string>#999</string>
             </dict>
         </dict>
-        <!-- black and red -->
         <dict>
             <key>scope</key>
             <string>invalid</string>
@@ -56,7 +52,6 @@
                 <string>#f00</string>
             </dict>
         </dict>
-        <!-- red -->
         <dict>
             <key>scope</key>
             <string>entity.name.tag, keyword, markup.deleted, markup.heading punctuation, meta.selector, meta.tag, storage, support.function</string>
@@ -66,7 +61,6 @@
                 <string>#d99</string>
             </dict>
         </dict>
-        <!-- magenta -->
         <dict>
             <key>scope</key>
             <string>variable.language, constant.language.this</string>
@@ -76,7 +70,6 @@
                 <string>#d9d</string>
             </dict>
         </dict>
-        <!-- yellow -->
         <dict>
             <key>scope</key>
             <string>string, keyword.operator.heredoc, keyword.control.heredoc-token</string>
@@ -86,7 +79,6 @@
                 <string>#dd9</string>
             </dict>
         </dict>
-        <!-- green -->
         <dict>
             <key>scope</key>
             <string>entity.name.type.class, entity.name.type.module, entity.other.attribute-name, markup.inserted, meta.constant, support.class, variable.other.constant</string>
@@ -96,7 +88,6 @@
                 <string>#9d9</string>
             </dict>
         </dict>
-        <!-- cyan -->
         <dict>
             <key>scope</key>
             <string>entity.name.function, markup.underline.link, meta.diff</string>
@@ -106,7 +97,6 @@
                 <string>#9dd</string>
             </dict>
         </dict>
-        <!-- blue -->
         <dict>
             <key>scope</key>
             <string>constant, string.regexp, text.html.markdown markup.raw</string>
