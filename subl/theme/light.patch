@@ -19,7 +19,7 @@ index 4581266..023db4d 100644
                  <dict>
                      <key>background</key>
 -                    <string>#111</string>
-+                    <string>#eee</string>
++                    <string>#ccc</string>
                      <key>caret</key>
 -                    <string>#ddd</string>
 +                    <string>#222</string>
@@ -187,7 +187,7 @@ index 3094837..09c8dcc 100644
          "class": "status_bar",
          "layer0.texture": "",
 -        "layer0.tint": [17, 17, 17],
-+        "layer0.tint": [238, 238, 238],
++        "layer0.tint": [204, 204, 204],
          "layer0.opacity": 1,
          "content_margin": 4
      },
@@ -223,13 +223,13 @@ index 3094837..09c8dcc 100644
          "min_size": [64, 0],
          "layer0.opacity": 1,
 -        "layer0.tint": [17, 17, 17],
-+        "layer0.tint": [238, 238, 238],
++        "layer0.tint": [204, 204, 204],
          "layer0.inner_margin": 8
      },
      {
          "class": "text_line_control",
 -        "layer0.tint": [17, 17, 17],
-+        "layer0.tint": [238, 238, 238],
++        "layer0.tint": [204, 204, 204],
          "layer0.opacity": 1,
          "content_margin": 7
      },
@@ -238,7 +238,7 @@ index 3094837..09c8dcc 100644
          "layer0.inner_margin": 0,
          "layer0.opacity": 1,
 -        "layer0.tint": [17, 17, 17],
-+        "layer0.tint": [238, 238, 238],
++        "layer0.tint": [204, 204, 204],
          "content_margin": 0
      },
      {
