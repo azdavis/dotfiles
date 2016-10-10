@@ -262,7 +262,7 @@ index fdff98c..2091081 100644
 +                    <string>#ccc</string>
                      <key>lineHighlight</key>
 -                    <string>#222</string>
-+                    <string>#bbb</string>
++                    <string>#ccc</string>
                      <key>gutterForeground</key>
 -                    <string>#555</string>
 +                    <string>#aaa</string>
