@@ -2,17 +2,11 @@ diff --git a/Formula/gnupg.rb b/Formula/gnupg.rb
 index 23b7e45..5e007ba 100644
 --- a/Formula/gnupg.rb
 +++ b/Formula/gnupg.rb
-@@ -22,7 +22,6 @@ class Gnupg < Formula
-       --disable-silent-rules
-       --prefix=#{prefix}
+@@ -24,3 +24,2 @@ class Gnupg < Formula
        --disable-asm
 -      --program-suffix=1
      ]
-     args << "--with-libusb=no" if build.without? "libusb-compat"
-
-@@ -34,15 +33,6 @@ class Gnupg < Formula
-     # dependency order wrong
-     [bin, libexec/"gnupg"].each(&:mkpath)
+@@ -36,11 +35,2 @@ class Gnupg < Formula
      system "make", "install"
 -
 -    # https://lists.gnupg.org/pipermail/gnupg-devel/2016-August/031533.html
@@ -24,5 +18,3 @@ index 23b7e45..5e007ba 100644
 -      (libexec/"gpgbin").install_symlink bin/cmd => cmd.to_s.sub(/1/, "")
 -    end
    end
-
-   def caveats; <<-EOS.undent

@@ -2,21 +2,15 @@ diff --git a/subl/Preferences.sublime-settings b/subl/Preferences.sublime-settin
 index eb85b83..ffc581d 100644
 --- a/subl/Preferences.sublime-settings
 +++ b/subl/Preferences.sublime-settings
-@@ -19,7 +19,6 @@
-     "font_face": "input",
-     "font_options":
+@@ -21,3 +21,2 @@
      [
 -        "gray_antialias",
          "no_bold",
-         "no_italic"
-     ],
 diff --git a/subl/theme/Widget - theme.tmTheme b/subl/theme/Widget - theme.tmTheme
-index 4581266..023db4d 100644
+index 4581266..dbfb420 100644
 --- a/subl/theme/Widget - theme.tmTheme
 +++ b/subl/theme/Widget - theme.tmTheme
-@@ -8,13 +8,13 @@
-                 <key>settings</key>
-                 <dict>
+@@ -10,9 +10,9 @@
                      <key>background</key>
 -                    <string>#111</string>
 +                    <string>#ddd</string>
@@ -30,385 +24,230 @@ index 4581266..023db4d 100644
 -                    <string>#333</string>
 +                    <string>#ccc</string>
                  </dict>
-             </dict>
-             <dict>
-@@ -34,7 +34,7 @@
-                 <key>settings</key>
-                 <dict>
+@@ -36,3 +36,3 @@
                      <key>foreground</key>
 -                    <string>#d99</string>
 +                    <string>#900</string>
                  </dict>
-             </dict>
-             <dict>
-@@ -43,7 +43,7 @@
-                 <key>settings</key>
-                 <dict>
+@@ -45,3 +45,3 @@
                      <key>foreground</key>
 -                    <string>#9d9</string>
 +                    <string>#090</string>
                  </dict>
-             </dict>
-             <dict>
-@@ -52,7 +52,7 @@
-                 <key>settings</key>
-                 <dict>
+@@ -54,3 +54,3 @@
                      <key>foreground</key>
 -                    <string>#9dd</string>
 +                    <string>#099</string>
                  </dict>
-             </dict>
-             <dict>
-@@ -61,7 +61,7 @@
-                 <key>settings</key>
-                 <dict>
+@@ -63,3 +63,3 @@
                      <key>foreground</key>
 -                    <string>#99d</string>
 +                    <string>#009</string>
                  </dict>
-             </dict>
-         </array>
 diff --git a/subl/theme/theme.sublime-theme b/subl/theme/theme.sublime-theme
-index 3094837..09c8dcc 100644
+index 3094837..0f41e41 100644
 --- a/subl/theme/theme.sublime-theme
 +++ b/subl/theme/theme.sublime-theme
-@@ -2,7 +2,7 @@
-     {
-         "class": "tabset_control",
+@@ -4,3 +4,3 @@
          "layer0.texture": "",
 -        "layer0.tint": [34, 34, 34],
 +        "layer0.tint": [204, 204, 204],
          "layer0.inner_margin": 0,
-         "layer0.opacity": 1,
-         "content_margin": 0,
-@@ -18,7 +18,7 @@
-         "max_margin_trim": 0,
-         "hit_test_level": 0,
+@@ -20,3 +20,3 @@
          "layer0.texture": "",
 -        "layer0.tint": [34, 34, 34],
 +        "layer0.tint": [204, 204, 204],
          "layer0.inner_margin": 5,
-         "layer0.opacity": 1
-     },
-@@ -31,7 +31,7 @@
-         "class": "tab_control",
-         "attributes": ["selected"],
+@@ -33,3 +33,3 @@
          "layer0.texture": "",
 -        "layer0.tint": [51, 51, 51]
 +        "layer0.tint": [213, 213, 213]
      },
-     {
-         "class": "tab_close_button",
-@@ -96,7 +96,7 @@
-     {
-         "class": "tab_label",
+@@ -98,3 +98,3 @@
          "parents": [{"class": "tab_control", "attributes": ["selected"]}],
 -        "fg": [221, 221, 221]
 +        "fg": [17, 17, 17]
      },
-     {
-         "class": "tab_label",
-@@ -124,7 +124,7 @@
-     {
-         "class": "scroll_bar_control",
+@@ -126,3 +126,3 @@
          "layer0.texture": "",
 -        "layer0.tint": [34, 34, 34],
 +        "layer0.tint": [204, 204, 204],
          "layer0.opacity": 1,
-         "layer0.inner_margin": 0,
-         "blur": true
-@@ -133,21 +133,21 @@
-         "class": "scroll_bar_control",
-         "attributes": ["horizontal"],
+@@ -135,3 +135,3 @@
          "layer0.texture": "",
 -        "layer0.tint": [34, 34, 34],
 +        "layer0.tint": [204, 204, 204],
          "layer0.inner_margin": 0,
-         "blur": true
-     },
-     {
-         "class": "scroll_corner_control",
+@@ -142,3 +142,3 @@
          "layer0.texture": "",
 -        "layer0.tint": [34, 34, 34],
 +        "layer0.tint": [204, 204, 204],
          "layer0.inner_margin": 0,
-         "layer0.opacity": 1
-     },
-     {
-         "class": "puck_control",
+@@ -149,3 +149,3 @@
          "layer0.texture": "",
 -        "layer0.tint": [51, 51, 51],
 +        "layer0.tint": [213, 213, 213],
          "layer0.opacity": 1,
-         "layer0.inner_margin": 0,
-         "content_margin": [6, 0],
-@@ -156,7 +156,7 @@
-     {
-         "class": "puck_control",
+@@ -158,3 +158,3 @@
          "attributes": ["horizontal"],
 -        "layer0.tint": [51, 51, 51],
 +        "layer0.tint": [213, 213, 213],
          "layer0.inner_margin": 0,
-         "content_margin": [12, 6],
-         "blur": false
-@@ -174,7 +174,7 @@
-     {
-         "class": "scroll_bar_control",
+@@ -176,3 +176,3 @@
          "settings": ["overlay_scroll_bars"],
 -        "layer0.tint": [34, 34, 34],
 +        "layer0.tint": [204, 204, 204],
          "layer0.inner_margin": [0, 5],
-         "layer0.opacity": 0,
-         "blur": false
-@@ -218,13 +218,13 @@
-     },
-     {
+@@ -220,3 +220,3 @@
          "class": "sheet_container_control",
 -        "layer0.tint": [34, 34, 34],
 +        "layer0.tint": [204, 204, 204],
          "layer0.opacity": 1
-     },
-     {
-         "class": "grid_layout_control",
+@@ -226,3 +226,3 @@
          "border_size": 1,
 -        "border_color": [34, 34, 34]
 +        "border_color": [204, 204, 204]
      },
-     {
-         "class": "minimap_control",
-@@ -254,12 +254,12 @@
-     },
-     {
+@@ -256,3 +256,3 @@
          "class": "tool_tip_label_control",
 -        "color": [221, 221, 221]
 +        "color": [17, 17, 17]
      },
-     {
-         "class": "status_bar",
+@@ -261,3 +261,3 @@
          "layer0.texture": "",
 -        "layer0.tint": [17, 17, 17],
 +        "layer0.tint": [221, 221, 221],
          "layer0.opacity": 1,
-         "content_margin": 4
-     },
-@@ -275,7 +275,7 @@
-     {
-         "class": "sidebar_container",
+@@ -277,3 +277,3 @@
          "layer0.opacity": 1,
 -        "layer0.tint": [34, 34, 34],
 +        "layer0.tint": [204, 204, 204],
          "layer0.inner_margin": [1, 5, 2, 1],
-         "content_margin": [0, 4, 0, 0]
-     },
-@@ -289,7 +289,7 @@
-     },
-     {
+@@ -291,3 +291,3 @@
          "class": "tree_row",
 -        "layer0.tint": [51, 51, 51],
 +        "layer0.tint": [213, 213, 213],
          "layer0.opacity": 0,
-         "layer0.inner_margin": 1
-     },
-@@ -320,7 +320,7 @@
-     {
-         "class": "sidebar_label",
+@@ -322,3 +322,3 @@
          "parents": [{"class": "tree_row", "attributes": ["selected"]}],
 -        "color": [221, 221, 221]
 +        "color": [17, 17, 17]
      },
-     {
-         "class": "disclosure_button_control",
-@@ -351,12 +351,12 @@
-         "content_margin": [4, 10, 4, 10],
-         "min_size": [64, 0],
+@@ -353,3 +353,3 @@
          "layer0.opacity": 1,
 -        "layer0.tint": [17, 17, 17],
 +        "layer0.tint": [221, 221, 221],
          "layer0.inner_margin": 8
-     },
-     {
+@@ -358,3 +358,3 @@
          "class": "text_line_control",
 -        "layer0.tint": [17, 17, 17],
 +        "layer0.tint": [221, 221, 221],
          "layer0.opacity": 1,
-         "content_margin": 7
-     },
-@@ -364,13 +364,13 @@
-         "class": "panel_control",
-         "layer0.inner_margin": 0,
+@@ -366,3 +366,3 @@
          "layer0.opacity": 1,
 -        "layer0.tint": [17, 17, 17],
 +        "layer0.tint": [221, 221, 221],
          "content_margin": 0
-     },
-     {
-         "class": "overlay_control",
+@@ -372,3 +372,3 @@
          "layer0.opacity": 1,
 -        "layer1.tint": [34, 34, 34],
 +        "layer1.tint": [204, 204, 204],
          "layer1.inner_margin": 0,
-         "layer1.opacity": 1,
-         "content_margin": 0
-@@ -378,27 +378,27 @@
-     {
-         "class": "quick_panel",
+@@ -380,3 +380,3 @@
          "row_padding": 8,
 -        "layer0.tint": [34, 34, 34],
 +        "layer0.tint": [204, 204, 204],
          "layer0.opacity": 1,
-         "dark_content": true
-     },
-     {
+@@ -386,3 +386,3 @@
          "class": "quick_panel_row",
 -        "layer0.tint": [34, 34, 34],
 +        "layer0.tint": [204, 204, 204],
          "layer0.inner_margin": 8,
-         "layer0.opacity": 1
-     },
-     {
-         "class": "quick_panel_row",
+@@ -393,3 +393,3 @@
          "attributes": ["selected"],
 -        "layer0.tint": [51, 51, 51]
 +        "layer0.tint": [213, 213, 213]
      },
-     {
-         "class": "quick_panel_label",
-         "fg": [153, 153, 153],
-         "match_fg": [170, 170, 170],
+@@ -400,3 +400,3 @@
          "selected_fg": [170, 170, 170],
 -        "selected_match_fg": [221, 221, 221]
 +        "selected_match_fg": [17, 17, 17]
      },
-     {
-         "class": "quick_panel_path_label",
-@@ -414,18 +414,18 @@
-     },
-     {
+@@ -416,3 +416,3 @@
          "class": "mini_quick_panel_row",
 -        "layer0.tint": [34, 34, 34],
 +        "layer0.tint": [204, 204, 204],
          "layer0.opacity": 1
-     },
-     {
-         "class": "mini_quick_panel_row",
+@@ -422,3 +422,3 @@
          "attributes": ["selected"],
 -        "layer0.tint": [51, 51, 51]
 +        "layer0.tint": [213, 213, 213]
      },
-     {
-         "class": "popup_control",
+@@ -427,3 +427,3 @@
          "content_margin": 0,
 -        "layer0.tint": [34, 34, 34],
 +        "layer0.tint": [204, 204, 204],
          "layer0.opacity": 1
-     },
-     {
-@@ -441,7 +441,7 @@
-     },
-     {
+@@ -443,3 +443,3 @@
          "class": "table_row",
 -        "layer0.tint": [51, 51, 51],
 +        "layer0.tint": [213, 213, 213],
          "layer0.opacity": 0,
-         "layer0.inner_margin": [3, 1]
-     },
-@@ -475,7 +475,7 @@
-     {
-         "class": "icon_regex",
+@@ -477,3 +477,3 @@
          "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
 -        "layer0.tint": [221, 221, 221]
 +        "layer0.tint": [17, 17, 17]
      },
-     {
-         "class": "icon_case",
-@@ -492,7 +492,7 @@
-     {
-         "class": "icon_case",
+@@ -494,3 +494,3 @@
          "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
 -        "layer0.tint": [221, 221, 221]
 +        "layer0.tint": [17, 17, 17]
      },
-     {
-         "class": "icon_whole_word",
-@@ -509,7 +509,7 @@
-     {
-         "class": "icon_whole_word",
+@@ -511,3 +511,3 @@
          "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
 -        "layer0.tint": [221, 221, 221]
 +        "layer0.tint": [17, 17, 17]
      },
-     {
-         "class": "icon_context",
-@@ -526,7 +526,7 @@
-     {
-         "class": "icon_context",
+@@ -528,3 +528,3 @@
          "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
 -        "layer0.tint": [221, 221, 221]
 +        "layer0.tint": [17, 17, 17]
      },
-     {
-         "class": "icon_use_buffer",
-@@ -543,7 +543,7 @@
-     {
-         "class": "icon_use_buffer",
+@@ -545,3 +545,3 @@
          "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
 -        "layer0.tint": [221, 221, 221]
 +        "layer0.tint": [17, 17, 17]
      },
-     {
-         "class": "icon_reverse",
-@@ -560,7 +560,7 @@
-     {
-         "class": "icon_reverse",
+@@ -562,3 +562,3 @@
          "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
 -        "layer0.tint": [221, 221, 221]
 +        "layer0.tint": [17, 17, 17]
      },
-     {
-         "class": "icon_wrap",
-@@ -577,7 +577,7 @@
-     {
-         "class": "icon_wrap",
+@@ -579,3 +579,3 @@
          "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
 -        "layer0.tint": [221, 221, 221]
 +        "layer0.tint": [17, 17, 17]
      },
-     {
-         "class": "icon_in_selection",
-@@ -594,7 +594,7 @@
-     {
-         "class": "icon_in_selection",
+@@ -596,3 +596,3 @@
          "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
 -        "layer0.tint": [221, 221, 221]
 +        "layer0.tint": [17, 17, 17]
      },
-     {
-         "class": "icon_preserve_case",
-@@ -611,7 +611,7 @@
-     {
-         "class": "icon_preserve_case",
+@@ -613,3 +613,3 @@
          "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
 -        "layer0.tint": [221, 221, 221]
 +        "layer0.tint": [17, 17, 17]
      },
-     {
-         "class": "icon_highlight",
-@@ -628,7 +628,7 @@
-     {
-         "class": "icon_highlight",
+@@ -630,3 +630,3 @@
          "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
 -        "layer0.tint": [221, 221, 221]
 +        "layer0.tint": [17, 17, 17]
      },
-     {
-         "class": "icon_file_type",
 diff --git a/subl/theme/theme.tmTheme b/subl/theme/theme.tmTheme
-index fdff98c..ec12432 100644
+index fdff98c..2091081 100644
 --- a/subl/theme/theme.tmTheme
 +++ b/subl/theme/theme.tmTheme
-@@ -8,19 +8,19 @@
-                 <key>settings</key>
-                 <dict>
+@@ -10,15 +10,15 @@
                      <key>background</key>
 -                    <string>#000</string>
 +                    <string>#eee</string>
@@ -431,77 +270,43 @@ index fdff98c..ec12432 100644
 -                    <string>#555</string>
 +                    <string>#aaa</string>
                  </dict>
-             </dict>
-             <dict>
-@@ -29,7 +29,7 @@
-                 <key>settings</key>
-                 <dict>
+@@ -31,3 +31,3 @@
                      <key>foreground</key>
 -                    <string>#ddd</string>
 +                    <string>#222</string>
                  </dict>
-             </dict>
-             <dict>
-@@ -38,7 +38,7 @@
-                 <key>settings</key>
-                 <dict>
+@@ -40,3 +40,3 @@
                      <key>foreground</key>
 -                    <string>#999</string>
 +                    <string>#555</string>
                  </dict>
-             </dict>
-             <dict>
-@@ -58,7 +58,7 @@
-                 <key>settings</key>
-                 <dict>
+@@ -60,3 +60,3 @@
                      <key>foreground</key>
 -                    <string>#d99</string>
 +                    <string>#933</string>
                  </dict>
-             </dict>
-             <dict>
-@@ -67,7 +67,7 @@
-                 <key>settings</key>
-                 <dict>
+@@ -69,3 +69,3 @@
                      <key>foreground</key>
 -                    <string>#d9d</string>
 +                    <string>#939</string>
                  </dict>
-             </dict>
-             <dict>
-@@ -76,7 +76,7 @@
-                 <key>settings</key>
-                 <dict>
+@@ -78,3 +78,3 @@
                      <key>foreground</key>
 -                    <string>#dd9</string>
 +                    <string>#993</string>
                  </dict>
-             </dict>
-             <dict>
-@@ -85,7 +85,7 @@
-                 <key>settings</key>
-                 <dict>
+@@ -87,3 +87,3 @@
                      <key>foreground</key>
 -                    <string>#9d9</string>
 +                    <string>#393</string>
                  </dict>
-             </dict>
-             <dict>
-@@ -94,7 +94,7 @@
-                 <key>settings</key>
-                 <dict>
+@@ -96,3 +96,3 @@
                      <key>foreground</key>
 -                    <string>#9dd</string>
 +                    <string>#399</string>
                  </dict>
-             </dict>
-             <dict>
-@@ -103,7 +103,7 @@
-                 <key>settings</key>
-                 <dict>
+@@ -105,3 +105,3 @@
                      <key>foreground</key>
 -                    <string>#99d</string>
 +                    <string>#339</string>
                  </dict>
-             </dict>
-         </array>

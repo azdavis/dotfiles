@@ -2,14 +2,11 @@ diff --git a/Formula/coreutils.rb b/Formula/coreutils.rb
 index d01bd5c..8b085da 100644
 --- a/Formula/coreutils.rb
 +++ b/Formula/coreutils.rb
-@@ -44,24 +44,10 @@ class Coreutils < Formula
-     system "./bootstrap" if build.head?
-     args = %W[
+@@ -46,3 +46,2 @@ class Coreutils < Formula
        --prefix=#{prefix}
 -      --program-prefix=g
      ]
-     args << "--without-gmp" if build.without? "gmp"
-     system "./configure", *args
+@@ -51,15 +50,2 @@ class Coreutils < Formula
      system "make", "install"
 -
 -    # Symlink all commands into libexec/gnubin without the 'g' prefix
@@ -25,5 +22,3 @@ index d01bd5c..8b085da 100644
 -    bin.install_symlink "grealpath" => "realpath"
 -    man1.install_symlink "grealpath.1" => "realpath.1"
    end
-
-   def caveats; <<-EOS.undent
