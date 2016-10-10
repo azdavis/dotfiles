@@ -11,63 +11,63 @@ index eb85b83..ffc581d 100644
          "no_italic"
      ],
 diff --git a/subl/theme/Widget - theme.tmTheme b/subl/theme/Widget - theme.tmTheme
-index b48552b..5ec9073 100644
+index 4581266..023db4d 100644
 --- a/subl/theme/Widget - theme.tmTheme
 +++ b/subl/theme/Widget - theme.tmTheme
 @@ -8,13 +8,13 @@
-             <key>settings</key>
-             <dict>
-                 <key>background</key>
--                <string>#111</string>
-+                <string>#eee</string>
-                 <key>caret</key>
--                <string>#ddd</string>
-+                <string>#222</string>
-                 <key>foreground</key>
--                <string>#ddd</string>
-+                <string>#222</string>
-                 <key>selection</key>
--                <string>#333</string>
-+                <string>#ccc</string>
+                 <key>settings</key>
+                 <dict>
+                     <key>background</key>
+-                    <string>#111</string>
++                    <string>#eee</string>
+                     <key>caret</key>
+-                    <string>#ddd</string>
++                    <string>#222</string>
+                     <key>foreground</key>
+-                    <string>#ddd</string>
++                    <string>#222</string>
+                     <key>selection</key>
+-                    <string>#333</string>
++                    <string>#ccc</string>
+                 </dict>
              </dict>
-         </dict>
-         <dict>
+             <dict>
 @@ -34,7 +34,7 @@
-             <key>settings</key>
-             <dict>
-                 <key>foreground</key>
--                <string>#d99</string>
-+                <string>#900</string>
+                 <key>settings</key>
+                 <dict>
+                     <key>foreground</key>
+-                    <string>#d99</string>
++                    <string>#900</string>
+                 </dict>
              </dict>
-         </dict>
-         <dict>
+             <dict>
 @@ -43,7 +43,7 @@
-             <key>settings</key>
-             <dict>
-                 <key>foreground</key>
--                <string>#9d9</string>
-+                <string>#090</string>
+                 <key>settings</key>
+                 <dict>
+                     <key>foreground</key>
+-                    <string>#9d9</string>
++                    <string>#090</string>
+                 </dict>
              </dict>
-         </dict>
-         <dict>
+             <dict>
 @@ -52,7 +52,7 @@
-             <key>settings</key>
-             <dict>
-                 <key>foreground</key>
--                <string>#9dd</string>
-+                <string>#099</string>
+                 <key>settings</key>
+                 <dict>
+                     <key>foreground</key>
+-                    <string>#9dd</string>
++                    <string>#099</string>
+                 </dict>
              </dict>
-         </dict>
-         <dict>
+             <dict>
 @@ -61,7 +61,7 @@
-             <key>settings</key>
-             <dict>
-                 <key>foreground</key>
--                <string>#99d</string>
-+                <string>#009</string>
+                 <key>settings</key>
+                 <dict>
+                     <key>foreground</key>
+-                    <string>#99d</string>
++                    <string>#009</string>
+                 </dict>
              </dict>
-         </dict>
-     </array>
+         </array>
 diff --git a/subl/theme/theme.sublime-theme b/subl/theme/theme.sublime-theme
 index 3094837..09c8dcc 100644
 --- a/subl/theme/theme.sublime-theme
@@ -403,107 +403,107 @@ index 3094837..09c8dcc 100644
      {
          "class": "icon_file_type",
 diff --git a/subl/theme/theme.tmTheme b/subl/theme/theme.tmTheme
-index e16d435..860ab71 100644
+index fdff98c..ec12432 100644
 --- a/subl/theme/theme.tmTheme
 +++ b/subl/theme/theme.tmTheme
 @@ -8,19 +8,19 @@
-             <key>settings</key>
-             <dict>
-                 <key>background</key>
--                <string>#000</string>
-+                <string>#eee</string>
-                 <key>caret</key>
--                <string>#ddd</string>
--                <key>foreground</key>
--                <string>#ddd</string>
--                <key>selection</key>
--                <string>#333</string>
--                <key>lineHighlight</key>
-                 <string>#222</string>
-+                <key>foreground</key>
-+                <string>#222</string>
-+                <key>selection</key>
-+                <string>#ccc</string>
-+                <key>lineHighlight</key>
-+                <string>#ddd</string>
-                 <key>gutterForeground</key>
--                <string>#555</string>
-+                <string>#aaa</string>
-                 <key>guide</key>
--                <string>#555</string>
-+                <string>#aaa</string>
+                 <key>settings</key>
+                 <dict>
+                     <key>background</key>
+-                    <string>#000</string>
++                    <string>#eee</string>
+                     <key>caret</key>
+-                    <string>#ddd</string>
+-                    <key>foreground</key>
+-                    <string>#ddd</string>
+-                    <key>selection</key>
+-                    <string>#333</string>
+-                    <key>lineHighlight</key>
+                     <string>#222</string>
++                    <key>foreground</key>
++                    <string>#222</string>
++                    <key>selection</key>
++                    <string>#ccc</string>
++                    <key>lineHighlight</key>
++                    <string>#ddd</string>
+                     <key>gutterForeground</key>
+-                    <string>#555</string>
++                    <string>#aaa</string>
+                     <key>guide</key>
+-                    <string>#555</string>
++                    <string>#aaa</string>
+                 </dict>
              </dict>
-         </dict>
-         <dict>
+             <dict>
 @@ -29,7 +29,7 @@
-             <key>settings</key>
-             <dict>
-                 <key>foreground</key>
--                <string>#ddd</string>
-+                <string>#222</string>
+                 <key>settings</key>
+                 <dict>
+                     <key>foreground</key>
+-                    <string>#ddd</string>
++                    <string>#222</string>
+                 </dict>
              </dict>
-         </dict>
-         <dict>
+             <dict>
 @@ -38,7 +38,7 @@
-             <key>settings</key>
-             <dict>
-                 <key>foreground</key>
--                <string>#999</string>
-+                <string>#555</string>
+                 <key>settings</key>
+                 <dict>
+                     <key>foreground</key>
+-                    <string>#999</string>
++                    <string>#555</string>
+                 </dict>
              </dict>
-         </dict>
-         <dict>
+             <dict>
 @@ -58,7 +58,7 @@
-             <key>settings</key>
-             <dict>
-                 <key>foreground</key>
--                <string>#d99</string>
-+                <string>#933</string>
+                 <key>settings</key>
+                 <dict>
+                     <key>foreground</key>
+-                    <string>#d99</string>
++                    <string>#933</string>
+                 </dict>
              </dict>
-         </dict>
-         <dict>
+             <dict>
 @@ -67,7 +67,7 @@
-             <key>settings</key>
-             <dict>
-                 <key>foreground</key>
--                <string>#d9d</string>
-+                <string>#939</string>
+                 <key>settings</key>
+                 <dict>
+                     <key>foreground</key>
+-                    <string>#d9d</string>
++                    <string>#939</string>
+                 </dict>
              </dict>
-         </dict>
-         <dict>
+             <dict>
 @@ -76,7 +76,7 @@
-             <key>settings</key>
-             <dict>
-                 <key>foreground</key>
--                <string>#dd9</string>
-+                <string>#993</string>
+                 <key>settings</key>
+                 <dict>
+                     <key>foreground</key>
+-                    <string>#dd9</string>
++                    <string>#993</string>
+                 </dict>
              </dict>
-         </dict>
-         <dict>
+             <dict>
 @@ -85,7 +85,7 @@
-             <key>settings</key>
-             <dict>
-                 <key>foreground</key>
--                <string>#9d9</string>
-+                <string>#393</string>
+                 <key>settings</key>
+                 <dict>
+                     <key>foreground</key>
+-                    <string>#9d9</string>
++                    <string>#393</string>
+                 </dict>
              </dict>
-         </dict>
-         <dict>
+             <dict>
 @@ -94,7 +94,7 @@
-             <key>settings</key>
-             <dict>
-                 <key>foreground</key>
--                <string>#9dd</string>
-+                <string>#399</string>
+                 <key>settings</key>
+                 <dict>
+                     <key>foreground</key>
+-                    <string>#9dd</string>
++                    <string>#399</string>
+                 </dict>
              </dict>
-         </dict>
-         <dict>
+             <dict>
 @@ -103,7 +103,7 @@
-             <key>settings</key>
-             <dict>
-                 <key>foreground</key>
--                <string>#99d</string>
-+                <string>#339</string>
+                 <key>settings</key>
+                 <dict>
+                     <key>foreground</key>
+-                    <string>#99d</string>
++                    <string>#339</string>
+                 </dict>
              </dict>
-         </dict>
-     </array>
+         </array>
