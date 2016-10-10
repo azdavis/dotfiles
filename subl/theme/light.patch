@@ -414,18 +414,16 @@ index fdff98c..ec12432 100644
 +                    <string>#eee</string>
                      <key>caret</key>
 -                    <string>#ddd</string>
--                    <key>foreground</key>
--                    <string>#ddd</string>
--                    <key>selection</key>
--                    <string>#333</string>
--                    <key>lineHighlight</key>
-                     <string>#222</string>
-+                    <key>foreground</key>
 +                    <string>#222</string>
-+                    <key>selection</key>
+                     <key>foreground</key>
+-                    <string>#ddd</string>
++                    <string>#222</string>
+                     <key>selection</key>
+-                    <string>#333</string>
 +                    <string>#ccc</string>
-+                    <key>lineHighlight</key>
-+                    <string>#ddd</string>
+                     <key>lineHighlight</key>
+-                    <string>#222</string>
++                    <string>#bbb</string>
                      <key>gutterForeground</key>
 -                    <string>#555</string>
 +                    <string>#aaa</string>
