@@ -19,7 +19,7 @@ index 4581266..023db4d 100644
                  <dict>
                      <key>background</key>
 -                    <string>#111</string>
-+                    <string>#ccc</string>
++                    <string>#ddd</string>
                      <key>caret</key>
 -                    <string>#ddd</string>
 +                    <string>#222</string>
@@ -77,7 +77,7 @@ index 3094837..09c8dcc 100644
          "class": "tabset_control",
          "layer0.texture": "",
 -        "layer0.tint": [34, 34, 34],
-+        "layer0.tint": [221, 221, 221],
++        "layer0.tint": [204, 204, 204],
          "layer0.inner_margin": 0,
          "layer0.opacity": 1,
          "content_margin": 0,
@@ -86,7 +86,7 @@ index 3094837..09c8dcc 100644
          "hit_test_level": 0,
          "layer0.texture": "",
 -        "layer0.tint": [34, 34, 34],
-+        "layer0.tint": [221, 221, 221],
++        "layer0.tint": [204, 204, 204],
          "layer0.inner_margin": 5,
          "layer0.opacity": 1
      },
@@ -104,7 +104,7 @@ index 3094837..09c8dcc 100644
          "class": "tab_label",
          "parents": [{"class": "tab_control", "attributes": ["selected"]}],
 -        "fg": [221, 221, 221]
-+        "fg": [34, 34, 34]
++        "fg": [17, 17, 17]
      },
      {
          "class": "tab_label",
@@ -113,7 +113,7 @@ index 3094837..09c8dcc 100644
          "class": "scroll_bar_control",
          "layer0.texture": "",
 -        "layer0.tint": [34, 34, 34],
-+        "layer0.tint": [221, 221, 221],
++        "layer0.tint": [204, 204, 204],
          "layer0.opacity": 1,
          "layer0.inner_margin": 0,
          "blur": true
@@ -122,7 +122,7 @@ index 3094837..09c8dcc 100644
          "attributes": ["horizontal"],
          "layer0.texture": "",
 -        "layer0.tint": [34, 34, 34],
-+        "layer0.tint": [221, 221, 221],
++        "layer0.tint": [204, 204, 204],
          "layer0.inner_margin": 0,
          "blur": true
      },
@@ -130,7 +130,7 @@ index 3094837..09c8dcc 100644
          "class": "scroll_corner_control",
          "layer0.texture": "",
 -        "layer0.tint": [34, 34, 34],
-+        "layer0.tint": [221, 221, 221],
++        "layer0.tint": [204, 204, 204],
          "layer0.inner_margin": 0,
          "layer0.opacity": 1
      },
@@ -156,7 +156,7 @@ index 3094837..09c8dcc 100644
          "class": "scroll_bar_control",
          "settings": ["overlay_scroll_bars"],
 -        "layer0.tint": [34, 34, 34],
-+        "layer0.tint": [221, 221, 221],
++        "layer0.tint": [204, 204, 204],
          "layer0.inner_margin": [0, 5],
          "layer0.opacity": 0,
          "blur": false
@@ -165,14 +165,14 @@ index 3094837..09c8dcc 100644
      {
          "class": "sheet_container_control",
 -        "layer0.tint": [34, 34, 34],
-+        "layer0.tint": [221, 221, 221],
++        "layer0.tint": [204, 204, 204],
          "layer0.opacity": 1
      },
      {
          "class": "grid_layout_control",
          "border_size": 1,
 -        "border_color": [34, 34, 34]
-+        "border_color": [221, 221, 221]
++        "border_color": [204, 204, 204]
      },
      {
          "class": "minimap_control",
@@ -181,13 +181,13 @@ index 3094837..09c8dcc 100644
      {
          "class": "tool_tip_label_control",
 -        "color": [221, 221, 221]
-+        "color": [34, 34, 34]
++        "color": [17, 17, 17]
      },
      {
          "class": "status_bar",
          "layer0.texture": "",
 -        "layer0.tint": [17, 17, 17],
-+        "layer0.tint": [204, 204, 204],
++        "layer0.tint": [221, 221, 221],
          "layer0.opacity": 1,
          "content_margin": 4
      },
@@ -196,7 +196,7 @@ index 3094837..09c8dcc 100644
          "class": "sidebar_container",
          "layer0.opacity": 1,
 -        "layer0.tint": [34, 34, 34],
-+        "layer0.tint": [221, 221, 221],
++        "layer0.tint": [204, 204, 204],
          "layer0.inner_margin": [1, 5, 2, 1],
          "content_margin": [0, 4, 0, 0]
      },
@@ -214,7 +214,7 @@ index 3094837..09c8dcc 100644
          "class": "sidebar_label",
          "parents": [{"class": "tree_row", "attributes": ["selected"]}],
 -        "color": [221, 221, 221]
-+        "color": [34, 34, 34]
++        "color": [17, 17, 17]
      },
      {
          "class": "disclosure_button_control",
@@ -223,13 +223,13 @@ index 3094837..09c8dcc 100644
          "min_size": [64, 0],
          "layer0.opacity": 1,
 -        "layer0.tint": [17, 17, 17],
-+        "layer0.tint": [204, 204, 204],
++        "layer0.tint": [221, 221, 221],
          "layer0.inner_margin": 8
      },
      {
          "class": "text_line_control",
 -        "layer0.tint": [17, 17, 17],
-+        "layer0.tint": [204, 204, 204],
++        "layer0.tint": [221, 221, 221],
          "layer0.opacity": 1,
          "content_margin": 7
      },
@@ -238,14 +238,14 @@ index 3094837..09c8dcc 100644
          "layer0.inner_margin": 0,
          "layer0.opacity": 1,
 -        "layer0.tint": [17, 17, 17],
-+        "layer0.tint": [204, 204, 204],
++        "layer0.tint": [221, 221, 221],
          "content_margin": 0
      },
      {
          "class": "overlay_control",
          "layer0.opacity": 1,
 -        "layer1.tint": [34, 34, 34],
-+        "layer1.tint": [221, 221, 221],
++        "layer1.tint": [204, 204, 204],
          "layer1.inner_margin": 0,
          "layer1.opacity": 1,
          "content_margin": 0
@@ -254,14 +254,14 @@ index 3094837..09c8dcc 100644
          "class": "quick_panel",
          "row_padding": 8,
 -        "layer0.tint": [34, 34, 34],
-+        "layer0.tint": [221, 221, 221],
++        "layer0.tint": [204, 204, 204],
          "layer0.opacity": 1,
          "dark_content": true
      },
      {
          "class": "quick_panel_row",
 -        "layer0.tint": [34, 34, 34],
-+        "layer0.tint": [221, 221, 221],
++        "layer0.tint": [204, 204, 204],
          "layer0.inner_margin": 8,
          "layer0.opacity": 1
      },
@@ -277,7 +277,7 @@ index 3094837..09c8dcc 100644
          "match_fg": [170, 170, 170],
          "selected_fg": [170, 170, 170],
 -        "selected_match_fg": [221, 221, 221]
-+        "selected_match_fg": [34, 34, 34]
++        "selected_match_fg": [17, 17, 17]
      },
      {
          "class": "quick_panel_path_label",
@@ -286,7 +286,7 @@ index 3094837..09c8dcc 100644
      {
          "class": "mini_quick_panel_row",
 -        "layer0.tint": [34, 34, 34],
-+        "layer0.tint": [221, 221, 221],
++        "layer0.tint": [204, 204, 204],
          "layer0.opacity": 1
      },
      {
@@ -299,7 +299,7 @@ index 3094837..09c8dcc 100644
          "class": "popup_control",
          "content_margin": 0,
 -        "layer0.tint": [34, 34, 34],
-+        "layer0.tint": [221, 221, 221],
++        "layer0.tint": [204, 204, 204],
          "layer0.opacity": 1
      },
      {
@@ -317,7 +317,7 @@ index 3094837..09c8dcc 100644
          "class": "icon_regex",
          "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
 -        "layer0.tint": [221, 221, 221]
-+        "layer0.tint": [34, 34, 34]
++        "layer0.tint": [17, 17, 17]
      },
      {
          "class": "icon_case",
@@ -326,7 +326,7 @@ index 3094837..09c8dcc 100644
          "class": "icon_case",
          "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
 -        "layer0.tint": [221, 221, 221]
-+        "layer0.tint": [34, 34, 34]
++        "layer0.tint": [17, 17, 17]
      },
      {
          "class": "icon_whole_word",
@@ -335,7 +335,7 @@ index 3094837..09c8dcc 100644
          "class": "icon_whole_word",
          "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
 -        "layer0.tint": [221, 221, 221]
-+        "layer0.tint": [34, 34, 34]
++        "layer0.tint": [17, 17, 17]
      },
      {
          "class": "icon_context",
@@ -344,7 +344,7 @@ index 3094837..09c8dcc 100644
          "class": "icon_context",
          "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
 -        "layer0.tint": [221, 221, 221]
-+        "layer0.tint": [34, 34, 34]
++        "layer0.tint": [17, 17, 17]
      },
      {
          "class": "icon_use_buffer",
@@ -353,7 +353,7 @@ index 3094837..09c8dcc 100644
          "class": "icon_use_buffer",
          "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
 -        "layer0.tint": [221, 221, 221]
-+        "layer0.tint": [34, 34, 34]
++        "layer0.tint": [17, 17, 17]
      },
      {
          "class": "icon_reverse",
@@ -362,7 +362,7 @@ index 3094837..09c8dcc 100644
          "class": "icon_reverse",
          "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
 -        "layer0.tint": [221, 221, 221]
-+        "layer0.tint": [34, 34, 34]
++        "layer0.tint": [17, 17, 17]
      },
      {
          "class": "icon_wrap",
@@ -371,7 +371,7 @@ index 3094837..09c8dcc 100644
          "class": "icon_wrap",
          "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
 -        "layer0.tint": [221, 221, 221]
-+        "layer0.tint": [34, 34, 34]
++        "layer0.tint": [17, 17, 17]
      },
      {
          "class": "icon_in_selection",
@@ -380,7 +380,7 @@ index 3094837..09c8dcc 100644
          "class": "icon_in_selection",
          "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
 -        "layer0.tint": [221, 221, 221]
-+        "layer0.tint": [34, 34, 34]
++        "layer0.tint": [17, 17, 17]
      },
      {
          "class": "icon_preserve_case",
@@ -389,7 +389,7 @@ index 3094837..09c8dcc 100644
          "class": "icon_preserve_case",
          "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
 -        "layer0.tint": [221, 221, 221]
-+        "layer0.tint": [34, 34, 34]
++        "layer0.tint": [17, 17, 17]
      },
      {
          "class": "icon_highlight",
@@ -398,7 +398,7 @@ index 3094837..09c8dcc 100644
          "class": "icon_highlight",
          "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
 -        "layer0.tint": [221, 221, 221]
-+        "layer0.tint": [34, 34, 34]
++        "layer0.tint": [17, 17, 17]
      },
      {
          "class": "icon_file_type",
