@@ -27,6 +27,6 @@ if [ "$SHELL" != "$zsh" ]; then
     chsh -s "$zsh" < /dev/tty
 fi
 
-echo "all done"
+echo "relog for all changes to take effect"
 
 }; main
