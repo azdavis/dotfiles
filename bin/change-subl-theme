@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+cd "$HOME/.config/subl"
+
+patch="theme/light.patch"
+reverse=""
+git apply --check "$patch" &> /dev/null || reverse="--reverse"
+
+git apply $reverse "$patch"
