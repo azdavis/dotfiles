@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+. "$HOME/.config/lib/base.sh"
+
 cd "$HOME/.config/subl"
 
 patch="theme/light.patch"
