@@ -3,7 +3,7 @@
 cd "$HOME/.config/subl"
 
 patch="theme/light.patch"
-reverse=""
-git apply --check "$patch" &> /dev/null || reverse="--reverse"
+direction=""
+git apply --check "$patch" &> /dev/null || direction="--reverse"
 
-git apply $reverse "$patch"
+git apply $direction "$patch"
