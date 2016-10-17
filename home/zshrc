@@ -37,7 +37,7 @@ alias \
     gc="git commit" \
     gd="git diff" \
     gk="git checkout" \
-    gl="git log --all --decorate --oneline" \
+    gl="git log --all --decorate --graph --oneline" \
     gr="git reset" \
     gs="git status -sb"
 
