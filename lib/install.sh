@@ -19,9 +19,6 @@ chmod 700 "$dst"
 echo "doing dotfile actions"
 "$dst/bin/do-dotfiles" < /dev/tty
 
-echo "doing sublime text actions"
-"$dst/bin/do-subl" < /dev/tty
-
 if [ "$SHELL" != "$zsh" ]; then
     echo "changing shell to $zsh"
     chsh -s "$zsh" < /dev/tty
