@@ -21,10 +21,15 @@ dw -g NSCloseAlwaysConfirmsChanges -bool true
 dw -g NSDisableAutomaticTermination -bool true
 dw -g NSNavPanelExpandedStateForSaveMode -bool true
 dw -g NSNavPanelExpandedStateForSaveMode2 -bool true
+dw -g NSQuitAlwaysKeepsWindows -bool true
 dw -g NSUseAnimatedFocusRing -bool false
 dw -g NSWindowResizeTime -float 0.1
 dw com.apple.desktopservices DSDontWriteNetworkStores -bool true
+dw com.apple.dock autohide -bool true
 dw com.apple.dock autohide-delay -int 9999
+dw com.apple.dock launchanim -bool false
+dw com.apple.dock magnification -bool false
+dw com.apple.dock show-process-indicators -bool true
 dw com.apple.finder _FXSortFoldersFirst -bool true
 dw com.apple.finder DisableAllAnimations -bool true
 dw com.apple.finder FXEnableExtensionChangeWarning -bool false
