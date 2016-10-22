@@ -12,10 +12,9 @@ brew "openssl"
 brew "readline"
 brew "rlwrap"
 brew "smlnj"
-brew "tarsnap", args: ["with-xz"]
+brew "tarsnap"
 brew "tree"
 brew "valgrind"
-brew "xz"
 
 cask "alfred"
 cask "basictex"
