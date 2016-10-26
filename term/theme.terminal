@@ -173,11 +173,11 @@
         <key>FontAntialias</key>
         <true/>
         <key>FontHeightSpacing</key>
-        <real>1.2</real>
+        <real>1</real>
         <key>FontWidthSpacing</key>
         <integer>1</integer>
         <key>ProfileCurrentVersion</key>
-        <real>2.0499999999999998</real>
+        <real>2.05</real>
         <key>RunCommandAsShell</key>
         <true/>
         <key>ScrollAlternateScreen</key>

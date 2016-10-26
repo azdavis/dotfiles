@@ -3,8 +3,8 @@
     "animation_enabled": false,
     "auto_complete_commit_on_tab": true,
     "auto_complete_with_fields": true,
-    "caret_extra_bottom": 3,
-    "caret_extra_top": 3,
+    "caret_extra_bottom": 1,
+    "caret_extra_top": 1,
     "caret_style": "solid",
     "close_windows_when_empty": false,
     "color_scheme": "Packages/User/theme/theme.tmTheme",
@@ -33,8 +33,8 @@
     [
         "draw_normal"
     ],
-    "line_padding_bottom": 3,
-    "line_padding_top": 3,
+    "line_padding_bottom": 1,
+    "line_padding_top": 1,
     "move_to_limit_on_up_down": false,
     "open_files_in_new_window": false,
     "remember_full_screen": true,
