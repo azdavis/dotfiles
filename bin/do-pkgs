@@ -26,6 +26,6 @@ brew doctor
 
 tlmgr update --self
 tlmgr update --all
-tlmgr install $(cat tlmgrfile)
+cat tlmgrfile | xargs tlmgr install
 
 npm update -g
