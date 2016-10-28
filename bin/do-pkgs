@@ -11,12 +11,14 @@ cd "$formula"
 git apply "$wd/patch"/*
 cd "$wd"
 
+checkout() {
+    cd "$formula"
+    git checkout .
+    cd "$wd"
+}
+trap checkout 0
+
 brew bundle --verbose
-
-cd "$formula"
-git checkout .
-cd "$wd"
-
 brew bundle cleanup --force
 brew cask cleanup
 brew cleanup
