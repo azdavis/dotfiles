@@ -6,24 +6,20 @@ formula="$(brew --repo)/Library/Taps/homebrew/homebrew-core/Formula"
 wd="$HOME/.config/pkg"
 
 brew update
-
 cd "$formula"
 git apply "$wd/patch"/*
 cd "$wd"
-
 checkout() {
     cd "$formula"
     git checkout .
     cd "$wd"
 }
 trap checkout 0
-
 brew bundle --verbose
 brew bundle cleanup --force
 brew cask cleanup
 brew cleanup
 brew prune
-
 brew doctor
 
 tlmgr update --self
