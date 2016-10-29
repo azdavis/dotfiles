@@ -3,6 +3,11 @@ main() {
 set -o errexit
 set -o nounset
 
+abort() {
+    echo "$1"
+    exit 1
+}
+
 repo="azdavis/dotfiles"
 dst="$HOME/.config"
 zsh="$(which zsh)"
@@ -10,7 +15,7 @@ zsh="$(which zsh)"
 echo "installing '$repo' to '$dst'"
 [ -L "$dst" ] && rm "$dst"
 [ -e "$dst" ] && rm -ri "$dst" < /dev/tty
-[ -e "$dst" ] && exit 0
+[ -e "$dst" ] && abort "cancelling install"
 git clone -q "https://github.com/$repo" "$dst"
 chmod 700 "$dst"
 
