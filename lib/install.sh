@@ -8,6 +8,13 @@ abort() {
     exit 1
 }
 
+need_cmd() {
+    which "$1" > /dev/null || abort "$1 not in PATH"
+}
+
+need_cmd zsh
+need_cmd git
+
 repo="azdavis/dotfiles"
 dst="$HOME/.config"
 zsh="$(which zsh)"
