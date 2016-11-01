@@ -1,4 +1,5 @@
 .DS_Store
+hub
 subl/*-ca-bundle*
 subl/*.cache
 subl/*.last-run

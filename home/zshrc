@@ -33,14 +33,15 @@ alias \
     valgrind="valgrind --suppressions=$HOME/.config/etc/valgrind.supp"
 
 alias \
-    ga="git add" \
-    gb="git branch" \
-    gc="git commit" \
-    gd="git diff" \
-    gk="git checkout" \
-    gl="git log --all --decorate --graph --oneline" \
-    gr="git reset" \
-    gs="git status -sb"
+    git="hub" \
+    ga="hub add" \
+    gb="hub branch" \
+    gc="hub commit" \
+    gd="hub diff" \
+    gk="hub checkout" \
+    gl="hub log --all --decorate --graph --oneline" \
+    gr="hub reset" \
+    gs="hub status -sb"
 
 if [ "$USER" != "root" ]; then
     autoload -U compinit
