@@ -1,4 +1,4 @@
 abort() {
-    echo "$1"
+    echo "fatal: $1"
     exit 1
 }
