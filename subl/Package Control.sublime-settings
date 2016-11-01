@@ -6,6 +6,7 @@
     "installed_packages":
     [
         "Git Commit Message Syntax",
+        "Markdown Extended",
         "Package Control",
         "Pug",
         "SML (Standard ML)",
