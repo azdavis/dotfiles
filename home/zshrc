@@ -43,10 +43,8 @@ alias \
     gr="hub reset" \
     gs="hub status -sb"
 
-if [ "$USER" != "root" ]; then
-    autoload -U compinit
-    compinit
-    zstyle ":completion:*" matcher-list "m:{a-zA-Z}={A-Za-z}"
-    zstyle ":completion:*" menu select
-    zstyle ":completion:*" verbose false
-fi
+autoload -U compinit
+compinit -u
+zstyle ":completion:*" matcher-list "m:{a-zA-Z}={A-Za-z}"
+zstyle ":completion:*" menu select
+zstyle ":completion:*" verbose false
