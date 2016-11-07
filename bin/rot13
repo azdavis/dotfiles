@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+. "$HOME/.config/lib/base.sh"
+
+tr \
+    'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz' \
+    'NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm'
