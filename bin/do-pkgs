@@ -28,3 +28,5 @@ tlmgr update --all
 cat tlmgrfile | xargs tlmgr install
 
 npm update -g
+
+"$HOME/.config/bin/rm-stupid-files"
