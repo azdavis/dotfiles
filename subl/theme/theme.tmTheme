@@ -38,7 +38,7 @@
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#999</string>
+                    <string>#aaa</string>
                 </dict>
             </dict>
             <dict>
@@ -58,7 +58,7 @@
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#d99</string>
+                    <string>#daa</string>
                 </dict>
             </dict>
             <dict>
@@ -67,7 +67,7 @@
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#d9d</string>
+                    <string>#dad</string>
                 </dict>
             </dict>
             <dict>
@@ -76,7 +76,7 @@
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#dd9</string>
+                    <string>#dda</string>
                 </dict>
             </dict>
             <dict>
@@ -85,7 +85,7 @@
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#9d9</string>
+                    <string>#ada</string>
                 </dict>
             </dict>
             <dict>
@@ -94,7 +94,7 @@
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#9dd</string>
+                    <string>#add</string>
                 </dict>
             </dict>
             <dict>
@@ -103,7 +103,7 @@
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#99d</string>
+                    <string>#aad</string>
                 </dict>
             </dict>
         </array>

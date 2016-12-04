@@ -1,5 +1,5 @@
 diff --git a/subl/Preferences.sublime-settings b/subl/Preferences.sublime-settings
-index eb85b83..ffc581d 100644
+index 32501d5..33bde4e 100644
 --- a/subl/Preferences.sublime-settings
 +++ b/subl/Preferences.sublime-settings
 @@ -21,3 +21,2 @@
@@ -7,7 +7,7 @@ index eb85b83..ffc581d 100644
 -        "gray_antialias",
          "no_bold",
 diff --git a/subl/theme/Widget - theme.tmTheme b/subl/theme/Widget - theme.tmTheme
-index 4581266..dbfb420 100644
+index 11c73a0..3c58fe0 100644
 --- a/subl/theme/Widget - theme.tmTheme
 +++ b/subl/theme/Widget - theme.tmTheme
 @@ -10,9 +10,9 @@
@@ -26,26 +26,26 @@ index 4581266..dbfb420 100644
                  </dict>
 @@ -36,3 +36,3 @@
                      <key>foreground</key>
--                    <string>#d99</string>
-+                    <string>#900</string>
+-                    <string>#daa</string>
++                    <string>#822</string>
                  </dict>
 @@ -45,3 +45,3 @@
                      <key>foreground</key>
--                    <string>#9d9</string>
-+                    <string>#090</string>
+-                    <string>#ada</string>
++                    <string>#282</string>
                  </dict>
 @@ -54,3 +54,3 @@
                      <key>foreground</key>
--                    <string>#9dd</string>
-+                    <string>#099</string>
+-                    <string>#add</string>
++                    <string>#288</string>
                  </dict>
 @@ -63,3 +63,3 @@
                      <key>foreground</key>
--                    <string>#99d</string>
-+                    <string>#009</string>
+-                    <string>#aad</string>
++                    <string>#228</string>
                  </dict>
 diff --git a/subl/theme/theme.sublime-theme b/subl/theme/theme.sublime-theme
-index dcb24fa..a1008b8 100644
+index 9b97136..547bc85 100644
 --- a/subl/theme/theme.sublime-theme
 +++ b/subl/theme/theme.sublime-theme
 @@ -4,3 +4,3 @@
@@ -111,7 +111,7 @@ index dcb24fa..a1008b8 100644
 @@ -230,3 +230,3 @@
          "class": "minimap_control",
 -        "viewport_color": [221, 221, 221, 30]
-+        "viewport_color": [170, 170, 170, 30]
++        "viewport_color": [187, 187, 187, 30]
      },
 @@ -256,3 +256,3 @@
          "class": "tool_tip_label_control",
@@ -172,11 +172,6 @@ index dcb24fa..a1008b8 100644
          "attributes": ["selected"],
 -        "layer0.tint": [51, 51, 51]
 +        "layer0.tint": [213, 213, 213]
-     },
-@@ -400,3 +400,3 @@
-         "selected_fg": [170, 170, 170],
--        "selected_match_fg": [221, 221, 221]
-+        "selected_match_fg": [17, 17, 17]
      },
 @@ -416,3 +416,3 @@
          "class": "mini_quick_panel_row",
@@ -249,13 +244,13 @@ index dcb24fa..a1008b8 100644
 +        "layer0.tint": [17, 17, 17]
      },
 diff --git a/subl/theme/theme.tmTheme b/subl/theme/theme.tmTheme
-index fdff98c..2091081 100644
+index 39d0990..d4d6a19 100644
 --- a/subl/theme/theme.tmTheme
 +++ b/subl/theme/theme.tmTheme
 @@ -10,15 +10,15 @@
                      <key>background</key>
 -                    <string>#000</string>
-+                    <string>#eee</string>
++                    <string>#ddd</string>
                      <key>caret</key>
 -                    <string>#ddd</string>
 +                    <string>#222</string>
@@ -282,36 +277,36 @@ index fdff98c..2091081 100644
                  </dict>
 @@ -40,3 +40,3 @@
                      <key>foreground</key>
--                    <string>#999</string>
+-                    <string>#aaa</string>
 +                    <string>#555</string>
                  </dict>
 @@ -60,3 +60,3 @@
                      <key>foreground</key>
--                    <string>#d99</string>
-+                    <string>#933</string>
+-                    <string>#daa</string>
++                    <string>#822</string>
                  </dict>
 @@ -69,3 +69,3 @@
                      <key>foreground</key>
--                    <string>#d9d</string>
-+                    <string>#939</string>
+-                    <string>#dad</string>
++                    <string>#828</string>
                  </dict>
 @@ -78,3 +78,3 @@
                      <key>foreground</key>
--                    <string>#dd9</string>
-+                    <string>#993</string>
+-                    <string>#dda</string>
++                    <string>#882</string>
                  </dict>
 @@ -87,3 +87,3 @@
                      <key>foreground</key>
--                    <string>#9d9</string>
-+                    <string>#393</string>
+-                    <string>#ada</string>
++                    <string>#282</string>
                  </dict>
 @@ -96,3 +96,3 @@
                      <key>foreground</key>
--                    <string>#9dd</string>
-+                    <string>#399</string>
+-                    <string>#add</string>
++                    <string>#288</string>
                  </dict>
 @@ -105,3 +105,3 @@
                      <key>foreground</key>
--                    <string>#99d</string>
-+                    <string>#339</string>
+-                    <string>#aad</string>
++                    <string>#228</string>
                  </dict>

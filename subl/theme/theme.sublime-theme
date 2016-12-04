@@ -55,7 +55,7 @@
         "parents": [{"class": "tab_control"}],
         "attributes": ["hover"],
         "layer0.opacity": 1,
-        "layer0.tint": [170, 170, 170]
+        "layer0.tint": [187, 187, 187]
     },
     {
         "class": "tab_close_button",
@@ -66,7 +66,7 @@
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
         "layer0.texture": "User/theme/img/circle@2x.png",
-        "layer0.tint": [170, 170, 102],
+        "layer0.tint": [187, 187, 102],
         "layer0.opacity": 1
     },
     {
@@ -75,7 +75,7 @@
         "layer0.texture": "User/theme/img/close@2x.png",
         "attributes": ["hover"],
         "layer0.opacity": 1,
-        "layer0.tint": [170, 170, 170]
+        "layer0.tint": [187, 187, 187]
     },
     {
         "class": "tab_close_button",
@@ -91,7 +91,7 @@
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["hover"]}],
-        "fg": [170, 170, 170]
+        "fg": [187, 187, 187]
     },
     {
         "class": "tab_label",
@@ -106,7 +106,7 @@
     {
         "class": "fold_button_control",
         "layer0.texture": "User/theme/img/folder-closed@2x.png",
-        "layer0.tint": [153, 153, 153],
+        "layer0.tint": [170, 170, 170],
         "layer0.opacity": 0.5,
         "layer0.inner_margin": 0,
         "content_margin": 8
@@ -243,7 +243,7 @@
     {
         "class": "label_control",
         "parents": [{"class": "button_control", "attributes": ["hover"]}],
-        "color": [170, 170, 170]
+        "color": [187, 187, 187]
     },
     {
         "class": "tool_tip_control",
@@ -315,7 +315,7 @@
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "color": [170, 170, 170]
+        "color": [187, 187, 187]
     },
     {
         "class": "sidebar_label",
@@ -333,7 +333,7 @@
     {
         "class": "disclosure_button_control",
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "layer0.tint": [170, 170, 170]
+        "layer0.tint": [187, 187, 187]
     },
     {
         "class": "disclosure_button_control",
@@ -395,17 +395,17 @@
     },
     {
         "class": "quick_panel_label",
-        "fg": [153, 153, 153],
-        "match_fg": [170, 170, 170],
+        "fg": [170, 170, 170],
+        "match_fg": [187, 187, 187],
         "selected_fg": [170, 170, 170],
-        "selected_match_fg": [221, 221, 221]
+        "selected_match_fg": [187, 187, 187]
     },
     {
         "class": "quick_panel_path_label",
-        "fg": [119, 119, 119],
-        "match_fg": [153, 153, 153],
-        "selected_fg": [119, 119, 119],
-        "selected_match_fg": [153, 153, 153]
+        "fg": [170, 170, 170],
+        "match_fg": [187, 187, 187],
+        "selected_fg": [170, 170, 170],
+        "selected_match_fg": [187, 187, 187]
     },
     {
         "class": "quick_panel_score_label",
@@ -434,10 +434,10 @@
     },
     {
         "class": "auto_complete_label",
-        "fg": [119, 119, 119],
-        "match_fg": [170, 170, 170],
-        "selected_fg": [153, 153, 153],
-        "selected_match_fg": [170, 170, 170]
+        "fg": [170, 170, 170],
+        "match_fg": [187, 187, 187],
+        "selected_fg": [170, 170, 170],
+        "selected_match_fg": [187, 187, 187]
     },
     {
         "class": "table_row",
@@ -470,7 +470,7 @@
     {
         "class": "icon_regex",
         "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
-        "layer0.tint": [170, 170, 170]
+        "layer0.tint": [187, 187, 187]
     },
     {
         "class": "icon_regex",
@@ -487,7 +487,7 @@
     {
         "class": "icon_case",
         "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
-        "layer0.tint": [170, 170, 170]
+        "layer0.tint": [187, 187, 187]
     },
     {
         "class": "icon_case",
@@ -504,7 +504,7 @@
     {
         "class": "icon_whole_word",
         "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
-        "layer0.tint": [170, 170, 170]
+        "layer0.tint": [187, 187, 187]
     },
     {
         "class": "icon_whole_word",
@@ -521,7 +521,7 @@
     {
         "class": "icon_context",
         "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
-        "layer0.tint": [170, 170, 170]
+        "layer0.tint": [187, 187, 187]
     },
     {
         "class": "icon_context",
@@ -538,7 +538,7 @@
     {
         "class": "icon_use_buffer",
         "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
-        "layer0.tint": [170, 170, 170]
+        "layer0.tint": [187, 187, 187]
     },
     {
         "class": "icon_use_buffer",
@@ -555,7 +555,7 @@
     {
         "class": "icon_reverse",
         "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
-        "layer0.tint": [170, 170, 170]
+        "layer0.tint": [187, 187, 187]
     },
     {
         "class": "icon_reverse",
@@ -572,7 +572,7 @@
     {
         "class": "icon_wrap",
         "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
-        "layer0.tint": [170, 170, 170]
+        "layer0.tint": [187, 187, 187]
     },
     {
         "class": "icon_wrap",
@@ -589,7 +589,7 @@
     {
         "class": "icon_in_selection",
         "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
-        "layer0.tint": [170, 170, 170]
+        "layer0.tint": [187, 187, 187]
     },
     {
         "class": "icon_in_selection",
@@ -606,7 +606,7 @@
     {
         "class": "icon_preserve_case",
         "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
-        "layer0.tint": [170, 170, 170]
+        "layer0.tint": [187, 187, 187]
     },
     {
         "class": "icon_preserve_case",
@@ -623,7 +623,7 @@
     {
         "class": "icon_highlight",
         "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
-        "layer0.tint": [170, 170, 170]
+        "layer0.tint": [187, 187, 187]
     },
     {
         "class": "icon_highlight",
