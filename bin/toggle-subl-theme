@@ -1,11 +1,15 @@
 #!/usr/bin/env sh
 
 . "$HOME/.config/lib/base.sh"
+. "$HOME/.config/lib/abort.sh"
 
 cd "$HOME/.config/subl"
 
-patch="theme/light.patch"
-direction=""
-git apply --check "$patch" &> /dev/null || direction="--reverse"
-
-git apply $direction "$patch"
+alias patch="git apply theme/light.patch"
+if patch --check &> /dev/null; then
+    patch
+elif patch --reverse --check &> /dev/null; then
+    patch --reverse
+else
+    abort "patch does not apply in either direction"
+fi
