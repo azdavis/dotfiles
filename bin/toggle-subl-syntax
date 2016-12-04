@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+
+. "$HOME/.config/lib/base.sh"
+
+cd "$HOME/.config/subl"
+
+patch="theme/syntax.patch"
+direction=""
+git apply --check "$patch" &> /dev/null || direction="--reverse"
+
+git apply $direction "$patch"

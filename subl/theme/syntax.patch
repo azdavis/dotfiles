@@ -1,0 +1,49 @@
+diff --git a/subl/theme/theme.tmTheme b/subl/theme/theme.tmTheme
+index 39d0990..55e9e0a 100644
+--- a/subl/theme/theme.tmTheme
++++ b/subl/theme/theme.tmTheme
+@@ -56,3 +56,3 @@
+                 <key>scope</key>
+-                <string>entity.name.tag, keyword, markup.deleted, markup.heading punctuation, meta.selector, meta.tag, storage, support.function</string>
++                <string>markup.deleted</string>
+                 <key>settings</key>
+@@ -65,21 +65,3 @@
+                 <key>scope</key>
+-                <string>variable.language, constant.language.this</string>
+-                <key>settings</key>
+-                <dict>
+-                    <key>foreground</key>
+-                    <string>#dad</string>
+-                </dict>
+-            </dict>
+-            <dict>
+-                <key>scope</key>
+-                <string>string, keyword.operator.heredoc, keyword.control.heredoc-token</string>
+-                <key>settings</key>
+-                <dict>
+-                    <key>foreground</key>
+-                    <string>#dda</string>
+-                </dict>
+-            </dict>
+-            <dict>
+-                <key>scope</key>
+-                <string>entity.name.type, entity.other.attribute-name, markup.inserted, meta.constant, support.class, variable.other.constant</string>
++                <string>markup.inserted</string>
+                 <key>settings</key>
+@@ -92,3 +74,3 @@
+                 <key>scope</key>
+-                <string>entity.name.function, markup.underline.link, meta.diff</string>
++                <string>meta.diff</string>
+                 <key>settings</key>
+@@ -99,11 +81,2 @@
+             </dict>
+-            <dict>
+-                <key>scope</key>
+-                <string>constant, string.regexp, text.html.markdown markup.raw</string>
+-                <key>settings</key>
+-                <dict>
+-                    <key>foreground</key>
+-                    <string>#aad</string>
+-                </dict>
+-            </dict>
+         </array>
