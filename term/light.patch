@@ -1,5 +1,5 @@
 diff --git a/term/theme.terminal b/term/theme.terminal
-index 3dbf1f7..75c8965 100644
+index 99f4fea..4cac715 100644
 --- a/term/theme.terminal
 +++ b/term/theme.terminal
 @@ -8,3 +8,3 @@
@@ -79,6 +79,11 @@ index 3dbf1f7..75c8965 100644
 +            dmVy0RcYVHJvb3SAAQgRGiMtMjc7QUhOW2KMjpCVoKmxtL3P0tcAAAAAAAABAQAAAAAA
 +            AAAZAAAAAAAAAAAAAAAAAAAA2Q==
          </data>
+@@ -157,3 +158,3 @@
+             AAGGoKMHCA9VJG51bGzTCQoLDA0OVU5TUkdCXE5TQ29sb3JTcGFjZVYkY2xhc3NPECcw
+-            Ljg2NjY2NjY2NjcgMC44NjY2NjY2NjY3IDAuODY2NjY2NjY2NwAQAYAC0hAREhNaJGNs
++            LjEzMzMzMzMzMzMgMC4xMzMzMzMzMzMzIDAuMTMzMzMzMzMzMwAQAYAC0hAREhNaJGNs
+             YXNzbmFtZVgkY2xhc3Nlc1dOU0NvbG9yohIUWE5TT2JqZWN0XxAPTlNLZXllZEFyY2hp
 @@ -188,4 +189,4 @@
              YnBsaXN0MDDUAQIDBAUGFRZYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
 -            AAGGoKMHCA9VJG51bGzTCQoLDA0OVU5TUkdCXE5TQ29sb3JTcGFjZVYkY2xhc3NMMC4y
