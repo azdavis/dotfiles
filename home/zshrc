@@ -30,7 +30,7 @@ alias \
     ls="ls -bh --color=auto --group-directories-first" \
     sml="rlwrap sml" \
     tree="tree --dirsfirst" \
-    valgrind="valgrind --suppressions=$HOME/.config/etc/valgrind.supp"
+    valgrind="valgrind --suppressions=$HOME/.config/valgrind/supp.supp"
 
 alias \
     git="hub" \
