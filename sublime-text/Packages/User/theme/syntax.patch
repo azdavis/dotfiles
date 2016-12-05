@@ -1,7 +1,7 @@
-diff --git a/subl/theme/theme.tmTheme b/subl/theme/theme.tmTheme
+diff --git a/sublime-text/Packages/User/theme/theme.tmTheme b/sublime-text/Packages/User/theme/theme.tmTheme
 index 39d0990..55e9e0a 100644
---- a/subl/theme/theme.tmTheme
-+++ b/subl/theme/theme.tmTheme
+--- a/sublime-text/Packages/User/theme/theme.tmTheme
++++ b/sublime-text/Packages/User/theme/theme.tmTheme
 @@ -56,3 +56,3 @@
                  <key>scope</key>
 -                <string>entity.name.tag, keyword, markup.deleted, markup.heading punctuation, meta.selector, meta.tag, storage, support.function</string>
