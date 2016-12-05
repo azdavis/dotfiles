@@ -1,7 +1,11 @@
 .DS_Store
 hub
-subl/*-ca-bundle*
-subl/*.cache
-subl/*.last-run
-subl/Haskell
-subl/TypeScript
+sublime-text/Cache
+sublime-text/Index
+sublime-text/Installed Packages
+sublime-text/Local
+sublime-text/Packages/User/*-ca-bundle*
+sublime-text/Packages/User/*.cache
+sublime-text/Packages/User/*.last-run
+sublime-text/Packages/User/Haskell
+sublime-text/Packages/User/TypeScript
