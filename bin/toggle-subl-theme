@@ -3,9 +3,9 @@
 . "$HOME/.config/lib/base.sh"
 . "$HOME/.config/lib/abort.sh"
 
-cd "$HOME/.config/subl"
+cd "$HOME/.config/sublime-text/Packages/User/theme"
 
-alias patch="git apply theme/light.patch"
+alias patch="git apply light.patch"
 if patch --check &> /dev/null; then
     patch
 elif patch --reverse --check &> /dev/null; then
