@@ -7,16 +7,14 @@
 pgrep -f "Sublime Text" > /dev/null \
     && abort "sublime text must not be running"
 
-support="$HOME/Library/Application Support/Sublime Text 3"
-rm -rf "$support/Cache"
-rm -rf "$support/Local/Auto Save Session.sublime_session"
-rm -rf "$support/Local/Session.sublime_session"
-
-config="$HOME/.config/subl"
-rm -rf "$config/oscrypto-ca-bundle.crt"
-rm -rf "$config/Package Control.cache"
-rm -rf "$config/Package Control.last-run"
-rm -rf "$config/Package Control.merged-ca-bundle"
-rm -rf "$config/Package Control.user-ca-bundle"
-
-symlink "$config" "$support/Packages/User"
+config="$HOME/.config/sublime-text"
+symlink "$config" "$HOME/Library/Application Support/Sublime Text 3"
+rm -rf "$config/Cache"
+rm -rf "$config/Index"
+rm -rf "$config/Local/Auto Save Session.sublime_session"
+rm -rf "$config/Local/Session.sublime_session"
+rm -rf "$config/Packages/User/oscrypto-ca-bundle.crt"
+rm -rf "$config/Packages/User/Package Control.cache"
+rm -rf "$config/Packages/User/Package Control.last-run"
+rm -rf "$config/Packages/User/Package Control.merged-ca-bundle"
+rm -rf "$config/Packages/User/Package Control.user-ca-bundle"
