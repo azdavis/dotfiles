@@ -1,7 +1,6 @@
 [commit]
 	verbose = 1
 [core]
-	attributesfile = ~/.config/etc/gitattributes
 	editor = subl -w
 	pager = less -FRSX
 	untrackedCache = true
