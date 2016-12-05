@@ -1,7 +1,7 @@
-diff --git a/term/theme.terminal b/term/theme.terminal
+diff --git a/terminal/theme.terminal b/terminal/theme.terminal
 index 99f4fea..4cac715 100644
---- a/term/theme.terminal
-+++ b/term/theme.terminal
+--- a/terminal/theme.terminal
++++ b/terminal/theme.terminal
 @@ -8,3 +8,3 @@
              AAGGoKMHCA9VJG51bGzTCQoLDA0OVU5TUkdCXE5TQ29sb3JTcGFjZVYkY2xhc3NPECcw
 -            LjY2NjY2NjY2NjcgMC42NjY2NjY2NjY3IDAuODY2NjY2NjY2NwAQAoAC0hAREhNaJGNs
