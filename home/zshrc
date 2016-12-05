@@ -26,6 +26,7 @@ setopt \
 alias \
     df="df -h" \
     du="du -sh" \
+    git="hub" \
     grep="grep --color=auto" \
     ls="ls -bh --color=auto --group-directories-first" \
     sml="rlwrap sml" \
@@ -33,7 +34,10 @@ alias \
     valgrind="valgrind --suppressions=$HOME/.config/valgrind/supp.supp"
 
 alias \
-    git="hub" \
+    g="hub" \
+    s="subl"
+
+alias \
     ga="hub add" \
     gb="hub branch" \
     gc="hub commit" \
