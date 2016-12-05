@@ -34,7 +34,10 @@ alias \
     valgrind="valgrind --suppressions=$HOME/.config/valgrind/supp.supp"
 
 alias \
+    c="cd" \
     g="hub" \
+    l="ls" \
+    o="open" \
     s="subl"
 
 alias \
