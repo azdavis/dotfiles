@@ -1,5 +1,5 @@
 diff --git a/terminal/theme.terminal b/terminal/theme.terminal
-index 99f4fea..22757a8 100644
+index 99f4fea..cda4036 100644
 --- a/terminal/theme.terminal
 +++ b/terminal/theme.terminal
 @@ -8,3 +8,3 @@
@@ -74,7 +74,7 @@ index 99f4fea..22757a8 100644
 -            dF8QD05TS2V5ZWRBcmNoaXZlctEXGFRyb290gAEIERojLTI3O0FITltiaWttcn2GjpGa
 -            rK+0AAAAAAAAAQEAAAAAAAAAGQAAAAAAAAAAAAAAAAAAALY=
 +            AAGGoKMHCA9VJG51bGzTCQoLDA0OVU5TUkdCXE5TQ29sb3JTcGFjZVYkY2xhc3NPECcw
-+            Ljg2NjY2NjY2NjcgMC44NjY2NjY2NjY3IDAuODY2NjY2NjY2NwAQAYAC0hAREhNaJGNs
++            LjkzMzMzMzMzMzMgMC45MzMzMzMzMzMzIDAuOTMzMzMzMzMzMwAQAYAC0hAREhNaJGNs
 +            YXNzbmFtZVgkY2xhc3Nlc1dOU0NvbG9yohIUWE5TT2JqZWN0XxAPTlNLZXllZEFyY2hp
 +            dmVy0RcYVHJvb3SAAQgRGiMtMjc7QUhOW2KMjpCVoKmxtL3P0tcAAAAAAAABAQAAAAAA
 +            AAAZAAAAAAAAAAAAAAAAAAAA2Q==
