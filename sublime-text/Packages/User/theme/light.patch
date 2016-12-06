@@ -70,8 +70,8 @@ index 0487691..2f12633 100644
      },
 @@ -68,3 +68,3 @@
          "layer0.texture": "User/theme/img/circle@2x.png",
--        "layer0.tint": [187, 187, 85],
-+        "layer0.tint": [68, 68, 170],
+-        "layer0.tint": [187, 187, 102],
++        "layer0.tint": [68, 68, 153],
          "layer0.opacity": 1
 @@ -77,3 +77,3 @@
          "layer0.opacity": 1,
@@ -90,8 +90,8 @@ index 0487691..2f12633 100644
      },
 @@ -108,3 +108,3 @@
          "layer0.texture": "User/theme/img/folder-closed@2x.png",
--        "layer0.tint": [170, 170, 170],
-+        "layer0.tint": [85, 85, 85],
+-        "layer0.tint": [153, 153, 153],
++        "layer0.tint": [102, 102, 102],
          "layer0.opacity": 0.5,
 @@ -126,3 +126,3 @@
          "layer0.texture": "",
@@ -125,13 +125,13 @@ index 0487691..2f12633 100644
          "layer0.inner_margin": [0, 5],
 @@ -210,3 +210,3 @@
          "attributes": ["dark"],
--        "layer0.tint": [85, 85, 85]
-+        "layer0.tint": [170, 170, 170]
+-        "layer0.tint": [102, 102, 102]
++        "layer0.tint": [153, 153, 153]
      },
 @@ -216,3 +216,3 @@
          "attributes": ["horizontal", "dark"],
--        "layer0.tint": [85, 85, 85]
-+        "layer0.tint": [170, 170, 170]
+-        "layer0.tint": [102, 102, 102]
++        "layer0.tint": [153, 153, 153]
      },
 @@ -220,3 +220,3 @@
          "class": "sheet_container_control",
@@ -155,8 +155,8 @@ index 0487691..2f12633 100644
      },
 @@ -249,3 +249,3 @@
          "class": "tool_tip_control",
--        "layer0.tint": [85, 85, 85],
-+        "layer0.tint": [170, 170, 170],
+-        "layer0.tint": [102, 102, 102],
++        "layer0.tint": [153, 153, 153],
          "layer0.inner_margin": 1,
 @@ -256,3 +256,3 @@
          "class": "tool_tip_label_control",
@@ -170,8 +170,8 @@ index 0487691..2f12633 100644
          "layer0.opacity": 1,
 @@ -272,3 +272,3 @@
          "parents": [{"class": "status_bar"}],
--        "color": [85, 85, 85]
-+        "color": [170, 170, 170]
+-        "color": [102, 102, 102]
++        "color": [153, 153, 153]
      },
 @@ -277,3 +277,3 @@
          "layer0.opacity": 1,
@@ -185,8 +185,8 @@ index 0487691..2f12633 100644
          "layer0.opacity": 0,
 @@ -302,3 +302,3 @@
          "class": "sidebar_heading",
--        "color": [85, 85, 85],
-+        "color": [170, 170, 170],
+-        "color": [102, 102, 102],
++        "color": [153, 153, 153],
          "font.bold": true
 @@ -317,3 +317,3 @@
          "parents": [{"class": "tree_row", "attributes": ["hover"]}],
@@ -240,24 +240,24 @@ index 0487691..2f12633 100644
      },
 @@ -397,6 +397,6 @@
          "class": "quick_panel_label",
--        "fg": [170, 170, 170],
+-        "fg": [153, 153, 153],
 -        "match_fg": [187, 187, 187],
--        "selected_fg": [170, 170, 170],
+-        "selected_fg": [153, 153, 153],
 -        "selected_match_fg": [187, 187, 187]
-+        "fg": [85, 85, 85],
++        "fg": [102, 102, 102],
 +        "match_fg": [68, 68, 68],
-+        "selected_fg": [85, 85, 85],
++        "selected_fg": [102, 102, 102],
 +        "selected_match_fg": [68, 68, 68]
      },
 @@ -404,6 +404,6 @@
          "class": "quick_panel_path_label",
--        "fg": [170, 170, 170],
+-        "fg": [153, 153, 153],
 -        "match_fg": [187, 187, 187],
--        "selected_fg": [170, 170, 170],
+-        "selected_fg": [153, 153, 153],
 -        "selected_match_fg": [187, 187, 187]
-+        "fg": [85, 85, 85],
++        "fg": [102, 102, 102],
 +        "match_fg": [68, 68, 68],
-+        "selected_fg": [85, 85, 85],
++        "selected_fg": [102, 102, 102],
 +        "selected_match_fg": [68, 68, 68]
      },
 @@ -416,3 +416,3 @@
@@ -277,13 +277,13 @@ index 0487691..2f12633 100644
          "layer0.opacity": 1
 @@ -436,6 +436,6 @@
          "class": "auto_complete_label",
--        "fg": [170, 170, 170],
+-        "fg": [153, 153, 153],
 -        "match_fg": [187, 187, 187],
--        "selected_fg": [170, 170, 170],
+-        "selected_fg": [153, 153, 153],
 -        "selected_match_fg": [187, 187, 187]
-+        "fg": [85, 85, 85],
++        "fg": [102, 102, 102],
 +        "match_fg": [68, 68, 68],
-+        "selected_fg": [85, 85, 85],
++        "selected_fg": [102, 102, 102],
 +        "selected_match_fg": [68, 68, 68]
      },
 @@ -443,3 +443,3 @@
@@ -293,8 +293,8 @@ index 0487691..2f12633 100644
          "layer0.opacity": 0,
 @@ -465,3 +465,3 @@
          "layer0.texture": "User/theme/img/regex@2x.png",
--        "layer0.tint": [85, 85, 85],
-+        "layer0.tint": [170, 170, 170],
+-        "layer0.tint": [102, 102, 102],
++        "layer0.tint": [153, 153, 153],
          "layer0.opacity": 1,
 @@ -472,3 +472,3 @@
          "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
@@ -308,8 +308,8 @@ index 0487691..2f12633 100644
      },
 @@ -482,3 +482,3 @@
          "layer0.texture": "User/theme/img/casesens@2x.png",
--        "layer0.tint": [85, 85, 85],
-+        "layer0.tint": [170, 170, 170],
+-        "layer0.tint": [102, 102, 102],
++        "layer0.tint": [153, 153, 153],
          "layer0.opacity": 1,
 @@ -489,3 +489,3 @@
          "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
@@ -323,8 +323,8 @@ index 0487691..2f12633 100644
      },
 @@ -499,3 +499,3 @@
          "layer0.texture": "User/theme/img/wholeword@2x.png",
--        "layer0.tint": [85, 85, 85],
-+        "layer0.tint": [170, 170, 170],
+-        "layer0.tint": [102, 102, 102],
++        "layer0.tint": [153, 153, 153],
          "layer0.opacity": 1,
 @@ -506,3 +506,3 @@
          "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
@@ -338,8 +338,8 @@ index 0487691..2f12633 100644
      },
 @@ -516,3 +516,3 @@
          "layer0.texture": "User/theme/img/context@2x.png",
--        "layer0.tint": [85, 85, 85],
-+        "layer0.tint": [170, 170, 170],
+-        "layer0.tint": [102, 102, 102],
++        "layer0.tint": [153, 153, 153],
          "layer0.opacity": 1,
 @@ -523,3 +523,3 @@
          "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
@@ -353,8 +353,8 @@ index 0487691..2f12633 100644
      },
 @@ -533,3 +533,3 @@
          "layer0.texture": "User/theme/img/buffer@2x.png",
--        "layer0.tint": [85, 85, 85],
-+        "layer0.tint": [170, 170, 170],
+-        "layer0.tint": [102, 102, 102],
++        "layer0.tint": [153, 153, 153],
          "layer0.opacity": 1,
 @@ -540,3 +540,3 @@
          "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
@@ -368,8 +368,8 @@ index 0487691..2f12633 100644
      },
 @@ -550,3 +550,3 @@
          "layer0.texture": "User/theme/img/reverse@2x.png",
--        "layer0.tint": [85, 85, 85],
-+        "layer0.tint": [170, 170, 170],
+-        "layer0.tint": [102, 102, 102],
++        "layer0.tint": [153, 153, 153],
          "layer0.opacity": 1,
 @@ -557,3 +557,3 @@
          "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
@@ -383,8 +383,8 @@ index 0487691..2f12633 100644
      },
 @@ -567,3 +567,3 @@
          "layer0.texture": "User/theme/img/wrap@2x.png",
--        "layer0.tint": [85, 85, 85],
-+        "layer0.tint": [170, 170, 170],
+-        "layer0.tint": [102, 102, 102],
++        "layer0.tint": [153, 153, 153],
          "layer0.opacity": 1,
 @@ -574,3 +574,3 @@
          "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
@@ -398,8 +398,8 @@ index 0487691..2f12633 100644
      },
 @@ -584,3 +584,3 @@
          "layer0.texture": "User/theme/img/selection@2x.png",
--        "layer0.tint": [85, 85, 85],
-+        "layer0.tint": [170, 170, 170],
+-        "layer0.tint": [102, 102, 102],
++        "layer0.tint": [153, 153, 153],
          "layer0.opacity": 1,
 @@ -591,3 +591,3 @@
          "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
@@ -413,8 +413,8 @@ index 0487691..2f12633 100644
      },
 @@ -601,3 +601,3 @@
          "layer0.texture": "User/theme/img/lock@2x.png",
--        "layer0.tint": [85, 85, 85],
-+        "layer0.tint": [170, 170, 170],
+-        "layer0.tint": [102, 102, 102],
++        "layer0.tint": [153, 153, 153],
          "layer0.opacity": 1,
 @@ -608,3 +608,3 @@
          "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
@@ -428,8 +428,8 @@ index 0487691..2f12633 100644
      },
 @@ -618,3 +618,3 @@
          "layer0.texture": "User/theme/img/highlight@2x.png",
--        "layer0.tint": [85, 85, 85],
-+        "layer0.tint": [170, 170, 170],
+-        "layer0.tint": [102, 102, 102],
++        "layer0.tint": [153, 153, 153],
          "layer0.opacity": 1,
 @@ -625,3 +625,3 @@
          "parents": [{"class": "icon_button_control", "attributes": ["hover"]}],
