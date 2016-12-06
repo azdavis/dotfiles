@@ -145,8 +145,8 @@ index 0487691..2f12633 100644
      },
 @@ -230,3 +230,3 @@
          "class": "minimap_control",
--        "viewport_color": [221, 221, 221, 30]
-+        "viewport_color": [34, 34, 34, 30]
+-        "viewport_color": [153, 153, 153, 50]
++        "viewport_color": [102, 102, 102, 50]
      },
 @@ -245,3 +245,3 @@
          "parents": [{"class": "button_control", "attributes": ["hover"]}],

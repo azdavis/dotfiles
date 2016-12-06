@@ -228,7 +228,7 @@
     },
     {
         "class": "minimap_control",
-        "viewport_color": [221, 221, 221, 30]
+        "viewport_color": [153, 153, 153, 50]
     },
     {
         "class": "label_control",
