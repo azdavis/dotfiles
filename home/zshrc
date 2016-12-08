@@ -40,8 +40,11 @@ alias \
     gd="hub diff" \
     gk="hub checkout" \
     gl="hub log --all --decorate --graph --oneline" \
+    gm="hub merge --ff-only" \
     gr="hub reset" \
-    gs="hub status -sb"
+    grb="hub rebase" \
+    gs="hub status -sb" \
+    gsh="hub show"
 
 autoload -U compinit
 compinit -u
