@@ -45,7 +45,7 @@ alias \
     gr="hub reset" \
     grb="hub rebase" \
     gs="hub status -sb" \
-    gsh="hub show"
+    gsh="hub show --format=fuller"
 
 autoload -U compinit
 compinit -u
