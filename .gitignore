@@ -1,9 +1,9 @@
 .DS_Store
 hub
-sublime-text/Cache
-sublime-text/Index
-sublime-text/Installed Packages
-sublime-text/Local
+sublime-text/*
+!sublime-text/Packages
+sublime-text/Packages/*
+!sublime-text/Packages/User
 sublime-text/Packages/User/*-ca-bundle*
 sublime-text/Packages/User/*.cache
 sublime-text/Packages/User/*.last-run
