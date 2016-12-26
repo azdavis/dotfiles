@@ -1,7 +1,7 @@
 symlink() {
     [ -L "$2" ] && rm "$2"
     if [ -e "$2" ]; then
-        printf 'rm %s? ' "$2"
+        printf "rm '%s'? " "$2"
         read x
         [ "$x" != y ] && return
         rm -rf "$2"
