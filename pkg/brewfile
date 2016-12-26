@@ -7,6 +7,7 @@ brew "entr"
 brew "ghc"
 brew "git"
 brew "gnupg", args: ["build-from-source"]
+brew "haskell-stack"
 brew "hub"
 brew "node"
 brew "openssl"
