@@ -24,5 +24,4 @@ rm -rfv \
     .oracle_jre_usage \
     .python_history \
     .sh_history \
-    .stack \
     .viminfo
