@@ -7,7 +7,7 @@ cd "$HOME/.config"
 
 if ! ping -c 1 github.com >/dev/null; then
     abort "cannot connect to github.com"
-elif ! git diff-index --quiet @; then
+elif ! git diff-index --quiet master; then
     abort "there are uncommited changes"
 elif [ "$(curl "https://api.github.com/repos/azdavis/dotfiles/commits/master" \
     -H "Accept: application/vnd.github.chitauri-preview+sha" \
