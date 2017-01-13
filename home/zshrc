@@ -34,18 +34,17 @@ alias \
     valgrind="valgrind --suppressions=$HOME/.config/valgrind/supp.supp"
 
 alias \
-    git="hub" \
-    ga="hub add" \
-    gb="hub branch" \
-    gc="hub commit" \
-    gd="hub diff" \
-    gk="hub checkout" \
-    gl="hub log --all --decorate --graph --oneline" \
-    gm="hub merge --ff-only" \
-    gr="hub reset" \
-    grb="hub rebase" \
-    gs="hub status -sb" \
-    gsh="hub show --format=fuller"
+    ga="git add" \
+    gb="git branch" \
+    gc="git commit" \
+    gd="git diff" \
+    gk="git checkout" \
+    gl="git log --all --decorate --graph --oneline" \
+    gm="git merge --ff-only" \
+    gr="git reset" \
+    grb="git rebase" \
+    gs="git status -sb" \
+    gsh="git show --format=fuller"
 
 autoload -U compinit
 compinit -u
