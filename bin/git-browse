@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+
+. "$HOME/.config/lib/base.sh"
+. "$HOME/.config/lib/abort.sh"
+
+git rev-parse > /dev/null
+
+remote="origin"
+[ $# -ge 1 ] && remote="$1"
+
+url="$(git config remote.$remote.url)" \
+    || abort "could not get url for remote '$remote'"
+
+open "$url"
