@@ -9,7 +9,8 @@ if ! ping -c 1 -t 3 github.com >/dev/null 2>&1; then
     abort "cannot connect to github.com"
 elif ! git diff-index --quiet master; then
     abort "there are uncommited changes"
-elif [ "$(curl "https://api.github.com/repos/azdavis/dotfiles/commits/master" \
+elif [ "$(curl \
+    "https://api.github.com/repos/azdavis/dotfiles/commits/master" \
     -H "Accept: application/vnd.github.chitauri-preview+sha" \
     -H "If-None-Match: \"$(git rev-parse master)\"" \
     -s -o /dev/null -w "%{http_code}")" -ne 304 ]; then
