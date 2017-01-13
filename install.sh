@@ -30,7 +30,7 @@ main() {
         mkdir -p "$install_dir_git"
         git clone --bare "$repo" "$install_dir_git"
         git -C "$install_dir_git" config core.bare false
-        git -C "$install_dir" reset --hard
+        git -C "$install_dir" reset -q --hard
         note "doing dotfile actions"
         "$install_dir/bin/do-dotfiles" < /dev/tty
     fi
