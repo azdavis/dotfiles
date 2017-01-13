@@ -24,6 +24,7 @@ setopt \
     rmstarsilent
 
 alias \
+    c="tput reset" \
     df="df -h" \
     du="du -sh" \
     grep="grep --color=auto" \
