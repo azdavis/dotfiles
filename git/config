@@ -9,8 +9,6 @@
 [diff]
 	algorithm = histogram
 	compactionHeuristic = true
-[hub]
-	protocol = https
 [pull]
 	rebase = true
 [push]
