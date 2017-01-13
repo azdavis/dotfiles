@@ -1,0 +1,19 @@
+#!/usr/bin/env sh
+
+. "$HOME/.config/lib/base.sh"
+. "$HOME/.config/lib/abort.sh"
+
+cd "$HOME/.config"
+
+if ! ping -c 1 github.com >/dev/null; then
+    abort "cannot connect to github.com"
+elif ! git diff-index --quiet @; then
+    abort "there are uncommited changes"
+elif [ "$(curl "https://api.github.com/repos/azdavis/dotfiles/commits/master" \
+    -H "Accept: application/vnd.github.chitauri-preview+sha" \
+    -H "If-None-Match: \"$(git rev-parse master)\"" \
+    -s -o /dev/null -w "%{http_code}")" -ne 304 ]; then
+    git pull --rebase origin master
+fi
+
+date +%s > "$HOME/.config/last-update"
