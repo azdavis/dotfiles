@@ -13,7 +13,9 @@ elif [ "$(curl "https://api.github.com/repos/azdavis/dotfiles/commits/master" \
     -H "Accept: application/vnd.github.chitauri-preview+sha" \
     -H "If-None-Match: \"$(git rev-parse master)\"" \
     -s -o /dev/null -w "%{http_code}")" -ne 304 ]; then
-    git pull -q --rebase -X theirs origin master
+    old_origin_master="$(git rev-parse origin/master)"
+    git fetch origin master
+    git rebase -q -X theirs --onto origin/master "$old_origin_master" master
 fi
 
 date +%s > update.last-run
