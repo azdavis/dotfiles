@@ -3,6 +3,8 @@
 . "$HOME/.config/lib/base.sh"
 
 wd="/"
-[ $# -ge 1 ] && wd="$1"
+if [ $# -ge 1 ]; then
+    wd="$1"
+fi
 
 find "$wd" -name .DS_Store -exec rm -v {} \; 2>/dev/null

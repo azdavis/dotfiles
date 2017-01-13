@@ -20,7 +20,9 @@ while getopts frv opt; do
 done
 shift $((OPTIND - 1))
 
-[ $# -eq 0 ] && usage
+if [ $# -eq 0 ]; then
+    usage
+fi
 
 if $r; then
     find "$@" -type f -exec shred $f $v -zn 8 {} \;

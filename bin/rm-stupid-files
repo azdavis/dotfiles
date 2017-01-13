@@ -6,9 +6,10 @@ cd
 
 "$HOME/.config/bin/rm-ds-store" .
 
-[ -e Applications ] \
-    && [ "$(find Applications -not -name .localized | wc -l)" -eq 1 ] \
-    && rm -rv Applications
+if [ -e Applications ] \
+&& [ "$(find Applications -not -name .localized | wc -l)" -eq 1 ]; then
+    rm -rv Applications
+fi
 
 rm -rfv \
     .bash_history \
