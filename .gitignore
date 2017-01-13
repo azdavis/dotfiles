@@ -2,18 +2,19 @@
 
 /*
 
-!/.gitattributes
-!/.gitignore
 !/bin
 !/git
 !/home
 !/lib
-!/license.md
 !/mpv
 !/pkg
-!/readme.md
 !/terminal
 !/valgrind
+
+!/.gitattributes
+!/.gitignore
+!/license.md
+!/readme.md
 
 !/sublime-text-3
 /sublime-text-3/*
