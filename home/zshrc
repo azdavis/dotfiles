@@ -57,7 +57,7 @@ zstyle ":completion:*" verbose false
 
 local lu="$HOME/.config/last-update"
 if [ ! -e "$lu" ] \
-|| expr "$(date +%s)" - "$(head -n 1 "$lu")" ">=" 604800 >/dev/null; then
+|| expr "$(date +%s)" - "$(cat "$lu")" ">=" 604800 >/dev/null; then
     echo "==> updating config"
     update-config
 fi
