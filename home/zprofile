@@ -4,3 +4,4 @@ if [ ! -e "$last_run" ] \
     echo "==> updating dotfiles"
     "$HOME/.config/bin/update-dotfiles"
 fi
+unset last_run
