@@ -16,4 +16,4 @@ elif [ "$(curl "https://api.github.com/repos/azdavis/dotfiles/commits/master" \
     git pull -q --rebase -X theirs origin master
 fi
 
-date +%s > last-update
+date +%s > update.last-run

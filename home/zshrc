@@ -55,9 +55,9 @@ zstyle ":completion:*" menu select
 zstyle ":completion:*" squeeze-slashes true
 zstyle ":completion:*" verbose false
 
-local lu="$HOME/.config/last-update"
-if [ ! -e "$lu" ] \
-|| expr "$(date +%s)" - "$(cat "$lu")" ">=" 604800 >/dev/null; then
+local last_run="$HOME/.config/update.last-run"
+if [ ! -e "$last_run" ] \
+|| expr "$(date +%s)" - "$(cat "$last_run")" ">=" 604800 >/dev/null; then
     echo "==> updating config"
     update-config
 fi
