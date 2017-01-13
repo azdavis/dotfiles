@@ -24,12 +24,12 @@ main() {
 
     note "dsting '$repo' to '$dst'"
     if ! [ -e "$dst_git" ]; then
-        tmp_dir="$(mktemp -d)"
-        git clone "$repo" "$tmp_dir"
+        tmp="$(mktemp -d)"
+        git clone "$repo" "$tmp"
         mkdir -p "$dst"
         rm -rf "$dst_git"
-        mv "$tmp_dir/.git" "$dst_git"
-        rm -rf "$tmp_dir"
+        mv "$tmp/.git" "$dst_git"
+        rm -rf "$tmp"
         git -C "$dst" reset -q --hard
         note "doing dotfile actions"
         "$dst/bin/do-dotfiles" < /dev/tty
