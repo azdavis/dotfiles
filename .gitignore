@@ -23,7 +23,7 @@
 /sublime-text-3/Packages/*
 !/sublime-text-3/Packages/User
 /sublime-text-3/Packages/User/Haskell
-/sublime-text-3/Packages/User/Package Control.cache/
+/sublime-text-3/Packages/User/Package Control.cache
 /sublime-text-3/Packages/User/Package Control.last-run
 /sublime-text-3/Packages/User/Package Control.merged-ca-bundle
 /sublime-text-3/Packages/User/Package Control.user-ca-bundle
