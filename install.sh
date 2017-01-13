@@ -22,14 +22,16 @@ main() {
     repo="https://github.com/azdavis/dotfiles"
     install_dir="$HOME/.config"
     install_dir_git="$install_dir/.git"
+    tmp_dir="$(mktemp -d)"
     new_shell="$(which zsh)"
 
     note "installing '$repo' to '$install_dir'"
     if ! [ -e "$install_dir_git" ]; then
         rm -rf "$install_dir_git"
-        mkdir -p "$install_dir_git"
-        git clone --bare "$repo" "$install_dir_git"
-        git -C "$install_dir_git" config core.bare false
+        mkdir -p "$install_dir"
+        git clone "$repo" "$tmp_dir"
+        mv "$tmp_dir/.git" "$install_dir_git"
+        rm -rf "$tmp_dir"
         git -C "$install_dir" reset -q --hard
         note "doing dotfile actions"
         "$install_dir/bin/do-dotfiles" < /dev/tty
