@@ -5,7 +5,7 @@
 
 cd "$HOME/.config"
 
-if ! ping -c 1 github.com >/dev/null; then
+if ! ping -c 1 github.com >/dev/null 2>&1; then
     abort "cannot connect to github.com"
 elif ! git diff-index --quiet master; then
     abort "there are uncommited changes"
