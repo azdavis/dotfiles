@@ -18,21 +18,21 @@ main() {
     need_cmd "zsh"
 
     repo="https://github.com/azdavis/dotfiles"
-    install_dir="$HOME/.config"
-    install_dir_git="$install_dir/.git"
+    dst="$HOME/.config"
+    dst_git="$dst/.git"
     new_shell="$(which zsh)"
 
-    note "installing '$repo' to '$install_dir'"
-    if ! [ -e "$install_dir_git" ]; then
+    note "dsting '$repo' to '$dst'"
+    if ! [ -e "$dst_git" ]; then
         tmp_dir="$(mktemp -d)"
         git clone "$repo" "$tmp_dir"
-        mkdir -p "$install_dir"
-        rm -rf "$install_dir_git"
-        mv "$tmp_dir/.git" "$install_dir_git"
+        mkdir -p "$dst"
+        rm -rf "$dst_git"
+        mv "$tmp_dir/.git" "$dst_git"
         rm -rf "$tmp_dir"
-        git -C "$install_dir" reset -q --hard
+        git -C "$dst" reset -q --hard
         note "doing dotfile actions"
-        "$install_dir/bin/do-dotfiles" < /dev/tty
+        "$dst/bin/do-dotfiles" < /dev/tty
     fi
 
     note "changing \$SHELL to '$new_shell'"
