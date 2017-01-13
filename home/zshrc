@@ -58,6 +58,6 @@ zstyle ":completion:*" verbose false
 local last_run="$HOME/.config/update.last-run"
 if [ ! -e "$last_run" ] \
 || expr "$(date +%s)" - "$(cat "$last_run")" ">=" 604800 >/dev/null; then
-    echo "==> updating config"
-    update-config
+    echo "==> updating dotfiles"
+    update-dotfiles
 fi
