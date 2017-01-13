@@ -1,5 +1,3 @@
-#!/usr/bin/env sh
-
 note() {
     echo "==> $1"
 }
