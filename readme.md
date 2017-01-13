@@ -4,7 +4,4 @@ a potpourri of macOS dotfiles
 
 ## install
 
-    git clone https://github.com/azdavis/dotfiles.git ~/.config
-    ~/.config/bin/do-dotfiles
-    chsh -s $(which zsh)
-    logout
+    curl -fsSL https://git.io/vM2Jb | sh
