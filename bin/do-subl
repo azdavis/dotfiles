@@ -7,7 +7,7 @@
 pgrep -f "Sublime Text" > /dev/null \
     && abort "sublime text must not be running"
 
-config="$HOME/.config/sublime-text"
+config="$HOME/.config/sublime-text-3"
 symlink "$config" "$HOME/Library/Application Support/Sublime Text 3"
 rm -rf \
     "$config/Cache" \
