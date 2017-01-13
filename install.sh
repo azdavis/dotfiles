@@ -26,6 +26,7 @@ main() {
 
     note "installing '$repo' to '$install_dir'"
     if ! [ -e "$install_dir_git" ]; then
+        rm -rf "$install_dir_git"
         mkdir -p "$install_dir_git"
         git clone --bare "$repo" "$install_dir_git"
         git -C "$install_dir_git" config core.bare false
