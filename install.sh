@@ -39,8 +39,6 @@ main() {
     if [ "$SHELL" != "$new_shell" ]; then
         chsh -s "$new_shell" < /dev/tty
     fi
-
-    note "finishing up"
 }
 
 main
