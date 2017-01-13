@@ -5,7 +5,7 @@
 
 cd "$HOME/.config"
 
-lock="update-dotfiles-lock"
+lock="update-dotfiles.lock"
 if ! ln -s $$ "$lock" >/dev/null 2>&1; then
     if kill -0 "$(readlink "$lock")"; then
         abort "there is another instance of update-dotfiles running"
@@ -28,4 +28,4 @@ elif [ "$(curl \
     git pull -q --rebase -X theirs origin master
 fi
 
-date +%s > last-update
+date +%s > update-dotfiles.last

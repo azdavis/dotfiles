@@ -1,4 +1,4 @@
-f="$HOME/.config/last-update"
+f="$HOME/.config/update-dotfiles.last"
 if [ ! -e "$f" ] \
 || expr "$(date +%s)" - "$(cat "$f")" ">=" 604800 >/dev/null; then
     echo "==> updating dotfiles"
