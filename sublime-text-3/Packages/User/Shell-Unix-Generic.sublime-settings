@@ -1,7 +1,9 @@
 {
     "extensions":
     [
+        ".zprofile",
         ".zshrc",
+        "zprofile",
         "zshrc"
     ]
 }

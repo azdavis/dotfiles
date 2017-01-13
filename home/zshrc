@@ -54,10 +54,3 @@ zstyle ":completion:*" matcher-list "m:{a-zA-Z}={A-Za-z}"
 zstyle ":completion:*" menu select
 zstyle ":completion:*" squeeze-slashes true
 zstyle ":completion:*" verbose false
-
-local last_run="$HOME/.config/update.last-run"
-if [ ! -e "$last_run" ] \
-|| expr "$(date +%s)" - "$(cat "$last_run")" ">=" 604800 >/dev/null; then
-    echo "==> updating dotfiles"
-    update-dotfiles
-fi
