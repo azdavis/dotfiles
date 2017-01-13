@@ -36,10 +36,12 @@ main() {
         "$install_dir/bin/do-dotfiles" < /dev/tty
     fi
 
-    note "changing shell to '$new_shell'"
+    note "changing \$SHELL to '$new_shell'"
     if [ "$SHELL" != "$new_shell" ]; then
         chsh -s "$new_shell" < /dev/tty
     fi
+
+    note "finishing up"
 }
 
 main
