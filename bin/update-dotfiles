@@ -15,7 +15,7 @@ elif [ "$(curl \
     -H "If-None-Match: \"$(git rev-parse master)\"" \
     -s -o /dev/null -w "%{http_code}")" -ne 304 \
 ]; then
-    trap '' 2
+    trap "" 2
     git pull --rebase -q -X theirs origin master
 fi
 
