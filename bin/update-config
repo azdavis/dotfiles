@@ -15,6 +15,7 @@ elif [ "$(curl \
     -H "If-None-Match: \"$(git rev-parse master)\"" \
     -s -o /dev/null -w "%{http_code}")" -ne 304 \
 ]; then
+    trap '' 2
     old_origin_master="$(git rev-parse origin/master)"
     git fetch origin master
     git rebase -q -X theirs --onto origin/master "$old_origin_master" master
