@@ -5,6 +5,15 @@
 
 cd "$HOME/.config"
 
+lock="update-dotfiles-lock"
+if ! ln -s $$ "$lock" >/dev/null 2>&1; then
+    if kill -0 "$(readlink "$lock")"; then
+        abort "there is another instance of update-dotfiles running"
+    fi
+    ln -sf $$ "$lock"
+fi
+trap "rm \"$lock\"" EXIT
+
 if ! ping -c 1 -t 3 github.com >/dev/null 2>&1; then
     abort "cannot connect to github.com"
 elif ! git diff-index --quiet master; then
