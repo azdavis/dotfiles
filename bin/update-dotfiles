@@ -19,4 +19,4 @@ elif [ "$(curl \
     git pull -q --rebase -X theirs origin master
 fi
 
-date +%s > update.last-run
+date +%s > last-update
