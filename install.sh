@@ -16,9 +16,7 @@ main() {
 
     note "checking for commands"
     need_cmd "chsh"
-    need_cmd "dirname"
     need_cmd "git"
-    need_cmd "mv"
     need_cmd "zsh"
 
     repo="https://github.com/azdavis/dotfiles"
