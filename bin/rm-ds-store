@@ -5,4 +5,4 @@
 wd="/"
 [ $# -ge 1 ] && wd="$1"
 
-find "$wd" -name .DS_Store -exec rm -v {} \; 2> /dev/null
+find "$wd" -name .DS_Store -exec rm -v {} \; 2>/dev/null

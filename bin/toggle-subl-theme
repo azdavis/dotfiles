@@ -6,9 +6,9 @@
 cd "$HOME/.config/sublime-text/Packages/User"
 
 alias patch="git apply theme/light.patch"
-if patch --check &> /dev/null; then
+if patch --check >/dev/null 2>&1; then
     patch
-elif patch --reverse --check &> /dev/null; then
+elif patch --reverse --check >/dev/null 2>&1; then
     patch --reverse
 else
     abort "patch does not apply in either direction"

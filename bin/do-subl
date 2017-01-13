@@ -4,7 +4,7 @@
 . "$HOME/.config/lib/abort.sh"
 . "$HOME/.config/lib/symlink.sh"
 
-pgrep -f "Sublime Text" > /dev/null \
+pgrep -f "Sublime Text" >/dev/null \
     && abort "sublime text must not be running"
 
 config="$HOME/.config/sublime-text-3"

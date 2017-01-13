@@ -5,7 +5,7 @@ note() {
 }
 
 need_cmd() {
-    which "$1" &> /dev/null && return
+    which "$1" >/dev/null 2>&1 && return
     note "fatal: command not found: $1"
     exit 1
 }

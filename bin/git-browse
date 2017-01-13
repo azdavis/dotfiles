@@ -3,7 +3,7 @@
 . "$HOME/.config/lib/base.sh"
 . "$HOME/.config/lib/abort.sh"
 
-git rev-parse > /dev/null
+git rev-parse >/dev/null
 
 remote="origin"
 [ $# -ge 1 ] && remote="$1"
