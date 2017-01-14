@@ -23,7 +23,7 @@ main() {
     new_shell="$(which zsh)"
 
     note "installing '$repo' to '$dst'"
-    if ! [ -e "$dst_git" ]; then
+    if [ ! -e "$dst_git" ]; then
         tmp="$(mktemp -d)"
         git clone "$repo" "$tmp"
         mkdir -p "$dst"
