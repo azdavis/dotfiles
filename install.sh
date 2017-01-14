@@ -38,8 +38,8 @@ main() {
             comm -12 "$tmp_f1" "$tmp_f2" > "$tmp_f3"
             if [ "$(cat "$tmp_f3" | wc -l)" -gt 0 ]; then
                 ok=false
-                note "the following files in '$dst_d' would be overwritten:"
-                cat "$tmp_f3"
+                note "the following files would be overwritten:"
+                cat "$tmp_f3" | xargs -I {} file "$dst_d/{}"
                 note "continue [yn]?"
                 printf ">>> "
                 read x < /dev/tty
