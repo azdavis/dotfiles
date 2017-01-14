@@ -7,7 +7,7 @@ main() {
     set -o nounset
 
     ok=true
-    for x in [ cat chsh comm file git ls mkdir mv rm sort wc xargs zsh; do
+    for x in [ cat chsh comm git ls mkdir mv rm sort wc zsh; do
         if ! which "$x" >/dev/null 2>&1; then
             note "fatal: command not found: $x"
             ok=false
@@ -40,7 +40,7 @@ main() {
             if [ "$(cat "$tmp_f3" | wc -l)" -gt 0 ]; then
                 ok=false
                 note "the following files would be overwritten:"
-                cat "$tmp_f3" | xargs -I {} file "$dst_d/{}"
+                cat "$tmp_f3"
                 note "continue [yn]?"
                 printf ">>> "
                 read x < /dev/tty
