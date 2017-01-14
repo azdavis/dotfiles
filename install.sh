@@ -25,15 +25,21 @@ main() {
     if [ ! -e "$dst_git" ] \
     || ! git -C "$dst" rev-parse >/dev/null 2>&1 \
     || [ "$(git -C "$dst" config remote.origin.url)" != "$repo" ]; then
+        ok=true
         tmp="$(mktemp -d)"
         trap "rm -rf '$tmp'" EXIT
         git clone "$repo" "$tmp"
-        mkdir -p "$dst"
-        rm -rf "$dst_git"
-        mv "$tmp/.git" "$dst_git"
-        git -C "$dst" reset -q --hard
-        note "doing dotfile actions"
-        "$dst/bin/do-dotfiles" < /dev/tty
+        if [ -e "$dst" ]; then
+            ok=false
+        fi
+        if $ok; then
+            mkdir -p "$dst"
+            rm -rf "$dst_git"
+            mv "$tmp/.git" "$dst_git"
+            git -C "$dst" reset -q --hard
+            note "doing dotfile actions"
+            "$dst/bin/do-dotfiles" < /dev/tty
+        fi
     fi
 
     note "changing \$SHELL to '$new_shell'"
