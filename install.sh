@@ -27,10 +27,18 @@ main() {
     || [ "$(git -C "$dst_d" config remote.origin.url)" != "$repo" ]; then
         ok=true
         tmp_d="$(mktemp -d)"
-        trap "rm -rf '$tmp_d'" EXIT
+        tmp_f1="$(mktemp)"
+        tmp_f2="$(mktemp)"
+        tmp_f3="$(mktemp)"
+        trap "rm -rf '$tmp_d' '$tmp_f1' '$tmp_f2' '$tmp_f3'" EXIT
         git clone "$repo" "$tmp_d"
         if [ -e "$dst_d" ]; then
-            ok=false
+            ls -a1 "$dst_d" | sort > "$tmp_f1"
+            ( echo .git; git -C "$tmp_d" ls-tree --name-only @ ) | sort > "$tmp_f2"
+            comm -12 "$tmp_f1" "$tmp_f2" > "$tmp_f3"
+            if [ "$(cat "$tmp_f3" | wc -l)" -gt 0 ]; then
+                ok=false
+            fi
         fi
         if $ok; then
             mkdir -p "$dst_d"
