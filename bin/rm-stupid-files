@@ -15,10 +15,12 @@ rm -rfv \
     .bash_history \
     .bash_sessions \
     .bundle \
+    .cache \
     .elm \
     .gem \
     .ghc \
     .lldb \
+    .nano \
     .node-gyp \
     .node_repl_history \
     .npm \
