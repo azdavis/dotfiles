@@ -38,6 +38,14 @@ main() {
             comm -12 "$tmp_f1" "$tmp_f2" > "$tmp_f3"
             if [ "$(cat "$tmp_f3" | wc -l)" -gt 0 ]; then
                 ok=false
+                note "the following files in '$dst_d' would be overwritten:"
+                cat "$tmp_f3"
+                note "continue [yn]?"
+                printf ">>> "
+                read x
+                if [ "$x" = y ]; then
+                    ok=true
+                fi
             fi
         fi
         if $ok; then
