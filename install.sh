@@ -12,9 +12,9 @@ main() {
     set -o errexit
     set -o nounset
 
-    need_cmd "chsh"
-    need_cmd "git"
-    need_cmd "zsh"
+    need_cmd chsh
+    need_cmd git
+    need_cmd zsh
 
     repo="https://github.com/azdavis/dotfiles"
     dst_d="$HOME/.config"
