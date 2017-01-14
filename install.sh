@@ -42,7 +42,7 @@ main() {
                 cat "$tmp_f3"
                 note "continue [yn]?"
                 printf ">>> "
-                read x
+                read x < /dev/tty
                 if [ "$x" = y ]; then
                     ok=true
                 fi
