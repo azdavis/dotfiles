@@ -2,19 +2,20 @@ note() {
     echo "==> $1"
 }
 
-need_cmd() {
-    which "$1" >/dev/null 2>&1 && return
-    note "fatal: command not found: $1"
-    exit 1
-}
-
 main() {
     set -o errexit
     set -o nounset
 
-    need_cmd chsh
-    need_cmd git
-    need_cmd zsh
+    ok=true
+    for x in [ cat chsh comm file git ls mkdir mv rm sort wc xargs zsh; do
+        if ! which "$x" >/dev/null 2>&1; then
+            note "fatal: command not found: $x"
+            ok=false
+        fi
+    done
+    if ! $ok; then
+        exit 1
+    fi
 
     repo="https://github.com/azdavis/dotfiles"
     dst_d="$HOME/.config"
