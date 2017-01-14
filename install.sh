@@ -12,7 +12,6 @@ main() {
     set -o errexit
     set -o nounset
 
-    note "checking for commands"
     need_cmd "chsh"
     need_cmd "git"
     need_cmd "zsh"
