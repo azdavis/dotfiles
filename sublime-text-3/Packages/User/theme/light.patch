@@ -1,15 +1,15 @@
-diff --git a/sublime-text/Packages/User/Preferences.sublime-settings b/sublime-text/Packages/User/Preferences.sublime-settings
+diff --git a/sublime-text-3/Packages/User/Preferences.sublime-settings b/sublime-text-3/Packages/User/Preferences.sublime-settings
 index 32501d5..33bde4e 100644
---- a/sublime-text/Packages/User/Preferences.sublime-settings
-+++ b/sublime-text/Packages/User/Preferences.sublime-settings
+--- a/sublime-text-3/Packages/User/Preferences.sublime-settings
++++ b/sublime-text-3/Packages/User/Preferences.sublime-settings
 @@ -21,3 +21,2 @@
      [
 -        "gray_antialias",
          "no_bold",
-diff --git a/sublime-text/Packages/User/theme/Widget - theme.tmTheme b/sublime-text/Packages/User/theme/Widget - theme.tmTheme
+diff --git a/sublime-text-3/Packages/User/theme/Widget - theme.tmTheme b/sublime-text-3/Packages/User/theme/Widget - theme.tmTheme
 index 11c73a0..efe60a9 100644
---- a/sublime-text/Packages/User/theme/Widget - theme.tmTheme
-+++ b/sublime-text/Packages/User/theme/Widget - theme.tmTheme
+--- a/sublime-text-3/Packages/User/theme/Widget - theme.tmTheme
++++ b/sublime-text-3/Packages/User/theme/Widget - theme.tmTheme
 @@ -10,9 +10,9 @@
                      <key>background</key>
 -                    <string>#111</string>
@@ -44,10 +44,10 @@ index 11c73a0..efe60a9 100644
 -                    <string>#aad</string>
 +                    <string>#228</string>
                  </dict>
-diff --git a/sublime-text/Packages/User/theme/theme.sublime-theme b/sublime-text/Packages/User/theme/theme.sublime-theme
+diff --git a/sublime-text-3/Packages/User/theme/theme.sublime-theme b/sublime-text-3/Packages/User/theme/theme.sublime-theme
 index 0487691..2f12633 100644
---- a/sublime-text/Packages/User/theme/theme.sublime-theme
-+++ b/sublime-text/Packages/User/theme/theme.sublime-theme
+--- a/sublime-text-3/Packages/User/theme/theme.sublime-theme
++++ b/sublime-text-3/Packages/User/theme/theme.sublime-theme
 @@ -4,3 +4,3 @@
          "layer0.texture": "",
 -        "layer0.tint": [34, 34, 34],
@@ -441,10 +441,10 @@ index 0487691..2f12633 100644
 -        "layer0.tint": [221, 221, 221]
 +        "layer0.tint": [34, 34, 34]
      },
-diff --git a/sublime-text/Packages/User/theme/theme.tmTheme b/sublime-text/Packages/User/theme/theme.tmTheme
+diff --git a/sublime-text-3/Packages/User/theme/theme.tmTheme b/sublime-text-3/Packages/User/theme/theme.tmTheme
 index 39d0990..43f374b 100644
---- a/sublime-text/Packages/User/theme/theme.tmTheme
-+++ b/sublime-text/Packages/User/theme/theme.tmTheme
+--- a/sublime-text-3/Packages/User/theme/theme.tmTheme
++++ b/sublime-text-3/Packages/User/theme/theme.tmTheme
 @@ -10,15 +10,15 @@
                      <key>background</key>
 -                    <string>#000</string>
