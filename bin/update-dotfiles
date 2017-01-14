@@ -12,7 +12,7 @@ if ! ln -s $$ "$lock" >/dev/null 2>&1; then
     fi
     ln -sf $$ "$lock"
 fi
-trap "rm \"$lock\"" EXIT
+trap "rm '$lock'" EXIT
 
 if ! ping -c 1 github.com >/dev/null 2>&1; then
     abort "cannot connect to github.com"
