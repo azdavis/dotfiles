@@ -25,7 +25,7 @@ elif [ "$(curl \
     -s -o /dev/null -w "%{http_code}")" -ne 304 \
 ]; then
     trap "" 2
-    git pull -q --rebase -X theirs origin master
+    git pull -q --rebase -X theirs origin master >/dev/null
 fi
 
 date +%s > update-dotfiles.last
