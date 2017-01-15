@@ -28,4 +28,6 @@ elif [ "$(curl \
     git pull -q --rebase -X theirs origin master >/dev/null
 fi
 
-date +%s > update-dotfiles.last
+last="update-dotfiles.last"
+rm -rf "$last"
+date +%s > "$last"
