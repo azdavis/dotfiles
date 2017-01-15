@@ -7,7 +7,7 @@ main() {
     set -o nounset
 
     ok=true
-    for x in [ cat chsh comm git ls mkdir mktemp mv rm sort wc zsh; do
+    for x in cat chsh comm git ls mkdir mktemp mv rm sort wc zsh; do
         if ! which "$x" >/dev/null 2>&1; then
             note "fatal: command not found: $x"
             ok=false
