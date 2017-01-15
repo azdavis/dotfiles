@@ -18,6 +18,10 @@ if ! ln -s $$ "$lock" >/dev/null 2>&1; then
 fi
 trap "rm -rf '$lock'" EXIT
 
+last="update-dotfiles.last"
+rm -rf "$last"
+date +%s > "$last"
+
 if ! ping -c 1 github.com >/dev/null 2>&1; then
     abort "cannot connect to github.com"
 elif ! git diff-index --quiet master; then
@@ -31,7 +35,3 @@ elif [ "$(curl \
     trap "" 2
     git pull -q --rebase -X theirs origin master >/dev/null
 fi
-
-last="update-dotfiles.last"
-rm -rf "$last"
-date +%s > "$last"
