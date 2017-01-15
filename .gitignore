@@ -3,7 +3,6 @@
 /*
 
 !/bin
-!/git
 !/home
 !/lib
 !/mpv
@@ -15,6 +14,9 @@
 !/install.sh
 !/license.md
 !/readme.md
+
+!/git
+/git/credentials
 
 !/sublime-text-3
 /sublime-text-3/*
