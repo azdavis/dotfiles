@@ -33,7 +33,11 @@ main() {
         git clone "$repo" "$tmp_d"
         if [ -e "$dst_d" ]; then
             ls -a1 "$dst_d" | sort > "$tmp_f1"
-            ( echo .git; git -C "$tmp_d" ls-tree --name-only @ ) | sort > "$tmp_f2"
+            ( echo .git; \
+              echo update-dotfiles.last; \
+              echo update-dotfiles.lock; \
+              git -C "$tmp_d" ls-tree --name-only @ \
+            ) | sort > "$tmp_f2"
             comm -12 "$tmp_f1" "$tmp_f2" > "$tmp_f3"
             if [ "$(cat "$tmp_f3" | wc -l)" -gt 0 ]; then
                 should_install=false
