@@ -17,6 +17,7 @@ rm -rfv \
     .bundle \
     .cache \
     .config/gnome-session \
+    .config/gtk-2.0 \
     .config/gtk-3.0 \
     .config/nautilus \
     .config/update-notifier \
