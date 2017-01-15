@@ -54,6 +54,7 @@ main() {
             git -C "$dst_d" reset -q --hard
             note "doing dotfile actions"
             "$dst_d/bin/do-dotfiles" < /dev/tty
+            "$dst_d/bin/update-dotfiles"
         fi
     fi
 
