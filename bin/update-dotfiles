@@ -30,8 +30,10 @@ elif [ "$(curl \
     "https://api.github.com/repos/azdavis/dotfiles/commits/master" \
     -H "Accept: application/vnd.github.chitauri-preview+sha" \
     -H "If-None-Match: \"$(git rev-parse master)\"" \
-    -s -o /dev/null -w "%{http_code}")" -ne 304 \
+    -s -o /dev/null -w "%{http_code}")" -eq 304 \
 ]; then
-    trap "" 2
-    git pull -q --rebase -X theirs origin master >/dev/null
+    exit
 fi
+
+trap "" 2
+git pull -q --rebase -X theirs origin master >/dev/null
