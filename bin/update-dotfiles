@@ -6,6 +6,9 @@
 cd "$HOME/.config"
 
 lock="update-dotfiles.lock"
+if [ ! -L "$lock" ]; then
+    rm -rf "$lock"
+fi
 if ! ln -s $$ "$lock" >/dev/null 2>&1; then
     if kill -0 "$(readlink "$lock")"; then
         abort "there is another instance of update-dotfiles running"
