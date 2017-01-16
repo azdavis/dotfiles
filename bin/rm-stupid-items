@@ -4,7 +4,7 @@
 
 cd
 
-"$HOME/.config/bin/rm-ds-store" .
+"$HOME/.config/bin/rm-ds-stores" .
 
 if [ -e Applications ] \
 && [ "$(find Applications -not -name .localized | wc -l)" -eq 1 ]; then
