@@ -40,11 +40,9 @@ if [ "$(curl \
     git fetch origin master
 fi
 
-cur_m="$(git rev-parse master)"
-cur_m_short="$(git rev-parse --short master)"
+cur_m="$(git rev-parse --short master)"
 git rebase -q -X theirs --onto origin/master "$cur_om" master >/dev/null
-new_m="$(git rev-parse master)"
-new_m_short="$(git rev-parse --short master)"
+new_m="$(git rev-parse --short master)"
 if [ "$cur_m" = "$new_m" ]; then
     echo "already up-to-date"
 else
