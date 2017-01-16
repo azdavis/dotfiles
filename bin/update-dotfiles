@@ -28,18 +28,25 @@ elif ! git diff-index --quiet master; then
     abort "there are uncommited changes"
 fi
 
+trap "" 2
+
+cur_om="$(git rev-parse origin/master)"
 if [ "$(curl \
     "https://api.github.com/repos/azdavis/dotfiles/commits/master" \
     -H "Accept: application/vnd.github.chitauri-preview+sha" \
-    -H "If-None-Match: \"$(git rev-parse origin/master)\"" \
-    -s -o /dev/null -w "%{http_code}")" -eq 304 \
+    -H "If-None-Match: \"$cur_om\"" \
+    -s -o /dev/null -w "%{http_code}")" -ne 304 \
 ]; then
-    echo "already up-to-date"
-    exit
+    git fetch origin master
 fi
 
-trap "" 2
-old="$(git rev-parse --short origin/master)"
-git pull -q --rebase -X theirs origin master >/dev/null
-new="$(git rev-parse --short origin/master)"
-echo "updated dotfiles from $old to $new"
+cur_m="$(git rev-parse master)"
+cur_m_short="$(git rev-parse --short master)"
+git rebase -q -X theirs --onto origin/master "$cur_om" master >/dev/null
+new_m="$(git rev-parse master)"
+new_m_short="$(git rev-parse --short master)"
+if [ "$cur_m" = "$new_m" ]; then
+    echo "already up-to-date"
+else
+    echo "updated dotfiles from $cur_m to $new_m"
+fi
