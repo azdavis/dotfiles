@@ -32,8 +32,12 @@ elif [ "$(curl \
     -H "If-None-Match: \"$(git rev-parse master)\"" \
     -s -o /dev/null -w "%{http_code}")" -eq 304 \
 ]; then
+    echo "already up-to-date"
     exit
 fi
 
 trap "" 2
+old="$(git rev-parse --short master)"
 git pull -q --rebase -X theirs origin master >/dev/null
+new="$(git rev-parse --short master)"
+echo "updated dotfiles from $old to $new"
