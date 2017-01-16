@@ -29,7 +29,7 @@ elif ! git diff-index --quiet master; then
 elif [ "$(curl \
     "https://api.github.com/repos/azdavis/dotfiles/commits/master" \
     -H "Accept: application/vnd.github.chitauri-preview+sha" \
-    -H "If-None-Match: \"$(git rev-parse master)\"" \
+    -H "If-None-Match: \"$(git rev-parse origin/master)\"" \
     -s -o /dev/null -w "%{http_code}")" -eq 304 \
 ]; then
     echo "already up-to-date"
@@ -37,7 +37,7 @@ elif [ "$(curl \
 fi
 
 trap "" 2
-old="$(git rev-parse --short master)"
+old="$(git rev-parse --short origin/master)"
 git pull -q --rebase -X theirs origin master >/dev/null
-new="$(git rev-parse --short master)"
+new="$(git rev-parse --short origin/master)"
 echo "updated dotfiles from $old to $new"
