@@ -37,7 +37,7 @@ if [ "$(curl \
     -H "If-None-Match: \"$cur_om\"" \
     -s -o /dev/null -w "%{http_code}")" -ne 304 \
 ]; then
-    git fetch origin master
+    git fetch -q origin master
 fi
 
 cur_m="$(git rev-parse --short master)"
