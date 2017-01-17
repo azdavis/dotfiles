@@ -3,7 +3,6 @@
 [core]
 	editor = subl -w
 	pager = less -FRSX
-	untrackedCache = true
 [credential]
 	helper = osxkeychain
 [diff]
