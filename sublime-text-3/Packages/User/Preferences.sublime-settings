@@ -16,6 +16,14 @@
     "ensure_newline_at_eof_on_save": true,
     "find_selected_text": true,
     "fold_buttons": false,
+    "folder_exclude_patterns":
+    [
+        ".git",
+        ".hg",
+        ".svn",
+        "CVS",
+        "node_modules"
+    ],
     "font_face": "input",
     "font_options":
     [
