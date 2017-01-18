@@ -1,8 +1,8 @@
 diff --git a/sublime-text-3/Packages/User/Preferences.sublime-settings b/sublime-text-3/Packages/User/Preferences.sublime-settings
-index 32501d5..33bde4e 100644
+index 5d73356..e351eb5 100644
 --- a/sublime-text-3/Packages/User/Preferences.sublime-settings
 +++ b/sublime-text-3/Packages/User/Preferences.sublime-settings
-@@ -21,3 +21,2 @@
+@@ -29,3 +29,2 @@
      [
 -        "gray_antialias",
          "no_bold",
@@ -45,7 +45,7 @@ index 11c73a0..efe60a9 100644
 +                    <string>#228</string>
                  </dict>
 diff --git a/sublime-text-3/Packages/User/theme/theme.sublime-theme b/sublime-text-3/Packages/User/theme/theme.sublime-theme
-index 0487691..2f12633 100644
+index 8261674..48d4ca4 100644
 --- a/sublime-text-3/Packages/User/theme/theme.sublime-theme
 +++ b/sublime-text-3/Packages/User/theme/theme.sublime-theme
 @@ -4,3 +4,3 @@
