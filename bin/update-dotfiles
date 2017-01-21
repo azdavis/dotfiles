@@ -24,7 +24,7 @@ date +%s > "$last"
 
 if ! ping -c 1 github.com >/dev/null 2>&1; then
     abort "cannot connect to github.com"
-elif ! git diff-index --quiet master; then
+elif ! git diff-index --quiet @ --; then
     abort "there are uncommited changes"
 fi
 
