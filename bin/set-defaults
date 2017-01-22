@@ -15,6 +15,7 @@ dw -g com.apple.springing.delay -float 0.5
 dw -g com.apple.springing.enabled -bool true
 dw -g InitialKeyRepeat -int 25
 dw -g KeyRepeat -int 2
+dw -g NSAutomaticQuoteSubstitutionEnabled -bool false
 dw -g NSAutomaticSpellingCorrectionEnabled -bool false
 dw -g NSAutomaticWindowAnimationsEnabled -bool false
 dw -g NSCloseAlwaysConfirmsChanges -bool true
