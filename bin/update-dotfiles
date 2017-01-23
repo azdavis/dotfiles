@@ -22,10 +22,12 @@ last="update-dotfiles.last"
 rm -rf "$last"
 date +%s > "$last"
 
+if [ -n "$(git status --porcelain | head -n 1)" ]; then
+    abort "there are uncommited changes"
+fi
+
 if ! ping -c 1 github.com >/dev/null 2>&1; then
     abort "cannot connect to github.com"
-elif [ -n "$(git status --porcelain | head -n 1)" ]; then
-    abort "there are uncommited changes"
 fi
 
 cur_om="$(git rev-parse origin/master)"
