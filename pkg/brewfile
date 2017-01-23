@@ -4,19 +4,15 @@ tap "homebrew/core"
 
 brew "coreutils", args: ["build-from-source"]
 brew "entr"
-brew "gdbm"
 brew "ghc"
 brew "git"
 brew "gnupg", args: ["build-from-source"]
 brew "node"
 brew "openssl"
-brew "python3"
 brew "readline"
 brew "rlwrap"
-brew "sqlite"
 brew "tarsnap"
 brew "tree"
-brew "xz"
 # brew "valgrind"
 
 cask "alfred"
