@@ -6,6 +6,6 @@ symlink() {
         [ "$x" != y ] && return
         rm -rf "$2"
     fi
-    mkdir -pv "$(dirname "$2")"
-    ln -sv "$1" "$2"
+    mkdir -p "$(dirname "$2")"
+    ln -s "$1" "$2"
 }
