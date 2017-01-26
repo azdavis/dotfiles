@@ -22,7 +22,7 @@ last="update-dotfiles.last"
 rm -rf "$last"
 date +%s > "$last"
 
-git update-index --refresh
+git update-index -q --refresh
 if ! git diff-index --quiet @ --; then
     abort "there are uncommited changes"
 fi
