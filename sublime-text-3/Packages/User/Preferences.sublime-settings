@@ -21,6 +21,7 @@
         ".git",
         ".hg",
         ".svn",
+        "build",
         "CVS",
         "node_modules"
     ],
