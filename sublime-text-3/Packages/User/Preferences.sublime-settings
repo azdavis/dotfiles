@@ -36,6 +36,7 @@
     "hot_exit": false,
     "ignored_packages":
     [
+        "JavaScript",
         "Markdown",
         "Vintage"
     ],

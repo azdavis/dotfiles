@@ -5,6 +5,7 @@
     ],
     "installed_packages":
     [
+        "Babel",
         "Git Commit Message Syntax",
         "Markdown Extended",
         "Package Control",
