@@ -8,10 +8,10 @@ cd
 
 if [ -e Applications ] \
 && [ "$(find Applications -not -name .localized | wc -l)" -eq 1 ]; then
-    rm -rv Applications
+    rm -r Applications
 fi
 
-rm -rfv \
+rm -rf \
     .bash_history \
     .bash_sessions \
     .bundle \

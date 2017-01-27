@@ -7,4 +7,4 @@ if [ $# -ge 1 ]; then
     wd="$1"
 fi
 
-find "$wd" -name .DS_Store -exec rm -v {} \; 2>/dev/null
+find "$wd" -name .DS_Store -delete 2>/dev/null
