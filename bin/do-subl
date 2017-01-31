@@ -11,6 +11,7 @@ fi
 config="$HOME/.config/sublime-text-3"
 symlink "$config" "$HOME/Library/Application Support/Sublime Text 3"
 rm -rf \
+    "$config/Backup" \
     "$config/Cache" \
     "$config/Index" \
     "$config/Local/Auto Save Session.sublime_session" \
