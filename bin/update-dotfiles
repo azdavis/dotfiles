@@ -41,11 +41,12 @@ if [ "$(curl \
     git fetch -q origin master
 fi
 
+if git merge-base --is-ancestor origin/master master; then
+    echo "already up-to-date"
+    exit
+fi
+
 cur_m="$(git rev-parse --short master)"
 git rebase -q -X theirs --onto origin/master "$cur_om" master >/dev/null
 new_m="$(git rev-parse --short master)"
-if [ "$cur_m" = "$new_m" ]; then
-    echo "already up-to-date"
-else
-    echo "updated dotfiles from $cur_m to $new_m"
-fi
+echo "updated dotfiles from $cur_m to $new_m"
