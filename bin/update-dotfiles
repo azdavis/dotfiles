@@ -31,11 +31,11 @@ if ! ping -c 1 github.com >/dev/null 2>&1; then
     abort "cannot connect to github.com"
 fi
 
-cur_om="$(git rev-parse origin/master)"
+old_om="$(git rev-parse origin/master)"
 if [ "$(curl \
     "https://api.github.com/repos/azdavis/dotfiles/commits/master" \
     -H "Accept: application/vnd.github.chitauri-preview+sha" \
-    -H "If-None-Match: \"$cur_om\"" \
+    -H "If-None-Match: \"$old_om\"" \
     -s -o /dev/null -w "%{http_code}")" -ne 304 \
 ]; then
     git fetch -q origin master
@@ -46,7 +46,7 @@ if git merge-base --is-ancestor origin/master master; then
     exit
 fi
 
-cur_m="$(git rev-parse --short master)"
-git rebase -q -X theirs --onto origin/master "$cur_om" master >/dev/null
+old_m="$(git rev-parse --short master)"
+git rebase -q -X theirs --onto origin/master "$old_om" master >/dev/null
 new_m="$(git rev-parse --short master)"
-echo "updated dotfiles from $cur_m to $new_m"
+echo "updated dotfiles from $old_m to $new_m"
