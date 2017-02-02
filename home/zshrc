@@ -24,7 +24,6 @@ setopt \
     rmstarsilent
 
 alias \
-    c="tput reset" \
     df="df -h" \
     du="du -sh" \
     grep="grep --color=auto" \
@@ -32,6 +31,10 @@ alias \
     subl="subl -a" \
     tree="tree --dirsfirst" \
     valgrind="valgrind --suppressions=$HOME/.config/valgrind/supp.supp"
+
+alias \
+    c="tput reset" \
+    ej="diskutil eject disk2"
 
 alias \
     ga="git add" \
