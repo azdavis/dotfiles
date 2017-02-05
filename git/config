@@ -9,6 +9,8 @@
 [diff]
 	algorithm = histogram
 	compactionHeuristic = true
+[init]
+	templateDir = /var/empty
 [merge]
 	ff = only
 [pull]
