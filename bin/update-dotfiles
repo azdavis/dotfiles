@@ -22,7 +22,7 @@ last="update-dotfiles.last"
 rm -rf "$last"
 date +%s > "$last"
 
-if [ "$(git status -u --porcelain | wc -l)" -gt 0 ]; then
+if [ "$(git status -u --porcelain | wc -l)" -ne 0 ]; then
     abort "there are uncommited changes"
 fi
 

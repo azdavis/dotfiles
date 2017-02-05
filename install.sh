@@ -43,7 +43,7 @@ install_repo() {
           git -C "$tmp_d" ls-tree --name-only @ \
         ) | sort > "$tmp_f2"
         comm -12 "$tmp_f1" "$tmp_f2" > "$tmp_f3"
-        if [ "$(cat "$tmp_f3" | wc -l)" -gt 0 ]; then
+        if [ "$(cat "$tmp_f3" | wc -l)" -ne 0 ]; then
             note "the following items in '$dst_d' would be replaced:"
             cat "$tmp_f3"
             note "continue [yn]?"
