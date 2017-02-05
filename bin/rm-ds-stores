@@ -7,5 +7,4 @@ if [ $# -ge 1 ]; then
     wd="$1"
 fi
 
-find "$wd" -name .DS_Store -delete 2>/dev/null
-true
+find "$wd" -name .DS_Store -delete 2>/dev/null || true
