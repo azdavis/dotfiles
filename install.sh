@@ -2,10 +2,7 @@ note() {
     echo "==> $1"
 }
 
-main() {
-    set -o errexit
-    set -o nounset
-
+check_for_commands() {
     have_all=true
     for x in cat chsh comm git ls mkdir mktemp mv rm sort wc zsh; do
         if ! which "$x" >/dev/null 2>&1; then
@@ -16,6 +13,13 @@ main() {
     if ! $have_all; then
         exit 1
     fi
+}
+
+main() {
+    set -o errexit
+    set -o nounset
+
+    check_for_commands
 
     repo="https://github.com/azdavis/dotfiles"
     dst_d="$HOME/.config"
