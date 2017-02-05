@@ -20,39 +20,45 @@ install_repo() {
     dst_d="$HOME/.config"
     dst_d_git="$dst_d/.git"
     note "installing '$repo' to '$dst_d'"
-    if [ ! -e "$dst_d_git" ] \
-    || ! git -C "$dst_d" rev-parse >/dev/null 2>&1 \
-    || [ "$(git -C "$dst_d" config remote.origin.url)" != "$repo" ]; then
-        tmp_d="$(mktemp -d)"
-        tmp_f1="$(mktemp)"
-        tmp_f2="$(mktemp)"
-        tmp_f3="$(mktemp)"
-        trap "rm -rf '$tmp_d' '$tmp_f1' '$tmp_f2' '$tmp_f3'" EXIT
-        git clone "$repo" "$tmp_d"
-        if [ -e "$dst_d" ]; then
-            ls -a1 "$dst_d" | sort > "$tmp_f1"
-            ( echo .git; \
-              echo update-dotfiles.last; \
-              echo update-dotfiles.lock; \
-              git -C "$tmp_d" ls-tree --name-only @ \
-            ) | sort > "$tmp_f2"
-            comm -12 "$tmp_f1" "$tmp_f2" > "$tmp_f3"
-            if [ "$(cat "$tmp_f3" | wc -l)" -gt 0 ]; then
-                note "the following items in '$dst_d' would be replaced:"
-                cat "$tmp_f3"
-                note "continue [yn]?"
-                printf ">>> "
-                read x < /dev/tty
-                if [ "$x" != y ]; then
-                    exit
-                fi
+
+    if [ -e "$dst_d_git" ] \
+    && git -C "$dst_d" rev-parse >/dev/null 2>&1 \
+    && [ "$(git -C "$dst_d" config remote.origin.url)" == "$repo" ]; then
+        return
+    fi
+
+    tmp_d="$(mktemp -d)"
+    tmp_f1="$(mktemp)"
+    tmp_f2="$(mktemp)"
+    tmp_f3="$(mktemp)"
+    trap "rm -rf '$tmp_d' '$tmp_f1' '$tmp_f2' '$tmp_f3'" EXIT
+
+    git clone "$repo" "$tmp_d"
+
+    if [ -e "$dst_d" ]; then
+        ls -a1 "$dst_d" | sort > "$tmp_f1"
+        ( echo .git; \
+          echo update-dotfiles.last; \
+          echo update-dotfiles.lock; \
+          git -C "$tmp_d" ls-tree --name-only @ \
+        ) | sort > "$tmp_f2"
+        comm -12 "$tmp_f1" "$tmp_f2" > "$tmp_f3"
+        if [ "$(cat "$tmp_f3" | wc -l)" -gt 0 ]; then
+            note "the following items in '$dst_d' would be replaced:"
+            cat "$tmp_f3"
+            note "continue [yn]?"
+            printf ">>> "
+            read x < /dev/tty
+            if [ "$x" != y ]; then
+                exit
             fi
         fi
-        mkdir -p "$dst_d"
-        rm -rf "$dst_d_git"
-        mv "$tmp_d/.git" "$dst_d_git"
-        git -C "$dst_d" reset -q --hard
     fi
+
+    mkdir -p "$dst_d"
+    rm -rf "$dst_d_git"
+    mv "$tmp_d/.git" "$dst_d_git"
+    git -C "$dst_d" reset -q --hard
 }
 
 do_home_actions() {
@@ -63,9 +69,12 @@ do_home_actions() {
 change_shell() {
     new_shell="$(which zsh)"
     note "changing \$SHELL to '$new_shell'"
-    if [ "$SHELL" != "$new_shell" ]; then
-        chsh -s "$new_shell" < /dev/tty
+
+    if [ "$SHELL" == "$new_shell" ]; then
+        return
     fi
+
+    chsh -s "$new_shell" < /dev/tty
 }
 
 main() {
