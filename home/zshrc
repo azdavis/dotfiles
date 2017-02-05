@@ -48,7 +48,7 @@ alias \
     gr="git reset" \
     grb="git rebase" \
     gs="git status" \
-    gsh="git show --format=fuller"
+    gsh="git show --pretty=fuller"
 
 autoload -U compinit
 compinit -u
