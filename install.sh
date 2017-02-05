@@ -6,14 +6,14 @@ main() {
     set -o errexit
     set -o nounset
 
-    have_all_cmds=true
+    have_all=true
     for x in cat chsh comm git ls mkdir mktemp mv rm sort wc zsh; do
         if ! which "$x" >/dev/null 2>&1; then
             note "fatal: command not found: $x"
-            have_all_cmds=false
+            have_all=false
         fi
     done
-    if ! $have_all_cmds; then
+    if ! $have_all; then
         exit 1
     fi
 
