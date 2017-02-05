@@ -50,7 +50,8 @@ install_repo() {
             printf ">>> "
             read x < /dev/tty
             if [ "$x" != y ]; then
-                exit
+                note "cancelling install"
+                exit 1
             fi
         fi
     fi
