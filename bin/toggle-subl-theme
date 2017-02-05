@@ -5,7 +5,7 @@
 
 cd "$HOME/.config/sublime-text-3/Packages/User"
 
-alias patch="git apply theme/light.patch"
+alias patch="git apply theme/patch/light.patch"
 if patch --check >/dev/null 2>&1; then
     patch
 elif patch --reverse --check >/dev/null 2>&1; then
