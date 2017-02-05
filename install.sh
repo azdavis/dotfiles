@@ -15,12 +15,7 @@ check_for_commands() {
     fi
 }
 
-main() {
-    set -o errexit
-    set -o nounset
-
-    check_for_commands
-
+install_repo() {
     repo="https://github.com/azdavis/dotfiles"
     dst_d="$HOME/.config"
     dst_d_git="$dst_d/.git"
@@ -58,15 +53,28 @@ main() {
         mv "$tmp_d/.git" "$dst_d_git"
         git -C "$dst_d" reset -q --hard
     fi
+}
 
+do_home_actions() {
     note "doing home actions"
     "$dst_d/bin/do-home" < /dev/tty
+}
 
+change_shell() {
     new_shell="$(which zsh)"
     note "changing \$SHELL to '$new_shell'"
     if [ "$SHELL" != "$new_shell" ]; then
         chsh -s "$new_shell" < /dev/tty
     fi
+}
+
+main() {
+    set -o errexit
+    set -o nounset
+    check_for_commands
+    install_repo
+    do_home_actions
+    change_shell
 }
 
 main
