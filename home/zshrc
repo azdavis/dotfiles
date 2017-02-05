@@ -44,10 +44,10 @@ alias \
     gi="git init" \
     gk="git checkout" \
     gl="git log --all --decorate --graph --oneline" \
-    gm="git merge --ff-only" \
+    gm="git merge" \
     gr="git reset" \
     grb="git rebase" \
-    gs="git status -sb" \
+    gs="git status" \
     gsh="git show --format=fuller"
 
 autoload -U compinit

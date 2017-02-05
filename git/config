@@ -9,10 +9,15 @@
 [diff]
 	algorithm = histogram
 	compactionHeuristic = true
+[merge]
+	ff = only
 [pull]
 	rebase = true
 [push]
 	default = simple
+[status]
+	branch = true
+	short = true
 [url "https://"]
 	insteadOf = git://
 [user]
