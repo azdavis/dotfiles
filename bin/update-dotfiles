@@ -24,8 +24,8 @@ date +%s > "$last"
 
 old_m="$(git rev-parse --short master)"
 if [ "$(git status -u --porcelain | wc -l)" -ne 0 ]; then
+    echo "stashing uncommitted changes"
     git stash save -q -u "update-dotfiles $old_m $(date)"
-    echo "uncommitted changes stashed"
 fi
 
 if ! ping -c 1 github.com >/dev/null 2>&1; then
