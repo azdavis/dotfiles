@@ -4,4 +4,4 @@ a potpourri of macOS dotfiles
 
 ## install
 
-    curl -fsSL https://git.io/vM2Jb | sh
+    curl -fsSL http://d.azdavis.xyz | sh
