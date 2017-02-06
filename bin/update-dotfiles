@@ -22,8 +22,10 @@ last="update-dotfiles.last"
 rm -rf "$last"
 date +%s > "$last"
 
+old_m="$(git rev-parse --short master)"
 if [ "$(git status -u --porcelain | wc -l)" -ne 0 ]; then
-    abort "there are uncommited changes"
+    git stash save -q -u "update-dotfiles $old_m $(date)"
+    echo "uncommitted changes stashed"
 fi
 
 if ! ping -c 1 github.com >/dev/null 2>&1; then
@@ -45,7 +47,6 @@ if git merge-base --is-ancestor origin/master master; then
     exit
 fi
 
-old_m="$(git rev-parse --short master)"
 git rebase -q -X theirs --onto origin/master "$old_om" master >/dev/null
 new_m="$(git rev-parse --short master)"
 echo "updated dotfiles from $old_m to $new_m"
