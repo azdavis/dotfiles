@@ -34,7 +34,7 @@ alias \
 
 alias \
     c="tput reset" \
-    ej="diskutil eject disk2"
+    ej="cd; diskutil eject disk2"
 
 alias \
     ga="git add" \
