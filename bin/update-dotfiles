@@ -45,4 +45,4 @@ fi
 old_head="$(git rev-parse --short @)"
 git rebase -q -X theirs --onto origin/master "$old_om" >/dev/null
 new_head="$(git rev-parse --short @)"
-echo "updated dotfiles from $old_head to $new_head"
+echo "$old_head -> $new_head"
