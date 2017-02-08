@@ -22,12 +22,6 @@ last="update-dotfiles.last"
 rm -rf "$last"
 date +%s > "$last"
 
-if [ "$(git status -u --porcelain | wc -l)" -ne 0 ]; then
-    echo "auto-committing changes"
-    git add -A
-    git commit -q -m "update-dotfiles auto-commit"
-fi
-
 if ! ping -c 1 github.com >/dev/null 2>&1; then
     abort "cannot connect to github.com"
 fi
@@ -40,6 +34,12 @@ if [ "$(curl \
     -s -o /dev/null -w "%{http_code}")" -ne 304 \
 ]; then
     git fetch -q origin master
+fi
+
+if [ "$(git status -u --porcelain | wc -l)" -ne 0 ]; then
+    echo "auto-committing changes"
+    git add -A
+    git commit -q -m "update-dotfiles auto-commit"
 fi
 
 if git merge-base --is-ancestor origin/master @; then
