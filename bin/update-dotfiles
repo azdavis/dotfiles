@@ -33,7 +33,6 @@ if [ "$(curl \
 fi
 
 if [ "$(git status -u --porcelain | wc -l)" -ne 0 ]; then
-    echo "auto-committing changes"
     git add -A
     git commit -q -m "update-dotfiles auto-commit"
 fi
