@@ -22,10 +22,6 @@ last="update-dotfiles.last"
 rm -rf "$last"
 date +%s > "$last"
 
-if ! ping -c 1 github.com >/dev/null 2>&1; then
-    abort "cannot connect to github.com"
-fi
-
 old_om="$(git rev-parse origin/master)"
 if [ "$(curl \
     "https://api.github.com/repos/azdavis/dotfiles/commits/master" \
