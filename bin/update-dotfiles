@@ -22,10 +22,10 @@ last="update-dotfiles.last"
 rm -rf "$last"
 date +%s > "$last"
 
-old_m="$(git rev-parse --short master)"
 if [ "$(git status -u --porcelain | wc -l)" -ne 0 ]; then
-    echo "stashing uncommitted changes"
-    git stash save -q -u "update-dotfiles $old_m $(date)"
+    echo "auto-committing changes"
+    git add -A
+    git commit -q -m "update-dotfiles auto-commit"
 fi
 
 if ! ping -c 1 github.com >/dev/null 2>&1; then
@@ -42,11 +42,12 @@ if [ "$(curl \
     git fetch -q origin master
 fi
 
-if git merge-base --is-ancestor origin/master master; then
+if git merge-base --is-ancestor origin/master @; then
     echo "already up-to-date"
     exit
 fi
 
-git rebase -q -X theirs --onto origin/master "$old_om" master >/dev/null
-new_m="$(git rev-parse --short master)"
-echo "updated dotfiles from $old_m to $new_m"
+old_om_short="$(git rev-parse --short origin/master)"
+git rebase -q -X theirs --onto origin/master "$old_om" >/dev/null
+new_om_short="$(git rev-parse --short origin/master)"
+echo "updated dotfiles from $old_om_short to $new_om_short"
