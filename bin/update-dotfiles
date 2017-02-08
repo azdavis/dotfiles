@@ -47,7 +47,7 @@ if git merge-base --is-ancestor origin/master @; then
     exit
 fi
 
-old_om_short="$(git rev-parse --short origin/master)"
+old_head="$(git rev-parse --short @)"
 git rebase -q -X theirs --onto origin/master "$old_om" >/dev/null
-new_om_short="$(git rev-parse --short origin/master)"
-echo "updated dotfiles from $old_om_short to $new_om_short"
+new_head="$(git rev-parse --short @)"
+echo "updated dotfiles from $old_head to $new_head"
