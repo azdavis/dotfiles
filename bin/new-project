@@ -81,8 +81,7 @@ if [ -n "$t" ]; then
     add_template "$t"
 fi
 
-sort -o "$absolute_name/.gitignore" "$absolute_name/.gitignore"
-
 cd "$absolute_name"
+sort -o .gitignore .gitignore
 git add -A
 git commit -q -m "start project"
