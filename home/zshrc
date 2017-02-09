@@ -39,12 +39,16 @@ alias \
 alias \
     ga="git add" \
     gb="git branch" \
+    gbr="git browse" \
     gc="git commit" \
+    gcl="git clone" \
     gd="git diff" \
     gi="git init" \
     gk="git checkout" \
     gl="git log --all --decorate --graph --oneline" \
     gm="git merge" \
+    gp="git push" \
+    gpl="git pull" \
     gr="git reset" \
     grb="git rebase" \
     gs="git status" \
