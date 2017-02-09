@@ -1,0 +1,27 @@
+#!/bin/sh
+
+. "$HOME/.config/lib/base.sh"
+
+usage() {
+    echo "usage: $(basename "$0") <directory>"
+    exit 1
+}
+
+if [ $# -eq 0 ]; then
+    usage
+fi
+
+templates="$HOME/.config/templates"
+name="$1"
+copy() {
+    cp "$templates/base/$1" "$name/$1"
+}
+replace() {
+    sed "s/{{$1}}/$2/g" "$templates/base/$3" > "$name/$3"
+}
+
+mkdir -p "$name/src"
+git -C "$name" init -q
+copy .gitignore
+replace year "$(date +%Y)" license.md
+replace name "$1" readme.md
