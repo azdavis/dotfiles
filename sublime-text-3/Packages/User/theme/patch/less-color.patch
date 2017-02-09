@@ -1,5 +1,5 @@
 diff --git a/sublime-text-3/Packages/User/theme/theme.tmTheme b/sublime-text-3/Packages/User/theme/theme.tmTheme
-index 39d0990..d89b35b 100644
+index 39d0990..328ad49 100644
 --- a/sublime-text-3/Packages/User/theme/theme.tmTheme
 +++ b/sublime-text-3/Packages/User/theme/theme.tmTheme
 @@ -56,3 +56,3 @@
@@ -7,24 +7,17 @@ index 39d0990..d89b35b 100644
 -                <string>entity.name.tag, keyword, markup.deleted, markup.heading punctuation, meta.selector, meta.tag, storage, support.function</string>
 +                <string>markup.deleted</string>
                  <key>settings</key>
-@@ -65,11 +65,2 @@
+@@ -65,3 +65,3 @@
                  <key>scope</key>
 -                <string>variable.language, constant.language.this</string>
--                <key>settings</key>
--                <dict>
--                    <key>foreground</key>
--                    <string>#dad</string>
--                </dict>
--            </dict>
--            <dict>
--                <key>scope</key>
-                 <string>string, keyword.operator.heredoc, keyword.control.heredoc-token</string>
-@@ -83,3 +74,3 @@
++                <string>-</string>
+                 <key>settings</key>
+@@ -83,3 +83,3 @@
                  <key>scope</key>
 -                <string>entity.name.type, entity.other.attribute-name, markup.inserted, meta.constant, support.class, variable.other.constant</string>
 +                <string>markup.inserted</string>
                  <key>settings</key>
-@@ -92,3 +83,3 @@
+@@ -92,3 +92,3 @@
                  <key>scope</key>
 -                <string>entity.name.function, markup.underline.link, meta.diff</string>
 +                <string>meta.diff</string>
