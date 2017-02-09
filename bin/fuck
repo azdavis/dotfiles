@@ -18,7 +18,7 @@ while getopts frv opt; do
     (?) usage ;;
     esac
 done
-shift $((OPTIND - 1))
+shift "$(expr "$OPTIND" - 1)"
 
 if [ $# -eq 0 ]; then
     usage
