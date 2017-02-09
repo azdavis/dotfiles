@@ -1,27 +1,77 @@
 #!/bin/sh
 
 . "$HOME/.config/lib/base.sh"
+. "$HOME/.config/lib/abort.sh"
 
 usage() {
-    echo "usage: $(basename "$0") <directory>"
+    echo "usage: $(basename "$0") [-t type] <name> <description>"
     exit 1
 }
 
-if [ $# -eq 0 ]; then
+t=""
+while getopts t: opt; do
+    case "$opt" in
+    (t) t="$OPTARG" ;;
+    (?) usage ;;
+    esac
+done
+shift "$(expr "$OPTIND" - 1)"
+
+if [ $# -ne 2 ]; then
     usage
 fi
 
 templates="$HOME/.config/templates"
-name="$1"
-copy() {
-    cp "$templates/base/$1" "$name/$1"
-}
-replace() {
-    sed "s/{{$1}}/$2/g" "$templates/base/$3" > "$name/$3"
+relative_name="$1"
+absolute_name="$PWD/$relative_name"
+description="$2"
+year="$(date +%Y)"
+
+if [ -e "$relative_name" ]; then
+    abort "'$relative_name' already exists"
+fi
+
+if ! [ -d "$templates/$t" ]; then
+    abort "invalid type: '$t'"
+fi
+
+add_dir() {
+    b="$(basename "$1")"
+    if [ "$b" = . ] || [ "$b" = .. ]; then
+        return
+    fi
+    mkdir -p "$absolute_name/$1"
+    add "$1"
 }
 
-mkdir -p "$name/src"
-git -C "$name" init -q
-copy .gitignore
-replace year "$(date +%Y)" license.md
-replace name "$1" readme.md
+add_file() {
+    cat "$1" \
+        | sed "s/{{name}}/$relative_name/g" \
+        | sed "s/{{description}}/$description/g" \
+        | sed "s/{{year}}/$year/g" \
+        >> "$absolute_name/$1"
+}
+
+add() {
+    for x in "$1"/* "$1"/.*; do
+        if [ -d "$x" ]; then
+            add_dir "$x"
+        else
+            add_file "$x"
+        fi
+    done
+}
+
+add_template() {
+    cd "$templates/$1"
+    add .
+}
+
+mkdir -p "$absolute_name/src"
+git -C "$absolute_name" init -q
+add_template base
+if [ -n "$t" ]; then
+    add_template "$t"
+fi
+
+sort -o "$absolute_name/.gitignore" "$absolute_name/.gitignore"

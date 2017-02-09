@@ -1,0 +1,11 @@
+{
+  "name": "{{name}}",
+  "version": "0.1.0",
+  "description": "{{description}}",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "author": "Ariel Davis <ariel.z.davis@icloud.com>",
+  "license": "ISC"
+}
