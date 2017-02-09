@@ -9,7 +9,7 @@ lock="update-dotfiles.lock"
 if [ ! -L "$lock" ]; then
     rm -rf "$lock"
 fi
-if ! ln -s $$ "$lock" >/dev/null 2>&1; then
+if ! ln -s $$ "$lock" > /dev/null 2>&1; then
     if kill -0 "$(readlink "$lock")"; then
         abort "there is another instance of update-dotfiles running"
     fi
@@ -43,6 +43,6 @@ if git merge-base --is-ancestor origin/master @; then
 fi
 
 old_head="$(git rev-parse --short @)"
-git rebase -q -X theirs --onto origin/master "$old_om" >/dev/null
+git rebase -q -X theirs --onto origin/master "$old_om" > /dev/null
 new_head="$(git rev-parse --short @)"
 echo "$old_head -> $new_head"

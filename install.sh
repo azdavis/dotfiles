@@ -5,7 +5,7 @@ note() {
 check_for_commands() {
     have_all=true
     for x in cat chsh comm git ls mkdir mktemp mv rm sort wc zsh; do
-        if ! which "$x" >/dev/null 2>&1; then
+        if ! which "$x" > /dev/null 2>&1; then
             note "fatal: command not found: $x"
             have_all=false
         fi
@@ -22,7 +22,7 @@ install_repo() {
     note "installing '$repo' to '$dst_d'"
 
     if [ -e "$dst_d_git" ] \
-    && git -C "$dst_d" rev-parse >/dev/null 2>&1 \
+    && git -C "$dst_d" rev-parse > /dev/null 2>&1 \
     && [ "$(git -C "$dst_d" config remote.origin.url)" == "$repo" ]; then
         return
     fi

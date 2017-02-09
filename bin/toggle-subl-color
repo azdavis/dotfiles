@@ -6,9 +6,9 @@
 cd "$HOME/.config/sublime-text-3/Packages/User"
 
 alias patch="git apply theme/patch/less-color.patch"
-if patch --check >/dev/null 2>&1; then
+if patch --check > /dev/null 2>&1; then
     patch
-elif patch --reverse --check >/dev/null 2>&1; then
+elif patch --reverse --check > /dev/null 2>&1; then
     patch --reverse
 else
     abort "patch does not apply in either direction"
