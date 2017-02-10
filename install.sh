@@ -19,7 +19,6 @@ install_repo() {
     repo="https://github.com/azdavis/dotfiles"
     dst_d="$HOME/.config"
     dst_d_git="$dst_d/.git"
-    note "installing '$repo' to '$dst_d'"
 
     if [ -e "$dst_d_git" ] \
     && git -C "$dst_d" rev-parse > /dev/null 2>&1 \
@@ -27,6 +26,8 @@ install_repo() {
     && ( [ "$remote" == "$repo" ] || [ "$remote" == "$repo.git" ] ); then
         return
     fi
+
+    note "installing '$repo' to '$dst_d'"
 
     tmp_d="$(mktemp -d)"
     tmp_f1="$(mktemp)"
@@ -60,21 +61,18 @@ install_repo() {
     rm -rf "$dst_d_git"
     mv "$tmp_d/.git" "$dst_d_git"
     git -C "$dst_d" reset -q --hard
-}
 
-do_home_actions() {
     note "doing home actions"
     "$dst_d/bin/do-home" < /dev/tty
 }
 
 change_shell() {
     new_shell="$(which zsh)"
-    note "changing \$SHELL to '$new_shell'"
-
     if [ "$SHELL" == "$new_shell" ]; then
         return
     fi
 
+    note "changing \$SHELL to '$new_shell'"
     chsh -s "$new_shell" < /dev/tty
 }
 
@@ -83,7 +81,6 @@ main() {
     set -o nounset
     check_for_commands
     install_repo
-    do_home_actions
     change_shell
 }
 
