@@ -21,6 +21,10 @@ if [ $# -ne 2 ]; then
     usage
 fi
 
+if ! user="$(git config --global user.name)"; then
+    abort "no git user.name found"
+fi
+
 templates="$HOME/.config/templates"
 relative_name="$1"
 absolute_name="$PWD/$relative_name"
@@ -75,7 +79,6 @@ add_template() {
 }
 
 mkdir -p "$absolute_name/src"
-git -C "$absolute_name" init -q
 add_template base
 if [ -n "$t" ]; then
     add_template "$t"
@@ -83,5 +86,8 @@ fi
 
 cd "$absolute_name"
 sort -o .gitignore .gitignore
+
+git init -q
+git remote add origin "https://github.com/$user/$relative_name.git"
 git add -A
 git commit -q -m "start project"
