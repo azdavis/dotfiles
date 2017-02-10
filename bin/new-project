@@ -41,8 +41,9 @@ fi
 
 replace() {
     cat \
-        | sed "s/{{name}}/$relative_name/g" \
         | sed "s/{{description}}/$description/g" \
+        | sed "s/{{name}}/$relative_name/g" \
+        | sed "s/{{user}}/$user/g" \
         | sed "s/{{year}}/$year/g"
 }
 
