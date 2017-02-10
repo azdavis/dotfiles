@@ -23,7 +23,8 @@ install_repo() {
 
     if [ -e "$dst_d_git" ] \
     && git -C "$dst_d" rev-parse > /dev/null 2>&1 \
-    && [ "$(git -C "$dst_d" config remote.origin.url)" == "$repo" ]; then
+    && remote="$(git -C "$dst_d" config remote.origin.url)" \
+    && ( [ "$remote" == "$repo" ] || [ "$remote" == "$repo.git" ] ); then
         return
     fi
 
