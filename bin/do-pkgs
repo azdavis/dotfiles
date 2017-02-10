@@ -5,6 +5,7 @@
 formula="$(brew --repo)/Library/Taps/homebrew/homebrew-core/Formula"
 wd="$HOME/.config/pkg"
 
+echo "doing brew"
 brew update
 cd "$formula"
 git apply "$wd/patch"/*
@@ -23,9 +24,11 @@ brew cleanup
 brew prune
 brew doctor
 
+echo "doing tlmgr"
 tlmgr update --self
 tlmgr update --all
 cat tlmgrfile | xargs tlmgr install
 
+echo "doing npm"
 npm update -g
 rm -rf "$HOME/.npm"

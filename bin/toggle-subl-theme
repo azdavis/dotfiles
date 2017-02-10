@@ -7,8 +7,10 @@ cd "$HOME/.config/sublime-text-3/Packages/User"
 
 alias patch="git apply theme/patch/light.patch"
 if patch --check > /dev/null 2>&1; then
+    echo "switching to light"
     patch
 elif patch --reverse --check > /dev/null 2>&1; then
+    echo "switching to dark"
     patch --reverse
 else
     abort "patch does not apply in either direction"

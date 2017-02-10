@@ -74,10 +74,13 @@ add() {
 }
 
 add_template() {
+    echo "adding template '$1'"
     cd "$templates/$1"
     add .
 }
 
+
+echo "creating '$relative_name'"
 mkdir -p "$absolute_name/src"
 add_template base
 if [ -n "$t" ]; then
@@ -94,10 +97,13 @@ github_token="$( \
         | sed -E "s/.+=//g" \
 )"
 
+echo "creating local git repository"
 git init -q
 git remote add origin "https://github.com/$user/$relative_name.git"
 git add -A
 git commit -q -m "start project"
+
+echo "creating remote github repository"
 curl \
     -H "Accept: application/vnd.github.v3+json" \
     -H "Content-Type: application/json" \
