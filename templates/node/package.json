@@ -7,5 +7,13 @@
     "start": "node src/index.js"
   },
   "author": "Ariel Davis <ariel.z.davis@icloud.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/{{user}}/{{name}}.git"
+  },
+  "bugs": {
+    "url": "https://github.com/{{user}}/{{name}}/issues"
+  },
+  "homepage": "https://github.com/{{user}}/{{name}}#readme"
 }
