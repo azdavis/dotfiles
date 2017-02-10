@@ -87,7 +87,23 @@ fi
 cd "$absolute_name"
 sort -o .gitignore .gitignore
 
+github_token="$( \
+    echo hostname=github.com \
+        | git credential-store get \
+        | grep password \
+        | sed -E "s/.+=//g" \
+)"
+
 git init -q
 git remote add origin "https://github.com/$user/$relative_name.git"
 git add -A
 git commit -q -m "start project"
+curl \
+    -H "Accept: application/vnd.github.v3+json" \
+    -H "Content-Type: application/json" \
+    -H "Authorization: token $github_token" \
+    -X POST \
+    -d "{\"name\":\"$relative_name\",\"description\":\"$description\"}" \
+    "https://api.github.com/user/repos" \
+    > /dev/null
+git push -q -u origin master > /dev/null
