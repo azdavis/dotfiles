@@ -105,6 +105,7 @@ git commit -q -m "start project"
 
 echo "creating remote github repository"
 curl \
+    -s \
     -H "Accept: application/vnd.github.v3+json" \
     -H "Content-Type: application/json" \
     -H "Authorization: token $github_token" \
