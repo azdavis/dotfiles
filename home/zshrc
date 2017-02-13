@@ -29,8 +29,7 @@ alias \
     grep="grep --color=auto" \
     ls="ls -bh --color=auto --group-directories-first" \
     subl="subl -a" \
-    tree="tree --dirsfirst" \
-    valgrind="valgrind --suppressions=$HOME/.config/valgrind/supp.supp"
+    tree="tree --dirsfirst"
 
 alias \
     c="tput reset" \

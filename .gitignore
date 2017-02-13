@@ -9,7 +9,6 @@
 !/pkg
 !/templates
 !/terminal
-!/valgrind
 
 !/.gitignore
 !/install.sh
