@@ -4,8 +4,7 @@
 . "$HOME/.config/lib/abort.sh"
 
 usage() {
-    echo "usage: $(basename "$0") [-t type] <name> <description>"
-    exit 1
+    abort "usage: $(basename "$0") [-t type] <name> <description>"
 }
 
 t=""

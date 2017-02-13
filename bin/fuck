@@ -3,8 +3,7 @@
 . "$HOME/.config/lib/base.sh"
 
 usage() {
-    echo "usage: $(basename "$0") [-frv] <file>..."
-    exit 1
+    abort "usage: $(basename "$0") [-frv] <file>..."
 }
 
 f=""
