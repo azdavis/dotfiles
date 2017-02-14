@@ -1,4 +1,4 @@
-confirm_continue() {
+confirm() {
     printf "continue [yn]?"
     read x < /dev/tty
     if [ "$x" != y ]; then
@@ -55,11 +55,11 @@ install_repo() {
         if [ "$(cat "$tmp_f3" | wc -l)" -ne 0 ]; then
             echo "the following items in '$dst_d' would be replaced:"
             cat "$tmp_f3"
-            confirm_continue
+            confirm
         fi
     elif [ -e "$dst_d" ] || [ -L "$dst_d" ]; then
         echo "'$dst_d' would be replaced"
-        confirm_continue
+        confirm
         rm -rf "$dst_d"
     fi
 
