@@ -94,7 +94,7 @@ github_token="$( \
     echo hostname=github.com \
         | git credential-store get \
         | grep password \
-        | sed -E "s/.+=//g" \
+        | sed "s/password=//g" \
 )"
 
 echo "creating local git repository"
