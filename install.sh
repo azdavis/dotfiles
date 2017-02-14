@@ -26,7 +26,7 @@ install_repo() {
         return
     fi
 
-    echo "installing '$url' to '$dst_d'"
+    echo "installing '$url.git' to '$dst_d'"
 
     tmp_d="$(mktemp -d)"
     tmp_f1="$(mktemp)"
@@ -34,7 +34,7 @@ install_repo() {
     tmp_f3="$(mktemp)"
     trap "rm -rf '$tmp_d' '$tmp_f1' '$tmp_f2' '$tmp_f3'" EXIT
 
-    git clone "$url" "$tmp_d"
+    git clone "$url.git" "$tmp_d"
 
     if [ -e "$dst_d" ]; then
         ls -a1 "$dst_d" | sort > "$tmp_f1"
