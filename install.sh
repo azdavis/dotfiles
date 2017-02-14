@@ -21,7 +21,6 @@ install_repo() {
     dst_d_git="$dst_d/.git"
 
     if [ -e "$dst_d_git" ] \
-    && git -C "$dst_d" rev-parse > /dev/null 2>&1 \
     && remote="$(git -C "$dst_d" config remote.origin.url)" \
     && ( [ "$remote" == "$repo" ] || [ "$remote" == "$repo.git" ] ); then
         return
