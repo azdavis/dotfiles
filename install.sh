@@ -43,8 +43,7 @@ install_repo() {
         if [ "$(cat "$tmp_f3" | wc -l)" -ne 0 ]; then
             echo "the following items in '$dst_d' would be replaced:"
             cat "$tmp_f3"
-            echo "continue [yn]?"
-            printf ">>> "
+            printf "continue [yn]?"
             read x < /dev/tty
             if [ "$x" != y ]; then
                 exit 1
