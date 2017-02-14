@@ -7,7 +7,7 @@ check_for_commands() {
         fi
     done
     if [ $(uname) == Darwin ] && ! xcode-select -p > /dev/null 2>&1; then
-        echo "macOS command line tools not installed"
+        echo "'Command Line Developer Tools' not installed"
         have_all=false
     fi
     if ! $have_all; then
