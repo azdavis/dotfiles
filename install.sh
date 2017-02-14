@@ -14,7 +14,7 @@ check_for_deps() {
             ok=false
         fi
     done
-    if [ $(uname) == Darwin ] && ! xcode-select -p > /dev/null 2>&1; then
+    if [ $(uname) = Darwin ] && ! xcode-select -p > /dev/null 2>&1; then
         echo "'Command Line Developer Tools' not installed"
         ok=false
     fi
@@ -30,7 +30,7 @@ install_repo() {
 
     if [ -e "$dst_d_git" ] \
     && remote="$(git -C "$dst_d" config remote.origin.url)" \
-    && ( [ "$remote" == "$url" ] || [ "$remote" == "$url.git" ] ); then
+    && ( [ "$remote" = "$url" ] || [ "$remote" = "$url.git" ] ); then
         return
     fi
 
@@ -74,7 +74,7 @@ install_repo() {
 
 change_shell() {
     new_shell="$(which zsh)"
-    if [ "$SHELL" == "$new_shell" ]; then
+    if [ "$SHELL" = "$new_shell" ]; then
         return
     fi
 
