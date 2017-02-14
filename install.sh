@@ -60,6 +60,7 @@ install_repo() {
     elif [ -e "$dst_d" ] || [ -L "$dst_d" ]; then
         echo "'$dst_d' would be replaced"
         confirm_continue
+        rm -rf "$dst_d"
     fi
 
     mkdir -p "$dst_d"
