@@ -6,6 +6,10 @@ check_for_commands() {
             have_all=false
         fi
     done
+    if [ $(uname) == Darwin ] && ! xcode-select -p > /dev/null 2>&1; then
+        echo "macOS command line tools not installed"
+        have_all=false
+    fi
     if ! $have_all; then
         exit 1
     fi
