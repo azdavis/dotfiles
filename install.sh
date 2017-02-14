@@ -2,7 +2,7 @@ check_for_commands() {
     have_all=true
     for x in cat chsh comm git ls mkdir mktemp mv rm sort wc zsh; do
         if ! which "$x" > /dev/null 2>&1; then
-            echo "command not found: $x"
+            echo "'$x' not installed"
             have_all=false
         fi
     done
