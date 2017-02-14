@@ -1,12 +1,8 @@
-note() {
-    echo "==> $1"
-}
-
 check_for_commands() {
     have_all=true
     for x in cat chsh comm git ls mkdir mktemp mv rm sort wc zsh; do
         if ! which "$x" > /dev/null 2>&1; then
-            note "command not found: $x"
+            echo "command not found: $x"
             have_all=false
         fi
     done
@@ -26,7 +22,7 @@ install_repo() {
         return
     fi
 
-    note "installing '$repo' to '$dst_d'"
+    echo "installing '$repo' to '$dst_d'"
 
     tmp_d="$(mktemp -d)"
     tmp_f1="$(mktemp)"
@@ -45,9 +41,9 @@ install_repo() {
         ) | sort > "$tmp_f2"
         comm -12 "$tmp_f1" "$tmp_f2" > "$tmp_f3"
         if [ "$(cat "$tmp_f3" | wc -l)" -ne 0 ]; then
-            note "the following items in '$dst_d' would be replaced:"
+            echo "the following items in '$dst_d' would be replaced:"
             cat "$tmp_f3"
-            note "continue [yn]?"
+            echo "continue [yn]?"
             printf ">>> "
             read x < /dev/tty
             if [ "$x" != y ]; then
@@ -61,7 +57,7 @@ install_repo() {
     mv "$tmp_d/.git" "$dst_d_git"
     git -C "$dst_d" reset -q --hard
 
-    note "doing home actions"
+    echo "doing home actions"
     "$dst_d/bin/do-home" < /dev/tty
 }
 
@@ -71,7 +67,7 @@ change_shell() {
         return
     fi
 
-    note "changing \$SHELL to '$new_shell'"
+    echo "changing \$SHELL to '$new_shell'"
     chsh -s "$new_shell" < /dev/tty
 }
 
