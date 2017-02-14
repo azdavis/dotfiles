@@ -1,4 +1,4 @@
-check_for_commands() {
+check_for_deps() {
     ok=true
     for x in cat chsh comm git ls mkdir mktemp mv rm sort wc zsh; do
         if ! which "$x" > /dev/null 2>&1; then
@@ -77,7 +77,7 @@ change_shell() {
 main() {
     set -o errexit
     set -o nounset
-    check_for_commands
+    check_for_deps
     install_repo
     change_shell
 }
