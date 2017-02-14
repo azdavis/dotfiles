@@ -1,16 +1,16 @@
 check_for_commands() {
-    have_all=true
+    ok=true
     for x in cat chsh comm git ls mkdir mktemp mv rm sort wc zsh; do
         if ! which "$x" > /dev/null 2>&1; then
             echo "'$x' not installed"
-            have_all=false
+            ok=false
         fi
     done
     if [ $(uname) == Darwin ] && ! xcode-select -p > /dev/null 2>&1; then
         echo "'Command Line Developer Tools' not installed"
-        have_all=false
+        ok=false
     fi
-    if ! $have_all; then
+    if ! $ok; then
         exit 1
     fi
 }
