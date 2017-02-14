@@ -16,17 +16,17 @@ check_for_deps() {
 }
 
 install_repo() {
-    repo="https://github.com/azdavis/dotfiles"
+    url="https://github.com/azdavis/dotfiles"
     dst_d="$HOME/.config"
     dst_d_git="$dst_d/.git"
 
     if [ -e "$dst_d_git" ] \
     && remote="$(git -C "$dst_d" config remote.origin.url)" \
-    && ( [ "$remote" == "$repo" ] || [ "$remote" == "$repo.git" ] ); then
+    && ( [ "$remote" == "$url" ] || [ "$remote" == "$url.git" ] ); then
         return
     fi
 
-    echo "installing '$repo' to '$dst_d'"
+    echo "installing '$url' to '$dst_d'"
 
     tmp_d="$(mktemp -d)"
     tmp_f1="$(mktemp)"
@@ -34,7 +34,7 @@ install_repo() {
     tmp_f3="$(mktemp)"
     trap "rm -rf '$tmp_d' '$tmp_f1' '$tmp_f2' '$tmp_f3'" EXIT
 
-    git clone "$repo" "$tmp_d"
+    git clone "$url" "$tmp_d"
 
     if [ -e "$dst_d" ]; then
         ls -a1 "$dst_d" | sort > "$tmp_f1"
