@@ -44,7 +44,7 @@ install_repo() {
 
     git clone "$url.git" "$tmp_d"
 
-    if [ -e "$dst_d" ]; then
+    if [ -d "$dst_d" ]; then
         ls -a1 "$dst_d" | sort > "$tmp_f1"
         ( echo .git; \
           echo update-dotfiles.last; \
@@ -57,6 +57,9 @@ install_repo() {
             cat "$tmp_f3"
             confirm_continue
         fi
+    elif [ -e "$dst_d" ] || [ -L "$dst_d" ]; then
+        echo "'$dst_d' would be replaced"
+        confirm_continue
     fi
 
     mkdir -p "$dst_d"
