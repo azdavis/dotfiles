@@ -27,11 +27,15 @@ if ! email="$(git config --global user.email)"; then
     abort "no git user.email found"
 fi
 
-templates="$HOME/.config/templates"
 proj="$1"
-path="$PWD/$proj"
-desc="$2"
-year="$(date +%Y)"
+if [ -e "$proj" ]; then
+    abort "'$proj' already exists"
+fi
+
+templates="$HOME/.config/templates"
+if ! [ -d "$templates/$t" ]; then
+    abort "invalid type: '$t'"
+fi
 
 github_cred() {
     echo "hostname=github.com" \
@@ -43,21 +47,17 @@ github_cred() {
 gh_username="$(github_cred username)"
 gh_password="$(github_cred password)"
 
-if [ -e "$proj" ]; then
-    abort "'$proj' already exists"
-fi
-
-if ! [ -d "$templates/$t" ]; then
-    abort "invalid type: '$t'"
-fi
+path="$PWD/$proj"
+desc="$2"
+year="$(date +%Y)"
 
 replace() {
     cat \
         | sed "s/{{desc}}/$desc/g" \
-        | sed "s/{{proj}}/$proj/g" \
-        | sed "s/{{name}}/$name/g" \
-        | sed "s/{{gh_username}}/$gh_username/g" \
         | sed "s/{{email}}/$email/g" \
+        | sed "s/{{gh_username}}/$gh_username/g" \
+        | sed "s/{{name}}/$name/g" \
+        | sed "s/{{proj}}/$proj/g" \
         | sed "s/{{year}}/$year/g"
 }
 
