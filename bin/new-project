@@ -112,7 +112,7 @@ git commit -q -m "start project"
 
 url="https://github.com/$gh_username/$proj.git"
 echo "creating '$url'"
-git remote add origin
+git remote add origin "$url"
 curl \
     -s \
     -H "Accept: application/vnd.github.v3+json" \
