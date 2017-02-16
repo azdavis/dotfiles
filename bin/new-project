@@ -33,6 +33,13 @@ path="$PWD/$proj"
 desc="$2"
 year="$(date +%Y)"
 
+gh_password="$( \
+    echo hostname=github.com \
+        | git credential-store get \
+        | grep password \
+        | sed "s/password=//g" \
+)"
+
 if [ -e "$proj" ]; then
     abort "'$proj' already exists"
 fi
@@ -93,13 +100,6 @@ fi
 
 cd "$path"
 sort -o .gitignore .gitignore
-
-gh_password="$( \
-    echo hostname=github.com \
-        | git credential-store get \
-        | grep password \
-        | sed "s/password=//g" \
-)"
 
 echo "creating local git repository"
 git init -q
