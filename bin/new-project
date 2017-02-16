@@ -31,6 +31,9 @@ proj="$1"
 if [ -e "$proj" ]; then
     abort "'$proj' already exists"
 fi
+if echo "$proj" | grep -E '\s' > /dev/null; then
+    abort "'$proj' has whitespace"
+fi
 
 templates="$HOME/.config/templates"
 if ! [ -d "$templates/$t" ]; then
