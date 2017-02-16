@@ -117,12 +117,13 @@ url="https://github.com/$gh_username/$proj.git"
 echo "creating '$url'"
 git remote add origin "$url"
 curl \
-    -s \
     -H "Accept: application/vnd.github.v3+json" \
     -H "Content-Type: application/json" \
     -H "Authorization: token $gh_password" \
     -X POST \
     -d "{\"name\":\"$proj\",\"description\":\"$desc\"}" \
-    "https://api.github.com/user/repos" \
-    > /dev/null
+    -s \
+    -o /dev/null \
+    -w "%{http_code}" \
+    "https://api.github.com/user/repos"
 git push -q -u origin master > /dev/null
