@@ -1,5 +1,5 @@
 MAKEFLAGS += -rRs
-MAIN = src/{{name}}
+MAIN = src/{{proj}}
 CFLAGS = -Werror -Weverything -g
 
 %: %.c

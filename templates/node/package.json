@@ -1,7 +1,7 @@
 {
-  "name": "{{name}}",
+  "name": "{{proj}}",
   "version": "0.1.0",
-  "description": "{{description}}",
+  "description": "{{desc}}",
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js"
@@ -10,10 +10,10 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/{{user}}/{{name}}.git"
+    "url": "git+https://github.com/{{name}}/{{proj}}.git"
   },
   "bugs": {
-    "url": "https://github.com/{{user}}/{{name}}/issues"
+    "url": "https://github.com/{{name}}/{{proj}}/issues"
   },
-  "homepage": "https://github.com/{{user}}/{{name}}#readme"
+  "homepage": "https://github.com/{{name}}/{{proj}}#readme"
 }

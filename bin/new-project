@@ -20,18 +20,18 @@ if [ $# -ne 2 ]; then
     usage
 fi
 
-if ! user="$(git config --global user.name)"; then
+if ! name="$(git config --global user.name)"; then
     abort "no git user.name found"
 fi
 
 templates="$HOME/.config/templates"
-relative_name="$1"
-absolute_name="$PWD/$relative_name"
-description="$2"
+proj="$1"
+path="$PWD/$proj"
+desc="$2"
 year="$(date +%Y)"
 
-if [ -e "$relative_name" ]; then
-    abort "'$relative_name' already exists"
+if [ -e "$proj" ]; then
+    abort "'$proj' already exists"
 fi
 
 if ! [ -d "$templates/$t" ]; then
@@ -40,14 +40,14 @@ fi
 
 replace() {
     cat \
-        | sed "s/{{description}}/$description/g" \
-        | sed "s/{{name}}/$relative_name/g" \
-        | sed "s/{{user}}/$user/g" \
+        | sed "s/{{desc}}/$desc/g" \
+        | sed "s/{{proj}}/$proj/g" \
+        | sed "s/{{name}}/$name/g" \
         | sed "s/{{year}}/$year/g"
 }
 
 dst_name() {
-    echo "$absolute_name/$1" | replace
+    echo "$path/$1" | replace
 }
 
 add_dir() {
@@ -80,14 +80,14 @@ add_template() {
 }
 
 
-echo "creating '$relative_name'"
-mkdir -p "$absolute_name/src"
+echo "creating '$proj'"
+mkdir -p "$path/src"
 add_template base
 if [ -n "$t" ]; then
     add_template "$t"
 fi
 
-cd "$absolute_name"
+cd "$path"
 sort -o .gitignore .gitignore
 
 github_token="$( \
@@ -99,7 +99,7 @@ github_token="$( \
 
 echo "creating local git repository"
 git init -q
-git remote add origin "https://github.com/$user/$relative_name.git"
+git remote add origin "https://github.com/$name/$proj.git"
 git add -A
 git commit -q -m "start project"
 
@@ -110,7 +110,7 @@ curl \
     -H "Content-Type: application/json" \
     -H "Authorization: token $github_token" \
     -X POST \
-    -d "{\"name\":\"$relative_name\",\"description\":\"$description\"}" \
+    -d "{\"name\":\"$proj\",\"description\":\"$desc\"}" \
     "https://api.github.com/user/repos" \
     > /dev/null
 git push -q -u origin master > /dev/null
