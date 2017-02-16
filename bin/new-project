@@ -105,13 +105,14 @@ fi
 cd "$path"
 sort -o .gitignore .gitignore
 
-echo "creating local git repository"
+echo "creating '$proj/.git'"
 git init -q
 git add -A
 git commit -q -m "start project"
 
-echo "creating remote github repository"
-git remote add origin "https://github.com/$gh_username/$proj.git"
+url="https://github.com/$gh_username/$proj.git"
+echo "creating '$url'"
+git remote add origin
 curl \
     -s \
     -H "Accept: application/vnd.github.v3+json" \
