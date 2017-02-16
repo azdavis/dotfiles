@@ -94,7 +94,7 @@ fi
 cd "$path"
 sort -o .gitignore .gitignore
 
-github_token="$( \
+gh_password="$( \
     echo hostname=github.com \
         | git credential-store get \
         | grep password \
@@ -112,7 +112,7 @@ curl \
     -s \
     -H "Accept: application/vnd.github.v3+json" \
     -H "Content-Type: application/json" \
-    -H "Authorization: token $github_token" \
+    -H "Authorization: token $gh_password" \
     -X POST \
     -d "{\"name\":\"$proj\",\"description\":\"$desc\"}" \
     "https://api.github.com/user/repos" \
