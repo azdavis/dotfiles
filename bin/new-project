@@ -116,7 +116,7 @@ git commit -q -m "start project"
 url="https://github.com/$gh_username/$proj.git"
 echo "creating '$url'"
 git remote add origin "$url"
-curl \
+if [ "$(curl \
     -H "Accept: application/vnd.github.v3+json" \
     -H "Content-Type: application/json" \
     -H "Authorization: token $gh_password" \
@@ -125,5 +125,9 @@ curl \
     -s \
     -o /dev/null \
     -w "%{http_code}" \
-    "https://api.github.com/user/repos"
+    "https://api.github.com/user/repos" \
+    )" -ne 201 \
+]; then
+    abort "could not create"
+fi
 git push -q -u origin master > /dev/null
