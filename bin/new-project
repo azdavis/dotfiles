@@ -107,11 +107,11 @@ sort -o .gitignore .gitignore
 
 echo "creating local git repository"
 git init -q
-git remote add origin "https://github.com/$gh_username/$proj.git"
 git add -A
 git commit -q -m "start project"
 
 echo "creating remote github repository"
+git remote add origin "https://github.com/$gh_username/$proj.git"
 curl \
     -s \
     -H "Accept: application/vnd.github.v3+json" \
