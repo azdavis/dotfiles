@@ -33,18 +33,15 @@ path="$PWD/$proj"
 desc="$2"
 year="$(date +%Y)"
 
-gh_username="$( \
-    echo hostname=github.com \
+github_cred() {
+    echo "hostname=github.com" \
         | git credential-store get \
-        | grep username \
-        | sed "s/username=//g" \
-)"
-gh_password="$( \
-    echo hostname=github.com \
-        | git credential-store get \
-        | grep password \
-        | sed "s/password=//g" \
-)"
+        | grep "$1" \
+        | sed "s/$1=//g"
+}
+
+gh_username="$(github_cred username)"
+gh_password="$(github_cred password)"
 
 if [ -e "$proj" ]; then
     abort "'$proj' already exists"
