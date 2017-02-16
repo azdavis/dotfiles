@@ -121,7 +121,7 @@ if [ "$(curl \
     -H "Content-Type: application/json" \
     -H "Authorization: token $gh_password" \
     -X POST \
-    -d "{\"name\":\"$proj\",\"description\":\"$desc\"}" \
+    -d "{\"name\":\"$proj\"\,\"description\":\"$desc\"}" \
     -s \
     -o /dev/null \
     -w "%{http_code}" \
