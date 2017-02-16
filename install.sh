@@ -8,7 +8,7 @@ confirm() {
 
 check_for_deps() {
     ok=true
-    for x in cat chsh comm git ls mkdir mktemp mv rm sort wc zsh; do
+    for x in cat chsh comm git ls mkdir mktemp mv rm sh sort wc zsh; do
         if ! which "$x" > /dev/null 2>&1; then
             echo "'$x' not installed"
             ok=false
