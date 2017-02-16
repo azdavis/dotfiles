@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/index.js"
   },
-  "author": "Ariel Davis <ariel.z.davis@icloud.com>",
+  "author": "{{name}} <{{email}}>",
   "license": "ISC",
   "repository": {
     "type": "git",
