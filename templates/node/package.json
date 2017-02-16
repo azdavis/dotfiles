@@ -10,10 +10,10 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/{{name}}/{{proj}}.git"
+    "url": "git+https://github.com/{{gh_username}}/{{proj}}.git"
   },
   "bugs": {
-    "url": "https://github.com/{{name}}/{{proj}}/issues"
+    "url": "https://github.com/{{gh_username}}/{{proj}}/issues"
   },
-  "homepage": "https://github.com/{{name}}/{{proj}}#readme"
+  "homepage": "https://github.com/{{gh_username}}/{{proj}}#readme"
 }

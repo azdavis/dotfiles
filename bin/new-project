@@ -33,6 +33,12 @@ path="$PWD/$proj"
 desc="$2"
 year="$(date +%Y)"
 
+gh_username="$( \
+    echo hostname=github.com \
+        | git credential-store get \
+        | grep username \
+        | sed "s/username=//g" \
+)"
 gh_password="$( \
     echo hostname=github.com \
         | git credential-store get \
@@ -53,6 +59,7 @@ replace() {
         | sed "s/{{desc}}/$desc/g" \
         | sed "s/{{proj}}/$proj/g" \
         | sed "s/{{name}}/$name/g" \
+        | sed "s/{{gh_username}}/$gh_username/g" \
         | sed "s/{{email}}/$email/g" \
         | sed "s/{{year}}/$year/g"
 }
@@ -103,7 +110,7 @@ sort -o .gitignore .gitignore
 
 echo "creating local git repository"
 git init -q
-git remote add origin "https://github.com/$name/$proj.git"
+git remote add origin "https://github.com/$gh_username/$proj.git"
 git add -A
 git commit -q -m "start project"
 
