@@ -24,10 +24,13 @@ date +%s > "$last"
 
 old_om="$(git rev-parse origin/master)"
 if [ "$(curl \
-    "https://api.github.com/repos/azdavis/dotfiles/commits/master" \
     -H "Accept: application/vnd.github.chitauri-preview+sha" \
     -H "If-None-Match: \"$old_om\"" \
-    -s -o /dev/null -w "%{http_code}")" -ne 304 \
+    -s \
+    -o /dev/null \
+    -w "%{http_code}" \
+    "https://api.github.com/repos/azdavis/dotfiles/commits/master" \
+    )" -ne 304 \
 ]; then
     echo "fetching origin"
     git fetch -q origin master
