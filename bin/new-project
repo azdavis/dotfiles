@@ -39,7 +39,7 @@ fi
 
 github_cred() {
     echo "hostname=github.com" \
-        | git credential-store get \
+        | git credential fill \
         | grep "$1" \
         | sed "s/$1=//g"
 }
