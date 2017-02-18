@@ -4,12 +4,14 @@
 . "$HOME/.config/lib/abort.sh"
 
 usage() {
-    abort "usage: $(basename "$0") [-t <type>] <name> <description>"
+    abort "usage: $(basename "$0") [-p] [-t <type>] <name> <description>"
 }
 
+p=false
 t=""
-while getopts t: opt; do
+while getopts pt: opt; do
     case "$opt" in
+    (p) p=true ;;
     (t) t="$OPTARG" ;;
     (?) usage ;;
     esac
@@ -123,7 +125,7 @@ if [ "$(curl \
     -H "Content-Type: application/json" \
     -H "Authorization: token $gh_password" \
     -X POST \
-    -d "{\"name\":\"$proj\"\,\"description\":\"$desc\"}" \
+    -d "{\"name\":\"$proj\"\,\"description\":\"$desc\"\,\"private\":$p}" \
     -s \
     -o /dev/null \
     -w "%{http_code}" \
