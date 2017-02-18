@@ -115,7 +115,7 @@ git init -q
 git add -A
 git commit -q -m "start project"
 
-# the '\,' cannot be ',' in sh 3.2
+# there must be spaces surrounding { and } in the json data
 # e761df8a36c4e302ebda8b792f70d631b0e8452d
 url="https://github.com/$gh_username/$proj.git"
 echo "creating '$url'"
@@ -125,7 +125,7 @@ if [ "$(curl \
     -H "Content-Type: application/json" \
     -H "Authorization: token $gh_password" \
     -X POST \
-    -d "{\"name\":\"$proj\"\,\"description\":\"$desc\"\,\"private\":$p}" \
+    -d " { \"name\":\"$proj\", \"description\":\"$desc\", \"private\":$p } " \
     -s \
     -o /dev/null \
     -w "%{http_code}" \
