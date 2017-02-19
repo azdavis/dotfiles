@@ -1,12 +1,17 @@
 MAKEFLAGS += -rRs
-MAIN = src/{{proj}}
 CFLAGS = -Werror -Weverything -g
 
-%: %.c
-	$(CC) $(CFLAGS) -o $@ $<
+MAIN = src/{{proj}}
+OBJS =
 
 PHONY += all
 all: $(MAIN)
+
+$(MAIN): $(MAIN).c $(OBJS)
+	$(CC) $(CFLAGS) $(OBJS) -o $@ $<
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c -o $@ $<
 
 PHONY += clean
 clean:
