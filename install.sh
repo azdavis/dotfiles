@@ -1,5 +1,5 @@
 confirm() {
-    printf "continue [yn]?"
+    printf "continue [yn]? "
     read x < /dev/tty
     if [ "$x" != y ]; then
         exit 1
