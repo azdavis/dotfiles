@@ -3,10 +3,12 @@
 /*
 
 !/bin
+!/git
 !/home
 !/lib
 !/mpv
 !/pkg
+!/sublime-text-3
 !/templates
 !/terminal
 
@@ -15,10 +17,8 @@
 !/license.md
 !/readme.md
 
-!/git
 /git/credentials
 
-!/sublime-text-3
 /sublime-text-3/*
 !/sublime-text-3/Packages
 /sublime-text-3/Packages/*
