@@ -15,7 +15,7 @@ while getopts frv opt; do
     (f) f="-f" ;;
     (r) r=true ;;
     (v) v="-v" ;;
-    (?) usage ;;
+    (*) usage ;;
     esac
 done
 shift "$(expr "$OPTIND" - 1)"

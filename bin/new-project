@@ -13,7 +13,7 @@ while getopts pt: opt; do
     case "$opt" in
     (p) p=true ;;
     (t) t="$OPTARG" ;;
-    (?) usage ;;
+    (*) usage ;;
     esac
 done
 shift "$(expr "$OPTIND" - 1)"
