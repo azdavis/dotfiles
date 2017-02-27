@@ -4,13 +4,22 @@
 . "$HOME/.config/lib/abort.sh"
 
 usage() {
-    abort "usage: $(basename "$0") [-g <public | private>] [-t <type>] <name> <desc>"
+    abort "usage: $(basename "$0") [-q] [-g <public | private>] [-t <type>] <name> <desc>"
 }
 
+note() {
+    if $q; then
+        return
+    fi
+    echo "$1"
+}
+
+q=false
 g=""
 t=""
-while getopts g:t: opt; do
+while getopts qg:t: opt; do
     case "$opt" in
+    (q) q=true ;;
     (g) g="$OPTARG" ;;
     (t) t="$OPTARG" ;;
     (*) usage ;;
@@ -103,12 +112,12 @@ add() {
 }
 
 add_template() {
-    echo "adding template '$1'"
+    note "adding template '$1'"
     cd "$templates/$1"
     add .
 }
 
-echo "creating '$proj'"
+note "creating '$proj'"
 mkdir -p "$path/src"
 add_template base
 if [ -n "$t" ]; then
@@ -118,7 +127,7 @@ fi
 cd "$path"
 sort -o .gitignore .gitignore
 
-echo "creating '$proj/.git'"
+note "creating '$proj/.git'"
 git init -q
 git add -A
 git commit -q -m "start project"
@@ -130,7 +139,7 @@ fi
 # there must be spaces surrounding { and } in the json data
 # e761df8a36c4e302ebda8b792f70d631b0e8452d
 url="https://github.com/$gh_username/$proj.git"
-echo "creating '$url'"
+note "creating '$url'"
 git remote add origin "$url"
 if [ "$(curl \
     -H "Accept: application/vnd.github.v3+json" \
