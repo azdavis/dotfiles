@@ -99,7 +99,6 @@ add_template() {
     add .
 }
 
-
 echo "creating '$proj'"
 mkdir -p "$path/src"
 add_template base
