@@ -36,9 +36,7 @@ alias \
 alias \
     ga="git add" \
     gb="git branch" \
-    gbr="git browse" \
     gc="git commit" \
-    gcl="git clone" \
     gd="git diff" \
     gi="git init" \
     gk="git checkout" \
@@ -47,7 +45,6 @@ alias \
     gp="git push" \
     gpl="git pull" \
     gr="git reset" \
-    grb="git rebase" \
     gs="git status" \
     gsh="git show --pretty=fuller"
 
