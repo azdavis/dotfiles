@@ -4,14 +4,14 @@
 . "$HOME/.config/lib/abort.sh"
 
 usage() {
-    abort "usage: $(basename "$0") [-p] [-t <type>] <name> <description>"
+    abort "usage: $(basename "$0") [-g <public | private>] [-t <type>] <name> <description>"
 }
 
-p=false
+g=""
 t=""
-while getopts pt: opt; do
+while getopts g:t: opt; do
     case "$opt" in
-    (p) p=true ;;
+    (g) g="$OPTARG" ;;
     (t) t="$OPTARG" ;;
     (*) usage ;;
     esac
@@ -35,6 +35,15 @@ if [ -e "$proj" ]; then
 fi
 if echo "$proj" | grep -E '\s' > /dev/null; then
     abort "'$proj' has whitespace"
+fi
+
+is_private=""
+if [ "$g" = private ]; then
+    is_private=true
+elif [ "$g" = public ]; then
+    is_private=false
+elif [ -n "$g" ]; then
+    abort "invalid github project visibility: '$g'"
 fi
 
 templates="$HOME/.config/templates"
@@ -114,6 +123,10 @@ git init -q
 git add -A
 git commit -q -m "start project"
 
+if [ -z "$g" ]; then
+    exit
+fi
+
 # there must be spaces surrounding { and } in the json data
 # e761df8a36c4e302ebda8b792f70d631b0e8452d
 url="https://github.com/$gh_username/$proj.git"
@@ -124,7 +137,7 @@ if [ "$(curl \
     -H "Content-Type: application/json" \
     -H "Authorization: token $gh_password" \
     -X POST \
-    -d " { \"name\":\"$proj\", \"description\":\"$desc\", \"private\":$p } " \
+    -d " { \"name\":\"$proj\", \"description\":\"$desc\", \"private\":$is_private } " \
     -s \
     -o /dev/null \
     -w "%{http_code}" \
