@@ -7,12 +7,6 @@ usage() {
     abort "usage: $(basename "$0") [-q] [-g <public | private>] [-t <type>] <proj> <desc>"
 }
 
-note() {
-    if ! $q; then
-        echo "$1"
-    fi
-}
-
 q=false
 g=""
 t=""
@@ -58,6 +52,12 @@ templates="$HOME/.config/templates"
 if ! [ -d "$templates/$t" ]; then
     abort "invalid type: '$t'"
 fi
+
+note() {
+    if ! $q; then
+        echo "$1"
+    fi
+}
 
 github_cred() {
     echo "hostname=github.com" \
