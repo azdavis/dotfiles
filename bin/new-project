@@ -4,7 +4,7 @@
 . "$HOME/.config/lib/abort.sh"
 
 usage() {
-    abort "usage: $(basename "$0") [-g <public | private>] [-t <type>] <name> <description>"
+    abort "usage: $(basename "$0") [-g <public | private>] [-t <type>] <name> <desc>"
 }
 
 g=""
