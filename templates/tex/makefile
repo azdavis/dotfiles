@@ -1,4 +1,5 @@
 MAKEFLAGS += -rRs
+Q = > /dev/null
 
 MAIN = src/{{proj}}.pdf
 
@@ -7,8 +8,8 @@ all: $(MAIN)
 
 %.pdf: %.tex begin.tex
 	cd $(dir $<) ;\
-	pdflatex -halt-on-error $(notdir $<) ;\
-	pdflatex -halt-on-error $(notdir $<)
+	pdflatex -halt-on-error $(notdir $<) $(Q) ;\
+	pdflatex -halt-on-error $(notdir $<) $(Q)
 
 PHONY += clean
 clean:
