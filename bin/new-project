@@ -8,10 +8,9 @@ usage() {
 }
 
 note() {
-    if $q; then
-        return
+    if ! $q; then
+        echo "$1"
     fi
-    echo "$1"
 }
 
 q=false
