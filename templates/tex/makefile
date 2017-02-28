@@ -15,10 +15,10 @@ PHONY += clean
 clean:
 	rm -rf $(MAIN)
 	find src "(" \
-	   -name "*.aux" \
-	-o -name "*.bbl" \
-	-o -name "*.log" \
-	-o -name "*.toc" \
+		   -name "*.aux" \
+		-o -name "*.bbl" \
+		-o -name "*.log" \
+		-o -name "*.toc" \
 	")" -delete
 
 .PHONY: $(PHONY)
