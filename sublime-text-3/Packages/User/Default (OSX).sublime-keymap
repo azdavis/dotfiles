@@ -11,4 +11,5 @@
     { "keys": ["ctrl+tab"], "command": "next_view" },
     { "keys": ["shift+super+d"], "command": "find_all_under" },
     { "keys": ["super+\\"], "command": "toggle_side_bar" },
+    { "keys": ["ctrl+super+s"], "command": "toggle_setting", "args": {"setting": "spell_check"} },
 ]
