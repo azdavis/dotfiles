@@ -6,7 +6,7 @@ MAIN = src/{{proj}}.pdf
 PHONY += all
 all: $(MAIN)
 
-%.pdf: %.tex base.tex
+%.pdf: %.tex src/base.tex
 	cd $(dir $<) ;\
 	pdflatex -halt-on-error $(notdir $<) $(Q) ;\
 	pdflatex -halt-on-error $(notdir $<) $(Q)
