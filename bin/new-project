@@ -31,7 +31,7 @@ if ! email="$(git config user.email)"; then
     abort "no git user.email found"
 fi
 
-proj="$1"
+proj="$(basename $(realpath "$1"))"
 if [ -e "$proj" ]; then
     abort "'$proj' already exists"
 fi
@@ -69,7 +69,7 @@ github_cred() {
 gh_username="$(github_cred username)"
 gh_password="$(github_cred password)"
 
-path="$PWD/$proj"
+path="$PWD/$1"
 desc="$2"
 year="$(date +%Y)"
 
