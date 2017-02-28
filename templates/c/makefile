@@ -16,7 +16,10 @@ $(MAIN): $(MAIN).c $(OBJS)
 PHONY += clean
 clean:
 	rm -rf $(MAIN)
-	find src "(" -name "*.o" -o -name "*.dSYM" ")" -prune -exec rm -rf {} \;
+	find src "(" \
+		   -name "*.dSYM" \
+		-o -name "*.o" \
+	")" -prune -exec rm -rf {} \;
 
 PHONY += run
 run: all

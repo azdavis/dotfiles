@@ -19,6 +19,6 @@ clean:
 		-o -name "*.bbl" \
 		-o -name "*.log" \
 		-o -name "*.toc" \
-	")" -delete
+	")" -prune -exec rm -rf {} \;
 
 .PHONY: $(PHONY)
