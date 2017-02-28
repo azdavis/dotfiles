@@ -21,10 +21,6 @@
 
 /git/credentials
 
-/home/gnupg
-/home/ssh
-/home/tarsnaprc
-
 /sublime-text-3/*
 !/sublime-text-3/Packages
 /sublime-text-3/Packages/*
