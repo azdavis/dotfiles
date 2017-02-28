@@ -41,7 +41,7 @@ install_repo() {
     tmp_f3="$(mktemp)"
     trap "rm -rf '$tmp_d' '$tmp_f1' '$tmp_f2' '$tmp_f3'" EXIT
 
-    git clone -n --single-branch "$url" "$tmp_d"
+    git clone -q -n --single-branch "$url" "$tmp_d"
 
     if [ -d "$dst_d" ]; then
         ls -a1 "$dst_d" | sort > "$tmp_f1"
