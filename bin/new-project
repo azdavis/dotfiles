@@ -4,14 +4,16 @@
 . "$HOME/.config/lib/abort.sh"
 
 usage() {
-    abort "usage: $(basename "$0") [-q] [-g <public | private>] [-t <type>] <proj> <desc>"
+    abort "usage: $(basename "$0") [-fq] [-g <public | private>] [-t <type>] <proj> <desc>"
 }
 
+f=false
 q=false
 g=""
 t=""
-while getopts qg:t: opt; do
+while getopts fqg:t: opt; do
     case "$opt" in
+    (f) f=true ;;
     (q) q=true ;;
     (g) g="$OPTARG" ;;
     (t) t="$OPTARG" ;;
@@ -32,7 +34,7 @@ if ! email="$(git config user.email)"; then
 fi
 
 proj="$(basename $(realpath "$1"))"
-if [ -e "$proj" ]; then
+if [ -e "$proj" ] && ! $f; then
     abort "'$proj' already exists"
 fi
 if echo "$proj" | grep -E '\s' > /dev/null; then
