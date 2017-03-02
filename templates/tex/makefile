@@ -17,6 +17,7 @@ clean:
 	find src "(" \
 		   -name "*.aux" \
 		-o -name "*.bbl" \
+		-o -name "*.dvi" \
 		-o -name "*.log" \
 		-o -name "*.toc" \
 	")" -prune -exec rm -rf {} \;
