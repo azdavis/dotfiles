@@ -5,12 +5,12 @@
 
 usage() {
     cat 1>&2 <<EOS
-usage: $(basename "$0") [<options>] <proj> <desc>
+usage: $(basename "$0") [options] <proj> <desc>
 
 options:
     -f
         create <proj> even if it already exists
-    -g <public | private>
+    -g (public | private)
         create a corresponding github repository with the given privacy setting
     -t <type>
         create a project of the given type

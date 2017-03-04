@@ -5,7 +5,7 @@
 
 usage() {
     cat 1>&2 <<EOS
-usage: $(basename "$0") [<options>] <file>...
+usage: $(basename "$0") [options] <file>...
 
 options:
     -f
