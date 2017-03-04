@@ -4,7 +4,18 @@
 . "$HOME/.config/lib/abort.sh"
 
 usage() {
-    abort "usage: $(basename "$0") [-frv] <file>..."
+    cat 1>&2 <<EOS
+usage: $(basename "$0") [<options>] <file>...
+
+options:
+    -f
+        ignore nonexistent files and arguments, never prompt
+    -r
+        remove directories and their contents recursively
+    -v
+        explain what is being done
+EOS
+    exit 1
 }
 
 f=""

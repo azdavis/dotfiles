@@ -4,14 +4,27 @@
 . "$HOME/.config/lib/abort.sh"
 
 usage() {
-    abort "usage: $(basename "$0") [-fq] [-g <public | private>] [-t <type>] <proj> <desc>"
+    cat 1>&2 <<EOS
+usage: $(basename "$0") [<options>] <proj> <desc>
+
+options:
+    -f
+        create <proj> even if it already exists
+    -g <public | private>
+        create a corresponding github repository with the given privacy setting
+    -t <type>
+        create a project of the given type
+    -q
+        be quiet
+EOS
+    exit 1
 }
 
 f=false
-q=false
 g=""
+q=false
 t=""
-while getopts fqg:t: opt; do
+while getopts "fg:t:q" opt; do
     case "$opt" in
     (f) f=true ;;
     (q) q=true ;;
