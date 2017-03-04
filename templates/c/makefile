@@ -1,8 +1,8 @@
 MAKEFLAGS += -rRs
-CFLAGS = -Werror -Weverything -g
+CFLAGS := -Werror -Weverything -g
 
-MAIN = src/{{proj}}
-OBJS =
+MAIN := src/{{proj}}
+OBJS :=
 
 PHONY += all
 all: $(MAIN)

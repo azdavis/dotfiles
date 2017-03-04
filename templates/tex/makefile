@@ -1,7 +1,7 @@
 MAKEFLAGS += -rRs
-Q = > /dev/null
+Q := > /dev/null
 
-MAIN = src/{{proj}}.pdf
+MAIN := src/{{proj}}.pdf
 
 PHONY += all
 all: $(MAIN)
