@@ -367,7 +367,7 @@ index 986a1ff..2d56a5c 100644
 +        "layer0.tint": [17, 17, 17]
      },
 diff --git a/sublime-text-3/Packages/User/theme/theme.tmTheme b/sublime-text-3/Packages/User/theme/theme.tmTheme
-index 39d0990..0f0ed68 100644
+index 39d0990..c786fef 100644
 --- a/sublime-text-3/Packages/User/theme/theme.tmTheme
 +++ b/sublime-text-3/Packages/User/theme/theme.tmTheme
 @@ -10,15 +10,15 @@
