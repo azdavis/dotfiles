@@ -133,7 +133,7 @@ add_template() {
 
 note "creating '$proj'"
 mkdir -p "$path/src"
-add_template base
+add_template "_base"
 if [ -n "$t" ]; then
     add_template "$t"
 fi
