@@ -1,6 +1,6 @@
 #!/bin/sh
 
-. "$HOME/.config/lib/base.sh"
+. "$HOME/.config/lib/_base.sh"
 . "$HOME/.config/lib/symlink.sh"
 
 touch "$HOME/.hushlogin" "$HOME/.netrc"
