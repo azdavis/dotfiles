@@ -27,22 +27,17 @@ install_repo() {
     url="https://github.com/azdavis/dotfiles.git"
     dst_d="$HOME/.config"
     dst_d_git="$dst_d/.git"
-
     if [ -e "$dst_d_git" ] \
     && [ "$(git -C "$dst_d" config remote.origin.url)" = "$url" ]; then
         return
     fi
-
     echo "installing '$url' to '$dst_d'"
-
     tmp_d="$(mktemp -d)"
     tmp_f1="$(mktemp)"
     tmp_f2="$(mktemp)"
     tmp_f3="$(mktemp)"
     trap "rm -rf '$tmp_d' '$tmp_f1' '$tmp_f2' '$tmp_f3'" EXIT
-
     git clone -q -n --single-branch "$url" "$tmp_d"
-
     if [ -d "$dst_d" ]; then
         ls -a1 "$dst_d" | sort > "$tmp_f1"
         ( echo .git; \
@@ -61,25 +56,20 @@ install_repo() {
         confirm
         rm -rf "$dst_d"
     fi
-
     mkdir -p "$dst_d"
     rm -rf "$dst_d_git"
     mv "$tmp_d/.git" "$dst_d_git"
     git -C "$dst_d" reset -q --hard
-
     echo "doing home actions"
     "$dst_d/bin/do-home" < /dev/tty
 }
 
 change_shell() {
     new_shell="$(which zsh)"
-
     if [ "$SHELL" = "$new_shell" ]; then
         return
     fi
-
     echo "changing \$SHELL to '$new_shell'"
-
     chsh -s "$new_shell" < /dev/tty
 }
 
