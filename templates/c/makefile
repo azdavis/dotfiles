@@ -17,8 +17,8 @@ PHONY += clean
 clean:
 	rm -rf $(MAIN)
 	find src "(" \
-		   -name "*.dSYM" \
-		-o -name "*.o" \
+		-name "*.dSYM" -o \
+		-name "*.o" \
 	")" -prune -exec rm -rf {} \;
 
 PHONY += run
