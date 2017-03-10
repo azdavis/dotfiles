@@ -27,7 +27,7 @@ alias \
     grep="grep --color=auto" \
     ls="ls -bh --color=auto --group-directories-first" \
     subl="subl -a" \
-    tree="tree --dirsfirst"
+    tree="tree -a --dirsfirst"
 
 alias \
     c="tput reset" \
