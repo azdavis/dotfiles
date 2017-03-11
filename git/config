@@ -10,7 +10,7 @@
 	algorithm = histogram
 	compactionHeuristic = true
 [init]
-	templateDir = /var/empty
+	templateDir =
 [merge]
 	ff = only
 [pull]
