@@ -64,6 +64,7 @@ install_repo() {
         rm -rf "$dst_d"
     fi
     mkdir -p "$dst_d"
+    chmod 700 "$dst_d"
     rm -rf "$dst_d_git"
     mv "$tmp_d/.git" "$dst_d_git"
     git -C "$dst_d" reset -q --hard
