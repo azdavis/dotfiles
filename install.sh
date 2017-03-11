@@ -6,6 +6,12 @@ confirm() {
     fi
 }
 
+check_for_user() {
+    if [ "$USER" = root ]; then
+        abort "do not run as root"
+    fi
+}
+
 check_for_deps() {
     ok=true
     for x in cat chsh comm git ls mkdir mktemp mv rm sh sort wc zsh; do
@@ -76,6 +82,7 @@ change_shell() {
 main() {
     set -o errexit
     set -o nounset
+    check_for_user
     check_for_deps
     install_repo
     change_shell
