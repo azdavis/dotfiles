@@ -8,7 +8,8 @@ confirm() {
 
 check_for_user() {
     if [ "$USER" = root ]; then
-        abort "do not run as root"
+        echo "do not run as root"
+        exit 1
     fi
 }
 
