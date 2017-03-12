@@ -32,7 +32,6 @@ if [ "$(curl \
     "https://api.github.com/repos/azdavis/dotfiles/commits/master" \
     )" -ne 304 \
 ]; then
-    echo "fetching origin"
     git fetch -q origin master
 fi
 
@@ -47,8 +46,7 @@ if git merge-base --is-ancestor origin/master @; then
     exit
 fi
 
-echo "rebasing onto origin/master"
 old_head="$(git rev-parse --short @)"
 git rebase -q -X theirs --onto origin/master "$old_om" > /dev/null
 new_head="$(git rev-parse --short @)"
-echo "updated dotfiles from $old_head to $new_head"
+echo "updated from $old_head to $new_head"
