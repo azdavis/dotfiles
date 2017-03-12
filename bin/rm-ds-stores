@@ -1,10 +1,10 @@
 #!/bin/sh
 
 . "$HOME/.config/lib/_base.sh"
+. "$HOME/.config/lib/abort.sh"
 
-wd="/"
-if [ $# -ge 1 ]; then
-    wd="$1"
+if [ $# -lt 1 ]; then
+    abort "usage: $(basename "$0") <path>"
 fi
 
-find "$wd" -name .DS_Store -delete 2> /dev/null || true
+find "$1" -name .DS_Store -delete 2> /dev/null || true
