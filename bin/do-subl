@@ -8,16 +8,16 @@ if pgrep -f "Sublime Text" > /dev/null; then
     abort "sublime text must not be running"
 fi
 
-config="$HOME/.config/sublime-text-3"
-symlink "$config" "$HOME/Library/Application Support/Sublime Text 3"
+config_subl="$HOME/.config/sublime-text-3"
+symlink "$config_subl" "$HOME/Library/Application Support/Sublime Text 3"
 rm -rf \
-    "$config/Backup" \
-    "$config/Cache" \
-    "$config/Index" \
-    "$config/Local/Auto Save Session.sublime_session" \
-    "$config/Local/Session.sublime_session" \
-    "$config/Packages/User/oscrypto-ca-bundle.crt" \
-    "$config/Packages/User/Package Control.cache" \
-    "$config/Packages/User/Package Control.last-run" \
-    "$config/Packages/User/Package Control.merged-ca-bundle" \
-    "$config/Packages/User/Package Control.user-ca-bundle"
+    "$config_subl/Backup" \
+    "$config_subl/Cache" \
+    "$config_subl/Index" \
+    "$config_subl/Local/Auto Save Session.sublime_session" \
+    "$config_subl/Local/Session.sublime_session" \
+    "$config_subl/Packages/User/oscrypto-ca-bundle.crt" \
+    "$config_subl/Packages/User/Package Control.cache" \
+    "$config_subl/Packages/User/Package Control.last-run" \
+    "$config_subl/Packages/User/Package Control.merged-ca-bundle" \
+    "$config_subl/Packages/User/Package Control.user-ca-bundle"
