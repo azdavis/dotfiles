@@ -99,7 +99,7 @@
             </dict>
             <dict>
                 <key>scope</key>
-                <string>constant, string.regexp, text.html.markdown markup.raw</string>
+                <string>constant, string.regexp, markup.raw.restructuredtext</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
