@@ -1,6 +1,6 @@
 theme
 =====
 
-adapated from `kkga/spacegray`_
+adapated from spacegray_
 
-.. _`kkga/spacegray`: https://github.com/kkga/spacegray
+.. _spacegray: https://github.com/kkga/spacegray
