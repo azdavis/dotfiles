@@ -14,8 +14,8 @@
 
 !/.gitignore
 !/install.sh
-!/license.md
-!/readme.md
+!/license.rst
+!/readme.rst
 
 /bin/backup
 /bin/rsub

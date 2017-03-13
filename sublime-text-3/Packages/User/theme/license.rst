@@ -1,4 +1,5 @@
-# The MIT License
+The MIT License
+===============
 
 Copyright 2013 Gadzhi Kharkharov.
 

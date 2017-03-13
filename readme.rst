@@ -1,7 +1,11 @@
-# dotfiles
+dotfiles
+========
 
 a potpourri of macOS dotfiles
 
-## install
+install
+-------
+
+::
 
     curl -fsSL http://d.azdavis.xyz | sh

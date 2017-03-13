@@ -1,4 +1,5 @@
-# The ISC License
+The ISC License
+===============
 
 Copyright {{year}} {{name}}.
 
