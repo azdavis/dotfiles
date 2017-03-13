@@ -46,7 +46,7 @@ if ! email="$(git config user.email)"; then
     abort "no git user.email found"
 fi
 
-proj="$(basename $(realpath "$1"))"
+proj="$(basename "$(realpath "$1")")"
 if [ -e "$proj" ] && ! $f; then
     abort "'$proj' already exists"
 fi
