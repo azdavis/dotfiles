@@ -15,7 +15,6 @@ brew "rlwrap"
 brew "tarsnap"
 brew "tree"
 
-cask "alfred"
 cask "basictex"
 cask "battle-net"
 cask "discord"
