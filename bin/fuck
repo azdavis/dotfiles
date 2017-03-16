@@ -3,8 +3,8 @@
 set -eu
 . "$HOME/.config/lib/abort.sh"
 
-usage() {
-    cat 1>&2 <<EOS
+show_help() {
+cat <<EOS
 usage: $(basename "$0") [options] <file>...
 
 options:
@@ -15,6 +15,10 @@ options:
     -v
         explain what is being done
 EOS
+}
+
+usage() {
+    show_help 1>&2
     exit 1
 }
 
