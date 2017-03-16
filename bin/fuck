@@ -24,7 +24,7 @@ usage() {
 f=""
 r=false
 v=""
-while getopts frv opt; do
+while getopts "frv" opt; do
     case "$opt" in
     (f) f="-f" ;;
     (r) r=true ;;
