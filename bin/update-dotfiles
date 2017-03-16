@@ -1,6 +1,6 @@
 #!/bin/sh
 
-. "$HOME/.config/lib/_base.sh"
+set -eu
 . "$HOME/.config/lib/abort.sh"
 
 cd "$HOME/.config"

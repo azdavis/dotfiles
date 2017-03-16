@@ -1,6 +1,6 @@
 #!/bin/sh
 
-. "$HOME/.config/lib/_base.sh"
+set -eu
 
 git \
     -c gc.reflogExpire=0 \
