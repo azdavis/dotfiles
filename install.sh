@@ -15,7 +15,7 @@ check_for_user() {
 
 check_for_deps() {
     ok=true
-    for x in cat chsh comm git ls mkdir mktemp mv rm sh sort wc zsh; do
+    for x in cat chsh comm git grep ls mkdir mktemp mv rm sh sort zsh; do
         if ! which "$x" > /dev/null 2>&1; then
             echo "'$x' not installed"
             ok=false
@@ -53,7 +53,7 @@ install_repo() {
           git -C "$tmp_d" ls-tree --name-only @ \
         ) | sort > "$tmp_f2"
         comm -12 "$tmp_f1" "$tmp_f2" > "$tmp_f3"
-        if [ "$(cat "$tmp_f3" | wc -l)" -ne 0 ]; then
+        if grep -q . "$tmp_f3"; then
             echo "the following items in '$dst_d' would be replaced:"
             cat "$tmp_f3"
             confirm
