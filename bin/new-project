@@ -12,10 +12,10 @@ options:
         create <proj> even if it already exists
     -g (public | private)
         create a corresponding github repository with the given privacy setting
-    -t <type>
-        create a project of the given type
     -q
         be quiet
+    -t <type>
+        create a project of the given type
 EOS
     exit 1
 }
@@ -27,8 +27,8 @@ t=""
 while getopts "fg:t:q" opt; do
     case "$opt" in
     (f) f=true ;;
-    (q) q=true ;;
     (g) g="$OPTARG" ;;
+    (q) q=true ;;
     (t) t="$OPTARG" ;;
     (*) usage ;;
     esac
