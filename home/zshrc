@@ -27,7 +27,7 @@ alias \
     df="df -h" \
     du="du -sh" \
     grep="grep --color=auto" \
-    ls="ls -bh --color=auto --group-directories-first" \
+    ls="ls -bh --color=auto --group-directories-first --time-style=long-iso" \
     subl="subl -a" \
     tree="tree -a --dirsfirst"
 
