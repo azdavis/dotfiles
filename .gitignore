@@ -8,6 +8,7 @@
 !/lib
 !/mpv
 !/pkg
+!/site-functions
 !/sublime-text-3
 !/templates
 !/terminal
@@ -21,6 +22,8 @@
 /bin/rsub
 
 /git/credentials
+
+/site-functions/_backup
 
 /sublime-text-3/*
 !/sublime-text-3/Packages

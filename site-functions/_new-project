@@ -1,0 +1,11 @@
+#compdef new-project
+
+local args=(
+    "-f[create <proj> even if it already exists]"
+    "-g[create a corresponding github repository of the given privacy]:privacy:(public private)"
+    "-q[be quiet]"
+    "-t[create a project of the given type]:type:(c node tex)"
+    "*:files:_files"
+)
+
+_arguments -s $args
