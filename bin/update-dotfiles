@@ -35,7 +35,7 @@ if [ "$(curl \
     git fetch -q origin master
 fi
 
-if [ "$(git status -u --porcelain | wc -l)" -ne 0 ]; then
+if [ "$(git status -unormal --porcelain | wc -l)" -ne 0 ]; then
     echo "auto-commiting changes"
     git add -A
     git commit -q -m "update-dotfiles auto-commit"
