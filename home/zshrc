@@ -20,7 +20,6 @@ setopt \
     menucomplete \
     nobeep \
     nounset \
-    pipefail \
     rmstarsilent
 
 alias \
