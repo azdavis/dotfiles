@@ -11,10 +11,10 @@ options:
     -f
         create <proj> even if it already exists
     -g (public | private)
-        create a corresponding github repository with the given privacy setting
+        create a corresponding github repository of the given privacy
     -q
         be quiet
-    -t <type>
+    -t (c | node | tex)
         create a project of the given type
 EOS
     exit 1
