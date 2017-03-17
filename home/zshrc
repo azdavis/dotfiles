@@ -23,8 +23,10 @@ setopt \
     rmstarsilent
 
 alias \
+    df="df -h" \
+    du="du -h" \
     grep="grep --color=auto" \
-    ls="ls -b --color=auto --group-directories-first --time-style=long-iso" \
+    ls="ls -bh --color=auto --group-directories-first --time-style=long-iso" \
     subl="subl -a" \
     tree="tree -a --dirsfirst"
 
