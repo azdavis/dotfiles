@@ -87,7 +87,7 @@ github_cred() {
     echo "hostname=github.com" \
         | git credential fill \
         | grep "$1" \
-        | sed "s/$1=//g"
+        | sed "s/$1=//"
 }
 
 gh_username="$(github_cred username)"
