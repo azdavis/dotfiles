@@ -37,7 +37,6 @@
     "ignored_packages":
     [
         "JavaScript",
-        "Markdown",
         "Vintage"
     ],
     "indent_guide_options":
