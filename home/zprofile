@@ -1,7 +1,8 @@
-if ! v="$(head -n 1 "$HOME/.config/update-dotfiles.last" 2> /dev/null)" \
-|| ! expr "$v" + 0 = "$v" > /dev/null 2>&1 \
-|| expr "$(date +%s)" - "$v" ">=" 72000 > /dev/null; then
+now="$(date +%s)"
+if ! last="$(head -n 1 "$HOME/.config/update-dotfiles.last" 2> /dev/null)" \
+|| ! [ "$last" -eq "$last" ] 2> /dev/null \
+|| [ $((now - last)) -ge 72000 ]; then
     echo "updating dotfiles"
     "$HOME/.config/bin/update-dotfiles"
 fi
-unset v
+unset now last
