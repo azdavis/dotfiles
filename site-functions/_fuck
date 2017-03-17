@@ -1,10 +1,10 @@
 #compdef fuck
 
-local args=(
+local opts=(
     "-f[ignore nonexistent files and arguments, never prompt]"
     "-r[remove directories and their contents recursively]"
     "-v[explain what is being done]"
     "*:files:_files"
 )
 
-_arguments -s $args
+_arguments -s $opts
