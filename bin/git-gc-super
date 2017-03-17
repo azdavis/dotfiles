@@ -1,6 +1,10 @@
 #!/bin/sh
 
-set -eu
+. "$HOME/.config/lib/_base.sh"
+
+if [ $# -ne 0 ]; then
+    abort "usage: $(basename "$0")"
+fi
 
 git \
     -c gc.reflogExpire=0 \

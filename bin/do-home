@@ -1,7 +1,11 @@
 #!/bin/sh
 
-set -eu
+. "$HOME/.config/lib/_base.sh"
 . "$HOME/.config/lib/symlink.sh"
+
+if [ $# -ne 0 ]; then
+    abort "usage: $(basename "$0")"
+fi
 
 touch "$HOME/.hushlogin" "$HOME/.netrc"
 chmod 600 "$HOME/.hushlogin" "$HOME/.netrc"

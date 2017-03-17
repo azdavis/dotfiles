@@ -1,13 +1,16 @@
 #!/bin/sh
 
-set -eu
-. "$HOME/.config/lib/abort.sh"
+. "$HOME/.config/lib/_base.sh"
 
 git rev-parse
 
-remote="origin"
-if [ $# -ge 1 ]; then
+remote=""
+if [ $# -eq 0 ]; then
+    remote="origin"
+elif [ $# -eq 1 ]; then
     remote="$1"
+else
+    abort "usage: $(basename "$0")"
 fi
 
 if ! url="$(git config remote.$remote.url)"; then
