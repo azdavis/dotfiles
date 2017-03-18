@@ -6,11 +6,11 @@ a potpourri of macOS dotfiles
 install
 -------
 
-note that a file named A on your system will be replaced by the file named B in
-this repository, where A and B are:
+note that a file named X on your system will be replaced by the file named Y in
+this repository, where X and Y are:
 
 +--------------------------------+------------------+
-| A                              | B                |
+| X                              | Y                |
 +================================+==================+
 | ``$HOME/.config/path/to/file`` | ``path/to/file`` |
 +--------------------------------+------------------+
