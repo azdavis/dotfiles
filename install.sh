@@ -43,7 +43,7 @@ install_repo() {
     chmod 700 "$dst"
     rm -rf "$dst/.git"
     mv "$tmp/.git" "$dst/.git"
-    git -C "$dst" checkout .
+    git -C "$dst" reset -q --hard
     echo "doing home actions"
     "$dst/bin/do-home" < /dev/tty
 }
