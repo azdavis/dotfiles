@@ -13,7 +13,7 @@ check_for_deps() {
             ok=false
         fi
     done
-    if [ "$(uname)" = Darwin ] && ! xcode-select -p > /dev/null 2>&1; then
+    if ! xcode-select -p > /dev/null 2>&1; then
         echo "'Command Line Developer Tools' not installed"
         ok=false
     fi
