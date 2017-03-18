@@ -9,7 +9,7 @@ install
 Before you install, you should understand what this repository is and does.
 
 If you're using this repository, you should pretty much be comfortable with it
-taking over your ``$HOME/.config``. That is where it's installed, after all.
+managing your ``$HOME/.config``. That is where it's installed, after all.
 
 This repository also manages dotfiles, i.e. those configuration files in your
 home directory whose filenames start with a dot.
