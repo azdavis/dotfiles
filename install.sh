@@ -1,4 +1,5 @@
-check_for_user() {
+check_no_root() {
+    echo "checking user is not root"
     if [ "$USER" = root ]; then
         echo "do not run as root"
         exit 1
@@ -6,6 +7,7 @@ check_for_user() {
 }
 
 check_for_deps() {
+    echo "checking for deps"
     ok=true
     for x in \
         basename brew cat chmod chsh curl date defaults find git grep ln \
@@ -28,11 +30,11 @@ check_for_deps() {
 install_repo() {
     url="https://github.com/azdavis/dotfiles.git"
     dst="$HOME/.config"
+    echo "installing '$url' to '$dst'"
     if [ -d "$dst" ] \
     && [ "$(git -C "$dst" config remote.origin.url)" = "$url" ]; then
         return
     fi
-    echo "installing '$url' to '$dst'"
     tmp="$(mktemp -d)"
     trap "rm -rf '$tmp'" EXIT
     git clone -q -n --single-branch "$url" "$tmp"
@@ -50,6 +52,7 @@ install_repo() {
 
 change_shell() {
     new_shell="$(which zsh)"
+    echo "changing shell to '$new_shell'"
     if [ "$SHELL" != "$new_shell" ]; then
         echo "changing \$SHELL to '$new_shell'"
         chsh -s "$new_shell" < /dev/tty
@@ -59,10 +62,11 @@ change_shell() {
 main() {
     set -o errexit
     set -o nounset
-    check_for_user
+    check_no_root
     check_for_deps
     install_repo
     change_shell
+    echo "finishing"
 }
 
 main
