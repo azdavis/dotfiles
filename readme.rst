@@ -26,6 +26,13 @@ replaced by the file named Y in ``dotfiles``, where X and Y are:
 | ``$HOME/.file``                | ``home/file``    |
 +--------------------------------+------------------+
 
+A few other files in ``$HOME/.config`` that will be replaced are
+
+- ``.git``, because that's where Git information goes,
+- ``update-dotfiles.last``, because that's how we track when we've updated, and
+- ``update-dotfiles.lock``, because that's how we make sure we don't have two
+  instances of the update script running at once.
+
 Note also that this is true not only when the install script is run, but also
 the auto-update script.
 
