@@ -1,11 +1,3 @@
-confirm() {
-    printf "continue [yn]? "
-    read x < /dev/tty
-    if [ "$x" != y ]; then
-        exit 1
-    fi
-}
-
 check_for_user() {
     if [ "$USER" = root ]; then
         echo "do not run as root"
@@ -40,27 +32,9 @@ install_repo() {
     fi
     echo "installing '$url' to '$dst_d'"
     tmp_d="$(mktemp -d)"
-    tmp_f1="$(mktemp)"
-    tmp_f2="$(mktemp)"
-    tmp_f3="$(mktemp)"
-    trap "rm -rf '$tmp_d' '$tmp_f1' '$tmp_f2' '$tmp_f3'" EXIT
+    trap "rm -rf '$tmp_d'" EXIT
     git clone -q -n --single-branch "$url" "$tmp_d"
-    if [ -d "$dst_d" ]; then
-        ls -a1 "$dst_d" | sort > "$tmp_f1"
-        ( echo .git; \
-          echo update-dotfiles.last; \
-          echo update-dotfiles.lock; \
-          git -C "$tmp_d" ls-tree --name-only @ \
-        ) | sort > "$tmp_f2"
-        comm -12 "$tmp_f1" "$tmp_f2" > "$tmp_f3"
-        if grep -q . "$tmp_f3"; then
-            echo "the following items in '$dst_d' would be replaced:"
-            cat "$tmp_f3"
-            confirm
-        fi
-    elif [ -e "$dst_d" ] || [ -L "$dst_d" ]; then
-        echo "'$dst_d' would be replaced"
-        confirm
+    if ! [ -d "$dst_d" ]; then
         rm -rf "$dst_d"
     fi
     mkdir -p "$dst_d"
