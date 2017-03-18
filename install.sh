@@ -7,7 +7,10 @@ check_for_user() {
 
 check_for_deps() {
     ok=true
-    for x in cat chsh comm git grep ls mkdir mktemp mv rm sh sort zsh; do
+    for x in \
+        basename brew cat chmod chsh curl date defaults find git grep ln \
+        mkdir mktemp mv rm sed sh touch tr wc zsh \
+    ; do
         if ! which "$x" > /dev/null 2>&1; then
             echo "'$x' not installed"
             ok=false
