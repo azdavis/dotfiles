@@ -6,9 +6,6 @@ a potpourri of macOS dotfiles
 install
 -------
 
-Before you install, you should understand what this project, hereafter
-``dotfiles``, is and does.
-
 The install script clones ``dotfiles`` to your ``$HOME/.config``. Thereafter,
 it is auto-updated daily. (You can also trigger a manual update with
 ``update-dotfiles``.)
