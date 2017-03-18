@@ -27,26 +27,25 @@ check_for_deps() {
 
 install_repo() {
     url="https://github.com/azdavis/dotfiles.git"
-    dst_d="$HOME/.config"
-    dst_d_git="$dst_d/.git"
-    if [ -d "$dst_d" ] \
-    && [ "$(git -C "$dst_d" config remote.origin.url)" = "$url" ]; then
+    dst="$HOME/.config"
+    if [ -d "$dst" ] \
+    && [ "$(git -C "$dst" config remote.origin.url)" = "$url" ]; then
         return
     fi
-    echo "installing '$url' to '$dst_d'"
-    tmp_d="$(mktemp -d)"
-    trap "rm -rf '$tmp_d'" EXIT
-    git clone -q -n --single-branch "$url" "$tmp_d"
-    if ! [ -d "$dst_d" ]; then
-        rm -rf "$dst_d"
+    echo "installing '$url' to '$dst'"
+    tmp="$(mktemp -d)"
+    trap "rm -rf '$tmp'" EXIT
+    git clone -q -n --single-branch "$url" "$tmp"
+    if ! [ -d "$dst" ]; then
+        rm -rf "$dst"
     fi
-    mkdir -p "$dst_d"
-    chmod 700 "$dst_d"
-    rm -rf "$dst_d_git"
-    mv "$tmp_d/.git" "$dst_d_git"
-    git -C "$dst_d" checkout .
+    mkdir -p "$dst"
+    chmod 700 "$dst"
+    rm -rf "$dst/.git"
+    mv "$tmp/.git" "$dst/.git"
+    git -C "$dst" checkout .
     echo "doing home actions"
-    "$dst_d/bin/do-home" < /dev/tty
+    "$dst/bin/do-home" < /dev/tty
 }
 
 change_shell() {
