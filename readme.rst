@@ -6,16 +6,17 @@ a potpourri of macOS dotfiles
 install
 -------
 
-Before you install, you should understand what this repository is and does.
+Before you install, you should understand what this project, hereafter
+``dotfiles``, is and does.
 
-If you're using this repository, you should pretty much be comfortable with it
-managing your ``$HOME/.config``. That is where it's installed, after all.
+The install script clones ``dotfiles`` to your ``$HOME/.config``. Thereafter,
+it is auto-updated daily.
 
-This repository also manages dotfiles, i.e. those configuration files in your
-home directory whose filenames start with a dot.
+One of the primary purposes of ``dotfiles`` (the project) is to manage
+dotfiles (those files in your home directory whose filenames start with a dot).
 
-With this in mind, note that a file named X on your system will be replaced by
-the file named Y in this repository, where X and Y are:
+With these facts in mind, note that a file named X on your system will be
+replaced by the file named Y in ``dotfiles``, where X and Y are:
 
 +--------------------------------+------------------+
 | X                              | Y                |
@@ -29,10 +30,10 @@ Note also that this is true not only when the install script is run, but also
 the auto-update script.
 
 A file named X for which there does *not* exist an corresponding file named Y
-will be ignored. Be warned, however, that if in the future, a corresponding
-file *is* added in this repository, it will replace the other one.
+will not be affected. Be warned, however, that if in the future, a
+corresponding file *is* added in ``dotfiles``, it will replace the other one.
 
-Note also, however, that it *is* possible to use this repository both while
+Note also, however, that it *is* possible to use ``dotfiles`` both while
 tracking upstream changes and keeping your own modifications intact. If you
 commit your changes in ``$HOME/.config``, the auto-update script will respect
 them.
