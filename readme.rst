@@ -14,7 +14,7 @@ One of the primary purposes of ``dotfiles`` (the project) is to manage
 dotfiles (those files in your home directory whose filenames start with a dot).
 
 A file named X on your system will be replaced by the file named Y in
-``dotfiles``, where X and Y are:
+``dotfiles``, where X and Y are...
 
 +--------------------------------+------------------+
 | X                              | Y                |
@@ -24,15 +24,14 @@ A file named X on your system will be replaced by the file named Y in
 | ``$HOME/.file``                | ``home/file``    |
 +--------------------------------+------------------+
 
+\...whenever the install or update scripts are run.
+
 A few other files in ``$HOME/.config`` that will be replaced are
 
 - ``.git``, because that's where Git information goes,
 - ``update-dotfiles.last``, because that's how we track when we've updated, and
 - ``update-dotfiles.lock``, because that's how we make sure we don't have two
   instances of the update script running at once.
-
-The replacement of files happpens not only when the install script is run, but
-also the update script.
 
 A file named X for which there does not exist an corresponding file named Y
 will not be affected. But be warned that if in the future, a corresponding file
