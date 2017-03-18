@@ -51,11 +51,10 @@ install_repo() {
 
 change_shell() {
     new_shell="$(which zsh)"
-    if [ "$SHELL" = "$new_shell" ]; then
-        return
+    if [ "$SHELL" != "$new_shell" ]; then
+        echo "changing \$SHELL to '$new_shell'"
+        chsh -s "$new_shell" < /dev/tty
     fi
-    echo "changing \$SHELL to '$new_shell'"
-    chsh -s "$new_shell" < /dev/tty
 }
 
 main() {
