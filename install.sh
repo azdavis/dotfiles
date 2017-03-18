@@ -6,6 +6,14 @@ check_no_root() {
     fi
 }
 
+check_os() {
+    echo "checking OS"
+    if [ "$(uname)" != Darwin ]; then
+        echo "'macOS' not installed"
+        exit 1
+    fi
+}
+
 check_for_deps() {
     echo "checking for deps"
     ok=true
@@ -63,6 +71,7 @@ main() {
     set -o errexit
     set -o nounset
     check_no_root
+    check_os
     check_for_deps
     install_repo
     change_shell
