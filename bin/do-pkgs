@@ -31,7 +31,7 @@ brew doctor
 echo "doing tlmgr"
 tlmgr update --self
 tlmgr update --all
-cat tlmgrfile | xargs tlmgr install
+tlmgr install $(cat tlmgrfile)
 
 echo "doing npm"
 npm update -g
