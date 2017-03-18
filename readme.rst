@@ -33,8 +33,8 @@ A few other files in ``$HOME/.config`` that will be replaced are
   instances of the update script running at once.
 
 A file named X for which there does not exist an corresponding file named Y
-will not be affected. But be warned that if in the future, a corresponding file
-is added in ``dotfiles``, it will replace the other one.
+will not be affected. But be warned that if in the future, a corresponding Y is
+added in ``dotfiles``, it will replace X.
 
 Despite this, it is possible to use ``dotfiles`` both while tracking upstream
 changes and keeping your own modifications intact. If you commit your changes
