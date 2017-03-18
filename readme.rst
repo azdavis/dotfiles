@@ -14,7 +14,8 @@ One of the primary purposes of ``dotfiles`` (the project) is to manage
 dotfiles (those files in your home directory whose filenames start with a dot).
 
 A file named X on your system will be replaced by the file named Y in
-``dotfiles``, where X and Y are...
+``dotfiles``, whenever the install or update scripts are run, where X and Y
+are:
 
 +--------------------------------+------------------+
 | X                              | Y                |
@@ -23,8 +24,6 @@ A file named X on your system will be replaced by the file named Y in
 +--------------------------------+------------------+
 | ``$HOME/.file``                | ``home/file``    |
 +--------------------------------+------------------+
-
-\...whenever the install or update scripts are run.
 
 A few other files in ``$HOME/.config`` that will be replaced are
 
