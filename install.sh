@@ -34,7 +34,7 @@ install_repo() {
     url="https://github.com/azdavis/dotfiles.git"
     dst_d="$HOME/.config"
     dst_d_git="$dst_d/.git"
-    if [ -e "$dst_d_git" ] \
+    if [ -d "$dst_d" ] \
     && [ "$(git -C "$dst_d" config remote.origin.url)" = "$url" ]; then
         return
     fi
