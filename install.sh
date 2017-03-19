@@ -66,7 +66,6 @@ change_shell() {
     if [ "$SHELL" = "$new_shell" ]; then
         return
     fi
-    echo "changing \$SHELL to '$new_shell'"
     chsh -s "$new_shell" < /dev/tty
 }
 
