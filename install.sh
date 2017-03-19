@@ -38,8 +38,6 @@ check_deps() {
 }
 
 install_repo() {
-    url="https://github.com/azdavis/dotfiles.git"
-    dst="$HOME/.config"
     echo "installing '$url' to '$dst'"
     if [ -d "$dst" ] \
     && [ "$(git -C "$dst" config remote.origin.url)" = "$url" ]; then
@@ -80,6 +78,8 @@ change_shell() {
 main() {
     set -o errexit
     set -o nounset
+    url="https://github.com/azdavis/dotfiles.git"
+    dst="$HOME/.config"
     check_user
     check_os
     check_deps
