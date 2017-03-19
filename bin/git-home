@@ -10,7 +10,7 @@ if [ $# -eq 0 ]; then
 elif [ $# -eq 1 ]; then
     remote="$1"
 else
-    abort "usage: $(basename "$0")"
+    abort "usage: $(basename "$0") [<remote>]"
 fi
 
 if ! url="$(git config remote.$remote.url)"; then
