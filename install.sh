@@ -1,17 +1,19 @@
 check_no_root() {
     echo "checking user is not root"
-    if [ "$USER" = root ]; then
-        echo "do not run as root"
-        exit 1
+    if [ "$USER" != root ]; then
+        return
     fi
+    echo "do not run as root"
+    exit 1
 }
 
 check_os() {
     echo "checking OS"
-    if [ "$(uname)" != Darwin ]; then
-        echo "'macOS' not installed"
-        exit 1
+    if [ "$(uname)" = Darwin ]; then
+        return
     fi
+    echo "'macOS' not installed"
+    exit 1
 }
 
 check_for_deps() {
@@ -61,10 +63,11 @@ install_repo() {
 change_shell() {
     new_shell="$(which zsh)"
     echo "changing shell to '$new_shell'"
-    if [ "$SHELL" != "$new_shell" ]; then
-        echo "changing \$SHELL to '$new_shell'"
-        chsh -s "$new_shell" < /dev/tty
+    if [ "$SHELL" = "$new_shell" ]; then
+        return
     fi
+    echo "changing \$SHELL to '$new_shell'"
+    chsh -s "$new_shell" < /dev/tty
 }
 
 main() {
