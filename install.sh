@@ -56,8 +56,16 @@ install_repo() {
     rm -rf "$dst/.git"
     mv "$tmp/.git" "$dst/.git"
     git -C "$dst" reset -q --hard
+}
+
+do_home() {
     echo "doing home actions"
-    "$dst/bin/do-home" < /dev/tty
+    "$dst/bin/do-home"
+}
+
+do_subl() {
+    echo "doing subl actions"
+    "$dst/bin/do-subl"
 }
 
 change_shell() {
@@ -76,6 +84,8 @@ main() {
     check_os
     check_deps
     install_repo
+    do_home
+    do_subl
     change_shell
     echo "finishing"
 }
