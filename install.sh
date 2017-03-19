@@ -1,23 +1,23 @@
-check_no_root() {
+check_user() {
     echo "checking user is not root"
     if [ "$USER" != root ]; then
         return
     fi
-    echo "do not run as root"
+    echo "user is root"
     exit 1
 }
 
 check_os() {
-    echo "checking OS"
+    echo "checking OS is macOS"
     if [ "$(uname)" = Darwin ]; then
         return
     fi
-    echo "'macOS' not installed"
+    echo "OS is not macOS"
     exit 1
 }
 
-check_for_deps() {
-    echo "checking for deps"
+check_deps() {
+    echo "checking deps are installed"
     ok=true
     for x in \
         basename brew cat chmod chsh curl date defaults find git grep ln \
@@ -72,9 +72,9 @@ change_shell() {
 main() {
     set -o errexit
     set -o nounset
-    check_no_root
+    check_user
     check_os
-    check_for_deps
+    check_deps
     install_repo
     change_shell
     echo "finishing"
