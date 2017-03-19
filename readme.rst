@@ -17,13 +17,15 @@ Therefore, a file named X on your system will be replaced by the file named Y
 in ``dotfiles``, whenever the install or update scripts are run, where X and Y
 are:
 
-+--------------------------------+------------------+
-| X                              | Y                |
-+================================+==================+
-| ``$HOME/.config/path/to/file`` | ``path/to/file`` |
-+--------------------------------+------------------+
-| ``$HOME/.file``                | ``home/file``    |
-+--------------------------------+------------------+
++------------------------------------------------------+--------------------+
+| X                                                    | Y                  |
++======================================================+====================+
+| ``$HOME/.config/path/to/file``                       | ``path/to/file``   |
++------------------------------------------------------+--------------------+
+| ``$HOME/.file``                                      | ``home/file``      |
++------------------------------------------------------+--------------------+
+| ``$HOME/Library/Application Support/Sublime Text 3`` | ``sublime-text-3`` |
++------------------------------------------------------+--------------------+
 
 A few other files in ``$HOME/.config`` that will be replaced are
 
