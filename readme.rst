@@ -6,7 +6,7 @@ a potpourri of macOS dotfiles
 install
 -------
 
-The install script clones ``dotfiles`` to your ``$HOME/.config``. Thereafter,
+The install script clones ``dotfiles`` to your ``~/.config``. Thereafter,
 it is auto-updated daily. (You can also trigger a manual update with
 ``update-dotfiles``.)
 
@@ -21,21 +21,21 @@ Therefore, whenever the file named X in ``dotfiles`` is run, a file named Y on
 your system will be replaced by the file named Z in ``dotfiles``, where X, Y,
 and Z are:
 
-+-------------------------+------------------------------------------------------+--------------------+
-| X                       | Y                                                    | Z                  |
-+=========================+======================================================+====================+
-| ``install.sh``          |                                                      |                    |
-+-------------------------+ ``$HOME/.config/path/to/file``                       | ``path/to/file``   |
-| ``bin/update-dotfiles`` |                                                      |                    |
-+-------------------------+------------------------------------------------------+--------------------+
-| ``install.sh``          |                                                      |                    |
-+-------------------------+ ``$HOME/.file``                                      | ``home/file``      |
-| ``bin/do-home``         |                                                      |                    |
-+-------------------------+------------------------------------------------------+--------------------+
-| ``bin/do-subl``         | ``$HOME/Library/Application Support/Sublime Text 3`` | ``sublime-text-3`` |
-+-------------------------+------------------------------------------------------+--------------------+
++-------------------------+--------------------------------------------------+--------------------+
+| X                       | Y                                                | Z                  |
++=========================+==================================================+====================+
+| ``install.sh``          |                                                  |                    |
++-------------------------+ ``~/.config/path/to/file``                       | ``path/to/file``   |
+| ``bin/update-dotfiles`` |                                                  |                    |
++-------------------------+--------------------------------------------------+--------------------+
+| ``install.sh``          |                                                  |                    |
++-------------------------+ ``~/.file``                                      | ``home/file``      |
+| ``bin/do-home``         |                                                  |                    |
++-------------------------+--------------------------------------------------+--------------------+
+| ``bin/do-subl``         | ``~/Library/Application Support/Sublime Text 3`` | ``sublime-text-3`` |
++-------------------------+--------------------------------------------------+--------------------+
 
-A few other files in ``$HOME/.config`` that will be replaced are
+A few other files in ``~/.config`` that will be replaced are
 
 - ``.git``, because that's where Git information goes,
 - ``update-dotfiles.last``, because that's how we track when we've updated, and
@@ -48,7 +48,7 @@ corresponding Z is added in ``dotfiles``, X will replace Y.
 
 Despite this, it is possible to use ``dotfiles`` both while tracking upstream
 changes and keeping your own modifications intact. If you commit your changes
-in ``$HOME/.config``, the update script will respect them.
+in ``~/.config``, the update script will respect them.
 
 More technically, the update script rebases your local HEAD against the
 upstream origin/master. If merge conflicts arise between upstream and what you
