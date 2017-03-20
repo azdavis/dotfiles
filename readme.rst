@@ -15,7 +15,7 @@ dotfiles, i.e., those files in your home directory whose filenames start with a
 dot.
 
 ``dotfiles`` also manages Sublime Text 3 configuration, which on macOS is
-stored elsewhere.
+stored in Application Support.
 
 Therefore, a file named X on your system will be replaced by the file named Y
 in ``dotfiles``, whenever the install or update scripts are run, where X and Y
