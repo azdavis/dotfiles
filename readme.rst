@@ -10,8 +10,9 @@ The install script clones ``dotfiles`` to your ``$HOME/.config``. Thereafter,
 it is auto-updated daily. (You can also trigger a manual update with
 ``update-dotfiles``.)
 
-One of the primary purposes of ``dotfiles`` (the project) is to manage dotfiles
-i.e., those files in your home directory whose filenames start with a dot.
+One of the primary purposes of ``dotfiles`` (the project) is to manage
+dotfiles, i.e., those files in your home directory whose filenames start with a
+dot.
 
 ``dotfiles`` also manages Sublime Text 3 configuration, which on macOS is
 stored elsewhere.
