@@ -17,19 +17,19 @@ dot.
 ``dotfiles`` also manages Sublime Text 3 configuration, which on macOS is
 stored in Application Support.
 
-Therefore, a file named X on your system will be replaced by the file named Y
-in ``dotfiles``, whenever the install or update scripts are run, where X and Y
-are:
+Therefore, whenever the file named X in ``dotfiles`` is run, a file named Y on
+your system will be replaced by the file named Z in ``dotfiles``, where X, Y,
+and Z are:
 
-+------------------------------------------------------+--------------------+
-| X                                                    | Y                  |
-+======================================================+====================+
-| ``$HOME/.config/path/to/file``                       | ``path/to/file``   |
-+------------------------------------------------------+--------------------+
-| ``$HOME/.file``                                      | ``home/file``      |
-+------------------------------------------------------+--------------------+
-| ``$HOME/Library/Application Support/Sublime Text 3`` | ``sublime-text-3`` |
-+------------------------------------------------------+--------------------+
++------------------------------------------+------------------------------------------------------+--------------------+
+| X                                        | Y                                                    | Z                  |
++==========================================+======================================================+====================+
+| ``install.sh`` / ``bin/update-dotfiles`` | ``$HOME/.config/path/to/file``                       | ``path/to/file``   |
++------------------------------------------+------------------------------------------------------+--------------------+
+| ``install.sh`` / ``bin/do-home``         | ``$HOME/.file``                                      | ``home/file``      |
++------------------------------------------+------------------------------------------------------+--------------------+
+| ``bin/do-subl``                          | ``$HOME/Library/Application Support/Sublime Text 3`` | ``sublime-text-3`` |
++------------------------------------------+------------------------------------------------------+--------------------+
 
 A few other files in ``$HOME/.config`` that will be replaced are
 
@@ -38,9 +38,9 @@ A few other files in ``$HOME/.config`` that will be replaced are
 - ``update-dotfiles.lock``, because that's how we make sure we don't have two
   instances of the update script running at once.
 
-A file named X for which there does not exist an corresponding file named Y
-will not be affected. But be warned that if in the future, a corresponding Y is
-added in ``dotfiles``, it will replace X.
+A file named Y for which there does not exist an corresponding file named Z
+will not be affected when X is run. But be warned that if in the future, a
+corresponding Z is added in ``dotfiles``, X will replace Y.
 
 Despite this, it is possible to use ``dotfiles`` both while tracking upstream
 changes and keeping your own modifications intact. If you commit your changes
