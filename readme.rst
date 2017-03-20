@@ -13,6 +13,8 @@ it is auto-updated daily. (You can also trigger a manual update with
 One of the primary purposes of ``dotfiles`` (the project) is to manage
 dotfiles (those files in your home directory whose filenames start with a dot).
 
+``dotfiles`` also manages Sublime Text 3 configuration.
+
 Therefore, a file named X on your system will be replaced by the file named Y
 in ``dotfiles``, whenever the install or update scripts are run, where X and Y
 are:
