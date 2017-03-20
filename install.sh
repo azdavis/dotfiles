@@ -61,11 +61,6 @@ do_home() {
     "$dst/bin/do-home"
 }
 
-do_subl() {
-    echo "doing subl actions"
-    "$dst/bin/do-subl"
-}
-
 change_shell() {
     new_shell="$(which zsh)"
     echo "changing shell to '$new_shell'"
@@ -85,7 +80,6 @@ main() {
     check_deps
     install_repo
     do_home
-    do_subl
     change_shell
     echo "finishing"
 }
