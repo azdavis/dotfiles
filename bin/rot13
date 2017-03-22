@@ -2,10 +2,6 @@
 
 . "$HOME/.config/lib/_base.sh"
 
-if [ $# -ne 0 ]; then
-    abort "usage: $(basename "$0")"
-fi
-
-tr \
+cat "$@" | tr \
     'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz' \
     'NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm'
