@@ -48,7 +48,8 @@ corresponding Z is added in ``dotfiles``, X will replace Y with Z.
 
 Despite this, it is possible to use ``dotfiles`` both while tracking upstream
 changes and keeping your own modifications intact. If you commit your changes
-in ``~/.config``, the update script will respect them.
+in ``~/.config``, the update script will respect them. This is useful for
+things like making changes to the ``user`` section of ``git/config``.
 
 The update script rebases your local HEAD against the upstream origin/master.
 If merge conflicts arise between upstream and what you have, the conflicts are
