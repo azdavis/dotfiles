@@ -6,9 +6,9 @@ a potpourri of macOS dotfiles
 install
 -------
 
-The install script clones ``dotfiles`` to your ``~/.config``. Thereafter,
-it is auto-updated daily. (You can also trigger a manual update with
-``update-dotfiles``.)
+The install script clones ``dotfiles`` to your ``~/.config``. Thereafter, it is
+auto-updated daily. You can also trigger a manual update with
+``update-dotfiles``.
 
 One of the primary purposes of ``dotfiles`` (the project) is to manage
 dotfiles, i.e., those files in your home directory whose filenames start with a
