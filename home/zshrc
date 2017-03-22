@@ -39,13 +39,13 @@ alias \
     gb="git branch" \
     gc="git commit" \
     gd="git diff" \
+    gh="git show --pretty=fuller" \
     gi="git init" \
     gk="git checkout" \
     gl="git log --all --decorate --graph --oneline" \
     gm="git merge" \
     gr="git reset" \
-    gs="git status" \
-    gsh="git show --pretty=fuller"
+    gs="git status"
 
 autoload -U compinit
 compinit -u
