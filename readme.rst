@@ -50,9 +50,9 @@ Despite this, it is possible to use ``dotfiles`` both while tracking upstream
 changes and keeping your own modifications intact. If you commit your changes
 in ``~/.config``, the update script will respect them.
 
-More technically, the update script rebases your local HEAD against the
-upstream origin/master. If merge conflicts arise between upstream and what you
-have, the conflicts are always resolved with your version.
+The update script rebases your local HEAD against the upstream origin/master.
+If merge conflicts arise between upstream and what you have, the conflicts are
+always resolved with your version.
 
 If you understand and accept the risks::
 
