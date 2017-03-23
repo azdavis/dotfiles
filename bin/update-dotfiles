@@ -13,13 +13,14 @@ rm -rf "$last"
 date +%s > "$last"
 
 old_om="$(git rev-parse origin/master)"
-if [ "$(curl \
-    -H "Accept: application/vnd.github.chitauri-preview+sha" \
-    -H "If-None-Match: \"$old_om\"" \
-    -s \
-    -o /dev/null \
-    -w "%{http_code}" \
-    "https://api.github.com/repos/azdavis/dotfiles/commits/master" \
+if [ \
+    "$(curl \
+        -H "Accept: application/vnd.github.chitauri-preview+sha" \
+        -H "If-None-Match: \"$old_om\"" \
+        -s \
+        -o /dev/null \
+        -w "%{http_code}" \
+        "https://api.github.com/repos/azdavis/dotfiles/commits/master" \
     )" -ne 304 \
 ]; then
     git fetch -q origin master
