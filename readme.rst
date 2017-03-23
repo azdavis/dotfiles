@@ -37,12 +37,8 @@ and Z are:
 | ``bin/do-subl``         | ``~/Library/Application Support/Sublime Text 3`` | ``sublime-text-3`` |
 +-------------------------+--------------------------------------------------+--------------------+
 
-A few other files in ``~/.config`` that will be replaced are
-
-- ``.git``, because that's where Git information goes,
-- ``update-dotfiles.last``, because that's how we track when we've updated, and
-- ``update-dotfiles.lock``, because that's how we make sure we have only one
-  instance of the update script running at once.
+A few other files in ``~/.config`` that will be replaced are ``.git`` and
+``update-dotfiles.last``.
 
 A file named Y for which there does not exist an corresponding file named Z
 will not be affected when X is run. But be warned that if in the future, a
