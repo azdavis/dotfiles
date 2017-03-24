@@ -43,7 +43,7 @@ alias \
     gh="git show --pretty=fuller" \
     gi="git init" \
     gk="git checkout" \
-    gl="git log --all --decorate --graph --oneline" \
+    gl="git log --all --graph --oneline" \
     gm="git merge" \
     gr="git reset" \
     gs="git status"

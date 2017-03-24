@@ -13,6 +13,7 @@
     templateDir =
 [log]
     date = iso8601
+    decorate = true
 [merge]
     ff = only
 [pull]
