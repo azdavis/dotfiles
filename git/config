@@ -11,6 +11,8 @@
     compactionHeuristic = true
 [init]
     templateDir =
+[log]
+    date = iso8601
 [merge]
     ff = only
 [pull]
