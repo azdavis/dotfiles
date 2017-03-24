@@ -71,8 +71,7 @@ change_shell() {
 }
 
 main() {
-    set -o errexit
-    set -o nounset
+    set -eu
     url="https://github.com/azdavis/dotfiles.git"
     dst="$HOME/.config"
     check_user
