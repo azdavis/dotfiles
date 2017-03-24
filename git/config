@@ -1,28 +1,28 @@
 [commit]
-	verbose = 1
+    verbose = 1
 [core]
-	editor = subl -w
-	pager = less -FRSX
-	untrackedCache = true
+    editor = subl -w
+    pager = less -FRSX
+    untrackedCache = true
 [credential]
-	helper = store --file="$HOME/.config/git/credentials"
+    helper = store --file="$HOME/.config/git/credentials"
 [diff]
-	algorithm = histogram
-	compactionHeuristic = true
+    algorithm = histogram
+    compactionHeuristic = true
 [init]
-	templateDir =
+    templateDir =
 [merge]
-	ff = only
+    ff = only
 [pull]
-	rebase = true
+    rebase = true
 [push]
-	default = simple
+    default = simple
 [status]
-	branch = true
-	short = true
+    branch = true
+    short = true
 [url "https://"]
-	insteadOf = git://
+    insteadOf = git://
 [user]
-	email = ariel.z.davis@icloud.com
-	name = Ariel Davis
-	signingKey = 0xB37B4FB7092D14CE
+    email = ariel.z.davis@icloud.com
+    name = Ariel Davis
+    signingKey = 0xB37B4FB7092D14CE
