@@ -7,8 +7,8 @@ if [ $# -ne 0 ]; then
     abort "usage: $(basename "$0")"
 fi
 
-touch "$HOME/.hushlogin" "$HOME/.netrc"
-chmod 600 "$HOME/.hushlogin" "$HOME/.netrc"
+touch "$HOME/.hushlogin"
+chmod 600 "$HOME/.hushlogin"
 
 wd=".config/home"
 cd "$HOME/$wd"
