@@ -19,7 +19,6 @@ setopt \
     interactivecomments \
     menucomplete \
     nobeep \
-    noclobber \
     nounset \
     rmstarsilent
 
