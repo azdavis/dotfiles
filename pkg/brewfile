@@ -6,7 +6,6 @@ brew "coreutils", args: ["build-from-source"]
 brew "entr"
 brew "ghc"
 brew "git"
-brew "gnupg", args: ["build-from-source"]
 brew "icu4c"
 brew "node"
 brew "openssl"
