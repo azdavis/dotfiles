@@ -24,6 +24,8 @@
 [status]
     branch = true
     short = true
+[transfer]
+    fsckObjects = true
 [url "https://"]
     insteadOf = git://
 [user]
