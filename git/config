@@ -15,6 +15,7 @@
     date = iso8601
     decorate = true
 [merge]
+    conflictStyle = diff3
     ff = only
 [pull]
     rebase = true
