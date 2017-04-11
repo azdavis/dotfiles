@@ -16,7 +16,6 @@ brew "tree"
 
 cask "basictex"
 cask "battle-net"
-cask "discord"
 cask "google-chrome"
 cask "minecraft"
 cask "mpv"
