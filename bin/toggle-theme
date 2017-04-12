@@ -1,0 +1,29 @@
+#!/bin/sh
+
+. "$HOME/.config/lib/_base.sh"
+
+if [ $# -ne 0 ]; then
+    abort "usage: $(basename "$0")"
+fi
+
+cd "$HOME/.config"
+
+p="sublime-text-3/Packages/User/light.patch"
+t=""
+d=""
+if git apply --check "$p" > /dev/null 2>&1; then
+    t="theme 2"
+    d=""
+elif git apply --check --reverse "$p" > /dev/null 2>&1; then
+    t="theme"
+    d="--reverse"
+else
+    abort "patch does not apply in either direction"
+fi
+
+git apply $d "$p"
+osascript -e "
+tell application \"Terminal\"
+    set current settings of selected tab of window 1 to settings set \"$t\"
+end tell
+"
