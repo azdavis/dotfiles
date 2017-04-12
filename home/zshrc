@@ -25,6 +25,7 @@ setopt \
 alias \
     df="df -h" \
     du="du -chs" \
+    gdb="gdb -q" \
     grep="grep --color=auto" \
     ls="ls -bh --color=auto --group-directories-first --time-style=long-iso" \
     subl="subl -a" \

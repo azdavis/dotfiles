@@ -4,6 +4,7 @@ tap "homebrew/core"
 
 brew "coreutils", args: ["build-from-source"]
 brew "entr"
+brew "gdb"
 brew "ghc"
 brew "git"
 brew "icu4c"
