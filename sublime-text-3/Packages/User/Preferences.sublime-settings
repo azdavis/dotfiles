@@ -57,7 +57,7 @@
     "show_encoding": true,
     "show_full_path": false,
     "spell_check": false,
-    "theme": "theme.sublime-theme",
+    "theme": "Adaptive.sublime-theme",
     "translate_tabs_to_spaces": true,
     "trim_trailing_white_space_on_save": true,
     "word_wrap": false,
