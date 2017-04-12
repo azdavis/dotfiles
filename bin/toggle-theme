@@ -22,8 +22,6 @@ else
 fi
 
 git apply $d "$p"
-osascript -e "
-tell application \"Terminal\"
+osascript -e "tell application \"Terminal\"
     set current settings of selected tab of window 1 to settings set \"$t\"
-end tell
-"
+end tell"
