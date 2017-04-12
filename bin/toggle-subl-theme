@@ -6,9 +6,9 @@ if [ $# -ne 0 ]; then
     abort "usage: $(basename "$0")"
 fi
 
-cd "$HOME/.config/sublime-text-3/Packages/User"
+cd "$HOME/.config"
 
-alias patch="git apply theme/patch/light.patch"
+alias patch="git apply sublime-text-3/Packages/User/light.patch"
 if patch --check > /dev/null 2>&1; then
     echo "switching to light"
     patch

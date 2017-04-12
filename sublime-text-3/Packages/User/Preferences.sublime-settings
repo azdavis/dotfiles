@@ -7,7 +7,7 @@
     "caret_extra_top": 1,
     "caret_style": "solid",
     "close_windows_when_empty": false,
-    "color_scheme": "Packages/User/theme/theme.tmTheme",
+    "color_scheme": "Packages/User/theme.tmTheme",
     "copy_with_empty_selection": false,
     "default_line_ending": "unix",
     "detect_indentation": false,
