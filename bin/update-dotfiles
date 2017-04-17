@@ -28,7 +28,7 @@ fi
 
 if git status -unormal --porcelain | grep -q .; then
     git stash save -q -u
-    trap 'git stash pop -q --index' EXIT
+    trap "git stash pop -q --index" EXIT
 fi
 
 if git merge-base --is-ancestor origin/master @; then
