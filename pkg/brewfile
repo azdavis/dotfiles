@@ -12,6 +12,7 @@ brew "node"
 brew "openssl"
 brew "readline"
 brew "rlwrap"
+brew "smlnj"
 brew "tarsnap"
 brew "tree"
 

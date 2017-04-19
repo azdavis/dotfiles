@@ -28,6 +28,7 @@ alias \
     gdb="gdb -q" \
     grep="grep --color=auto" \
     ls="ls -bh --color=auto --group-directories-first --time-style=long-iso" \
+    sml="rlwrap sml" \
     subl="subl -a" \
     tree="tree -a --dirsfirst"
 
