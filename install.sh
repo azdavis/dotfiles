@@ -48,8 +48,8 @@ install_repo() {
     git clone -q -n --single-branch "$url" "$tmp"
     if ! [ -d "$dst" ]; then
         rm -rf "$dst"
+        mkdir "$dst"
     fi
-    mkdir -p "$dst"
     chmod 700 "$dst"
     rm -rf "$dst/.git"
     mv "$tmp/.git" "$dst/.git"
