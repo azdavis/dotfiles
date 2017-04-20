@@ -8,10 +8,10 @@ OBJS :=
 all: $(MAIN)
 
 $(MAIN): $(MAIN).c $(OBJS)
-	$(CC) $(CFLAGS) $(OBJS) -o $@ $<
+	$(CC) $(CFLAGS) -o $@ $(OBJS) $<
 
 %.o: %.c
-	$(CC) $(CFLAGS) -c -o $@ $<
+	$(CC) $(CFLAGS) -o $@ -c $<
 
 .PHONY: clean
 clean:
