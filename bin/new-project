@@ -78,9 +78,10 @@ if ! [ -d "$templates/$t" ]; then
 fi
 
 note() {
-    if ! $q; then
-        echo "$1"
+    if $q; then
+        return
     fi
+    echo "$1"
 }
 
 github_cred() {
