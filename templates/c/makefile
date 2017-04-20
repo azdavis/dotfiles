@@ -1,5 +1,5 @@
 MAKEFLAGS += -rRs
-CFLAGS := -Werror -Weverything -g
+CFLAGS := -Werror -Weverything -std=c99 -g
 
 MAIN := src/{{proj}}
 OBJS :=
