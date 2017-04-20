@@ -1,15 +1,52 @@
 [
-    { "keys": ["alt+super+d"], "command": "duplicate_line" },
-    { "keys": ["alt+super+down"], "command": "swap_line_down" },
-    { "keys": ["alt+super+k"], "command": "run_macro_file", "args": {
-        "file": "res://Packages/Default/Delete Line.sublime-macro"} },
-    { "keys": ["alt+super+left"], "command": "unindent" },
-    { "keys": ["alt+super+right"], "command": "indent" },
-    { "keys": ["alt+super+up"], "command": "swap_line_up" },
-    { "keys": ["ctrl+shift+`"], "command": "toggle_status_bar" },
-    { "keys": ["ctrl+shift+tab"], "command": "prev_view" },
-    { "keys": ["ctrl+tab"], "command": "next_view" },
-    { "keys": ["shift+super+d"], "command": "find_all_under" },
-    { "keys": ["super+\\"], "command": "toggle_side_bar" },
-    { "keys": ["ctrl+super+s"], "command": "toggle_setting", "args": {"setting": "spell_check"} },
+    {
+        "keys": ["alt+super+d"],
+        "command": "duplicate_line"
+    },
+    {
+        "keys": ["alt+super+down"],
+        "command": "swap_line_down"
+    },
+    {
+        "keys": ["alt+super+k"],
+        "command": "run_macro_file",
+        "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"}
+    },
+    {
+        "keys": ["alt+super+left"],
+        "command": "unindent"
+    },
+    {
+        "keys": ["alt+super+right"],
+        "command": "indent"
+    },
+    {
+        "keys": ["alt+super+up"],
+        "command": "swap_line_up"
+    },
+    {
+        "keys": ["ctrl+shift+`"],
+        "command": "toggle_status_bar"
+    },
+    {
+        "keys": ["ctrl+shift+tab"],
+        "command": "prev_view"
+    },
+    {
+        "keys": ["ctrl+tab"],
+        "command": "next_view"
+    },
+    {
+        "keys": ["shift+super+d"],
+        "command": "find_all_under"
+    },
+    {
+        "keys": ["super+\\"],
+        "command": "toggle_side_bar"
+    },
+    {
+        "keys": ["ctrl+super+s"],
+        "command": "toggle_setting",
+        "args": {"setting": "spell_check"}
+    }
 ]
