@@ -48,5 +48,9 @@
         "keys": ["ctrl+super+s"],
         "command": "toggle_setting",
         "args": {"setting": "spell_check"}
+    },
+    {
+        "keys": ["alt+super+w"],
+        "command": "close_folder_list"
     }
 ]
