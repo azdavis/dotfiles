@@ -60,7 +60,7 @@ proj_underline=""
 x="${#proj}"
 while [ "$x" -gt 0 ]; do
     proj_underline="$proj_underline="
-    : $(( x = x - 1 ))
+    x=$((x - 1))
 done
 
 is_private=""
