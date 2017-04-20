@@ -4,7 +4,7 @@ CFLAGS := -Werror -Weverything -std=c99 -g
 MAIN := src/{{proj}}
 OBJS :=
 
-PHONY += all
+.PHONY: all
 all: $(MAIN)
 
 $(MAIN): $(MAIN).c $(OBJS)
@@ -13,13 +13,11 @@ $(MAIN): $(MAIN).c $(OBJS)
 %.o: %.c
 	$(CC) $(CFLAGS) -c -o $@ $<
 
-PHONY += clean
+.PHONY: clean
 clean:
 	rm -rf $(MAIN) $(OBJS)
 	find src -name '*.dSYM' -prune -exec rm -rf {} \;
 
-PHONY += run
+.PHONY: run
 run: all
 	./$(MAIN)
-
-.PHONY: $(PHONY)
