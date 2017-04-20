@@ -28,7 +28,8 @@ fi
 
 if git status -unormal --porcelain | grep -q .; then
     git stash save -q -u
-    trap "git stash pop -q --index && git reflog delete HEAD@{0}" EXIT
+    git reflog delete HEAD@{0}
+    trap "git stash pop -q --index" EXIT
 fi
 
 if git merge-base --is-ancestor origin/master @; then
