@@ -1,0 +1,17 @@
+[
+    {
+        "caption": "Line Endings: Convert to Windows",
+        "command": "set_line_ending",
+        "args": {"type": "windows"}
+    },
+    {
+        "caption": "Line Endings: Convert to Unix",
+        "command": "set_line_ending",
+        "args": {"type": "unix"}
+    },
+    {
+        "caption": "Line Endings: Convert to Mac OS 9",
+        "command": "set_line_ending",
+        "args": {"type": "cr"}
+    }
+]
