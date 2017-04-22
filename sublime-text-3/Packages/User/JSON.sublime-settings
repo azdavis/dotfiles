@@ -3,5 +3,6 @@
     [
         ".babelrc",
         "sublime-commands",
+        "sublime_session"
     ]
 }
