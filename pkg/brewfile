@@ -15,6 +15,7 @@ brew "rlwrap"
 brew "tarsnap"
 brew "tree"
 
+cask "anki"
 cask "basictex"
 cask "battle-net"
 cask "google-chrome"
