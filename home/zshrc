@@ -23,6 +23,7 @@ setopt \
     rmstarsilent
 
 alias \
+    c="tput reset" \
     df="df -h" \
     du="du -chs" \
     gdb="gdb -q" \
@@ -31,10 +32,6 @@ alias \
     sml="rlwrap sml" \
     subl="subl -a" \
     tree="tree -a --dirsfirst"
-
-alias \
-    c="tput reset" \
-    ej="cd; diskutil eject disk2"
 
 alias \
     ga="git add" \
