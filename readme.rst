@@ -63,6 +63,10 @@ The update script rebases your local HEAD against the upstream origin/master.
 If merge conflicts arise between upstream and what you have, the conflicts are
 always resolved with your version.
 
+If you have uncommitted changes and the updater is invoked, the changes will be
+stashed, then popped when the updater is finished. But note that this is more
+risky, because popping the stash can fail with merge conflicts.
+
 If you understand and accept the risks::
 
     curl -fsSL http://d.azdavis.xyz | sh
