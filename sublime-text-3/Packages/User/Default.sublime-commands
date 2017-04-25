@@ -13,5 +13,9 @@
         "caption": "Line Endings: Convert to Mac OS 9",
         "command": "set_line_ending",
         "args": {"type": "cr"}
+    },
+    {
+        "caption": "Check for Updates",
+        "command": "update_check"
     }
 ]
