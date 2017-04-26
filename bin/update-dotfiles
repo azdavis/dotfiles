@@ -27,9 +27,9 @@ if [ \
 fi
 
 if git status -unormal --porcelain | grep -q .; then
-    git stash save -q -u
-    git reflog delete HEAD@{0}
-    trap "git stash pop -q --index" EXIT
+    git add -A
+    git commit -qm "update-dotfiles auto-commit"
+    trap "git reset -q @~" EXIT
 fi
 
 if git merge-base --is-ancestor origin/master @; then
