@@ -24,8 +24,8 @@ check_deps() {
         ok=false
     fi
     for x in \
-        basename brew cat chmod chsh curl date defaults find git grep ln \
-        mkdir mktemp mv pgrep rm sed sh touch tr wc zsh \
+        basename brew cat chmod chsh curl date defaults dirname find git grep \
+        ln mkdir mktemp mv pgrep readlink rm sed sh touch tr wc zsh \
     ; do
         if ! which "$x" > /dev/null 2>&1; then
             echo "'$x' not installed"
