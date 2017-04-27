@@ -19,6 +19,10 @@ check_os() {
 check_deps() {
     echo "checking deps are installed"
     ok=true
+    if ! xcode-select -p > /dev/null 2>&1; then
+        echo "'Command Line Developer Tools' not installed"
+        ok=false
+    fi
     for x in \
         basename brew cat chmod chsh curl date defaults find git grep ln \
         mkdir mktemp mv pgrep rm sed sh touch tr wc zsh \
@@ -28,10 +32,6 @@ check_deps() {
             ok=false
         fi
     done
-    if ! xcode-select -p > /dev/null 2>&1; then
-        echo "'Command Line Developer Tools' not installed"
-        ok=false
-    fi
     if ! $ok; then
         exit 1
     fi
