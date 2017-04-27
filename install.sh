@@ -1,18 +1,18 @@
 check_user() {
-    echo "checking user is not root"
+    echo "checking user is not 'root'"
     if [ "$USER" != root ]; then
         return
     fi
-    echo "user is root"
+    echo "user is 'root'"
     exit 1
 }
 
 check_os() {
-    echo "checking OS is macOS"
+    echo "checking OS is 'macOS'"
     if [ "$(uname)" = Darwin ]; then
         return
     fi
-    echo "OS is not macOS"
+    echo "OS is not 'macOS'"
     exit 1
 }
 
