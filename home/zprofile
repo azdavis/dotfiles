@@ -1,6 +1,5 @@
 now="$(date +%s)"
-if ! last="$(head -n 1 "$HOME/.config/update-dotfiles.last" 2> /dev/null)" \
-|| ! [ "$last" -eq "$last" ] 2> /dev/null \
+if ! last="$(git -C "$HOME/.config" config --int dotfiles.lastUpdate 2> /dev/null)" \
 || [ $((now - last)) -ge 72000 ]; then
     echo "updating dotfiles"
     "$HOME/.config/bin/update-dotfiles"

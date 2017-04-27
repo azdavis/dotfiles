@@ -8,9 +8,7 @@ fi
 
 cd "$HOME/.config"
 
-last="update-dotfiles.last"
-rm -rf "$last"
-date +%s > "$last"
+git config --int dotfiles.lastUpdate "$(date +%s)"
 
 old_om="$(git rev-parse origin/master)"
 if [ \
