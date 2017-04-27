@@ -10,16 +10,8 @@ formula="$(brew --repo)/Library/Taps/homebrew/homebrew-core/Formula"
 wd="$HOME/.config/pkg"
 
 echo "doing brew"
-brew update
-cd "$formula"
-git apply "$wd/patch"/*
 cd "$wd"
-checkout() {
-    cd "$formula"
-    git checkout .
-    cd "$wd"
-}
-trap checkout 0
+brew update
 brew bundle --verbose
 brew bundle cleanup --force
 brew upgrade

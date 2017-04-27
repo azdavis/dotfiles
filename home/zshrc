@@ -7,7 +7,8 @@ export \
     HOMEBREW_NO_INSECURE_REDIRECT="1" \
     LESSHISTFILE="/dev/null" \
     LS_COLORS="di=34:ln=35:so=32:pi=33:ex=31:bd=7;36:cd=7;33:su=7;31:sg=7;36:tw=7;32:ow=7;33:st=7;34" \
-    PATH="$HOME/.config/bin:$PATH" \
+    MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH" \
+    PATH="$HOME/.config/bin:/usr/local/opt/coreutils/libexec/gnubin:$PATH" \
     RLWRAP_HOME="/dev/null"
 
 PS1=$'%{\e[90m%}%2~%{\e[0m%} %{\e[%(?.32.31)m%}%(!.#.$)%{\e[0m%} '

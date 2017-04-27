@@ -2,7 +2,7 @@ tap "caskroom/cask"
 tap "homebrew/bundle"
 tap "homebrew/core"
 
-brew "coreutils", args: ["build-from-source"]
+brew "coreutils"
 brew "entr"
 brew "gdb"
 brew "ghc"
