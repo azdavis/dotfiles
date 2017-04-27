@@ -2,8 +2,10 @@
     "extensions":
     [
         ".zprofile",
+        ".zshenv",
         ".zshrc",
         "zprofile",
+        "zshenv",
         "zshrc"
     ]
 }
