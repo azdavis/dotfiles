@@ -6,11 +6,9 @@ if [ $# -ne 0 ]; then
     abort "usage: $(basename "$0")"
 fi
 
-formula="$(brew --repo)/Library/Taps/homebrew/homebrew-core/Formula"
-wd="$HOME/.config/pkg"
+cd "$HOME/.config/pkg"
 
 echo "doing brew"
-cd "$wd"
 brew update
 brew bundle --verbose
 brew bundle cleanup --force
