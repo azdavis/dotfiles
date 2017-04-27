@@ -18,7 +18,7 @@ brew upgrade
 brew cask cleanup
 brew cleanup
 brew prune
-brew doctor
+brew doctor || true
 
 echo "doing tlmgr"
 tlmgr update --self
