@@ -7,8 +7,8 @@ install
 -------
 
 The install script clones ``dotfiles`` to ``$XDG_CONFIG_HOME``, or
-``~/.config`` by default. Thereafter, it is auto-updated daily. You can also
-trigger a manual update with ``update-dotfiles``.
+``$HOME/.config`` by default. Thereafter, it is auto-updated daily. You can
+also trigger a manual update with ``update-dotfiles``.
 
 One of the primary purposes of ``dotfiles`` (the project) is to manage
 dotfiles, i.e., those files in your home directory whose filenames start with a
@@ -21,17 +21,17 @@ Therefore, a file on your system, if it exists, will be replaced with a file
 (or symlink to a file) in ``dotfiles``, if it exists, according to the
 following table:
 
-+---+--------------------------------------------------+--------------------+
-| # | On your system                                   | In ``dotfiles``    |
-+===+==================================================+====================+
-| 1 | ``$XDG_CONFIG_HOME/.git``                        | N/A                |
-+---+--------------------------------------------------+--------------------+
-| 2 | ``$XDG_CONFIG_HOME/<path>``                      | ``<path>``         |
-+---+--------------------------------------------------+--------------------+
-| 3 | ``~/.<path>``                                    | ``home/<path>``    |
-+---+--------------------------------------------------+--------------------+
-| 4 | ``~/Library/Application Support/Sublime Text 3`` | ``sublime-text-3`` |
-+---+--------------------------------------------------+--------------------+
++---+------------------------------------------------------+--------------------+
+| # | On your system                                       | In ``dotfiles``    |
++===+======================================================+====================+
+| 1 | ``$XDG_CONFIG_HOME/.git``                            | N/A                |
++---+------------------------------------------------------+--------------------+
+| 2 | ``$XDG_CONFIG_HOME/<path>``                          | ``<path>``         |
++---+------------------------------------------------------+--------------------+
+| 3 | ``$HOME/.<path>``                                    | ``home/<path>``    |
++---+------------------------------------------------------+--------------------+
+| 4 | ``$HOME/Library/Application Support/Sublime Text 3`` | ``sublime-text-3`` |
++---+------------------------------------------------------+--------------------+
 
 These replacements occur when the following commands in ``dotfiles`` are run:
 
