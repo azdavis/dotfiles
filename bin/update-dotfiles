@@ -28,7 +28,7 @@ fi
 
 if git status -unormal --porcelain | grep -q .; then
     git add -A
-    git commit -qm "update-dotfiles auto-commit"
+    git commit -q -m "update-dotfiles auto-commit"
     trap "git reset -q @~" EXIT
 fi
 
