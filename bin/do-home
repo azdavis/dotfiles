@@ -10,8 +10,8 @@ fi
 touch "$HOME/.hushlogin"
 chmod 600 "$HOME/.hushlogin"
 
-wd=".config/home"
-cd "$HOME/$wd"
+wd="$XDG_CONFIG_HOME/home"
+cd "$wd"
 for x in *; do
     symlink "$wd/$x" "$HOME/.$x"
 done
