@@ -1,0 +1,9 @@
+export \
+    EDITOR="subl" \
+    HOMEBREW_CASK_OPTS="--appdir=/Applications" \
+    HOMEBREW_NO_ANALYTICS="1" \
+    HOMEBREW_NO_EMOJI="1" \
+    HOMEBREW_NO_INSECURE_REDIRECT="1" \
+    LESSHISTFILE="/dev/null" \
+    RLWRAP_HOME="/dev/null" \
+    XDG_CONFIG_HOME="${XDG_CONFIG_HOME:-$HOME/.config}"

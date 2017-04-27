@@ -1,16 +1,7 @@
-export \
-    EDITOR="subl" \
-    FPATH="$XDG_CONFIG_HOME/site-functions:$FPATH" \
-    HOMEBREW_CASK_OPTS="--appdir=/Applications" \
-    HOMEBREW_NO_ANALYTICS="1" \
-    HOMEBREW_NO_EMOJI="1" \
-    HOMEBREW_NO_INSECURE_REDIRECT="1" \
-    LESSHISTFILE="/dev/null" \
-    LS_COLORS="di=34:ln=35:so=32:pi=33:ex=31:bd=7;36:cd=7;33:su=7;31:sg=7;36:tw=7;32:ow=7;33:st=7;34" \
-    MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH" \
-    PATH="$XDG_CONFIG_HOME/bin:/usr/local/opt/coreutils/libexec/gnubin:$PATH" \
-    RLWRAP_HOME="/dev/null"
-
+FPATH="$XDG_CONFIG_HOME/site-functions:$FPATH"
+LS_COLORS="di=34:ln=35:so=32:pi=33:ex=31:bd=7;36:cd=7;33:su=7;31:sg=7;36:tw=7;32:ow=7;33:st=7;34"
+MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+PATH="$XDG_CONFIG_HOME/bin:/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 PS1=$'%{\e[90m%}%2~%{\e[0m%} %{\e[%(?.32.31)m%}%(!.#.$)%{\e[0m%} '
 ZLE_REMOVE_SUFFIX_CHARS=$' \t\n;)'
 
