@@ -1,7 +1,8 @@
+export XDG_CONFIG_HOME="${XDG_CONFIG_HOME:-$HOME/.config}"
 now="$(date +%s)"
-if ! last="$(git -C "$HOME/.config" config --int dotfiles.lastUpdate 2> /dev/null)" \
+if ! last="$(git -C "$XDG_CONFIG_HOME" config --int dotfiles.lastUpdate 2> /dev/null)" \
 || [ $((now - last)) -ge 72000 ]; then
     echo "updating dotfiles"
-    "$HOME/.config/bin/update-dotfiles"
+    "$XDG_CONFIG_HOME/bin/update-dotfiles"
 fi
 unset now last

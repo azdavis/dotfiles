@@ -73,7 +73,7 @@ change_shell() {
 main() {
     set -eu
     url="https://github.com/azdavis/dotfiles.git"
-    dst="$HOME/.config"
+    dst="${XDG_CONFIG_HOME:-$HOME/.config}"
     check_user
     check_os
     check_deps

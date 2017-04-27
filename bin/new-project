@@ -1,6 +1,6 @@
 #!/bin/sh
 
-. "$HOME/.config/lib/_base.sh"
+. "$XDG_CONFIG_HOME/lib/_base.sh"
 
 show_help() {
 cat <<EOS
@@ -72,7 +72,7 @@ elif [ -n "$g" ]; then
     abort "invalid github project visibility: '$g'"
 fi
 
-templates="$HOME/.config/templates"
+templates="$XDG_CONFIG_HOME/templates"
 if ! [ -d "$templates/$t" ]; then
     abort "invalid type: '$t'"
 fi

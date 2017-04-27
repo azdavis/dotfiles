@@ -6,9 +6,10 @@ a potpourri of macOS dotfiles
 install
 -------
 
-The install script clones ``dotfiles`` to your ``~/.config``. Thereafter, it is
-auto-updated daily. You can also trigger a manual update with
-``update-dotfiles``.
+The install script clones ``dotfiles`` to your ``$XDG_CONFIG_HOME``. If
+``$XDG_CONFIG_HOME`` is not set, it defaults to ``~/.config``. Thereafter, it
+is auto-updated daily. You can also trigger a manual update with ``update-
+dotfiles``.
 
 One of the primary purposes of ``dotfiles`` (the project) is to manage
 dotfiles, i.e., those files in your home directory whose filenames start with a
@@ -24,11 +25,11 @@ following table:
 +---+--------------------------------------------------+--------------------+
 | # | On your system                                   | In ``dotfiles``    |
 +===+==================================================+====================+
-| 1 | ``~/.config/.git``                               | N/A                |
+| 1 | ``$XDG_CONFIG_HOME/.git``                        | N/A                |
 +---+--------------------------------------------------+--------------------+
-| 2 | ``~/.config/update-dotfiles.last``               | N/A                |
+| 2 | ``$XDG_CONFIG_HOME/update-dotfiles.last``        | N/A                |
 +---+--------------------------------------------------+--------------------+
-| 3 | ``~/.config/<path>``                             | ``<path>``         |
+| 3 | ``$XDG_CONFIG_HOME/<path>``                      | ``<path>``         |
 +---+--------------------------------------------------+--------------------+
 | 4 | ``~/.<path>``                                    | ``home/<path>``    |
 +---+--------------------------------------------------+--------------------+
@@ -56,8 +57,8 @@ detailed.
 
 It is possible to use ``dotfiles`` both while tracking upstream changes and
 keeping your own modifications intact. If you commit your changes in
-``~/.config``, the update script will respect them. This is useful for things
-like making changes to the ``user`` section of ``git/config``.
+``$XDG_CONFIG_HOME``, the update script will respect them. This is useful for
+things like making changes to the ``user`` section of ``git/config``.
 
 The update script rebases your local HEAD against the upstream origin/master.
 If merge conflicts arise between upstream and what you have, the conflicts are
