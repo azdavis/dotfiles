@@ -6,35 +6,28 @@ if [ $# -ne 0 ]; then
     abort "usage: $(basename "$0")"
 fi
 
-cd
-
 "$XDG_CONFIG_HOME/bin/rm-ds-stores" .
 
-if [ -e Applications ] \
-&& [ "$(find Applications -not -name .localized | wc -l)" -eq 1 ]; then
-    rm -r Applications
-fi
-
 rm -rf \
-    .bash_history \
-    .bash_sessions \
-    .bundle \
-    .cache \
-    .config/gnome-session \
-    .config/gtk-2.0 \
-    .config/gtk-3.0 \
-    .config/nautilus \
-    .config/update-notifier \
-    .config/upstart \
-    .elm \
-    .gem \
-    .ghc \
-    .lldb \
-    .nano \
-    .node-gyp \
-    .node_repl_history \
-    .npm \
-    .oracle_jre_usage \
-    .python_history \
-    .sh_history \
-    .viminfo
+    "$HOME/.bash_history" \
+    "$HOME/.bash_sessions" \
+    "$HOME/.bundle" \
+    "$HOME/.cache" \
+    "$HOME/.elm" \
+    "$HOME/.gem" \
+    "$HOME/.ghc" \
+    "$HOME/.lldb" \
+    "$HOME/.nano" \
+    "$HOME/.node-gyp" \
+    "$HOME/.node_repl_history" \
+    "$HOME/.npm" \
+    "$HOME/.oracle_jre_usage" \
+    "$HOME/.python_history" \
+    "$HOME/.sh_history" \
+    "$HOME/.viminfo" \
+    "$XDG_CONFIG_HOME/gnome-session" \
+    "$XDG_CONFIG_HOME/gtk-2.0" \
+    "$XDG_CONFIG_HOME/gtk-3.0" \
+    "$XDG_CONFIG_HOME/nautilus" \
+    "$XDG_CONFIG_HOME/update-notifier" \
+    "$XDG_CONFIG_HOME/upstart"
