@@ -6,7 +6,7 @@ if [ $# -ne 0 ]; then
     abort "usage: $(basename "$0")"
 fi
 
-rm-ds-stores "$HOME"
+"$XDG_CONFIG_HOME/bin/rm-ds-stores" "$HOME"
 
 rm -rf \
     "$HOME/.bash_history" \

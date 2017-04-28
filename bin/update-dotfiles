@@ -39,4 +39,5 @@ old_head="$(git rev-parse --short @)"
 git rebase -q -X theirs --onto origin/master "$old_om" > /dev/null
 new_head="$(git rev-parse --short @)"
 echo "updated from $old_head to $new_head"
-do-home
+
+"$XDG_CONFIG_HOME/bin/do-home"
