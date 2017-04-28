@@ -56,6 +56,10 @@
 	"show_full_path": false,
 	"spell_check": false,
 	"theme": "Adaptive.sublime-theme",
+	"theme_font_options":
+	[
+		"gray_antialias"
+	],
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"word_wrap": false,
