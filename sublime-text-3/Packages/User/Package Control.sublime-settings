@@ -1,16 +1,16 @@
 {
-    "bootstrapped": true,
-    "in_process_packages":
-    [
-    ],
-    "installed_packages":
-    [
-        "Babel",
-        "Git Commit Message Syntax",
-        "Package Control",
-        "Pug",
-        "SingleTrailingNewLine",
-        "SML (Standard ML)",
-        "Stylus"
-    ]
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Babel",
+		"Git Commit Message Syntax",
+		"Package Control",
+		"Pug",
+		"SingleTrailingNewLine",
+		"SML (Standard ML)",
+		"Stylus"
+	]
 }

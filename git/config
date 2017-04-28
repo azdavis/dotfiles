@@ -1,33 +1,33 @@
 [commit]
-    verbose = 1
+	verbose = 1
 [core]
-    editor = subl -w
-    pager = less -FRSX
-    untrackedCache = true
+	editor = subl -w
+	pager = less -FRSX
+	untrackedCache = true
 [credential]
-    helper = store --file="$XDG_CONFIG_HOME/git/credentials"
+	helper = store --file="$XDG_CONFIG_HOME/git/credentials"
 [diff]
-    algorithm = histogram
-    compactionHeuristic = true
+	algorithm = histogram
+	compactionHeuristic = true
 [init]
-    templateDir =
+	templateDir =
 [log]
-    date = iso8601
-    decorate = true
+	date = iso8601
+	decorate = true
 [merge]
-    conflictStyle = diff3
-    ff = only
+	conflictStyle = diff3
+	ff = only
 [pull]
-    rebase = preserve
+	rebase = preserve
 [push]
-    default = simple
+	default = simple
 [status]
-    branch = true
-    short = true
+	branch = true
+	short = true
 [transfer]
-    fsckObjects = true
+	fsckObjects = true
 [url "https://"]
-    insteadOf = git://
+	insteadOf = git://
 [user]
-    email = ariel.z.davis@icloud.com
-    name = Ariel Davis
+	email = ariel.z.davis@icloud.com
+	name = Ariel Davis

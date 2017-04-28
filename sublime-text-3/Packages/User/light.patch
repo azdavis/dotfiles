@@ -3,73 +3,73 @@ index 9b528b9..9cc9b85 100644
 --- a/sublime-text-3/Packages/User/Preferences.sublime-settings
 +++ b/sublime-text-3/Packages/User/Preferences.sublime-settings
 @@ -30,3 +30,2 @@
-     [
--        "gray_antialias",
-         "no_bold",
+ 	[
+-		"gray_antialias",
+ 		"no_bold",
 diff --git a/sublime-text-3/Packages/User/theme.tmTheme b/sublime-text-3/Packages/User/theme.tmTheme
 index 7be171a..a45d4bf 100644
 --- a/sublime-text-3/Packages/User/theme.tmTheme
 +++ b/sublime-text-3/Packages/User/theme.tmTheme
 @@ -10,15 +10,15 @@
-                     <key>background</key>
--                    <string>#000</string>
-+                    <string>#eee</string>
-                     <key>caret</key>
--                    <string>#ddd</string>
-+                    <string>#111</string>
-                     <key>foreground</key>
--                    <string>#ddd</string>
-+                    <string>#111</string>
-                     <key>selection</key>
--                    <string>#333</string>
-+                    <string>#bbb</string>
-                     <key>lineHighlight</key>
--                    <string>#222</string>
-+                    <string>#ccc</string>
-                     <key>gutterForeground</key>
--                    <string>#555</string>
-+                    <string>#999</string>
-                     <key>guide</key>
--                    <string>#555</string>
-+                    <string>#999</string>
-                 </dict>
+ 					<key>background</key>
+-					<string>#000</string>
++					<string>#eee</string>
+ 					<key>caret</key>
+-					<string>#ddd</string>
++					<string>#111</string>
+ 					<key>foreground</key>
+-					<string>#ddd</string>
++					<string>#111</string>
+ 					<key>selection</key>
+-					<string>#333</string>
++					<string>#bbb</string>
+ 					<key>lineHighlight</key>
+-					<string>#222</string>
++					<string>#ccc</string>
+ 					<key>gutterForeground</key>
+-					<string>#555</string>
++					<string>#999</string>
+ 					<key>guide</key>
+-					<string>#555</string>
++					<string>#999</string>
+ 				</dict>
 @@ -31,3 +31,3 @@
-                     <key>foreground</key>
--                    <string>#ddd</string>
-+                    <string>#111</string>
-                 </dict>
+ 					<key>foreground</key>
+-					<string>#ddd</string>
++					<string>#111</string>
+ 				</dict>
 @@ -40,3 +40,3 @@
-                     <key>foreground</key>
--                    <string>#aaa</string>
-+                    <string>#888</string>
-                 </dict>
+ 					<key>foreground</key>
+-					<string>#aaa</string>
++					<string>#888</string>
+ 				</dict>
 @@ -60,3 +60,3 @@
-                     <key>foreground</key>
--                    <string>#daa</string>
-+                    <string>#822</string>
-                 </dict>
+ 					<key>foreground</key>
+-					<string>#daa</string>
++					<string>#822</string>
+ 				</dict>
 @@ -69,3 +69,3 @@
-                     <key>foreground</key>
--                    <string>#dad</string>
-+                    <string>#828</string>
-                 </dict>
+ 					<key>foreground</key>
+-					<string>#dad</string>
++					<string>#828</string>
+ 				</dict>
 @@ -78,3 +78,3 @@
-                     <key>foreground</key>
--                    <string>#dda</string>
-+                    <string>#882</string>
-                 </dict>
+ 					<key>foreground</key>
+-					<string>#dda</string>
++					<string>#882</string>
+ 				</dict>
 @@ -87,3 +87,3 @@
-                     <key>foreground</key>
--                    <string>#ada</string>
-+                    <string>#282</string>
-                 </dict>
+ 					<key>foreground</key>
+-					<string>#ada</string>
++					<string>#282</string>
+ 				</dict>
 @@ -96,3 +96,3 @@
-                     <key>foreground</key>
--                    <string>#add</string>
-+                    <string>#288</string>
-                 </dict>
+ 					<key>foreground</key>
+-					<string>#add</string>
++					<string>#288</string>
+ 				</dict>
 @@ -105,3 +105,3 @@
-                     <key>foreground</key>
--                    <string>#aad</string>
-+                    <string>#228</string>
-                 </dict>
+ 					<key>foreground</key>
+-					<string>#aad</string>
++					<string>#228</string>
+ 				</dict>

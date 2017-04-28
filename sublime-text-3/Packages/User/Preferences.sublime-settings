@@ -1,65 +1,65 @@
 {
-    "always_show_minimap_viewport": true,
-    "animation_enabled": false,
-    "auto_complete_commit_on_tab": true,
-    "auto_complete_with_fields": true,
-    "caret_extra_bottom": 1,
-    "caret_extra_top": 1,
-    "caret_style": "solid",
-    "close_windows_when_empty": false,
-    "color_scheme": "Packages/User/theme.tmTheme",
-    "copy_with_empty_selection": false,
-    "default_line_ending": "unix",
-    "detect_indentation": false,
-    "drag_text": false,
-    "enable_tab_scrolling": false,
-    "ensure_newline_at_eof_on_save": true,
-    "find_selected_text": true,
-    "fold_buttons": false,
-    "folder_exclude_patterns":
-    [
-        ".git",
-        ".hg",
-        ".svn",
-        "build",
-        "CVS",
-        "node_modules"
-    ],
-    "font_face": "input",
-    "font_options":
-    [
-        "gray_antialias",
-        "no_bold",
-        "no_italic"
-    ],
-    "font_size": 16,
-    "hot_exit": false,
-    "ignored_packages":
-    [
-        "JavaScript",
-        "Vintage"
-    ],
-    "indent_guide_options":
-    [
-        "draw_normal"
-    ],
-    "line_padding_bottom": 1,
-    "line_padding_top": 1,
-    "move_to_limit_on_up_down": false,
-    "open_files_in_new_window": false,
-    "remember_full_screen": true,
-    "rulers":
-    [
-        79
-    ],
-    "scroll_past_end": true,
-    "show_definitions": false,
-    "show_encoding": true,
-    "show_full_path": false,
-    "spell_check": false,
-    "theme": "Adaptive.sublime-theme",
-    "translate_tabs_to_spaces": true,
-    "trim_trailing_white_space_on_save": true,
-    "word_wrap": false,
-    "wrap_width": 0
+	"always_show_minimap_viewport": true,
+	"animation_enabled": false,
+	"auto_complete_commit_on_tab": true,
+	"auto_complete_with_fields": true,
+	"caret_extra_bottom": 1,
+	"caret_extra_top": 1,
+	"caret_style": "solid",
+	"close_windows_when_empty": false,
+	"color_scheme": "Packages/User/theme.tmTheme",
+	"copy_with_empty_selection": false,
+	"default_line_ending": "unix",
+	"detect_indentation": false,
+	"drag_text": false,
+	"enable_tab_scrolling": false,
+	"ensure_newline_at_eof_on_save": true,
+	"find_selected_text": true,
+	"fold_buttons": false,
+	"folder_exclude_patterns":
+	[
+		".git",
+		".hg",
+		".svn",
+		"build",
+		"CVS",
+		"node_modules"
+	],
+	"font_face": "input",
+	"font_options":
+	[
+		"gray_antialias",
+		"no_bold",
+		"no_italic"
+	],
+	"font_size": 16,
+	"hot_exit": false,
+	"ignored_packages":
+	[
+		"JavaScript",
+		"Vintage"
+	],
+	"indent_guide_options":
+	[
+		"draw_normal"
+	],
+	"line_padding_bottom": 1,
+	"line_padding_top": 1,
+	"move_to_limit_on_up_down": false,
+	"open_files_in_new_window": false,
+	"remember_full_screen": true,
+	"rulers":
+	[
+		79
+	],
+	"scroll_past_end": true,
+	"show_definitions": false,
+	"show_encoding": true,
+	"show_full_path": false,
+	"spell_check": false,
+	"theme": "Adaptive.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": false,
+	"wrap_width": 0
 }

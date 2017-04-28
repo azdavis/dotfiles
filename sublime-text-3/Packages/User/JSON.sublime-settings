@@ -1,8 +1,8 @@
 {
-    "extensions":
-    [
-        ".babelrc",
-        "sublime-commands",
-        "sublime_session"
-    ]
+	"extensions":
+	[
+		".babelrc",
+		"sublime-commands",
+		"sublime_session"
+	]
 }
