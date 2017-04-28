@@ -6,12 +6,10 @@ if [ $# -ne 0 ]; then
     abort "usage: $(basename "$0")"
 fi
 
-cd "$XDG_CONFIG_HOME/pkg"
-
 echo "doing brew"
 brew update
-brew bundle --verbose
-brew bundle cleanup --force
+brew bundle --verbose --global
+brew bundle cleanup --force --global
 brew upgrade
 brew cask cleanup
 brew cleanup
@@ -21,7 +19,6 @@ brew doctor || true
 echo "doing tlmgr"
 tlmgr update --self
 tlmgr update --all
-tlmgr install $(cat tlmgrfile)
 
 echo "doing npm"
 npm update -g
