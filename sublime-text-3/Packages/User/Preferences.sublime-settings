@@ -10,7 +10,6 @@
 	"color_scheme": "Packages/User/theme.tmTheme",
 	"copy_with_empty_selection": false,
 	"default_line_ending": "unix",
-	"detect_indentation": false,
 	"drag_text": false,
 	"enable_tab_scrolling": false,
 	"ensure_newline_at_eof_on_save": true,
