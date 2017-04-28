@@ -1,5 +1,5 @@
 diff --git a/sublime-text-3/Packages/User/Preferences.sublime-settings b/sublime-text-3/Packages/User/Preferences.sublime-settings
-index 9b528b9..9cc9b85 100644
+index 83942fb..7d0db5f 100644
 --- a/sublime-text-3/Packages/User/Preferences.sublime-settings
 +++ b/sublime-text-3/Packages/User/Preferences.sublime-settings
 @@ -30,3 +30,2 @@
@@ -7,7 +7,7 @@ index 9b528b9..9cc9b85 100644
 -		"gray_antialias",
  		"no_bold",
 diff --git a/sublime-text-3/Packages/User/theme.tmTheme b/sublime-text-3/Packages/User/theme.tmTheme
-index 7be171a..a45d4bf 100644
+index c555201..2b6ec05 100644
 --- a/sublime-text-3/Packages/User/theme.tmTheme
 +++ b/sublime-text-3/Packages/User/theme.tmTheme
 @@ -10,15 +10,15 @@
