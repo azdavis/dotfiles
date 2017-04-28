@@ -12,7 +12,6 @@
 	"default_line_ending": "unix",
 	"drag_text": false,
 	"enable_tab_scrolling": false,
-	"ensure_newline_at_eof_on_save": true,
 	"find_selected_text": true,
 	"fold_buttons": false,
 	"folder_exclude_patterns":
