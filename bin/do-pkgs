@@ -25,4 +25,3 @@ tlmgr install $(cat tlmgrfile)
 
 echo "doing npm"
 npm update -g
-rm -rf "$HOME/.npm"
