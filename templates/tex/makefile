@@ -3,15 +3,10 @@ Q := > /dev/null
 
 MAIN := src/{{proj}}.pdf
 
-.PHONY: all
+.PHONY: all clean
+
 all: $(MAIN)
 
-%.pdf: %.tex src/base.tex
-	cd $(dir $<) ;\
-	pdflatex -halt-on-error $(notdir $<) $(Q) ;\
-	pdflatex -halt-on-error $(notdir $<) $(Q)
-
-.PHONY: clean
 clean:
 	rm -rf $(MAIN)
 	find src \( \
@@ -21,3 +16,8 @@ clean:
 		-name '*.log' -o \
 		-name '*.toc' \
 	\) -delete
+
+%.pdf: %.tex src/base.tex
+	cd $(dir $<) ;\
+	pdflatex -halt-on-error $(notdir $<) $(Q) ;\
+	pdflatex -halt-on-error $(notdir $<) $(Q)
