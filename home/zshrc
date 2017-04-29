@@ -1,6 +1,8 @@
-FPATH="$XDG_CONFIG_HOME/site-functions:$FPATH"
-MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
-PATH="$XDG_CONFIG_HOME/bin:/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+export \
+	FPATH="$XDG_CONFIG_HOME/site-functions:$FPATH" \
+	MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH" \
+	PATH="$XDG_CONFIG_HOME/bin:/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+
 PS1=$'%{\e[90m%}%2~%{\e[0m%} %{\e[%(?.32.31)m%}%(!.#.$)%{\e[0m%} '
 ZLE_REMOVE_SUFFIX_CHARS=$' \t\n;)'
 
