@@ -6,15 +6,15 @@ git rev-parse
 
 remote=""
 if [ $# -eq 0 ]; then
-    remote="origin"
+	remote="origin"
 elif [ $# -eq 1 ]; then
-    remote="$1"
+	remote="$1"
 else
-    abort "usage: $(basename "$0") [<remote>]"
+	abort "usage: $(basename "$0") [<remote>]"
 fi
 
 if ! url="$(git config remote.$remote.url)"; then
-    abort "could not get url for remote '$remote'"
+	abort "could not get url for remote '$remote'"
 fi
 
 open "$url"

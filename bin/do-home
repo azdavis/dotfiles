@@ -4,7 +4,7 @@
 . "$XDG_CONFIG_HOME/lib/symlink.sh"
 
 if [ $# -ne 0 ]; then
-    abort "usage: $(basename "$0")"
+	abort "usage: $(basename "$0")"
 fi
 
 touch "$HOME/.hushlogin"
@@ -13,5 +13,5 @@ chmod 600 "$HOME/.hushlogin"
 wd="$XDG_CONFIG_HOME/home"
 cd "$wd"
 for x in *; do
-    symlink "$wd/$x" "$HOME/.$x"
+	symlink "$wd/$x" "$HOME/.$x"
 done

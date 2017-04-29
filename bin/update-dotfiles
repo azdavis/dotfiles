@@ -3,7 +3,7 @@
 . "$XDG_CONFIG_HOME/lib/_base.sh"
 
 if [ $# -ne 0 ]; then
-    abort "usage: $(basename "$0")"
+	abort "usage: $(basename "$0")"
 fi
 
 cd "$XDG_CONFIG_HOME"
@@ -12,27 +12,27 @@ git config --int dotfiles.lastUpdate "$(date +%s)"
 
 old_om="$(git rev-parse origin/master)"
 if [ \
-    "$(curl \
-        -H "Accept: application/vnd.github.chitauri-preview+sha" \
-        -H "If-None-Match: \"$old_om\"" \
-        -s \
-        -o /dev/null \
-        -w "%{http_code}" \
-        "https://api.github.com/repos/azdavis/dotfiles/commits/master" \
-    )" -ne 304 \
+	"$(curl \
+		-H "Accept: application/vnd.github.chitauri-preview+sha" \
+		-H "If-None-Match: \"$old_om\"" \
+		-s \
+		-o /dev/null \
+		-w "%{http_code}" \
+		"https://api.github.com/repos/azdavis/dotfiles/commits/master" \
+	)" -ne 304 \
 ]; then
-    git fetch -q origin master
+	git fetch -q origin master
 fi
 
 if git status -unormal --porcelain | grep -q .; then
-    git add -A
-    git commit -q -m "update-dotfiles auto-commit"
-    trap "git reset -q @~" EXIT
+	git add -A
+	git commit -q -m "update-dotfiles auto-commit"
+	trap "git reset -q @~" EXIT
 fi
 
 if git merge-base --is-ancestor origin/master @; then
-    echo "already up-to-date"
-    exit
+	echo "already up-to-date"
+	exit
 fi
 
 old_head="$(git rev-parse --short @)"

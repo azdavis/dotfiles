@@ -3,7 +3,7 @@
 . "$XDG_CONFIG_HOME/lib/_base.sh"
 
 if [ $# -ne 0 ]; then
-    abort "usage: $(basename "$0")"
+	abort "usage: $(basename "$0")"
 fi
 
 alias dw="defaults write"

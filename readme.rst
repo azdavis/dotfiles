@@ -66,4 +66,4 @@ auto-committed, then reset when the updater is finished.
 
 If you understand and accept the risks::
 
-    curl -fsSL http://d.azdavis.xyz | sh
+	curl -fsSL http://d.azdavis.xyz | sh

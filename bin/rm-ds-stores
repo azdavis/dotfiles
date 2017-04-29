@@ -3,7 +3,7 @@
 . "$XDG_CONFIG_HOME/lib/_base.sh"
 
 if [ $# -eq 0 ]; then
-    abort "usage: $(basename "$0") <path>..."
+	abort "usage: $(basename "$0") <path>..."
 fi
 
 find "$@" -name .DS_Store -delete 2> /dev/null || true

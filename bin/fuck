@@ -7,40 +7,40 @@ cat <<EOS
 usage: $(basename "$0") [options] <file>...
 
 options:
-    -f
-        ignore nonexistent files and arguments, never prompt
-    -r
-        remove directories and their contents recursively
-    -v
-        explain what is being done
+	-f
+		ignore nonexistent files and arguments, never prompt
+	-r
+		remove directories and their contents recursively
+	-v
+		explain what is being done
 EOS
 }
 
 usage() {
-    show_help 1>&2
-    exit 1
+	show_help 1>&2
+	exit 1
 }
 
 f=""
 r=false
 v=""
 while getopts "frv" opt; do
-    case "$opt" in
-    (f) f="-f" ;;
-    (r) r=true ;;
-    (v) v="-v" ;;
-    (*) usage ;;
-    esac
+	case "$opt" in
+	(f) f="-f" ;;
+	(r) r=true ;;
+	(v) v="-v" ;;
+	(*) usage ;;
+	esac
 done
 shift $((OPTIND - 1))
 
 if [ $# -eq 0 ]; then
-    usage
+	usage
 fi
 
 if $r; then
-    find "$@" -type f -exec shred $f $v -zn 8 -- {} \;
-    rm -r $f $v -- "$@"
+	find "$@" -type f -exec shred $f $v -zn 8 -- {} \;
+	rm -r $f $v -- "$@"
 else
-    shred $f $v -zun 8 -- "$@"
+	shred $f $v -zun 8 -- "$@"
 fi

@@ -3,31 +3,31 @@
 . "$XDG_CONFIG_HOME/lib/_base.sh"
 
 if [ $# -ne 0 ]; then
-    abort "usage: $(basename "$0")"
+	abort "usage: $(basename "$0")"
 fi
 
 "$XDG_CONFIG_HOME/bin/rm-ds-stores" "$HOME"
 
 rm -rf \
-    "$HOME/.bash_history" \
-    "$HOME/.bash_sessions" \
-    "$HOME/.bundle" \
-    "$HOME/.cache" \
-    "$HOME/.elm" \
-    "$HOME/.gem" \
-    "$HOME/.ghc" \
-    "$HOME/.lldb" \
-    "$HOME/.nano" \
-    "$HOME/.node-gyp" \
-    "$HOME/.node_repl_history" \
-    "$HOME/.npm" \
-    "$HOME/.oracle_jre_usage" \
-    "$HOME/.python_history" \
-    "$HOME/.sh_history" \
-    "$HOME/.viminfo" \
-    "$XDG_CONFIG_HOME/gnome-session" \
-    "$XDG_CONFIG_HOME/gtk-2.0" \
-    "$XDG_CONFIG_HOME/gtk-3.0" \
-    "$XDG_CONFIG_HOME/nautilus" \
-    "$XDG_CONFIG_HOME/update-notifier" \
-    "$XDG_CONFIG_HOME/upstart"
+	"$HOME/.bash_history" \
+	"$HOME/.bash_sessions" \
+	"$HOME/.bundle" \
+	"$HOME/.cache" \
+	"$HOME/.elm" \
+	"$HOME/.gem" \
+	"$HOME/.ghc" \
+	"$HOME/.lldb" \
+	"$HOME/.nano" \
+	"$HOME/.node-gyp" \
+	"$HOME/.node_repl_history" \
+	"$HOME/.npm" \
+	"$HOME/.oracle_jre_usage" \
+	"$HOME/.python_history" \
+	"$HOME/.sh_history" \
+	"$HOME/.viminfo" \
+	"$XDG_CONFIG_HOME/gnome-session" \
+	"$XDG_CONFIG_HOME/gtk-2.0" \
+	"$XDG_CONFIG_HOME/gtk-3.0" \
+	"$XDG_CONFIG_HOME/nautilus" \
+	"$XDG_CONFIG_HOME/update-notifier" \
+	"$XDG_CONFIG_HOME/upstart"

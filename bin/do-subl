@@ -4,23 +4,23 @@
 . "$XDG_CONFIG_HOME/lib/symlink.sh"
 
 if [ $# -ne 0 ]; then
-    abort "usage: $(basename "$0")"
+	abort "usage: $(basename "$0")"
 fi
 
 if pgrep -f "Sublime Text" > /dev/null; then
-    abort "sublime text must not be running"
+	abort "sublime text must not be running"
 fi
 
 config_subl="$XDG_CONFIG_HOME/sublime-text-3"
 symlink "$config_subl" "$HOME/Library/Application Support/Sublime Text 3"
 rm -rf \
-    "$config_subl/Backup" \
-    "$config_subl/Cache" \
-    "$config_subl/Index" \
-    "$config_subl/Local/Auto Save Session.sublime_session" \
-    "$config_subl/Local/Session.sublime_session" \
-    "$config_subl/Packages/User/oscrypto-ca-bundle.crt" \
-    "$config_subl/Packages/User/Package Control.cache" \
-    "$config_subl/Packages/User/Package Control.last-run" \
-    "$config_subl/Packages/User/Package Control.merged-ca-bundle" \
-    "$config_subl/Packages/User/Package Control.user-ca-bundle"
+	"$config_subl/Backup" \
+	"$config_subl/Cache" \
+	"$config_subl/Index" \
+	"$config_subl/Local/Auto Save Session.sublime_session" \
+	"$config_subl/Local/Session.sublime_session" \
+	"$config_subl/Packages/User/oscrypto-ca-bundle.crt" \
+	"$config_subl/Packages/User/Package Control.cache" \
+	"$config_subl/Packages/User/Package Control.last-run" \
+	"$config_subl/Packages/User/Package Control.merged-ca-bundle" \
+	"$config_subl/Packages/User/Package Control.user-ca-bundle"
