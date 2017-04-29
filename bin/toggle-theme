@@ -1,6 +1,7 @@
 #!/bin/sh
 
-. "$XDG_CONFIG_HOME/lib/_base.sh"
+set -eu
+. "$XDG_CONFIG_HOME/lib/abort.sh"
 
 if [ $# -ne 0 ]; then
 	abort "usage: $(basename "$0")"

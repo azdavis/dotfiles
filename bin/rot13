@@ -1,5 +1,5 @@
 #!/bin/sh
 
-. "$XDG_CONFIG_HOME/lib/_base.sh"
+set -eu
 
 cat "$@" | tr 'A-Za-z' 'N-ZA-Mn-za-m'
