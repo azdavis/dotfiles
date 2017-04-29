@@ -2,7 +2,7 @@
 	verbose = 1
 [core]
 	editor = subl -w
-	pager = less -FRSX
+	pager = less -FRSXx4
 	untrackedCache = true
 [credential]
 	helper = store --file="$XDG_CONFIG_HOME/git/credentials"
