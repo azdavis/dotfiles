@@ -7,8 +7,8 @@ install
 -------
 
 The install script clones ``dotfiles`` to ``$XDG_CONFIG_HOME``, or
-``$HOME/.config`` by default. Thereafter, it is auto-updated daily. You can
-also trigger a manual update with ``update-dotfiles``.
+``$HOME/.config`` by default. You can trigger an update with
+``update-dotfiles``.
 
 One of the primary purposes of ``dotfiles`` (the project) is to manage
 dotfiles, i.e., those files in your home directory whose filenames start with a
@@ -58,11 +58,8 @@ keeping your own modifications intact. If you commit your changes in
 things like making changes to the ``user`` section of ``git/config``.
 
 The update script rebases your local HEAD against the upstream origin/master.
-If merge conflicts arise between upstream and what you have, the conflicts are
-always resolved with your version.
-
-If you have uncommitted changes and the updater is invoked, the changes will be
-auto-committed, then reset when the updater is finished.
+If merge conflicts arise between upstream and what you have, you will have to
+resolve them.
 
 If you understand and accept the risks::
 

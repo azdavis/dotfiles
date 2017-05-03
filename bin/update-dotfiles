@@ -9,8 +9,6 @@ fi
 
 cd "$XDG_CONFIG_HOME"
 
-git config --int dotfiles.lastUpdate "$(date +%s)"
-
 old_om="$(git rev-parse origin/master)"
 if [ \
 	"$(curl \
@@ -25,20 +23,11 @@ if [ \
 	git fetch -q origin master
 fi
 
-if git status -unormal --porcelain | grep -q .; then
-	git add -A
-	git commit -q -m "update-dotfiles auto-commit"
-	trap "git reset -q @~" EXIT
-fi
-
 if git merge-base --is-ancestor origin/master @; then
 	echo "already up-to-date"
 	exit
 fi
 
-old_head="$(git rev-parse --short @)"
-git rebase -q -X theirs --onto origin/master "$old_om" > /dev/null
-new_head="$(git rev-parse --short @)"
-echo "updated from $old_head to $new_head"
+git rebase --onto origin/master "$old_om"
 
 "$XDG_CONFIG_HOME/bin/do-home"
