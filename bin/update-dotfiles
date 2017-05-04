@@ -29,7 +29,7 @@ if git merge-base --is-ancestor origin/master @; then
 fi
 
 if ! git rebase --onto origin/master "$old_om"; then
-	abort "go to '$HOME/.config' to resolve this error"
+	abort "cd to '$HOME/.config' to resolve this error"
 fi
 
 "$HOME/.config/bin/do-home"
