@@ -37,7 +37,7 @@ These replacements occur when the following commands in ``dotfiles`` are run:
 +-------------------------+---+---+---+---+
 | Command                 | 1 | 2 | 3 | 4 |
 +=========================+===+===+===+===+
-| ``install.sh``          | Y | Y | Y | N |
+| ``install.sh``          | Y | Y | Y | Y |
 +-------------------------+---+---+---+---+
 | ``bin/update-dotfiles`` | Y | Y | Y | N |
 +-------------------------+---+---+---+---+
