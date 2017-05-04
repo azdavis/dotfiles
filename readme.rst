@@ -14,7 +14,7 @@ dotfiles, i.e., those files in your home directory whose filenames start with a
 dot.
 
 ``dotfiles`` also manages Sublime Text 3 configuration, which on macOS is
-stored in Application Support.
+stored elsewhere.
 
 Therefore, a file on your system, if it exists, will be replaced with a file
 (or symlink to a file) in ``dotfiles``, if it exists, according to the
@@ -52,13 +52,9 @@ corresponding file is added to ``dotfiles``, the replacements will occur as
 detailed.
 
 It is possible to use ``dotfiles`` both while tracking upstream changes and
-keeping your own modifications intact. If you commit your changes in
-``$HOME/.config``, the update script will respect them. This is useful for
-things like making changes to the ``user`` section of ``git/config``.
-
-The update script rebases your local HEAD against the upstream origin/master.
-If merge conflicts arise between upstream and what you have, you will have to
-resolve them.
+keeping your own modifications intact. The update script rebases your local
+HEAD against the upstream origin/master. If merge conflicts arise, you will
+have to resolve them.
 
 If you understand and accept the risks::
 
