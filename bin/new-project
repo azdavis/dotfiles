@@ -167,16 +167,17 @@ fi
 url="https://github.com/$gh_username/$proj.git"
 note "creating '$url'"
 git remote add origin "$url"
-if [ "$(curl \
-	-H "Accept: application/vnd.github.v3+json" \
-	-H "Content-Type: application/json" \
-	-H "Authorization: token $gh_password" \
-	-X POST \
-	-d " { \"name\":\"$proj\", \"description\":\"$desc\", \"private\":$is_private } " \
-	-s \
-	-o /dev/null \
-	-w "%{http_code}" \
-	"https://api.github.com/user/repos" \
+if [ \
+	"$(curl \
+		-H "Accept: application/vnd.github.v3+json" \
+		-H "Content-Type: application/json" \
+		-H "Authorization: token $gh_password" \
+		-X POST \
+		-d " { \"name\":\"$proj\", \"description\":\"$desc\", \"private\":$is_private } " \
+		-s \
+		-o /dev/null \
+		-w "%{http_code}" \
+		"https://api.github.com/user/repos" \
 	)" -ne 201 \
 ]; then
 	abort "could not create"
