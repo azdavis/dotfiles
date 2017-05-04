@@ -11,8 +11,8 @@ fi
 touch "$HOME/.hushlogin"
 chmod 600 "$HOME/.hushlogin"
 
-wd="$HOME/.config/home"
-cd "$wd"
+wd=".config/home"
+cd "$HOME/$wd"
 for x in *; do
 	symlink "$wd/$x" "$HOME/.$x"
 done
