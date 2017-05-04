@@ -8,10 +8,6 @@ if [ $# -ne 0 ]; then
 	abort "usage: $(basename "$0")"
 fi
 
-if pgrep -f "Sublime Text" > /dev/null; then
-	abort "sublime text must not be running"
-fi
-
 config_subl="$HOME/.config/sublime-text-3"
 symlink "$config_subl" "$HOME/Library/Application Support/Sublime Text 3"
 rm -rf \
