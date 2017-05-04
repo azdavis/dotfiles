@@ -1,8 +1,8 @@
 #!/bin/sh
 
 set -eu
-. "$XDG_CONFIG_HOME/lib/abort.sh"
-. "$XDG_CONFIG_HOME/lib/symlink.sh"
+. "$HOME/.config/lib/abort.sh"
+. "$HOME/.config/lib/symlink.sh"
 
 if [ $# -ne 0 ]; then
 	abort "usage: $(basename "$0")"
@@ -12,7 +12,7 @@ if pgrep -f "Sublime Text" > /dev/null; then
 	abort "sublime text must not be running"
 fi
 
-config_subl="$XDG_CONFIG_HOME/sublime-text-3"
+config_subl="$HOME/.config/sublime-text-3"
 symlink "$config_subl" "$HOME/Library/Application Support/Sublime Text 3"
 rm -rf \
 	"$config_subl/Backup" \

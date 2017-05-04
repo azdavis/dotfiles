@@ -1,7 +1,7 @@
 #!/bin/sh
 
 set -eu
-. "$XDG_CONFIG_HOME/lib/abort.sh"
+. "$HOME/.config/lib/abort.sh"
 
 show_help() {
 cat <<EOS
@@ -73,7 +73,7 @@ elif [ -n "$g" ]; then
 	abort "invalid github project visibility: '$g'"
 fi
 
-templates="$XDG_CONFIG_HOME/templates"
+templates="$HOME/.config/templates"
 if ! [ -d "$templates/$t" ]; then
 	abort "invalid type: '$t'"
 fi

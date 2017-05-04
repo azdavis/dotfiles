@@ -1,13 +1,13 @@
 #!/bin/sh
 
 set -eu
-. "$XDG_CONFIG_HOME/lib/abort.sh"
+. "$HOME/.config/lib/abort.sh"
 
 if [ $# -ne 0 ]; then
 	abort "usage: $(basename "$0")"
 fi
 
-cd "$XDG_CONFIG_HOME"
+cd "$HOME/.config"
 
 old_om="$(git rev-parse origin/master)"
 if [ \
@@ -29,7 +29,7 @@ if git merge-base --is-ancestor origin/master @; then
 fi
 
 if ! git rebase --onto origin/master "$old_om"; then
-	abort "go to '$XDG_CONFIG_HOME' to resolve this error"
+	abort "go to '$HOME/.config' to resolve this error"
 fi
 
-"$XDG_CONFIG_HOME/bin/do-home"
+"$HOME/.config/bin/do-home"

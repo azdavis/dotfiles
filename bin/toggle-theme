@@ -1,13 +1,13 @@
 #!/bin/sh
 
 set -eu
-. "$XDG_CONFIG_HOME/lib/abort.sh"
+. "$HOME/.config/lib/abort.sh"
 
 if [ $# -ne 0 ]; then
 	abort "usage: $(basename "$0")"
 fi
 
-cd "$XDG_CONFIG_HOME"
+cd "$HOME/.config"
 
 p="sublime-text-3/Packages/User/light.patch"
 t=""

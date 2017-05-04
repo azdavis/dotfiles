@@ -1,13 +1,13 @@
 #!/bin/sh
 
 set -eu
-. "$XDG_CONFIG_HOME/lib/abort.sh"
+. "$HOME/.config/lib/abort.sh"
 
 if [ $# -ne 0 ]; then
 	abort "usage: $(basename "$0")"
 fi
 
-"$XDG_CONFIG_HOME/bin/rm-ds-stores" "$HOME"
+"$HOME/.config/bin/rm-ds-stores" "$HOME"
 
 rm -rf \
 	"$HOME/.bash_history" \
@@ -26,9 +26,9 @@ rm -rf \
 	"$HOME/.python_history" \
 	"$HOME/.sh_history" \
 	"$HOME/.viminfo" \
-	"$XDG_CONFIG_HOME/gnome-session" \
-	"$XDG_CONFIG_HOME/gtk-2.0" \
-	"$XDG_CONFIG_HOME/gtk-3.0" \
-	"$XDG_CONFIG_HOME/nautilus" \
-	"$XDG_CONFIG_HOME/update-notifier" \
-	"$XDG_CONFIG_HOME/upstart"
+	"$HOME/.config/gnome-session" \
+	"$HOME/.config/gtk-2.0" \
+	"$HOME/.config/gtk-3.0" \
+	"$HOME/.config/nautilus" \
+	"$HOME/.config/update-notifier" \
+	"$HOME/.config/upstart"

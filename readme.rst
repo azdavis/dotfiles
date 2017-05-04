@@ -6,9 +6,8 @@ a potpourri of macOS dotfiles
 install
 -------
 
-The install script clones ``dotfiles`` to ``$XDG_CONFIG_HOME``, or
-``$HOME/.config`` by default. You can trigger an update with
-``update-dotfiles``.
+The install script clones ``dotfiles`` to ``$HOME/.config``. You can trigger an
+update with ``update-dotfiles``.
 
 One of the primary purposes of ``dotfiles`` (the project) is to manage
 dotfiles, i.e., those files in your home directory whose filenames start with a
@@ -24,9 +23,9 @@ following table:
 +---+------------------------------------------------------+--------------------+
 | # | On your system                                       | In ``dotfiles``    |
 +===+======================================================+====================+
-| 1 | ``$XDG_CONFIG_HOME/.git``                            | N/A                |
+| 1 | ``$HOME/.config/.git``                            | N/A                |
 +---+------------------------------------------------------+--------------------+
-| 2 | ``$XDG_CONFIG_HOME/<path>``                          | ``<path>``         |
+| 2 | ``$HOME/.config/<path>``                          | ``<path>``         |
 +---+------------------------------------------------------+--------------------+
 | 3 | ``$HOME/.<path>``                                    | ``home/<path>``    |
 +---+------------------------------------------------------+--------------------+
@@ -54,7 +53,7 @@ detailed.
 
 It is possible to use ``dotfiles`` both while tracking upstream changes and
 keeping your own modifications intact. If you commit your changes in
-``$XDG_CONFIG_HOME``, the update script will respect them. This is useful for
+``$HOME/.config``, the update script will respect them. This is useful for
 things like making changes to the ``user`` section of ``git/config``.
 
 The update script rebases your local HEAD against the upstream origin/master.

@@ -5,7 +5,7 @@
 	pager = less -FRSXx4
 	untrackedCache = true
 [credential]
-	helper = store --file="$XDG_CONFIG_HOME/git/credentials"
+	helper = store --file="$HOME/.config/git/credentials"
 [diff]
 	algorithm = histogram
 	compactionHeuristic = true

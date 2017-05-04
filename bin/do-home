@@ -1,8 +1,8 @@
 #!/bin/sh
 
 set -eu
-. "$XDG_CONFIG_HOME/lib/abort.sh"
-. "$XDG_CONFIG_HOME/lib/symlink.sh"
+. "$HOME/.config/lib/abort.sh"
+. "$HOME/.config/lib/symlink.sh"
 
 if [ $# -ne 0 ]; then
 	abort "usage: $(basename "$0")"
@@ -11,7 +11,7 @@ fi
 touch "$HOME/.hushlogin"
 chmod 600 "$HOME/.hushlogin"
 
-wd="$XDG_CONFIG_HOME/home"
+wd="$HOME/.config/home"
 cd "$wd"
 for x in *; do
 	symlink "$wd/$x" "$HOME/.$x"
