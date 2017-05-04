@@ -28,6 +28,8 @@ if git merge-base --is-ancestor origin/master @; then
 	exit
 fi
 
-git rebase --onto origin/master "$old_om"
+if ! git rebase --onto origin/master "$old_om"; then
+	abort "go to '$XDG_CONFIG_HOME' to resolve this error"
+fi
 
 "$XDG_CONFIG_HOME/bin/do-home"
