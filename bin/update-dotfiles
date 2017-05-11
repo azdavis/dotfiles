@@ -9,11 +9,10 @@ fi
 
 cd "$HOME/.config"
 
-old_om="$(git rev-parse origin/master)"
 if [ \
 	"$(curl \
 		-H "Accept: application/vnd.github.chitauri-preview+sha" \
-		-H "If-None-Match: \"$old_om\"" \
+		-H "If-None-Match: \"$(git rev-parse origin/master)\"" \
 		-s \
 		-o /dev/null \
 		-w "%{http_code}" \
@@ -28,7 +27,7 @@ if git merge-base --is-ancestor origin/master @; then
 	exit
 fi
 
-if ! git rebase --onto origin/master "$old_om"; then
+if ! git rebase origin/master; then
 	abort "cd to '$HOME/.config' to resolve this error"
 fi
 
