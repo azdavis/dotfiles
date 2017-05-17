@@ -29,25 +29,23 @@ alias \
 	c="tput reset" \
 	df="df -h" \
 	du="du -chs" \
-	gdb="gdb -q" \
-	grep="grep --color=auto" \
-	ls="ls -bh --color=auto --group-directories-first --time-style=long-iso" \
-	sml="rlwrap sml" \
-	subl="subl -a" \
-	tree="tree --dirsfirst"
-
-alias \
 	ga="git add" \
 	gb="git branch" \
 	gc="git commit" \
 	gd="git diff" \
+	gdb="gdb -q" \
 	gh="git show --pretty=fuller" \
 	gi="git init" \
 	gk="git checkout" \
 	gl="git log --all --graph --oneline" \
 	gm="git merge" \
 	gr="git reset" \
-	gs="git status"
+	grep="grep --color=auto" \
+	gs="git status" \
+	ls="ls -bh --color=auto --group-directories-first --time-style=long-iso" \
+	sml="rlwrap sml" \
+	subl="subl -a" \
+	tree="tree --dirsfirst"
 
 autoload -U compinit
 compinit -u
