@@ -14,6 +14,12 @@ rm -rf \
 	"$HOME/.bash_sessions" \
 	"$HOME/.bundle" \
 	"$HOME/.cache" \
+	"$HOME/.config/gnome-session" \
+	"$HOME/.config/gtk-2.0" \
+	"$HOME/.config/gtk-3.0" \
+	"$HOME/.config/nautilus" \
+	"$HOME/.config/update-notifier" \
+	"$HOME/.config/upstart" \
 	"$HOME/.elm" \
 	"$HOME/.gem" \
 	"$HOME/.ghc" \
@@ -25,10 +31,4 @@ rm -rf \
 	"$HOME/.oracle_jre_usage" \
 	"$HOME/.python_history" \
 	"$HOME/.sh_history" \
-	"$HOME/.viminfo" \
-	"$HOME/.config/gnome-session" \
-	"$HOME/.config/gtk-2.0" \
-	"$HOME/.config/gtk-3.0" \
-	"$HOME/.config/nautilus" \
-	"$HOME/.config/update-notifier" \
-	"$HOME/.config/upstart"
+	"$HOME/.viminfo"
