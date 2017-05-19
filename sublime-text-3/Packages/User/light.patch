@@ -1,8 +1,8 @@
 diff --git a/sublime-text-3/Packages/User/Preferences.sublime-settings b/sublime-text-3/Packages/User/Preferences.sublime-settings
-index 9bc7489..6bf0f50 100644
+index 769d489..d44869b 100644
 --- a/sublime-text-3/Packages/User/Preferences.sublime-settings
 +++ b/sublime-text-3/Packages/User/Preferences.sublime-settings
-@@ -28,3 +28,2 @@
+@@ -29,3 +29,2 @@
  	[
 -		"gray_antialias",
  		"no_bold",
