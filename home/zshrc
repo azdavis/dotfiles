@@ -49,7 +49,7 @@ alias \
 	tree="tree --dirsfirst"
 
 autoload -U compinit
-compinit -u
+compinit -i
 zstyle ":completion:*" group-name ""
 zstyle ":completion:*" list-dirs-first true
 zstyle ":completion:*" matcher-list "m:{a-zA-Z}={A-Za-z}"
