@@ -2,6 +2,7 @@
 	verbose = 1
 [core]
 	editor = subl -w
+	eol = lf
 	pager = less -FRSXx4
 	quotePath = false
 	untrackedCache = true
