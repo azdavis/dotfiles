@@ -7,7 +7,10 @@ git rev-parse
 
 remote=""
 if [ $# -eq 0 ]; then
-	remote="origin"
+	branch="$(git rev-parse --abbrev-ref @)"
+	if ! remote="$(git config branch.$branch.remote)"; then
+		remote="origin"
+	fi
 elif [ $# -eq 1 ]; then
 	remote="$1"
 else
