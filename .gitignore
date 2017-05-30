@@ -19,6 +19,7 @@
 !/readme.rst
 
 /bin/backup
+/bin/watch
 
 /git/credentials
 
