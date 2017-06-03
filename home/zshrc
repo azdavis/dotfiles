@@ -19,7 +19,6 @@ ZLE_REMOVE_SUFFIX_CHARS=$' \t\n;)'
 
 setopt \
 	autocd \
-	ignoreeof \
 	interactivecomments \
 	menucomplete \
 	nobeep \
