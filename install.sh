@@ -27,7 +27,7 @@ check_deps() {
 		basename brew cat chmod chsh curl date defaults dirname find git grep \
 		ln mkdir mktemp mv pgrep readlink rm sed sh touch tr wc zsh \
 	; do
-		if ! which "$x" > /dev/null 2>&1; then
+		if ! command -v "$x" > /dev/null 2>&1; then
 			echo "'$x' not installed"
 			ok=false
 		fi
@@ -67,7 +67,7 @@ do_subl() {
 }
 
 change_shell() {
-	new_shell="$(which zsh)"
+	new_shell="$(command -v zsh)"
 	echo "changing shell to '$new_shell'"
 	if [ "$SHELL" = "$new_shell" ]; then
 		return
