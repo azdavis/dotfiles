@@ -31,4 +31,5 @@ rm -rf \
 	"$HOME/.oracle_jre_usage" \
 	"$HOME/.python_history" \
 	"$HOME/.sh_history" \
+	"$HOME/.sqlite_history" \
 	"$HOME/.viminfo"
