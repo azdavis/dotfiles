@@ -13,17 +13,14 @@ p="sublime-text-3/Packages/User/light.patch"
 t=""
 d=""
 if git apply --check "$p" > /dev/null 2>&1; then
-	t="theme 2"
+	t="light"
 	d=""
 elif git apply --check --reverse "$p" > /dev/null 2>&1; then
-	t="theme"
+	t="dark"
 	d="--reverse"
 else
 	abort "patch does not apply in either direction"
 fi
 
 git apply $d "$p"
-osascript -e "tell application \"Terminal\"
-	set current settings of window 1 to settings set \"$t\"
-	set default settings to settings set \"$t\"
-end tell"
+printf "\033]50;SetProfile=$t\a"
