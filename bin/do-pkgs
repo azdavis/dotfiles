@@ -22,4 +22,4 @@ tlmgr update --self
 tlmgr update --all
 
 echo "doing npm"
-npm update -g npm
+npm i -g npm
