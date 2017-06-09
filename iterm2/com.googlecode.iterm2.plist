@@ -12,6 +12,12 @@
 	<string>default</string>
 	<key>Default Bookmark Guid</key>
 	<string>76EA756E-4F4D-4E3F-8575-96AC648EEE13</string>
+	<key>DimBackgroundWindows</key>
+	<false/>
+	<key>DisableFullscreenTransparency</key>
+	<true/>
+	<key>FlashTabBarInFullscreen</key>
+	<false/>
 	<key>GlobalKeyMap</key>
 	<dict>
 		<key>0x19-0x60000</key>
@@ -134,6 +140,12 @@
 			<string></string>
 		</dict>
 	</dict>
+	<key>HideActivityIndicator</key>
+	<false/>
+	<key>HideMenuBarInFullscreen</key>
+	<true/>
+	<key>HideTabNumber</key>
+	<true/>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSFontPanelAttributes</key>
@@ -1048,6 +1060,8 @@
 	<false/>
 	<key>Secure Input</key>
 	<true/>
+	<key>ShowNewOutputIndicator</key>
+	<false/>
 	<key>TabStyle</key>
 	<integer>1</integer>
 	<key>UseLionStyleFullscreen</key>
