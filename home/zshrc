@@ -34,10 +34,10 @@ alias \
 	gc="git commit" \
 	gd="git diff" \
 	gdb="gdb -q" \
-	gh="git show --pretty=fuller" \
+	gh="git show-full" \
 	gi="git init" \
 	gk="git checkout" \
-	gl="git log --all --graph --oneline" \
+	gl="git log-graph" \
 	gm="git merge" \
 	gr="git reset" \
 	grep="grep --color=auto" \
