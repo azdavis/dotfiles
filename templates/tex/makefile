@@ -18,6 +18,6 @@ clean:
 	\) -delete
 
 %.pdf: %.tex src/base.tex
-	cd $(dir $<) ;\
-	pdflatex -halt-on-error $(notdir $<) $(Q) ;\
+	cd $(dir $<) && \
+	pdflatex -halt-on-error $(notdir $<) $(Q) && \
 	pdflatex -halt-on-error $(notdir $<) $(Q)
