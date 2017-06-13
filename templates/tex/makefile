@@ -2,20 +2,14 @@ MAKEFLAGS += -rRs
 Q := > /dev/null
 
 MAIN := src/{{proj}}.pdf
+M := $(basename $(MAIN))
 
 .PHONY: all clean
 
 all: $(MAIN)
 
 clean:
-	rm -rf $(MAIN)
-	find src \( \
-		-name '*.aux' -o \
-		-name '*.bbl' -o \
-		-name '*.dvi' -o \
-		-name '*.log' -o \
-		-name '*.toc' \
-	\) -delete
+	rm -rf $(MAIN) $(M).aux $(M).bbl $(M).dvi $(M).log $(M).toc
 
 %.pdf: %.tex src/base.tex
 	cd $(dir $<) && \

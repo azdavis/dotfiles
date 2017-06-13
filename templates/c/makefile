@@ -9,8 +9,7 @@ OBJS :=
 all: $(MAIN)
 
 clean:
-	rm -rf $(MAIN) $(OBJS)
-	find src -name '*.dSYM' -prune -exec rm -rf {} \;
+	rm -rf $(MAIN) $(MAIN).dSYM $(OBJS)
 
 run: all
 	./$(MAIN)
