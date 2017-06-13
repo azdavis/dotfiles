@@ -1,6 +1,5 @@
 MAKEFLAGS += -rRs
 Q := > /dev/null
-
 MAIN := src/{{proj}}
 MAIN_PDF := $(MAIN).pdf
 
