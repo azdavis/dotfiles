@@ -1,15 +1,21 @@
 MAKEFLAGS += -rRs
 Q := > /dev/null
 
-MAIN := src/{{proj}}.pdf
-M := $(basename $(MAIN))
+MAIN := src/{{proj}}
+MAIN_PDF := $(MAIN).pdf
 
 .PHONY: all clean
 
-all: $(MAIN)
+all: $(MAIN_PDF)
 
 clean:
-	rm -rf $(MAIN) $(M).aux $(M).bbl $(M).dvi $(M).log $(M).toc
+	rm -rf \
+		$(MAIN_PDF) \
+		$(MAIN).aux \
+		$(MAIN).bbl \
+		$(MAIN).dvi \
+		$(MAIN).log \
+		$(MAIN).toc
 
 %.pdf: %.tex src/base.tex
 	cd $(dir $<) && \
