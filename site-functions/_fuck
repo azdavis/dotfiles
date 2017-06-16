@@ -2,6 +2,7 @@
 
 local opts=(
 	"-f[ignore nonexistent files and arguments, never prompt]"
+	"-h[show this help]"
 	"-r[remove directories and their contents recursively]"
 	"-v[explain what is being done]"
 	"*:files:_files"

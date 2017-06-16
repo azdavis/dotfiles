@@ -9,6 +9,8 @@ usage: $(basename "$0") [options] <file>...
 options:
 	-f
 		ignore nonexistent files and arguments, never prompt
+	-h
+		show this help
 	-r
 		remove directories and their contents recursively
 	-v
@@ -24,9 +26,10 @@ usage() {
 f=""
 r=false
 v=""
-while getopts "frv" opt; do
+while getopts "fhrv" opt; do
 	case "$opt" in
 	(f) f="-f" ;;
+	(h) show_help && exit ;;
 	(r) r=true ;;
 	(v) v="-v" ;;
 	(*) usage ;;
