@@ -3,8 +3,32 @@
 set -eu
 . "$HOME/.config/lib/abort.sh"
 
-if [ $# -eq 0 ]; then
-	abort "usage: $(basename "$0") <path>..."
-fi
+show_help() {
+cat <<EOS
+usage: $(basename "$0") [options] <file>...
 
-find "$@" -name .DS_Store -delete 2> /dev/null || true
+options:
+	-h
+		show this help
+	-v
+		explain what is being done
+EOS
+}
+
+usage() {
+	show_help 1>&2
+	exit 1
+}
+
+f=""
+r=false
+v=""
+while getopts "hv" opt; do
+	case "$opt" in
+	(h) show_help && exit ;;
+	(v) v="-v" ;;
+	(*) usage ;;
+	esac
+done
+shift $((OPTIND - 1))
+find "$@" -name .DS_Store -exec rm $v {} \; 2> /dev/null || true

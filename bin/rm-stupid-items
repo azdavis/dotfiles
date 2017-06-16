@@ -3,13 +3,42 @@
 set -eu
 . "$HOME/.config/lib/abort.sh"
 
+show_help() {
+cat <<EOS
+usage: $(basename "$0") [options]
+
+options:
+	-h
+		show this help
+	-v
+		explain what is being done
+EOS
+}
+
+usage() {
+	show_help 1>&2
+	exit 1
+}
+
+f=""
+r=false
+v=""
+while getopts "hv" opt; do
+	case "$opt" in
+	(h) show_help && exit ;;
+	(v) v="-v" ;;
+	(*) usage ;;
+	esac
+done
+shift $((OPTIND - 1))
+
 if [ $# -ne 0 ]; then
-	abort "usage: $(basename "$0")"
+	usage
 fi
 
-"$HOME/.config/bin/rm-ds-stores" "$HOME"
+"$HOME/.config/bin/rm-ds-stores" $v "$HOME"
 
-rm -rf \
+rm -rf $v \
 	"$HOME/.bash_history" \
 	"$HOME/.bash_sessions" \
 	"$HOME/.bundle" \
