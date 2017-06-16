@@ -5,7 +5,7 @@ set -eu
 
 show_help() {
 cat <<EOS
-usage: $(basename "$0") [options] <file>...
+usage: $(basename "$0") [options] <path>...
 
 options:
 	-h
