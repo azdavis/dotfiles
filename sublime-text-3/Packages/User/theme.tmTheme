@@ -81,7 +81,7 @@
 			</dict>
 			<dict>
 				<key>scope</key>
-				<string>entity.name.type, entity.other.attribute-name, markup.inserted, meta.constant, support.class, variable.other.constant</string>
+				<string>entity.other.attribute-name, markup.inserted</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
