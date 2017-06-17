@@ -61,5 +61,5 @@
 		"gray_antialias"
 	],
 	"trim_trailing_white_space_on_save": true,
-	"wrap_width": 80
+	"word_wrap": false
 }
