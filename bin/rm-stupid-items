@@ -52,6 +52,7 @@ rm -rf $v \
 	"$HOME/.elm" \
 	"$HOME/.gem" \
 	"$HOME/.ghc" \
+	"$HOME/.idris" \
 	"$HOME/.lldb" \
 	"$HOME/.nano" \
 	"$HOME/.node-gyp" \
