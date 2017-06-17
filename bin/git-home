@@ -22,4 +22,4 @@ if ! url="$(git config remote.$remote.url)"; then
 fi
 url="$(echo "$url" | sed 's/\.git$//')"
 
-open "$url"
+open "$url/tree/$branch"
