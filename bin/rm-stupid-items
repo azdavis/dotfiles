@@ -61,4 +61,5 @@ rm -rf $v \
 	"$HOME/.python_history" \
 	"$HOME/.sh_history" \
 	"$HOME/.sqlite_history" \
-	"$HOME/.viminfo"
+	"$HOME/.viminfo" \
+	"$HOME/.zcompdump"
