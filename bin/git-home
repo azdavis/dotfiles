@@ -20,5 +20,6 @@ fi
 if ! url="$(git config remote.$remote.url)"; then
 	abort "could not get url for remote '$remote'"
 fi
+url="$(echo "$url" | sed 's/\.git$//')"
 
 open "$url"
