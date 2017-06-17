@@ -43,6 +43,7 @@ alias \
 	gr="git reset" \
 	grep="grep --color=auto" \
 	gs="git status" \
+	idris="idris --nobanner" \
 	ls="ls -bh --color=auto --group-directories-first --time-style=long-iso" \
 	sml="rlwrap sml" \
 	subl="subl -a" \
