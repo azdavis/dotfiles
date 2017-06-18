@@ -1,4 +1,4 @@
-check_user() {
+check-user() {
 	echo "checking user is not 'root'"
 	if [ "$USER" != root ]; then
 		return
@@ -7,7 +7,7 @@ check_user() {
 	exit 1
 }
 
-check_os() {
+check-os() {
 	echo "checking OS is 'macOS'"
 	if [ "$(uname)" = Darwin ]; then
 		return
@@ -16,7 +16,7 @@ check_os() {
 	exit 1
 }
 
-check_deps() {
+check-deps() {
 	echo "checking deps are installed"
 	ok=true
 	if ! xcode-select -p > /dev/null 2>&1; then
@@ -37,7 +37,7 @@ check_deps() {
 	fi
 }
 
-install_repo() {
+install-repo() {
 	echo "installing '$url' to '$dst'"
 	if [ -d "$dst" ] \
 	&& [ "$(git -C "$dst" config remote.origin.url)" = "$url" ]; then
@@ -56,17 +56,17 @@ install_repo() {
 	git -C "$dst" reset -q --hard
 }
 
-do_home() {
+do-home() {
 	echo "doing home actions"
 	"$dst/bin/do-home"
 }
 
-do_subl() {
+do-subl() {
 	echo "doing subl actions"
 	"$dst/bin/do-subl"
 }
 
-change_shell() {
+change-shell() {
 	new_shell="$(command -v zsh)"
 	echo "changing shell to '$new_shell'"
 	if [ "$SHELL" = "$new_shell" ]; then
@@ -79,13 +79,13 @@ main() {
 	set -eu
 	url="https://github.com/azdavis/dotfiles.git"
 	dst="$HOME/.config"
-	check_user
-	check_os
-	check_deps
-	install_repo
-	do_home
-	do_subl
-	change_shell
+	check-user
+	check-os
+	check-deps
+	install-repo
+	do-home
+	do-subl
+	change-shell
 	echo "finishing"
 }
 
