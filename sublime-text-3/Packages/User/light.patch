@@ -7,7 +7,7 @@ index 8986cb0..6407884 100644
 +
  export \
 diff --git a/sublime-text-3/Packages/User/Preferences.sublime-settings b/sublime-text-3/Packages/User/Preferences.sublime-settings
-index 3ab0fc6..af1fdc3 100644
+index a49593d..3ff305f 100644
 --- a/sublime-text-3/Packages/User/Preferences.sublime-settings
 +++ b/sublime-text-3/Packages/User/Preferences.sublime-settings
 @@ -29,3 +29,2 @@
