@@ -40,6 +40,8 @@ alias \
 	gk="git checkout" \
 	gl="git log-graph" \
 	gm="git merge" \
+	gp="git push" \
+	gpl="git pull" \
 	gr="git reset" \
 	grep="grep --color=auto" \
 	gs="git status" \
