@@ -1,5 +1,5 @@
 diff --git a/home/zshrc b/home/zshrc
-index 8986cb0..6407884 100644
+index 59d2028..82a2d3c 100644
 --- a/home/zshrc
 +++ b/home/zshrc
 @@ -1 +1,3 @@
@@ -7,14 +7,14 @@ index 8986cb0..6407884 100644
 +
  export \
 diff --git a/sublime-text-3/Packages/User/Preferences.sublime-settings b/sublime-text-3/Packages/User/Preferences.sublime-settings
-index a49593d..3ff305f 100644
+index e5b5c29..160046f 100644
 --- a/sublime-text-3/Packages/User/Preferences.sublime-settings
 +++ b/sublime-text-3/Packages/User/Preferences.sublime-settings
-@@ -29,3 +29,2 @@
+@@ -52,3 +52,2 @@
  	[
 -		"gray_antialias",
  		"no_bold",
-@@ -60,3 +59,2 @@
+@@ -83,3 +82,2 @@
  	[
 -		"gray_antialias"
  	],
