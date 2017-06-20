@@ -19,6 +19,7 @@
 		"*.dll",
 		"*.dylib",
 		"*.exe",
+		"*.ibc",
 		"*.idb",
 		"*.lib",
 		"*.ncb",
