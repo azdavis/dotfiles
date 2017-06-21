@@ -3,20 +3,19 @@
 set -eu
 . "$HOME/.config/lib/abort.sh"
 
-git rev-parse
-
-remote=""
-if [ $# -eq 0 ]; then
-	branch="$(git rev-parse --abbrev-ref @)"
-	if ! remote="$(git config branch.$branch.remote)"; then
-		remote="origin"
-	fi
-elif [ $# -eq 1 ]; then
-	remote="$1"
-else
-	abort "usage: $(basename "$0") [<remote>]"
+if [ $# -ne 0 ]; then
+	abort "usage: $(basename "$0")"
 fi
 
+git rev-parse
+
+branch="$(git rev-parse --abbrev-ref @)"
+if [ "$branch" = HEAD ]; then
+	abort "not on a branch"
+fi
+if ! remote="$(git config branch.$branch.remote)"; then
+	abort "could not get remote for branch '$branch'"
+fi
 if ! url="$(git config remote.$remote.url)"; then
 	abort "could not get url for remote '$remote'"
 fi
