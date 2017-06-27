@@ -12,7 +12,8 @@
 	"default_line_ending": "unix",
 	"drag_text": false,
 	"enable_tab_scrolling": false,
-	"file_exclude_patterns": [
+	"file_exclude_patterns":
+	[
 		"*.a",
 		"*.class",
 		"*.db",
