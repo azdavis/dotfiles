@@ -19,6 +19,7 @@ if [ \
 		"https://api.github.com/repos/azdavis/dotfiles/commits/master" \
 	)" -ne 304 \
 ]; then
+	echo "fetching origin/master"
 	git fetch -q origin master
 fi
 
