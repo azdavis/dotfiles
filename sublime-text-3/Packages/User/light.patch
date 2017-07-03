@@ -7,14 +7,14 @@ index 8edc900..b5ff523 100644
 +
  export \
 diff --git a/sublime-text-3/Packages/User/Preferences.sublime-settings b/sublime-text-3/Packages/User/Preferences.sublime-settings
-index f2b8de9..960fcb2 100644
+index 95a9178..5bec7c2 100644
 --- a/sublime-text-3/Packages/User/Preferences.sublime-settings
 +++ b/sublime-text-3/Packages/User/Preferences.sublime-settings
-@@ -53,3 +53,2 @@
+@@ -55,3 +55,2 @@
  	[
 -		"gray_antialias",
  		"no_bold",
-@@ -84,3 +83,2 @@
+@@ -86,3 +85,2 @@
  	[
 -		"gray_antialias"
  	],
