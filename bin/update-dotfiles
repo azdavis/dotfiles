@@ -32,4 +32,6 @@ if ! git rebase origin/master; then
 	abort "cd to '$HOME/.config' to resolve this error"
 fi
 
+git log -1 --format='%h%d %cr' origin/master
+
 "$HOME/.config/bin/do-home"
