@@ -57,12 +57,6 @@ fi
 if echo "$proj" | grep -E '\s' > /dev/null; then
 	abort "'$proj' has whitespace"
 fi
-proj_underline=""
-x="${#proj}"
-while [ "$x" -gt 0 ]; do
-	proj_underline="$proj_underline="
-	x=$((x - 1))
-done
 
 is_private=""
 if [ "$g" = private ]; then
@@ -105,7 +99,6 @@ replace() {
 		| sed "s/{{email}}/$email/g" \
 		| sed "s/{{gh_username}}/$gh_username/g" \
 		| sed "s/{{name}}/$name/g" \
-		| sed "s/{{proj_underline}}/$proj_underline/g" \
 		| sed "s/{{proj}}/$proj/g" \
 		| sed "s/{{year}}/$year/g"
 }

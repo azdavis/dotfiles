@@ -15,8 +15,8 @@
 
 !/.gitignore
 !/install.sh
-!/license.rst
-!/readme.rst
+!/license.md
+!/readme.md
 
 /bin/backup
 /bin/watch
