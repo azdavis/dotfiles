@@ -25,13 +25,10 @@ fi
 
 if git merge-base --is-ancestor origin/master @; then
 	echo "already up-to-date"
-	exit
-fi
-
-if ! git rebase -q origin/master; then
+elif git rebase -q origin/master; then
+	"$HOME/.config/bin/do-home"
+else
 	abort "cd to '$HOME/.config' to resolve this error"
 fi
-
-"$HOME/.config/bin/do-home"
 
 git log -1 --format='%h%d %cr' origin/master
