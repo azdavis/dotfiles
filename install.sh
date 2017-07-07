@@ -32,9 +32,11 @@ check_deps() {
 			ok=false
 		fi
 	done
-	if ! $ok; then
-		exit 1
+	if $ok; then
+		return
 	fi
+	echo "not all deps are installed"
+	exit 1
 }
 
 install_repo() {
