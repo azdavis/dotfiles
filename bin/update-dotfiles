@@ -19,13 +19,11 @@ if [ \
 		"https://api.github.com/repos/azdavis/dotfiles/commits/master" \
 	)" -ne 304 \
 ]; then
-	echo "fetching origin/master"
 	git fetch -q origin master
 fi
 
-if git merge-base --is-ancestor origin/master @; then
-	echo "already up-to-date"
-elif git rebase -q origin/master; then
+if ! git merge-base --is-ancestor origin/master @ \
+&& git rebase -q origin/master; then
 	"$HOME/.config/bin/do-home"
 else
 	abort "cd to '$HOME/.config' to resolve this error"
