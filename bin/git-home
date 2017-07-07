@@ -9,7 +9,7 @@ fi
 
 git rev-parse
 
-branch="$(git rev-parse --abbrev-ref @)"
+branch="$(git rev-parse --abbrev-ref HEAD)"
 if [ "$branch" = HEAD ]; then
 	abort "not on a branch"
 fi

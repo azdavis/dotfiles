@@ -22,7 +22,7 @@ if [ \
 	git fetch -q origin master
 fi
 
-if ! git merge-base --is-ancestor origin/master @ \
+if ! git merge-base --is-ancestor origin/master HEAD \
 && git rebase -q origin/master; then
 	"$HOME/.config/bin/do-home"
 else
