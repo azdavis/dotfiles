@@ -29,4 +29,4 @@ if ! git merge-base --is-ancestor origin/master HEAD; then
 	"$HOME/.config/bin/do-home"
 fi
 
-git log -1 --format='%h%d %cr' origin/master
+git log -1 --format='%h (%cr)' origin/master
