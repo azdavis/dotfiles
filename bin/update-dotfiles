@@ -1,10 +1,10 @@
 #!/bin/sh
 
 set -eu
-. "$HOME/.config/lib/abort.sh"
+. "$HOME/.config/lib/panic.sh"
 
 if [ $# -ne 0 ]; then
-	abort "usage: $(basename "$0")"
+	panic "usage: $(basename "$0")"
 fi
 
 cd "$HOME/.config"
@@ -24,7 +24,7 @@ fi
 
 if ! git merge-base --is-ancestor origin/master HEAD; then
 	if ! git rebase -q origin/master; then
-		abort "cd to '$HOME/.config' to resolve this error"
+		panic "cd to '$HOME/.config' to resolve this error"
 	fi
 	"$HOME/.config/bin/do-home"
 fi

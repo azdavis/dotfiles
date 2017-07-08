@@ -1,10 +1,10 @@
 #!/bin/sh
 
 set -eu
-. "$HOME/.config/lib/abort.sh"
+. "$HOME/.config/lib/panic.sh"
 
 if [ $# -ne 0 ]; then
-	abort "usage: $(basename "$0")"
+	panic "usage: $(basename "$0")"
 fi
 
 cd "$HOME/.config"
@@ -19,7 +19,7 @@ elif git apply --check --reverse "$p" > /dev/null 2>&1; then
 	t="dark"
 	d="--reverse"
 else
-	abort "patch does not apply in either direction"
+	panic "patch does not apply in either direction"
 fi
 
 git apply $d "$p"

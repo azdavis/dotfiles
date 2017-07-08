@@ -1,10 +1,10 @@
 #!/bin/sh
 
 set -eu
-. "$HOME/.config/lib/abort.sh"
+. "$HOME/.config/lib/panic.sh"
 
 if [ $# -ne 0 ]; then
-	abort "usage: $(basename "$0")"
+	panic "usage: $(basename "$0")"
 fi
 
 echo "doing brew"

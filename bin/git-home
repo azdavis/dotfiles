@@ -1,23 +1,23 @@
 #!/bin/sh
 
 set -eu
-. "$HOME/.config/lib/abort.sh"
+. "$HOME/.config/lib/panic.sh"
 
 if [ $# -ne 0 ]; then
-	abort "usage: $(basename "$0")"
+	panic "usage: $(basename "$0")"
 fi
 
 git rev-parse
 
 branch="$(git rev-parse --abbrev-ref HEAD)"
 if [ "$branch" = HEAD ]; then
-	abort "not on a branch"
+	panic "not on a branch"
 fi
 if ! remote="$(git config branch.$branch.remote)"; then
-	abort "could not get remote for branch '$branch'"
+	panic "could not get remote for branch '$branch'"
 fi
 if ! url="$(git config remote.$remote.url)"; then
-	abort "could not get url for remote '$remote'"
+	panic "could not get url for remote '$remote'"
 fi
 url="$(echo "$url" | sed 's/\.git$//')"
 
