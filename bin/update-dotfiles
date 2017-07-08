@@ -22,11 +22,14 @@ if [ \
 	git fetch -q origin master
 fi
 
-if ! git merge-base --is-ancestor origin/master HEAD; then
+if git merge-base --is-ancestor origin/master HEAD; then
+	echo "already up-to-date"
+else
 	if ! git rebase -q origin/master; then
 		panic "cd to '$HOME/.config' to resolve this error"
 	fi
 	"$HOME/.config/bin/do-home"
+	echo "updated"
 fi
 
 git log -1 --format='%h (%cr)' origin/master
