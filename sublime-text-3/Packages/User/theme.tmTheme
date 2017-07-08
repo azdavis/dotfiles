@@ -72,7 +72,7 @@
 			</dict>
 			<dict>
 				<key>scope</key>
-				<string>string, keyword.operator.heredoc, keyword.control.heredoc-token</string>
+				<string>string -string.interpolated, keyword.operator.heredoc, keyword.control.heredoc-token</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>

@@ -19,7 +19,7 @@ index 95a9178..5bec7c2 100644
 -		"gray_antialias"
  	],
 diff --git a/sublime-text-3/Packages/User/theme.tmTheme b/sublime-text-3/Packages/User/theme.tmTheme
-index 0f0f9c1..de1d96b 100644
+index 5b598c6..c6784d0 100644
 --- a/sublime-text-3/Packages/User/theme.tmTheme
 +++ b/sublime-text-3/Packages/User/theme.tmTheme
 @@ -10,15 +10,15 @@
