@@ -15,6 +15,21 @@
 		"args": {"type": "cr"}
 	},
 	{
+		"caption": "Tab Width: Set to 2",
+		"command": "set_setting",
+		"args": {"setting": "tab_size", "value": 2}
+	},
+	{
+		"caption": "Tab Width: Set to 4",
+		"command": "set_setting",
+		"args": {"setting": "tab_size", "value": 4}
+	},
+	{
+		"caption": "Tab Width: Set to 8",
+		"command": "set_setting",
+		"args": {"setting": "tab_size", "value": 8}
+	},
+	{
 		"caption": "Check for Updates",
 		"command": "update_check"
 	}
