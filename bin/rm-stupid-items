@@ -54,6 +54,7 @@ rm -rf $v \
 	"$HOME/.ghc" \
 	"$HOME/.idris/repl/history" \
 	"$HOME/.lldb" \
+	"$HOME/.mplayer" \
 	"$HOME/.nano" \
 	"$HOME/.node-gyp" \
 	"$HOME/.node_repl_history" \
