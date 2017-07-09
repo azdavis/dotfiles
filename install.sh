@@ -45,7 +45,7 @@ install_repo() {
 	&& [ "$(git -C "$dst" config remote.origin.url)" = "$url" ]; then
 		return
 	fi
-	tmp="$(mktemp -d /tmp/XXXXXXXXXX)"
+	tmp="$(mktemp -d "${TMPDIR:-/tmp}/XXXXXXXXXX")"
 	trap "rm -rf '$tmp'" EXIT
 	git clone -q -n --single-branch "$url" "$tmp"
 	if ! [ -d "$dst" ]; then
