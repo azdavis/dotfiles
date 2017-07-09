@@ -141,7 +141,7 @@
 		</dict>
 	</dict>
 	<key>HideActivityIndicator</key>
-	<false/>
+	<true/>
 	<key>HideMenuBarInFullscreen</key>
 	<true/>
 	<key>HideTabNumber</key>
