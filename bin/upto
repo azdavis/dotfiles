@@ -1,0 +1,12 @@
+#!/bin/sh
+
+set -eu
+. "$HOME/.config/lib/panic.sh"
+
+if [ $# -ne 1 ]; then
+	panic "usage: $(basename "$0") <nat>"
+fi
+
+upto="$1"
+
+seq -w 1 "$upto" | perl -pe 'chomp if eof' | pbcopy
