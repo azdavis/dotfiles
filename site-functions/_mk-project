@@ -1,4 +1,4 @@
-#compdef new-project
+#compdef mk-project
 
 local opts=(
 	"-f[create <proj> even if it already exists]"
