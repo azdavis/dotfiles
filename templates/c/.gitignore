@@ -1,4 +1,4 @@
 *.dSYM
 *.o
 *.out
-{{proj}}
+*.run
