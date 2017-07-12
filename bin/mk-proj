@@ -44,15 +44,15 @@ if [ $# -ne 2 ]; then
 	usage
 fi
 
-proj_path="$(realpath "$1")"
-proj_desc="$2"
-
 note() {
 	if $q; then
 		return
 	fi
 	echo "$1"
 }
+
+proj_path="$(realpath "$1")"
+proj_desc="$2"
 
 if ! git_name="$(git config user.name)"; then
 	panic "no git user.name found"

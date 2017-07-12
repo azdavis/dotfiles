@@ -36,6 +36,13 @@ if [ $# -ne 2 ]; then
 	usage
 fi
 
+note() {
+	if $q; then
+		return
+	fi
+	echo "$1"
+}
+
 proj_name="$1"
 proj_desc="$2"
 
