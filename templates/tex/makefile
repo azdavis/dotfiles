@@ -1,6 +1,6 @@
 MAKEFLAGS += -rRs
 Q := > /dev/null
-MAIN := src/{{proj}}
+MAIN := src/{{proj_name}}
 MAIN_PDF := $(MAIN).pdf
 
 .PHONY: all clean

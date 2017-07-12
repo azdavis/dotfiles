@@ -1,6 +1,6 @@
 MAKEFLAGS += -rRs
 CFLAGS := -Werror -Weverything -std=c99 -g
-MAIN := src/{{proj}}
+MAIN := src/{{proj_name}}
 OBJS :=
 
 .PHONY: all clean

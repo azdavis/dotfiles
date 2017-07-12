@@ -1,6 +1,6 @@
 #include <stdio.h>
 
 int main(void) {
-	puts("hello {{proj}}");
+	puts("hello {{proj_name}}");
 	return 0;
 }

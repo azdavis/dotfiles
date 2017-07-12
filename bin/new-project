@@ -5,11 +5,11 @@ set -eu
 
 show_help() {
 cat <<EOS
-usage: $(basename "$0") [options] <proj> <desc>
+usage: $(basename "$0") [options] <proj_name> <proj_desc>
 
 options:
 	-f
-		create <proj> even if it already exists
+		create <proj_name> even if it already exists
 	-g (public | private)
 		create a corresponding github repository of the given privacy
 	-q
@@ -43,19 +43,19 @@ if [ $# -ne 2 ]; then
 	usage
 fi
 
-if ! name="$(git config user.name)"; then
+if ! git_name="$(git config user.name)"; then
 	panic "no git user.name found"
 fi
-if ! email="$(git config user.email)"; then
+if ! git_email="$(git config user.email)"; then
 	panic "no git user.email found"
 fi
 
-proj="$(basename "$(realpath "$1")")"
-if [ -e "$proj" ] && ! $f; then
-	panic "'$proj' already exists"
+proj_name="$(basename "$(realpath "$1")")"
+if [ -e "$proj_name" ] && ! $f; then
+	panic "'$proj_name' already exists"
 fi
-if echo "$proj" | grep -E '\s' > /dev/null; then
-	panic "'$proj' has whitespace"
+if echo "$proj_name" | grep -E '\s' > /dev/null; then
+	panic "'$proj_name' has whitespace"
 fi
 
 is_private=""
@@ -86,25 +86,25 @@ github_cred() {
 		| sed "s/$1=//"
 }
 
-gh_username="$(github_cred username)"
-gh_password="$(github_cred password)"
+github_name="$(github_cred username)"
+github_password="$(github_cred password)"
 
-path="$PWD/$1"
-desc="$2"
+proj_path="$PWD/$1"
+proj_desc="$2"
 year="$(date +%Y)"
 
-replace() {
+replace_vars() {
 	cat \
-		| sed "s/{{desc}}/$desc/g" \
-		| sed "s/{{email}}/$email/g" \
-		| sed "s/{{gh_username}}/$gh_username/g" \
-		| sed "s/{{name}}/$name/g" \
-		| sed "s/{{proj}}/$proj/g" \
+		| sed "s/{{proj_desc}}/$proj_desc/g" \
+		| sed "s/{{git_email}}/$git_email/g" \
+		| sed "s/{{github_name}}/$github_name/g" \
+		| sed "s/{{git_name}}/$git_name/g" \
+		| sed "s/{{proj_name}}/$proj_name/g" \
 		| sed "s/{{year}}/$year/g"
 }
 
 dst_name() {
-	echo "$path/$1" | replace
+	echo "$proj_path/$1" | replace_vars
 }
 
 add_dir() {
@@ -113,14 +113,14 @@ add_dir() {
 		return
 	fi
 	mkdir -p "$(dst_name "$1")"
-	add "$1"
+	add_item "$1"
 }
 
 add_file() {
-	cat "$1" | replace >> "$(dst_name "$1")"
+	cat "$1" | replace_vars >> "$(dst_name "$1")"
 }
 
-add() {
+add_item() {
 	for x in "$1"/* "$1"/.*; do
 		if [ -d "$x" ]; then
 			add_dir "$x"
@@ -133,20 +133,20 @@ add() {
 add_template() {
 	note "adding template '$1'"
 	cd "$templates/$1"
-	add .
+	add_item .
 }
 
-note "creating '$proj'"
-mkdir -p "$path/src"
+note "creating '$proj_name'"
+mkdir -p "$proj_path/src"
 add_template "_base"
 if [ -n "$t" ]; then
 	add_template "$t"
 fi
 
-cd "$path"
+cd "$proj_path"
 sort -o .gitignore .gitignore
 
-note "creating '$proj/.git'"
+note "creating '$proj_name/.git'"
 git init -q
 git add -A
 git commit -q -m "start project"
@@ -157,16 +157,16 @@ fi
 
 # there must be spaces surrounding { and } in the json data
 # e761df8a36c4e302ebda8b792f70d631b0e8452d
-url="https://github.com/$gh_username/$proj.git"
+url="https://github.com/$github_name/$proj_name.git"
 note "creating '$url'"
 git remote add origin "$url"
 if [ \
 	"$(curl \
 		-H "Accept: application/vnd.github.v3+json" \
 		-H "Content-Type: application/json" \
-		-H "Authorization: token $gh_password" \
+		-H "Authorization: token $github_password" \
 		-X POST \
-		-d " { \"name\":\"$proj\", \"description\":\"$desc\", \"private\":$is_private } " \
+		-d " { \"name\":\"$proj_name\", \"description\":\"$proj_desc\", \"private\":$is_private } " \
 		-s \
 		-o /dev/null \
 		-w "%{http_code}" \
