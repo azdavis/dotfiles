@@ -76,4 +76,5 @@ if [ \
 ]; then
 	panic "could not create"
 fi
-git push -q -u origin master
+# tracking information is still printed with just -q
+git push -q -u origin master > /dev/null
