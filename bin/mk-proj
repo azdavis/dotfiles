@@ -6,17 +6,17 @@ set -eu
 
 show_help() {
 cat <<EOS
-usage: $(basename "$0") [options] <proj_name> <proj_desc>
+usage: $(basename "$0") [options] <proj_path> <proj_desc>
 
 options:
 	-f
-		create <proj_name> even if it already exists
-	-g (public | private)
-		create a corresponding github repository of the given privacy
+		create <proj_path> even if it already exists
+	-g (pub | priv)
+		create a github repository with the given privacy
 	-q
 		be quiet
 	-t (c | node | tex)
-		create a project of the given type
+		create a project with the given type
 EOS
 }
 
@@ -44,34 +44,8 @@ if [ $# -ne 2 ]; then
 	usage
 fi
 
-if ! git_name="$(git config user.name)"; then
-	panic "no git user.name found"
-fi
-if ! git_email="$(git config user.email)"; then
-	panic "no git user.email found"
-fi
-
-proj_name="$(basename "$(realpath "$1")")"
-if [ -e "$proj_name" ] && ! $f; then
-	panic "'$proj_name' already exists"
-fi
-if echo "$proj_name" | grep -q '\s'; then
-	panic "'$proj_name' has whitespace"
-fi
-
-is_private=""
-if [ "$g" = private ]; then
-	is_private=true
-elif [ "$g" = public ]; then
-	is_private=false
-elif [ -n "$g" ]; then
-	panic "invalid github project visibility: '$g'"
-fi
-
-templates="$HOME/.config/templates"
-if ! [ -d "$templates/$t" ]; then
-	panic "invalid type: '$t'"
-fi
+proj_path="$(realpath "$1")"
+proj_desc="$2"
 
 note() {
 	if $q; then
@@ -80,11 +54,29 @@ note() {
 	echo "$1"
 }
 
-github_name="$(get_github_cred username)"
-github_password="$(get_github_cred password)"
+if ! git_name="$(git config user.name)"; then
+	panic "no git user.name found"
+fi
 
-proj_path="$PWD/$1"
-proj_desc="$2"
+if ! git_email="$(git config user.email)"; then
+	panic "no git user.email found"
+fi
+
+proj_name="$(basename "$proj_path")"
+if [ -e "$proj_name" ] && ! $f; then
+	panic "'$proj_name' already exists"
+fi
+if echo "$proj_name" | grep -q '\s'; then
+	panic "'$proj_name' has whitespace"
+fi
+
+templates="$HOME/.config/templates"
+if ! [ -d "$templates/$t" ]; then
+	panic "invalid type: '$t'"
+fi
+
+github_name="$(get_github_cred username)"
+
 year="$(date +%Y)"
 
 replace_vars() {
@@ -149,24 +141,9 @@ if [ -z "$g" ]; then
 	exit
 fi
 
-# there must be spaces surrounding { and } in the json data
-# e761df8a36c4e302ebda8b792f70d631b0e8452d
-url="https://github.com/$github_name/$proj_name.git"
-note "creating '$url'"
-git remote add origin "$url"
-if [ \
-	"$(curl \
-		-H "Accept: application/vnd.github.v3+json" \
-		-H "Content-Type: application/json" \
-		-H "Authorization: token $github_password" \
-		-X POST \
-		-d " { \"name\":\"$proj_name\", \"description\":\"$proj_desc\", \"private\":$is_private } " \
-		-s \
-		-o /dev/null \
-		-w "%{http_code}" \
-		"https://api.github.com/user/repos" \
-	)" -ne 201 \
-]; then
-	panic "could not create"
+q_str=""
+if $q; then
+	q_str="-q"
 fi
-git push -q -u origin master > /dev/null
+
+"$HOME/.config/bin/mk-gh-repo" $q_str -g "$g" "$proj_name" "$proj_desc"

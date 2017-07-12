@@ -1,0 +1,72 @@
+#!/bin/sh
+
+set -eu
+. "$HOME/.config/lib/get_github_cred.sh"
+. "$HOME/.config/lib/panic.sh"
+
+show_help() {
+cat <<EOS
+usage: $(basename "$0") [options] <proj_name> <proj_desc>
+
+options:
+	-g (pub | priv)
+		create a github repository with the given privacy
+	-q
+		be quiet
+EOS
+}
+
+usage() {
+	show_help 1>&2
+	exit 1
+}
+
+g=""
+q=false
+while getopts "g:q" opt; do
+	case "$opt" in
+	(g) g="$OPTARG" ;;
+	(q) q=true ;;
+	(*) usage ;;
+	esac
+done
+shift $((OPTIND - 1))
+
+if [ $# -ne 2 ]; then
+	usage
+fi
+
+proj_name="$1"
+proj_desc="$2"
+
+is_private=false
+case "$g" in
+(pub) is_private=false ;;
+(priv) is_private=true ;;
+(*) panic "'$g' is not 'pub' or 'priv'"
+esac
+
+github_name="$(get_github_cred username)"
+github_password="$(get_github_cred password)"
+
+# there must be spaces surrounding { and } in the json data
+# e761df8a36c4e302ebda8b792f70d631b0e8452d
+url="https://github.com/$github_name/$proj_name.git"
+note "creating '$url'"
+git remote add origin "$url"
+if [ \
+	"$(curl \
+		-H "Accept: application/vnd.github.v3+json" \
+		-H "Content-Type: application/json" \
+		-H "Authorization: token $github_password" \
+		-X POST \
+		-d " { \"name\":\"$proj_name\", \"description\":\"$proj_desc\", \"private\":$is_private } " \
+		-s \
+		-o /dev/null \
+		-w "%{http_code}" \
+		"https://api.github.com/user/repos" \
+	)" -ne 201 \
+]; then
+	panic "could not create"
+fi
+git push -q -u origin master
