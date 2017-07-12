@@ -42,6 +42,7 @@
 	"fold_buttons": false,
 	"folder_exclude_patterns":
 	[
+		"*.dSYM",
 		".git",
 		".hg",
 		".stack-work",
