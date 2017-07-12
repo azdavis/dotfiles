@@ -54,7 +54,7 @@ proj_name="$(basename "$(realpath "$1")")"
 if [ -e "$proj_name" ] && ! $f; then
 	panic "'$proj_name' already exists"
 fi
-if echo "$proj_name" | grep -E '\s' > /dev/null; then
+if echo "$proj_name" | grep -q '\s'; then
 	panic "'$proj_name' has whitespace"
 fi
 
