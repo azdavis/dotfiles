@@ -95,10 +95,10 @@ year="$(date +%Y)"
 
 replace_vars() {
 	cat \
-		| sed "s/{{proj_desc}}/$proj_desc/g" \
 		| sed "s/{{git_email}}/$git_email/g" \
-		| sed "s/{{github_name}}/$github_name/g" \
 		| sed "s/{{git_name}}/$git_name/g" \
+		| sed "s/{{github_name}}/$github_name/g" \
+		| sed "s/{{proj_desc}}/$proj_desc/g" \
 		| sed "s/{{proj_name}}/$proj_name/g" \
 		| sed "s/{{year}}/$year/g"
 }
