@@ -1,4 +1,4 @@
 --gen-suppressions=all
 --memcheck:leak-check=full
 --quiet
---show-reachable=yes
+--show-leak-kinds=all
