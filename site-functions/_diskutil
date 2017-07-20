@@ -43,6 +43,12 @@ _cmds() {
 	_describe cmds cmds
 }
 
-_arguments "1:cmds:_cmds"
+_disks() {
+	local -a disks
+	disks=( /dev/disk* )
+	_describe disks disks
+}
 
-unset -f _cmds
+_arguments "1:cmds:_cmds" "2:disks:_disks"
+
+unset -f _cmds _disks
