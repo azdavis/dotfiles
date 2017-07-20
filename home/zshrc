@@ -59,3 +59,4 @@ zstyle ":completion:*" squeeze-slashes true
 zstyle ":completion:*" verbose false
 
 tabs -4
+mesg n
