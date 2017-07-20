@@ -12,7 +12,7 @@ brew update
 brew bundle --verbose --global
 brew bundle cleanup --force --global
 brew upgrade
-brew unlink coreutils
+brew unlink coreutils > /dev/null
 brew cask cleanup
 brew cleanup
 brew prune
