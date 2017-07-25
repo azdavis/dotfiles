@@ -42,8 +42,8 @@ if [ $# -eq 0 ]; then
 fi
 
 if $r; then
-	find "$@" -type f -exec shred $f $v -zn 8 -- {} \;
+	find "$@" -type f -exec shred $f $v -zn 4 -- {} \;
 	rm -r $f $v -- "$@"
 else
-	shred $f $v -zun 8 -- "$@"
+	shred $f $v -zun 4 -- "$@"
 fi
