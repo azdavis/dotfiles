@@ -8,7 +8,8 @@ usage: $(basename "$0") [options] <path>...
 
 options:
 	-f
-		ignore nonexistent files and arguments, never prompt
+		ignore nonexistent files and arguments, never prompt, change
+		permissions to allow writing if necessary
 	-h
 		show this help
 	-r

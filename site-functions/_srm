@@ -1,7 +1,7 @@
 #compdef srm
 
 local opts=(
-	"-f[ignore nonexistent files and arguments, never prompt]"
+	"-f[ignore nonexistent files and arguments, never prompt, change permissions to allow writing if necessary]"
 	"-h[show this help]"
 	"-r[remove directories and their contents recursively]"
 	"-v[explain what is being done]"
