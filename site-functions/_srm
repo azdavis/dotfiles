@@ -1,4 +1,4 @@
-#compdef fuck
+#compdef srm
 
 local opts=(
 	"-f[ignore nonexistent files and arguments, never prompt]"
