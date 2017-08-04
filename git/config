@@ -15,7 +15,6 @@
 	helper = store --file="$HOME/.config/git/credentials"
 [diff]
 	algorithm = histogram
-	compactionHeuristic = true
 [init]
 	templateDir =
 [log]
