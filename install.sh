@@ -25,8 +25,7 @@ check_deps() {
 	fi
 	for x in \
 		basename brew cat chmod chsh curl date defaults dirname find git grep \
-		ln mkdir mktemp mv open perl pgrep readlink rm sed sh sort touch tr \
-		wc zsh \
+		ln mkdir mv open perl pgrep readlink rm sed sh sort touch tr wc zsh \
 	; do
 		if ! command -v "$x" > /dev/null; then
 			echo "'$x' not installed"
@@ -40,13 +39,24 @@ check_deps() {
 	exit 1
 }
 
+mktemp_d() {
+	x=""
+	while true; do
+		x="/tmp/$RANDOM$RANDOM"
+		if mkdir -m 700 "$x" > /dev/null; then
+			break
+		fi
+	done
+	echo "$x"
+}
+
 install_repo() {
 	echo "installing '$url' to '$dst'"
 	if [ -d "$dst" ] \
 	&& [ "$(git -C "$dst" config remote.origin.url)" = "$url" ]; then
 		return
 	fi
-	tmp="$(mktemp -d /tmp/XXXXXXXXXX)"
+	tmp="$(mktemp_d)"
 	trap "rm -rf '$tmp'" EXIT
 	git clone -q -n --single-branch "$url" "$tmp"
 	if ! [ -d "$dst" ]; then
