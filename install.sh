@@ -7,19 +7,10 @@ check_user() {
 	exit 1
 }
 
-check_os() {
-	echo "checking OS is 'macOS'"
-	if [ "$(uname)" = Darwin ]; then
-		return
-	fi
-	echo "OS is not 'macOS'"
-	exit 1
-}
-
 check_deps() {
 	echo "checking deps are installed"
 	ok=true
-	if ! xcode-select -p > /dev/null; then
+	if [ "$(uname)" = Darwin ] && ! xcode-select -p > /dev/null; then
 		echo "'Command Line Developer Tools' not installed"
 		ok=false
 	fi
@@ -93,7 +84,6 @@ main() {
 	url="https://github.com/azdavis/dotfiles.git"
 	dst="$HOME/.config"
 	check_user
-	check_os
 	check_deps
 	install_repo
 	do_home
