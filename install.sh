@@ -14,10 +14,7 @@ check_deps() {
 		echo "'Command Line Developer Tools' not installed"
 		ok=false
 	fi
-	for x in \
-		basename brew cat chmod chsh curl date defaults dirname find git grep \
-		ln mkdir mv open perl pgrep readlink rm sed sh sort touch tr wc zsh \
-	; do
+	for x in chsh curl git open perl tr zsh; do
 		if ! command -v "$x" > /dev/null; then
 			echo "'$x' not installed"
 			ok=false
