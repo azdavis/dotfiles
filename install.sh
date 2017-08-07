@@ -51,7 +51,7 @@ install_repo() {
 	trap "rmdir '$tmp'" EXIT
 	git clone -q -n --single-branch "$url" "$tmp"
 	if ! [ -d "$dst" ]; then
-		rm -rf "$dst"
+		rm -f "$dst"
 		mkdir "$dst"
 	fi
 	chmod 700 "$dst"
