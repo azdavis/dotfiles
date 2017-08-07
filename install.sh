@@ -1,3 +1,8 @@
+panic() {
+	echo "$1"
+	exit 1
+}
+
 mktemp_d() {
 	x=""
 	while true; do
@@ -14,8 +19,7 @@ check_user() {
 	if [ "$USER" != root ]; then
 		return
 	fi
-	echo "user is 'root'"
-	exit 1
+	panic "user is 'root'"
 }
 
 check_deps() {
@@ -34,8 +38,7 @@ check_deps() {
 	if $ok; then
 		return
 	fi
-	echo "not all deps are installed"
-	exit 1
+	panic "not all deps are installed"
 }
 
 install_repo() {
