@@ -48,7 +48,7 @@ install_repo() {
 		return
 	fi
 	tmp="$(mktemp_d)"
-	trap "rm -rf '$tmp'" EXIT
+	trap "rmdir '$tmp'" EXIT
 	git clone -q -n --single-branch "$url" "$tmp"
 	if ! [ -d "$dst" ]; then
 		rm -rf "$dst"
