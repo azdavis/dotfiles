@@ -1,3 +1,14 @@
+mktemp_d() {
+	x=""
+	while true; do
+		x="/tmp/$RANDOM$RANDOM"
+		if mkdir -m 700 "$x" > /dev/null; then
+			break
+		fi
+	done
+	echo "$x"
+}
+
 check_user() {
 	echo "checking user is not 'root'"
 	if [ "$USER" != root ]; then
@@ -25,17 +36,6 @@ check_deps() {
 	fi
 	echo "not all deps are installed"
 	exit 1
-}
-
-mktemp_d() {
-	x=""
-	while true; do
-		x="/tmp/$RANDOM$RANDOM"
-		if mkdir -m 700 "$x" > /dev/null; then
-			break
-		fi
-	done
-	echo "$x"
 }
 
 install_repo() {
