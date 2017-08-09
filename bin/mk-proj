@@ -132,11 +132,6 @@ fi
 cd "$proj_path"
 sort -o .gitignore .gitignore
 
-note "creating '$proj_name/.git'"
-git init -q
-git add -A
-git commit -q -m "start project"
-
 if [ -z "$g" ]; then
 	exit
 fi
@@ -146,4 +141,4 @@ if $q; then
 	q_str="-q"
 fi
 
-"$HOME/.config/bin/mk-gh-repo" $q_str -g "$g" "$proj_name" "$proj_desc"
+"$HOME/.config/bin/mk-git" $q_str -g "$g" "$proj_name" "$proj_desc"

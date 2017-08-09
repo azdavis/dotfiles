@@ -1,4 +1,4 @@
-#compdef mk-gh-repo
+#compdef mk-git
 
 local opts=(
 	"-g[create a github repository with the given privacy]:privacy:(pub priv)"
