@@ -4,7 +4,7 @@ local opts=(
 	"-f[create <proj_path> even if it already exists]"
 	"-g[create a github repository with the given privacy]:privacy:(pub priv)"
 	"-q[be quiet]"
-	"-t[create a project with the given type]:type:(c node tex)"
+	"-t[create a project with the given type]:type:(c js tex)"
 	"*:files:_files"
 )
 
