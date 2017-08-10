@@ -1,22 +1,16 @@
 MAKEFLAGS += -rRs
 Q := > /dev/null
-MAIN := src/{{proj_name}}
-MAIN_PDF := $(MAIN).pdf
+SRC := src
+BUILD := build
 
 .PHONY: all clean
 
-all: $(MAIN_PDF)
+all: $(BUILD)/{{proj_name}}.pdf
 
 clean:
-	rm -rf \
-		$(MAIN_PDF) \
-		$(MAIN).aux \
-		$(MAIN).bbl \
-		$(MAIN).dvi \
-		$(MAIN).log \
-		$(MAIN).toc
+	rm -rf $(BUILD)
 
-%.pdf: %.tex src/base.tex
-	cd $(dir $<) && \
-	pdflatex -halt-on-error $(notdir $<) $(Q) && \
-	pdflatex -halt-on-error $(notdir $<) $(Q)
+$(BUILD)/%.pdf: $(SRC)/%.tex src/base.tex
+	mkdir -p $(dir $@)
+	pdflatex -halt-on-error -output-directory=$(dir $@) $< $(Q)
+	pdflatex -halt-on-error -output-directory=$(dir $@) $< $(Q)

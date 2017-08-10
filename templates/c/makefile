@@ -1,23 +1,21 @@
 MAKEFLAGS += -rRs
 CFLAGS := -Werror -Weverything -std=c99 -g
-MAIN := src/{{proj_name}}
-OBJS :=
+SRC := src
+BUILD := build
 
 .PHONY: all clean
 
-.PRECIOUS: %.out
+.PRECIOUS: $(BUILD)/%.out
 
-all: $(MAIN).run
+all: $(BUILD)/{{proj_name}}.run
 
 clean:
-	rm -rf $(MAIN).run $(MAIN).out $(MAIN).dSYM $(OBJS)
+	rm -rf $(BUILD)
 
-%.o: %.c
-	$(CC) $(CFLAGS) -o $@ -c $<
+$(BUILD)/%.out: $(SRC)/%.c
+	mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -o $@ $<
 
-%.out: %.c $(OBJS)
-	$(CC) $(CFLAGS) -o $@ $(OBJS) $<
-
-%.run: %.out
+$(BUILD)/%.run: $(BUILD)/%.out
 	./$<
 	touch $@
