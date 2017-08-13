@@ -16,7 +16,6 @@ brew unlink coreutils > /dev/null
 brew cask cleanup
 brew cleanup
 brew prune
-brew doctor || true
 
 echo "doing tlmgr"
 tlmgr update --self
