@@ -1,0 +1,20 @@
+#!/bin/sh
+
+set -eu
+. "$HOME/.config/lib/panic.sh"
+
+if [ $# -eq 0 ]; then
+	panic "usage: $(basename "$0") <cmd>..."
+fi
+
+for x in "$@"; do
+	if ! cmd="$(command -v "$x")"; then
+		echo "$x: command not found"
+	elif ! ( printf '%s' "$cmd" | grep -Fq '/' ); then
+		echo "$cmd: shell built-in command" >&2
+	elif ! ( file -b "$cmd" | grep -Fq 'text' ); then
+		echo "$cmd: binary file" >&2
+	else
+		$EDITOR	"$cmd"
+	fi
+done
