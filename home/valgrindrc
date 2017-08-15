@@ -1,4 +1,3 @@
---gen-suppressions=all
 --memcheck:leak-check=full
 --quiet
 --show-leak-kinds=all
