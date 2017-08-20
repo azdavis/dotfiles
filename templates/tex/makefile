@@ -3,9 +3,7 @@ SRC = src
 BUILD = build
 
 .SILENT:
-
 .SUFFIXES:
-
 .PHONY: all clean
 
 all: $(BUILD)/{{proj_name}}.pdf

@@ -3,11 +3,8 @@ SRC = src
 BUILD = build
 
 .SILENT:
-
 .SUFFIXES:
-
 .PHONY: all clean
-
 .PRECIOUS: $(BUILD)/%.out
 
 all: $(BUILD)/{{proj_name}}.run
