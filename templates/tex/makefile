@@ -2,8 +2,6 @@ Q = > /dev/null
 SRC = src
 BUILD = build
 
-.POSIX:
-
 .SILENT:
 
 .PHONY: all clean
