@@ -4,6 +4,8 @@ BUILD = build
 
 .SILENT:
 
+.SUFFIXES:
+
 .PHONY: all clean
 
 .PRECIOUS: $(BUILD)/%.out
