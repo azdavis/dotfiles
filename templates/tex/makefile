@@ -1,7 +1,10 @@
-MAKEFLAGS += -rRs
-Q := > /dev/null
-SRC := src
-BUILD := build
+Q = > /dev/null
+SRC = src
+BUILD = build
+
+.POSIX:
+
+.SILENT:
 
 .PHONY: all clean
 

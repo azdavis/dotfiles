@@ -1,7 +1,10 @@
-MAKEFLAGS += -rRs
-CFLAGS := -Werror -Weverything -std=c99 -g
-SRC := src
-BUILD := build
+CFLAGS = -Werror -Weverything -std=c99 -g
+SRC = src
+BUILD = build
+
+.POSIX:
+
+.SILENT:
 
 .PHONY: all clean
 
