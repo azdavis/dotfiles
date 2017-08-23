@@ -1,4 +1,4 @@
-CFLAGS = -Werror -Weverything -std=c99 -g
+CFLAGS = -std=c99 -g -Werror -Weverything
 SRC = src
 BUILD = build
 
