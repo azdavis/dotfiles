@@ -9,14 +9,14 @@ fi
 
 cd "$HOME/.config"
 
-p="sublime-text-3/Packages/User/light.patch"
+p="theme/dark.patch"
 t=""
 d=""
 if git apply --check "$p" > /dev/null 2>&1; then
-	t="light"
+	t="dark"
 	d=""
 elif git apply --check --reverse "$p" > /dev/null 2>&1; then
-	t="dark"
+	t="light"
 	d="--reverse"
 else
 	panic "patch does not apply in either direction"
