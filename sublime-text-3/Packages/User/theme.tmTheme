@@ -8,19 +8,19 @@
 				<key>settings</key>
 				<dict>
 					<key>background</key>
-					<string>#000</string>
+					<string>#eee</string>
 					<key>caret</key>
-					<string>#ddd</string>
+					<string>#111</string>
 					<key>foreground</key>
-					<string>#ddd</string>
+					<string>#111</string>
 					<key>selection</key>
-					<string>#333</string>
+					<string>#bbb</string>
 					<key>lineHighlight</key>
-					<string>#222</string>
+					<string>#ccc</string>
 					<key>gutterForeground</key>
-					<string>#555</string>
+					<string>#999</string>
 					<key>guide</key>
-					<string>#555</string>
+					<string>#999</string>
 				</dict>
 			</dict>
 			<dict>
@@ -29,7 +29,7 @@
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
-					<string>#ddd</string>
+					<string>#111</string>
 				</dict>
 			</dict>
 			<dict>
@@ -38,7 +38,7 @@
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
-					<string>#aaa</string>
+					<string>#888</string>
 				</dict>
 			</dict>
 			<dict>
@@ -58,7 +58,7 @@
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
-					<string>#daa</string>
+					<string>#822</string>
 				</dict>
 			</dict>
 			<dict>
@@ -67,7 +67,7 @@
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
-					<string>#dad</string>
+					<string>#828</string>
 				</dict>
 			</dict>
 			<dict>
@@ -76,7 +76,7 @@
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
-					<string>#dda</string>
+					<string>#882</string>
 				</dict>
 			</dict>
 			<dict>
@@ -85,7 +85,7 @@
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
-					<string>#ada</string>
+					<string>#282</string>
 				</dict>
 			</dict>
 			<dict>
@@ -94,7 +94,7 @@
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
-					<string>#add</string>
+					<string>#288</string>
 				</dict>
 			</dict>
 			<dict>
@@ -103,7 +103,7 @@
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
-					<string>#aad</string>
+					<string>#228</string>
 				</dict>
 			</dict>
 		</array>
