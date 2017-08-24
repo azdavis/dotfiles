@@ -49,7 +49,7 @@ install_repo() {
 	fi
 	tmp="$(mktemp_d)"
 	trap "rmdir '$tmp'" EXIT
-	git clone -q -n --single-branch "$url" "$tmp"
+	git -c transfer.fsckObjects=true clone -q -n --single-branch "$url" "$tmp"
 	if ! [ -d "$dst" ]; then
 		rm -f "$dst"
 		mkdir "$dst"
