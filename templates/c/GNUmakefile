@@ -1,21 +1,19 @@
 CFLAGS = -std=c99 -g -Werror -Weverything
-SRC = src
-BUILD = build
 
 .SILENT:
 .SUFFIXES:
 .PHONY: all clean
-.PRECIOUS: $(BUILD)/%.out
+.PRECIOUS: build/%.out
 
-all: $(BUILD)/{{proj_name}}.run
+all: build/{{proj_name}}.run
 
 clean:
-	rm -rf $(BUILD)
+	rm -rf build
 
-$(BUILD)/%.out: $(SRC)/%.c
+build/%.out: src/%.c
 	mkdir -p $(dir $@)
 	$(CC) $(CFLAGS) -o $@ $<
 
-$(BUILD)/%.run: $(BUILD)/%.out
+build/%.run: build/%.out
 	./$<
 	touch $@
