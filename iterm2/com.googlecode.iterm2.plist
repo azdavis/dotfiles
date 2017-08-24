@@ -9,7 +9,7 @@
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
 	<integer>1</integer>
 	<key>Default Arrangement Name</key>
-	<string>default</string>
+	<string>light</string>
 	<key>Default Bookmark Guid</key>
 	<string>08DE5749-A027-437E-9B38-C176845EB67F</string>
 	<key>DimBackgroundWindows</key>
@@ -1068,7 +1068,7 @@
 	<false/>
 	<key>Window Arrangements</key>
 	<dict>
-		<key>default</key>
+		<key>light</key>
 		<array>
 			<dict>
 				<key>Desired Columns</key>
@@ -1128,149 +1128,213 @@
 											</dict>
 											<key>Ansi 1 Color</key>
 											<dict>
+												<key>Alpha Component</key>
+												<real>1</real>
 												<key>Blue Component</key>
-												<real>0.0</real>
+												<real>0.1018610373</real>
+												<key>Color Space</key>
+												<string>Calibrated</string>
 												<key>Green Component</key>
-												<real>0.0</real>
+												<real>0.083224393430000002</real>
 												<key>Red Component</key>
-												<real>0.73333334922790527</real>
+												<real>0.45298767089999997</real>
 											</dict>
 											<key>Ansi 10 Color</key>
 											<dict>
-												<key>Blue Component</key>
-												<real>0.3333333432674408</real>
-												<key>Green Component</key>
+												<key>Alpha Component</key>
 												<real>1</real>
+												<key>Blue Component</key>
+												<real>0.10176002234220505</real>
+												<key>Color Space</key>
+												<string>Calibrated</string>
+												<key>Green Component</key>
+												<real>0.47179496288299561</real>
 												<key>Red Component</key>
-												<real>0.3333333432674408</real>
+												<real>0.12083977460861206</real>
 											</dict>
 											<key>Ansi 11 Color</key>
 											<dict>
+												<key>Alpha Component</key>
+												<real>1</real>
 												<key>Blue Component</key>
-												<real>0.3333333432674408</real>
+												<real>0.10309342294931412</real>
+												<key>Color Space</key>
+												<string>Calibrated</string>
 												<key>Green Component</key>
-												<real>1</real>
+												<real>0.46710774302482605</real>
 												<key>Red Component</key>
-												<real>1</real>
+												<real>0.45953083038330078</real>
 											</dict>
 											<key>Ansi 12 Color</key>
 											<dict>
-												<key>Blue Component</key>
+												<key>Alpha Component</key>
 												<real>1</real>
+												<key>Blue Component</key>
+												<real>0.45823866128921509</real>
+												<key>Color Space</key>
+												<string>Calibrated</string>
 												<key>Green Component</key>
-												<real>0.3333333432674408</real>
+												<real>0.068953543901443481</real>
 												<key>Red Component</key>
-												<real>0.3333333432674408</real>
+												<real>0.098775133490562439</real>
 											</dict>
 											<key>Ansi 13 Color</key>
 											<dict>
+												<key>Alpha Component</key>
+												<real>1</real>
 												<key>Blue Component</key>
-												<real>1</real>
+												<real>0.4586406946182251</real>
+												<key>Color Space</key>
+												<string>Calibrated</string>
 												<key>Green Component</key>
-												<real>0.3333333432674408</real>
+												<real>0.043277140706777573</real>
 												<key>Red Component</key>
-												<real>1</real>
+												<real>0.45246905088424683</real>
 											</dict>
 											<key>Ansi 14 Color</key>
 											<dict>
+												<key>Alpha Component</key>
+												<real>1</real>
 												<key>Blue Component</key>
-												<real>1</real>
+												<real>0.45861038565635681</real>
+												<key>Color Space</key>
+												<string>Calibrated</string>
 												<key>Green Component</key>
-												<real>1</real>
+												<real>0.46375709772109985</real>
 												<key>Red Component</key>
-												<real>0.3333333432674408</real>
+												<real>0.1193404346704483</real>
 											</dict>
 											<key>Ansi 15 Color</key>
 											<dict>
+												<key>Alpha Component</key>
+												<real>1</real>
 												<key>Blue Component</key>
-												<real>1</real>
+												<real>0.83513772487640381</real>
+												<key>Color Space</key>
+												<string>Calibrated</string>
 												<key>Green Component</key>
-												<real>1</real>
+												<real>0.83512353897094727</real>
 												<key>Red Component</key>
-												<real>1</real>
+												<real>0.83514857292175293</real>
 											</dict>
 											<key>Ansi 2 Color</key>
 											<dict>
+												<key>Alpha Component</key>
+												<real>1</real>
 												<key>Blue Component</key>
-												<real>0.0</real>
+												<real>0.1017600223</real>
+												<key>Color Space</key>
+												<string>Calibrated</string>
 												<key>Green Component</key>
-												<real>0.73333334922790527</real>
+												<real>0.4717949629</real>
 												<key>Red Component</key>
-												<real>0.0</real>
+												<real>0.12083977460000001</real>
 											</dict>
 											<key>Ansi 3 Color</key>
 											<dict>
+												<key>Alpha Component</key>
+												<real>1</real>
 												<key>Blue Component</key>
-												<real>0.0</real>
+												<real>0.10309342294931412</real>
+												<key>Color Space</key>
+												<string>Calibrated</string>
 												<key>Green Component</key>
-												<real>0.73333334922790527</real>
+												<real>0.46710774302482605</real>
 												<key>Red Component</key>
-												<real>0.73333334922790527</real>
+												<real>0.45953083038330078</real>
 											</dict>
 											<key>Ansi 4 Color</key>
 											<dict>
+												<key>Alpha Component</key>
+												<real>1</real>
 												<key>Blue Component</key>
-												<real>0.73333334922790527</real>
+												<real>0.45823866130000002</real>
+												<key>Color Space</key>
+												<string>Calibrated</string>
 												<key>Green Component</key>
-												<real>0.0</real>
+												<real>0.068953543899999997</real>
 												<key>Red Component</key>
-												<real>0.0</real>
+												<real>0.09877513349</real>
 											</dict>
 											<key>Ansi 5 Color</key>
 											<dict>
+												<key>Alpha Component</key>
+												<real>1</real>
 												<key>Blue Component</key>
-												<real>0.73333334922790527</real>
+												<real>0.4586406946182251</real>
+												<key>Color Space</key>
+												<string>Calibrated</string>
 												<key>Green Component</key>
-												<real>0.0</real>
+												<real>0.043277140706777573</real>
 												<key>Red Component</key>
-												<real>0.73333334922790527</real>
+												<real>0.45246905088424683</real>
 											</dict>
 											<key>Ansi 6 Color</key>
 											<dict>
+												<key>Alpha Component</key>
+												<real>1</real>
 												<key>Blue Component</key>
-												<real>0.73333334922790527</real>
+												<real>0.45861038565635681</real>
+												<key>Color Space</key>
+												<string>Calibrated</string>
 												<key>Green Component</key>
-												<real>0.73333334922790527</real>
+												<real>0.46375709772109985</real>
 												<key>Red Component</key>
-												<real>0.0</real>
+												<real>0.1193404346704483</real>
 											</dict>
 											<key>Ansi 7 Color</key>
 											<dict>
+												<key>Alpha Component</key>
+												<real>1</real>
 												<key>Blue Component</key>
-												<real>0.73333334922790527</real>
+												<real>0.83513772487640381</real>
+												<key>Color Space</key>
+												<string>Calibrated</string>
 												<key>Green Component</key>
-												<real>0.73333334922790527</real>
+												<real>0.83512353897094727</real>
 												<key>Red Component</key>
-												<real>0.73333334922790527</real>
+												<real>0.83514857292175293</real>
 											</dict>
 											<key>Ansi 8 Color</key>
 											<dict>
+												<key>Alpha Component</key>
+												<real>1</real>
 												<key>Blue Component</key>
-												<real>0.3333333432674408</real>
+												<real>0.26379451155662537</real>
+												<key>Color Space</key>
+												<string>Calibrated</string>
 												<key>Green Component</key>
-												<real>0.3333333432674408</real>
+												<real>0.2637900710105896</real>
 												<key>Red Component</key>
-												<real>0.3333333432674408</real>
+												<real>0.26379796862602234</real>
 											</dict>
 											<key>Ansi 9 Color</key>
 											<dict>
-												<key>Blue Component</key>
-												<real>0.3333333432674408</real>
-												<key>Green Component</key>
-												<real>0.3333333432674408</real>
-												<key>Red Component</key>
+												<key>Alpha Component</key>
 												<real>1</real>
+												<key>Blue Component</key>
+												<real>0.10186103731393814</real>
+												<key>Color Space</key>
+												<string>Calibrated</string>
+												<key>Green Component</key>
+												<real>0.083224393427371979</real>
+												<key>Red Component</key>
+												<real>0.4529876708984375</real>
 											</dict>
 											<key>BM Growl</key>
 											<true/>
 											<key>Background Color</key>
 											<dict>
+												<key>Alpha Component</key>
+												<real>1</real>
 												<key>Blue Component</key>
-												<real>0.0</real>
+												<real>0.83513772487640381</real>
+												<key>Color Space</key>
+												<string>Calibrated</string>
 												<key>Green Component</key>
-												<real>0.0</real>
+												<real>0.83512353897094727</real>
 												<key>Red Component</key>
-												<real>0.0</real>
+												<real>0.83514857292175293</real>
 											</dict>
 											<key>Background Image Location</key>
 											<string></string>
@@ -1280,13 +1344,19 @@
 											<false/>
 											<key>Bold Color</key>
 											<dict>
+												<key>Alpha Component</key>
+												<real>1</real>
 												<key>Blue Component</key>
-												<real>1</real>
+												<real>0.10051460564136505</real>
+												<key>Color Space</key>
+												<string>Calibrated</string>
 												<key>Green Component</key>
-												<real>1</real>
+												<real>0.10051287710666656</real>
 												<key>Red Component</key>
-												<real>1</real>
+												<real>0.10051588714122772</real>
 											</dict>
+											<key>Bound Hosts</key>
+											<array/>
 											<key>Character Encoding</key>
 											<integer>4</integer>
 											<key>Close Sessions On End</key>
@@ -1297,22 +1367,32 @@
 											<string></string>
 											<key>Cursor Color</key>
 											<dict>
+												<key>Alpha Component</key>
+												<real>1</real>
 												<key>Blue Component</key>
-												<real>0.73333334922790527</real>
+												<real>0.10051460564136505</real>
+												<key>Color Space</key>
+												<string>Calibrated</string>
 												<key>Green Component</key>
-												<real>0.73333334922790527</real>
+												<real>0.10051287710666656</real>
 												<key>Red Component</key>
-												<real>0.73333334922790527</real>
+												<real>0.10051588714122772</real>
 											</dict>
 											<key>Cursor Text Color</key>
 											<dict>
+												<key>Alpha Component</key>
+												<real>1</real>
 												<key>Blue Component</key>
-												<real>1</real>
+												<real>0.83513772487640381</real>
+												<key>Color Space</key>
+												<string>Calibrated</string>
 												<key>Green Component</key>
-												<real>1</real>
+												<real>0.83512353897094727</real>
 												<key>Red Component</key>
-												<real>1</real>
+												<real>0.83514857292175293</real>
 											</dict>
+											<key>Cursor Type</key>
+											<integer>1</integer>
 											<key>Custom Command</key>
 											<string>No</string>
 											<key>Custom Directory</key>
@@ -1327,15 +1407,19 @@
 											<false/>
 											<key>Foreground Color</key>
 											<dict>
+												<key>Alpha Component</key>
+												<real>1</real>
 												<key>Blue Component</key>
-												<real>0.73333334922790527</real>
+												<real>0.10051460564136505</real>
+												<key>Color Space</key>
+												<string>Calibrated</string>
 												<key>Green Component</key>
-												<real>0.73333334922790527</real>
+												<real>0.10051287710666656</real>
 												<key>Red Component</key>
-												<real>0.73333334922790527</real>
+												<real>0.10051588714122772</real>
 											</dict>
 											<key>Guid</key>
-											<string>76EA756E-4F4D-4E3F-8575-96AC648EEE13</string>
+											<string>08DE5749-A027-437E-9B38-C176845EB67F</string>
 											<key>Horizontal Spacing</key>
 											<real>1</real>
 											<key>Idle Code</key>
@@ -1348,298 +1432,30 @@
 												<string>telnet</string>
 											</array>
 											<key>Keyboard Map</key>
+											<dict/>
+											<key>Link Color</key>
 											<dict>
-												<key>0x2d-0x40000</key>
-												<dict>
-													<key>Action</key>
-													<integer>11</integer>
-													<key>Text</key>
-													<string>0x1f</string>
-												</dict>
-												<key>0x32-0x40000</key>
-												<dict>
-													<key>Action</key>
-													<integer>11</integer>
-													<key>Text</key>
-													<string>0x00</string>
-												</dict>
-												<key>0x33-0x40000</key>
-												<dict>
-													<key>Action</key>
-													<integer>11</integer>
-													<key>Text</key>
-													<string>0x1b</string>
-												</dict>
-												<key>0x34-0x40000</key>
-												<dict>
-													<key>Action</key>
-													<integer>11</integer>
-													<key>Text</key>
-													<string>0x1c</string>
-												</dict>
-												<key>0x35-0x40000</key>
-												<dict>
-													<key>Action</key>
-													<integer>11</integer>
-													<key>Text</key>
-													<string>0x1d</string>
-												</dict>
-												<key>0x36-0x40000</key>
-												<dict>
-													<key>Action</key>
-													<integer>11</integer>
-													<key>Text</key>
-													<string>0x1e</string>
-												</dict>
-												<key>0x37-0x40000</key>
-												<dict>
-													<key>Action</key>
-													<integer>11</integer>
-													<key>Text</key>
-													<string>0x1f</string>
-												</dict>
-												<key>0x38-0x40000</key>
-												<dict>
-													<key>Action</key>
-													<integer>11</integer>
-													<key>Text</key>
-													<string>0x7f</string>
-												</dict>
-												<key>0xf700-0x220000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;2A</string>
-												</dict>
-												<key>0xf700-0x240000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;5A</string>
-												</dict>
-												<key>0xf700-0x260000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;6A</string>
-												</dict>
-												<key>0xf700-0x280000</key>
-												<dict>
-													<key>Action</key>
-													<integer>11</integer>
-													<key>Text</key>
-													<string>0x1b 0x1b 0x5b 0x41</string>
-												</dict>
-												<key>0xf701-0x220000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;2B</string>
-												</dict>
-												<key>0xf701-0x240000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;5B</string>
-												</dict>
-												<key>0xf701-0x260000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;6B</string>
-												</dict>
-												<key>0xf701-0x280000</key>
-												<dict>
-													<key>Action</key>
-													<integer>11</integer>
-													<key>Text</key>
-													<string>0x1b 0x1b 0x5b 0x42</string>
-												</dict>
-												<key>0xf702-0x220000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;2D</string>
-												</dict>
-												<key>0xf702-0x240000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;5D</string>
-												</dict>
-												<key>0xf702-0x260000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;6D</string>
-												</dict>
-												<key>0xf702-0x280000</key>
-												<dict>
-													<key>Action</key>
-													<integer>11</integer>
-													<key>Text</key>
-													<string>0x1b 0x1b 0x5b 0x44</string>
-												</dict>
-												<key>0xf703-0x220000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;2C</string>
-												</dict>
-												<key>0xf703-0x240000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;5C</string>
-												</dict>
-												<key>0xf703-0x260000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;6C</string>
-												</dict>
-												<key>0xf703-0x280000</key>
-												<dict>
-													<key>Action</key>
-													<integer>11</integer>
-													<key>Text</key>
-													<string>0x1b 0x1b 0x5b 0x43</string>
-												</dict>
-												<key>0xf704-0x20000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;2P</string>
-												</dict>
-												<key>0xf705-0x20000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;2Q</string>
-												</dict>
-												<key>0xf706-0x20000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;2R</string>
-												</dict>
-												<key>0xf707-0x20000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;2S</string>
-												</dict>
-												<key>0xf708-0x20000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[15;2~</string>
-												</dict>
-												<key>0xf709-0x20000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[17;2~</string>
-												</dict>
-												<key>0xf70a-0x20000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[18;2~</string>
-												</dict>
-												<key>0xf70b-0x20000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[19;2~</string>
-												</dict>
-												<key>0xf70c-0x20000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[20;2~</string>
-												</dict>
-												<key>0xf70d-0x20000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[21;2~</string>
-												</dict>
-												<key>0xf70e-0x20000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[23;2~</string>
-												</dict>
-												<key>0xf70f-0x20000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[24;2~</string>
-												</dict>
-												<key>0xf729-0x20000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;2H</string>
-												</dict>
-												<key>0xf729-0x40000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;5H</string>
-												</dict>
-												<key>0xf72b-0x20000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;2F</string>
-												</dict>
-												<key>0xf72b-0x40000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;5F</string>
-												</dict>
+												<key>Alpha Component</key>
+												<real>1</real>
+												<key>Blue Component</key>
+												<real>0.75436335802078247</real>
+												<key>Color Space</key>
+												<string>Calibrated</string>
+												<key>Green Component</key>
+												<real>0.30706608295440674</real>
+												<key>Red Component</key>
+												<real>0.034465719014406204</real>
 											</dict>
 											<key>Mouse Reporting</key>
 											<true/>
 											<key>Name</key>
-											<string>Default</string>
+											<string>light</string>
 											<key>Non Ascii Font</key>
 											<string>Monaco 12</string>
 											<key>Non-ASCII Anti Aliased</key>
 											<true/>
 											<key>Normal Font</key>
-											<string>Monaco 12</string>
+											<string>Input-Regular 16</string>
 											<key>Option Key Sends</key>
 											<integer>0</integer>
 											<key>Prompt Before Closing 2</key>
@@ -1651,24 +1467,32 @@
 											<key>Screen</key>
 											<integer>-1</integer>
 											<key>Scrollback Lines</key>
-											<integer>1000</integer>
+											<integer>2000</integer>
 											<key>Selected Text Color</key>
 											<dict>
+												<key>Alpha Component</key>
+												<real>1</real>
 												<key>Blue Component</key>
-												<real>0.0</real>
+												<real>0.10051460564136505</real>
+												<key>Color Space</key>
+												<string>Calibrated</string>
 												<key>Green Component</key>
-												<real>0.0</real>
+												<real>0.10051287710666656</real>
 												<key>Red Component</key>
-												<real>0.0</real>
+												<real>0.10051588714122772</real>
 											</dict>
 											<key>Selection Color</key>
 											<dict>
-												<key>Blue Component</key>
+												<key>Alpha Component</key>
 												<real>1</real>
+												<key>Blue Component</key>
+												<real>0.75558114051818848</real>
+												<key>Color Space</key>
+												<string>Calibrated</string>
 												<key>Green Component</key>
-												<real>0.8353000283241272</real>
+												<real>0.75556838512420654</real>
 												<key>Red Component</key>
-												<real>0.70980000495910645</real>
+												<real>0.75559091567993164</real>
 											</dict>
 											<key>Send Code When Idle</key>
 											<false/>
@@ -1682,20 +1506,22 @@
 											<array/>
 											<key>Terminal Type</key>
 											<string>xterm-256color</string>
+											<key>Thin Strokes</key>
+											<integer>0</integer>
 											<key>Transparency</key>
 											<real>0.0</real>
 											<key>Unlimited Scrollback</key>
 											<false/>
 											<key>Use Bold Font</key>
-											<true/>
+											<false/>
 											<key>Use Bright Bold</key>
 											<true/>
 											<key>Use Italic Font</key>
-											<true/>
+											<false/>
 											<key>Use Non-ASCII Font</key>
 											<false/>
 											<key>Vertical Spacing</key>
-											<real>1</real>
+											<real>1.0574665850903617</real>
 											<key>Visual Bell</key>
 											<true/>
 											<key>Window Type</key>
@@ -1704,9 +1530,9 @@
 											<string>/Users/azdavis</string>
 										</dict>
 										<key>Bookmark Name</key>
-										<string>Default</string>
+										<string>light</string>
 										<key>Columns</key>
-										<integer>181</integer>
+										<integer>127</integer>
 										<key>Commands</key>
 										<array/>
 										<key>Directories</key>
@@ -1728,23 +1554,23 @@
 											<string>Command</string>
 										</dict>
 										<key>Rows</key>
-										<integer>46</integer>
+										<integer>36</integer>
 										<key>Server PID</key>
-										<integer>48677</integer>
+										<integer>32931</integer>
 										<key>Session Default Name</key>
-										<string>Default</string>
+										<string>light</string>
 										<key>Session GUID</key>
-										<string>A06C3BAC-FCA6-49AE-8107-4EAF9CD8D1BE</string>
+										<string>DF2D557D-42C4-42B8-A55E-439F3ECE219A</string>
 										<key>Session Name</key>
-										<string>Default</string>
+										<string>light</string>
 										<key>Session Window Title</key>
-										<string>Default</string>
+										<string>light</string>
 										<key>Shell Integration Ever Used</key>
 										<false/>
 										<key>Substitutions</key>
 										<dict/>
 										<key>TTY</key>
-										<string>/dev/ttys002</string>
+										<string>/dev/ttys001</string>
 										<key>Working Directory</key>
 										<string>/Users/azdavis</string>
 									</dict>
