@@ -3,7 +3,7 @@ CFLAGS = -std=c99 -g -Werror -Weverything
 .SILENT:
 .SUFFIXES:
 .PHONY: all clean
-.PRECIOUS: build/%.out
+.PRECIOUS: build/%.out build/%.run
 
 all: build/{{proj_name}}.run
 
