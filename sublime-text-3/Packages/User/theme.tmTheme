@@ -54,7 +54,7 @@
 			</dict>
 			<dict>
 				<key>scope</key>
-				<string>entity.name.tag, keyword, markup.deleted, markup.heading punctuation, meta.selector, meta.tag, storage</string>
+				<string>entity.name.tag, keyword -keyword.other, markup.deleted, markup.heading punctuation, meta.selector, meta.tag, storage</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
