@@ -21,4 +21,8 @@ if ! url="$(git config remote.$remote.url)"; then
 fi
 url="$(echo "$url" | sed 's/\.git$//')"
 
-open "$url/tree/$branch"
+if printf '%s' "$url" | grep -q '^https://github.com'; then
+	open "$url/tree/$branch"
+else
+	open "$url"
+fi
