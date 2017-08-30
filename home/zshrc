@@ -47,6 +47,7 @@ alias \
 	gs="git status" \
 	ls="ls -bh --color=auto --group-directories-first --time-style=long-iso" \
 	sml="rlwrap sml" \
+	smlnj="rlwrap sml" \
 	subl="subl -a" \
 	tree="tree --dirsfirst"
 
