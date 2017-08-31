@@ -1,6 +1,5 @@
 CFLAGS = -std=c99 -g -O0 -Werror -Weverything
 
-.SILENT:
 .SUFFIXES:
 .PHONY: all clean
 .PRECIOUS: build/%.out build/%.run

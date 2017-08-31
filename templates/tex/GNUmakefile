@@ -1,6 +1,5 @@
 Q = > /dev/null
 
-.SILENT:
 .SUFFIXES:
 .PHONY: all clean
 .PRECIOUS: build/%.pdf
