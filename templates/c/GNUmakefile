@@ -1,4 +1,4 @@
-CFLAGS = -std=c99 -g -Werror -Weverything
+CFLAGS = -std=c99 -g -O0 -Werror -Weverything
 
 .SILENT:
 .SUFFIXES:
