@@ -2,7 +2,7 @@
 
 local opts=(
 	"-g[create a github repository with the given privacy]:privacy:(pub priv)"
-	"-q[be quiet]"
+	"-v[explain what is being done]"
 	"*:files:_files"
 )
 

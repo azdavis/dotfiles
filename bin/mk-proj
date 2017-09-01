@@ -13,10 +13,10 @@ options:
 		create <proj_path> even if it already exists
 	-g (pub | priv)
 		create a github repository with the given privacy
-	-q
-		be quiet
 	-t (c | node | tex)
 		create a project with the given type
+	-v
+		explain what is being done
 EOS
 }
 
@@ -27,14 +27,14 @@ usage() {
 
 f=false
 g=""
-q=false
 t=""
-while getopts "fg:t:q" opt; do
+v=false
+while getopts "fg:t:v" opt; do
 	case "$opt" in
 	(f) f=true ;;
 	(g) g="$OPTARG" ;;
-	(q) q=true ;;
 	(t) t="$OPTARG" ;;
+	(v) v=true ;;
 	(*) usage ;;
 	esac
 done
@@ -45,10 +45,9 @@ if [ $# -ne 2 ]; then
 fi
 
 note() {
-	if $q; then
-		return
+	if $v; then
+		echo "$1"
 	fi
-	echo "$1"
 }
 
 proj_path="$(realpath "$1")"
@@ -136,9 +135,9 @@ if [ -z "$g" ]; then
 	exit
 fi
 
-q_str=""
-if $q; then
-	q_str="-q"
+v_str=""
+if $v; then
+	v_str="-v"
 fi
 
-"$HOME/.config/bin/mk-git" $q_str -g "$g" "$proj_name" "$proj_desc"
+"$HOME/.config/bin/mk-git" $v_str -g "$g" "$proj_name" "$proj_desc"

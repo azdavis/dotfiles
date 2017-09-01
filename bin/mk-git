@@ -11,8 +11,8 @@ usage: $(basename "$0") [options] <proj_name> <proj_desc>
 options:
 	-g (pub | priv)
 		create a github repository with the given privacy
-	-q
-		be quiet
+	-v
+		explain what is being done
 EOS
 }
 
@@ -22,25 +22,29 @@ usage() {
 }
 
 g=""
-q=false
-while getopts "g:q" opt; do
+v=false
+while getopts "g:v" opt; do
 	case "$opt" in
 	(g) g="$OPTARG" ;;
-	(q) q=true ;;
+	(v) v=true ;;
 	(*) usage ;;
 	esac
 done
 shift $((OPTIND - 1))
+
+q="-q"
+if $v; then
+	q=""
+fi
 
 if [ $# -ne 2 ]; then
 	usage
 fi
 
 note() {
-	if $q; then
-		return
+	if $v; then
+		echo "$1"
 	fi
-	echo "$1"
 }
 
 proj_name="$1"
@@ -57,9 +61,9 @@ github_password="$(get_github_cred password)"
 
 note "creating '$proj_name/.git'"
 if ! git rev-parse 2> /dev/null; then
-	git init -q
+	git init $q
 	git add -A
-	git commit -q -m "start project"
+	git commit $q -m "start project"
 fi
 
 if [ -z "$g" ]; then
@@ -86,5 +90,8 @@ if [ \
 ]; then
 	panic "could not create"
 fi
-# tracking information is still printed with just -q
-git push -q -u origin master > /dev/null
+if $v; then
+	git push -u origin master
+else
+	git push -q -u origin master > /dev/null
+fi
