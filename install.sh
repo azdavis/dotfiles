@@ -7,7 +7,7 @@ mktemp_d() {
 	x=""
 	while true; do
 		x="/tmp/$RANDOM$RANDOM"
-		if mkdir -m 700 "$x" > /dev/null; then
+		if mkdir -m 700 "$x" > /dev/null 2>&1; then
 			break
 		fi
 	done
