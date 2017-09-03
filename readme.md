@@ -46,4 +46,4 @@ have to resolve them.
 
 If you understand and accept the risks:
 
-	curl -fsSL http://d.azdavis.xyz | sh
+	curl -fsSL https://git.io/vM2Jb | sh
