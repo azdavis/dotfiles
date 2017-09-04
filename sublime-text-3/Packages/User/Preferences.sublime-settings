@@ -13,10 +13,6 @@
 	"auto_complete_size_limit": 4194304,
 	"auto_complete_triggers":
 	[
-		{
-			"selector": "text.html",
-			"characters": "<"
-		}
 	],
 	"auto_complete_with_fields": true,
 	"auto_find_in_selection": false,
