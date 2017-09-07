@@ -3,10 +3,14 @@ panic() {
 	exit 1
 }
 
+rand_int() {
+	awk -v min=$1 -v max=$2 'BEGIN{srand();print int(min+rand()*(max-min+1))}'
+}
+
 mktemp_d() {
 	x=""
 	while true; do
-		x="/tmp/$RANDOM$RANDOM"
+		x="/tmp/$(rand_int 0 999999999)"
 		if mkdir -m 700 "$x" > /dev/null 2>&1; then
 			break
 		fi
