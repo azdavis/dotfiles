@@ -19,6 +19,7 @@
 !/readme.md
 
 /bin/backup
+/bin/subl
 /bin/watch
 
 /git/credentials
