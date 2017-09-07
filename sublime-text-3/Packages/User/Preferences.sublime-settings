@@ -110,7 +110,6 @@
 	"hot_exit": false,
 	"ignored_packages":
 	[
-		"EditorConfig",
 		"JavaScript",
 		"Vintage"
 	],
