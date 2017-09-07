@@ -7,7 +7,7 @@ rand_int() {
 	awk -v min=$1 -v max=$2 'BEGIN{srand();print int(min+rand()*(max-min+1))}'
 }
 
-mktemp_d() {
+mk_temp_dir() {
 	x=""
 	while true; do
 		x="/tmp/$(rand_int 0 999999999)"
@@ -51,7 +51,7 @@ install_repo() {
 	&& [ "$(git -C "$dst" config remote.origin.url)" = "$url" ]; then
 		return
 	fi
-	tmp="$(mktemp_d)"
+	tmp="$(mk_temp_dir)"
 	trap "rmdir '$tmp'" EXIT
 	git -c transfer.fsckObjects=true clone -q -n --single-branch "$url" "$tmp"
 	if ! [ -d "$dst" ]; then
