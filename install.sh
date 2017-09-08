@@ -33,7 +33,7 @@ check_deps() {
 		echo "'Command Line Developer Tools' not installed"
 		ok=false
 	fi
-	for x in chsh curl git open perl tr zsh; do
+	for x in chsh curl git open perl zsh; do
 		if ! command -v "$x" > /dev/null; then
 			echo "'$x' not installed"
 			ok=false
