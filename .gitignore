@@ -18,9 +18,23 @@
 !/license.md
 !/readme.md
 
-/bin/backup
-/bin/subl
-/bin/watch
+/bin/*
+!/bin/do-defaults
+!/bin/do-home
+!/bin/do-pkgs
+!/bin/do-subl
+!/bin/git-gc-super
+!/bin/git-home
+!/bin/mk-git
+!/bin/mk-proj
+!/bin/rm-ds-stores
+!/bin/rm-stupid-items
+!/bin/rot13
+!/bin/show-cmd
+!/bin/srm
+!/bin/toggle-theme
+!/bin/update-dotfiles
+!/bin/upto
 
 /git/credentials
 
