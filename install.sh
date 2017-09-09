@@ -4,7 +4,7 @@ panic() {
 }
 
 rand_int() {
-	awk -v lo=$1 -v hi=$2 'BEGIN{srand();print int(lo+rand()*(hi-lo+1))}'
+	awk "BEGIN{srand();print int($1+rand()*($2-$1+1))}"
 }
 
 mk_temp_dir() {
