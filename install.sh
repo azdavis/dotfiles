@@ -20,7 +20,7 @@ mk_temp_dir() {
 
 check_user() {
 	echo "checking user is not 'root'"
-	if [ "$USER" != root ]; then
+	if [ "$LOGNAME" != root ]; then
 		return
 	fi
 	panic "user is 'root'"
