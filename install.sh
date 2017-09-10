@@ -39,6 +39,10 @@ check_deps() {
 			ok=false
 		fi
 	done
+	if ! [ -f /bin/sh ]; then
+		echo "'/bin/sh' not installed"
+		ok=false
+	fi
 	if $ok; then
 		return
 	fi
