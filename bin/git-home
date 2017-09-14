@@ -9,7 +9,7 @@ fi
 
 git rev-parse
 
-branch="$(git rev-parse --abbrev-ref HEAD)"
+branch="$(git rev-parse --abbrev-ref HEAD 2> /dev/null)" || :
 if [ "$branch" = HEAD ]; then
 	panic "not on a branch"
 fi
