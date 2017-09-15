@@ -1,0 +1,15 @@
+set nocompatible
+
+syntax on
+filetype plugin indent on
+
+set backspace=indent,eol,start
+set hlsearch
+set mouse=a
+set number
+set ruler
+set shiftwidth=4
+set showcmd
+set smartindent
+set smarttab
+set tabstop=4
