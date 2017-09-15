@@ -32,4 +32,4 @@ else
 	echo "updated"
 fi
 
-git log -1 --format='%h (%cr)' origin/master
+git log -1 --format='%h %s (%cr)' origin/master
