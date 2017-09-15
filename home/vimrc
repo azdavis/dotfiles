@@ -4,6 +4,7 @@ syntax enable
 filetype plugin indent on
 
 set backspace=indent,eol,start
+set colorcolumn=80
 set hlsearch
 set mouse=a
 set number
