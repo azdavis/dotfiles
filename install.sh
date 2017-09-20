@@ -18,6 +18,10 @@ mk_temp_dir() {
 	echo "$x"
 }
 
+cmd_exist() {
+	command -v "$1" > /dev/null
+}
+
 check_user() {
 	echo "checking user is not 'root'"
 	if [ "$LOGNAME" != root ]; then
@@ -29,12 +33,12 @@ check_user() {
 check_deps() {
 	echo "checking deps are installed"
 	ok=true
-	if [ "$(uname)" = Darwin ] && ! xcode-select -p > /dev/null; then
+	if cmd_exist xcode-select && ! xcode-select -p > /dev/null; then
 		echo "'Command Line Developer Tools' not installed"
 		ok=false
 	fi
 	for x in chsh curl git open perl zsh; do
-		if ! command -v "$x" > /dev/null; then
+		if ! cmd_exist "$x"; then
 			echo "'$x' not installed"
 			ok=false
 		fi

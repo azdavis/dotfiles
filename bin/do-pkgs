@@ -7,19 +7,29 @@ if [ $# -ne 0 ]; then
 	panic "usage: $(basename "$0")"
 fi
 
-echo "doing brew"
-brew update
-brew bundle --verbose --global
-brew bundle cleanup --force --global
-brew upgrade
-brew unlink coreutils > /dev/null
-brew cask cleanup
-brew cleanup
-brew prune
+cmd_exist() {
+	command -v "$1" > /dev/null
+}
 
-echo "doing tlmgr"
-tlmgr update --self
-tlmgr update --all
+if cmd_exist brew; then
+	echo "doing brew"
+	brew update
+	brew bundle --verbose --global
+	brew bundle cleanup --force --global
+	brew upgrade
+	brew unlink coreutils > /dev/null
+	brew cask cleanup
+	brew cleanup
+	brew prune
+fi
 
-echo "doing npm"
-npm i -g npm
+if cmd_exist tlmgr; then
+	echo "doing tlmgr"
+	tlmgr update --self
+	tlmgr update --all
+fi
+
+if cmd_exist npm; then
+	echo "doing npm"
+	npm i -g npm
+fi
