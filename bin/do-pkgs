@@ -21,15 +21,21 @@ if cmd_exist brew; then
 	brew cask cleanup
 	brew cleanup
 	brew prune
+else
+	echo "'brew' not installed"
 fi
 
 if cmd_exist tlmgr; then
 	echo "doing tlmgr"
 	tlmgr update --self
 	tlmgr update --all
+else
+	echo "'tlmgr' not installed"
 fi
 
 if cmd_exist npm; then
 	echo "doing npm"
 	npm i -g npm
+else
+	echo "'npm' not installed"
 fi
