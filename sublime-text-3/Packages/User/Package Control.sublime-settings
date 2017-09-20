@@ -13,6 +13,7 @@
 		"rsub",
 		"SingleTrailingNewLine",
 		"SML (Standard ML)",
-		"Stylus"
+		"Stylus",
+		"x86 and x86_64 Assembly"
 	]
 }
