@@ -12,7 +12,7 @@ cmd_exist() {
 }
 
 if cmd_exist brew; then
-	echo "doing brew"
+	echo "doing 'brew'"
 	brew update
 	brew bundle --verbose --global
 	brew bundle cleanup --force --global
@@ -26,7 +26,7 @@ else
 fi
 
 if cmd_exist tlmgr; then
-	echo "doing tlmgr"
+	echo "doing 'tlmgr'"
 	tlmgr update --self
 	tlmgr update --all
 else
@@ -34,7 +34,7 @@ else
 fi
 
 if cmd_exist npm; then
-	echo "doing npm"
+	echo "doing 'npm'"
 	npm i -g npm
 else
 	echo "'npm' not installed"
