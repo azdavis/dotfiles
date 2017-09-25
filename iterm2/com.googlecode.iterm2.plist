@@ -8,6 +8,8 @@
 	<integer>0</integer>
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
 	<integer>1</integer>
+	<key>AppleWindowTabbingMode</key>
+	<string>manual</string>
 	<key>Default Arrangement Name</key>
 	<string>light</string>
 	<key>Default Bookmark Guid</key>
@@ -197,7 +199,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>330 307 620 392 0 0 1280 800 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>269 139 606 456 0 0 1280 800 </string>
+	<string>269 139 606 469 0 0 1280 800 </string>
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>181 293 937 464 0 0 1280 800 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
@@ -1070,7 +1072,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-09-19T06:07:44Z</date>
+	<date>2017-09-24T20:15:06Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>Secure Input</key>
@@ -1638,7 +1640,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.0</string>
+	<string>3.1.2</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
