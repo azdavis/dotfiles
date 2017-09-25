@@ -7,14 +7,19 @@ if [ $# -eq 0 ]; then
 	panic "usage: $(basename "$0") <cmd>..."
 fi
 
+status=0
 for x in "$@"; do
 	if ! cmd="$(command -v "$x")"; then
 		echo "$x: command not found"
+		status=1
 	elif ! ( printf '%s' "$cmd" | grep -Fq '/' ); then
 		echo "$cmd: shell built-in command" >&2
+		status=1
 	elif ! ( file -b "$cmd" | grep -Fq 'text' ); then
 		echo "$cmd: binary file" >&2
+		status=1
 	else
 		$EDITOR	"$cmd"
 	fi
 done
+exit $status
