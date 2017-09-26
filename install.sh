@@ -37,7 +37,7 @@ find_deps() {
 		echo "'Command Line Developer Tools' not found"
 		ok=false
 	fi
-	for x in chsh curl git open perl zsh; do
+	for x in chsh git zsh; do
 		if ! cmd_exist "$x"; then
 			echo "'$x' not found"
 			ok=false
