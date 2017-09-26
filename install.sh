@@ -78,6 +78,9 @@ do_home() {
 }
 
 do_subl() {
+	if ! cmd_exist subl; then
+		return
+	fi
 	echo "doing subl actions"
 	"$dst/bin/do-subl"
 }
