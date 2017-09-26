@@ -30,27 +30,27 @@ check_user() {
 	panic "user is 'root'"
 }
 
-check_deps() {
-	echo "checking deps are installed"
+find_deps() {
+	echo "finding dependencies"
 	ok=true
 	if cmd_exist xcode-select && ! xcode-select -p > /dev/null; then
-		echo "'Command Line Developer Tools' not installed"
+		echo "'Command Line Developer Tools' not found"
 		ok=false
 	fi
 	for x in chsh curl git open perl zsh; do
 		if ! cmd_exist "$x"; then
-			echo "'$x' not installed"
+			echo "'$x' not found"
 			ok=false
 		fi
 	done
 	if ! [ -f /bin/sh ]; then
-		echo "'/bin/sh' not installed"
+		echo "'/bin/sh' not found"
 		ok=false
 	fi
 	if $ok; then
 		return
 	fi
-	panic "not all deps are installed"
+	panic "not all dependencies were found"
 }
 
 install_repo() {
@@ -96,7 +96,7 @@ main() {
 	url="https://github.com/azdavis/dotfiles.git"
 	dst="$HOME/.config"
 	check_user
-	check_deps
+	find_deps
 	install_repo
 	do_home
 	do_subl
