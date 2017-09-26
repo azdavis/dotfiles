@@ -18,7 +18,7 @@ mk_temp_dir() {
 	echo "$x"
 }
 
-cmd_exist() {
+cmd_found() {
 	command -v "$1" > /dev/null
 }
 
@@ -33,12 +33,12 @@ check_user() {
 find_deps() {
 	echo "finding dependencies"
 	ok=true
-	if cmd_exist xcode-select && ! xcode-select -p > /dev/null; then
+	if cmd_found xcode-select && ! xcode-select -p > /dev/null; then
 		echo "'Command Line Developer Tools' not found"
 		ok=false
 	fi
 	for x in chsh git zsh; do
-		if ! cmd_exist "$x"; then
+		if ! cmd_found "$x"; then
 			echo "'$x' not found"
 			ok=false
 		fi
@@ -78,7 +78,7 @@ do_home() {
 }
 
 do_subl() {
-	if ! cmd_exist subl; then
+	if ! cmd_found subl; then
 		return
 	fi
 	echo "doing subl actions"

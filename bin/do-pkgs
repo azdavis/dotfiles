@@ -1,14 +1,14 @@
 #!/bin/sh
 
 set -eu
-. "$HOME/.config/lib/cmd_exist.sh"
+. "$HOME/.config/lib/cmd_found.sh"
 . "$HOME/.config/lib/panic.sh"
 
 if [ $# -ne 0 ]; then
 	panic "usage: $(basename "$0")"
 fi
 
-if cmd_exist brew; then
+if cmd_found brew; then
 	echo "doing 'brew'"
 	brew update
 	brew bundle --verbose --global
@@ -22,7 +22,7 @@ else
 	echo "'brew' not found"
 fi
 
-if cmd_exist tlmgr; then
+if cmd_found tlmgr; then
 	echo "doing 'tlmgr'"
 	tlmgr update --self
 	tlmgr update --all
@@ -30,7 +30,7 @@ else
 	echo "'tlmgr' not found"
 fi
 
-if cmd_exist npm; then
+if cmd_found npm; then
 	echo "doing 'npm'"
 	npm i -g npm
 else
