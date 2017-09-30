@@ -1,3 +1,5 @@
+TEXC = pdflatex
+TEXFLAGS = -halt-on-error
 .SUFFIXES:
 .PHONY: all clean
 .PRECIOUS: build/%.pdf
@@ -9,5 +11,5 @@ clean:
 
 build/%.pdf: src/%.tex src/base.tex
 	mkdir -p $(dir $@)
-	pdflatex -halt-on-error -output-directory=$(dir $@) $< $(TODEVNULL)
-	pdflatex -halt-on-error -output-directory=$(dir $@) $< $(TODEVNULL)
+	$(TEXC) -output-directory=$(dir $@) $(TEXFLAGS) $< $(TODEVNULL)
+	$(TEXC) -output-directory=$(dir $@) $(TEXFLAGS) $< $(TODEVNULL)
