@@ -11,7 +11,7 @@ clean:
 
 build/%.out: src/%.c
 	mkdir -p $(dir $@)
-	$(CC) $(CFLAGS) -o $@ $<
+	$(CC) -o $@ $(CFLAGS) $<
 
 build/%.run: build/%.out
 	./$<
