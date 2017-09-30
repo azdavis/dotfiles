@@ -2,9 +2,9 @@ CFLAGS = -std=c99 -g -O0 -Werror -Weverything
 
 .SUFFIXES:
 .PHONY: all clean
-.PRECIOUS: build/%.out build/%.run
+.PRECIOUS: build/%.out
 
-all: build/{{proj_name}}.run
+all: build/{{proj_name}}.out
 
 clean:
 	rm -rf build
@@ -12,7 +12,3 @@ clean:
 build/%.out: src/%.c
 	mkdir -p $(dir $@)
 	$(CC) -o $@ $(CFLAGS) $<
-
-build/%.run: build/%.out
-	./$<
-	touch $@
