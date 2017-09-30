@@ -1,5 +1,6 @@
 TEXC = pdflatex
 TEXFLAGS = -halt-on-error
+
 .SUFFIXES:
 .PHONY: all clean
 .PRECIOUS: build/%.pdf
