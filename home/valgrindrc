@@ -1,3 +1,5 @@
---memcheck:leak-check=full
+--leak-check=full
+--leak-resolution=high
 --quiet
 --show-leak-kinds=all
+--track-fds=yes
