@@ -1,3 +1,4 @@
+CC = cc
 CFLAGS = -std=c99 -g -O0 -Werror -Weverything
 
 .SUFFIXES:
