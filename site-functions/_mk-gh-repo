@@ -1,8 +1,8 @@
-#compdef mk-git
+#compdef mk-gh-repo
 
 local opts=(
-	"-g[create a github repository with the given privacy]:privacy:(pub priv)"
 	"-h[show this help]"
+	"-p[make the repo private]"
 	"-v[explain what is being done]"
 	"*:files:_files"
 )

@@ -9,10 +9,10 @@ cat <<EOS
 usage: $(basename "$0") [options] <proj_name> <proj_desc>
 
 options:
-	-g (pub | priv)
-		create a github repository with the given privacy
 	-h
 		show this help
+	-p
+		make the repo private
 	-v
 		explain what is being done
 EOS
@@ -23,21 +23,16 @@ usage() {
 	exit 1
 }
 
-g=""
+p=false
 v=false
-while getopts "g:hv" opt; do
+while getopts "hpv" opt; do
 	case "$opt" in
-	(g) g="$OPTARG" ;;
+	(p) p=true ;;
 	(v) v=true ;;
 	(*) usage ;;
 	esac
 done
 shift $((OPTIND - 1))
-
-q="-q"
-if $v; then
-	q=""
-fi
 
 if [ $# -ne 2 ]; then
 	usage
@@ -52,21 +47,8 @@ note() {
 proj_name="$1"
 proj_desc="$2"
 
-is_private=false
-case "$g" in
-(pub) is_private=false ;;
-(priv) is_private=true ;;
-esac
-
 github_name="$(get_github_cred username)"
 github_password="$(get_github_cred password)"
-
-note "creating '$proj_name/.git'"
-if ! git rev-parse 2> /dev/null; then
-	git init $q
-	git add -A
-	git commit $q -m "start project"
-fi
 
 if [ -z "$g" ]; then
 	exit

@@ -25,7 +25,7 @@
 !/bin/do-subl
 !/bin/git-gc-super
 !/bin/git-home
-!/bin/mk-git
+!/bin/mk-gh-repo
 !/bin/mk-proj
 !/bin/rm-ds-stores
 !/bin/rm-stupid-items
