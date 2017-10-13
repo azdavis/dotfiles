@@ -49,6 +49,7 @@ rm -rf $v \
 	"$HOME/.config/update-notifier" \
 	"$HOME/.config/upstart" \
 	"$HOME/.elm" \
+	"$HOME/.gdb_history" \
 	"$HOME/.gem" \
 	"$HOME/.ghc" \
 	"$HOME/.idris/repl/history" \
