@@ -1,8 +1,8 @@
 #!/bin/sh
 
 set -eu
+. "$HOME/.config/lib/force_symlink.sh"
 . "$HOME/.config/lib/panic.sh"
-. "$HOME/.config/lib/symlink.sh"
 
 if [ $# -ne 0 ]; then
 	panic "usage: $(basename "$0")"
@@ -14,5 +14,5 @@ chmod 600 "$HOME/.hushlogin"
 wd=".config/home"
 cd "$HOME/$wd"
 for x in *; do
-	symlink "$wd/$x" "$HOME/.$x"
+	force_symlink "$wd/$x" "$HOME/.$x"
 done
