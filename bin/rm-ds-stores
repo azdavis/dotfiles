@@ -25,7 +25,6 @@ r=false
 v=""
 while getopts "hv" opt; do
 	case "$opt" in
-	(h) show_help && exit ;;
 	(v) v="-v" ;;
 	(*) usage ;;
 	esac

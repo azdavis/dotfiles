@@ -30,7 +30,6 @@ v=""
 while getopts "fhrv" opt; do
 	case "$opt" in
 	(f) f="-f" ;;
-	(h) show_help && exit ;;
 	(r) r=true ;;
 	(v) v="-v" ;;
 	(*) usage ;;
