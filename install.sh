@@ -94,7 +94,7 @@ change_shell() {
 main() {
 	set -eu
 	url="https://github.com/azdavis/dotfiles.git"
-	dst="$HOME/.config"
+	dst=~/.config
 	check_user
 	find_deps
 	install_repo

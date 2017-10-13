@@ -1,8 +1,8 @@
 #!/bin/sh
 
 set -eu
-. "$HOME/.config/lib/get_github_cred.sh"
-. "$HOME/.config/lib/panic.sh"
+. ~/.config/lib/get_github_cred.sh
+. ~/.config/lib/panic.sh
 
 show_help() {
 cat <<EOF

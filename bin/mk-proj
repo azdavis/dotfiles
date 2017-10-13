@@ -1,8 +1,8 @@
 #!/bin/sh
 
 set -eu
-. "$HOME/.config/lib/get_github_cred.sh"
-. "$HOME/.config/lib/panic.sh"
+. ~/.config/lib/get_github_cred.sh
+. ~/.config/lib/panic.sh
 
 show_help() {
 cat <<EOF
@@ -73,7 +73,7 @@ if echo "$proj_name" | grep -q '\s'; then
 	panic "'$proj_name' has whitespace"
 fi
 
-templates="$HOME/.config/templates"
+templates=~/.config/templates
 if ! [ -d "$templates/$t" ]; then
 	panic "invalid type: '$t'"
 fi

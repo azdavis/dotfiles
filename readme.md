@@ -4,7 +4,7 @@ a potpourri of macOS dotfiles
 
 ## install
 
-The install script clones `dotfiles` to `$HOME/.config`. You can trigger an
+The install script clones `dotfiles` to `~/.config`. You can trigger an
 update with `update-dotfiles`.
 
 One of the primary purposes of `dotfiles` (the project) is to manage
@@ -18,12 +18,12 @@ Therefore, a file on your system, if it exists, will be replaced with a file
 (or symlink to a file) in `dotfiles`, if it exists, according to the
 following table:
 
-| # | On your system                                     | In `dotfiles`    |
-|---|----------------------------------------------------|------------------|
-| 1 | `$HOME/.config/.git`                               | N/A              |
-| 2 | `$HOME/.config/<path>`                             | `<path>`         |
-| 3 | `$HOME/.<path>`                                    | `home/<path>`    |
-| 4 | `$HOME/Library/Application Support/Sublime Text 3` | `sublime-text-3` |
+| # | On your system                                 | In `dotfiles`    |
+|---|------------------------------------------------|------------------|
+| 1 | `~/.config/.git`                               | N/A              |
+| 2 | `~/.config/<path>`                             | `<path>`         |
+| 3 | `~/.<path>`                                    | `home/<path>`    |
+| 4 | `~/Library/Application Support/Sublime Text 3` | `sublime-text-3` |
 
 These replacements occur when the following commands in `dotfiles` are run:
 

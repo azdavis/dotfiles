@@ -1,7 +1,7 @@
 #!/bin/sh
 
 set -eu
-. "$HOME/.config/lib/panic.sh"
+. ~/.config/lib/panic.sh
 
 show_help() {
 cat <<EOF
@@ -35,33 +35,33 @@ if [ $# -ne 0 ]; then
 	usage
 fi
 
-"$HOME/.config/bin/rm-ds-stores" $v "$HOME"
+~/.config/bin/rm-ds-stores $v ~
 
 rm -rf $v \
-	"$HOME/.bash_history" \
-	"$HOME/.bash_sessions" \
-	"$HOME/.bundle" \
-	"$HOME/.cache" \
-	"$HOME/.config/gnome-session" \
-	"$HOME/.config/gtk-2.0" \
-	"$HOME/.config/gtk-3.0" \
-	"$HOME/.config/nautilus" \
-	"$HOME/.config/update-notifier" \
-	"$HOME/.config/upstart" \
-	"$HOME/.elm" \
-	"$HOME/.gdb_history" \
-	"$HOME/.gem" \
-	"$HOME/.ghc" \
-	"$HOME/.idris/repl/history" \
-	"$HOME/.lldb" \
-	"$HOME/.mplayer" \
-	"$HOME/.nano" \
-	"$HOME/.node-gyp" \
-	"$HOME/.node_repl_history" \
-	"$HOME/.npm" \
-	"$HOME/.oracle_jre_usage" \
-	"$HOME/.python_history" \
-	"$HOME/.sh_history" \
-	"$HOME/.sqlite_history" \
-	"$HOME/.viminfo" \
-	"$HOME/.zcompdump"
+	~/.bash_history \
+	~/.bash_sessions \
+	~/.bundle \
+	~/.cache \
+	~/.config/gnome-session \
+	~/.config/gtk-2.0 \
+	~/.config/gtk-3.0 \
+	~/.config/nautilus \
+	~/.config/update-notifier \
+	~/.config/upstart \
+	~/.elm \
+	~/.gdb_history \
+	~/.gem \
+	~/.ghc \
+	~/.idris/repl/history \
+	~/.lldb \
+	~/.mplayer \
+	~/.nano \
+	~/.node-gyp \
+	~/.node_repl_history \
+	~/.npm \
+	~/.oracle_jre_usage \
+	~/.python_history \
+	~/.sh_history \
+	~/.sqlite_history \
+	~/.viminfo \
+	~/.zcompdump

@@ -1,13 +1,13 @@
 #!/bin/sh
 
 set -eu
-. "$HOME/.config/lib/panic.sh"
+. ~/.config/lib/panic.sh
 
 if [ $# -ne 0 ]; then
 	panic "usage: $(basename "$0")"
 fi
 
-cd "$HOME/.config"
+cd ~/.config
 
 p="theme/dark.patch"
 t=""
