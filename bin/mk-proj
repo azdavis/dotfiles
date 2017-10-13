@@ -11,8 +11,6 @@ usage: $(basename "$0") [options] <proj_path> <proj_desc>
 options:
 	-f
 		create <proj_path> even if it already exists
-	-g (pub | priv)
-		create a github repository with the given privacy
 	-t (c | js | tex)
 		create a project with the given type
 	-v
@@ -136,14 +134,3 @@ fi
 
 cd "$proj_path"
 sort -o .gitignore .gitignore
-
-if [ -z "$g" ]; then
-	exit
-fi
-
-v_str=""
-if $v; then
-	v_str="-v"
-fi
-
-"$HOME/.config/bin/mk-git" $v_str -g "$g" "$proj_name" "$proj_desc"
