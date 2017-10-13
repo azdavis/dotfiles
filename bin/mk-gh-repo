@@ -6,11 +6,15 @@ set -eu
 
 show_help() {
 cat <<EOS
-usage: $(basename "$0") [options] <proj_name> <proj_desc>
+usage: $(basename "$0") [options]
 
 options:
+	-d <desc>
+		use the repo description <desc>
 	-h
 		show this help
+	-n <name>
+		use the repo name <name>
 	-p
 		make the repo private
 	-v
@@ -23,10 +27,14 @@ usage() {
 	exit 1
 }
 
+d=""
+n="$(basename "$PWD")"
 p=false
 v=false
-while getopts "hpv" opt; do
+while getopts "d:hn:pv" opt; do
 	case "$opt" in
+	(d) d="$OPTARG" ;;
+	(n) n="$OPTARG" ;;
 	(p) p=true ;;
 	(v) v=true ;;
 	(*) usage ;;
@@ -46,15 +54,12 @@ note() {
 	fi
 }
 
-proj_name="$1"
-proj_desc="$2"
-
 github_name="$(get_github_cred username)"
 github_password="$(get_github_cred password)"
 
 # there must be spaces surrounding { and } in the json data
 # e761df8a36c4e302ebda8b792f70d631b0e8452d
-url="https://github.com/$github_name/$proj_name.git"
+url="https://github.com/$github_name/$n.git"
 note "creating '$url'"
 git remote add origin "$url"
 if [ \
@@ -63,7 +68,7 @@ if [ \
 		-H "Content-Type: application/json" \
 		-H "Authorization: token $github_password" \
 		-X POST \
-		-d " { \"name\":\"$proj_name\", \"description\":\"$proj_desc\", \"private\":$p } " \
+		-d " { \"name\":\"$n\", \"description\":\"$d\", \"private\":$p } " \
 		-s \
 		-o /dev/null \
 		-w "%{http_code}" \
