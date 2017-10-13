@@ -13,7 +13,7 @@ fi
 dst=".git/hooks/pre-commit"
 
 if [ -e "$dst" ]; then
-	panic "'$dst' already exists"
+	panic "a pre-commit hook already exists"
 fi
 
 mkdir -p "$(dirname "$dst")"
