@@ -1,5 +1,5 @@
-TEXC = pdflatex
-TEXFLAGS = -halt-on-error
+TEXC ?= pdflatex
+TEXFLAGS ?= -halt-on-error
 
 .SUFFIXES:
 .PHONY: all clean

@@ -1,5 +1,5 @@
-CC = cc
-CFLAGS = -std=c99 -g -O0 -Werror -Weverything
+CC ?= cc
+CFLAGS ?= -std=c99 -g -O0 -Werror -Weverything
 
 .SUFFIXES:
 .PHONY: all clean
