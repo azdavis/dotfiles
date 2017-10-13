@@ -3,7 +3,7 @@
 set -eu
 
 show_help() {
-cat <<EOS
+cat <<EOF
 usage: $(basename "$0") [options] <path>...
 
 options:
@@ -16,7 +16,7 @@ options:
 		remove directories and their contents recursively
 	-v
 		explain what is being done
-EOS
+EOF
 }
 
 usage() {

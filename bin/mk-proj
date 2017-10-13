@@ -5,7 +5,7 @@ set -eu
 . "$HOME/.config/lib/panic.sh"
 
 show_help() {
-cat <<EOS
+cat <<EOF
 usage: $(basename "$0") [options] <proj_path> <proj_desc>
 
 options:
@@ -15,7 +15,7 @@ options:
 		use the given type
 	-v
 		explain what is being done
-EOS
+EOF
 }
 
 usage() {
