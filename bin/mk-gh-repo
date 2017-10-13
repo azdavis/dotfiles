@@ -50,10 +50,6 @@ proj_desc="$2"
 github_name="$(get_github_cred username)"
 github_password="$(get_github_cred password)"
 
-if [ -z "$g" ]; then
-	exit
-fi
-
 # there must be spaces surrounding { and } in the json data
 # e761df8a36c4e302ebda8b792f70d631b0e8452d
 url="https://github.com/$github_name/$proj_name.git"
