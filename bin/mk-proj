@@ -12,7 +12,7 @@ options:
 	-f
 		create <proj_path> even if it already exists
 	-t (c | js | tex)
-		create a project with the given type
+		use the given type
 	-v
 		explain what is being done
 EOS

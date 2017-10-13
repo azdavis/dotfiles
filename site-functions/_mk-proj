@@ -2,7 +2,7 @@
 
 local opts=(
 	"-f[create <proj_path> even if it already exists]"
-	"-t[create a project with the given type]:type:(c js tex)"
+	"-t[use the given type]:type:(c js tex)"
 	"-v[explain what is being done]"
 	"*:files:_files"
 )
