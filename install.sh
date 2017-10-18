@@ -37,16 +37,12 @@ find_deps() {
 		echo "'Command Line Developer Tools' not found"
 		ok=false
 	fi
-	for x in chsh git zsh; do
+	for x in /bin/sh chsh git zsh; do
 		if ! cmd_found "$x"; then
 			echo "'$x' not found"
 			ok=false
 		fi
 	done
-	if ! [ -f /bin/sh ]; then
-		echo "'/bin/sh' not found"
-		ok=false
-	fi
 	if $ok; then
 		return
 	fi
