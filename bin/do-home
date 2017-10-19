@@ -1,6 +1,5 @@
-#!/bin/sh
+#!/bin/sh -eu
 
-set -eu
 . ~/.config/lib/force_symlink.sh
 . ~/.config/lib/panic.sh
 

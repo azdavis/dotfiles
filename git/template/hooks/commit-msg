@@ -1,6 +1,4 @@
-#!/bin/sh
-
-set -eu
+#!/bin/sh -eu
 
 msg="$(head -n 1 "$1")"
 msg_len=${#msg}
