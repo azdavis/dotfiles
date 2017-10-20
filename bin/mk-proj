@@ -54,8 +54,8 @@ note() {
 	fi
 }
 
-# this is NOT realpath. it just gives a path which starts with /. this might
-# contain . and .. which realpath tries to avoid.
+# this is NOT realpath. it just gives a path which starts with <slash>. this
+# might contain . and .. which realpath tries to avoid.
 abspath() {
 	echo "$(cd "$(dirname "$1")" && pwd -P)/$(basename "$1")"
 }
