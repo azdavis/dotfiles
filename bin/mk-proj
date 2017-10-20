@@ -45,6 +45,12 @@ if [ $# -ne 1 ]; then
 	usage
 fi
 
+# this is NOT realpath. it just gives a path which starts with <slash>. this
+# might contain . and .. which realpath tries to avoid.
+abspath() {
+	echo "$(cd "$(dirname "$1")" && pwd -P)/$(basename "$1")"
+}
+
 proj_path="$(abspath "$1")"
 proj_desc="$d"
 
@@ -52,12 +58,6 @@ note() {
 	if $v; then
 		echo "$1"
 	fi
-}
-
-# this is NOT realpath. it just gives a path which starts with <slash>. this
-# might contain . and .. which realpath tries to avoid.
-abspath() {
-	echo "$(cd "$(dirname "$1")" && pwd -P)/$(basename "$1")"
 }
 
 if ! git_name="$(git config user.name)"; then
