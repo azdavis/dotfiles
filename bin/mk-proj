@@ -45,6 +45,9 @@ if [ $# -ne 1 ]; then
 	usage
 fi
 
+proj_path="$(abspath "$1")"
+proj_desc="$d"
+
 note() {
 	if $v; then
 		echo "$1"
@@ -56,9 +59,6 @@ note() {
 abspath() {
 	echo "$(cd "$(dirname "$1")" && pwd -P)/$(basename "$1")"
 }
-
-proj_path="$(abspath "$1")"
-proj_desc="$d"
 
 if ! git_name="$(git config user.name)"; then
 	panic "no git user.name found"
