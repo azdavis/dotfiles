@@ -26,14 +26,12 @@ usage() {
 
 d="TODO"
 f=false
-g=""
 t=""
 v=false
-while getopts "d:fg:t:v" opt; do
+while getopts "d:ft:v" opt; do
 	case "$opt" in
 	(d) d="$OPTARG" ;;
 	(f) f=true ;;
-	(g) g="$OPTARG" ;;
 	(t) t="$OPTARG" ;;
 	(v) v=true ;;
 	(*) usage ;;
