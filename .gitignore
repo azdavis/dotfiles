@@ -25,7 +25,6 @@
 !/bin/do-subl
 !/bin/git-gc-super
 !/bin/git-home
-!/bin/git-pre-commit-make
 !/bin/mk-gh-repo
 !/bin/mk-proj
 !/bin/rm-ds-stores
