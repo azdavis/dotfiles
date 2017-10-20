@@ -11,11 +11,9 @@ git rev-parse
 branch="$(git rev-parse --abbrev-ref HEAD 2> /dev/null)" || :
 if [ "$branch" = HEAD ]; then
 	panic "not on a branch"
-fi
-if ! remote="$(git config branch.$branch.remote)"; then
+elif ! remote="$(git config branch.$branch.remote)"; then
 	panic "could not get remote for branch '$branch'"
-fi
-if ! url="$(git config remote.$remote.url)"; then
+elif ! url="$(git config remote.$remote.url)"; then
 	panic "could not get url for remote '$remote'"
 fi
 url="$(echo "$url" | sed 's/\.git$//')"

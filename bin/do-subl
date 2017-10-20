@@ -6,9 +6,7 @@
 
 if [ $# -ne 0 ]; then
 	panic "usage: $(basename "$0")"
-fi
-
-if ! cmd_found subl; then
+elif ! cmd_found subl; then
 	echo "'subl' not found"
 	exit
 fi

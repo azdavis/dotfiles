@@ -62,17 +62,14 @@ note() {
 
 if ! git_name="$(git config user.name)"; then
 	panic "no git user.name found"
-fi
-
-if ! git_email="$(git config user.email)"; then
+elif ! git_email="$(git config user.email)"; then
 	panic "no git user.email found"
 fi
 
 proj_name="$(basename "$proj_path")"
 if [ -e "$proj_name" ] && ! $f; then
 	panic "'$proj_name' already exists"
-fi
-if echo "$proj_name" | grep -q '\s'; then
+elif echo "$proj_name" | grep -q '\s'; then
 	panic "'$proj_name' has whitespace"
 fi
 

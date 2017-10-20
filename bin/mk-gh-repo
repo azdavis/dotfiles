@@ -75,8 +75,7 @@ if [ \
 	)" -ne 201 \
 ]; then
 	panic "could not create"
-fi
-if $v; then
+elif $v; then
 	git push -u origin master
 else
 	git push -q -u origin master > /dev/null
