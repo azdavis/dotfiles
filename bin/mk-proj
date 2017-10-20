@@ -5,9 +5,11 @@
 
 show_help() {
 cat <<EOF
-usage: $(basename "$0") [options] <path> <desc>
+usage: $(basename "$0") [options] <path>
 
 options:
+	-d <desc>
+		use the project description <desc>
 	-f
 		create <path> even if it already exists
 	-t (c | js | tex)
@@ -22,12 +24,14 @@ usage() {
 	exit 1
 }
 
+d="TODO"
 f=false
 g=""
 t=""
 v=false
-while getopts "fg:t:v" opt; do
+while getopts "d:fg:t:v" opt; do
 	case "$opt" in
+	(d) d="$OPTARG" ;;
 	(f) f=true ;;
 	(g) g="$OPTARG" ;;
 	(t) t="$OPTARG" ;;
@@ -37,7 +41,7 @@ while getopts "fg:t:v" opt; do
 done
 shift $((OPTIND - 1))
 
-if [ $# -ne 2 ]; then
+if [ $# -ne 1 ]; then
 	usage
 fi
 
@@ -54,7 +58,7 @@ abspath() {
 }
 
 proj_path="$(abspath "$1")"
-proj_desc="$2"
+proj_desc="$d"
 
 if ! git_name="$(git config user.name)"; then
 	panic "no git user.name found"
