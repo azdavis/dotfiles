@@ -12,6 +12,8 @@ options:
 		use the project description <desc>
 	-f
 		create <path> even if it already exists
+	-h
+		show this help
 	-t (c | js | tex)
 		use the given type
 	-v
@@ -28,7 +30,7 @@ d="TODO"
 f=false
 t=""
 v=false
-while getopts "d:ft:v" opt; do
+while getopts "d:fht:v" opt; do
 	case "$opt" in
 	(d) d="$OPTARG" ;;
 	(f) f=true ;;
