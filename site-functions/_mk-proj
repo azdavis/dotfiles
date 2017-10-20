@@ -1,7 +1,7 @@
 #compdef mk-proj
 
 local opts=(
-	"-f[create <proj_path> even if it already exists]"
+	"-f[create <path> even if it already exists]"
 	"-t[use the given type]:type:(c js tex)"
 	"-v[explain what is being done]"
 	"*:files:_files"

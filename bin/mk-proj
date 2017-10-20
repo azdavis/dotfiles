@@ -5,11 +5,11 @@
 
 show_help() {
 cat <<EOF
-usage: $(basename "$0") [options] <proj_path> <proj_desc>
+usage: $(basename "$0") [options] <path> <desc>
 
 options:
 	-f
-		create <proj_path> even if it already exists
+		create <path> even if it already exists
 	-t (c | js | tex)
 		use the given type
 	-v
