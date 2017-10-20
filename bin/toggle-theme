@@ -11,10 +11,10 @@ cd ~/.config
 p="theme/dark.patch"
 t=""
 d=""
-if git apply --check "$p" > /dev/null 2>&1; then
+if git apply --check "$p" 2> /dev/null; then
 	t="dark"
 	d=""
-elif git apply --check --reverse "$p" > /dev/null 2>&1; then
+elif git apply --check --reverse "$p" 2> /dev/null; then
 	t="light"
 	d="--reverse"
 else
