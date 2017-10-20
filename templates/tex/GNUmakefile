@@ -5,7 +5,7 @@ TEXFLAGS ?= -halt-on-error
 .PHONY: all clean
 .PRECIOUS: build/%.pdf
 
-all: build/{{proj_name}}.pdf
+all: build/main.pdf
 
 clean:
 	rm -rf build

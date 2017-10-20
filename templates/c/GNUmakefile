@@ -5,7 +5,7 @@ CFLAGS ?= -std=c99 -g -O0 -Werror -Weverything
 .PHONY: all clean
 .PRECIOUS: build/%.out
 
-all: build/{{proj_name}}.out
+all: build/main.out
 
 clean:
 	rm -rf build
