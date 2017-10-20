@@ -19,8 +19,6 @@ usage() {
 	exit 1
 }
 
-f=""
-r=false
 v=""
 while getopts "hv" opt; do
 	case "$opt" in
