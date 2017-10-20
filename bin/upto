@@ -1,11 +1,14 @@
 #!/bin/sh -eu
 
+. ~/.config/lib/is_int.sh
 . ~/.config/lib/panic.sh
 
 if [ $# -ne 1 ]; then
-	panic "usage: $(basename "$0") <nat>"
+	panic "usage: $(basename "$0") <positive_int>"
 fi
 
-upto="$1"
+if ! is_int "$1" || [ "$1" -le 0 ]; then
+	panic "'$1' not a positive int"
+fi
 
-seq -w 1 "$upto" | perl -pe 'chomp if eof' | pbcopy
+seq -w 1 "$1" | perl -pe 'chomp if eof' | pbcopy
