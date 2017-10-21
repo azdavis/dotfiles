@@ -28,7 +28,6 @@ setopt \
 	rmstarsilent
 
 alias \
-	c="tput reset" \
 	df="df -h" \
 	du="du -chs" \
 	ga="git add" \
