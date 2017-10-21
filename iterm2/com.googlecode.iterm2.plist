@@ -16,6 +16,8 @@
 	<string>08DE5749-A027-437E-9B38-C176845EB67F</string>
 	<key>DimBackgroundWindows</key>
 	<false/>
+	<key>DimInactiveSplitPanes</key>
+	<false/>
 	<key>DisableFullscreenTransparency</key>
 	<true/>
 	<key>FlashTabBarInFullscreen</key>
