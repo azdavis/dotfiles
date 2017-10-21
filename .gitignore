@@ -30,7 +30,6 @@
 !/bin/rm-ds-stores
 !/bin/rm-stupid-items
 !/bin/rot13
-!/bin/show-cmd
 !/bin/srm
 !/bin/toggle-theme
 !/bin/update-dotfiles
