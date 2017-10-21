@@ -42,7 +42,13 @@
 
 /mpv/watch_later
 
-/site-functions/_backup
+/site-functions/*
+!/site-functions/_rm-stupid-items
+!/site-functions/_srm
+!/site-functions/_mk-proj
+!/site-functions/_mk-gh-repo
+!/site-functions/_rm-ds-stores
+!/site-functions/_diskutil
 
 /sublime-text-3/*
 !/sublime-text-3/Packages
