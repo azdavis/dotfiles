@@ -24,11 +24,11 @@ fi
 str=""
 if git merge-base --is-ancestor origin/master HEAD; then
 	str="already at"
-elif ! git rebase -q origin/master; then
-	panic "cd to '$PWD' to resolve this error"
-else
+elif git rebase -q origin/master; then
 	~/.config/bin/do-home
 	str="updated to"
+else
+	panic "cd to '$PWD' to resolve this error"
 fi
 
 git log -1 --format="$str: %h (%cr) %s" origin/master
