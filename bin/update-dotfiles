@@ -21,14 +21,14 @@ if [ \
 	git fetch -q origin master
 fi
 
-str=""
+msg=""
 if git merge-base --is-ancestor origin/master HEAD; then
-	str="already at"
+	msg="already at"
 elif git rebase -q origin/master; then
 	~/.config/bin/do-home
-	str="updated to"
+	msg="updated to"
 else
 	panic "cd to '$PWD' to resolve this error"
 fi
 
-git log -1 --format="$str: %h (%cr) %s" origin/master
+git log -1 --format="$msg: %h (%cr) %s" origin/master
