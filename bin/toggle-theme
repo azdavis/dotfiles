@@ -8,7 +8,7 @@ fi
 
 cd ~/.config
 
-p="theme/dark.patch"
+p="$PWD/theme/dark.patch"
 t=""
 d=""
 if git apply --check "$p" 2> /dev/null; then
@@ -18,7 +18,7 @@ elif git apply --check --reverse "$p" 2> /dev/null; then
 	t="light"
 	d="--reverse"
 else
-	panic "patch does not apply in either direction"
+	panic "'$p' does not apply in either direction"
 fi
 
 git apply $d "$p"
