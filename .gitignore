@@ -11,6 +11,7 @@
 !/site-functions
 !/sublime-text-3
 !/templates
+!/theme
 
 !/.gitignore
 !/install.sh
