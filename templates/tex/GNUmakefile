@@ -12,5 +12,5 @@ clean:
 
 build/%.pdf: src/%.tex src/base.tex
 	mkdir -p $(dir $@)
-	$(TEXC) -output-directory=$(dir $@) $(TEXFLAGS) $< $(TODEVNULL)
-	$(TEXC) -output-directory=$(dir $@) $(TEXFLAGS) $< $(TODEVNULL)
+	$(TEXC) -output-directory=$(dir $@) $(TEXFLAGS) $< $(Q)
+	$(TEXC) -output-directory=$(dir $@) $(TEXFLAGS) $< $(Q)

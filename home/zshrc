@@ -11,8 +11,8 @@ export \
 	MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH" \
 	MORE="-x4" \
 	PATH=~/".config/bin:/usr/local/opt/coreutils/libexec/gnubin:$PATH" \
+	Q="> /dev/null 2>&1" \
 	RLWRAP_HOME="/dev/null" \
-	TODEVNULL="> /dev/null 2>&1" \
 	WORDCHARS="._-~"
 
 PS1=$'%{\e[90m%}%2~%{\e[0m%} %{\e[%(?.32.31)m%}%(!.#.$)%{\e[0m%} '
