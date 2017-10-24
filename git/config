@@ -8,7 +8,7 @@
 [core]
 	editor = subl -w
 	eol = lf
-	pager = less -FRSXx4
+	pager = less -FRSXqx4
 	quotePath = false
 	untrackedCache = true
 [credential]
