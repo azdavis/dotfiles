@@ -9,17 +9,17 @@ fi
 cd ~/.config
 
 p="$PWD/theme/dark.patch"
-t=""
-d=""
+iterm_profile=""
+git_direction=""
 if git apply --check "$p" 2> /dev/null; then
-	t="dark"
-	d=""
+	iterm_profile="dark"
+	git_direction=""
 elif git apply --check --reverse "$p" 2> /dev/null; then
-	t="light"
-	d="--reverse"
+	iterm_profile="light"
+	git_direction="--reverse"
 else
 	panic "'$p' does not apply in either direction"
 fi
 
-git apply $d "$p"
-printf "\033]50;SetProfile=$t\a"
+git apply $git_direction "$p"
+printf "\033]50;SetProfile=$iterm_profile\a"
