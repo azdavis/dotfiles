@@ -4,8 +4,9 @@ a potpourri of macOS dotfiles
 
 ## install
 
-A file on your system, if it exists, will be replaced with a file (or symlink
-to a file) in `dotfiles`, if it exists, according to the following table:
+Note: A file on your system, if it exists, will be replaced with a file (or
+symlink to a file) in `dotfiles`, if it exists, according to the following
+table:
 
 | # | On your system                                 | In `dotfiles`    |
 |---|------------------------------------------------|------------------|
@@ -23,6 +24,6 @@ When the following commands in `dotfiles` are run:
 | `bin/do-home`         | N | N | Y | N |
 | `bin/do-subl`         | N | N | N | Y |
 
-If you understand and accept the risks:
+You can get the install script and execute it with:
 
 	curl -fsSL https://git.io/vM2Jb | sh
