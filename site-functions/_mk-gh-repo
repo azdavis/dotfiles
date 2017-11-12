@@ -5,7 +5,6 @@ local opts=(
 	"-h[show this help]"
 	"-n[use the repo name <name>]:name:"
 	"-p[make the repo private]"
-	"-v[explain what is being done]"
 	"*:files:_files"
 )
 

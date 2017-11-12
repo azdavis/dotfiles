@@ -16,8 +16,6 @@ options:
 		use the repo name <name>
 	-p
 		make the repo private
-	-v
-		explain what is being done
 EOF
 }
 
@@ -29,13 +27,11 @@ usage() {
 d=""
 n="$(basename "$PWD")"
 p=false
-v=false
-while getopts "d:hn:pv" opt; do
+while getopts "d:hn:p" opt; do
 	case "$opt" in
 	(d) d="$OPTARG" ;;
 	(n) n="$OPTARG" ;;
 	(p) p=true ;;
-	(v) v=true ;;
 	(*) usage ;;
 	esac
 done
@@ -47,19 +43,12 @@ fi
 
 git rev-parse
 
-note() {
-	if $v; then
-		echo "$1"
-	fi
-}
-
 github_name="$(get_github_cred username)"
 github_password="$(get_github_cred password)"
 
 # there must be spaces surrounding { and } in the json data
 # e761df8a36c4e302ebda8b792f70d631b0e8452d
 url="https://github.com/$github_name/$n.git"
-note "creating '$url'"
 git remote add origin "$url"
 if [ \
 	"$(curl \
@@ -75,8 +64,6 @@ if [ \
 	)" -ne 201 \
 ]; then
 	panic "could not create"
-elif $v; then
-	git push -u origin master
 else
-	git push -q -u origin master > /dev/null
+	git push -u origin master
 fi
