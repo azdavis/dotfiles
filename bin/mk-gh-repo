@@ -64,6 +64,4 @@ if [ \
 	)" -ne 201 \
 ]; then
 	panic "could not create"
-else
-	git push -u origin master
 fi
