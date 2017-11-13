@@ -2,8 +2,8 @@
 
 . ~/.config/lib/panic.sh
 
-show_help() {
-cat <<EOF
+usage() {
+cat <<EOF 1>&2
 usage: $(basename "$0") [options]
 
 options:
@@ -12,11 +12,7 @@ options:
 	-v
 		explain what is being done
 EOF
-}
-
-usage() {
-	show_help 1>&2
-	exit 1
+exit 1
 }
 
 v=""

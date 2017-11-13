@@ -3,8 +3,8 @@
 . ~/.config/lib/get_github_cred.sh
 . ~/.config/lib/panic.sh
 
-show_help() {
-cat <<EOF
+usage() {
+cat <<EOF 1>&2
 usage: $(basename "$0") [options]
 
 options:
@@ -17,11 +17,7 @@ options:
 	-p
 		make the repo private
 EOF
-}
-
-usage() {
-	show_help 1>&2
-	exit 1
+exit 1
 }
 
 d=""
