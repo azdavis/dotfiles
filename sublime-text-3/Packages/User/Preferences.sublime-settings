@@ -94,6 +94,7 @@
 		".svn",
 		"build",
 		"CVS",
+		"elm-stuff",
 		"node_modules"
 	],
 	"font_face": "input",
