@@ -6,7 +6,6 @@ filetype plugin indent on
 set backspace=indent,eol,start
 set colorcolumn=80
 set hlsearch
-set mouse=a
 set number
 set ruler
 set shiftwidth=4
