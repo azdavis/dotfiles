@@ -44,11 +44,9 @@ alias \
 	gpl="git pull" \
 	gr="git reset" \
 	grep="grep --color=auto" \
-	grp="git rev-parse" \
 	gs="git status" \
 	ls="ls -bh --color=auto --group-directories-first --time-style=long-iso" \
 	sml="rlwrap sml" \
-	smlnj="rlwrap sml" \
 	subl="subl -a" \
 	tree="tree --dirsfirst"
 
