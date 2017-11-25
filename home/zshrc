@@ -30,6 +30,7 @@ setopt \
 alias \
 	df="df -h" \
 	du="du -chs" \
+	fuck="srm" \
 	ga="git add" \
 	gb="git branch" \
 	gc="git commit" \
