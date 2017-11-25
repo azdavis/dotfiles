@@ -1,5 +1,6 @@
 export EDITOR="subl"
 export FPATH="$HOME/.config/site-functions:$FPATH"
+export GIT_DISCOVERY_ACROSS_FILESYSTEM="1"
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export HOMEBREW_NO_ANALYTICS="1"
 export HOMEBREW_NO_EMOJI="1"
