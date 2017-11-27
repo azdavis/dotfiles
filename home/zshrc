@@ -51,6 +51,12 @@ alias \
 	subl="subl -a" \
 	tree="tree --dirsfirst"
 
+write() {
+	mesg y
+	command write "$@"
+	mesg n
+}
+
 autoload -U compinit
 compinit -i
 zstyle ":completion:*" group-name ""
