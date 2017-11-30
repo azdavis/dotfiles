@@ -13,11 +13,11 @@
 	quotePath = false
 	untrackedCache = true
 [credential]
-	helper = store --file ~/.config/git/credentials
+	helper = store
 [diff]
 	algorithm = histogram
 [init]
-	templateDir = ~/.config/git/template
+	templateDir = ~/.config/git-template
 [log]
 	date = iso8601
 	decorate = true

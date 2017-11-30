@@ -3,7 +3,7 @@
 /*
 
 !/bin
-!/git
+!/git-template
 !/home
 !/iterm2
 !/lib
@@ -34,8 +34,6 @@
 !/bin/toggle-theme
 !/bin/update-dotfiles
 !/bin/upto
-
-/git/credentials
 
 /home/idris/repl/history
 
