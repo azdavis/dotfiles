@@ -28,7 +28,7 @@
 !/bin/mk-gh-repo
 !/bin/mk-proj
 !/bin/rm-ds-stores
-!/bin/rm-stupid-items
+!/bin/rm-stupid-paths
 !/bin/rot13
 !/bin/srm
 !/bin/toggle-theme
