@@ -1,4 +1,5 @@
 [alias]
+	git = !exec git
 	log-graph = log --all --graph --oneline
 	praise = blame
 	show-full = show --format=fuller
