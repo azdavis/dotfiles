@@ -45,7 +45,7 @@ _cmds() {
 
 _disks() {
 	local -a disks
-	disks=( /dev/disk* )
+	disks=( /Volumes/* )
 	_describe disks disks
 }
 
