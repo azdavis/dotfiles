@@ -1,3 +1,5 @@
+[advice]
+	detachedHead = false
 [alias]
 	git = !exec git
 	log-graph = log --all --graph --oneline
