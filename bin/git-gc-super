@@ -1,6 +1,6 @@
 #!/bin/sh -eu
 
-. ~/.config/lib/panic.sh
+. "$HOME/.config/lib/panic.sh"
 
 if [ $# -ne 0 ]; then
 	panic "usage: $(basename "$0")"

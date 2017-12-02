@@ -1,7 +1,7 @@
 #!/bin/sh -eu
 
-. ~/.config/lib/get_github_cred.sh
-. ~/.config/lib/panic.sh
+. "$HOME/.config/lib/get_github_cred.sh"
+. "$HOME/.config/lib/panic.sh"
 
 usage() {
 cat <<EOF 1>&2

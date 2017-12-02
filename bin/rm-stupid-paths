@@ -1,6 +1,6 @@
 #!/bin/sh -eu
 
-. ~/.config/lib/panic.sh
+. "$HOME/.config/lib/panic.sh"
 
 usage() {
 cat <<EOF 1>&2
@@ -28,33 +28,34 @@ if [ $# -ne 0 ]; then
 	usage
 fi
 
-~/.config/bin/rm-ds-stores $v ~
+cd
+"$HOME/.config/bin/rm-ds-stores" $v .
 
 rm -rf $v \
-	~/.bash_history \
-	~/.bash_sessions \
-	~/.bundle \
-	~/.cache \
-	~/.config/gnome-session \
-	~/.config/gtk-2.0 \
-	~/.config/gtk-3.0 \
-	~/.config/nautilus \
-	~/.config/update-notifier \
-	~/.config/upstart \
-	~/.elm \
-	~/.gdb_history \
-	~/.gem \
-	~/.ghc \
-	~/.idris/repl/history \
-	~/.lldb \
-	~/.mplayer \
-	~/.nano \
-	~/.node-gyp \
-	~/.node_repl_history \
-	~/.npm \
-	~/.oracle_jre_usage \
-	~/.python_history \
-	~/.sh_history \
-	~/.sqlite_history \
-	~/.viminfo \
-	~/.zcompdump
+	.bash_history \
+	.bash_sessions \
+	.bundle \
+	.cache \
+	.config/gnome-session \
+	.config/gtk-2.0 \
+	.config/gtk-3.0 \
+	.config/nautilus \
+	.config/update-notifier \
+	.config/upstart \
+	.elm \
+	.gdb_history \
+	.gem \
+	.ghc \
+	.idris/repl/history \
+	.lldb \
+	.mplayer \
+	.nano \
+	.node-gyp \
+	.node_repl_history \
+	.npm \
+	.oracle_jre_usage \
+	.python_history \
+	.sh_history \
+	.sqlite_history \
+	.viminfo \
+	.zcompdump

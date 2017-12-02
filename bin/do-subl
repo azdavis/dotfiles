@@ -1,8 +1,8 @@
 #!/bin/sh -eu
 
-. ~/.config/lib/cmd_found.sh
-. ~/.config/lib/force_symlink.sh
-. ~/.config/lib/panic.sh
+. "$HOME/.config/lib/cmd_found.sh"
+. "$HOME/.config/lib/force_symlink.sh"
+. "$HOME/.config/lib/panic.sh"
 
 if [ $# -ne 0 ]; then
 	panic "usage: $(basename "$0")"
@@ -11,8 +11,8 @@ elif ! cmd_found subl; then
 	exit
 fi
 
-config_subl=~/.config/sublime-text-3
-force_symlink "$config_subl" ~/"Library/Application Support/Sublime Text 3"
+config_subl="$HOME/.config/sublime-text-3"
+force_symlink "$config_subl" "$HOME/Library/Application Support/Sublime Text 3"
 rm -rf \
 	"$config_subl/Backup" \
 	"$config_subl/Cache" \

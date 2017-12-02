@@ -1,4 +1,4 @@
-. ~/.config/lib/rand_int.sh
+. "$HOME/.config/lib/rand_int.sh"
 
 # requires: true.
 # ensures: mk_tmp_dir makes a randomly named directory in /tmp with 700

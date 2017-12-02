@@ -1,7 +1,7 @@
 #!/bin/sh -eu
 
-. ~/.config/lib/is_int.sh
-. ~/.config/lib/panic.sh
+. "$HOME/.config/lib/is_int.sh"
+. "$HOME/.config/lib/panic.sh"
 
 if [ $# -ne 1 ]; then
 	panic "usage: $(basename "$0") <positive_int>"
