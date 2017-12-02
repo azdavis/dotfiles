@@ -1,56 +1,53 @@
-export \
-	EDITOR="subl" \
-	FPATH="$HOME/.config/site-functions:$FPATH" \
-	HOMEBREW_CASK_OPTS="--appdir=/Applications" \
-	HOMEBREW_NO_ANALYTICS="1" \
-	HOMEBREW_NO_EMOJI="1" \
-	HOMEBREW_NO_INSECURE_REDIRECT="1" \
-	LESS="-qx4" \
-	LESSHISTFILE="/dev/null" \
-	LS_COLORS="di=34:ln=35:so=32:pi=33:ex=31:bd=7;36:cd=7;33:su=7;31:sg=7;36:tw=7;32:ow=7;33:st=7;34" \
-	MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH" \
-	MORE="-x4" \
-	PATH="$HOME/.config/bin:/usr/local/opt/coreutils/libexec/gnubin:$PATH" \
-	Q="> /dev/null 2>&1" \
-	RLWRAP_HOME="/dev/null" \
-	WORDCHARS="._-~"
+export EDITOR="subl"
+export FPATH="$HOME/.config/site-functions:$FPATH"
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+export HOMEBREW_NO_ANALYTICS="1"
+export HOMEBREW_NO_EMOJI="1"
+export HOMEBREW_NO_INSECURE_REDIRECT="1"
+export LESS="-qx4"
+export LESSHISTFILE="/dev/null"
+export LS_COLORS="di=34:ln=35:so=32:pi=33:ex=31:bd=7;36:cd=7;33:su=7;31:sg=7;36:tw=7;32:ow=7;33:st=7;34"
+export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+export MORE="-x4"
+export PATH="$HOME/.config/bin:/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+export Q="> /dev/null 2>&1"
+export RLWRAP_HOME="/dev/null"
+export WORDCHARS="._-~"
 
 PS1=$'%{\e[90m%}%2~%{\e[0m%} %{\e[%(?.32.31)m%}%(!.#.$)%{\e[0m%} '
 ZLE_REMOVE_SUFFIX_CHARS=$' \t\n;'
 
-setopt \
-	autocd \
-	ignoreeof \
-	interactivecomments \
-	menucomplete \
-	nobeep \
-	norcs \
-	nounset \
-	rmstarsilent
+setopt autocd
+setopt ignoreeof
+setopt interactivecomments
+setopt menucomplete
+setopt nobeep
+setopt norcs
+setopt nounset
+setopt rmstarsilent
 
-alias \
-	df="df -h" \
-	du="du -chs" \
-	fuck="srm" \
-	ga="git add" \
-	gb="git branch" \
-	gc="git commit" \
-	gd="git diff" \
-	gdb="gdb -q" \
-	gh="git show-full" \
-	gi="git init" \
-	gk="git checkout" \
-	gl="git log-graph" \
-	gm="git merge" \
-	gp="git push" \
-	gpl="git pull" \
-	gr="git reset" \
-	grep="grep --color=auto" \
-	gs="git status" \
-	ls="ls -bh --color=auto --group-directories-first --time-style=long-iso" \
-	sml="rlwrap sml" \
-	subl="subl -a" \
-	tree="tree --dirsfirst"
+alias df="df -h"
+alias du="du -chs"
+alias fuck="srm"
+alias ga="git add"
+alias gb="git branch"
+alias gc="git commit"
+alias gd="git diff"
+alias gdb="gdb -q"
+alias gh="git show-full"
+alias gi="git init"
+alias gk="git checkout"
+alias gl="git log-graph"
+alias gm="git merge"
+alias gp="git push"
+alias gpl="git pull"
+alias gr="git reset"
+alias grep="grep --color=auto"
+alias gs="git status"
+alias ls="ls -bh --color=auto --group-directories-first --time-style=long-iso"
+alias sml="rlwrap sml"
+alias subl="subl -a"
+alias tree="tree --dirsfirst"
 
 write() {
 	mesg y
