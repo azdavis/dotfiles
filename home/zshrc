@@ -14,7 +14,11 @@ export Q="> /dev/null 2>&1"
 export RLWRAP_HOME="/dev/null"
 export WORDCHARS="._-~"
 
-PS1=$'%{\e[90m%}%2~%{\e[0m%} %{\e[%(?.32.31)m%}%(!.#.$)%{\e[0m%} '
+if [ -z "${SSH_TTY+1}" ]; then
+	PS1=$'%{\e[90m%}%2~%{\e[0m%} %{\e[%(?.32.31)m%}%(!.#.$)%{\e[0m%} '
+else
+	PS1=$'%{\e[33m%}[%m]%{\e[0m%} %{\e[90m%}%2~%{\e[0m%} %{\e[%(?.32.31)m%}%(!.#.$)%{\e[0m%} '
+fi
 ZLE_REMOVE_SUFFIX_CHARS=$' \t\n;'
 
 setopt autocd
