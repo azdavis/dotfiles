@@ -13,6 +13,7 @@
 	eol = lf
 	pager = less -FRSXqx4
 	quotePath = false
+	untrackedCache = true
 [diff]
 	algorithm = histogram
 [init]
