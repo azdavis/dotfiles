@@ -12,6 +12,6 @@ git \
 	-c gc.rerereresolved=0 \
 	-c gc.rerereunresolved=0 \
 	-c gc.pruneExpire=now \
-	gc $@
+	gc
 git repack -adf --depth=50 --window=50
 git fsck --strict --unreachable
