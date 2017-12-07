@@ -10,7 +10,7 @@ cd "$HOME/.config"
 
 if [ \
 	"$(curl \
-		-H "Accept: application/vnd.github.chitauri-preview+sha" \
+		-H "Accept: application/vnd.github.v3.sha" \
 		-H "If-None-Match: \"$(git rev-parse origin/master)\"" \
 		-s \
 		-o /dev/null \
