@@ -4,8 +4,8 @@ a potpourri of macOS dotfiles
 
 ## install
 
-Note: A file on your system, if it exists, will be replaced with a file (or
-symlink to a file) in `dotfiles`, if it exists, according to the following
+Note: A path on your system, if it exists, will be replaced with a path (or
+symlink to a path) in `dotfiles`, if it exists, according to the following
 table:
 
 | # | On your system                                 | In `dotfiles`    |
