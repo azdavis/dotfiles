@@ -20,7 +20,7 @@ When the following commands in `dotfiles` are run:
 | Command               | 1 | 2 | 3 | 4 |
 |-----------------------|---|---|---|---|
 | `install.sh`          | Y | Y | Y | Y |
-| `bin/update-dotfiles` | Y | Y | Y | N |
+| `bin/update-dotfiles` | Y | Y | N | N |
 | `bin/do-home`         | N | N | Y | N |
 | `bin/do-subl`         | N | N | N | Y |
 

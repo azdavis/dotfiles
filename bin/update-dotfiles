@@ -25,7 +25,6 @@ msg=""
 if git merge-base --is-ancestor origin/master HEAD; then
 	msg="already at"
 elif git rebase -q origin/master; then
-	"$HOME/.config/bin/do-home"
 	msg="updated to"
 else
 	panic "cd to '$PWD' to resolve this error"
