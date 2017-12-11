@@ -53,6 +53,7 @@ alias ls="ls -bh --color=auto --group-directories-first --time-style=long-iso"
 alias sml="rlwrap sml"
 alias subl="subl -a"
 alias tree="tree --dirsfirst"
+alias youtube-dl-audio="youtube-dl -x -f 22"
 
 write() {
 	mesg y
