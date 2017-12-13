@@ -12,7 +12,13 @@ elif ! cmd_found subl; then
 fi
 
 config_subl="$HOME/.config/sublime-text-3"
-force_symlink "$config_subl" "$HOME/Library/Application Support/Sublime Text 3"
+
+if [ "$(uname)" = Darwin ]; then
+	force_symlink \
+		"$config_subl" \
+		"$HOME/Library/Application Support/Sublime Text 3"
+fi
+
 rm -rf \
 	"$config_subl/Backup" \
 	"$config_subl/Cache" \
