@@ -26,6 +26,8 @@ fi
 
 git apply $git_direction "$p"
 printf "\033]50;SetProfile=$iterm_profile\a"
-osascript -l JavaScript -e "
-Application('System Events').appearancePreferences.darkMode = $macos_dark
-" > /dev/null
+if [ "$(uname)" = Darwin ]; then
+	osascript -l JavaScript -e "
+	Application('System Events').appearancePreferences.darkMode = $macos_dark
+	" > /dev/null
+fi
