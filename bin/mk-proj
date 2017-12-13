@@ -102,7 +102,7 @@ add_dir() {
 }
 
 add_file() {
-	cat "$1" | replace_vars >> "$(dst_name "$1")"
+	cat "$1" | replace_vars >>"$(dst_name "$1")"
 }
 
 add_item() {

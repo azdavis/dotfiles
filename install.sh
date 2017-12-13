@@ -11,7 +11,7 @@ mk_tmp_dir() {
 	x=""
 	while true; do
 		x="/tmp/$(rand_int 0 999999999)"
-		if mkdir -m 700 "$x" 2> /dev/null; then
+		if mkdir -m 700 "$x" 2>/dev/null; then
 			break
 		fi
 	done
@@ -19,7 +19,7 @@ mk_tmp_dir() {
 }
 
 cmd_found() {
-	command -v "$1" > /dev/null
+	command -v "$1" >/dev/null
 }
 
 check_user() {
@@ -33,7 +33,7 @@ check_user() {
 find_deps() {
 	echo "finding dependencies"
 	ok=true
-	if cmd_found xcode-select && ! xcode-select -p > /dev/null; then
+	if cmd_found xcode-select && ! xcode-select -p >/dev/null; then
 		echo "'Command Line Developer Tools' not found"
 		ok=false
 	fi
@@ -84,7 +84,7 @@ change_shell() {
 	if [ "$SHELL" = "$new_shell" ]; then
 		return
 	fi
-	chsh -s "$new_shell" < /dev/tty
+	chsh -s "$new_shell" </dev/tty
 }
 
 main() {

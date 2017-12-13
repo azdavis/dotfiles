@@ -28,4 +28,4 @@ if [ $# -eq 0 ]; then
 	usage
 fi
 
-find "$@" -name .DS_Store -exec rm $v {} \; 2> /dev/null || true
+find "$@" -name .DS_Store -exec rm $v {} \; 2>/dev/null || true

@@ -13,7 +13,7 @@ if cmd_found brew; then
 	brew bundle --verbose --global
 	brew bundle cleanup --force --global
 	brew upgrade
-	brew unlink coreutils > /dev/null
+	brew unlink coreutils >/dev/null
 	brew cask cleanup
 	brew cleanup
 	brew prune
