@@ -10,6 +10,8 @@ usage: $(basename "$0") [options]
 options:
 	-d <desc>
 		use the repo description <desc>
+	-H <homepage>
+		use the homepage <homepage>
 	-h
 		show this help
 	-n <name>
@@ -21,11 +23,13 @@ exit 1
 }
 
 d=""
+H=""
 n="$(basename "$PWD")"
 p=false
-while getopts "d:hn:p" opt; do
+while getopts "d:H:hn:p" opt; do
 	case "$opt" in
 	(d) d="$OPTARG" ;;
+	(H) H="$OPTARG" ;;
 	(n) n="$OPTARG" ;;
 	(p) p=true ;;
 	(*) usage ;;
@@ -52,7 +56,7 @@ if [ \
 		-H "Content-Type: application/json" \
 		-H "Authorization: token $github_password" \
 		-X POST \
-		-d " { \"name\":\"$n\",\"description\":\"$d\",\"private\":$p } " \
+		-d " { \"name\":\"$n\",\"description\":\"$d\",\"homepage\":\"$H\",\"private\":$p } " \
 		-s \
 		-o /dev/null \
 		-w "%{http_code}" \
