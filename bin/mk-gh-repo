@@ -52,7 +52,7 @@ if [ \
 		-H "Content-Type: application/json" \
 		-H "Authorization: token $github_password" \
 		-X POST \
-		-d " { \"name\":\"$n\", \"description\":\"$d\", \"private\":$p } " \
+		-d " { \"name\":\"$n\",\"description\":\"$d\",\"private\":$p } " \
 		-s \
 		-o /dev/null \
 		-w "%{http_code}" \
