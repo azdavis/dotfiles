@@ -8,6 +8,8 @@ fi
 
 cd "$HOME/.config"
 
+old_origin_master="$(git rev-parse origin/master)"
+
 if [ \
 	"$(curl \
 		-H "Accept: application/vnd.github.v3.sha" \
@@ -21,13 +23,13 @@ if [ \
 	git fetch -q origin master
 fi
 
-msg=""
 if git merge-base --is-ancestor origin/master HEAD; then
-	msg="already at"
+	echo "already up-to-date"
 elif git rebase -q origin/master; then
-	msg="updated to"
+	echo "updated"
+	git log -1 --format="was: %h (%cr) %s" $old_origin_master
 else
 	panic "cd to '$PWD' to resolve this error"
 fi
 
-git log -1 --format="$msg: %h (%cr) %s" origin/master
+git log -1 --format="now: %h (%cr) %s" origin/master
