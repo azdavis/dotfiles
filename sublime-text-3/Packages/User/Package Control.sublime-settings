@@ -6,14 +6,10 @@
 	"installed_packages":
 	[
 		"Babel",
-		"EditorConfig",
 		"Git Commit Message Syntax",
 		"Package Control",
-		"Pug",
 		"rsub",
 		"SingleTrailingNewLine",
-		"SML (Standard ML)",
-		"Stylus",
-		"x86 and x86_64 Assembly"
+		"SML (Standard ML)"
 	]
 }
