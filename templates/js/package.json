@@ -1,20 +1,8 @@
 {
-	"private": true,
 	"name": "{{proj_name}}",
 	"version": "0.1.0",
-	"description": "{{proj_desc}}",
-	"main": "src/index.js",
+	"private": true,
 	"scripts": {
 		"start": "node src/index.js"
-	},
-	"author": "{{git_name}} <{{git_email}}>",
-	"license": "ISC",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/{{github_name}}/{{proj_name}}.git"
-	},
-	"bugs": {
-		"url": "https://github.com/{{github_name}}/{{proj_name}}/issues"
-	},
-	"homepage": "https://github.com/{{github_name}}/{{proj_name}}#readme"
+	}
 }
