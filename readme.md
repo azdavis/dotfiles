@@ -26,4 +26,4 @@ When the following commands in `dotfiles` are run:
 
 You can get the install script and execute it with:
 
-	curl -fsSL https://git.io/vM2Jb | sh
+	$ curl -fsSL https://git.io/vM2Jb | sh
