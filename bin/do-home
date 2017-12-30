@@ -15,3 +15,10 @@ cd "$HOME/$wd"
 for x in *; do
 	force_symlink "$wd/$x" "$HOME/.$x"
 done
+
+cd
+for x in .*; do
+	if [ -L "$x" ] && ! [ -e "$x" ]; then
+		rm "$x"
+	fi
+done
