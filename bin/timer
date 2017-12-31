@@ -1,0 +1,71 @@
+#!/bin/sh -eu
+
+. "$HOME/.config/lib/is_int.sh"
+. "$HOME/.config/lib/panic.sh"
+
+trap 'echo; exit 0' INT
+
+usage() {
+cat <<EOF 1>&2
+usage: $(basename "$0") [options]
+
+options:
+	-H <hr>
+		add <hr> hours
+	-h
+		show this help
+	-m <min>
+		add <min> minutes
+	-s <sec>
+		add <sec> seconds
+EOF
+exit 1
+}
+
+H=0
+m=0
+s=0
+while getopts "H:hm:s:" opt; do
+	case "$opt" in
+	(H) H="$OPTARG" ;;
+	(m) m="$OPTARG" ;;
+	(s) s="$OPTARG" ;;
+	(*) usage ;;
+	esac
+done
+shift $((OPTIND - 1))
+
+if [ $# -ne 0 ]; then
+	usage
+fi
+
+for x in "$H" "$m" "$s"; do
+	if ! is_int "$x"; then
+		panic "'$x' is not an int"
+	fi
+	if [ $x -lt 0 ] || [ $x -ge 60 ]; then
+		panic "'$x' is out of range"
+	fi
+done
+
+while true; do
+	printf '\r%02d:%02d:%02d' "$H" "$m" "$s"
+	if [ "$s" -eq 0 ]; then
+		if [ "$m" -eq 0 ]; then
+			if [ "$H" -eq 0 ]; then
+				break
+			fi
+			H=$(( H - 1 ))
+			m=60
+		fi
+		m=$(( m - 1 ))
+		s=60
+	fi
+	s=$(( s - 1 ))
+	caffeinate sleep 1
+done
+
+while true; do
+	printf '\a'
+	sleep 1
+done

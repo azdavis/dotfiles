@@ -31,6 +31,7 @@
 !/bin/rm-stupid-paths
 !/bin/rot13
 !/bin/srm
+!/bin/timer
 !/bin/toggle-theme
 !/bin/update-dotfiles
 !/bin/upto
