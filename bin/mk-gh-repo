@@ -46,17 +46,11 @@ git rev-parse
 github_name="$(get_github_cred username)"
 github_password="$(get_github_cred password)"
 
-forbid_quotes() {
-	if echo "$1" | grep -qF '"'; then
-		panic "'$1' contains quotes"
+for x in "$d" "$H" "$n" "$github_name" "$github_password"; do
+	if echo "$x" | grep -qF '"'; then
+		panic "'$x' contains quotes"
 	fi
-}
-
-forbid_quotes "$d"
-forbid_quotes "$H"
-forbid_quotes "$n"
-forbid_quotes "$github_name"
-forbid_quotes "$github_password"
+done
 
 # there must be spaces surrounding { and } in the json data
 # e761df8a36c4e302ebda8b792f70d631b0e8452d
