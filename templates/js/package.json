@@ -1,8 +1,8 @@
 {
-	"private": true,
 	"name": "{{proj_name}}",
 	"version": "0.1.0",
 	"description": "{{proj_desc}}",
+	"private": true,
 	"author": "{{git_name}} <{{git_email}}>",
 	"license": "ISC",
 	"repository": {
