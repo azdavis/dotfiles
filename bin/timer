@@ -62,7 +62,7 @@ while true; do
 		s=60
 	fi
 	s=$((s - 1))
-	caffeinate sleep 1
+	sleep 1
 done
 
 while true; do
