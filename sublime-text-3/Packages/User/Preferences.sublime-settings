@@ -81,7 +81,8 @@
 		"*.so",
 		"*.sublime-workspace",
 		"*.suo",
-		".DS_Store"
+		".DS_Store",
+		"package-lock.json"
 	],
 	"find_selected_text": true,
 	"fold_buttons": false,

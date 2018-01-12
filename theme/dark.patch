@@ -6,11 +6,11 @@
  export EDITOR="subl"
 --- a/sublime-text-3/Packages/User/Preferences.sublime-settings
 +++ b/sublime-text-3/Packages/User/Preferences.sublime-settings
-@@ -102,2 +102,3 @@
+@@ -103,2 +103,3 @@
  	[
 +		"gray_antialias",
  		"no_bold",
-@@ -169,2 +170,3 @@
+@@ -170,2 +171,3 @@
  	[
 +		"gray_antialias"
  	],
