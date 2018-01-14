@@ -2,9 +2,7 @@
 	detachedHead = false
 [alias]
 	git = !exec git
-	log-graph = log --all --graph --oneline
 	praise = blame
-	show-full = show --format=fuller
 	unstash = stash pop
 [commit]
 	verbose = 1
