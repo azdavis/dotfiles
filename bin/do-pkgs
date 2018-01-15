@@ -31,7 +31,12 @@ fi
 
 if cmd_found npm; then
 	echo "doing 'npm'"
-	npm i -g npm
+	npm update -g npm
+	for x in "$(npm config get prefix)/lib/node_modules"/*; do
+		if [ "$x" != npm ]; then
+			npm update -g "$x"
+		fi
+	done
 else
 	echo "'npm' not found"
 fi
