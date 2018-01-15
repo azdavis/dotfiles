@@ -2,8 +2,8 @@
 
 local cmds=(
 	"brew"
-	"tlmgr"
 	"npm"
+	"tlmgr"
 )
 
 _cmds() {

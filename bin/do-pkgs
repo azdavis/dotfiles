@@ -18,11 +18,6 @@ do_brew() {
 	brew prune
 }
 
-do_tlmgr() {
-	tlmgr update --self
-	tlmgr update --all
-}
-
 do_npm() {
 	npm update -g npm
 	for x in "$(npm config get prefix)/lib/node_modules"/*; do
@@ -30,6 +25,11 @@ do_npm() {
 			npm update -g "$x"
 		fi
 	done
+}
+
+do_tlmgr() {
+	tlmgr update --self
+	tlmgr update --all
 }
 
 try() {
@@ -40,8 +40,8 @@ try() {
 	echo "doing '$1'"
 	case "$1" in
 	(brew) do_brew ;;
-	(tlmgr) do_tlmgr ;;
 	(npm) do_npm ;;
+	(tlmgr) do_tlmgr ;;
 	(*) panic "unknown package manager '$1'" ;;
 	esac
 }
@@ -50,6 +50,6 @@ if [ $# -eq 1 ]; then
 	try "$1"
 else
 	try brew
-	try tlmgr
 	try npm
+	try tlmgr
 fi
