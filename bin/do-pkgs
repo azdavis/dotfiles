@@ -3,12 +3,11 @@
 . "$HOME/.config/lib/cmd_found.sh"
 . "$HOME/.config/lib/panic.sh"
 
-if [ $# -ne 0 ]; then
-	panic "usage: $(basename "$0")"
+if [ $# -gt 1 ]; then
+	panic "usage: $(basename "$0") [<pkg-mgr>]"
 fi
 
-if cmd_found brew; then
-	echo "doing 'brew'"
+do_brew() {
 	brew update
 	brew bundle --verbose --global
 	brew bundle cleanup --force --global
@@ -17,26 +16,40 @@ if cmd_found brew; then
 	brew cask cleanup
 	brew cleanup
 	brew prune
-else
-	echo "'brew' not found"
-fi
+}
 
-if cmd_found tlmgr; then
-	echo "doing 'tlmgr'"
+do_tlmgr() {
 	tlmgr update --self
 	tlmgr update --all
-else
-	echo "'tlmgr' not found"
-fi
+}
 
-if cmd_found npm; then
-	echo "doing 'npm'"
+do_npm() {
 	npm update -g npm
 	for x in "$(npm config get prefix)/lib/node_modules"/*; do
 		if [ "$x" != npm ]; then
 			npm update -g "$x"
 		fi
 	done
+}
+
+try() {
+	if ! cmd_found "$1"; then
+		echo "'$1' not found"
+		return
+	fi
+	echo "doing '$1'"
+	case "$1" in
+	(brew) do_brew ;;
+	(tlmgr) do_tlmgr ;;
+	(npm) do_npm ;;
+	(*) panic "unknown package manager '$1'" ;;
+	esac
+}
+
+if [ $# -eq 1 ]; then
+	try "$1"
 else
-	echo "'npm' not found"
+	try brew
+	try tlmgr
+	try npm
 fi
