@@ -42,6 +42,7 @@
 
 /site-functions/*
 !/site-functions/_diskutil
+!/site-functions/_do-pkgs
 !/site-functions/_mk-gh-repo
 !/site-functions/_mk-proj
 !/site-functions/_rm-ds-stores
