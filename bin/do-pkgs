@@ -3,10 +3,6 @@
 . "$HOME/.config/lib/cmd_found.sh"
 . "$HOME/.config/lib/panic.sh"
 
-if [ $# -gt 1 ]; then
-	panic "usage: $(basename "$0") [<pkg-mgr>]"
-fi
-
 do_brew() {
 	brew update
 	brew bundle --verbose --global
@@ -46,10 +42,10 @@ try() {
 	esac
 }
 
-if [ $# -eq 1 ]; then
-	try "$1"
-else
+if [ $# -eq 0 ]; then
 	try brew
 	try npm
 	try tlmgr
+else
+	try "$@"
 fi
