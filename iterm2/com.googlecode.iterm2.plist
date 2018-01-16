@@ -981,13 +981,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.75558114051818848</real>
+				<real>0.8666666666666667</real>
 				<key>Color Space</key>
-				<string>Calibrated</string>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.75556838512420654</real>
+				<real>0.8666666666666667</real>
 				<key>Red Component</key>
-				<real>0.75559091567993164</real>
+				<real>0.8666666666666667</real>
 			</dict>
 			<key>Send Code When Idle</key>
 			<false/>
