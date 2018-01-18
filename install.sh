@@ -9,10 +9,9 @@ cmd_found() {
 
 check_user() {
 	echo "checking user is not 'root'"
-	if [ "$LOGNAME" != root ]; then
-		return
+	if [ "$LOGNAME" = root ]; then
+		panic "user is 'root'"
 	fi
-	panic "user is 'root'"
 }
 
 find_deps() {
@@ -58,10 +57,9 @@ do_subl() {
 change_shell() {
 	new_shell="$(command -v zsh)"
 	echo "changing shell to '$new_shell'"
-	if [ "$SHELL" = "$new_shell" ]; then
-		return
+	if [ "$SHELL" != "$new_shell" ]; then
+		chsh -s "$new_shell" </dev/tty
 	fi
-	chsh -s "$new_shell" </dev/tty
 }
 
 main() {
