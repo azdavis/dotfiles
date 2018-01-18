@@ -17,21 +17,14 @@ check_user() {
 
 find_deps() {
 	echo "finding dependencies"
-	ok=true
 	if cmd_found xcode-select && ! xcode-select -p >/dev/null; then
-		echo "'Command Line Developer Tools' not found"
-		ok=false
+		panic "'Command Line Developer Tools' not found"
 	fi
 	for x in /bin/sh chsh git zsh; do
 		if ! cmd_found "$x"; then
-			echo "'$x' not found"
-			ok=false
+			panic "'$x' not found"
 		fi
 	done
-	if $ok; then
-		return
-	fi
-	panic "not all dependencies were found"
 }
 
 install_repo() {
