@@ -34,7 +34,7 @@ install_repo() {
 	fi
 	cd "$dst"
 	chmod 700 .
-	if [ "$(git -C "$dst" config remote.origin.url)" = "$url" ]; then
+	if [ "$(git config remote.origin.url)" = "$url" ]; then
 		return
 	fi
 	rm -rf .git
