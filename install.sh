@@ -41,7 +41,7 @@ install_repo() {
 	git init -q
 	git remote add origin "$url"
 	git -c transfer.fsckObjects=true fetch -q origin master
-	git reset -q --hard
+	git reset -q --hard origin/master
 }
 
 do_home() {
