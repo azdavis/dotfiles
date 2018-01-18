@@ -3,21 +3,6 @@ panic() {
 	exit 1
 }
 
-rand_int() {
-	awk "BEGIN{srand();print int($1+rand()*($2-$1+1))}"
-}
-
-mk_tmp_dir() {
-	x=""
-	while true; do
-		x="/tmp/$(rand_int 0 999999999)"
-		if mkdir -m 700 "$x" 2>/dev/null; then
-			break
-		fi
-	done
-	echo "$x"
-}
-
 cmd_found() {
 	command -v "$1" >/dev/null
 }
@@ -51,21 +36,20 @@ find_deps() {
 
 install_repo() {
 	echo "installing '$url' to '$dst'"
-	if [ -d "$dst" ] \
-	&& [ "$(git -C "$dst" config remote.origin.url)" = "$url" ]; then
-		return
-	fi
-	tmp="$(mk_tmp_dir)"
-	trap "rm -r '$tmp'" EXIT
-	git -c transfer.fsckObjects=true clone -q -n --single-branch "$url" "$tmp"
 	if ! [ -d "$dst" ]; then
 		rm -f "$dst"
 		mkdir "$dst"
 	fi
-	chmod 700 "$dst"
-	rm -rf "$dst/.git"
-	mv "$tmp/.git" "$dst/.git"
-	git -C "$dst" reset -q --hard
+	cd "$dst"
+	chmod 700 .
+	if [ "$(git -C "$dst" config remote.origin.url)" = "$url" ]; then
+		return
+	fi
+	rm -rf .git
+	git init -q
+	git remote add origin "$url"
+	git -c transfer.fsckObjects=true fetch -q origin master
+	git reset -q --hard
 }
 
 do_home() {
