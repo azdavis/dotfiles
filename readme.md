@@ -4,26 +4,26 @@ a potpourri of macOS dotfiles
 
 ## install
 
-Note: A path on your system, if it exists, will be replaced with a path (or
+note: a path on your system, if it exists, will be replaced with a path (or
 symlink to a path) in `dotfiles`, if it exists, according to the following
 table:
 
-| # | On your system                                 | In `dotfiles`    |
+| # | on your system                                 | in `dotfiles`    |
 |---|------------------------------------------------|------------------|
 | 1 | `~/.config/.git`                               | N/A              |
 | 2 | `~/.config/<path>`                             | `<path>`         |
 | 3 | `~/.<path>`                                    | `home/<path>`    |
 | 4 | `~/Library/Application Support/Sublime Text 3` | `sublime-text-3` |
 
-When the following commands in `dotfiles` are run:
+when the following commands in `dotfiles` are run:
 
-| Command               | 1 | 2 | 3 | 4 |
+| command               | 1 | 2 | 3 | 4 |
 |-----------------------|---|---|---|---|
-| `install.sh`          | Y | Y | Y | Y |
-| `bin/update-dotfiles` | Y | Y | N | N |
-| `bin/do-home`         | N | N | Y | N |
-| `bin/do-subl`         | N | N | N | Y |
+| `install.sh`          | y | y | y | y |
+| `bin/update-dotfiles` | y | y | n | n |
+| `bin/do-home`         | n | n | y | n |
+| `bin/do-subl`         | n | n | n | y |
 
-You can get the install script and execute it with:
+you can get the install script and execute it with:
 
 	$ curl -fsSL https://git.io/vM2Jb | sh
