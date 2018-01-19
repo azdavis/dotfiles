@@ -6,7 +6,7 @@
 trap 'echo; exit 0' INT
 
 usage() {
-cat <<EOF 1>&2
+cat <<EOF >&2
 usage: $(basename "$0") [options]
 
 options:

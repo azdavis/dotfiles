@@ -3,7 +3,7 @@
 . "$HOME/.config/lib/panic.sh"
 
 usage() {
-cat <<EOF 1>&2
+cat <<EOF >&2
 usage: $(basename "$0") [options] <path>...
 
 options:
