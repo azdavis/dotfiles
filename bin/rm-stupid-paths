@@ -36,6 +36,7 @@ rm -rf $v \
 	.bash_sessions \
 	.bundle \
 	.cache \
+	.ccache \
 	.config/gnome-session \
 	.config/gtk-2.0 \
 	.config/gtk-3.0 \
@@ -54,6 +55,7 @@ rm -rf $v \
 	.node_repl_history \
 	.npm \
 	.oracle_jre_usage \
+	.pki \
 	.python_history \
 	.sh_history \
 	.sqlite_history \
