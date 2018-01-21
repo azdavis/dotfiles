@@ -49,8 +49,8 @@ if [ "$c" = "add" ]; then
 	if [ -z "$p" ]; then
 		usage
 	fi
-	git_str="$git_str$(printf 'password=%s\n' "$p")"
 	git_cmd="approve"
+	git_str="$git_str$(printf 'password=%s\n' "$p")"
 else
 	if [ -n "$p" ]; then
 		usage
