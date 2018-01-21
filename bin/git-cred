@@ -18,7 +18,7 @@ options:
 	-H <host>
 		use the host <host>
 	-p <password>
-		use the password <password>
+		use the password <password> (should only be used with -c add)
 	-P <protocol>
 		use the protocol <protocol> (default: $P)
 	-u <username>
