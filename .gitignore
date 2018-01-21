@@ -23,6 +23,7 @@
 !/bin/do-home
 !/bin/do-pkgs
 !/bin/do-subl
+!/bin/git-add-credential
 !/bin/git-gc-super
 !/bin/git-home
 !/bin/mk-gh-repo
