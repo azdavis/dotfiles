@@ -1,6 +1,6 @@
 #!/bin/sh
 
-c="add"
+c=""
 H=""
 p=""
 P="https"
@@ -12,7 +12,7 @@ usage: $(basename "$0") [options]
 
 options:
 	-c (show | add | rm)
-		use the given command (default: add)
+		use the given command
 	-h
 		show this help
 	-H <host>
@@ -39,7 +39,7 @@ while getopts "c:hH:p:P:u:" opt; do
 done
 shift $((OPTIND - 1))
 
-if [ $# -ne 0 ] || [ -z "$H" ]; then
+if [ $# -ne 0 ] || [ -z "$c" ] || [ -z "$H" ]; then
 	usage
 fi
 
