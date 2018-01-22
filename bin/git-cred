@@ -1,7 +1,7 @@
 #!/bin/sh
 
-c=""
-H=""
+c="add"
+H="github.com"
 p=""
 P="https"
 u="$LOGNAME"
@@ -12,11 +12,11 @@ usage: $(basename "$0") [options]
 
 options:
 	-c (show | add | rm)
-		use the given command
+		use the given command (default: $c)
 	-h
 		show this help
 	-H <host>
-		use the host <host>
+		use the host <host> (default: $H)
 	-p <password>
 		use the password <password> (should only be used with -c add)
 	-P <protocol>
@@ -39,7 +39,7 @@ while getopts "c:hH:p:P:u:" opt; do
 done
 shift $((OPTIND - 1))
 
-if [ $# -ne 0 ] || [ -z "$c" ] || [ -z "$H" ]; then
+if [ $# -ne 0 ]; then
 	usage
 fi
 
