@@ -27,13 +27,14 @@ find_deps() {
 }
 
 install_repo() {
-	echo "installing '$url' to '$dst'"
+	echo "preparing '$dst'"
 	if ! [ -d "$dst" ]; then
 		rm -f "$dst"
 		mkdir "$dst"
 	fi
 	cd "$dst"
 	chmod 700 .
+	echo "installing '$url'"
 	if [ "$(git config remote.origin.url)" = "$url" ]; then
 		return
 	fi
