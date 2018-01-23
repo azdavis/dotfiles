@@ -5,11 +5,11 @@ cat <<EOF >&2
 usage: $(basename "$0") [options] <path>...
 
 options:
+	-h
+		show this help
 	-f
 		ignore nonexistent files and arguments, never prompt, change
 		permissions to allow writing if necessary
-	-h
-		show this help
 	-r
 		remove directories and their contents recursively
 	-v
@@ -21,7 +21,7 @@ exit 1
 f=""
 r=false
 v=""
-while getopts "fhrv" opt; do
+while getopts "hfrv" opt; do
 	case "$opt" in
 	(f) f="-f" ;;
 	(r) r=true ;;

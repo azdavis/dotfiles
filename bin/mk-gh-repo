@@ -8,12 +8,12 @@ cat <<EOF >&2
 usage: $(basename "$0") [options]
 
 options:
+	-h
+		show this help
 	-d <desc>
 		use the repo description <desc>
 	-H <homepage>
 		use the homepage <homepage>
-	-h
-		show this help
 	-n <name>
 		use the repo name <name>
 	-p
@@ -26,7 +26,7 @@ d=""
 H=""
 n="$(basename "$PWD")"
 p=false
-while getopts "d:H:hn:p" opt; do
+while getopts "hd:H:n:p" opt; do
 	case "$opt" in
 	(d) d="$OPTARG" ;;
 	(H) H="$OPTARG" ;;

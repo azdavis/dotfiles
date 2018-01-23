@@ -10,10 +10,10 @@ cat <<EOF >&2
 usage: $(basename "$0") [options]
 
 options:
-	-H <hr>
-		add <hr> hours
 	-h
 		show this help
+	-H <hr>
+		add <hr> hours
 	-m <min>
 		add <min> minutes
 	-s <sec>
@@ -25,7 +25,7 @@ exit 1
 H=0
 m=0
 s=0
-while getopts "H:hm:s:" opt; do
+while getopts "hH:m:s:" opt; do
 	case "$opt" in
 	(H) H="$OPTARG" ;;
 	(m) m="$OPTARG" ;;

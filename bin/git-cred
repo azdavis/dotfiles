@@ -11,10 +11,10 @@ cat <<EOF >&2
 usage: $(basename "$0") [options]
 
 options:
-	-c (show | add | rm)
-		use the given command (default: $c)
 	-h
 		show this help
+	-c (show | add | rm)
+		use the given command (default: $c)
 	-H <host>
 		use the host <host> (default: $H)
 	-p <password>
@@ -27,7 +27,7 @@ EOF
 exit 1
 }
 
-while getopts "c:hH:p:P:u:" opt; do
+while getopts "hc:H:p:P:u:" opt; do
 	case "$opt" in
 	(c) c="$OPTARG" ;;
 	(H) H="$OPTARG" ;;
