@@ -2,6 +2,7 @@
 	"extensions":
 	[
 		"c0",
-		"c1"
+		"c1",
+		"ispc"
 	]
 }
