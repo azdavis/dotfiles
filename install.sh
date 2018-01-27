@@ -19,7 +19,7 @@ find_deps() {
 	if cmd_found xcode-select && ! xcode-select -p >/dev/null; then
 		panic "'Command Line Developer Tools' not found"
 	fi
-	for x in /bin/sh chsh git zsh; do
+	for x in /bin/sh chsh git; do
 		if ! cmd_found "$x"; then
 			panic "'$x' not found"
 		fi
@@ -56,8 +56,11 @@ do_subl() {
 }
 
 change_shell() {
-	new_shell="$(command -v zsh)"
-	echo "changing shell to '$new_shell'"
+	echo "changing shell to zsh"
+	if ! new_shell="$(grep '/zsh$' /etc/shells | head -n 1)"; then
+		echo "error: zsh is not an allowed shell"
+		return
+	fi
 	if [ "$SHELL" != "$new_shell" ]; then
 		chsh -s "$new_shell" </dev/tty
 	fi
