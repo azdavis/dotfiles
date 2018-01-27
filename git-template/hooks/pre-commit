@@ -1,5 +1,0 @@
-#!/bin/sh -eu
-
-if [ -f GNUmakefile ] || [ -f Makefile ] || [ -f makefile ]; then
-	exec make
-fi
