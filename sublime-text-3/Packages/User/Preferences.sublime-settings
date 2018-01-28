@@ -96,7 +96,8 @@
 		"build",
 		"CVS",
 		"elm-stuff",
-		"node_modules"
+		"node_modules",
+		"public"
 	],
 	"font_face": "input",
 	"font_options":
