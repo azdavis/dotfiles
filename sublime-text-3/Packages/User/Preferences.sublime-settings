@@ -89,6 +89,7 @@
 	"folder_exclude_patterns":
 	[
 		"*.dSYM",
+		".cache",
 		".git",
 		".hg",
 		".stack-work",
