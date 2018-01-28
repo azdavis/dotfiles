@@ -11,10 +11,9 @@ all: build/main.pdf
 clean:
 	rm -rf build
 
-build/%.dvi: src/%.tex src/base.tex
+build/%.dvi: src/%.tex
 	mkdir -p $(dir $@)
-	$(TEXC) -output-directory=$(dir $@) $(TEXFLAGS) $< $(Q)
-	$(TEXC) -output-directory=$(dir $@) $(TEXFLAGS) $< $(Q)
+	for x in 1 2; do $(TEXC) -output-directory=$(dir $@) $(TEXFLAGS) $^ $(Q); done
 
 build/%.pdf: build/%.dvi
 	$(DVI2PDF) -o $@ $< $(Q)
