@@ -11,5 +11,5 @@ clean:
 	rm -rf build
 
 build/%.out: src/%.c
-	mkdir -p $(dir $@)
+	mkdir -p build
 	$(CC) -o $@ $(CFLAGS) $<

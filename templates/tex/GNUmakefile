@@ -11,5 +11,5 @@ clean:
 	rm -rf build
 
 build/%.pdf: src/%.tex
-	mkdir -p $(dir $@)
-	for x in 1 2; do $(TEXC) -output-directory=$(dir $@) $(TEXFLAGS) $^ $(Q); done
+	mkdir -p build
+	for x in 1 2; do $(TEXC) -output-directory=build $(TEXFLAGS) $^ $(Q); done
