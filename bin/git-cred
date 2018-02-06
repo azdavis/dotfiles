@@ -8,7 +8,8 @@ u="$LOGNAME"
 
 usage() {
 cat <<EOF >&2
-usage: $(basename "$0") [options]
+usage:
+	$(basename "$0") [options]
 
 options:
 	-h

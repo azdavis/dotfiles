@@ -2,7 +2,8 @@
 
 usage() {
 cat <<EOF >&2
-usage: $(basename "$0") [options] <path>...
+usage:
+	$(basename "$0") [options] <path>...
 
 options:
 	-h
