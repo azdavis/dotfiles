@@ -16,11 +16,6 @@ do_brew() {
 
 do_npm() {
 	npm update -g npm
-	for x in "$(npm config get prefix)/lib/node_modules"/*; do
-		if [ "$x" != npm ]; then
-			npm update -g "$x"
-		fi
-	done
 }
 
 do_tlmgr() {
