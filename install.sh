@@ -7,13 +7,6 @@ cmd_found() {
 	command -v "$1" >/dev/null
 }
 
-check_user() {
-	echo "checking user is not 'root'"
-	if [ "$LOGNAME" = root ]; then
-		panic "user is 'root'"
-	fi
-}
-
 find_deps() {
 	echo "finding dependencies"
 	if cmd_found xcode-select && ! xcode-select -p >/dev/null; then
@@ -70,7 +63,6 @@ main() {
 	set -eu
 	url="https://github.com/azdavis/dotfiles.git"
 	dst="$HOME/.config"
-	check_user
 	find_deps
 	install_repo
 	do_home
