@@ -12,4 +12,4 @@ clean:
 
 build/%.pdf: src/%.tex
 	mkdir -p build
-	for x in 1 2; do $(TEXC) -output-directory=build $(TEXFLAGS) $^ $(Q); done
+	for x in 1 2; do $(TEXC) -output-directory=build $(TEXFLAGS) $< $(Q); done
