@@ -1,52 +1,52 @@
 #compdef diskutil
 
 local cmds=(
-	"activity:Continuous log of system-wide disk arbitration"
-	"apfs:Perform additional verbs related to APFS"
-	"appleRAID:Perform additional verbs related to AppleRAID"
-	"coreStorage:Perform additional verbs related to CoreStorage"
-	"disableJournal:Disable HFS+ journaling on a mounted HFS+ volume"
-	"disableOwnership:Ignore on-disk User/Group IDs on a mounted volume"
-	"eject:Eject a disk"
-	"enableJournal:Enable HFS+ journaling on a mounted HFS+ volume"
-	"enableOwnership:Exact on-disk User/Group IDs on a mounted volume"
-	"eraseDisk:Erase an existing disk, removing all volumes"
-	"eraseOptical:Erase optical media (CD/RW, DVD/RW, etc.)"
-	"eraseVolume:Erase an existing volume"
-	"info:Get information on a specific disk or partition"
-	"information:Get information on a specific disk or partition"
-	"list:List the partitions of a disk"
-	"listFilesystems:List file systems available for formatting"
-	"mergePartitions:Combine two or more existing partitions into one"
-	"mount:Mount a single volume"
-	"mountDisk:Mount an entire disk (all mountable volumes)"
-	"moveJournal:Move the HFS+ journal onto another volume"
-	"partitionDisk:(re)Partition a disk, removing all volumes"
-	"randomDisk:Erase a disk, writing random data to the media"
-	"reformat:Erase an existing volume with same name and type"
-	"rename:Rename a volume"
-	"renameVolume:Rename a volume"
-	"repairDisk:Repair the components of a partition map of a disk"
-	"repairVolume:Repair the file system data structures of a volume"
-	"resizeVolume:Resize a volume, increasing or decreasing its size"
-	"secureErase:Securely erase a disk or freespace on a volume"
-	"splitPartition:Split an existing partition into two or more"
-	"umount:Unmount a single volume"
-	"unmount:Unmount a single volume"
-	"unmountDisk:Unmount an entire disk (all volumes)"
-	"verifyDisk:Verify the components of a partition map of a disk"
-	"verifyVolume:Verify the file system data structures of a volume"
-	"zeroDisk:Erase a disk, writing zeros to the media"
+    "activity:Continuous log of system-wide disk arbitration"
+    "apfs:Perform additional verbs related to APFS"
+    "appleRAID:Perform additional verbs related to AppleRAID"
+    "coreStorage:Perform additional verbs related to CoreStorage"
+    "disableJournal:Disable HFS+ journaling on a mounted HFS+ volume"
+    "disableOwnership:Ignore on-disk User/Group IDs on a mounted volume"
+    "eject:Eject a disk"
+    "enableJournal:Enable HFS+ journaling on a mounted HFS+ volume"
+    "enableOwnership:Exact on-disk User/Group IDs on a mounted volume"
+    "eraseDisk:Erase an existing disk, removing all volumes"
+    "eraseOptical:Erase optical media (CD/RW, DVD/RW, etc.)"
+    "eraseVolume:Erase an existing volume"
+    "info:Get information on a specific disk or partition"
+    "information:Get information on a specific disk or partition"
+    "list:List the partitions of a disk"
+    "listFilesystems:List file systems available for formatting"
+    "mergePartitions:Combine two or more existing partitions into one"
+    "mount:Mount a single volume"
+    "mountDisk:Mount an entire disk (all mountable volumes)"
+    "moveJournal:Move the HFS+ journal onto another volume"
+    "partitionDisk:(re)Partition a disk, removing all volumes"
+    "randomDisk:Erase a disk, writing random data to the media"
+    "reformat:Erase an existing volume with same name and type"
+    "rename:Rename a volume"
+    "renameVolume:Rename a volume"
+    "repairDisk:Repair the components of a partition map of a disk"
+    "repairVolume:Repair the file system data structures of a volume"
+    "resizeVolume:Resize a volume, increasing or decreasing its size"
+    "secureErase:Securely erase a disk or freespace on a volume"
+    "splitPartition:Split an existing partition into two or more"
+    "umount:Unmount a single volume"
+    "unmount:Unmount a single volume"
+    "unmountDisk:Unmount an entire disk (all volumes)"
+    "verifyDisk:Verify the components of a partition map of a disk"
+    "verifyVolume:Verify the file system data structures of a volume"
+    "zeroDisk:Erase a disk, writing zeros to the media"
 )
 
 _cmds() {
-	_describe cmds cmds
+    _describe cmds cmds
 }
 
 _disks() {
-	local -a disks
-	disks=( /Volumes/* )
-	_describe disks disks
+    local -a disks
+    disks=( /Volumes/* )
+    _describe disks disks
 }
 
 _arguments "1:cmds:_cmds" "2:disks:_disks"

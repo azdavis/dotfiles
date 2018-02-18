@@ -6,19 +6,19 @@
 usage() {
 cat <<EOF >&2
 usage:
-	$(basename "$0") [options] <path>
+    $(basename "$0") [options] <path>
 
 options:
-	-h
-		show this help
-	-d <desc>
-		use the project description <desc>
-	-f
-		create <path> even if it already exists
-	-t (c | js | tex)
-		use the given type
-	-v
-		explain what is being done
+    -h
+        show this help
+    -d <desc>
+        use the project description <desc>
+    -f
+        create <path> even if it already exists
+    -t (c | js | tex)
+        use the given type
+    -v
+        explain what is being done
 EOF
 exit 1
 }
@@ -28,51 +28,51 @@ f=false
 t=""
 v=false
 while getopts "hd:ft:v" opt; do
-	case "$opt" in
-	(d) d="$OPTARG" ;;
-	(f) f=true ;;
-	(t) t="$OPTARG" ;;
-	(v) v=true ;;
-	(*) usage ;;
-	esac
+    case "$opt" in
+    (d) d="$OPTARG" ;;
+    (f) f=true ;;
+    (t) t="$OPTARG" ;;
+    (v) v=true ;;
+    (*) usage ;;
+    esac
 done
 shift $((OPTIND - 1))
 
 if [ $# -ne 1 ]; then
-	usage
+    usage
 fi
 
 # this is NOT realpath. it just gives a path which starts with <slash>. this
 # might contain . and .. which realpath tries to avoid.
 abspath() {
-	echo "$(cd "$(dirname "$1")" && pwd -P)/$(basename "$1")"
+    echo "$(cd "$(dirname "$1")" && pwd -P)/$(basename "$1")"
 }
 
 proj_path="$(abspath "$1")"
 proj_desc="$d"
 
 note() {
-	if $v; then
-		echo "$1"
-	fi
+    if $v; then
+        echo "$1"
+    fi
 }
 
 if ! git_name="$(git config user.name)"; then
-	panic "no git user.name found"
+    panic "no git user.name found"
 elif ! git_email="$(git config user.email)"; then
-	panic "no git user.email found"
+    panic "no git user.email found"
 fi
 
 proj_name="$(basename "$proj_path")"
 if [ -e "$proj_name" ] && ! $f; then
-	panic "'$proj_name' already exists"
+    panic "'$proj_name' already exists"
 elif echo "$proj_name" | grep -q '\s'; then
-	panic "'$proj_name' has whitespace"
+    panic "'$proj_name' has whitespace"
 fi
 
 templates="$HOME/.config/templates"
 if ! [ -d "$templates/$t" ]; then
-	panic "invalid type: '$t'"
+    panic "invalid type: '$t'"
 fi
 
 github_name="$(get_github_cred username)"
@@ -80,53 +80,53 @@ github_name="$(get_github_cred username)"
 year="$(date +%Y)"
 
 replace_vars() {
-	cat \
-		| sed "s/{{git_email}}/$git_email/g" \
-		| sed "s/{{git_name}}/$git_name/g" \
-		| sed "s/{{github_name}}/$github_name/g" \
-		| sed "s/{{proj_desc}}/$proj_desc/g" \
-		| sed "s/{{proj_name}}/$proj_name/g" \
-		| sed "s/{{year}}/$year/g"
+    cat \
+        | sed "s/{{git_email}}/$git_email/g" \
+        | sed "s/{{git_name}}/$git_name/g" \
+        | sed "s/{{github_name}}/$github_name/g" \
+        | sed "s/{{proj_desc}}/$proj_desc/g" \
+        | sed "s/{{proj_name}}/$proj_name/g" \
+        | sed "s/{{year}}/$year/g"
 }
 
 dst_name() {
-	echo "$proj_path/$1" | replace_vars
+    echo "$proj_path/$1" | replace_vars
 }
 
 add_dir() {
-	b="$(basename "$1")"
-	if [ "$b" = . ] || [ "$b" = .. ]; then
-		return
-	fi
-	mkdir -p "$(dst_name "$1")"
-	add_item "$1"
+    b="$(basename "$1")"
+    if [ "$b" = . ] || [ "$b" = .. ]; then
+        return
+    fi
+    mkdir -p "$(dst_name "$1")"
+    add_item "$1"
 }
 
 add_file() {
-	cat "$1" | replace_vars >>"$(dst_name "$1")"
+    cat "$1" | replace_vars >>"$(dst_name "$1")"
 }
 
 add_item() {
-	for x in "$1"/* "$1"/.*; do
-		if [ -d "$x" ]; then
-			add_dir "$x"
-		else
-			add_file "$x"
-		fi
-	done
+    for x in "$1"/* "$1"/.*; do
+        if [ -d "$x" ]; then
+            add_dir "$x"
+        else
+            add_file "$x"
+        fi
+    done
 }
 
 add_template() {
-	note "adding template '$1'"
-	cd "$templates/$1"
-	add_item .
+    note "adding template '$1'"
+    cd "$templates/$1"
+    add_item .
 }
 
 note "creating '$proj_name'"
 mkdir -p "$proj_path/src"
 add_template "_base"
 if [ -n "$t" ]; then
-	add_template "$t"
+    add_template "$t"
 fi
 
 cd "$proj_path"

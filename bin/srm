@@ -3,18 +3,18 @@
 usage() {
 cat <<EOF >&2
 usage:
-	$(basename "$0") [options] <path>...
+    $(basename "$0") [options] <path>...
 
 options:
-	-h
-		show this help
-	-f
-		ignore nonexistent files and arguments, never prompt, change
-		permissions to allow writing if necessary
-	-r
-		remove directories and their contents recursively
-	-v
-		explain what is being done
+    -h
+        show this help
+    -f
+        ignore nonexistent files and arguments, never prompt, change
+        permissions to allow writing if necessary
+    -r
+        remove directories and their contents recursively
+    -v
+        explain what is being done
 EOF
 exit 1
 }
@@ -23,20 +23,20 @@ f=""
 r=false
 v=""
 while getopts "hfrv" opt; do
-	case "$opt" in
-	(f) f="-f" ;;
-	(r) r=true ;;
-	(v) v="-v" ;;
-	(*) usage ;;
-	esac
+    case "$opt" in
+    (f) f="-f" ;;
+    (r) r=true ;;
+    (v) v="-v" ;;
+    (*) usage ;;
+    esac
 done
 shift $((OPTIND - 1))
 
 if [ $# -eq 0 ]; then
-	usage
+    usage
 elif $r; then
-	find "$@" -type f -exec shred $f $v -zn 4 -- {} \;
-	rm -r $f $v -- "$@"
+    find "$@" -type f -exec shred $f $v -zn 4 -- {} \;
+    rm -r $f $v -- "$@"
 else
-	shred $f $v -zun 4 -- "$@"
+    shred $f $v -zun 4 -- "$@"
 fi

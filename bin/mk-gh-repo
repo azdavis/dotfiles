@@ -6,19 +6,19 @@
 usage() {
 cat <<EOF >&2
 usage:
-	$(basename "$0") [options]
+    $(basename "$0") [options]
 
 options:
-	-h
-		show this help
-	-d <desc>
-		use the repo description <desc>
-	-H <homepage>
-		use the homepage <homepage>
-	-n <name>
-		use the repo name <name>
-	-p
-		make the repo private
+    -h
+        show this help
+    -d <desc>
+        use the repo description <desc>
+    -H <homepage>
+        use the homepage <homepage>
+    -n <name>
+        use the repo name <name>
+    -p
+        make the repo private
 EOF
 exit 1
 }
@@ -28,18 +28,18 @@ H=""
 n="$(basename "$PWD")"
 p=false
 while getopts "hd:H:n:p" opt; do
-	case "$opt" in
-	(d) d="$OPTARG" ;;
-	(H) H="$OPTARG" ;;
-	(n) n="$OPTARG" ;;
-	(p) p=true ;;
-	(*) usage ;;
-	esac
+    case "$opt" in
+    (d) d="$OPTARG" ;;
+    (H) H="$OPTARG" ;;
+    (n) n="$OPTARG" ;;
+    (p) p=true ;;
+    (*) usage ;;
+    esac
 done
 shift $((OPTIND - 1))
 
 if [ $# -ne 0 ]; then
-	usage
+    usage
 fi
 
 git rev-parse
@@ -48,9 +48,9 @@ github_name="$(get_github_cred username)"
 github_password="$(get_github_cred password)"
 
 for x in "$d" "$H" "$n" "$github_name" "$github_password"; do
-	if echo "$x" | grep -qF '"'; then
-		panic "'$x' contains quotes"
-	fi
+    if echo "$x" | grep -qF '"'; then
+        panic "'$x' contains quotes"
+    fi
 done
 
 # there must be spaces surrounding { and } in the json data
@@ -58,17 +58,17 @@ done
 url="https://github.com/$github_name/$n.git"
 git remote add origin "$url"
 if [ \
-	"$(curl \
-		-H "Accept: application/vnd.github.v3+json" \
-		-H "Content-Type: application/json" \
-		-H "Authorization: token $github_password" \
-		-X POST \
-		-d " { \"name\":\"$n\",\"description\":\"$d\",\"homepage\":\"$H\",\"private\":$p } " \
-		-s \
-		-o /dev/null \
-		-w "%{http_code}" \
-		"https://api.github.com/user/repos" \
-	)" -ne 201 \
+    "$(curl \
+        -H "Accept: application/vnd.github.v3+json" \
+        -H "Content-Type: application/json" \
+        -H "Authorization: token $github_password" \
+        -X POST \
+        -d " { \"name\":\"$n\",\"description\":\"$d\",\"homepage\":\"$H\",\"private\":$p } " \
+        -s \
+        -o /dev/null \
+        -w "%{http_code}" \
+        "https://api.github.com/user/repos" \
+    )" -ne 201 \
 ]; then
-	panic "could not create"
+    panic "could not create"
 fi

@@ -5,60 +5,60 @@
 usage() {
 cat <<EOF >&2
 usage:
-	$(basename "$0") [options]
+    $(basename "$0") [options]
 
 options:
-	-h
-		show this help
-	-v
-		explain what is being done
+    -h
+        show this help
+    -v
+        explain what is being done
 EOF
 exit 1
 }
 
 v=""
 while getopts "hv" opt; do
-	case "$opt" in
-	(v) v="-v" ;;
-	(*) usage ;;
-	esac
+    case "$opt" in
+    (v) v="-v" ;;
+    (*) usage ;;
+    esac
 done
 shift $((OPTIND - 1))
 
 if [ $# -ne 0 ]; then
-	usage
+    usage
 fi
 
 cd
 "$HOME/.config/bin/rm-ds-stores" $v .
 
 rm -rf $v \
-	.bash_history \
-	.bash_sessions \
-	.bundle \
-	.cache \
-	.ccache \
-	.config/gnome-session \
-	.config/gtk-2.0 \
-	.config/gtk-3.0 \
-	.config/nautilus \
-	.config/update-notifier \
-	.config/upstart \
-	.elm \
-	.gdb_history \
-	.gem \
-	.ghc \
-	.idris/repl/history \
-	.lldb \
-	.mplayer \
-	.nano \
-	.node-gyp \
-	.node_repl_history \
-	.npm \
-	.oracle_jre_usage \
-	.pki \
-	.python_history \
-	.sh_history \
-	.sqlite_history \
-	.viminfo \
-	.zcompdump
+    .bash_history \
+    .bash_sessions \
+    .bundle \
+    .cache \
+    .ccache \
+    .config/gnome-session \
+    .config/gtk-2.0 \
+    .config/gtk-3.0 \
+    .config/nautilus \
+    .config/update-notifier \
+    .config/upstart \
+    .elm \
+    .gdb_history \
+    .gem \
+    .ghc \
+    .idris/repl/history \
+    .lldb \
+    .mplayer \
+    .nano \
+    .node-gyp \
+    .node_repl_history \
+    .npm \
+    .oracle_jre_usage \
+    .pki \
+    .python_history \
+    .sh_history \
+    .sqlite_history \
+    .viminfo \
+    .zcompdump

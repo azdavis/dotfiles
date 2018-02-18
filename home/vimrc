@@ -5,6 +5,7 @@ filetype plugin indent on
 
 set backspace=indent,eol,start
 set colorcolumn=80
+set expandtab
 set hlsearch
 set number
 set ruler

@@ -1,8 +1,8 @@
 {
-	"extensions":
-	[
-		"c0",
-		"c1",
-		"ispc"
-	]
+    "extensions":
+    [
+        "c0",
+        "c1",
+        "ispc"
+    ]
 }

@@ -1,11 +1,11 @@
 {
-	"extensions":
-	[
-		".zprofile",
-		".zshenv",
-		".zshrc",
-		"zprofile",
-		"zshenv",
-		"zshrc"
-	]
+    "extensions":
+    [
+        ".zprofile",
+        ".zshenv",
+        ".zshrc",
+        "zprofile",
+        "zshenv",
+        "zshrc"
+    ]
 }

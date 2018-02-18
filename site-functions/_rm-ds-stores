@@ -1,9 +1,9 @@
 #compdef rm-ds-stores
 
 local opts=(
-	"-h[show this help]"
-	"-v[explain what is being done]"
-	"*:files:_files"
+    "-h[show this help]"
+    "-v[explain what is being done]"
+    "*:files:_files"
 )
 
 _arguments -s $opts

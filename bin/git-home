@@ -3,25 +3,25 @@
 . "$HOME/.config/lib/panic.sh"
 
 if [ $# -ne 0 ]; then
-	panic "usage: $(basename "$0")"
+    panic "usage: $(basename "$0")"
 fi
 
 git rev-parse
 
 branch="$(git rev-parse --abbrev-ref HEAD 2>/dev/null)" || :
 if [ "$branch" = HEAD ]; then
-	panic "not on a branch"
+    panic "not on a branch"
 elif ! remote="$(git config branch.$branch.remote)"; then
-	panic "could not get remote for branch '$branch'"
+    panic "could not get remote for branch '$branch'"
 elif ! url="$(git config remote.$remote.url)"; then
-	panic "could not get url for remote '$remote'"
+    panic "could not get url for remote '$remote'"
 fi
 url="$(echo "$url" | sed 's/\.git$//')"
 
 if printf '%s' "$url" | \
-	grep -qe '^https://github.com/' -e '^https://gitlab.com/' \
+    grep -qe '^https://github.com/' -e '^https://gitlab.com/' \
 ; then
-	open "$url/tree/$branch"
+    open "$url/tree/$branch"
 else
-	open "$url"
+    open "$url"
 fi

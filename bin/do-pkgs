@@ -4,43 +4,43 @@
 . "$HOME/.config/lib/panic.sh"
 
 do_brew() {
-	brew update
-	brew bundle --verbose --global
-	brew bundle cleanup --force --global
-	brew upgrade
-	brew unlink coreutils >/dev/null
-	brew cask cleanup
-	brew cleanup
-	brew prune
+    brew update
+    brew bundle --verbose --global
+    brew bundle cleanup --force --global
+    brew upgrade
+    brew unlink coreutils >/dev/null
+    brew cask cleanup
+    brew cleanup
+    brew prune
 }
 
 do_npm() {
-	npm update -g npm
+    npm update -g npm
 }
 
 do_tlmgr() {
-	tlmgr update --self
-	tlmgr update --all
+    tlmgr update --self
+    tlmgr update --all
 }
 
 try() {
-	if ! cmd_found "$1"; then
-		echo "'$1' not found"
-		return
-	fi
-	echo "doing '$1'"
-	case "$1" in
-	(brew) do_brew ;;
-	(npm) do_npm ;;
-	(tlmgr) do_tlmgr ;;
-	(*) panic "unknown package manager '$1'" ;;
-	esac
+    if ! cmd_found "$1"; then
+        echo "'$1' not found"
+        return
+    fi
+    echo "doing '$1'"
+    case "$1" in
+    (brew) do_brew ;;
+    (npm) do_npm ;;
+    (tlmgr) do_tlmgr ;;
+    (*) panic "unknown package manager '$1'" ;;
+    esac
 }
 
 if [ $# -eq 0 ]; then
-	try brew
-	try npm
-	try tlmgr
+    try brew
+    try npm
+    try tlmgr
 else
-	try "$@"
+    try "$@"
 fi

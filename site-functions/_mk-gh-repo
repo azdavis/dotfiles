@@ -1,11 +1,11 @@
 #compdef mk-gh-repo
 
 local opts=(
-	"-d[use the repo description <desc>]:desc:"
-	"-h[show this help]"
-	"-n[use the repo name <name>]:name:"
-	"-p[make the repo private]"
-	"*:files:_files"
+    "-d[use the repo description <desc>]:desc:"
+    "-h[show this help]"
+    "-n[use the repo name <name>]:name:"
+    "-p[make the repo private]"
+    "*:files:_files"
 )
 
 _arguments -s $opts

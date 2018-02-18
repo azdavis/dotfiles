@@ -1,13 +1,13 @@
 #compdef do-pkgs
 
 local cmds=(
-	"brew"
-	"npm"
-	"tlmgr"
+    "brew"
+    "npm"
+    "tlmgr"
 )
 
 _cmds() {
-	_describe cmds cmds
+    _describe cmds cmds
 }
 
 _arguments "1:cmds:_cmds"

@@ -5,28 +5,28 @@
 . "$HOME/.config/lib/panic.sh"
 
 if [ $# -ne 0 ]; then
-	panic "usage: $(basename "$0")"
+    panic "usage: $(basename "$0")"
 elif ! cmd_found subl; then
-	echo "'subl' not found"
-	exit
+    echo "'subl' not found"
+    exit
 fi
 
 config_subl="$HOME/.config/sublime-text-3"
 
 if [ "$(uname)" = Darwin ]; then
-	force_symlink \
-		"$config_subl" \
-		"$HOME/Library/Application Support/Sublime Text 3"
+    force_symlink \
+        "$config_subl" \
+        "$HOME/Library/Application Support/Sublime Text 3"
 fi
 
 rm -rf \
-	"$config_subl/Backup" \
-	"$config_subl/Cache" \
-	"$config_subl/Index" \
-	"$config_subl/Local/Auto Save Session.sublime_session" \
-	"$config_subl/Local/Session.sublime_session" \
-	"$config_subl/Packages/User/oscrypto-ca-bundle.crt" \
-	"$config_subl/Packages/User/Package Control.cache" \
-	"$config_subl/Packages/User/Package Control.last-run" \
-	"$config_subl/Packages/User/Package Control.merged-ca-bundle" \
-	"$config_subl/Packages/User/Package Control.user-ca-bundle"
+    "$config_subl/Backup" \
+    "$config_subl/Cache" \
+    "$config_subl/Index" \
+    "$config_subl/Local/Auto Save Session.sublime_session" \
+    "$config_subl/Local/Session.sublime_session" \
+    "$config_subl/Packages/User/oscrypto-ca-bundle.crt" \
+    "$config_subl/Packages/User/Package Control.cache" \
+    "$config_subl/Packages/User/Package Control.last-run" \
+    "$config_subl/Packages/User/Package Control.merged-ca-bundle" \
+    "$config_subl/Packages/User/Package Control.user-ca-bundle"
