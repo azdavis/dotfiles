@@ -24,6 +24,9 @@ when the following commands in `dotfiles` are run:
 | `bin/do-home`         | n | n | y | n |
 | `bin/do-subl`         | n | n | n | y |
 
-you can get the install script and execute it with:
+if you're OK with both this and the possible [dangers][1] of curl-pipe-sh, you
+can get the install script and execute it with:
 
 	$ curl -fsSL https://git.io/vM2Jb | sh
+
+[1]: https://jordaneldredge.com/blog/one-way-curl-pipe-sh-install-scripts-can-be-dangerous/
