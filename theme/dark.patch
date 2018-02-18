@@ -7,13 +7,13 @@
 --- a/sublime-text-3/Packages/User/Preferences.sublime-settings
 +++ b/sublime-text-3/Packages/User/Preferences.sublime-settings
 @@ -103,2 +103,3 @@
-     [
-+        "gray_antialias",
-         "no_bold",
+ 	[
++		"gray_antialias",
+ 		"no_bold",
 @@ -170,2 +171,3 @@
-     [
-+        "gray_antialias"
-     ],
+ 	[
++		"gray_antialias",
+ 	],
 --- a/sublime-text-3/Packages/User/theme.tmTheme
 +++ b/sublime-text-3/Packages/User/theme.tmTheme
 @@ -10,15 +10,15 @@
