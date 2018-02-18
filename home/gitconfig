@@ -1,38 +1,38 @@
 [advice]
-    detachedHead = false
+	detachedHead = false
 [alias]
-    git = !exec git
-    praise = blame
-    unstash = stash pop
+	git = !exec git
+	praise = blame
+	unstash = stash pop
 [commit]
-    verbose = 1
+	verbose = 1
 [core]
-    editor = subl -w
-    eol = lf
-    pager = less -FRSXqx4
-    quotePath = false
-    untrackedCache = true
+	editor = subl -w
+	eol = lf
+	pager = less -FRSXqx4
+	quotePath = false
+	untrackedCache = true
 [diff]
-    algorithm = histogram
+	algorithm = histogram
 [init]
-    templateDir = ~/.config/git-template
+	templateDir = ~/.config/git-template
 [log]
-    date = iso8601
-    decorate = true
+	date = iso8601
+	decorate = true
 [merge]
-    conflictStyle = diff3
-    ff = only
+	conflictStyle = diff3
+	ff = only
 [pull]
-    rebase = preserve
+	rebase = preserve
 [push]
-    default = simple
+	default = simple
 [status]
-    branch = true
-    short = true
+	branch = true
+	short = true
 [transfer]
-    fsckObjects = true
+	fsckObjects = true
 [url "https://"]
-    insteadOf = git://
+	insteadOf = git://
 [user]
-    email = ariel.z.davis@icloud.com
-    name = Ariel Davis
+	email = ariel.z.davis@icloud.com
+	name = Ariel Davis

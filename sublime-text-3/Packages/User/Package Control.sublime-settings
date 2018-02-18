@@ -1,16 +1,16 @@
 {
-    "bootstrapped": true,
-    "in_process_packages":
-    [
-    ],
-    "installed_packages":
-    [
-        "Babel",
-        "CUDA C++",
-        "EditorConfig",
-        "Git Commit Message Syntax",
-        "Package Control",
-        "SingleTrailingNewLine",
-        "SML (Standard ML)"
-    ]
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Babel",
+		"CUDA C++",
+		"EditorConfig",
+		"Git Commit Message Syntax",
+		"Package Control",
+		"SingleTrailingNewLine",
+		"SML (Standard ML)"
+	]
 }
