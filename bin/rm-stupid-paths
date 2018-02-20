@@ -49,6 +49,7 @@ rm -rf $v \
     .gem \
     .ghc \
     .idris/repl/history \
+    .jspm \
     .lldb \
     .mplayer \
     .nano \
