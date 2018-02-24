@@ -50,7 +50,8 @@ do_subl() {
 
 change_shell() {
     echo "changing shell to zsh"
-    if ! new_shell="$(grep '/zsh$' /etc/shells | head -n 1)"; then
+    new_shell="$(grep '/zsh$' /etc/shells | head -n 1)"
+    if [ -z "$new_shell" ]; then
         echo "error: zsh is not an allowed shell"
         return
     fi
