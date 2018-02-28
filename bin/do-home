@@ -1,4 +1,6 @@
-#!/bin/sh -eu
+#!/bin/sh
+
+set -eu
 
 . "$HOME/.config/lib/force_symlink.sh"
 . "$HOME/.config/lib/panic.sh"

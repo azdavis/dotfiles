@@ -1,4 +1,6 @@
-#!/bin/sh -eu
+#!/bin/sh
+
+set -eu
 
 . "$HOME/.config/lib/is_int.sh"
 . "$HOME/.config/lib/panic.sh"
