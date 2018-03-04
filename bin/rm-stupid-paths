@@ -58,6 +58,7 @@ rm -rf $v \
     .node-gyp \
     .node_repl_history \
     .npm \
+    .nv \
     .oracle_jre_usage \
     .pki \
     .python_history \
