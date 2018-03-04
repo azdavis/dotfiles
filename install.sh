@@ -33,7 +33,8 @@ install_repo() {
     fi
     rm -rf .git
     git init -q
-    git remote add origin "$url"
+    git config remote.origin.url "$url"
+    git config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
     git fetch -q origin master:refs/remotes/origin/master
     git reset -q --hard origin/master
 }
