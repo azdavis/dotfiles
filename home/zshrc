@@ -36,7 +36,6 @@ setopt rmstarsilent
 
 alias df="df -h"
 alias du="du -chs"
-alias fuck="srm"
 alias ga="git add"
 alias gb="git branch"
 alias gc="git commit"
