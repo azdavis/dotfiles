@@ -90,6 +90,7 @@
 	[
 		"*.dSYM",
 		".cache",
+		".cm",
 		".git",
 		".hg",
 		".stack-work",
