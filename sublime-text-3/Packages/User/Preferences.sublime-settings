@@ -100,7 +100,7 @@
 		"elm-stuff",
 		"node_modules"
 	],
-	"font_face": "input",
+	"font_face": "Input",
 	"font_options":
 	[
 		"no_bold",
