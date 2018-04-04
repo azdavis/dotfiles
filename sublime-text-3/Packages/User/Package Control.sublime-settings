@@ -5,12 +5,8 @@
 	],
 	"installed_packages":
 	[
-		"Babel",
-		"CUDA C++",
 		"EditorConfig",
-		"Git Commit Message Syntax",
 		"Package Control",
-		"SingleTrailingNewLine",
-		"SML (Standard ML)"
+		"SingleTrailingNewLine"
 	]
 }
