@@ -27,10 +27,10 @@
 -                    <string>#111</string>
 +                    <string>#ddd</string>
                      <key>selection</key>
--                    <string>#bbb</string>
+-                    <string>#ccc</string>
 +                    <string>#333</string>
                      <key>lineHighlight</key>
--                    <string>#ccc</string>
+-                    <string>#ddd</string>
 +                    <string>#222</string>
                      <key>gutterForeground</key>
 -                    <string>#999</string>
