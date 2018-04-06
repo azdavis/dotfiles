@@ -1,7 +1,6 @@
 [advice]
 	detachedHead = false
 [alias]
-	git = !exec git
 	praise = blame
 	unstash = stash pop
 [commit]
