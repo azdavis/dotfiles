@@ -35,7 +35,7 @@ install_repo() {
     git init -q
     git config remote.origin.url "$url"
     git config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
-    git fetch -q origin master:refs/remotes/origin/master
+    git fetch -q origin refs/heads/master:refs/remotes/origin/master
     git reset -q --hard origin/master
 }
 
