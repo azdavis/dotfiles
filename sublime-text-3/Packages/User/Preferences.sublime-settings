@@ -115,7 +115,6 @@
 	"ignored_packages":
 	[
 		"JavaScript",
-		"ShellScript",
 		"Vintage"
 	],
 	"indent_guide_options":
