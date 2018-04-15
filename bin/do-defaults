@@ -16,7 +16,6 @@ fi
 alias dw="defaults write"
 
 dw -g _HIHideMenuBar -bool true
-dw -g AppleInterfaceStyle -string "Dark"
 dw -g ApplePressAndHoldEnabled -bool false
 dw -g AppleShowAllExtensions -bool true
 dw -g AppleShowScrollBars -string "WhenScrolling"
