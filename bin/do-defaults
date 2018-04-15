@@ -32,7 +32,7 @@ dw -g NSCloseAlwaysConfirmsChanges -bool true
 dw -g NSDisableAutomaticTermination -bool true
 dw -g NSNavPanelExpandedStateForSaveMode -bool true
 dw -g NSNavPanelExpandedStateForSaveMode2 -bool true
-dw -g NSQuitAlwaysKeepsWindows -bool true
+dw -g NSQuitAlwaysKeepsWindows -bool false
 dw -g NSUseAnimatedFocusRing -bool false
 dw -g NSWindowResizeTime -float 0.1
 dw com.apple.desktopservices DSDontWriteNetworkStores -bool true
