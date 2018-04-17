@@ -1,6 +1,7 @@
 [advice]
 	detachedHead = false
 [alias]
+	fixup = commit --amend --no-edit
 	praise = blame
 	unstash = stash pop
 [commit]
