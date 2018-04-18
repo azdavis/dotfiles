@@ -10,7 +10,7 @@ fi
 
 cd
 
-find . -name .DS_Store -delete
+find . -name .DS_Store -delete >/dev/null 2>&1 || true
 
 rm -rf \
     .bash_history \
