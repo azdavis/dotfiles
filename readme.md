@@ -29,4 +29,7 @@ can get the install script and execute it with:
 
     $ curl -fsSL https://git.io/vM2Jb | sh
 
+you may also want to look into the font [Input][2].
+
 [1]: https://jordaneldredge.com/blog/one-way-curl-pipe-sh-install-scripts-can-be-dangerous/
+[2]: http://input.fontbureau.com
