@@ -14,68 +14,33 @@
  	[
 +		"gray_antialias",
  	],
---- a/sublime-text-3/Packages/User/theme.tmTheme
-+++ b/sublime-text-3/Packages/User/theme.tmTheme
-@@ -10,15 +10,15 @@
-                     <key>background</key>
--                    <string>#eee</string>
-+                    <string>#000</string>
-                     <key>caret</key>
--                    <string>#111</string>
-+                    <string>#ddd</string>
-                     <key>foreground</key>
--                    <string>#111</string>
-+                    <string>#ddd</string>
-                     <key>selection</key>
--                    <string>#ccc</string>
-+                    <string>#333</string>
-                     <key>lineHighlight</key>
--                    <string>#ddd</string>
-+                    <string>#222</string>
-                     <key>gutterForeground</key>
--                    <string>#999</string>
-+                    <string>#555</string>
-                     <key>guide</key>
--                    <string>#999</string>
-+                    <string>#555</string>
-                 </dict>
-@@ -31,3 +31,3 @@
-                     <key>foreground</key>
--                    <string>#111</string>
-+                    <string>#ddd</string>
-                 </dict>
-@@ -40,3 +40,3 @@
-                     <key>foreground</key>
--                    <string>#888</string>
-+                    <string>#aaa</string>
-                 </dict>
-@@ -60,3 +60,3 @@
-                     <key>foreground</key>
--                    <string>#822</string>
-+                    <string>#daa</string>
-                 </dict>
-@@ -69,3 +69,3 @@
-                     <key>foreground</key>
--                    <string>#828</string>
-+                    <string>#dad</string>
-                 </dict>
-@@ -78,3 +78,3 @@
-                     <key>foreground</key>
--                    <string>#882</string>
-+                    <string>#dda</string>
-                 </dict>
-@@ -87,3 +87,3 @@
-                     <key>foreground</key>
--                    <string>#282</string>
-+                    <string>#ada</string>
-                 </dict>
-@@ -96,3 +96,3 @@
-                     <key>foreground</key>
--                    <string>#288</string>
-+                    <string>#add</string>
-                 </dict>
-@@ -105,3 +105,3 @@
-                     <key>foreground</key>
--                    <string>#228</string>
-+                    <string>#aad</string>
-                 </dict>
+--- a/sublime-text-3/Packages/User/theme.sublime-color-scheme
++++ b/sublime-text-3/Packages/User/theme.sublime-color-scheme
+@@ -6,15 +6,15 @@
+         "black": "#000000",
+-        "text": "#111111",
+-        "blue": "#228888",
+-        "green": "#228822",
+-        "grey": "#999999",
+-        "grey2": "#888888",
+-        "grey3": "#cccccc",
+-        "pink": "#882288",
+-        "purple": "#222288",
+-        "red": "#882222",
++        "text": "#dddddd",
++        "blue": "#aadddd",
++        "green": "#aaddaa",
++        "grey": "#555555",
++        "grey2": "#aaaaaa",
++        "grey3": "#333333",
++        "pink": "#ddaadd",
++        "purple": "#aaaadd",
++        "red": "#ddaaaa",
+         "red2": "#ff0000",
+-        "fg": "#eeeeee",
+-        "line_highlight": "#dddddd",
+-        "yellow": "#888822"
++        "fg": "#000000",
++        "line_highlight": "#222222",
++        "yellow": "#ddddaa"
+     },
