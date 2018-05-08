@@ -2,6 +2,7 @@
     "extensions":
     [
         ".babelrc",
+        "sublime-color-scheme",
         "sublime-commands",
         "sublime_session"
     ]
