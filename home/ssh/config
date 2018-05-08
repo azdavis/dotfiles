@@ -1,13 +1,11 @@
 Host *
     HashKnownHosts yes
-Host ghc shark unix cmu
+Host shark unix cmu
     User azdavis
     GSSAPIAuthentication yes
     GSSAPIDelegateCredentials yes
     RemoteForward 50505 localhost:52698
     ExitOnForwardFailure yes
-Host ghc
-    Hostname ghc40.ghc.andrew.cmu.edu
 Host shark
     Hostname makoshark.ics.cs.cmu.edu
 Host unix cmu
