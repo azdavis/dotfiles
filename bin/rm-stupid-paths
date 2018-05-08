@@ -18,6 +18,7 @@ rm -rf \
     .bundle \
     .cache \
     .ccache \
+    .config/abrt \
     .config/gnome-session \
     .config/gtk-2.0 \
     .config/gtk-3.0 \
@@ -31,6 +32,7 @@ rm -rf \
     .idris/repl/history \
     .jspm \
     .lldb \
+    .local \
     .mplayer \
     .nano \
     .node-gyp \
