@@ -2,7 +2,7 @@
 
 A potpourri of macOS dotfiles
 
-## install
+## Install
 
 Note: a path on your system, if it exists, will be replaced with a path (or
 symlink to a path) in `dotfiles`, if it exists, according to the following
