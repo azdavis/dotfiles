@@ -17,7 +17,7 @@ do_brew() {
 }
 
 do_npm() {
-    npm update -g npm
+    npm i -g npm
 }
 
 do_tlmgr() {
