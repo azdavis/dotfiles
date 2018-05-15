@@ -1,6 +1,6 @@
 Host *
     HashKnownHosts yes
-Host shark unix cmu
+Host shark unix cmu home
     User azdavis
     GSSAPIAuthentication yes
     GSSAPIDelegateCredentials yes
@@ -10,3 +10,5 @@ Host shark
     Hostname makoshark.ics.cs.cmu.edu
 Host unix cmu
     Hostname unix8.andrew.cmu.edu
+Host home
+    Hostname new-host.home
