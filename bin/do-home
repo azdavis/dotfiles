@@ -1,26 +1,27 @@
 #!/bin/sh
 
-set -eu
+set -euf
+IFS=
 
-. "$HOME/.config/lib/force_symlink.sh"
-. "$HOME/.config/lib/panic.sh"
+. $HOME/.config/lib/force_symlink.sh
+. $HOME/.config/lib/panic.sh
 
 if [ $# -ne 0 ]; then
     panic "usage: $(basename "$0")"
 fi
 
-touch "$HOME/.hushlogin"
-chmod 600 "$HOME/.hushlogin"
+touch $HOME/.hushlogin
+chmod 600 $HOME/.hushlogin
 
-wd=".config/home"
-cd "$HOME/$wd"
+wd=.config/home
+cd $HOME/$wd
 for x in *; do
-    force_symlink "$wd/$x" "$HOME/.$x"
+    force_symlink $wd/$x $HOME/.$x
 done
 
 cd
 for x in .*; do
-    if [ -L "$x" ] && ! [ -e "$x" ]; then
-        rm "$x"
+    if [ -L $x ] && ! [ -e $x ]; then
+        rm $x
     fi
 done

@@ -1,9 +1,10 @@
 #!/bin/sh
 
-set -eu
+set -euf
+IFS=
 
-. "$HOME/.config/lib/cmd_found.sh"
-. "$HOME/.config/lib/panic.sh"
+. $HOME/.config/lib/cmd_found.sh
+. $HOME/.config/lib/panic.sh
 
 do_brew() {
     brew update
@@ -26,12 +27,12 @@ do_tlmgr() {
 }
 
 try() {
-    if ! cmd_found "$1"; then
+    if ! cmd_found $1; then
         echo "'$1' not found"
         return
     fi
     echo "doing '$1'"
-    case "$1" in
+    case $1 in
     (brew) do_brew ;;
     (npm) do_npm ;;
     (tlmgr) do_tlmgr ;;

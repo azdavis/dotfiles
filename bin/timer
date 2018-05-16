@@ -1,16 +1,17 @@
 #!/bin/sh
 
-set -eu
+set -euf
+IFS=
 
-. "$HOME/.config/lib/is_int.sh"
-. "$HOME/.config/lib/panic.sh"
+. $HOME/.config/lib/is_int.sh
+. $HOME/.config/lib/panic.sh
 
 trap 'echo; exit 0' INT
 
 usage() {
 cat <<EOF >&2
 usage:
-    $(basename "$0") [options]
+    $(basename $0) [options]
 
 options:
     -h
@@ -29,7 +30,7 @@ H=0
 M=0
 S=0
 while getopts "hH:M:S:" opt; do
-    case "$opt" in
+    case $opt in
     (H) H="$OPTARG" ;;
     (M) M="$OPTARG" ;;
     (S) S="$OPTARG" ;;
@@ -42,8 +43,8 @@ if [ $# -ne 0 ]; then
     usage
 fi
 
-for x in "$H" "$M" "$S"; do
-    if ! is_int "$x"; then
+for x in $H $M $S; do
+    if ! is_int $x; then
         panic "'$x' is not an int"
     fi
     if [ $x -lt 0 ] || [ $x -ge 60 ]; then

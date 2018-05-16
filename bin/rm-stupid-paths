@@ -1,11 +1,12 @@
 #!/bin/sh
 
-set -eu
+set -euf
+IFS=
 
-. "$HOME/.config/lib/panic.sh"
+. $HOME/.config/lib/panic.sh
 
 if [ $# -ne 0 ]; then
-    panic "usage: $(basename "$0")"
+    panic "usage: $(basename $0)"
 fi
 
 cd

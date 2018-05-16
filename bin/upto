@@ -1,9 +1,10 @@
 #!/bin/sh
 
-set -eu
+set -euf
+IFS=
 
-. "$HOME/.config/lib/is_int.sh"
-. "$HOME/.config/lib/panic.sh"
+. $HOME/.config/lib/is_int.sh
+. $HOME/.config/lib/panic.sh
 
 if [ $# -ne 1 ]; then
     panic "usage: $(basename "$0") <positive_int>"
@@ -11,4 +12,4 @@ elif ! is_int "$1" || [ "$1" -le 0 ]; then
     panic "'$1' not a positive int"
 fi
 
-seq -w 1 "$1" | perl -pe 'chomp if eof' | pbcopy
+seq -w 1 $1 | perl -pe 'chomp if eof' | pbcopy
