@@ -6,9 +6,9 @@
 	"installed_packages":
 	[
 		"Babel",
-		"CUDA C++",
 		"EditorConfig",
 		"Package Control",
-		"SingleTrailingNewLine"
+		"SingleTrailingNewLine",
+		"SML (Standard ML)"
 	]
 }
