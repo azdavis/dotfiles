@@ -61,6 +61,10 @@ alias scp="scp -q"
 alias sml="rlwrap sml"
 alias subl="subl -a"
 
+ip() {
+    curl ifconfig.io
+}
+
 write() {
     mesg y
     command write "$@"
