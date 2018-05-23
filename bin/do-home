@@ -1,7 +1,10 @@
 #!/bin/sh
 
-set -efu
+set -eu
 IFS=
+
+# warning: set -f is NOT on, so the contents of variables better not have shell
+# glob chars in them.
 
 . $HOME/.config/lib/force_symlink.sh
 . $HOME/.config/lib/panic.sh
