@@ -1,6 +1,6 @@
 #!/bin/sh
 
-set -euf
+set -efu
 IFS=
 
 . $HOME/.config/lib/is_int.sh
