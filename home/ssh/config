@@ -11,4 +11,4 @@ Host shark
 Host unix cmu
     Hostname unix8.andrew.cmu.edu
 Host home
-    Hostname new-host.home
+    Hostname davis-imac.local
