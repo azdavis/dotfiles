@@ -27,7 +27,7 @@ else
     panic "'$p' does not apply in either direction"
 fi
 
-git apply $git_direction "$p"
+git apply $git_direction $p
 printf "\033]50;SetProfile=$iterm_profile\a"
 if [ $(uname) = Darwin ]; then
     osascript -l JavaScript -e "

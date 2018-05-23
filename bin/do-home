@@ -10,7 +10,7 @@ IFS=
 . $HOME/.config/lib/panic.sh
 
 if [ $# -ne 0 ]; then
-    panic "usage: $(basename "$0")"
+    panic "usage: $(basename $0)"
 fi
 
 touch $HOME/.hushlogin

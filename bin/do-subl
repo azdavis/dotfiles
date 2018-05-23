@@ -14,9 +14,9 @@ elif ! cmd_found subl; then
     exit
 fi
 
-config_subl="$HOME/.config/sublime-text-3"
+config_subl=$HOME/.config/sublime-text-3
 
-if [ "$(uname)" = Darwin ]; then
+if [ $(uname) = Darwin ]; then
     force_symlink \
         "$config_subl" \
         "$HOME/Library/Application Support/Sublime Text 3"
