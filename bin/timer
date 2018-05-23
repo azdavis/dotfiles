@@ -29,11 +29,11 @@ exit 1
 H=0
 M=0
 S=0
-while getopts "hH:M:S:" opt; do
+while getopts 'hH:M:S:' opt; do
     case $opt in
-    (H) H="$OPTARG" ;;
-    (M) M="$OPTARG" ;;
-    (S) S="$OPTARG" ;;
+    (H) H=$OPTARG ;;
+    (M) M=$OPTARG ;;
+    (S) S=$OPTARG ;;
     (*) usage ;;
     esac
 done
