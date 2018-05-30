@@ -4,7 +4,6 @@ set -efu
 IFS=
 
 . $HOME/.config/lib/cmd_found.sh
-. $HOME/.config/lib/force_symlink.sh
 . $HOME/.config/lib/panic.sh
 
 if [ $# -ne 0 ]; then
@@ -13,6 +12,12 @@ elif ! cmd_found subl; then
     echo "'subl' not found"
     exit
 fi
+
+force_symlink() {
+    rm -rf $2
+    mkdir -p $(dirname $2)
+    ln -s $1 $2
+}
 
 config_subl=$HOME/.config/sublime-text-3
 
