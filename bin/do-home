@@ -3,10 +3,8 @@
 set -eu
 IFS=
 
-# warning: set -f is NOT on, so the contents of variables better not have shell
-# glob chars in them.
+# warning: set -f is NOT on
 
-. $HOME/.config/lib/force_symlink.sh
 . $HOME/.config/lib/panic.sh
 
 if [ $# -ne 0 ]; then
@@ -19,7 +17,21 @@ chmod 600 $HOME/.hushlogin
 wd=.config/home
 cd $HOME/$wd
 for x in *; do
-    force_symlink $wd/$x $HOME/.$x
+    src="$wd/$x"
+    dst="$HOME/.$x"
+    if [ -e "$dst" ]; then
+        if [ -L "$dst" ]; then
+            continue
+        fi
+        printf 'rm %s? ' "$dst"
+        read ans
+        if [ "$ans" != y ]; then
+            continue
+        fi
+        rm -rf "$dst"
+    fi
+    mkdir -p "$(dirname "$dst")"
+    ln -s "$src" "$dst"
 done
 
 cd
