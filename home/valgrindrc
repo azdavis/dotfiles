@@ -1,4 +1,0 @@
---leak-check=full
---leak-resolution=high
---quiet
---track-fds=yes
