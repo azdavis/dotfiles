@@ -16,32 +16,10 @@ find . -name .DS_Store -delete >/dev/null 2>&1 || true
 rm -rf \
     .bash_history \
     .bash_sessions \
-    .bundle \
-    .cache \
-    .ccache \
-    .config/abrt \
-    .config/gnome-session \
-    .config/gtk-2.0 \
-    .config/gtk-3.0 \
-    .config/nautilus \
-    .config/update-notifier \
-    .config/upstart \
-    .elm \
     .gdb_history \
-    .gem \
-    .ghc \
     .idris/repl/history \
-    .jspm \
-    .lldb \
-    .local \
-    .mplayer \
-    .nano \
-    .node-gyp \
     .node_repl_history \
-    .npm \
-    .nv \
     .oracle_jre_usage \
-    .pki \
     .python_history \
     .sh_history \
     .sqlite_history \
