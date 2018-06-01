@@ -2,7 +2,7 @@ tap "homebrew/core"
 tap "netlify/netlifyctl"
 tap "homebrew/cask"
 tap "homebrew/bundle"
-brew "coreutils"
+brew "coreutils", link: false
 brew "entr"
 brew "fd"
 brew "ffmpeg"
