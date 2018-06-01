@@ -41,12 +41,12 @@ install_repo() {
 
 do_home() {
     echo "doing home actions"
-    "$dst/bin/do-home"
+    "$dst/bin/do-home" </dev/tty
 }
 
 do_subl() {
     echo "doing subl actions"
-    "$dst/bin/do-subl"
+    "$dst/bin/do-subl" </dev/tty
 }
 
 change_shell() {
