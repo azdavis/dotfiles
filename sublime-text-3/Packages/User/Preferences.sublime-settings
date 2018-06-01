@@ -114,7 +114,6 @@
 	"hot_exit": false,
 	"ignored_packages":
 	[
-		"JavaScript",
 		"Vintage"
 	],
 	"indent_guide_options":
