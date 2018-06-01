@@ -5,6 +5,7 @@ IFS=
 
 . $HOME/.config/lib/cmd_found.sh
 . $HOME/.config/lib/panic.sh
+. $HOME/.config/lib/symlink.sh
 
 if [ $# -ne 0 ]; then
     panic "usage: $(basename $0)"
@@ -13,16 +14,10 @@ elif ! cmd_found subl; then
     exit
 fi
 
-force_symlink() {
-    rm -rf $2
-    mkdir -p $(dirname $2)
-    ln -s $1 $2
-}
-
 config_subl=$HOME/.config/sublime-text-3
 
 if [ $(uname) = Darwin ]; then
-    force_symlink \
+    symlink \
         "$config_subl" \
         "$HOME/Library/Application Support/Sublime Text 3"
 fi

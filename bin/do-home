@@ -6,6 +6,7 @@ IFS=
 # warning: set -f is NOT on
 
 . $HOME/.config/lib/panic.sh
+. $HOME/.config/lib/symlink.sh
 
 if [ $# -ne 0 ]; then
     panic "usage: $(basename $0)"
@@ -17,18 +18,7 @@ chmod 600 $HOME/.hushlogin
 wd=.config/home
 cd $HOME/$wd
 for x in *; do
-    src="$wd/$x"
-    dst="$HOME/.$x"
-    if [ -e "$dst" ] && ! [ -L "$dst" ]; then
-        printf 'rm %s? ' "$dst"
-        read ans
-        if [ "$ans" != y ]; then
-            continue
-        fi
-    fi
-    rm -rf "$dst"
-    mkdir -p "$(dirname "$dst")"
-    ln -s "$src" "$dst"
+    symlink "$wd/$x" "$HOME/.$x"
 done
 
 cd
