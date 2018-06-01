@@ -6,6 +6,7 @@
 	"installed_packages":
 	[
 		"EditorConfig",
+		"JSCustom",
 		"Package Control",
 		"SingleTrailingNewLine",
 		"SML (Standard ML)"
