@@ -19,17 +19,14 @@ cd $HOME/$wd
 for x in *; do
     src="$wd/$x"
     dst="$HOME/.$x"
-    if [ -e "$dst" ]; then
-        if [ -L "$dst" ]; then
-            continue
-        fi
+    if [ -e "$dst" ] && ! [ -L "$dst" ]; then
         printf 'rm %s? ' "$dst"
         read ans
         if [ "$ans" != y ]; then
             continue
         fi
-        rm -rf "$dst"
     fi
+    rm -rf "$dst"
     mkdir -p "$(dirname "$dst")"
     ln -s "$src" "$dst"
 done
