@@ -62,7 +62,7 @@ alias sml="rlwrap sml"
 alias subl="subl -a"
 
 ip() {
-    curl ifconfig.io
+    curl https://ifconfig.co
 }
 
 write() {
