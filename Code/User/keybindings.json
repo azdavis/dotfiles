@@ -59,5 +59,15 @@
         "key": "ctrl+cmd+down",
         "command": "-editor.action.moveLinesDownAction",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+l",
+        "command": "expandLineSelection",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "cmd+i",
+        "command": "-expandLineSelection",
+        "when": "textInputFocus"
     }
 ]
