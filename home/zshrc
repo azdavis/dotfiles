@@ -61,6 +61,11 @@ alias say="rlwrap say"
 alias scp="scp -q"
 alias sml="rlwrap sml"
 
+subl() {
+    echo "no"
+    return 1
+}
+
 ip() {
     curl https://ifconfig.co
 }
