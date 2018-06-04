@@ -58,5 +58,7 @@
     },
     "editor.renderLineHighlight": "none",
     "editor.occurrencesHighlight": false,
-    "workbench.statusBar.visible": false
+    "workbench.statusBar.visible": false,
+    "javascript.validate.enable": false,
+    "editor.formatOnSave": true
 }
