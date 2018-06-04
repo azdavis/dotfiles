@@ -48,7 +48,7 @@
     "editor.snippetSuggestions": "top",
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
-    "workbench.activityBar.visible": false,
+    "workbench.activityBar.visible": true,
     "editor.minimap.enabled": false,
     "editor.rulers": [
         79
