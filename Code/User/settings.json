@@ -27,6 +27,7 @@
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
     "javascript.validate.enable": false,
+    "telemetry.enableTelemetry": false,
     "window.restoreWindows": "none",
     "workbench.colorTheme": "Default Light+",
     "workbench.startupEditor": "newUntitledFile",
