@@ -44,11 +44,6 @@ do_home() {
     "$dst/bin/do-home" </dev/tty
 }
 
-do_subl() {
-    echo "doing subl actions"
-    "$dst/bin/do-subl" </dev/tty
-}
-
 change_shell() {
     echo "changing shell to zsh"
     new_shell="$(grep '/zsh$' /etc/shells | head -n 1)"
@@ -68,7 +63,6 @@ main() {
     find_deps
     install_repo
     do_home
-    do_subl
     change_shell
     echo "finishing"
 }
