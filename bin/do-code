@@ -28,4 +28,5 @@ rm -rf \
     "$config_code/CachedData" \
     "$config_code/CachedExtensions" \
     "$config_code/GPUCache" \
-    "$config_code/logs"
+    "$config_code/logs" \
+    "$config_code/storage.json"
