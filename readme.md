@@ -8,12 +8,12 @@ Note: a path on your system, if it exists, will be replaced with a path (or
 symlink to a path) in `dotfiles`, if it exists, according to the following
 table:
 
-| # | on your system                                 | in `dotfiles`    |
-|---|------------------------------------------------|------------------|
-| 1 | `~/.config/.git`                               | N/A              |
-| 2 | `~/.config/<path>`                             | `<path>`         |
-| 3 | `~/.<path>`                                    | `home/<path>`    |
-| 4 | `~/Library/Application Support/Sublime Text 3` | `sublime-text-3` |
+| # | on your system                       | in `dotfiles` |
+|---|--------------------------------------|---------------|
+| 1 | `~/.config/.git`                     | N/A           |
+| 2 | `~/.config/<path>`                   | `<path>`      |
+| 3 | `~/.<path>`                          | `home/<path>` |
+| 4 | `~/Library/Application Support/Code` | `Code`        |
 
 When the following commands in `dotfiles` are run:
 
@@ -22,7 +22,7 @@ When the following commands in `dotfiles` are run:
 | `install.sh`          | y | y | y | n |
 | `bin/update-dotfiles` | y | y | n | n |
 | `bin/do-home`         | n | n | y | n |
-| `bin/do-subl`         | n | n | n | y |
+| `bin/do-code`         | n | n | n | y |
 
 If you're OK with both this and the possible [dangers][1] of curl-pipe-sh, you
 can get the install script and execute it with:

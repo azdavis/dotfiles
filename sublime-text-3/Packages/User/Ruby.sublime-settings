@@ -1,8 +1,0 @@
-{
-    "extensions":
-    [
-        ".Brewfile",
-        ".irbrc"
-    ],
-    "tab_size": 2
-}
