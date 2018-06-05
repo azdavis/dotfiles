@@ -4,43 +4,10 @@
 +printf "\033]50;SetProfile=dark\a"
 +
  export COPYFILE_DISABLE="1"
---- a/sublime-text-3/Packages/User/Preferences.sublime-settings
-+++ b/sublime-text-3/Packages/User/Preferences.sublime-settings
-@@ -103,2 +103,3 @@
- 	[
-+		"gray_antialias",
- 		"no_bold",
-@@ -170,2 +171,3 @@
- 	[
-+		"gray_antialias",
- 	],
---- a/sublime-text-3/Packages/User/theme.sublime-color-scheme
-+++ b/sublime-text-3/Packages/User/theme.sublime-color-scheme
-@@ -6,15 +6,15 @@
-         "black": "#000000",
--        "text": "#111111",
--        "blue": "#228888",
--        "green": "#228822",
--        "grey": "#999999",
--        "grey2": "#888888",
--        "grey3": "#cccccc",
--        "pink": "#882288",
--        "purple": "#222288",
--        "red": "#882222",
-+        "text": "#dddddd",
-+        "blue": "#aadddd",
-+        "green": "#aaddaa",
-+        "grey": "#555555",
-+        "grey2": "#aaaaaa",
-+        "grey3": "#333333",
-+        "pink": "#ddaadd",
-+        "purple": "#aaaadd",
-+        "red": "#ddaaaa",
-         "red2": "#ff0000",
--        "fg": "#eeeeee",
--        "line_highlight": "#dddddd",
--        "yellow": "#888822"
-+        "fg": "#000000",
-+        "line_highlight": "#222222",
-+        "yellow": "#ddddaa"
-     },
+--- a/Code/User/settings.json
++++ b/Code/User/settings.json
+@@ -30,3 +30,3 @@
+     "window.restoreWindows": "none",
+-    "workbench.colorTheme": "Default Light+",
++    "workbench.colorTheme": "Default Dark+",
+     "workbench.startupEditor": "newUntitledFile",
