@@ -20,7 +20,8 @@
     "editor.trimAutoWhitespace": true,
     "editor.useTabStops": true,
     "files.associations": {
-        "zshrc": "shellscript"
+        "zshrc": "shellscript",
+        "Brewfile": "ruby"
     },
     "files.hotExit": "off",
     "files.insertFinalNewline": true,
