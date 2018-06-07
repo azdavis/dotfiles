@@ -3,15 +3,10 @@
 set -efu
 IFS=
 
-. $HOME/.config/lib/cmd_found.sh
 . $HOME/.config/lib/panic.sh
 
 if [ $# -ne 0 ]; then
     panic "usage: $(basename $0)"
-fi
-
-if ! cmd_found "defaults"; then
-    panic "'defaults' not found"
 fi
 
 alias dw="defaults write"

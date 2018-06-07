@@ -3,15 +3,11 @@
 set -efu
 IFS=
 
-. $HOME/.config/lib/cmd_found.sh
 . $HOME/.config/lib/panic.sh
 . $HOME/.config/lib/symlink.sh
 
 if [ $# -ne 0 ]; then
     panic "usage: $(basename $0)"
-elif ! cmd_found code; then
-    echo "'code' not found"
-    exit
 fi
 
 config_code=$HOME/.config/Code
