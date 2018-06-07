@@ -15,6 +15,10 @@ fi
 touch $HOME/.hushlogin
 chmod 600 $HOME/.hushlogin
 
+if [ $(uname) = Darwin ]; then
+    symlink "$HOME/.config/Code" "$HOME/Library/Application Support/Code"
+fi
+
 wd=.config/home
 cd $HOME/$wd
 for x in *; do
