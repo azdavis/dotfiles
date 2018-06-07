@@ -5,10 +5,6 @@ IFS=
 
 . $HOME/.config/lib/panic.sh
 
-cmd_found() {
-    command -v "$1" >/dev/null
-}
-
 do_brew() {
     brew update
     brew bundle --verbose --global
@@ -30,7 +26,7 @@ do_tlmgr() {
 }
 
 try() {
-    if ! cmd_found $1; then
+    if ! command -v $1 >/dev/null; then
         echo "'$1' not found"
         return
     fi

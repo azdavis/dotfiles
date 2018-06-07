@@ -3,17 +3,13 @@ panic() {
     exit 1
 }
 
-cmd_found() {
-    command -v "$1" >/dev/null
-}
-
 find_deps() {
     echo "finding dependencies"
     if [ $(uname) = Darwin ] && ! xcode-select -p >/dev/null; then
         panic "'Command Line Developer Tools' not found"
     fi
     for x in /bin/sh chsh git; do
-        if ! cmd_found "$x"; then
+        if ! command -v "$x" >/dev/null; then
             panic "'$x' not found"
         fi
     done
