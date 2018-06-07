@@ -3,8 +3,11 @@
 set -efu
 IFS=
 
-. $HOME/.config/lib/cmd_found.sh
 . $HOME/.config/lib/panic.sh
+
+cmd_found() {
+    command -v "$1" >/dev/null
+}
 
 do_brew() {
     brew update
