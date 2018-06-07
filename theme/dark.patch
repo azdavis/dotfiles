@@ -6,8 +6,8 @@
  export COPYFILE_DISABLE="1"
 --- a/Code/User/settings.json
 +++ b/Code/User/settings.json
-@@ -30,3 +30,3 @@
+@@ -39,3 +39,3 @@
      "window.restoreWindows": "none",
 -    "workbench.colorTheme": "Default Light+",
 +    "workbench.colorTheme": "Default Dark+",
-     "workbench.startupEditor": "newUntitledFile",
+     "workbench.startupEditor": "none",
