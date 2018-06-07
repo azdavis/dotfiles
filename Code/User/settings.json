@@ -45,5 +45,14 @@
         "files.insertFinalNewline": false,
         "files.trimFinalNewlines": false,
         "files.trimTrailingWhitespace": false
+    },
+    "[go]": {
+        "editor.insertSpaces": false
+    },
+    "[makefile]": {
+        "editor.insertSpaces": false
+    },
+    "[properties]": {
+        "editor.insertSpaces": false
     }
 }
