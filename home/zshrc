@@ -37,7 +37,7 @@ setopt rmstarsilent
 
 alias df="df -h"
 alias du="du -chs"
-alias e="code -a"
+alias e="code"
 alias ga="git add"
 alias gb="git branch"
 alias gc="git commit"
