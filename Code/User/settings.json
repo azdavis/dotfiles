@@ -1,7 +1,6 @@
 {
     "editor.acceptSuggestionOnEnter": "off",
     "editor.cursorBlinking": "solid",
-    "editor.detectIndentation": false,
     "editor.dragAndDrop": false,
     "editor.emptySelectionClipboard": false,
     "editor.fontFamily": "Input",
