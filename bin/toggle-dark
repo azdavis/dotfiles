@@ -14,8 +14,8 @@ cd $HOME/.config
 new_dark=$(osascript -l JavaScript -e "
 !Application('System Events').appearancePreferences.darkMode()
 ")
+p=etc/dark.patch
 
-p=$PWD/theme/dark.patch
 if $new_dark; then
     iterm_profile=dark
     git_direction=""
