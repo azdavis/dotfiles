@@ -27,7 +27,7 @@ done
 
 cd
 for x in .*; do
-    if [ -L $x ] && ! [ -e $x ]; then
-        rm $x
+    if [ -L "$x" ] && ! [ -e "$x" ]; then
+        rm "$x"
     fi
 done
