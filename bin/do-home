@@ -6,11 +6,23 @@ IFS=
 # warning: set -f is NOT on
 
 . $HOME/.config/lib/panic.sh
-. $HOME/.config/lib/symlink.sh
 
 if [ $# -ne 0 ]; then
     panic "usage: $(basename $0)"
 fi
+
+symlink() {
+    if [ -e "$2" ] && ! [ -L "$2" ]; then
+        printf 'rm %s? ' "$2"
+        read ans
+        if [ "$ans" != y ]; then
+            continue
+        fi
+    fi
+    rm -rf "$2"
+    mkdir -p "$(dirname "$2")"
+    ln -s "$1" "$2"
+}
 
 touch $HOME/.hushlogin
 chmod 600 $HOME/.hushlogin
