@@ -20,7 +20,7 @@
 [diff]
 	algorithm = histogram
 [init]
-	templateDir = ~/.config/git-template
+	templateDir =
 [log]
 	date = iso8601
 	decorate = true
