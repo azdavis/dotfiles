@@ -11,8 +11,6 @@ fi
 
 cd
 
-find . -name .DS_Store -delete >/dev/null 2>&1 || true
-
 rm -rf \
     .bash_history \
     .bash_sessions \
@@ -32,3 +30,5 @@ rm -rf \
     .sqlite_history \
     .viminfo \
     .zcompdump
+
+find . -name .DS_Store -delete >/dev/null 2>&1 || true
