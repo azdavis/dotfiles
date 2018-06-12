@@ -1,0 +1,17 @@
+#!/bin/sh
+
+set -efu
+IFS=
+
+. $HOME/.config/lib/panic.sh
+
+if [ $# -ne 1 ]; then
+    panic "usage: $(basename $0) <branch>"
+fi
+
+git rev-parse
+
+branch=$1
+git checkout -b $branch
+git config branch.$branch.remote origin
+git config branch.$branch.merge refs/heads/$branch

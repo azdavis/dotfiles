@@ -4,11 +4,6 @@
 	fixup = commit --amend --no-edit
 	praise = blame
 	unstash = stash pop
-	new-branch = "!f() { \
-		git checkout -b $1 && \
-		git config branch.$1.remote origin && \
-		git config branch.$1.merge refs/heads/$1; \
-	}; f"
 [commit]
 	verbose = 1
 [core]
