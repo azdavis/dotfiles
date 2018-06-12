@@ -11,6 +11,8 @@
 		"FlowIDE",
 		"JsPrettier",
 		"Package Control",
-		"SingleTrailingNewLine"
+		"SingleTrailingNewLine",
+		"SublimeLinter",
+		"SublimeLinter-eslint"
 	]
 }
