@@ -10,6 +10,7 @@
 	"copy_with_empty_selection": false,
 	"default_line_ending": "unix",
 	"drag_text": false,
+	"enable_tab_scrolling": false,
 	"folder_exclude_patterns":
 	[
 		".*",
