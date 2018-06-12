@@ -21,6 +21,15 @@ rm -rf \
     .config/Code/GPUCache \
     .config/Code/logs \
     .config/Code/storage.json \
+    .config/sublime-text-3/Cache \
+    .config/sublime-text-3/Cache \
+    .config/sublime-text-3/Local/Auto\ Save\ Session.sublime_session \
+    .config/sublime-text-3/Local/Session.sublime_session \
+    .config/sublime-text-3/Packages/User/oscrypto-ca-bundle.crt \
+    .config/sublime-text-3/Packages/User/Package\ Control.cache \
+    .config/sublime-text-3/Packages/User/Package\ Control.last-run \
+    .config/sublime-text-3/Packages/User/Package\ Control.merged-ca-bundle \
+    .config/sublime-text-3/Packages/User/Package\ Control.user-ca-bundle \
     .gdb_history \
     .idris/repl/history \
     .node_repl_history \
