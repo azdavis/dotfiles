@@ -1,5 +1,9 @@
 {
 	"animation_enabled": false,
+	"caret_extra_bottom": 1,
+	"caret_extra_top": 1,
+	"caret_extra_width": 1,
+	"caret_style": "solid",
 	"close_windows_when_empty": false,
 	"color_scheme": "Packages/Color Scheme - Default/Sixteen.sublime-color-scheme",
 	"copy_with_empty_selection": false,
@@ -25,6 +29,8 @@
 	[
 		"Vintage"
 	],
+	"line_padding_bottom": 1,
+	"line_padding_top": 1,
 	"open_files_in_new_window": false,
 	"rulers":
 	[
