@@ -5,9 +5,10 @@
 	],
 	"installed_packages":
 	[
+		"AutoWrap",
 		"Babel",
 		"EditorConfig",
-		"Flow",
+		"FlowIDE",
 		"JsPrettier",
 		"Package Control",
 		"SingleTrailingNewLine"
