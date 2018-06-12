@@ -5,6 +5,9 @@
 	],
 	"installed_packages":
 	[
+		"Babel",
+		"Flow",
+		"JsPrettier",
 		"Package Control",
 		"SingleTrailingNewLine"
 	]
