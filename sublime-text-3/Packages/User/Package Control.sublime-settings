@@ -6,6 +6,7 @@
 	"installed_packages":
 	[
 		"Babel",
+		"EditorConfig",
 		"Flow",
 		"JsPrettier",
 		"Package Control",
