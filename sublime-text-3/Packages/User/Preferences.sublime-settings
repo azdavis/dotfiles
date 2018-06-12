@@ -1,0 +1,34 @@
+{
+	"animation_enabled": false,
+	"close_windows_when_empty": false,
+	"color_scheme": "Packages/Color Scheme - Default/Sixteen.sublime-color-scheme",
+	"default_line_ending": "unix",
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		"node_modules"
+	],
+	"font_face": "Input",
+	"font_options":
+	[
+		"no_bold",
+		"no_italic"
+	],
+	"font_size": 16,
+	"hot_exit": false,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"open_files_in_new_window": false,
+	"rulers":
+	[
+		79
+	],
+	"shell_environment": false,
+	"theme": "Default.sublime-theme",
+	"translate_tabs_to_spaces": true
+}
