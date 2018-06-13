@@ -4,30 +4,11 @@ A potpourri of macOS dotfiles
 
 ## Install
 
-Note: a path on your system, if it exists, will be replaced with a path (or
-symlink to a path) in `dotfiles`, if it exists, according to the following
-table:
-
-| # | on your system                       | in `dotfiles` |
-|---|--------------------------------------|---------------|
-| 1 | `~/.config/.git`                     | N/A           |
-| 2 | `~/.config/<path>`                   | `<path>`      |
-| 3 | `~/.<path>`                          | `home/<path>` |
-| 4 | `~/Library/Application Support/Code` | `Code`        |
-
-When the following commands in `dotfiles` are run:
-
-| command               | 1 | 2 | 3 | 4 |
-|-----------------------|---|---|---|---|
-| `install.sh`          | y | y | y | n |
-| `bin/update-dotfiles` | y | y | n | n |
-| `bin/do-home`         | n | n | y | n |
-| `bin/do-code`         | n | n | n | y |
-
-If you're OK with both this and the possible [dangers][1] of curl-pipe-sh, you
-can get the install script and execute it with:
+Install the repo to `~/.config` with:
 
     $ curl -fsSL https://git.io/vM2Jb | sh
+
+However, be aware of possible [dangers][1] with curl-pipe-sh.
 
 You may also want to look into the font [Input][2].
 
