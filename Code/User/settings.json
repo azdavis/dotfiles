@@ -13,7 +13,7 @@
     "editor.quickSuggestionsDelay": 50,
     "editor.renderLineHighlight": "none",
     "editor.rulers": [
-        79
+        80
     ],
     "editor.showFoldingControls": "mouseover",
     "editor.tabCompletion": true,
