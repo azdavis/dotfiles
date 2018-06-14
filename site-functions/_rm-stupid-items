@@ -1,8 +1,0 @@
-#compdef rm-stupid-items
-
-local opts=(
-    "-h[show this help]"
-    "-v[explain what is being done]"
-)
-
-_arguments -s $opts
