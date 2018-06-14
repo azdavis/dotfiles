@@ -39,7 +39,6 @@
     "telemetry.enableTelemetry": false,
     "window.restoreWindows": "none",
     "workbench.colorTheme": "Default Light+",
-    "workbench.editor.enablePreview": false,
     "workbench.startupEditor": "none",
     "workbench.statusBar.feedback.visible": false,
     "workbench.statusBar.visible": true,
