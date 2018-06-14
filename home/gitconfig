@@ -7,7 +7,7 @@
 [commit]
 	verbose = 1
 [core]
-	editor = subl -w
+	editor = $EDITOR -w
 	eol = lf
 	pager = less -FRSXqx4
 	quotePath = false
