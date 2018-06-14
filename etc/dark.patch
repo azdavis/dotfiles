@@ -4,6 +4,13 @@
 +printf "\033]50;SetProfile=dark\a"
 +
  export COPYFILE_DISABLE="1"
+--- a/Code/User/settings.json
++++ b/Code/User/settings.json
+@@ -38,3 +38,3 @@
+     "window.restoreWindows": "none",
+-    "workbench.colorTheme": "Default Light+",
++    "workbench.colorTheme": "Default Dark+",
+     "workbench.editor.enablePreview": false,
 --- a/sublime-text-3/Packages/User/Preferences.sublime-settings
 +++ b/sublime-text-3/Packages/User/Preferences.sublime-settings
 @@ -22,2 +22,3 @@
