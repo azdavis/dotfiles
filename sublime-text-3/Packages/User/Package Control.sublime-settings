@@ -5,7 +5,9 @@
 	],
 	"installed_packages":
 	[
+		"Babel",
 		"Package Control",
+		"rsub",
 		"SingleTrailingNewLine"
 	]
 }
