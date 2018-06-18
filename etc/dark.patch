@@ -1,10 +1,10 @@
 --- a/Code/User/settings.json
 +++ b/Code/User/settings.json
-@@ -38,3 +38,3 @@
+@@ -37,3 +37,3 @@
      "window.restoreWindows": "none",
 -    "workbench.colorTheme": "Default Light+",
 +    "workbench.colorTheme": "Default Dark+",
-     "workbench.editor.enablePreview": false,
+     "workbench.startupEditor": "none",
 --- a/home/zshrc
 +++ b/home/zshrc
 @@ -1 +1,3 @@
