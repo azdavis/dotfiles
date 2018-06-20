@@ -26,6 +26,9 @@
 	rebase = preserve
 [push]
 	default = simple
+[stash]
+	showPatch = true
+	showStat = false
 [status]
 	branch = true
 	short = true
