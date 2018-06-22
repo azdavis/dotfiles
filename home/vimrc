@@ -4,7 +4,7 @@ syntax enable
 filetype plugin indent on
 
 set backspace=indent,eol,start
-set colorcolumn=80
+set colorcolumn=81
 set expandtab
 set hlsearch
 set number
