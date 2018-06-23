@@ -42,6 +42,7 @@
     "files.trimTrailingWhitespace": true,
     "git.enabled": false,
     "javascript.validate.enable": false,
+    "rewrap.autoWrap.enabled": true,
     "telemetry.enableTelemetry": false,
     "window.restoreWindows": "none",
     "workbench.colorTheme": "Default Light+",
