@@ -25,8 +25,9 @@
     "editor.trimAutoWhitespace": true,
     "editor.useTabStops": true,
     "files.associations": {
-        "zshrc": "shellscript",
-        "Brewfile": "ruby"
+        "Brewfile": "ruby",
+        "Cargo.lock": "toml",
+        "zshrc": "shellscript"
     },
     "files.exclude": {
         "**/.git": true,
