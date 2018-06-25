@@ -5,6 +5,8 @@
         "callsites",
         "cmon",
         "coord",
+        "defn",
+        "parens",
         "rect",
         "renderable",
         "unmaintained",
