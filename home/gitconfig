@@ -9,6 +9,7 @@
 [commit]
 	verbose = 1
 [core]
+	commitGraph = true
 	editor = code -w
 	eol = lf
 	pager = less -FRSXqx4
