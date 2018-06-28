@@ -5,13 +5,14 @@ IFS=
 
 . $HOME/.config/lib/panic.sh
 
-if [ $# -ne 1 ]; then
-    panic "usage: $(basename $0) <branch>"
+if [ $# -eq 0 ] || [ $# -gt 2 ]; then
+    panic "usage: $(basename $0) <branch> [<start-point>]"
 fi
 
 git rev-parse
 
 branch=$1
-git checkout -b $branch
+start=${2:-HEAD}
+git checkout -b $branch $start
 git config branch.$branch.remote origin
 git config branch.$branch.merge refs/heads/$branch
