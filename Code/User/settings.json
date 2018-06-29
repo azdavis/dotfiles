@@ -15,6 +15,7 @@
         "unmount"
     ],
     "editor.acceptSuggestionOnEnter": "off",
+    "editor.colorDecorators": false,
     "editor.cursorBlinking": "solid",
     "editor.dragAndDrop": false,
     "editor.emptySelectionClipboard": false,
