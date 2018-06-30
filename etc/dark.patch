@@ -1,6 +1,6 @@
 --- a/Code/User/settings.json
 +++ b/Code/User/settings.json
-@@ -37,3 +37,3 @@
+@@ -54,3 +54,3 @@
      "window.restoreWindows": "none",
 -    "workbench.colorTheme": "Default Light+",
 +    "workbench.colorTheme": "Default Dark+",
@@ -17,7 +17,7 @@
  	[
 +		"gray_antialias",
  		"no_bold",
-@@ -71,2 +72,3 @@
+@@ -70,2 +71,3 @@
  	[
 +		"gray_antialias"
  	],
