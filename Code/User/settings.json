@@ -7,6 +7,7 @@
         "concat",
         "coord",
         "defn",
+        "mutex",
         "parens",
         "rect",
         "renderable",
