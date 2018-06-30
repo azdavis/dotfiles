@@ -12,6 +12,8 @@
 	pager = less -FRSXqx4
 	quotePath = false
 	untrackedCache = true
+[credential]
+	helper = store
 [diff]
 	algorithm = histogram
 [init]
