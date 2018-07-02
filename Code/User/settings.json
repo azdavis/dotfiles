@@ -33,6 +33,8 @@
     "editor.tabCompletion": true,
     "editor.trimAutoWhitespace": true,
     "editor.useTabStops": true,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
     "files.associations": {
         "Brewfile": "ruby",
         "Cargo.lock": "toml",
