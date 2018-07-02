@@ -7,13 +7,16 @@
         "concat",
         "coord",
         "defn",
+        "icloud",
         "mutex",
         "parens",
         "rect",
         "renderable",
         "sensei",
         "unmaintained",
-        "unmount"
+        "unmount",
+        "unsub",
+        "writeup"
     ],
     "editor.acceptSuggestionOnEnter": "off",
     "editor.colorDecorators": false,
