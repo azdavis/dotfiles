@@ -34,6 +34,7 @@ setopt norcs
 setopt nounset
 setopt rmstarsilent
 
+alias -- -="cd -"
 alias df="df -h"
 alias du="du -chs"
 alias e="$EDITOR"
