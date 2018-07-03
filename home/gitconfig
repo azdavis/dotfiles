@@ -4,6 +4,8 @@
 	fixup = commit --amend --no-edit
 	praise = blame
 	unstash = stash pop
+[color]
+	advice = false
 [commit]
 	verbose = 1
 [core]
