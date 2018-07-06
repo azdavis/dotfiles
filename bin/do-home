@@ -28,7 +28,7 @@ touch $HOME/.hushlogin
 chmod 600 $HOME/.hushlogin
 
 if [ $(uname) = Darwin ]; then
-    symlink "$HOME/.config/Code" "$HOME/Library/Application Support/Code"
+    symlink "$HOME/.config/vscode" "/Applications/code-portable-data"
     symlink "$HOME/.config/sublime-text-3" "$HOME/Library/Application Support/Sublime Text 3"
 fi
 
