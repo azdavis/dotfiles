@@ -1,5 +1,6 @@
 {
     "cSpell.userWords": [
+        "azdavis",
         "backend",
         "callsite",
         "callsites",
@@ -8,14 +9,17 @@
         "coord",
         "defn",
         "icloud",
+        "mailto",
         "mutex",
         "parens",
         "rect",
         "renderable",
+        "scotty",
         "sensei",
         "unmaintained",
         "unmount",
         "unsub",
+        "webapp",
         "writeup"
     ],
     "editor.acceptSuggestionOnEnter": "off",
