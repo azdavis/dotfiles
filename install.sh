@@ -5,7 +5,7 @@ panic() {
 
 find_deps() {
     echo "finding dependencies"
-    if [ $(uname) = Darwin ] && ! xcode-select -p >/dev/null; then
+    if [ "$(uname)" = Darwin ] && ! xcode-select -p >/dev/null; then
         panic "'Command Line Developer Tools' not found"
     fi
     for x in /bin/sh chsh git; do
