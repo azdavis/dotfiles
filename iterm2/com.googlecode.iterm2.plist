@@ -1076,7 +1076,7 @@
 	<key>TabStyle</key>
 	<integer>0</integer>
 	<key>UseLionStyleFullscreen</key>
-	<false/>
+	<true/>
 	<key>Window Arrangements</key>
 	<dict>
 		<key>light</key>
@@ -1634,7 +1634,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.5</string>
+	<string>3.1.7</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
