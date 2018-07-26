@@ -15,7 +15,7 @@
 	<key>AppleWindowTabbingMode</key>
 	<string>manual</string>
 	<key>Default Arrangement Name</key>
-	<string>light</string>
+	<string>good</string>
 	<key>Default Bookmark Guid</key>
 	<string>08DE5749-A027-437E-9B38-C176845EB67F</string>
 	<key>DimBackgroundWindows</key>
@@ -147,7 +147,7 @@
 	<key>NSFontPanelAttributes</key>
 	<string>1, 0</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/.config/iterm2</string>
+	<string>/Applications</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -181,6 +181,11 @@
 	</data>
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
+	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
+	<dict>
+		<key>TB Is Shown</key>
+		<integer>1</integer>
+	</dict>
 	<key>NSUserKeyEquivalents</key>
 	<dict>
 		<key>Toggle Full Screen</key>
@@ -189,13 +194,13 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>547 42 733 495 0 0 1280 800 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>330 307 620 392 0 0 1280 800 </string>
+	<string>330 306 620 392 0 0 1280 800 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 139 606 469 0 0 1280 800 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>181 293 937 464 0 0 1280 800 </string>
+	<string>242 330 937 464 0 0 1280 800 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1280 800 0 0 1280 800 </string>
+	<string>0 223 810 577 0 0 1280 800 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>173 27 810 577 0 0 1280 800 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -1060,7 +1065,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-10-16T20:34:03Z</date>
+	<date>2018-07-19T05:32:48Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>Secure Input</key>
@@ -1079,7 +1084,7 @@
 	<true/>
 	<key>Window Arrangements</key>
 	<dict>
-		<key>light</key>
+		<key>good</key>
 		<array>
 			<dict>
 				<key>Desired Columns</key>
@@ -1097,13 +1102,13 @@
 				<key>Is Hotkey Window</key>
 				<false/>
 				<key>Old Height</key>
-				<real>796</real>
+				<real>0.0</real>
 				<key>Old Width</key>
-				<real>1280</real>
+				<real>0.0</real>
 				<key>Old X Origin</key>
 				<real>0.0</real>
 				<key>Old Y Origin</key>
-				<real>4</real>
+				<real>0.0</real>
 				<key>Saved Window Type</key>
 				<integer>0</integer>
 				<key>Screen</key>
@@ -1339,13 +1344,13 @@
 												<key>Alpha Component</key>
 												<real>1</real>
 												<key>Blue Component</key>
-												<real>0.83513772487640381</real>
+												<real>0.93333333333333335</real>
 												<key>Color Space</key>
-												<string>Calibrated</string>
+												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>0.83512353897094727</real>
+												<real>0.93333333333333335</real>
 												<key>Red Component</key>
-												<real>0.83514857292175293</real>
+												<real>0.93333333333333335</real>
 											</dict>
 											<key>Background Image Location</key>
 											<string></string>
@@ -1436,12 +1441,7 @@
 											<key>Idle Code</key>
 											<integer>0</integer>
 											<key>Jobs to Ignore</key>
-											<array>
-												<string>rlogin</string>
-												<string>ssh</string>
-												<string>slogin</string>
-												<string>telnet</string>
-											</array>
+											<array/>
 											<key>Keyboard Map</key>
 											<dict/>
 											<key>Link Color</key>
@@ -1470,7 +1470,7 @@
 											<key>Option Key Sends</key>
 											<integer>0</integer>
 											<key>Prompt Before Closing 2</key>
-											<false/>
+											<integer>2</integer>
 											<key>Right Option Key Sends</key>
 											<integer>0</integer>
 											<key>Rows</key>
@@ -1497,16 +1497,18 @@
 												<key>Alpha Component</key>
 												<real>1</real>
 												<key>Blue Component</key>
-												<real>0.75558114051818848</real>
+												<real>0.8666666666666667</real>
 												<key>Color Space</key>
-												<string>Calibrated</string>
+												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>0.75556838512420654</real>
+												<real>0.8666666666666667</real>
 												<key>Red Component</key>
-												<real>0.75559091567993164</real>
+												<real>0.8666666666666667</real>
 											</dict>
 											<key>Send Code When Idle</key>
 											<false/>
+											<key>Session Close Undo Timeout</key>
+											<integer>0</integer>
 											<key>Shortcut</key>
 											<string></string>
 											<key>Silence Bell</key>
@@ -1559,15 +1561,17 @@
 										<true/>
 										<key>Program</key>
 										<dict>
+											<key>Command</key>
+											<string>login -fqp "azdavis"</string>
 											<key>Type</key>
-											<string>Shell Launcher</string>
+											<string>Command</string>
 										</dict>
 										<key>Rows</key>
 										<integer>36</integer>
 										<key>Session Default Name</key>
 										<string>light</string>
 										<key>Session GUID</key>
-										<string>DF2D557D-42C4-42B8-A55E-439F3ECE219A</string>
+										<string>2D73A3EB-C08A-40D4-9C16-0C5931C024C1</string>
 										<key>Session Name</key>
 										<string>light</string>
 										<key>Session Window Title</key>
@@ -1613,11 +1617,11 @@
 					</dict>
 				</array>
 				<key>TerminalGuid</key>
-				<string>pty-67E0F6C1-2036-4B28-9EF9-38B692E1C1C4</string>
+				<string>pty-5BD2C3DA-317D-49C5-9AEF-9D11A24F6C17</string>
 				<key>Width</key>
 				<real>1280</real>
 				<key>Window Type</key>
-				<integer>1</integer>
+				<integer>4</integer>
 				<key>X Origin</key>
 				<real>0.0</real>
 				<key>Y Origin</key>
