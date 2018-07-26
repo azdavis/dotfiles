@@ -1,18 +1,17 @@
 #!/bin/sh
 
-set -efu
-IFS=
+set -eu
 
-. $HOME/.config/lib/panic.sh
+. "$HOME/.config/lib/panic.sh"
 
-if [ $# -eq 0 ] || [ $# -gt 2 ]; then
-    panic "usage: $(basename $0) <branch> [<start-point>]"
+if [ "$#" -eq 0 ] || [ "$#" -gt 2 ]; then
+    panic "usage: $(basename "$0") <branch> [<start-point>]"
 fi
 
 git rev-parse
 
-branch=$1
-start=${2:-HEAD}
-git checkout -b $branch $start
-git config branch.$branch.remote origin
-git config branch.$branch.merge refs/heads/$branch
+branch="$1"
+start="${2:-HEAD}"
+git checkout -b "$branch" "$start"
+git config "branch.$branch.remote" origin
+git config "branch.$branch.merge" "refs/heads/$branch"

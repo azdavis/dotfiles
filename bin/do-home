@@ -1,14 +1,11 @@
 #!/bin/sh
 
 set -eu
-IFS=
 
-# warning: set -f is NOT on
+. "$HOME/.config/lib/panic.sh"
 
-. $HOME/.config/lib/panic.sh
-
-if [ $# -ne 0 ]; then
-    panic "usage: $(basename $0)"
+if [ "$#" -ne 0 ]; then
+    panic "usage: $(basename "$0")"
 fi
 
 symlink() {
@@ -24,16 +21,16 @@ symlink() {
     ln -s "$1" "$2"
 }
 
-touch $HOME/.hushlogin
-chmod 600 $HOME/.hushlogin
+touch "$HOME/.hushlogin"
+chmod 600 "$HOME/.hushlogin"
 
-if [ $(uname) = Darwin ]; then
+if [ "$(uname)" = Darwin ]; then
     symlink "$HOME/.config/vscode" "/Applications/code-portable-data"
     symlink "$HOME/.config/sublime-text-3" "$HOME/Library/Application Support/Sublime Text 3"
 fi
 
-wd=.config/home
-cd $HOME/$wd
+wd=".config/home"
+cd "$HOME/$wd"
 for x in *; do
     symlink "$wd/$x" "$HOME/.$x"
 done

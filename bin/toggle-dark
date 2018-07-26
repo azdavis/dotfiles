@@ -1,22 +1,21 @@
 #!/bin/sh
 
-set -efu
-IFS=
+set -eu
 
-. $HOME/.config/lib/panic.sh
+. "$HOME/.config/lib/panic.sh"
 
-if [ $# -ne 0 ]; then
-    panic "usage: $(basename $0)"
+if [ "$#" -ne 0 ]; then
+    panic "usage: $(basename "$0")"
 fi
 
-cd $HOME/.config
+cd "$HOME/.config"
 
-new_dark=$(osascript -l JavaScript -e "
+new_dark="$(osascript -l JavaScript -e "
 !Application('System Events').appearancePreferences.darkMode()
-")
+")"
 p=etc/dark.patch
 
-if $new_dark; then
+if "$new_dark"; then
     iterm_profile=dark
     git_direction=""
 else
@@ -24,7 +23,7 @@ else
     git_direction="--reverse"
 fi
 
-git apply $git_direction $p
+git apply $git_direction "$p"
 printf "\033]50;SetProfile=$iterm_profile\a"
 osascript -l JavaScript -e "
 Application('System Events').appearancePreferences.darkMode = $new_dark

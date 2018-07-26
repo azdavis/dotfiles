@@ -1,9 +1,8 @@
 #!/bin/sh
 
-set -efu
-IFS=
+set -eu
 
-. $HOME/.config/lib/panic.sh
+. "$HOME/.config/lib/panic.sh"
 
 do_brew() {
     brew update
@@ -26,12 +25,12 @@ do_tlmgr() {
 }
 
 try() {
-    if ! command -v $1 >/dev/null; then
+    if ! command -v "$1" >/dev/null; then
         echo "'$1' not found"
         return
     fi
     echo "doing '$1'"
-    case $1 in
+    case "$1" in
     (brew) do_brew ;;
     (npm) do_npm ;;
     (tlmgr) do_tlmgr ;;
@@ -39,7 +38,7 @@ try() {
     esac
 }
 
-if [ $# -eq 0 ]; then
+if [ "$#" -eq 0 ]; then
     try brew
     try npm
     try tlmgr

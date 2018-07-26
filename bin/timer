@@ -1,17 +1,16 @@
 #!/bin/sh
 
-set -efu
-IFS=
+set -eu
 
-. $HOME/.config/lib/is_int.sh
-. $HOME/.config/lib/panic.sh
+. "$HOME/.config/lib/is_int.sh"
+. "$HOME/.config/lib/panic.sh"
 
 trap 'echo; exit 0' INT
 
 usage() {
 cat <<EOF >&2
 usage:
-    $(basename $0) [options]
+    $(basename "$0") [options]
 
 options:
     -h
@@ -30,42 +29,42 @@ H=0
 M=0
 S=0
 while getopts 'hH:M:S:' opt; do
-    case $opt in
-    (H) H=$OPTARG ;;
-    (M) M=$OPTARG ;;
-    (S) S=$OPTARG ;;
+    case "$opt" in
+    (H) H="$OPTARG" ;;
+    (M) M="$OPTARG" ;;
+    (S) S="$OPTARG" ;;
     (*) usage ;;
     esac
 done
-shift $((OPTIND - 1))
+shift "$((OPTIND - 1))"
 
-if [ $# -ne 0 ]; then
+if [ "$#" -ne 0 ]; then
     usage
 fi
 
-for x in $H $M $S; do
-    if ! is_int $x; then
+for x in "$H" "$M" "$S"; do
+    if ! is_int "$x"; then
         panic "'$x' is not an int"
     fi
-    if [ $x -lt 0 ] || [ $x -ge 60 ]; then
+    if [ "$x" -lt 0 ] || [ "$x" -ge 60 ]; then
         panic "'$x' is out of range"
     fi
 done
 
 while true; do
-    printf '\r%02d:%02d:%02d' $H $M $S
-    if [ $S -eq 0 ]; then
-        if [ $M -eq 0 ]; then
-            if [ $H -eq 0 ]; then
+    printf '\r%02d:%02d:%02d' "$H" "$M" "$S"
+    if [ "$S" -eq 0 ]; then
+        if [ "$M" -eq 0 ]; then
+            if [ "$H" -eq 0 ]; then
                 break
             fi
-            H=$((H - 1))
+            H="$((H - 1))"
             M=60
         fi
-        M=$((M - 1))
+        M="$((M - 1))"
         S=60
     fi
-    S=$((S - 1))
+    S="$((S - 1))"
     sleep 1
 done
 
