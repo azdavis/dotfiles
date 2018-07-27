@@ -6,6 +6,11 @@
  export COPYFILE_DISABLE="1"
 --- a/sublime-text-3/Packages/User/Preferences.sublime-settings
 +++ b/sublime-text-3/Packages/User/Preferences.sublime-settings
+@@ -9,3 +9,3 @@
+ 	"close_windows_when_empty": false,
+-	"color_scheme": "Packages/Color Scheme - Default/Sixteen.sublime-color-scheme",
++	"color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
+ 	"copy_with_empty_selection": false,
 @@ -50,2 +50,3 @@
  	[
 +		"gray_antialias",
@@ -14,36 +19,6 @@
  	[
 +		"gray_antialias"
  	],
---- a/sublime-text-3/Packages/User/theme.sublime-color-scheme
-+++ b/sublime-text-3/Packages/User/theme.sublime-color-scheme
-@@ -6,15 +6,15 @@
- 		"black": "#000000",
--		"text": "#111111",
--		"blue": "#228888",
--		"green": "#228822",
--		"grey": "#999999",
--		"grey2": "#888888",
--		"grey3": "#cccccc",
--		"pink": "#882288",
--		"purple": "#222288",
--		"red": "#882222",
-+		"text": "#dddddd",
-+		"blue": "#aadddd",
-+		"green": "#aaddaa",
-+		"grey": "#555555",
-+		"grey2": "#aaaaaa",
-+		"grey3": "#333333",
-+		"pink": "#ddaadd",
-+		"purple": "#aaaadd",
-+		"red": "#ddaaaa",
- 		"red2": "#ff0000",
--		"fg": "#eeeeee",
--		"line_highlight": "#dddddd",
--		"yellow": "#888822"
-+		"fg": "#000000",
-+		"line_highlight": "#222222",
-+		"yellow": "#ddddaa"
- 	},
 --- a/vscode/user-data/User/settings.json
 +++ b/vscode/user-data/User/settings.json
 @@ -63,3 +63,3 @@
