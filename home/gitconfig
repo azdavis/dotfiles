@@ -2,7 +2,9 @@
 	detachedHead = false
 [alias]
 	fixup = commit --amend --no-edit
+	log-graph = log --graph --oneline
 	praise = blame
+	show-fuller = show --format=fuller
 	unstash = stash pop
 [color]
 	advice = false
