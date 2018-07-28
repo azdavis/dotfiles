@@ -1094,21 +1094,13 @@
 				<key>Has Toolbelt</key>
 				<false/>
 				<key>Height</key>
-				<real>800</real>
+				<real>577</real>
 				<key>Hide After Opening</key>
 				<false/>
 				<key>Hiding Toolbelt Should Resize Window</key>
 				<true/>
 				<key>Is Hotkey Window</key>
 				<false/>
-				<key>Old Height</key>
-				<real>0.0</real>
-				<key>Old Width</key>
-				<real>0.0</real>
-				<key>Old X Origin</key>
-				<real>0.0</real>
-				<key>Old Y Origin</key>
-				<real>0.0</real>
 				<key>Saved Window Type</key>
 				<integer>0</integer>
 				<key>Screen</key>
@@ -1545,7 +1537,7 @@
 										<key>Bookmark Name</key>
 										<string>light</string>
 										<key>Columns</key>
-										<integer>127</integer>
+										<integer>80</integer>
 										<key>Commands</key>
 										<array/>
 										<key>Directories</key>
@@ -1567,11 +1559,11 @@
 											<string>Command</string>
 										</dict>
 										<key>Rows</key>
-										<integer>36</integer>
+										<integer>25</integer>
 										<key>Session Default Name</key>
 										<string>light</string>
 										<key>Session GUID</key>
-										<string>2D73A3EB-C08A-40D4-9C16-0C5931C024C1</string>
+										<string>9ED32F4A-BCC1-4016-9F1E-8146DBCB9508</string>
 										<key>Session Name</key>
 										<string>light</string>
 										<key>Session Window Title</key>
@@ -1588,9 +1580,9 @@
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>800</real>
+										<real>554</real>
 										<key>width</key>
-										<real>1280</real>
+										<real>810</real>
 										<key>x</key>
 										<real>0.0</real>
 										<key>y</key>
@@ -1603,9 +1595,9 @@
 							<key>frame</key>
 							<dict>
 								<key>height</key>
-								<real>800</real>
+								<real>554</real>
 								<key>width</key>
-								<real>1280</real>
+								<real>810</real>
 								<key>x</key>
 								<real>0.0</real>
 								<key>y</key>
@@ -1617,15 +1609,15 @@
 					</dict>
 				</array>
 				<key>TerminalGuid</key>
-				<string>pty-5BD2C3DA-317D-49C5-9AEF-9D11A24F6C17</string>
+				<string>pty-1AE9098C-AB58-4DAB-8975-7E4F074B23A0</string>
 				<key>Width</key>
-				<real>1280</real>
+				<real>810</real>
 				<key>Window Type</key>
-				<integer>4</integer>
+				<integer>0</integer>
 				<key>X Origin</key>
-				<real>0.0</real>
+				<real>235</real>
 				<key>Y Origin</key>
-				<real>0.0</real>
+				<real>112</real>
 			</dict>
 		</array>
 	</dict>
