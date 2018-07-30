@@ -2,8 +2,14 @@
 
 set -eu
 
-. "$HOME/.config/lib/is_int.sh"
-. "$HOME/.config/lib/panic.sh"
+is_int() {
+    [ -n "$1" ] && [ "$1" -eq "$1" ] 2>/dev/null
+}
+
+panic() {
+    echo "$1" >&2
+    exit 1
+}
 
 if [ "$#" -ne 1 ]; then
     panic "usage: $(basename "$0") <positive_int>"

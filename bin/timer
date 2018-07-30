@@ -2,8 +2,9 @@
 
 set -eu
 
-. "$HOME/.config/lib/is_int.sh"
-. "$HOME/.config/lib/panic.sh"
+is_int() {
+    [ -n "$1" ] && [ "$1" -eq "$1" ] 2>/dev/null
+}
 
 trap 'echo; exit 0' INT
 

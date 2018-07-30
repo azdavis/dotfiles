@@ -2,7 +2,10 @@
 
 set -eu
 
-. "$HOME/.config/lib/panic.sh"
+panic() {
+    echo "$1" >&2
+    exit 1
+}
 
 if [ "$#" -ne 0 ]; then
     panic "usage: $(basename "$0")"
