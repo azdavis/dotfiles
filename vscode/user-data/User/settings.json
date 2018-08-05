@@ -27,6 +27,7 @@
         "sensei",
         "serde",
         "serializer",
+        "struct",
         "unmaintained",
         "unmount",
         "unsub",
