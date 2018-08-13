@@ -1,0 +1,13 @@
+#!/bin/sh
+
+set -eu
+
+msg="$(head -n 1 $1)"
+msg_len="${#msg}"
+msg_max_len="50"
+if [ "$msg_len" -gt "$msg_max_len" ]; then
+    trimmed_msg="$(printf '%s' $msg | cut -c 1-$msg_max_len)"
+    echo "commit message length = $msg_len > $msg_max_len"
+    echo "first $msg_max_len chars: '$trimmed_msg'"
+    exit 1
+fi
