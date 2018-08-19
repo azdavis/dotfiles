@@ -13,7 +13,6 @@ do_brew() {
     brew bundle cleanup --force --global
     brew upgrade
     brew unlink coreutils >/dev/null
-    brew cask cleanup
     brew cleanup
     brew prune
 }
