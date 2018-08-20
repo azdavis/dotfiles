@@ -31,7 +31,7 @@ try() {
         echo "'$1' not found"
         return
     fi
-    echo "doing '$1'"
+    echo "doing $1"
     case "$1" in
     (brew) do_brew ;;
     (npm) do_npm ;;
