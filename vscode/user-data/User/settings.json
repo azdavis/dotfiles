@@ -77,6 +77,8 @@
     "git.enabled": false,
     "javascript.validate.enable": false,
     "rewrap.autoWrap.enabled": true,
+    "sml.ignoreMissingSmlDotJson": true,
+    "sml.smlnj.make.debounce": null,
     "telemetry.enableTelemetry": false,
     "window.restoreWindows": "none",
     "workbench.colorTheme": "Default Light+",
@@ -96,5 +98,8 @@
     },
     "[properties]": {
         "editor.insertSpaces": false
+    },
+    "[sml]": {
+        "editor.tabSize": 2
     }
 }
