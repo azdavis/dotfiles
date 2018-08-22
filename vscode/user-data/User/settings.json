@@ -76,6 +76,7 @@
     "files.trimTrailingWhitespace": true,
     "git.enabled": false,
     "javascript.validate.enable": false,
+    "latex-workshop.latex.autoBuild.onSave.enabled": false,
     "rewrap.autoWrap.enabled": true,
     "sml.ignoreMissingSmlDotJson": true,
     "sml.smlnj.make.debounce": null,
