@@ -2,7 +2,7 @@
 
 set -eu
 
-msg="$(head -n 1 $1)"
+msg="$(head -n 1 "$1")"
 msg_len="${#msg}"
 msg_max_len="50"
 if [ "$msg_len" -gt "$msg_max_len" ]; then
