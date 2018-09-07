@@ -42,6 +42,7 @@
         "writeup"
     ],
     "editor.acceptSuggestionOnEnter": "off",
+    "editor.autoIndent": false,
     "editor.colorDecorators": false,
     "editor.cursorBlinking": "solid",
     "editor.dragAndDrop": false,
