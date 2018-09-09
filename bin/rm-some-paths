@@ -32,6 +32,20 @@ rm -rf \
     .config/sublime-text-3/Packages/User/Package\ Control.last-run \
     .config/sublime-text-3/Packages/User/Package\ Control.merged-ca-bundle \
     .config/sublime-text-3/Packages/User/Package\ Control.user-ca-bundle \
+    .config/vscode/user-data/Backups \
+    .config/vscode/user-data/Cache \
+    .config/vscode/user-data/CachedData \
+    .config/vscode/user-data/CachedExtensions \
+    .config/vscode/user-data/Cookies \
+    .config/vscode/user-data/Cookies-journal \
+    .config/vscode/user-data/GPUCache \
+    .config/vscode/user-data/languagepacks.json \
+    .config/vscode/user-data/Local\ Storage \
+    .config/vscode/user-data/logs \
+    .config/vscode/user-data/machineid \
+    .config/vscode/user-data/Preferences \
+    .config/vscode/user-data/storage.json \
+    .config/vscode/user-data/User/snippets \
     .gdb_history \
     .idris/repl/history \
     .node_repl_history \
