@@ -32,12 +32,10 @@ rm -rf \
     .config/vscode/user-data/Cookies-journal \
     .config/vscode/user-data/GPUCache \
     .config/vscode/user-data/languagepacks.json \
-    .config/vscode/user-data/Local\ Storage \
     .config/vscode/user-data/logs \
     .config/vscode/user-data/machineid \
     .config/vscode/user-data/Preferences \
     .config/vscode/user-data/storage.json \
-    .config/vscode/user-data/User/snippets \
     .gdb_history \
     .idris/repl/history \
     .node_repl_history \
