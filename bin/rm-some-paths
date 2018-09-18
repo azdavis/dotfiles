@@ -16,14 +16,6 @@ cd
 rm -rf \
     .bash_history \
     .bash_sessions \
-    .config/Code/Backups \
-    .config/Code/Cache \
-    .config/Code/CachedData \
-    .config/Code/CachedExtensions \
-    .config/Code/GPUCache \
-    .config/Code/logs \
-    .config/Code/storage.json \
-    .config/sublime-text-3/Cache \
     .config/sublime-text-3/Cache \
     .config/sublime-text-3/Local/Auto\ Save\ Session.sublime_session \
     .config/sublime-text-3/Local/Session.sublime_session \
