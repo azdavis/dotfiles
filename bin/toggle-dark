@@ -13,9 +13,9 @@ fi
 
 cd "$HOME/.config"
 
-new_dark="$(osascript -l JavaScript -e "
-!Application('System Events').appearancePreferences.darkMode()
-")"
+sys_dark_mode="Application('System Events').appearancePreferences.darkMode"
+
+new_dark="$(osascript -l JavaScript -e "! $sys_dark_mode()")"
 p=etc/dark.patch
 
 if "$new_dark"; then
@@ -28,6 +28,4 @@ fi
 
 git apply $git_direction "$p"
 printf "\033]50;SetProfile=$iterm_profile\a"
-osascript -l JavaScript -e "
-Application('System Events').appearancePreferences.darkMode = $new_dark
-" >/dev/null
+osascript -l JavaScript -e "$sys_dark_mode = $new_dark" >/dev/null
