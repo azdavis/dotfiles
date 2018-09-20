@@ -6,6 +6,7 @@
 	praise = blame
 	show-fuller = show --format=fuller
 	unstash = stash pop
+	ls-untracked = ls-files -o --directory
 [color]
 	advice = false
 [commit]
