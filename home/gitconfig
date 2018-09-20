@@ -39,7 +39,6 @@
 [status]
 	branch = true
 	short = true
-	showUntrackedFiles = all
 [transfer]
 	fsckObjects = true
 [url "https://"]
