@@ -1,5 +1,6 @@
 {
     "cSpell.userWords": [
+        "acked",
         "azdavis",
         "backend",
         "callsite",
@@ -13,11 +14,13 @@
         "deserializer",
         "deserializing",
         "devbox",
+        "epoch",
         "frontmatter",
         "icloud",
         "lifecycle",
         "mailto",
         "middlewares",
+        "millis",
         "mpsc",
         "mutex",
         "nocursor",
