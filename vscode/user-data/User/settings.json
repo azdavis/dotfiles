@@ -62,6 +62,7 @@
     "editor.useTabStops": true,
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
+    "extensions.ignoreRecommendations": true,
     "files.associations": {
         "Brewfile": "ruby",
         "Cargo.lock": "toml",
