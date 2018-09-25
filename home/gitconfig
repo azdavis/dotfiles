@@ -3,10 +3,10 @@
 [alias]
 	fixup = commit --amend --no-edit
 	log-graph = log --graph --oneline
+	ls-untracked = ls-files -o --directory
 	praise = blame
 	show-fuller = show --format=fuller
 	unstash = stash pop
-	ls-untracked = ls-files -o --directory
 [color]
 	advice = false
 [commit]
