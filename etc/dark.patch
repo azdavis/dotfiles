@@ -21,7 +21,7 @@
  	],
 --- a/vscode/user-data/User/settings.json
 +++ b/vscode/user-data/User/settings.json
-@@ -86,3 +86,3 @@
+@@ -90,3 +90,3 @@
      "window.restoreWindows": "none",
 -    "workbench.colorTheme": "Default Light+",
 +    "workbench.colorTheme": "Default Dark+",
