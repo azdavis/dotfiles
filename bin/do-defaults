@@ -19,6 +19,7 @@ dw -g AppleShowAllExtensions -bool true
 dw -g AppleShowScrollBars -string "WhenScrolling"
 dw -g AppleWindowTabbingMode -string "always"
 dw -g CGDisableCursorLocationMagnification -bool true
+dw -g CGFontRenderingFontSmoothingDisabled -bool false
 dw -g com.apple.springing.delay -float 0.5
 dw -g com.apple.springing.enabled -bool true
 dw -g InitialKeyRepeat -int 25
