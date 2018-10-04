@@ -36,6 +36,7 @@
         "sensei",
         "serde",
         "serializer",
+        "shuf",
         "struct",
         "timeago",
         "unmaintained",
