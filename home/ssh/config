@@ -4,6 +4,7 @@ Host shark unix cmu home
     User azdavis
     GSSAPIAuthentication yes
     GSSAPIDelegateCredentials yes
+    RemoteForward 50505 localhost:52698
     ExitOnForwardFailure yes
 Host shark
     Hostname makoshark.ics.cs.cmu.edu
