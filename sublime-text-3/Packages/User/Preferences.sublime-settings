@@ -64,6 +64,7 @@
 	[
 		80
 	],
+	"scroll_past_end": true,
 	"show_line_endings": true,
 	"theme": "Adaptive.sublime-theme",
 	"theme_font_options":
