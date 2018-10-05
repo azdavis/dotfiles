@@ -9,9 +9,8 @@ panic() {
 
 do_brew() {
     brew update
-    brew bundle --verbose --global
+    brew bundle --verbose --global || true
     brew bundle cleanup --force --global
-    brew upgrade
     brew unlink coreutils >/dev/null
     brew cleanup
     brew prune
