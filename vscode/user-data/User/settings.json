@@ -84,6 +84,7 @@
     "git.enabled": false,
     "javascript.validate.enable": false,
     "latex-workshop.latex.autoBuild.onSave.enabled": false,
+    "latex-workshop.message.update.show": false,
     "rewrap.autoWrap.enabled": true,
     "sml.ignoreMissingSmlDotJson": true,
     "sml.smlnj.make.debounce": null,
