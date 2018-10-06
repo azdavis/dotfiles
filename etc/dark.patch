@@ -9,14 +9,14 @@
  	[
 +		"gray_antialias",
  		"no_bold",
-@@ -70,2 +71,3 @@
+@@ -71,2 +72,3 @@
  	[
 +		"gray_antialias"
  	],
 --- a/vscode/user-data/User/settings.json
 +++ b/vscode/user-data/User/settings.json
-@@ -90,3 +90,3 @@
+@@ -92,3 +92,3 @@
      "window.restoreWindows": "none",
 -    "workbench.colorTheme": "Default Light+",
 +    "workbench.colorTheme": "Default Dark+",
-     "workbench.startupEditor": "none",
+     "workbench.iconTheme": null,
