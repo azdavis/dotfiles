@@ -55,6 +55,7 @@
     "editor.emptySelectionClipboard": false,
     "editor.fontFamily": "Input",
     "editor.fontSize": 16,
+    "editor.minimap.enabled": false,
     "editor.occurrencesHighlight": false,
     "editor.quickSuggestionsDelay": 50,
     "editor.renderLineHighlight": "none",
