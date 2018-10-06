@@ -14,18 +14,14 @@ fi
 cd "$HOME/.config"
 
 sys_dark_mode="Application('System Events').appearancePreferences.darkMode"
-
 new_dark="$(osascript -l JavaScript -e "! $sys_dark_mode()")"
-p=etc/dark.patch
+p="etc/dark.patch"
 
 if "$new_dark"; then
-    iterm_profile=dark
     git_direction=""
 else
-    iterm_profile=light
     git_direction="--reverse"
 fi
 
 git apply $git_direction "$p"
-printf "\033]50;SetProfile=$iterm_profile\a"
 osascript -l JavaScript -e "$sys_dark_mode = $new_dark" >/dev/null
