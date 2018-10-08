@@ -16,6 +16,7 @@ cd
 rm -rf \
     .bash_history \
     .bash_sessions \
+    .cache \
     .config/sublime-text-3/Cache \
     .config/sublime-text-3/Local/Auto\ Save\ Session.sublime_session \
     .config/sublime-text-3/Local/Session.sublime_session \
@@ -38,7 +39,10 @@ rm -rf \
     .config/vscode/user-data/storage.json \
     .gdb_history \
     .idris/repl/history \
+    .jspm \
     .node_repl_history \
+    .node-gyp \
+    .npm \
     .oracle_jre_usage \
     .python_history \
     .sh_history \
