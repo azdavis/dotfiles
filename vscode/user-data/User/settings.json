@@ -51,6 +51,7 @@
     "editor.autoIndent": false,
     "editor.colorDecorators": false,
     "editor.cursorBlinking": "solid",
+    "editor.cursorWidth": 1,
     "editor.dragAndDrop": false,
     "editor.emptySelectionClipboard": false,
     "editor.fontFamily": "Input",
