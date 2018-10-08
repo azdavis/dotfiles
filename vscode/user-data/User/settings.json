@@ -61,6 +61,7 @@
     "editor.renderLineHighlight": "none",
     "editor.rulers": [80],
     "editor.showFoldingControls": "mouseover",
+    "editor.suggest.localityBonus": true,
     "editor.tabCompletion": "on",
     "editor.trimAutoWhitespace": true,
     "editor.useTabStops": true,
