@@ -97,6 +97,7 @@
     "sml.ignoreMissingSmlDotJson": true,
     "sml.smlnj.make.debounce": null,
     "telemetry.enableTelemetry": false,
+    "terminal.integrated.fontSize": 16,
     "window.restoreWindows": "none",
     "workbench.colorTheme": "Default Light+",
     "workbench.editor.restoreViewState": false,
