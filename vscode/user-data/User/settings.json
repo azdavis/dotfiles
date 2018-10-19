@@ -66,6 +66,7 @@
     "editor.showFoldingControls": "mouseover",
     "editor.suggest.localityBonus": true,
     "editor.tabCompletion": "on",
+    "editor.tabSize": 2,
     "editor.trimAutoWhitespace": true,
     "editor.useTabStops": true,
     "explorer.confirmDelete": false,
@@ -116,8 +117,5 @@
     },
     "[properties]": {
         "editor.insertSpaces": false
-    },
-    "[sml]": {
-        "editor.tabSize": 2
     }
 }
