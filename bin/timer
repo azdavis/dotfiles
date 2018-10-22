@@ -2,6 +2,11 @@
 
 set -eu
 
+panic() {
+    echo "$1" >&2
+    exit 1
+}
+
 is_int() {
     [ -n "$1" ] && [ "$1" -eq "$1" ] 2>/dev/null
 }
