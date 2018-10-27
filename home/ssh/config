@@ -1,13 +1,11 @@
 Host *
     HashKnownHosts yes
-Host shark unix cmu home
+Host cmu home
     User azdavis
     GSSAPIAuthentication yes
     GSSAPIDelegateCredentials yes
     ExitOnForwardFailure yes
-Host shark
-    Hostname makoshark.ics.cs.cmu.edu
-Host unix cmu
+Host cmu
     Hostname unix7.andrew.cmu.edu
 Host home
     Hostname davis-imac.local
