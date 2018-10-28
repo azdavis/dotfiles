@@ -60,16 +60,6 @@ alias say="rlwrap say"
 alias scp="scp -q"
 alias sml="rlwrap sml"
 
-ip() {
-    curl https://ifconfig.co
-}
-
-write() {
-    mesg y
-    command write "$@"
-    mesg n
-}
-
 autoload -U compinit
 compinit -i
 zstyle ":completion:*" group-name ""
