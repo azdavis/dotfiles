@@ -11,39 +11,37 @@ if [ "$#" -ne 0 ]; then
     panic "usage: $(basename "$0")"
 fi
 
-alias dw="defaults write"
-
-dw -g _HIHideMenuBar -bool true
-dw -g ApplePressAndHoldEnabled -bool false
-dw -g AppleShowAllExtensions -bool true
-dw -g AppleShowScrollBars -string "WhenScrolling"
-dw -g AppleWindowTabbingMode -string "always"
-dw -g CGDisableCursorLocationMagnification -bool true
-dw -g CGFontRenderingFontSmoothingDisabled -bool false
-dw -g com.apple.springing.delay -float 0.5
-dw -g com.apple.springing.enabled -bool true
-dw -g InitialKeyRepeat -int 25
-dw -g KeyRepeat -int 2
-dw -g NSAutomaticQuoteSubstitutionEnabled -bool false
-dw -g NSAutomaticSpellingCorrectionEnabled -bool false
-dw -g NSAutomaticWindowAnimationsEnabled -bool false
-dw -g NSCloseAlwaysConfirmsChanges -bool true
-dw -g NSDisableAutomaticTermination -bool true
-dw -g NSNavPanelExpandedStateForSaveMode -bool true
-dw -g NSNavPanelExpandedStateForSaveMode2 -bool true
-dw -g NSQuitAlwaysKeepsWindows -bool false
-dw -g NSUseAnimatedFocusRing -bool false
-dw -g NSWindowResizeTime -float 0.1
-dw com.apple.desktopservices DSDontWriteNetworkStores -bool true
-dw com.apple.dock autohide -bool true
-dw com.apple.dock autohide-delay -int 9999
-dw com.apple.dock launchanim -bool false
-dw com.apple.dock magnification -bool false
-dw com.apple.finder _FXSortFoldersFirst -bool true
-dw com.apple.finder DisableAllAnimations -bool true
-dw com.apple.finder FXEnableExtensionChangeWarning -bool false
-dw com.apple.mail DisableInlineAttachmentViewing -bool true
-dw com.apple.print.printingprefs "Quit When Finished" -bool true
-dw com.apple.screencapture disable-shadow -bool true
+defaults write -g _HIHideMenuBar -bool true
+defaults write -g ApplePressAndHoldEnabled -bool false
+defaults write -g AppleShowAllExtensions -bool true
+defaults write -g AppleShowScrollBars -string "WhenScrolling"
+defaults write -g AppleWindowTabbingMode -string "always"
+defaults write -g CGDisableCursorLocationMagnification -bool true
+defaults write -g CGFontRenderingFontSmoothingDisabled -bool false
+defaults write -g com.apple.springing.delay -float 0.5
+defaults write -g com.apple.springing.enabled -bool true
+defaults write -g InitialKeyRepeat -int 25
+defaults write -g KeyRepeat -int 2
+defaults write -g NSAutomaticQuoteSubstitutionEnabled -bool false
+defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
+defaults write -g NSAutomaticWindowAnimationsEnabled -bool false
+defaults write -g NSCloseAlwaysConfirmsChanges -bool true
+defaults write -g NSDisableAutomaticTermination -bool true
+defaults write -g NSNavPanelExpandedStateForSaveMode -bool true
+defaults write -g NSNavPanelExpandedStateForSaveMode2 -bool true
+defaults write -g NSQuitAlwaysKeepsWindows -bool false
+defaults write -g NSUseAnimatedFocusRing -bool false
+defaults write -g NSWindowResizeTime -float 0.1
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock autohide-delay -int 9999
+defaults write com.apple.dock launchanim -bool false
+defaults write com.apple.dock magnification -bool false
+defaults write com.apple.finder _FXSortFoldersFirst -bool true
+defaults write com.apple.finder DisableAllAnimations -bool true
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+defaults write com.apple.mail DisableInlineAttachmentViewing -bool true
+defaults write com.apple.print.printingprefs "Quit When Finished" -bool true
+defaults write com.apple.screencapture disable-shadow -bool true
 
 echo "relog for all changes to take effect"
