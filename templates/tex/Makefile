@@ -1,4 +1,4 @@
-TEXC = pdflatex -halt-on-error -interaction nonstopmode -output-directory=build
+TEXC = pdflatex -halt-on-error -interaction nonstopmode -output-directory build
 
 .SUFFIXES:
 .PHONY: all clean
