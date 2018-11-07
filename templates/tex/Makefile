@@ -1,4 +1,5 @@
 TEXC = pdflatex -halt-on-error -interaction nonstopmode -output-directory build
+Q = >/dev/null
 
 .SUFFIXES:
 .PHONY: all clean
@@ -10,5 +11,4 @@ clean:
 
 build/%.pdf: src/%.tex
 	mkdir -p build
-	! $(TEXC) $^ | grep -e '^!' -e '^l\.'
-	! $(TEXC) $^ | grep -e '^!' -e '^l\.'
+	for x in 1 2; do $(TEXC) $^ $(Q); done
