@@ -6,6 +6,6 @@ Host cmu home
     GSSAPIDelegateCredentials yes
     ExitOnForwardFailure yes
 Host cmu
-    Hostname unix7.andrew.cmu.edu
+    Hostname unix.andrew.cmu.edu
 Host home
     Hostname davis-imac.local
