@@ -80,6 +80,7 @@
         "zshrc": "shellscript"
     },
     "files.exclude": {
+        "**/.cm": true,
         "**/.DS_Store": true,
         "**/.git": true,
         "**/.hg": true,
