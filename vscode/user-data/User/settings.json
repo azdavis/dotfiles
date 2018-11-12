@@ -79,15 +79,6 @@
         "Cargo.lock": "toml",
         "zshrc": "shellscript"
     },
-    "files.exclude": {
-        "**/.cm": true,
-        "**/.DS_Store": true,
-        "**/.git": true,
-        "**/.hg": true,
-        "**/.svn": true,
-        "**/CVS": true,
-        "**/node_modules": true
-    },
     "files.hotExit": "off",
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
