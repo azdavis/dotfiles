@@ -97,6 +97,7 @@
     "latex-workshop.latex.autoBuild.onSave.enabled": false,
     "latex-workshop.message.update.show": false,
     "rewrap.autoWrap.enabled": true,
+    "search.useGlobalIgnoreFiles": true,
     "sml.ignoreMissingSmlDotJson": true,
     "sml.smlnj.make.debounce": null,
     "telemetry.enableTelemetry": false,
