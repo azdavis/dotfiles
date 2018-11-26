@@ -59,7 +59,7 @@ alias ls="ls -bh --color=auto --group-directories-first --time-style=long-iso"
 alias say="rlwrap say"
 alias scp="scp -q"
 alias sml="rlwrap sml"
-alias tree="tree --dirsfirst"
+alias tree="tree -N --dirsfirst"
 
 autoload -U compinit
 compinit -i
