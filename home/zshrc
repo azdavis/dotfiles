@@ -34,6 +34,7 @@ setopt nounset
 setopt rmstarsilent
 
 alias -- -="cd -"
+alias date="date +'%Y-%m-%d %H:%M:%S %z'"
 alias df="df -h"
 alias du="du -chs"
 alias e="$EDITOR"
