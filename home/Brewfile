@@ -3,6 +3,7 @@ tap "homebrew/cask"
 tap "homebrew/core"
 tap "netlify/netlifyctl"
 brew "coreutils", link: false
+brew "fd"
 brew "ffmpeg"
 brew "git"
 brew "go"
