@@ -62,6 +62,12 @@ alias scp="scp -q"
 alias sml="rlwrap sml"
 alias tree="tree -N --dirsfirst"
 
+write() {
+    mesg y
+    command write "$@"
+    mesg n
+}
+
 autoload -U compinit
 compinit -i
 zstyle ":completion:*" group-name ""
