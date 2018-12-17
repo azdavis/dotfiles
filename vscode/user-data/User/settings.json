@@ -70,7 +70,9 @@
     "editor.occurrencesHighlight": false,
     "editor.quickSuggestionsDelay": 50,
     "editor.renderLineHighlight": "none",
-    "editor.rulers": [80],
+    "editor.rulers": [
+        80
+    ],
     "editor.showFoldingControls": "mouseover",
     "editor.suggest.localityBonus": true,
     "editor.tabCompletion": "on",
