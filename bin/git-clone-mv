@@ -3,16 +3,16 @@
 set -eu
 
 panic() {
-    echo "$1" >&2
-    exit 1
+  echo "$1" >&2
+  exit 1
 }
 
 if [ "$#" -ne 1 ]; then
-    panic "usage: $(basename "$0") <https-url>"
+  panic "usage: $(basename "$0") <https-url>"
 fi
 
 if ! echo "$1" | grep -q '^https://'; then
-    panic "'$1' is not a URL starting with https://"
+  panic "'$1' is not a URL starting with https://"
 fi
 
 url="$(echo "$1" | sed 's#\.git$##')"

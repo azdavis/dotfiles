@@ -3,12 +3,12 @@
 set -eu
 
 panic() {
-    echo "$1" >&2
-    exit 1
+  echo "$1" >&2
+  exit 1
 }
 
 if [ "$#" -eq 0 ] || [ "$#" -gt 2 ]; then
-    panic "usage: $(basename "$0") <branch> [<start-point>]"
+  panic "usage: $(basename "$0") <branch> [<start-point>]"
 fi
 
 git rev-parse

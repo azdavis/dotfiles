@@ -3,12 +3,12 @@
 set -eu
 
 panic() {
-    echo "$1" >&2
-    exit 1
+  echo "$1" >&2
+  exit 1
 }
 
 if [ "$#" -ne 0 ]; then
-    panic "usage: $(basename "$0")"
+  panic "usage: $(basename "$0")"
 fi
 
 cd "$HOME/.config"
@@ -18,9 +18,9 @@ new_dark="$(osascript -l JavaScript -e "! $sys_dark_mode()")"
 p="etc/dark.patch"
 
 if "$new_dark"; then
-    git_direction=""
+  git_direction=""
 else
-    git_direction="--reverse"
+  git_direction="--reverse"
 fi
 
 git apply $git_direction "$p"
