@@ -2,6 +2,7 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "netlify/netlifyctl"
+
 brew "coreutils", link: false
 brew "fd"
 brew "ffmpeg"
@@ -16,6 +17,7 @@ brew "smlnj"
 brew "tarsnap"
 brew "tree"
 brew "youtube-dl"
+
 cask "1password"
 cask "anki"
 cask "battle-net"
