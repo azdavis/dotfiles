@@ -8,7 +8,7 @@ panic() {
 }
 
 if [ "$#" -eq 0 ] || [ "$#" -gt 2 ]; then
-  panic "usage: $(basename "$0") <branch> [<start-point>]"
+  panic "usage: $0 <branch> [<start-point>]"
 fi
 
 git rev-parse

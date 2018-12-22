@@ -8,7 +8,7 @@ panic() {
 }
 
 if [ "$#" -ne 0 ]; then
-  panic "usage: $(basename "$0")"
+  panic "usage: $0"
 fi
 
 cd "$HOME/.config"

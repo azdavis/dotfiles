@@ -12,7 +12,7 @@ panic() {
 }
 
 if [ "$#" -ne 1 ]; then
-  panic "usage: $(basename "$0") <positive_int>"
+  panic "usage: $0 <positive_int>"
 elif ! is_int "$1" || [ "$1" -le 0 ]; then
   panic "'$1' not a positive int"
 fi
