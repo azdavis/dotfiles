@@ -2,21 +2,21 @@
 +++ b/sublime-text-3/Packages/User/Preferences.sublime-settings
 @@ -9,3 +9,3 @@
  	"close_windows_when_empty": false,
--	"color_scheme": "Packages/Color Scheme - Default/Sixteen.sublime-color-scheme",
-+	"color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
+-	"color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
++	"color_scheme": "Packages/Color Scheme - Default/Sixteen.sublime-color-scheme",
  	"copy_with_empty_selection": false,
-@@ -50,2 +50,3 @@
+@@ -50,3 +50,2 @@
  	[
-+		"gray_antialias",
+-		"gray_antialias",
  		"no_bold",
-@@ -71,2 +72,3 @@
+@@ -72,3 +71,2 @@
  	[
-+		"gray_antialias"
+-		"gray_antialias"
  	],
 --- a/vscode/user-data/User/settings.json
 +++ b/vscode/user-data/User/settings.json
 @@ -108,3 +108,3 @@
      "window.restoreWindows": "none",
--    "workbench.colorTheme": "Default Light+",
-+    "workbench.colorTheme": "Default Dark+",
+-    "workbench.colorTheme": "Default Dark+",
++    "workbench.colorTheme": "Default Light+",
      "workbench.editor.restoreViewState": false,

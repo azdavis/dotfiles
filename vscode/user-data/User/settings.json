@@ -106,7 +106,7 @@
     "telemetry.enableTelemetry": false,
     "terminal.integrated.fontSize": 16,
     "window.restoreWindows": "none",
-    "workbench.colorTheme": "Default Light+",
+    "workbench.colorTheme": "Default Dark+",
     "workbench.editor.restoreViewState": false,
     "workbench.iconTheme": null,
     "workbench.startupEditor": "none",

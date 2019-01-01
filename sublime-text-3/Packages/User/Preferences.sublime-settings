@@ -7,7 +7,7 @@
 	"caret_extra_width": 1,
 	"caret_style": "solid",
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/Color Scheme - Default/Sixteen.sublime-color-scheme",
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
 	"copy_with_empty_selection": false,
 	"default_line_ending": "unix",
 	"drag_text": false,
@@ -48,6 +48,7 @@
 	"font_face": "Input",
 	"font_options":
 	[
+		"gray_antialias",
 		"no_bold",
 		"no_italic"
 	],
@@ -69,6 +70,7 @@
 	"theme": "Adaptive.sublime-theme",
 	"theme_font_options":
 	[
+		"gray_antialias"
 	],
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true

@@ -15,12 +15,12 @@ cd "$HOME/.config"
 
 sys_dark_mode="Application('System Events').appearancePreferences.darkMode"
 new_dark="$(osascript -l JavaScript -e "! $sys_dark_mode()")"
-p="etc/dark.patch"
+p="etc/light.patch"
 
 if "$new_dark"; then
-  git_direction=""
-else
   git_direction="--reverse"
+else
+  git_direction=""
 fi
 
 git apply $git_direction "$p"
