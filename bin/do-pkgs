@@ -2,47 +2,14 @@
 
 set -eu
 
-panic() {
-  echo "$1" >&2
-  exit 1
-}
+brew update
+brew bundle --verbose --global || true
+brew bundle cleanup --force --global
+brew unlink coreutils >/dev/null
+brew cleanup
+brew prune
 
-do_brew() {
-  brew update
-  brew bundle --verbose --global || true
-  brew bundle cleanup --force --global
-  brew unlink coreutils >/dev/null
-  brew cleanup
-  brew prune
-}
+npm i -g npm
 
-do_npm() {
-  npm i -g npm
-}
-
-do_tlmgr() {
-  tlmgr update --self
-  tlmgr update --all
-}
-
-try() {
-  if ! command -v "$1" >/dev/null; then
-    echo "'$1' not found"
-    return
-  fi
-  echo "doing $1"
-  case "$1" in
-  (brew) do_brew ;;
-  (npm) do_npm ;;
-  (tlmgr) do_tlmgr ;;
-  (*) panic "unknown package manager '$1'" ;;
-  esac
-}
-
-if [ "$#" -eq 0 ]; then
-  try brew
-  try npm
-  try tlmgr
-else
-  try "$@"
-fi
+tlmgr update --self
+tlmgr update --all
