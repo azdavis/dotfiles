@@ -7,7 +7,6 @@ brew bundle --verbose --global || true
 brew bundle cleanup --force --global
 brew unlink coreutils >/dev/null
 brew cleanup
-brew prune
 
 npm i -g npm
 
