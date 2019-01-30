@@ -96,6 +96,7 @@
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
     "git.enabled": false,
+    "html.format.wrapLineLength": 80,
     "javascript.validate.enable": false,
     "latex-workshop.latex.autoBuild.onSave.enabled": false,
     "latex-workshop.message.update.show": false,
