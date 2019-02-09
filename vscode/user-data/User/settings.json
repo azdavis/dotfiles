@@ -87,7 +87,6 @@
     "explorer.confirmDragAndDrop": false,
     "extensions.ignoreRecommendations": true,
     "files.associations": {
-        "*.erb": "html"
         "Brewfile": "ruby",
         "Cargo.lock": "toml",
         "zshrc": "shellscript"
