@@ -96,7 +96,7 @@
   "git.enabled": false,
   "html.format.enable": false,
   "javascript.validate.enable": false,
-  "latex-workshop.latex.autoBuild.onSave.enabled": false,
+  "latex-workshop.latex.autoBuild.run": "never",
   "latex-workshop.message.update.show": false,
   "rewrap.autoWrap.enabled": true,
   "search.useGlobalIgnoreFiles": true,
