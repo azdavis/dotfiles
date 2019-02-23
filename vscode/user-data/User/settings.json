@@ -10,6 +10,7 @@
     "coinductive",
     "concat",
     "coord",
+    "crossorigin",
     "defn",
     "deserialize",
     "deserializer",
@@ -57,6 +58,7 @@
     "unmaintained",
     "unmount",
     "unsub",
+    "upgrader",
     "webapp",
     "writeup"
   ],
