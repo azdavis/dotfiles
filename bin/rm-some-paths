@@ -37,6 +37,7 @@ rm -rf \
   .config/vscode/user-data/machineid \
   .config/vscode/user-data/Preferences \
   .config/vscode/user-data/storage.json \
+  .config/vscode/user-data/User/workspaceStorage \
   .gdb_history \
   .idris/repl/history \
   .jspm \
