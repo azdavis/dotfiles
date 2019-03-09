@@ -17,14 +17,6 @@ rm -rf \
   .bash_history \
   .bash_sessions \
   .cache \
-  .config/sublime-text-3/Cache \
-  .config/sublime-text-3/Local/Auto\ Save\ Session.sublime_session \
-  .config/sublime-text-3/Local/Session.sublime_session \
-  .config/sublime-text-3/Packages/User/oscrypto-ca-bundle.crt \
-  .config/sublime-text-3/Packages/User/Package\ Control.cache \
-  .config/sublime-text-3/Packages/User/Package\ Control.last-run \
-  .config/sublime-text-3/Packages/User/Package\ Control.merged-ca-bundle \
-  .config/sublime-text-3/Packages/User/Package\ Control.user-ca-bundle \
   .config/vscode/user-data/Backups \
   .config/vscode/user-data/Cache \
   .config/vscode/user-data/CachedData \
