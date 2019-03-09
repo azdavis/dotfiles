@@ -69,6 +69,11 @@ write() {
   mesg n
 }
 
+ip() {
+  curl https://ifconfig.me
+  echo
+}
+
 autoload -U compinit
 compinit -i
 zstyle ":completion:*" group-name ""
