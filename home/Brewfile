@@ -4,6 +4,7 @@ tap "homebrew/core"
 tap "netlify/netlifyctl"
 
 brew "coreutils", link: false
+brew "entr"
 brew "fd"
 brew "ffmpeg"
 brew "git"
@@ -18,7 +19,6 @@ brew "readline"
 brew "rlwrap"
 brew "smlnj"
 brew "tarsnap"
-brew "tree"
 brew "youtube-dl"
 
 cask "1password"
