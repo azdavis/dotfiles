@@ -6,7 +6,9 @@ A potpourri of macOS dotfiles
 
 Install the repo to `~/.config` with:
 
-    $ curl -fsSL https://git.io/vM2Jb | sh
+```sh
+$ curl -fsSL https://git.io/vM2Jb | sh
+```
 
 However, be aware of possible [dangers][1] with curl-pipe-sh.
 
