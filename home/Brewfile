@@ -18,6 +18,7 @@ brew "readline"
 brew "rlwrap"
 brew "smlnj"
 brew "tarsnap"
+brew "tokei"
 brew "youtube-dl"
 
 cask "1password"
