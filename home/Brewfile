@@ -6,7 +6,6 @@ tap "netlify/netlifyctl"
 brew "coreutils", link: false
 brew "entr"
 brew "fd"
-brew "ffmpeg"
 brew "git"
 brew "go"
 brew "mysql"
