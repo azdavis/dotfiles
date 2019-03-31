@@ -67,6 +67,7 @@
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.acceptSuggestionOnEnter": "off",
   "editor.autoIndent": false,
+  "editor.codeLens": false,
   "editor.colorDecorators": false,
   "editor.cursorBlinking": "solid",
   "editor.cursorWidth": 1,
