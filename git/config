@@ -14,7 +14,7 @@
 	verbose = 1
 [core]
 	commitGraph = true
-	editor = code -w
+	editor = code -rw
 	eol = lf
 	pager = less -FRSXqx4
 	quotePath = false
