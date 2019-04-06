@@ -132,5 +132,8 @@
   },
   "[properties]": {
     "editor.insertSpaces": false
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
