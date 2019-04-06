@@ -16,7 +16,7 @@ symlink() {
     printf 'rm %s? ' "$2"
     read ans
     if [ "$ans" != y ]; then
-      continue
+      return
     fi
   fi
   rm -rf "$2"
