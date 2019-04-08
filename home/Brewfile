@@ -1,7 +1,6 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
-tap "netlify/netlifyctl"
 
 brew "coreutils", link: false
 brew "entr"
@@ -10,7 +9,6 @@ brew "git"
 brew "go"
 brew "mysql"
 brew "nasm"
-brew "netlifyctl"
 brew "node"
 brew "openssl"
 brew "rbenv"
