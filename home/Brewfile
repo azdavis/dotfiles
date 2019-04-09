@@ -21,6 +21,7 @@ brew "youtube-dl"
 
 cask "1password"
 cask "anki"
+cask "appcleaner"
 cask "battle-net"
 cask "discord"
 cask "dropbox"
