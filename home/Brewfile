@@ -2,6 +2,7 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 
+brew "awsebcli"
 brew "coreutils", link: false
 brew "entr"
 brew "fd"
