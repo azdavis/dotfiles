@@ -128,6 +128,9 @@
   "[go]": {
     "editor.insertSpaces": false
   },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[makefile]": {
     "editor.insertSpaces": false
   },
