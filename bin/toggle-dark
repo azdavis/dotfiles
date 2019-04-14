@@ -23,5 +23,5 @@ else
   git_direction=""
 fi
 
-git apply $git_direction "$p"
 osascript -l JavaScript -e "$sys_dark_mode = $new_dark" >/dev/null
+git apply $git_direction "$p"
