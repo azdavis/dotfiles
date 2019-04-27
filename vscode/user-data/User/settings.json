@@ -75,7 +75,7 @@
   "editor.dragAndDrop": false,
   "editor.emptySelectionClipboard": false,
   "editor.fontFamily": "Input",
-  "editor.fontSize": 16,
+  "editor.fontSize": 14,
   "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
   "editor.occurrencesHighlight": false,
