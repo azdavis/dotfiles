@@ -30,7 +30,7 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "alt+down",
+    "key": "shift+alt+down",
     "command": "editor.action.insertCursorBelow",
     "when": "editorTextFocus"
   },
@@ -83,7 +83,12 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "alt+up",
+    "key": "shift+alt+up",
+    "command": "-editor.action.copyLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+up",
     "command": "editor.action.insertCursorAbove",
     "when": "editorTextFocus"
   },
