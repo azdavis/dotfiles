@@ -84,5 +84,3 @@ zstyle ":completion:*" verbose false
 
 mesg n
 tabs -4
-
-eval "$(rbenv init -)"
