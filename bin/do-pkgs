@@ -13,5 +13,4 @@ npm i -g npm
 tlmgr update --self
 tlmgr update --all
 
-rustup self update
 rustup update stable
