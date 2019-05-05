@@ -72,6 +72,7 @@
   "editor.colorDecorators": false,
   "editor.cursorBlinking": "solid",
   "editor.cursorWidth": 1,
+  "editor.detectIndentation": false,
   "editor.dragAndDrop": false,
   "editor.emptySelectionClipboard": false,
   "editor.fontFamily": "Input",
