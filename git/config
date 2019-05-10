@@ -8,8 +8,6 @@
 	praise = blame
 	show-fuller = show --format=fuller
 	unstash = stash pop
-[color]
-	advice = false
 [commit]
 	verbose = 1
 [core]
