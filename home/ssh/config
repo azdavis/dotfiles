@@ -1,11 +1,8 @@
 Host *
   HashKnownHosts yes
-Host cmu home
+Host cmu
+  Hostname unix.andrew.cmu.edu
   User azdavis
   GSSAPIAuthentication yes
   GSSAPIDelegateCredentials yes
   ExitOnForwardFailure yes
-Host cmu
-  Hostname unix.andrew.cmu.edu
-Host home
-  Hostname davis-imac.local
