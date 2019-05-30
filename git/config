@@ -25,7 +25,7 @@
 	templateDir = ~/.config/git/template
 [log]
 	date = iso8601
-	decorate = true
+	decorate = short
 [merge]
 	conflictStyle = diff3
 	ff = only
