@@ -4,4 +4,4 @@
    "window.restoreWindows": "none",
 -  "workbench.colorTheme": "Default Dark+",
 +  "workbench.colorTheme": "Default Light+",
-   "workbench.editor.restoreViewState": false,
+   "workbench.editor.enablePreview": false,
