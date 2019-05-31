@@ -50,6 +50,7 @@
   "terminal.integrated.fontSize": 16,
   "window.restoreWindows": "none",
   "workbench.colorTheme": "Default Dark+",
+  "workbench.editor.enablePreview": false,
   "workbench.editor.restoreViewState": false,
   "workbench.iconTheme": null,
   "workbench.startupEditor": "none",
