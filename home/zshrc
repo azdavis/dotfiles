@@ -81,6 +81,10 @@ ip() {
   echo
 }
 
+'$'() {
+  "$@"
+}
+
 autoload -U compinit
 compinit -i
 zstyle ":completion:*" group-name ""
