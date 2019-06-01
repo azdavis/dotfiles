@@ -31,8 +31,8 @@ if [ "$(uname)" = Darwin ]; then
   symlink "$HOME/.config/vscode" "/Applications/code-portable-data"
 fi
 
-wd=".config/home"
-cd "$HOME/$wd"
+wd="$HOME/.config/home"
+cd "$wd"
 for x in *; do
   symlink "$wd/$x" "$HOME/.$x"
 done
