@@ -4,7 +4,6 @@ tap "homebrew/core"
 brew "awsebcli"
 brew "coreutils", link: false
 brew "fd"
-brew "git"
 brew "go"
 brew "nasm"
 brew "node"
