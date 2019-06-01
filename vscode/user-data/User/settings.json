@@ -32,6 +32,7 @@
     "Cargo.lock": "toml",
     "zshrc": "shellscript"
   },
+  "files.eol": "\n",
   "files.hotExit": "off",
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
