@@ -18,7 +18,7 @@
 	quotePath = false
 	untrackedCache = true
 [credential]
-	helper = store
+	helper = osxkeychain
 [diff]
 	algorithm = histogram
 [init]
