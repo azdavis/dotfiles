@@ -6,6 +6,7 @@ panic() {
 main() {
 
 set -eu
+
 url="https://github.com/azdavis/dotfiles.git"
 dst="$HOME/.config"
 
