@@ -21,6 +21,8 @@
 	helper = osxkeychain
 [diff]
 	algorithm = histogram
+[fetch]
+	prune = true
 [init]
 	templateDir = ~/.config/git/template
 [log]
