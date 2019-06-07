@@ -28,7 +28,7 @@ cd "$dst"
 chmod 700 .
 
 echo "installing '$url'"
-if [ "$(git config remote.origin.url)" = "$url" ]; then
+if [ "$(git config remote.origin.url)" != "$url" ]; then
   rm -rf .git
   git init -q
   git config remote.origin.url "$url"
