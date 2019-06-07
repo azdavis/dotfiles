@@ -8,6 +8,7 @@ main() {
 set -eu
 url="https://github.com/azdavis/dotfiles.git"
 dst="$HOME/.config"
+
 echo "finding dependencies"
 if [ "$(uname)" = Darwin ] && ! xcode-select -p >/dev/null; then
   panic "'Command Line Developer Tools' not found"
@@ -17,6 +18,7 @@ for x in /bin/sh chsh git; do
     panic "'$x' not found"
   fi
 done
+
 echo "preparing '$dst'"
 if ! [ -d "$dst" ]; then
   rm -f "$dst"
@@ -24,6 +26,7 @@ if ! [ -d "$dst" ]; then
 fi
 cd "$dst"
 chmod 700 .
+
 echo "installing '$url'"
 if [ "$(git config remote.origin.url)" = "$url" ]; then
   rm -rf .git
@@ -33,8 +36,10 @@ if [ "$(git config remote.origin.url)" = "$url" ]; then
   git fetch -q origin refs/heads/master:refs/remotes/origin/master
   git reset -q --hard origin/master
 fi
+
 echo "doing home actions"
 "$dst/bin/do-home" </dev/tty
+
 echo "changing shell to zsh"
 new_shell="$(grep '/zsh$' /etc/shells | head -n 1)"
 if [ -z "$new_shell" ]; then
@@ -42,6 +47,7 @@ if [ -z "$new_shell" ]; then
 elif [ "$SHELL" != "$new_shell" ]; then
   chsh -s "$new_shell" </dev/tty
 fi
+
 echo "finishing"
 
 }; main
