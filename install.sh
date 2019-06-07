@@ -48,6 +48,6 @@ elif [ "$SHELL" != "$new_shell" ]; then
   chsh -s "$new_shell" </dev/tty
 fi
 
-echo "finishing"
+echo "done."
 
 }; main
