@@ -45,6 +45,7 @@
   "latex-workshop.message.update.show": false,
   "prettier.trailingComma": "all",
   "rewrap.autoWrap.enabled": true,
+  "search.useIgnoreFiles": false,
   "sml.ignoreMissingSmlDotJson": true,
   "sml.smlnj.make.debounce": null,
   "telemetry.enableTelemetry": false,
