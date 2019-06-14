@@ -10,6 +10,7 @@ setopt \
 
 export \
   COPYFILE_DISABLE="1" \
+  EDITOR="code -r" \
   FPATH="$HOME/.config/site-functions:$FPATH" \
   GIT_DISCOVERY_ACROSS_FILESYSTEM="1" \
   GOPATH="$HOME/.go" \
@@ -45,7 +46,7 @@ alias -- \
   dateiso="date +'%Y-%m-%d %H:%M:%S %z'" \
   df="df -h" \
   du="du -chs" \
-  e="code -r" \
+  e="$EDITOR" \
   ga="git add" \
   gb="git branch" \
   gc="git commit" \
