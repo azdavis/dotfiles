@@ -21,7 +21,7 @@ elif ! remote="$(git config branch.$branch.remote)"; then
 elif ! url="$(git config remote.$remote.url)"; then
   panic "could not get url for remote '$remote'"
 fi
-url="$(echo "$url" | sed 's/\.git$//')"
+url="$(echo "$url" | sed -e 's/\.git$//' -e 's#^git@github.com:#https://github.com/#')"
 
 if printf '%s' "$url" | grep -qe '^https://git\(hub\|lab\).com/'; then
   open "$url/tree/$branch"
