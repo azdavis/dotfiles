@@ -10,7 +10,7 @@ setopt \
 
 export \
   COPYFILE_DISABLE="1" \
-  EDITOR="code -r" \
+  EDITOR="code -gr" \
   FPATH="$HOME/.config/site-functions:$FPATH" \
   GIT_DISCOVERY_ACROSS_FILESYSTEM="1" \
   GOPATH="$HOME/.go" \
