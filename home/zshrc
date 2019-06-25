@@ -43,7 +43,6 @@ ZLE_REMOVE_SUFFIX_CHARS=$' \t\n;'
 
 alias -- \
   -="cd -" \
-  dateiso="date +'%Y-%m-%d %H:%M:%S %z'" \
   df="df -h" \
   du="du -chs" \
   e="$EDITOR" \
@@ -75,11 +74,6 @@ write() {
   mesg y
   command write "$@"
   mesg n
-}
-
-ip() {
-  curl https://ifconfig.me
-  echo
 }
 
 '$'() {
