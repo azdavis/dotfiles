@@ -43,6 +43,7 @@ ZLE_REMOVE_SUFFIX_CHARS=$' \t\n;'
 
 alias -- \
   -="cd -" \
+  beep="printf '\a'" \
   df="df -h" \
   du="du -chs" \
   e="$EDITOR" \
