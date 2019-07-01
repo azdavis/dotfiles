@@ -5,7 +5,6 @@ set -eu
 brew update
 brew bundle --verbose --global || true
 brew bundle cleanup --force --global
-brew unlink coreutils >/dev/null
 brew cleanup
 
 npm i -g npm
