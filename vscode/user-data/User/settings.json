@@ -54,7 +54,6 @@
 	"workbench.editor.restoreViewState": false,
 	"workbench.iconTheme": null,
 	"workbench.startupEditor": "none",
-	"workbench.statusBar.feedback.visible": false,
 	"workbench.statusBar.visible": false,
 	"[diff]": {
 		"files.insertFinalNewline": false,
