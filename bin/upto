@@ -3,18 +3,18 @@
 set -eu
 
 is_int() {
-  [ -n "$1" ] && [ "$1" -eq "$1" ] 2>/dev/null
+	[ -n "$1" ] && [ "$1" -eq "$1" ] 2>/dev/null
 }
 
 panic() {
-  echo "$1" >&2
-  exit 1
+	echo "$1" >&2
+	exit 1
 }
 
 if [ "$#" -ne 1 ]; then
-  panic "usage: $0 <positive_int>"
+	panic "usage: $0 <positive_int>"
 elif ! is_int "$1" || [ "$1" -le 0 ]; then
-  panic "'$1' not a positive int"
+	panic "'$1' not a positive int"
 fi
 
 seq -w 1 "$1" | perl -pe 'chomp if eof' | pbcopy
