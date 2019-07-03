@@ -14,7 +14,7 @@
 	commitGraph = true
 	editor = code -rw
 	eol = lf
-	pager = less -FRSXqx4
+	pager = less -FRSXqx2
 	quotePath = false
 	untrackedCache = true
 [credential]
