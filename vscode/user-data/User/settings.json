@@ -63,17 +63,8 @@
 		"files.trimFinalNewlines": false,
 		"files.trimTrailingWhitespace": false
 	},
-	"[go]": {
-		"editor.insertSpaces": false
-	},
 	"[jsonc]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[makefile]": {
-		"editor.insertSpaces": false
-	},
-	"[properties]": {
-		"editor.insertSpaces": false
 	},
 	"[typescript]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
