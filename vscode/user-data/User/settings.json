@@ -43,6 +43,7 @@
 	"latex-workshop.latex.autoBuild.run": "never",
 	"latex-workshop.message.update.show": false,
 	"prettier.trailingComma": "all",
+	"prettier.useTabs": true,
 	"rewrap.autoWrap.enabled": true,
 	"search.useIgnoreFiles": false,
 	"sml.ignoreMissingSmlDotJson": true,
