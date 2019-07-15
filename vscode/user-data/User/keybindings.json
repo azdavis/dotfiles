@@ -177,7 +177,6 @@
 	},
 	{
 		"key": "shift+cmd+c",
-		"command": "copyRelativeFilePath",
-		"when": "editorFocus"
+		"command": "copyRelativeFilePath"
 	}
 ]
