@@ -53,10 +53,10 @@ alias -- \
 	gd="git diff" \
 	gdb="gdb -q" \
 	gf="git fetch" \
-	gh="git show-fuller" \
+	gh="git show --format=fuller" \
 	gi="git init" \
 	gk="git checkout" \
-	gl="git log-graph" \
+	gl="git log --graph --oneline" \
 	gm="git merge" \
 	gp="git push" \
 	gpl="git pull" \

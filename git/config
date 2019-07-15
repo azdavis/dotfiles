@@ -3,10 +3,8 @@
 [alias]
 	count-commits = rev-list --count HEAD
 	fixup = commit --amend --no-edit
-	log-graph = log --graph --oneline
 	ls-untracked = ls-files -o --directory
 	praise = blame
-	show-fuller = show --format=fuller
 	unstash = stash pop
 [commit]
 	verbose = 1
