@@ -39,6 +39,7 @@
 	"git.enabled": false,
 	"html.format.enable": false,
 	"javascript.validate.enable": false,
+	"prettier.endOfLine": "lf",
 	"prettier.trailingComma": "all",
 	"prettier.useTabs": true,
 	"rewrap.autoWrap.enabled": true,
