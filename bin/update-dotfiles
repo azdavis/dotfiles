@@ -27,11 +27,9 @@ fi
 old_merge_base="$(git merge-base refs/remotes/origin/master HEAD)"
 if [ \
 	"$(curl \
+		-s -o /dev/null -w "%{http_code}" \
 		-H "Accept: application/vnd.github.v3.sha" \
 		-H "If-None-Match: \"$(git rev-parse refs/remotes/origin/master)\"" \
-		-s \
-		-o /dev/null \
-		-w "%{http_code}" \
 		"https://api.github.com/repos/azdavis/dotfiles/commits/master" \
 	)" -ne 304 \
 ]; then
