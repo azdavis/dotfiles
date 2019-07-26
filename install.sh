@@ -32,7 +32,7 @@ if [ "$(git config remote.origin.url)" != "$url" ]; then
 	git config remote.origin.url "$url"
 	git config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
 	git fetch -q origin refs/heads/master:refs/remotes/origin/master
-	git reset -q --hard origin/master
+	git reset -q --hard refs/remotes/origin/master
 fi
 
 "$dst/bin/do-home" </dev/tty
