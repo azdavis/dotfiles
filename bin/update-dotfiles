@@ -15,10 +15,6 @@ cd "$HOME/.config"
 
 git rev-parse
 
-if git status -unormal --porcelain | grep .; then
-	panic "fatal: there are uncommitted changes"
-fi
-
 branch="$(git symbolic-ref HEAD)"
 if [ "$branch" != refs/heads/master ]; then
 	panic "fatal: not on master"
