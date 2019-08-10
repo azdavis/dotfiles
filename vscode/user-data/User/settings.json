@@ -16,6 +16,7 @@
 	"editor.occurrencesHighlight": false,
 	"editor.quickSuggestionsDelay": 50,
 	"editor.renderLineHighlight": "none",
+	"editor.renderWhitespace": "selection",
 	"editor.rulers": [80],
 	"editor.suggest.localityBonus": true,
 	"editor.tabCompletion": "on",
