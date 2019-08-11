@@ -41,6 +41,7 @@
 	"html.format.enable": false,
 	"javascript.validate.enable": false,
 	"prettier.endOfLine": "lf",
+	"prettier.proseWrap": "always",
 	"prettier.trailingComma": "all",
 	"prettier.useTabs": true,
 	"rewrap.autoWrap.enabled": true,
