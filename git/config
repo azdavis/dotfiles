@@ -30,7 +30,7 @@
 	conflictStyle = diff3
 	ff = only
 [pull]
-	rebase = preserve
+	rebase = merges
 [push]
 	default = simple
 [stash]
