@@ -68,6 +68,9 @@
 	"[markdown]": {
 		"editor.insertSpaces": true
 	},
+	"[ocaml]": {
+		"editor.insertSpaces": true
+	},
 	"[typescript]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	}
