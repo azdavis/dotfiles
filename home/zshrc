@@ -91,6 +91,6 @@ zstyle ":completion:*" squeeze-slashes true
 zstyle ":completion:*" verbose false
 
 mesg n
-tabs -2
+tabs -2 >/dev/null
 
 # end
