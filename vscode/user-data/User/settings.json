@@ -71,6 +71,9 @@
 	"[ocaml]": {
 		"editor.insertSpaces": true
 	},
+	"[sml]": {
+		"editor.insertSpaces": true
+	},
 	"[typescript]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	}
