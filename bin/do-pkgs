@@ -9,4 +9,7 @@ brew cleanup
 
 npm i -g npm
 
+tlmgr update --self
+tlmgr update --all
+
 rustup update stable
