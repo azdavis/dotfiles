@@ -67,7 +67,6 @@ alias -- \
 	gt="git tag" \
 	ls="ls -bh --color=auto --group-directories-first --time-style=long-iso" \
 	say="rlwrap say" \
-	scp="scp -q" \
 	sml="rlwrap sml" \
 	tree="tree -N --dirsfirst"
 
