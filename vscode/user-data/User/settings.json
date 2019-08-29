@@ -71,6 +71,9 @@
 	"[ocaml]": {
 		"editor.insertSpaces": true
 	},
+	"[python]": {
+		"editor.tabSize": 4
+	},
 	"[sml]": {
 		"editor.insertSpaces": true
 	},
