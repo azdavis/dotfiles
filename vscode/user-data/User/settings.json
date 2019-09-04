@@ -78,6 +78,9 @@
 	"[sml]": {
 		"editor.insertSpaces": true
 	},
+	"[tex]": {
+		"editor.insertSpaces": true
+	},
 	"[typescript]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	}
