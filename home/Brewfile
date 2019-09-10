@@ -5,6 +5,7 @@ brew "awsebcli"
 brew "coreutils", link: false
 brew "fd"
 brew "git"
+brew "gmp"
 brew "go"
 brew "libav"
 brew "node"
