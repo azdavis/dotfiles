@@ -71,7 +71,7 @@
 	"[markdown]": {
 		"editor.insertSpaces": true
 	},
-	"[ocaml]": {
+	"[latex]": {
 		"editor.insertSpaces": true
 	},
 	"[python]": {
@@ -79,9 +79,6 @@
 		"editor.tabSize": 4
 	},
 	"[sml]": {
-		"editor.insertSpaces": true
-	},
-	"[tex]": {
 		"editor.insertSpaces": true
 	},
 	"[typescript]": {
