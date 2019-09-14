@@ -56,7 +56,7 @@ alias -- \
 	gh="git show --format=fuller" \
 	gi="git init" \
 	gk="git checkout" \
-	gl="git log --graph --oneline" \
+	gl="git log --all --graph --oneline" \
 	gm="git merge" \
 	gp="git push" \
 	gpl="git pull" \
