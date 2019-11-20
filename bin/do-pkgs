@@ -6,6 +6,7 @@ brew update
 brew bundle --verbose --global || true
 brew bundle cleanup --force --global
 brew cleanup
+rm -f "$HOME/Brewfile.lock.json"
 
 npm i -g npm
 
