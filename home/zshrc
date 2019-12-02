@@ -29,6 +29,7 @@ export \
 	RLWRAP_HOME="/dev/null" \
 	WORDCHARS="._-~"
 
+PATH="/usr/local/smlnj/bin:$PATH"
 PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 PATH="$HOME/.cargo/bin:$PATH"
 PATH="$HOME/.config/bin:$PATH"
