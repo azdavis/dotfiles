@@ -12,7 +12,6 @@ export \
 	COPYFILE_DISABLE="1" \
 	EDITOR="code -gr" \
 	FPATH="$HOME/.config/site-functions:$FPATH" \
-	GIT_DISCOVERY_ACROSS_FILESYSTEM="1" \
 	GOPATH="$HOME/.go" \
 	HISTSIZE="1000" \
 	HOMEBREW_CASK_OPTS="--appdir=/Applications" \
