@@ -64,16 +64,6 @@ alias -- \
 	ls="ls -bh --color=auto --group-directories-first --time-style=long-iso" \
 	sml="rlwrap sml"
 
-write() {
-	mesg y
-	command write "$@"
-	mesg n
-}
-
-'$'() {
-	"$@"
-}
-
 autoload -U compinit
 compinit -i
 zstyle ":completion:*" group-name ""
