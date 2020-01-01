@@ -43,15 +43,11 @@ ZLE_REMOVE_SUFFIX_CHARS=$' \t\n;'
 
 alias -- \
 	-="cd -" \
-	beep="printf '\a'" \
-	df="df -h" \
-	du="du -chs" \
 	e="$EDITOR" \
 	ga="git add" \
 	gb="git branch" \
 	gc="git commit" \
 	gd="git diff" \
-	gdb="gdb -q" \
 	gf="git fetch" \
 	gh="git show --format=fuller" \
 	gi="git init" \
@@ -66,9 +62,7 @@ alias -- \
 	gs="git status" \
 	gt="git tag" \
 	ls="ls -bh --color=auto --group-directories-first --time-style=long-iso" \
-	say="rlwrap say" \
-	sml="rlwrap sml" \
-	tree="tree -N --dirsfirst"
+	sml="rlwrap sml"
 
 write() {
 	mesg y
