@@ -70,6 +70,9 @@ zstyle ":completion:*" menu select
 zstyle ":completion:*" squeeze-slashes true
 zstyle ":completion:*" verbose false
 
+# fix bad autocomplete for stat
+_stat() { _default "$@" }
+
 mesg n
 tabs -2
 
