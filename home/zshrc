@@ -73,6 +73,22 @@ zstyle ":completion:*" verbose false
 # fix bad autocomplete
 _stat() { _default "$@" }
 
+get_cmu_ticket() {
+	kinit -t "$HOME/.config/keytab/azdavis@ANDREW.CMU.EDU" azdavis@ANDREW.CMU.EDU
+}
+
+scp() {
+	get_cmu_ticket
+	command scp -q "$@"
+}
+
+ssh() {
+	if [ "$#" -eq 1 ] && [ "$1" = cmu ]; then
+		get_cmu_ticket
+	fi
+	command ssh -q "$@"
+}
+
 mesg n
 tabs -2
 
