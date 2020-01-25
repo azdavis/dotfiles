@@ -92,4 +92,8 @@ ssh() {
 mesg n
 tabs -2
 
+if [ -f "$HOME/e" ]; then
+	cat "$HOME/e"
+fi
+
 # end
