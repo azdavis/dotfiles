@@ -27,6 +27,8 @@ options:
 		add <min> minutes
 	-S <sec>
 		add <sec> seconds
+	-V <msg>
+		say <msg> repeatedly when the timer is done
 EOF
 exit 1
 }
@@ -34,11 +36,13 @@ exit 1
 H=0
 M=0
 S=0
-while getopts 'hH:M:S:' opt; do
+V=""
+while getopts 'hH:M:S:V:' opt; do
 	case "$opt" in
 	(H) H="$OPTARG" ;;
 	(M) M="$OPTARG" ;;
 	(S) S="$OPTARG" ;;
+	(V) V="$OPTARG" ;;
 	(*) usage ;;
 	esac
 done
@@ -75,6 +79,10 @@ while true; do
 done
 
 while true; do
-	printf '\a'
-	sleep 1
+	if [ -z "$V" ]; then
+		printf '\a'
+		sleep 1
+	else
+		say -v Samantha "$V"
+	fi
 done
