@@ -62,6 +62,9 @@
 		"files.trimFinalNewlines": false,
 		"files.trimTrailingWhitespace": false
 	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
 	"[json]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
