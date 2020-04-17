@@ -1,96 +1,94 @@
 {
-	"editor.acceptSuggestionOnCommitCharacter": false,
-	"editor.acceptSuggestionOnEnter": "off",
-	"editor.autoIndent": "brackets",
-	"editor.codeLens": false,
-	"editor.cursorBlinking": "solid",
-	"editor.cursorWidth": 1,
-	"editor.detectIndentation": false,
-	"editor.dragAndDrop": false,
-	"editor.emptySelectionClipboard": false,
-	"editor.fontFamily": "Input",
-	"editor.fontSize": 14,
-	"editor.formatOnSave": true,
-	"editor.insertSpaces": false,
-	"editor.minimap.enabled": false,
-	"editor.occurrencesHighlight": false,
-	"editor.quickSuggestionsDelay": 50,
-	"editor.renderLineHighlight": "none",
-	"editor.renderWhitespace": "selection",
-	"editor.rulers": [80],
-	"editor.suggest.localityBonus": true,
-	"editor.tabCompletion": "on",
-	"editor.tabSize": 2,
-	"editor.trimAutoWhitespace": true,
-	"editor.useTabStops": true,
-	"explorer.confirmDelete": false,
-	"explorer.confirmDragAndDrop": false,
-	"extensions.ignoreRecommendations": true,
-	"files.associations": {
-		".Brewfile": "ruby",
-		"Brewfile": "ruby",
-		"Cargo.lock": "toml",
-		"zshrc": "shellscript"
-	},
-	"files.eol": "\n",
-	"files.hotExit": "off",
-	"files.insertFinalNewline": true,
-	"files.trimFinalNewlines": true,
-	"files.trimTrailingWhitespace": true,
-	"git.enabled": false,
-	"html.format.enable": false,
-	"javascript.validate.enable": false,
-	"prettier.endOfLine": "lf",
-	"prettier.proseWrap": "always",
-	"prettier.trailingComma": "all",
-	"prettier.useTabs": true,
-	"rewrap.autoWrap.enabled": true,
-	"search.useIgnoreFiles": false,
-	"sml.ignoreMissingSmlDotJson": true,
-	"sml.smlnj.make.debounce": null,
-	"telemetry.enableTelemetry": false,
-	"terminal.integrated.fontSize": 14,
-	"window.restoreWindows": "none",
-	"workbench.colorTheme": "Default Dark+",
-	"workbench.editor.enablePreview": false,
-	"workbench.editor.restoreViewState": false,
-	"workbench.iconTheme": null,
-	"workbench.startupEditor": "none",
-	"workbench.statusBar.visible": true,
-	"[diff]": {
-		"files.insertFinalNewline": false,
-		"files.trimFinalNewlines": false,
-		"files.trimTrailingWhitespace": false
-	},
-	"[javascript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[json]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[jsonc]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[markdown]": {
-		"editor.insertSpaces": true
-	},
-	"[latex]": {
-		"editor.insertSpaces": true
-	},
-	"[python]": {
-		"editor.insertSpaces": true,
-		"editor.tabSize": 4
-	},
-	"[ruby]": {
-		"editor.insertSpaces": true
-	},
-	"[sml]": {
-		"editor.insertSpaces": true
-	},
-	"[typescript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[typescriptreact]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	}
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.autoIndent": "brackets",
+  "editor.codeLens": false,
+  "editor.cursorBlinking": "solid",
+  "editor.cursorWidth": 1,
+  "editor.detectIndentation": false,
+  "editor.dragAndDrop": false,
+  "editor.emptySelectionClipboard": false,
+  "editor.fontFamily": "Input",
+  "editor.fontSize": 14,
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "editor.occurrencesHighlight": false,
+  "editor.quickSuggestionsDelay": 50,
+  "editor.renderLineHighlight": "none",
+  "editor.renderWhitespace": "selection",
+  "editor.rulers": [80],
+  "editor.suggest.localityBonus": true,
+  "editor.tabCompletion": "on",
+  "editor.tabSize": 2,
+  "editor.trimAutoWhitespace": true,
+  "editor.useTabStops": true,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "extensions.ignoreRecommendations": true,
+  "files.associations": {
+    ".Brewfile": "ruby",
+    "Brewfile": "ruby",
+    "Cargo.lock": "toml",
+    "zshrc": "shellscript"
+  },
+  "files.eol": "\n",
+  "files.hotExit": "off",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "git.enabled": false,
+  "html.format.enable": false,
+  "javascript.validate.enable": false,
+  "prettier.endOfLine": "lf",
+  "prettier.proseWrap": "always",
+  "prettier.trailingComma": "all",
+  "rewrap.autoWrap.enabled": true,
+  "search.useIgnoreFiles": false,
+  "sml.ignoreMissingSmlDotJson": true,
+  "sml.smlnj.make.debounce": null,
+  "telemetry.enableTelemetry": false,
+  "terminal.integrated.fontSize": 14,
+  "window.restoreWindows": "none",
+  "workbench.colorTheme": "Default Dark+",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.restoreViewState": false,
+  "workbench.iconTheme": null,
+  "workbench.startupEditor": "none",
+  "workbench.statusBar.visible": true,
+  "[diff]": {
+    "files.insertFinalNewline": false,
+    "files.trimFinalNewlines": false,
+    "files.trimTrailingWhitespace": false
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.insertSpaces": true
+  },
+  "[latex]": {
+    "editor.insertSpaces": true
+  },
+  "[python]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4
+  },
+  "[ruby]": {
+    "editor.insertSpaces": true
+  },
+  "[sml]": {
+    "editor.insertSpaces": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

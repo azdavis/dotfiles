@@ -3,20 +3,20 @@
 set -eu
 
 panic() {
-	echo "$1" >&2
-	exit 1
+  echo "$1" >&2
+  exit 1
 }
 
 if [ "$#" -ne 0 ]; then
-	panic "usage: $0"
+  panic "usage: $0"
 fi
 
 git \
-	-c gc.reflogExpire=0 \
-	-c gc.reflogExpireUnreachable=0 \
-	-c gc.rerereresolved=0 \
-	-c gc.rerereunresolved=0 \
-	-c gc.pruneExpire=now \
-	gc
+  -c gc.reflogExpire=0 \
+  -c gc.reflogExpireUnreachable=0 \
+  -c gc.rerereresolved=0 \
+  -c gc.rerereunresolved=0 \
+  -c gc.pruneExpire=now \
+  gc
 git repack -adf --depth=50 --window=50
 git fsck --strict --unreachable

@@ -3,43 +3,43 @@
 set -eu
 
 panic() {
-	echo "$1" >&2
-	exit 1
+  echo "$1" >&2
+  exit 1
 }
 
 if [ "$#" -ne 0 ]; then
-	panic "usage: $0"
+  panic "usage: $0"
 fi
 
 symlink() {
-	if [ -e "$2" ] && ! [ -L "$2" ]; then
-		printf 'rm %s? ' "$2"
-		read ans
-		if [ "$ans" != y ]; then
-			return
-		fi
-	fi
-	rm -rf "$2"
-	mkdir -p "$(dirname "$2")"
-	ln -s "$1" "$2"
+  if [ -e "$2" ] && ! [ -L "$2" ]; then
+    printf 'rm %s? ' "$2"
+    read ans
+    if [ "$ans" != y ]; then
+      return
+    fi
+  fi
+  rm -rf "$2"
+  mkdir -p "$(dirname "$2")"
+  ln -s "$1" "$2"
 }
 
 touch "$HOME/.hushlogin"
 chmod 600 "$HOME/.hushlogin"
 
 if [ "$(uname)" = Darwin ]; then
-	symlink "$HOME/.config/vscode" "/Applications/code-portable-data"
+  symlink "$HOME/.config/vscode" "/Applications/code-portable-data"
 fi
 
 wd="$HOME/.config/home"
 cd "$wd"
 for x in *; do
-	symlink "$wd/$x" "$HOME/.$x"
+  symlink "$wd/$x" "$HOME/.$x"
 done
 
 cd
 for x in .*; do
-	if [ -L "$x" ] && ! [ -e "$x" ]; then
-		rm "$x"
-	fi
+  if [ -L "$x" ] && ! [ -e "$x" ]; then
+    rm "$x"
+  fi
 done

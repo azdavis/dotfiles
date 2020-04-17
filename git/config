@@ -1,46 +1,46 @@
 [advice]
-	detachedHead = false
+  detachedHead = false
 [alias]
-	count-commits = rev-list --count HEAD
-	fixup = commit --amend --no-edit
-	ls-untracked = ls-files -o --directory
-	praise = blame
-	unstash = stash pop
+  count-commits = rev-list --count HEAD
+  fixup = commit --amend --no-edit
+  ls-untracked = ls-files -o --directory
+  praise = blame
+  unstash = stash pop
 [commit]
-	verbose = 1
+  verbose = 1
 [core]
-	commitGraph = true
-	editor = code -rw
-	eol = lf
-	pager = less -FRSXqx2
-	quotePath = false
-	untrackedCache = true
+  commitGraph = true
+  editor = code -rw
+  eol = lf
+  pager = less -FRSXqx2
+  quotePath = false
+  untrackedCache = true
 [credential]
-	helper = osxkeychain
+  helper = osxkeychain
 [diff]
-	algorithm = histogram
+  algorithm = histogram
 [fetch]
-	prune = true
+  prune = true
 [init]
-	templateDir = ~/.config/git/template
+  templateDir = ~/.config/git/template
 [log]
-	date = iso8601
-	decorate = short
+  date = iso8601
+  decorate = short
 [merge]
-	conflictStyle = diff3
-	ff = only
+  conflictStyle = diff3
+  ff = only
 [pull]
-	rebase = merges
+  rebase = merges
 [push]
-	default = simple
+  default = simple
 [stash]
-	showPatch = true
-	showStat = false
+  showPatch = true
+  showStat = false
 [status]
-	branch = true
-	short = true
+  branch = true
+  short = true
 [url "https://"]
-	insteadOf = git://
+  insteadOf = git://
 [user]
-	email = ariel.z.davis@icloud.com
-	name = Ariel Davis
+  email = ariel.z.davis@icloud.com
+  name = Ariel Davis

@@ -3,44 +3,44 @@
 set -eu
 
 panic() {
-	echo "$1" >&2
-	exit 1
+  echo "$1" >&2
+  exit 1
 }
 
 if [ "$#" -ne 0 ]; then
-	panic "usage: $0"
+  panic "usage: $0"
 fi
 
 cd
 
 rm -rf \
-	.bash_history \
-	.bash_sessions \
-	.cache \
-	.config/vscode/user-data/Backups \
-	.config/vscode/user-data/Cache \
-	.config/vscode/user-data/CachedData \
-	.config/vscode/user-data/CachedExtensions \
-	.config/vscode/user-data/Cookies \
-	.config/vscode/user-data/Cookies-journal \
-	.config/vscode/user-data/GPUCache \
-	.config/vscode/user-data/languagepacks.json \
-	.config/vscode/user-data/logs \
-	.config/vscode/user-data/machineid \
-	.config/vscode/user-data/Preferences \
-	.config/vscode/user-data/storage.json \
-	.config/vscode/user-data/User/workspaceStorage \
-	.gdb_history \
-	.idris/repl/history \
-	.jspm \
-	.node_repl_history \
-	.node-gyp \
-	.npm \
-	.oracle_jre_usage \
-	.python_history \
-	.sh_history \
-	.sqlite_history \
-	.viminfo \
-	.zcompdump
+  .bash_history \
+  .bash_sessions \
+  .cache \
+  .config/vscode/user-data/Backups \
+  .config/vscode/user-data/Cache \
+  .config/vscode/user-data/CachedData \
+  .config/vscode/user-data/CachedExtensions \
+  .config/vscode/user-data/Cookies \
+  .config/vscode/user-data/Cookies-journal \
+  .config/vscode/user-data/GPUCache \
+  .config/vscode/user-data/languagepacks.json \
+  .config/vscode/user-data/logs \
+  .config/vscode/user-data/machineid \
+  .config/vscode/user-data/Preferences \
+  .config/vscode/user-data/storage.json \
+  .config/vscode/user-data/User/workspaceStorage \
+  .gdb_history \
+  .idris/repl/history \
+  .jspm \
+  .node_repl_history \
+  .node-gyp \
+  .npm \
+  .oracle_jre_usage \
+  .python_history \
+  .sh_history \
+  .sqlite_history \
+  .viminfo \
+  .zcompdump
 
 find . -name .DS_Store -delete >/dev/null 2>&1 || true

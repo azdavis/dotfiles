@@ -33,9 +33,9 @@ PATH="$HOME/.config/bin:$PATH"
 export PATH
 
 if [ -z "${SSH_TTY+1}" ]; then
-	PS1=$'%{\e[90m%}%2~%{\e[0m%} %{\e[%(?.32.31)m%}%(!.#.$)%{\e[0m%} '
+  PS1=$'%{\e[90m%}%2~%{\e[0m%} %{\e[%(?.32.31)m%}%(!.#.$)%{\e[0m%} '
 else
-	PS1=$'%{\e[33m%}[%m]%{\e[0m%} %{\e[90m%}%2~%{\e[0m%} %{\e[%(?.32.31)m%}%(!.#.$)%{\e[0m%} '
+  PS1=$'%{\e[33m%}[%m]%{\e[0m%} %{\e[90m%}%2~%{\e[0m%} %{\e[%(?.32.31)m%}%(!.#.$)%{\e[0m%} '
 fi
 ZLE_REMOVE_SUFFIX_CHARS=$' \t\n;'
 
@@ -74,26 +74,26 @@ zstyle ":completion:*" verbose false
 _stat() { _default "$@" }
 
 get_cmu_ticket() {
-	kinit -t "$HOME/.config/keytab/azdavis@ANDREW.CMU.EDU" azdavis@ANDREW.CMU.EDU
+  kinit -t "$HOME/.config/keytab/azdavis@ANDREW.CMU.EDU" azdavis@ANDREW.CMU.EDU
 }
 
 scp() {
-	get_cmu_ticket
-	command scp -q "$@"
+  get_cmu_ticket
+  command scp -q "$@"
 }
 
 ssh() {
-	if [ "$#" -eq 1 ] && [ "$1" = cmu ]; then
-		get_cmu_ticket
-	fi
-	command ssh -q "$@"
+  if [ "$#" -eq 1 ] && [ "$1" = cmu ]; then
+    get_cmu_ticket
+  fi
+  command ssh -q "$@"
 }
 
 mesg n
 tabs -2
 
 if [ -f "$HOME/e" ]; then
-	cat "$HOME/e"
+  cat "$HOME/e"
 fi
 
 # end
