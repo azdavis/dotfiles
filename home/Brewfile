@@ -3,6 +3,7 @@ tap "homebrew/cask"
 tap "homebrew/core"
 brew "coreutils", link: false
 brew "fd"
+brew "git-delta"
 brew "git"
 brew "lean"
 brew "libav"
