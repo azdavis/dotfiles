@@ -43,6 +43,7 @@
   "prettier.proseWrap": "always",
   "prettier.trailingComma": "all",
   "rewrap.autoWrap.enabled": true,
+  "rust-analyzer.inlayHints.enable": false,
   "search.useIgnoreFiles": false,
   "sml.ignoreMissingSmlDotJson": true,
   "sml.smlnj.make.debounce": null,
