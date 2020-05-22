@@ -7,7 +7,4 @@ brew bundle --verbose --global || true
 brew bundle cleanup --force --global
 brew cleanup
 
-tlmgr update --self
-tlmgr update --all
-
 rustup update stable
