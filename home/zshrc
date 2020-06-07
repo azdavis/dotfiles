@@ -58,7 +58,7 @@ alias grb="git rebase"
 alias grep="grep --color=auto"
 alias gs="git status"
 alias gt="git tag"
-alias ls="ls -bh --color=auto --group-directories-first --time-style=long-iso"
+alias ls="exa --group-directories-first"
 alias sml="rlwrap sml"
 
 autoload -U compinit
