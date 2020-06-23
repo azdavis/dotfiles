@@ -214,5 +214,19 @@
   {
     "key": "ctrl+`",
     "command": "-workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "alt+cmd+c",
+    "command": "-toggleFindCaseSensitive",
+    "when": "editorFocus"
+  },
+  {
+    "key": "alt+cmd+c",
+    "command": "copyFilePath"
+  },
+  {
+    "key": "alt+cmd+c",
+    "command": "-copyFilePath",
+    "when": "!editorFocus"
   }
 ]
