@@ -7,4 +7,5 @@ brew bundle --verbose --global || true
 brew bundle cleanup --force --global
 brew cleanup
 
-rustup update stable
+rustup self update
+rustup update
