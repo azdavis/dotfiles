@@ -208,14 +208,6 @@
     "command": "-workbench.action.closeOtherEditors"
   },
   {
-    "key": "cmd+`",
-    "command": "workbench.action.terminal.toggleTerminal"
-  },
-  {
-    "key": "ctrl+`",
-    "command": "-workbench.action.terminal.toggleTerminal"
-  },
-  {
     "key": "alt+cmd+c",
     "command": "-toggleFindCaseSensitive",
     "when": "editorFocus"
