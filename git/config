@@ -12,7 +12,7 @@
   commitGraph = true
   editor = code -rw
   eol = lf
-  pager = delta
+  pager = delta --dark
   quotePath = false
   untrackedCache = true
 [credential]
@@ -24,7 +24,7 @@
 [init]
   templateDir = ~/.config/git/template
 [interactive]
-  diffFilter = delta --color-only
+  diffFilter = delta --color-only --dark
 [log]
   date = iso8601
   decorate = short

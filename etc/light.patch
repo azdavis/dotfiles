@@ -2,13 +2,13 @@
 +++ b/git/config
 @@ -14,3 +14,3 @@
    eol = lf
--  pager = delta
-+  pager = delta --theme GitHub
+-  pager = delta --dark
++  pager = delta --light
    quotePath = false
 @@ -26,3 +26,3 @@
  [interactive]
--  diffFilter = delta --color-only
-+  diffFilter = delta --theme GitHub --color-only
+-  diffFilter = delta --color-only --dark
++  diffFilter = delta --color-only --light
  [log]
 --- a/vscode/user-data/User/settings.json
 +++ b/vscode/user-data/User/settings.json
