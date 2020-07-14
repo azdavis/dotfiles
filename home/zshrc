@@ -10,8 +10,6 @@ setopt rmstarsilent
 export COPYFILE_DISABLE="1"
 export EDITOR="code -gr"
 export FPATH="$HOME/.config/site-functions:$FPATH"
-export GOPATH="$HOME/.go"
-export HISTSIZE="1000"
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export HOMEBREW_NO_EMOJI="1"
 export HOMEBREW_NO_INSECURE_REDIRECT="1"
@@ -21,23 +19,20 @@ export LESS="-qx2"
 export LESSCHARSET="UTF-8"
 export LESSHISTFILE="/dev/null"
 export LS_COLORS="di=34:ln=35:so=32:pi=33:ex=31:bd=7;36:cd=7;33:su=7;31:sg=7;36:tw=7;32:ow=7;33:st=7;34"
-export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
-export MORE="-x4"
 export RLWRAP_HOME="/dev/null"
 export WORDCHARS="._-~"
 
 PATH="/usr/local/smlnj/bin:$PATH"
-PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 PATH="$HOME/.cargo/bin:$PATH"
 PATH="$HOME/.config/bin:$PATH"
 export PATH
 
+ZLE_REMOVE_SUFFIX_CHARS=$' \t\n;'
 if [ -z "${SSH_TTY+1}" ]; then
   PS1=$'%{\e[90m%}%2~%{\e[0m%} %{\e[%(?.32.31)m%}%(!.#.$)%{\e[0m%} '
 else
   PS1=$'%{\e[33m%}[%m]%{\e[0m%} %{\e[90m%}%2~%{\e[0m%} %{\e[%(?.32.31)m%}%(!.#.$)%{\e[0m%} '
 fi
-ZLE_REMOVE_SUFFIX_CHARS=$' \t\n;'
 
 alias -- -="cd -"
 alias e="$EDITOR"
@@ -71,7 +66,9 @@ zstyle ":completion:*" squeeze-slashes true
 zstyle ":completion:*" verbose false
 
 # fix bad autocomplete
-_stat() { _default "$@" }
+_stat() {
+  _default "$@"
+}
 
 get_cmu_ticket() {
   kinit -t "$HOME/.config/keytab/azdavis@ANDREW.CMU.EDU" azdavis@ANDREW.CMU.EDU
