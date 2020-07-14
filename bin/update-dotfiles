@@ -33,11 +33,11 @@ if [ \
 fi
 
 if git merge-base --is-ancestor refs/remotes/origin/master HEAD; then
-  echo "Already up-to-date"
+  echo "already up-to-date"
 else
   git rebase -q refs/remotes/origin/master
-  echo "Updated"
-  git log -1 --format="Was: %h (%cr) %s" "$old_merge_base"
+  echo "updated"
+  git log -1 --format="was: %h (%cr) %s" "$old_merge_base"
 fi
 
-git log -1 --format="Now: %h (%cr) %s" refs/remotes/origin/master
+git log -1 --format="now: %h (%cr) %s" refs/remotes/origin/master
