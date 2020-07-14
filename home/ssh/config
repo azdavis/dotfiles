@@ -1,8 +1,0 @@
-Host *
-  HashKnownHosts yes
-Host cmu
-  Hostname unix.andrew.cmu.edu
-  User azdavis
-  GSSAPIAuthentication yes
-  GSSAPIDelegateCredentials yes
-  ExitOnForwardFailure yes
