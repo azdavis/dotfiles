@@ -2,7 +2,7 @@
   detachedHead = false
 [alias]
   count-commits = rev-list --count HEAD
-  fixup = commit --amend --no-edit
+  fixup = commit --amend --no-edit --reset-author
   ls-untracked = ls-files -o --directory
   praise = blame
   unstash = stash pop
