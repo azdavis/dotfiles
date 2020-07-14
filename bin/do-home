@@ -12,8 +12,8 @@ if [ "$#" -ne 0 ]; then
 fi
 
 symlink() {
-  if [ -e "$2" ] && ! [ -L "$2" ]; then
-    printf 'rm %s? ' "$2"
+  if [ -e "$2" ]; then
+    printf 'rm %s [yn]? ' "$2"
     read ans
     if [ "$ans" != y ]; then
       return
@@ -31,15 +31,5 @@ if [ "$(uname)" = Darwin ]; then
   symlink "$HOME/.config/vscode" "/Applications/code-portable-data"
 fi
 
-wd="$HOME/.config/home"
-cd "$wd"
-for x in *; do
-  symlink "$wd/$x" "$HOME/.$x"
-done
-
-cd
-for x in .*; do
-  if [ -L "$x" ] && ! [ -e "$x" ]; then
-    rm "$x"
-  fi
-done
+symlink "$HOME/.config/home/zshrc" "$HOME/.zshrc"
+symlink "$HOME/.config/home/Brewfile" "$HOME/.Brewfile"
