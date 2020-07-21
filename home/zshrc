@@ -8,7 +8,7 @@ setopt nounset
 setopt rmstarsilent
 
 export COPYFILE_DISABLE="1"
-export EDITOR="code -gr"
+export EDITOR="code"
 export FPATH="$HOME/.config/site-functions:$FPATH"
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export HOMEBREW_NO_EMOJI="1"
@@ -35,7 +35,7 @@ else
 fi
 
 alias -- -="cd -"
-alias e="$EDITOR"
+alias e="code -r"
 alias ga="git add"
 alias gb="git branch"
 alias gc="git commit"
