@@ -29,6 +29,7 @@ run() {
     git config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
     git fetch -q origin refs/heads/master:refs/remotes/origin/master
     git reset -q --hard refs/remotes/origin/master
+    git branch -q --set-upstream-to origin/master
   fi
   "$dst/bin/do-home" </dev/tty
   if [ "$SHELL" != /bin/zsh ]; then
