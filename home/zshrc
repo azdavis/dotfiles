@@ -89,7 +89,7 @@ ssh() {
 mesg n
 tabs -2
 
-. "$HOME/Library/Preferences/org.dystroy.broot/launcher/bash/br"
+. "$HOME/.config/broot/launcher/bash/br"
 
 if [ -f "$HOME/e" ]; then
   cat "$HOME/e"
