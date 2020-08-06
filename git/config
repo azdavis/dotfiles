@@ -30,7 +30,6 @@
   decorate = short
 [merge]
   conflictStyle = diff3
-  ff = only
 [pull]
   rebase = merges
 [push]
