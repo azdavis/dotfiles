@@ -22,6 +22,7 @@
   "editor.tabSize": 2,
   "editor.trimAutoWhitespace": true,
   "editor.useTabStops": true,
+  "explorer.autoReveal": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "extensions.ignoreRecommendations": true,

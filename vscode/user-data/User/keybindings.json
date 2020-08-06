@@ -220,5 +220,13 @@
     "key": "alt+cmd+c",
     "command": "-copyFilePath",
     "when": "!editorFocus"
+  },
+  {
+    "key": "shift+cmd+e",
+    "command": "-workbench.view.explorer"
+  },
+  {
+    "key": "shift+cmd+e",
+    "command": "workbench.files.action.showActiveFileInExplorer"
   }
 ]
