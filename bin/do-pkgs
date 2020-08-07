@@ -3,8 +3,7 @@
 set -eu
 
 brew update
-brew bundle --verbose --global || true
-brew bundle cleanup --force --global
+brew upgrade
 brew cleanup
 
 rustup self update

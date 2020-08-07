@@ -32,4 +32,3 @@ if [ "$(uname)" = Darwin ]; then
 fi
 
 symlink "$HOME/.config/home/zshrc" "$HOME/.zshrc"
-symlink "$HOME/.config/home/Brewfile" "$HOME/.Brewfile"
