@@ -13,7 +13,7 @@ fi
 
 symlink() {
   if [ -e "$2" ]; then
-    printf 'rm %s [yn]? ' "$2"
+    printf 'rm %s [y/n]? ' "$2"
     read ans
     if [ "$ans" != y ]; then
       return
