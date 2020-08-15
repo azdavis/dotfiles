@@ -27,6 +27,5 @@ symlink() {
 touch "$HOME/.hushlogin"
 chmod 600 "$HOME/.hushlogin"
 
-symlink "$HOME/.config/vscode/keybindings.json" "$HOME/Library/Application Support/Code/User/keybindings.json"
-symlink "$HOME/.config/vscode/settings.json" "$HOME/Library/Application Support/Code/User/settings.json"
+symlink "$HOME/.config/vscode" "$HOME/Library/Application Support/Code/User"
 symlink "$HOME/.config/home/zshrc" "$HOME/.zshrc"
