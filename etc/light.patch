@@ -1,11 +1,11 @@
 --- a/git/config
 +++ b/git/config
-@@ -14,3 +14,3 @@
+@@ -15,3 +15,3 @@
    eol = lf
 -  pager = delta --dark
 +  pager = delta --light
    quotePath = false
-@@ -26,3 +26,3 @@
+@@ -27,3 +27,3 @@
  [interactive]
 -  diffFilter = delta --color-only --dark
 +  diffFilter = delta --color-only --light
