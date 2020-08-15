@@ -27,8 +27,6 @@ symlink() {
 touch "$HOME/.hushlogin"
 chmod 600 "$HOME/.hushlogin"
 
-if [ "$(uname)" = Darwin ]; then
-  symlink "$HOME/.config/vscode" "/Applications/code-portable-data"
-fi
-
+symlink "$HOME/.config/vscode/keybindings.json" "$HOME/Library/Application Support/Code/User/keybindings.json"
+symlink "$HOME/.config/vscode/settings.json" "$HOME/Library/Application Support/Code/User/settings.json"
 symlink "$HOME/.config/home/zshrc" "$HOME/.zshrc"
