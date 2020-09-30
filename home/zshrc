@@ -89,8 +89,6 @@ ssh() {
 mesg n
 tabs -2
 
-. "$HOME/.config/broot/launcher/bash/br"
-
 if [ -f "$HOME/e" ]; then
   cat "$HOME/e"
 fi
