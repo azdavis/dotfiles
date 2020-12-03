@@ -20,6 +20,8 @@
   helper = osxkeychain
 [diff]
   algorithm = histogram
+  renameLimit = 4096
+  renames = copy
 [fetch]
   prune = true
 [init]
