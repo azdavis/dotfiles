@@ -17,6 +17,7 @@
   "editor.renderLineHighlight": "none",
   "editor.renderWhitespace": "selection",
   "editor.rulers": [80],
+  "editor.stickyTabStops": true,
   "editor.suggest.localityBonus": true,
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
