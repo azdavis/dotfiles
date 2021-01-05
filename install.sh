@@ -11,11 +11,11 @@ run() {
     panic "$dst already exists"
   fi
   if [ "$(uname)" = Darwin ] && ! xcode-select -p >/dev/null; then
-    panic "'Command Line Developer Tools' not found"
+    panic "Command Line Developer Tools not found"
   fi
   for x in /bin/sh /bin/zsh chsh git; do
     if ! command -v "$x" >/dev/null; then
-      panic "'$x' not found"
+      panic "command $x not found"
     fi
   done
   mkdir "$dst"
@@ -25,7 +25,7 @@ run() {
   if [ "$SHELL" != /bin/zsh ]; then
     chsh -s /bin/zsh </dev/tty
   fi
-  echo "done."
+  echo "done"
 }
 
 run
