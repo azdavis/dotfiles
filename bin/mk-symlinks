@@ -28,4 +28,4 @@ touch "$HOME/.hushlogin"
 chmod 600 "$HOME/.hushlogin"
 
 symlink "$HOME/dotfiles/vscode" "$HOME/Library/Application Support/Code/User"
-symlink "$HOME/dotfiles/home/zshrc" "$HOME/.zshrc"
+symlink "$HOME/dotfiles/home/zshrc.sh" "$HOME/.zshrc"

@@ -21,7 +21,7 @@ run() {
   mkdir "$dst"
   chmod 700 "$dst"
   git clone https://github.com/azdavis/dotfiles.git "$dst"
-  "$dst/bin/do-home" </dev/tty
+  "$dst/bin/mk-symlinks" </dev/tty
   if [ "$SHELL" != /bin/zsh ]; then
     chsh -s /bin/zsh </dev/tty
   fi
