@@ -1,5 +1,6 @@
 [advice]
   detachedHead = false
+  addEmptyPathspec = false
 [alias]
   amend = commit --amend --reset-author
   count-commits = rev-list --count HEAD
