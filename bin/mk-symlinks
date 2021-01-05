@@ -27,5 +27,14 @@ symlink() {
 touch "$HOME/.hushlogin"
 chmod 600 "$HOME/.hushlogin"
 
-symlink "$HOME/dotfiles/vscode" "$HOME/Library/Application Support/Code/User"
-symlink "$HOME/dotfiles/home/zshrc.sh" "$HOME/.zshrc"
+symlink "$HOME/dotfiles/etc/zshrc.sh" "$HOME/.zshrc"
+
+symlink "$HOME/dotfiles/git/config" "$HOME/.gitconfig"
+symlink "$HOME/dotfiles/git/ignore" "$HOME/.gitignore"
+
+symlink "$HOME/dotfiles/mpv/input.conf" "$HOME/.config/mpv/input.conf"
+symlink "$HOME/dotfiles/mpv/mpv.conf" "$HOME/.config/mpv/mpv.conf"
+
+vscode="$HOME/Library/Application Support/Code/User"
+symlink "$HOME/dotfiles/vscode/keybindings.json" "$vscode/keybindings.json"
+symlink "$HOME/dotfiles/vscode/settings.json" "$vscode/settings.json"
