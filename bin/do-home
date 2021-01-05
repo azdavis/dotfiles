@@ -27,5 +27,5 @@ symlink() {
 touch "$HOME/.hushlogin"
 chmod 600 "$HOME/.hushlogin"
 
-symlink "$HOME/.config/vscode" "$HOME/Library/Application Support/Code/User"
-symlink "$HOME/.config/home/zshrc" "$HOME/.zshrc"
+symlink "$HOME/dotfiles/vscode" "$HOME/Library/Application Support/Code/User"
+symlink "$HOME/dotfiles/home/zshrc" "$HOME/.zshrc"

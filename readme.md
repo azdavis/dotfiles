@@ -4,7 +4,7 @@ A potpourri of macOS dotfiles
 
 ## Install
 
-Install the repo to `~/.config` with:
+Install the repo to `~/dotfiles` with:
 
 ```sh
 $ curl -fsSL https://git.io/vM2Jb | sh

@@ -6,8 +6,10 @@ panic() {
 }
 
 run() {
-  url="https://github.com/azdavis/dotfiles.git"
-  dst="$HOME/.config"
+  dst="$HOME/dotfiles"
+  if [ -e "$dst" ]; then
+    panic "$dst already exists"
+  fi
   if [ "$(uname)" = Darwin ] && ! xcode-select -p >/dev/null; then
     panic "'Command Line Developer Tools' not found"
   fi
@@ -16,21 +18,9 @@ run() {
       panic "'$x' not found"
     fi
   done
-  if ! [ -d "$dst" ]; then
-    rm -f "$dst"
-    mkdir "$dst"
-  fi
-  cd "$dst"
-  chmod 700 .
-  if [ "$(git config remote.origin.url)" != "$url" ]; then
-    rm -rf .git
-    git init -q
-    git config remote.origin.url "$url"
-    git config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
-    git fetch -q origin refs/heads/master:refs/remotes/origin/master
-    git reset -q --hard refs/remotes/origin/master
-    git branch -q --set-upstream-to origin/master
-  fi
+  mkdir "$dst"
+  chmod 700 "$dst"
+  git clone https://github.com/azdavis/dotfiles.git "$dst"
   "$dst/bin/do-home" </dev/tty
   if [ "$SHELL" != /bin/zsh ]; then
     chsh -s /bin/zsh </dev/tty

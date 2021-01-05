@@ -26,7 +26,7 @@
 [fetch]
   prune = true
 [init]
-  templateDir = ~/.config/git/template
+  templateDir = ~/dotfiles/git/template
 [interactive]
   diffFilter = delta --color-only --dark
 [log]
