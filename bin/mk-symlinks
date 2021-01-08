@@ -21,7 +21,7 @@ symlink() {
   fi
   rm -rf "$2"
   mkdir -p "$(dirname "$2")"
-  ln -s "$HOME/dotfiles/$1" "$2"
+  ln -s "$HOME/.dotfiles/$1" "$2"
 }
 
 touch "$HOME/.hushlogin"

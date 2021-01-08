@@ -6,7 +6,7 @@ panic() {
 }
 
 run() {
-  dst="$HOME/dotfiles"
+  dst="$HOME/.dotfiles"
   if [ -e "$dst" ]; then
     panic "$dst already exists"
   fi

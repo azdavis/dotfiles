@@ -22,7 +22,7 @@ export RLWRAP_HOME="/dev/null"
 export WORDCHARS="._-~"
 
 PATH="$HOME/.cargo/bin:$PATH"
-PATH="$HOME/dotfiles/bin:$PATH"
+PATH="$HOME/.dotfiles/bin:$PATH"
 export PATH
 
 ZLE_REMOVE_SUFFIX_CHARS=$' \t\n;'

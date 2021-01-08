@@ -11,7 +11,7 @@ if [ "$#" -ne 0 ]; then
   panic "usage: $0"
 fi
 
-cd "$HOME/dotfiles"
+cd "$HOME/.dotfiles"
 
 sys_dark_mode="Application('System Events').appearancePreferences.darkMode"
 new_dark="$(osascript -l JavaScript -e "! $sys_dark_mode()")"
