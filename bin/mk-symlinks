@@ -29,7 +29,7 @@ chmod 600 "$HOME/.hushlogin"
 
 symlink etc/zshrc.sh "$HOME/.zshrc"
 
-symlink git/config "$HOME/.gitconfig"
+symlink git/config.conf "$HOME/.gitconfig"
 symlink git/ignore "$HOME/.gitignore"
 
 symlink mpv/input.conf "$HOME/.config/mpv/input.conf"
