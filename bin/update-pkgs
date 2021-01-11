@@ -8,3 +8,8 @@ brew cleanup
 
 rustup self update
 rustup update
+
+cd "$HOME/.dotfiles"
+mkdir -p site-functions
+rustup completions zsh rustup > site-functions/_rustup
+rustup completions zsh cargo > site-functions/_cargo

@@ -21,6 +21,8 @@ export LS_COLORS="di=34:ln=35:so=32:pi=33:ex=31:bd=7;36:cd=7;33:su=7;31:sg=7;36:
 export RLWRAP_HOME="/dev/null"
 export WORDCHARS="._-~"
 
+export FPATH="$HOME/.dotfiles/site-functions:$FPATH"
+
 PATH="$HOME/.cargo/bin:$PATH"
 PATH="$HOME/.dotfiles/bin:$PATH"
 export PATH
