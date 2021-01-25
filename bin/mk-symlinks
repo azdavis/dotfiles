@@ -35,6 +35,4 @@ symlink git/ignore "$HOME/.config/git/ignore"
 symlink mpv/input.conf "$HOME/.config/mpv/input.conf"
 symlink mpv/mpv.conf "$HOME/.config/mpv/mpv.conf"
 
-vscode="$HOME/Library/Application Support/Code/User"
-symlink vscode/keybindings.json "$vscode/keybindings.json"
-symlink vscode/settings.json "$vscode/settings.json"
+symlink vscode "$HOME/Library/Application Support/Code/User"
