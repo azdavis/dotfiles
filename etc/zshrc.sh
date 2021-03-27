@@ -24,6 +24,7 @@ export WORDCHARS="._-~"
 export FPATH="$HOME/.dotfiles/site-functions:$FPATH"
 
 PATH="$HOME/.cargo/bin:$PATH"
+PATH="$HOME/.elan/bin:$PATH"
 PATH="$HOME/.dotfiles/bin:$PATH"
 export PATH
 

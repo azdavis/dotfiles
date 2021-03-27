@@ -228,5 +228,10 @@
   {
     "key": "shift+cmd+e",
     "command": "workbench.files.action.showActiveFileInExplorer"
+  },
+  {
+    "key": "shift+cmd+enter",
+    "command": "-lean.displayGoal",
+    "when": "editorTextFocus && editorLangId == 'lean'"
   }
 ]
