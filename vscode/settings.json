@@ -27,8 +27,6 @@
   "explorer.confirmDragAndDrop": false,
   "extensions.ignoreRecommendations": true,
   "files.associations": {
-    ".Brewfile": "ruby",
-    "Brewfile": "ruby",
     "Cargo.lock": "toml",
     "zshrc": "shellscript"
   },
