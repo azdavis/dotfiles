@@ -28,7 +28,7 @@ PATH="$HOME/.elan/bin:$PATH"
 PATH="$HOME/.dotfiles/bin:$PATH"
 export PATH
 
-ZLE_REMOVE_SUFFIX_CHARS=$' \t\n;'
+export ZLE_SPACE_SUFFIX_CHARS=$'&|'
 if [ -z "${SSH_TTY+1}" ]; then
   PS1=$'%{\e[90m%}%2~%{\e[0m%} %{\e[%(?.32.31)m%}%(!.#.$)%{\e[0m%} '
 else
