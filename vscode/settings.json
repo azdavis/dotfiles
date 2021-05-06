@@ -50,6 +50,7 @@
   "workbench.colorTheme": "Default Dark+",
   "workbench.editor.enablePreview": false,
   "workbench.editor.restoreViewState": false,
+  "workbench.editor.untitled.hint": "hidden",
   "workbench.iconTheme": null,
   "workbench.startupEditor": "none",
   "workbench.statusBar.visible": true,
