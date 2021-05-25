@@ -2,14 +2,22 @@
 
 set -eu
 
-brew update
-brew upgrade
-brew cleanup
+if command -v brew > /dev/null; then
+  brew update
+  brew upgrade
+  brew cleanup
+else
+  echo "no brew"
+fi
 
-rustup self update
-rustup update
+sf="$HOME/.dotfiles/site-functions"
+mkdir -p "$sf"
 
-cd "$HOME/.dotfiles"
-mkdir -p site-functions
-rustup completions zsh rustup > site-functions/_rustup
-rustup completions zsh cargo > site-functions/_cargo
+if command -v rustup > /dev/null; then
+  rustup self update
+  rustup update
+  rustup completions zsh rustup > "$sf/_rustup"
+  rustup completions zsh cargo > "$sf/_cargo"
+else
+  echo "no rustup"
+fi
