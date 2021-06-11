@@ -2,6 +2,9 @@
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.acceptSuggestionOnEnter": "off",
   "editor.autoIndent": "brackets",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
   "editor.codeLens": false,
   "editor.cursorBlinking": "solid",
   "editor.cursorWidth": 1,

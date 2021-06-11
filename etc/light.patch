@@ -12,7 +12,7 @@
  [log]
 --- a/vscode/settings.json
 +++ b/vscode/settings.json
-@@ -49,3 +49,3 @@
+@@ -52,3 +52,3 @@
    "window.restoreWindows": "none",
 -  "workbench.colorTheme": "Default Dark+",
 +  "workbench.colorTheme": "Default Light+",
