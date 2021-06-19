@@ -69,6 +69,22 @@ _stat() {
   _default "$@"
 }
 
+l() {
+  if [ "$#" -eq 0 ]; then
+    ls
+    return
+  fi
+  if [ "$#" -ne 1 ]; then
+    echo "error: too many arguments"
+    return 1
+  fi
+  if [ -f "$1" ]; then
+    cat "$1"
+  else
+    ls "$1"
+  fi
+}
+
 mesg n
 tabs -2
 
