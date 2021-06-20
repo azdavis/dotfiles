@@ -209,5 +209,9 @@
   {
     "key": "shift+cmd+enter",
     "command": "-lean.displayGoal"
+  },
+  {
+    "key": "cmd+w",
+    "command": "-workbench.action.closeWindow"
   }
 ]
