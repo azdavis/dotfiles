@@ -2,15 +2,6 @@
 
 set -eu
 
-panic() {
-  echo "$1" >&2
-  exit 1
-}
-
-if [ "$#" -ne 0 ]; then
-  panic "usage: $0"
-fi
-
 cd "$HOME/.dotfiles"
 
 sys_dark_mode="Application('System Events').appearancePreferences.darkMode"
