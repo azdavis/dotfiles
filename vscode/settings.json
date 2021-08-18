@@ -39,8 +39,6 @@
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
   "git.enabled": false,
-  "html.format.enable": false,
-  "javascript.validate.enable": false,
   "prettier.endOfLine": "lf",
   "prettier.proseWrap": "always",
   "prettier.trailingComma": "all",
