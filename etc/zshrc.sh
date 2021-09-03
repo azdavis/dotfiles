@@ -53,7 +53,6 @@ alias grb="git rebase"
 alias grep="grep --color=auto"
 alias gs="git status"
 alias gt="git tag"
-alias ls="exa --group-directories-first"
 
 autoload -U compinit
 compinit -i
@@ -69,19 +68,11 @@ _stat() {
   _default "$@"
 }
 
-l() {
-  if [ "$#" -eq 0 ]; then
-    ls
-    return
-  fi
-  if [ "$#" -ne 1 ]; then
-    echo "error: too many arguments"
-    return 1
-  fi
-  if [ -f "$1" ]; then
+ls() {
+  if [ "$#" -eq 1 ] && [ -f "$1" ]; then
     cat "$1"
   else
-    ls "$1"
+    exa --group-directories-first "$@"
   fi
 }
 
