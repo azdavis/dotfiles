@@ -50,6 +50,7 @@
   "window.restoreWindows": "none",
   "workbench.colorTheme": "Default Dark+",
   "workbench.editor.enablePreview": false,
+  "workbench.editor.languageDetection": false,
   "workbench.editor.restoreViewState": false,
   "workbench.editor.untitled.hint": "hidden",
   "workbench.iconTheme": null,
