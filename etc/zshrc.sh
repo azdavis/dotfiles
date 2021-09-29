@@ -17,7 +17,7 @@ export LC_CTYPE="en_US.UTF-8"
 export LESS="-FRSsqx2"
 export LESSCHARSET="UTF-8"
 export LESSHISTFILE="/dev/null"
-export LS_COLORS="di=34:ln=35:so=32:pi=33:ex=31:bd=7;36:cd=7;33:su=7;31:sg=7;36:tw=7;32:ow=7;33:st=7;34"
+export LS_COLORS="di=34"
 export RLWRAP_HOME="/dev/null"
 export WORDCHARS="._-~"
 
