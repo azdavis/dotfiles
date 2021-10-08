@@ -45,7 +45,7 @@
   "rewrap.autoWrap.enabled": true,
   "rust-analyzer.inlayHints.enable": false,
   "search.useIgnoreFiles": false,
-  "telemetry.enableTelemetry": false,
+  "telemetry.telemetryLevel": "error",
   "terminal.integrated.fontSize": 14,
   "window.restoreWindows": "none",
   "workbench.colorTheme": "Default Dark+",
