@@ -9,7 +9,6 @@ setopt rmstarsilent
 
 export COPYFILE_DISABLE="1"
 export EDITOR="code"
-export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export HOMEBREW_NO_EMOJI="1"
 export HOMEBREW_NO_INSECURE_REDIRECT="1"
 export LANG="en_US.UTF-8"
@@ -21,10 +20,13 @@ export LS_COLORS="di=34"
 export RLWRAP_HOME="/dev/null"
 export WORDCHARS="._-~"
 
+if [ -e /opt/homebrew/bin/brew ]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
 export FPATH="$HOME/.dotfiles/site-functions:$FPATH"
 
 PATH="$HOME/.cargo/bin:$PATH"
-PATH="$HOME/.elan/bin:$PATH"
 PATH="$HOME/.dotfiles/bin:$PATH"
 export PATH
 
