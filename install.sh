@@ -15,6 +15,7 @@ symlink() {
 touch "$HOME/.hushlogin"
 chmod 600 "$HOME/.hushlogin"
 
+symlink etc/tarsnaprc "$HOME/.tarsnaprc"
 symlink etc/zshrc.sh "$HOME/.zshrc"
 
 symlink git/config.conf "$HOME/.config/git/config"

@@ -1,5 +1,6 @@
 /.vscode/cspell.json
+/bin
+/etc/tarsnap-key.txt
 /site-functions
 /vscode/globalStorage
 /vscode/workspaceStorage
-/bin
