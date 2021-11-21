@@ -7,10 +7,9 @@ symlink() {
     echo "skipping $2"
     return
   fi
-  echo "linking $2"
   rm -rf "$2"
   mkdir -p "$(dirname "$2")"
-  ln -s "$HOME/.dotfiles/$1" "$2"
+  ln -vs "$HOME/.dotfiles/$1" "$2"
 }
 
 touch "$HOME/.hushlogin"
