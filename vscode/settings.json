@@ -47,6 +47,8 @@
   "search.useIgnoreFiles": false,
   "telemetry.telemetryLevel": "error",
   "terminal.integrated.fontSize": 14,
+  "terminal.integrated.persistentSessionScrollback": 0,
+  "terminal.integrated.scrollback": 5000,
   "window.restoreWindows": "none",
   "workbench.colorTheme": "Default Dark+",
   "workbench.editor.enablePreview": false,
