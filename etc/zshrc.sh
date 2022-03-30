@@ -38,24 +38,20 @@ else
   PS1=$'%{\e[33m%}[%m]%{\e[0m%} %{\e[90m%}%2~%{\e[0m%} %{\e[%(?.32.31)m%}%(!.#.$)%{\e[0m%} '
 fi
 
-alias -- -="cd -"
-alias e="code"
+alias -- "-"="cd -"
+alias e="$EDITOR"
+alias grep="grep --color=auto"
+
 alias ga="git add"
 alias gb="git branch"
 alias gc="git commit"
 alias gd="git diff"
-alias gf="git fetch"
 alias gh="git show --format=fuller"
 alias gk="git checkout"
-alias gl="git log --all --graph --oneline"
-alias gm="git merge"
+alias gl="git log --graph --oneline"
 alias gp="git push"
-alias gpl="git pull"
 alias gr="git reset"
-alias grb="git rebase"
-alias grep="grep --color=auto"
 alias gs="git status"
-alias gt="git tag"
 
 autoload -U compinit
 compinit -i
