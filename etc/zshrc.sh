@@ -13,11 +13,7 @@ export HOMEBREW_NO_EMOJI="1"
 export HOMEBREW_NO_INSECURE_REDIRECT="1"
 export LANG="en_US.UTF-8"
 export LC_CTYPE="en_US.UTF-8"
-export LESS="-FRSsqx2"
-export LESSCHARSET="UTF-8"
-export LESSHISTFILE="/dev/null"
 export LS_COLORS="di=34"
-export RLWRAP_HOME="/dev/null"
 export WORDCHARS="._-~"
 
 if [ -e /opt/homebrew/bin/brew ]; then
