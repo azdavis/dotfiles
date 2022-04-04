@@ -3,4 +3,5 @@
 /etc/tarsnap-key.txt
 /site-functions
 /vscode/globalStorage
+/vscode/History
 /vscode/workspaceStorage
