@@ -58,6 +58,9 @@
   "workbench.iconTheme": null,
   "workbench.startupEditor": "none",
   "workbench.statusBar.visible": true,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[diff]": {
     "files.insertFinalNewline": false,
     "files.trimFinalNewlines": false,
