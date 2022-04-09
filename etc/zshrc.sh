@@ -65,7 +65,12 @@ _stat() {
 
 ls() {
   if [ "$#" -eq 1 ] && [ -f "$1" ]; then
-    cat "$1"
+    # not that portable
+    if head -n 5 "$1" | grep -q '\x00'; then
+      echo "<binary file>"
+    else
+      cat "$1"
+    fi
   else
     exa --group-directories-first "$@"
   fi
