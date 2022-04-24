@@ -1,18 +1,6 @@
---- a/git/config.conf
-+++ b/git/config.conf
-@@ -13,3 +13,3 @@
-   eol = lf
--  pager = delta --dark
-+  pager = delta --light
-   quotePath = false
-@@ -23,3 +23,3 @@
- [interactive]
--  diffFilter = delta --color-only --dark
-+  diffFilter = delta --color-only --light
- [log]
 --- a/vscode/settings.json
 +++ b/vscode/settings.json
-@@ -50,3 +50,3 @@
+@@ -52,3 +52,3 @@
    "window.restoreWindows": "none",
 -  "workbench.colorTheme": "Default Dark+",
 +  "workbench.colorTheme": "Default Light+",
