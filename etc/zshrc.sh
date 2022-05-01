@@ -11,8 +11,6 @@ export COPYFILE_DISABLE="1"
 export EDITOR="code"
 export HOMEBREW_NO_EMOJI="1"
 export HOMEBREW_NO_INSECURE_REDIRECT="1"
-export LANG="en_US.UTF-8"
-export LC_CTYPE="en_US.UTF-8"
 export LS_COLORS="di=34"
 export WORDCHARS="._-~"
 
@@ -74,6 +72,10 @@ ls() {
   else
     exa --group-directories-first "$@"
   fi
+}
+
+annoy() {
+  while say 'alert'; do done
 }
 
 mesg n
