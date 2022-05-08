@@ -13,7 +13,7 @@
   "editor.fontFamily": "Input",
   "editor.fontSize": 14,
   "editor.formatOnSave": true,
-  "editor.inlayHints.enabled": false,
+  "editor.inlayHints.enabled": "off",
   "editor.minimap.enabled": false,
   "editor.occurrencesHighlight": false,
   "editor.quickSuggestionsDelay": 50,
@@ -41,7 +41,7 @@
   "files.trimTrailingWhitespace": true,
   "git.enabled": false,
   "prettier.endOfLine": "lf",
-  "prettier.proseWrap": "always",
+  "prettier.proseWrap": "never",
   "prettier.trailingComma": "all",
   "rewrap.autoWrap.enabled": true,
   "search.useIgnoreFiles": false,
@@ -77,6 +77,10 @@
   },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.wordWrap": "bounded",
+    "rewrap.autoWrap.enabled": false
   },
   "[python]": {
     "editor.tabSize": 4
