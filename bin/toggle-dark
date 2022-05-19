@@ -6,13 +6,25 @@ cd "$HOME/.dotfiles"
 
 sys_dark_mode="Application('System Events').appearancePreferences.darkMode"
 new_dark="$(osascript -l JavaScript -e "! $sys_dark_mode()")"
-p="etc/light.patch"
+
+mk_theme_str() {
+  echo "\"workbench.colorTheme\": \"Default $1+\""
+}
+
+light_theme="$(mk_theme_str Light)"
+dark_theme="$(mk_theme_str Dark)"
 
 if "$new_dark"; then
-  git_direction="--reverse"
+  old_theme="$light_theme"
+  new_theme="$dark_theme"
 else
-  git_direction=""
+  old_theme="$dark_theme"
+  new_theme="$light_theme"
 fi
 
 osascript -l JavaScript -e "$sys_dark_mode = $new_dark" >/dev/null
-git apply $git_direction "$p"
+
+settings='vscode/settings.json'
+tmp='settings.tmp'
+sed "s/$old_theme/$new_theme/" "$settings" > "$tmp"
+mv "$tmp" "$settings"
