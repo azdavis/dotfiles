@@ -51,6 +51,7 @@
   "window.autoDetectColorScheme": true,
   "window.restoreWindows": "none",
   "workbench.editor.enablePreview": false,
+  "workbench.editor.focusRecentEditorAfterClose": false,
   "workbench.editor.languageDetection": false,
   "workbench.editor.restoreViewState": false,
   "workbench.editor.untitled.hint": "hidden",
