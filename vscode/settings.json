@@ -40,7 +40,6 @@
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
   "git.enabled": false,
-  "prettier.endOfLine": "lf",
   "prettier.proseWrap": "never",
   "prettier.trailingComma": "all",
   "rewrap.autoWrap.enabled": true,
