@@ -1,0 +1,95 @@
+#!/usr/bin/env python3
+
+import sys
+import time
+
+USAGE = """
+usage:
+    wait (help | --help | -h)
+    wait <time-spec>
+
+<time-spec> specifies how long to wait. examples:
+    "2m" -> 2 minute
+    "3h4s" -> 3 hour 4 second
+    "0h4m" -> 4 minute
+    "100m" -> 1 hour 40 minute
+    "2m3h" -> invalid, larger units must come first
+    "3m4m" -> invalid, units must appear at most once
+    "3M" -> invalid, units must be lowercase
+    "2h 3m" -> invalid, cannot contain anything other than 0-9 or h, m, s
+"""
+
+def panic(*args):
+    print(*args)
+    sys.exit(1)
+
+def main():
+    if len(sys.argv) != 2:
+        panic(USAGE)
+
+    arg = sys.argv[1]
+    if arg in {"help", "--help", "-h"}:
+        panic(USAGE)
+
+    hour = None
+    minute = None
+    second = None
+    cur = []
+    for c in arg:
+        if c.isdigit():
+            cur.append(c)
+            continue
+        elif c == "h":
+            if hour is not None:
+                panic("cannot set hour twice")
+            if minute is not None or second is not None:
+                panic("cannot set hour after minute or second")
+            hour = int("".join(cur))
+        elif c == "m":
+            if minute is not None:
+                panic("cannot set minute twice")
+            if second is not None:
+                panic("cannot set minute after second")
+            minute = int("".join(cur))
+        elif c == "s":
+            if second is not None:
+                panic("cannot set second twice")
+            second = int("".join(cur))
+        else:
+            panic("invalid character:", c)
+        cur = []
+
+    if len(cur) != 0:
+        panic("leftover numbers:", cur)
+
+    hour = 0 if hour is None else hour
+    minute = 0 if minute is None else minute
+    second = 0 if second is None else second
+
+    UNIT = 60
+    minute += second // UNIT
+    second %= UNIT
+    hour += minute // UNIT
+    minute %= UNIT
+
+    while True:
+        print("\r{:02d}:{:02d}:{:02d}".format(hour, minute, second), end="")
+        if second == 0:
+            if minute == 0:
+                if hour == 0:
+                    break
+                hour -= 1
+                minute = UNIT
+            minute -= 1
+            second = UNIT
+        second -= 1
+        time.sleep(1)
+
+    print("\r        \r", end="")
+
+if __name__ == "__main__":
+    try:
+        main()
+    except KeyboardInterrupt:
+        print()
+        sys.exit(1)
