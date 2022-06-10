@@ -44,7 +44,9 @@ alias gh="git show --ext-diff --format=fuller"
 alias gk="git checkout"
 alias gl="git log --ext-diff --graph --oneline"
 alias gp="git push"
+alias gpl="git pull"
 alias gr="git reset"
+alias grb="git rebase"
 alias gs="git status"
 
 autoload -U compinit
