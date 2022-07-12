@@ -23,6 +23,8 @@ def panic(*args):
     print(*args)
     sys.exit(1)
 
+UNIT = 60
+
 def main():
     if len(sys.argv) != 2:
         panic(USAGE)
@@ -66,7 +68,6 @@ def main():
     minute = 0 if minute is None else minute
     second = 0 if second is None else second
 
-    UNIT = 60
     minute += second // UNIT
     second %= UNIT
     hour += minute // UNIT
