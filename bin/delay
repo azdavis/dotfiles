@@ -5,10 +5,10 @@ import time
 
 USAGE = """
 usage:
-    wait (help | --help | -h)
-    wait <time-spec>
+    delay (help | --help | -h)
+    delay <time-spec>
 
-<time-spec> specifies how long to wait. examples:
+<time-spec> specifies how long to delay. examples:
     "2m" -> 2 minute
     "3h4s" -> 3 hour 4 second
     "0h4m" -> 4 minute
