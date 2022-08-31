@@ -18,11 +18,11 @@ if [ -e /opt/homebrew/bin/brew ]; then
   eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
-export FPATH="$HOME/.dotfiles/site-functions:$FPATH"
+export FPATH="$HOME/.site-functions:$FPATH"
 
 PATH="$HOME/.cargo/bin:$PATH"
 PATH="$HOME/.volta/bin:$PATH"
-PATH="$HOME/.dotfiles/bin:$PATH"
+PATH="$HOME/.bin:$PATH"
 export PATH
 
 export ZLE_SPACE_SUFFIX_CHARS=$'&|'

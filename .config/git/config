@@ -20,7 +20,7 @@
   prune = true
 [init]
   defaultBranch = main
-  templateDir = ~/.dotfiles/git/template
+  templateDir = /var/empty
 [log]
   date = iso8601
   decorate = short
