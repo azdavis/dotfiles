@@ -10,7 +10,7 @@ else
   echo "no brew"
 fi
 
-sf="$HOME/.dotfiles/site-functions"
+sf="$HOME/.site-functions"
 mkdir -p "$sf"
 
 if command -v rustup > /dev/null; then

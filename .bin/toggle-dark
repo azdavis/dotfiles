@@ -2,7 +2,5 @@
 
 set -eu
 
-cd "$HOME/.dotfiles"
-
 sys_dark_mode="Application('System Events').appearancePreferences.darkMode"
 osascript -l JavaScript -e "$sys_dark_mode = !$sys_dark_mode()" >/dev/null
