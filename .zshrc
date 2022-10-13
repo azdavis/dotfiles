@@ -35,6 +35,7 @@ fi
 alias -- "-"="cd -"
 alias e="$EDITOR"
 alias grep="grep --color=auto"
+alias dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 
 alias ga="git add"
 alias gb="git branch"
