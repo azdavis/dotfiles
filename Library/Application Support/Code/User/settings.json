@@ -46,6 +46,7 @@
   "search.useIgnoreFiles": false,
   "telemetry.telemetryLevel": "error",
   "terminal.integrated.fontSize": 14,
+  "terminal.integrated.persistentSessionReviveProcess": "never",
   "terminal.integrated.persistentSessionScrollback": 0,
   "terminal.integrated.scrollback": 5000,
   "window.autoDetectColorScheme": true,
