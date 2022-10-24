@@ -73,6 +73,9 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -80,6 +83,10 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[markdown]": {
+    "editor.wordWrap": "bounded",
+    "rewrap.autoWrap.enabled": false
+  },
+  "[mdx]": {
     "editor.wordWrap": "bounded",
     "rewrap.autoWrap.enabled": false
   },
