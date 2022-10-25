@@ -19,7 +19,7 @@
   "editor.quickSuggestionsDelay": 50,
   "editor.renderLineHighlight": "none",
   "editor.renderWhitespace": "selection",
-  "editor.rulers": [80],
+  "editor.rulers": [100],
   "editor.stickyTabStops": true,
   "editor.suggest.localityBonus": true,
   "editor.tabCompletion": "on",
