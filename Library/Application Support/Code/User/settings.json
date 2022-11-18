@@ -44,6 +44,7 @@
   "prettier.trailingComma": "all",
   "rewrap.autoWrap.enabled": true,
   "search.useIgnoreFiles": false,
+  "security.workspace.trust.enabled": false,
   "telemetry.telemetryLevel": "error",
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.persistentSessionReviveProcess": "never",
