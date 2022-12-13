@@ -57,6 +57,7 @@
   "workbench.editor.languageDetection": false,
   "workbench.editor.restoreViewState": false,
   "workbench.editor.untitled.hint": "hidden",
+  "workbench.editor.wrapTabs": true,
   "workbench.iconTheme": null,
   "workbench.startupEditor": "none",
   "workbench.statusBar.visible": true,
