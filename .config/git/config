@@ -1,6 +1,6 @@
 [advice]
-	detachedHead = false
 	addEmptyPathspec = false
+	detachedHead = false
 [alias]
 	amend = commit --amend --reset-author
 	fixup = commit --amend --no-edit --reset-author
@@ -10,25 +10,21 @@
 	verbose = 1
 [core]
 	editor = code -w
-	quotePath = false
-	untrackedCache = true
 [credential]
 	helper = osxkeychain
 [diff]
 	external = difft
-[fetch]
-	prune = true
 [init]
 	defaultBranch = main
 	templateDir = /var/empty
 [log]
 	date = iso8601
-	decorate = short
 [merge]
 	conflictStyle = diff3
 [pull]
 	rebase = merges
 [push]
+	autoSetupRemote = true
 	default = simple
 [stash]
 	showPatch = true
