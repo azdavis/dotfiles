@@ -14,6 +14,8 @@
 	helper = osxkeychain
 [diff]
 	external = difft
+[fetch]
+	prune = true
 [init]
 	defaultBranch = main
 	templateDir = /var/empty
