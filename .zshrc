@@ -81,7 +81,7 @@ annoy() {
 }
 
 mesg n
-tabs -2
+tabs -4
 
 if [ -f "$HOME/e" ]; then
   cat "$HOME/e"
