@@ -10,6 +10,7 @@
 	verbose = 1
 [core]
 	editor = code -w
+	untrackedCache = true
 [credential]
 	helper = osxkeychain
 [diff]
