@@ -1,3 +1,9 @@
+# third party
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# personal
+
 setopt autocd
 setopt ignoreeof
 setopt interactivecomments
@@ -13,10 +19,6 @@ export HOMEBREW_NO_EMOJI="1"
 export HOMEBREW_NO_INSECURE_REDIRECT="1"
 export LS_COLORS="di=34"
 export WORDCHARS="._-~"
-
-if [ -e /opt/homebrew/bin/brew ]; then
-  eval "$(/opt/homebrew/bin/brew shellenv)"
-fi
 
 export FPATH="$HOME/.site-functions:$FPATH"
 
@@ -49,19 +51,6 @@ alias gr="git reset"
 alias grb="git rebase"
 alias gs="git status"
 
-autoload -U compinit
-compinit -i
-zstyle ":completion:*" group-name ""
-zstyle ":completion:*" list-dirs-first true
-zstyle ":completion:*" matcher-list "m:{a-zA-Z}={A-Za-z}"
-zstyle ":completion:*" menu select
-zstyle ":completion:*" squeeze-slashes true
-zstyle ":completion:*" verbose false
-
-# fix bad autocomplete
-_stat() {
-  _default "$@"
-}
 
 ls() {
   if [ "$#" -eq 1 ] && [ -f "$1" ]; then
@@ -87,4 +76,18 @@ if [ -f "$HOME/e" ]; then
   cat "$HOME/e"
 fi
 
-# end
+# autocomplete
+
+autoload -U compinit
+compinit -i
+zstyle ":completion:*" group-name ""
+zstyle ":completion:*" list-dirs-first true
+zstyle ":completion:*" matcher-list "m:{a-zA-Z}={A-Za-z}"
+zstyle ":completion:*" menu select
+zstyle ":completion:*" squeeze-slashes true
+zstyle ":completion:*" verbose false
+
+# fix bad autocomplete
+_stat() {
+  _default "$@"
+}
