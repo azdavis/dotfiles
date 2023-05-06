@@ -53,7 +53,6 @@ alias gr="git reset"
 alias grb="git rebase"
 alias gs="git status"
 
-
 ls() {
   if [ "$#" -eq 1 ] && [ -f "$1" ]; then
     # not that portable
@@ -74,10 +73,6 @@ annoy() {
 mesg n
 tabs -4
 
-if [ -f "$HOME/e" ]; then
-  cat "$HOME/e"
-fi
-
 # autocomplete
 
 autoload -U compinit
@@ -89,7 +84,6 @@ zstyle ":completion:*" menu select
 zstyle ":completion:*" squeeze-slashes true
 zstyle ":completion:*" verbose false
 
-# fix bad autocomplete
 _stat() {
   _default "$@"
 }
