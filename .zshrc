@@ -88,3 +88,5 @@ zstyle ":completion:*" verbose false
 _stat() {
   _default "$@"
 }
+
+# end
