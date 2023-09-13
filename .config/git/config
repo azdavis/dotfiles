@@ -1,6 +1,7 @@
 [advice]
 	addEmptyPathspec = false
 	detachedHead = false
+	skippedCherryPicks = false
 [alias]
 	amend = commit --amend --reset-author
 	fixup = commit --amend --no-edit --reset-author
