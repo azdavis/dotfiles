@@ -213,5 +213,9 @@
   {
     "key": "cmd+w",
     "command": "-workbench.action.closeWindow"
+  },
+  {
+    "key": "alt+cmd+t",
+    "command": "workbench.action.createTerminalEditor"
   }
 ]
