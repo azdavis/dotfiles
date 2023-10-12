@@ -53,6 +53,7 @@
   "window.autoDetectColorScheme": true,
   "window.restoreWindows": "none",
   "window.titleBarStyle": "native",
+  "workbench.editor.empty.hint": "hidden",
   "workbench.editor.focusRecentEditorAfterClose": false,
   "workbench.editor.languageDetection": false,
   "workbench.editor.restoreViewState": false,
