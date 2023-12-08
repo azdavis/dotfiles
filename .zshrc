@@ -8,6 +8,7 @@ fi
 
 setopt auto_cd
 setopt ignore_eof
+setopt inc_append_history
 setopt interactive_comments
 setopt menu_complete
 setopt no_beep
@@ -20,6 +21,7 @@ export EDITOR="code"
 export HOMEBREW_NO_EMOJI="1"
 export HOMEBREW_NO_INSECURE_REDIRECT="1"
 export LS_COLORS="di=34"
+export SAVEHIST="1"
 export WORDCHARS="._-~"
 export VSCODE_ENV_REPLACE VSCODE_ENV_PREPEND VSCODE_ENV_APPEND
 
