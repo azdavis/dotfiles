@@ -6,14 +6,14 @@ fi
 
 # personal
 
-setopt autocd
-setopt ignoreeof
-setopt interactivecomments
-setopt menucomplete
-setopt nobeep
-setopt norcs
-setopt nounset
-setopt rmstarsilent
+setopt auto_cd
+setopt ignore_eof
+setopt interactive_comments
+setopt menu_complete
+setopt no_beep
+setopt no_rcs
+setopt no_unset
+setopt rm_star_silent
 
 export COPYFILE_DISABLE="1"
 export EDITOR="code"
