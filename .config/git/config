@@ -11,6 +11,7 @@
 	verbose = 1
 [core]
 	editor = code -w
+	pager = cat
 	untrackedCache = true
 [credential]
 	helper = osxkeychain
