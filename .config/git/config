@@ -16,7 +16,7 @@
 [credential]
 	helper = osxkeychain
 [diff]
-	external = difft
+	external = difft --display inline
 [fetch]
 	prune = true
 [init]
