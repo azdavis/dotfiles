@@ -47,14 +47,15 @@ alias ga="git add"
 alias gb="git branch"
 alias gc="git commit"
 alias gd="git diff"
-alias gw="git show --ext-diff --format=fuller"
-alias gk="git checkout"
 alias gl="git log --ext-diff --graph --oneline"
 alias gp="git push"
 alias gpl="git pull"
 alias gr="git reset"
 alias grb="git rebase"
+alias grs="git restore"
 alias gs="git status"
+alias gsw="git switch"
+alias gw="git show --ext-diff --format=fuller"
 
 ls() {
   if [ "$#" -eq 1 ] && [ -f "$1" ]; then
