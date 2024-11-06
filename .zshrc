@@ -66,7 +66,7 @@ ls() {
       cat "$1"
     fi
   else
-    exa --group-directories-first "$@"
+    eza --group-directories-first "$@"
   fi
 }
 
