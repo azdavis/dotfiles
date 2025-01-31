@@ -4,7 +4,8 @@
 	skippedCherryPicks = false
 [alias]
 	amend = commit --amend --reset-author
-	fixup = commit --amend --no-edit --reset-author
+	fixup = commit --amend --reset-author --no-edit
+	is-ancestor = merge-base --is-ancestor
 	praise = blame
 	unstash = stash pop
 [commit]
