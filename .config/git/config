@@ -8,36 +8,59 @@
   is-ancestor = merge-base --is-ancestor
   praise = blame
   unstash = stash pop
+[branch]
+  sort = -committerdate
+[column]
+  ui = auto
 [commit]
   verbose = 1
 [core]
   editor = code -w
+  fsmonitor = true
   pager = cat
   untrackedCache = true
 [credential]
   helper = osxkeychain
 [diff]
+  algorithm = histogram
+  colorMoved = plain
   external = difft --display inline
+  mnemonicPrefix = true
+  renames = true
 [fetch]
   prune = true
+  pruneTags = true
+  all = true
+[help]
+  autocorrect = prompt
 [init]
   defaultBranch = main
   templateDir = /var/empty
 [log]
   date = iso8601
 [merge]
-  conflictStyle = diff3
+  conflictStyle = zdiff3
 [pull]
   rebase = merges
 [push]
   autoSetupRemote = true
   default = simple
+  followTags = true
+[rebase]
+  autoSquash = true
+  autoStash = true
+  updateRefs = true
+[rerere]
+  enabled = true
+  autoupdate = true
 [stash]
   showPatch = true
   showStat = false
 [status]
   branch = true
   short = true
+[tag]
+  sort = version:refname
 [user]
   email = ariel.z.davis@icloud.com
   name = Ariel Davis
