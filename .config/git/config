@@ -24,7 +24,8 @@
 [diff]
   algorithm = histogram
   colorMoved = plain
-  external = difft --display inline
+  # TODO re-add --display inline when https://github.com/Wilfred/difftastic/issues/704 fixed
+  external = difft
   mnemonicPrefix = true
   renames = true
 [fetch]
