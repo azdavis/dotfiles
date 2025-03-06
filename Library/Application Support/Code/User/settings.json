@@ -73,9 +73,6 @@
   "[mdx]": {
     "editor.wordWrap": "bounded",
   },
-  "[plaintext]": {
-    "editor.wordWrap": "bounded"
-  },
   "[python]": {
     "editor.tabSize": 4,
   },
