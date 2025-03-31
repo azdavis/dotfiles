@@ -10,7 +10,7 @@
   "editor.cursorWidth": 1,
   "editor.dragAndDrop": false,
   "editor.emptySelectionClipboard": false,
-  "editor.fontFamily": "Input",
+  "editor.fontFamily": "Input, Menlo, monospace",
   "editor.fontSize": 14,
   "editor.formatOnSave": true,
   "editor.inlayHints.enabled": "off",
