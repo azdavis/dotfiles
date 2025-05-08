@@ -4,6 +4,17 @@ if [ -e /opt/homebrew/bin/brew ]; then
   eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
+# fix vscode shell integration interaction with setopt no_unset
+
+export P9K_SSH
+export P9K_TTY
+export STARSHIP_SESSION_KEY
+export VSCODE_ENV_APPEND
+export VSCODE_ENV_PREPEND
+export VSCODE_ENV_REPLACE
+export VSCODE_SHELL_ENV_REPORTING
+export ZSH
+
 # personal
 
 setopt auto_cd
@@ -22,10 +33,6 @@ export HOMEBREW_NO_EMOJI="1"
 export HOMEBREW_NO_INSECURE_REDIRECT="1"
 export LS_COLORS="di=34"
 export SAVEHIST="1"
-export VSCODE_ENV_APPEND
-export VSCODE_ENV_PREPEND
-export VSCODE_ENV_REPLACE
-export VSCODE_SHELL_ENV_REPORTING
 export WORDCHARS="._-~"
 
 export FPATH="$HOME/.site-functions:$FPATH"
