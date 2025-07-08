@@ -43,6 +43,7 @@
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
   "git.enabled": false,
+  "inlineChat.lineNaturalLanguageHint": false,
   "search.useIgnoreFiles": false,
   "security.workspace.trust.enabled": false,
   "telemetry.telemetryLevel": "error",
@@ -68,12 +69,12 @@
     "files.trimTrailingWhitespace": false
   },
   "[markdown]": {
-    "editor.wordWrap": "bounded",
+    "editor.wordWrap": "bounded"
   },
   "[mdx]": {
-    "editor.wordWrap": "bounded",
+    "editor.wordWrap": "bounded"
   },
   "[python]": {
-    "editor.tabSize": 4,
-  },
+    "editor.tabSize": 4
+  }
 }
