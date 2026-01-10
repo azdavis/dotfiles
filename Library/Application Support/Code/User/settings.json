@@ -1,4 +1,19 @@
 {
+  "[diff]": {
+    "files.insertFinalNewline": false,
+    "files.trimFinalNewlines": false,
+    "files.trimTrailingWhitespace": false
+  },
+  "[markdown]": {
+    "editor.wordWrap": "bounded"
+  },
+  "[mdx]": {
+    "editor.wordWrap": "bounded"
+  },
+  "[python]": {
+    "editor.tabSize": 4
+  },
+  "chat.disableAIFeatures": true,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.acceptSuggestionOnEnter": "off",
   "editor.autoIndent": "brackets",
@@ -48,6 +63,7 @@
   "security.workspace.trust.enabled": false,
   "telemetry.telemetryLevel": "error",
   "terminal.integrated.fontSize": 14,
+  "terminal.integrated.initialHint": false,
   "terminal.integrated.persistentSessionReviveProcess": "never",
   "terminal.integrated.persistentSessionScrollback": 0,
   "terminal.integrated.scrollback": 5000,
@@ -62,19 +78,5 @@
   "workbench.editor.wrapTabs": true,
   "workbench.iconTheme": null,
   "workbench.startupEditor": "none",
-  "workbench.statusBar.visible": true,
-  "[diff]": {
-    "files.insertFinalNewline": false,
-    "files.trimFinalNewlines": false,
-    "files.trimTrailingWhitespace": false
-  },
-  "[markdown]": {
-    "editor.wordWrap": "bounded"
-  },
-  "[mdx]": {
-    "editor.wordWrap": "bounded"
-  },
-  "[python]": {
-    "editor.tabSize": 4
-  }
+  "workbench.statusBar.visible": true
 }
