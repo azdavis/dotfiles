@@ -1,8 +1,23 @@
 {
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[diff]": {
     "files.insertFinalNewline": false,
     "files.trimFinalNewlines": false,
     "files.trimTrailingWhitespace": false
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[markdown]": {
     "editor.wordWrap": "bounded"
@@ -12,6 +27,9 @@
   },
   "[python]": {
     "editor.tabSize": 4
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "chat.disableAIFeatures": true,
   "editor.acceptSuggestionOnCommitCharacter": false,
@@ -34,9 +52,7 @@
   "editor.quickSuggestionsDelay": 50,
   "editor.renderLineHighlight": "none",
   "editor.renderWhitespace": "selection",
-  "editor.rulers": [
-    100
-  ],
+  "editor.rulers": [100],
   "editor.stickyTabStops": true,
   "editor.suggest.localityBonus": true,
   "editor.tabCompletion": "on",
