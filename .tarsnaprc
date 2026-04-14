@@ -1,5 +1,0 @@
-cachedir ~/.tarsnap
-checkpoint-bytes 1G
-humanize-numbers
-keyfile ~/.tarsnap/key.txt
-nodump
